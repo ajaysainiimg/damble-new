@@ -53,9 +53,38 @@
 <body>
         <!-- * Navbar Start -->
         <nav class="navbar  position-fixed top-0 w-100">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center zi-5 text-white" href="#">header</a>
+        <div class="containerfluid headerFluid w-100">
+            <div class="row headerRow">
+                <div class="col-auto px-0">
+                    <div class="logoWrapper">
+                        <div class="logo">
+                            <img class="image" src="assets/img/dambleLogo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-0">
+                    <div class="row headerRyt mx-0">
+                        <div class="col d-flex align-items-center">
+                            <ul class="pills d-flex align-items-start mb-0 ps-0">
+                                <li class="casinoPill"><a href="#exampleModal" class="pillAnchor active d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/casinoIcon.svg" alt="">CASINO </a></li>
+                                <li class="casinoPill"><a href="exampleModal1" class="pillAnchor d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="assets/img/sportsIcon.svg" alt="">SPORTS </a></li>
+                            </ul>
+                            <div class="group position-relative">
+                                <input type="text" class="searchInp" name="" id="" placeholder="Search for games">
+                                <div class="searchIcon">
+                                    <img src="assets/img/search.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                            <a href="javascript:;" class="msgIcon"><img src="assets/img/message.svg" alt=""></a>
+                            <span class="usdTxt text-white">$usd</span>
+                            <a href="javascript:;" class="globeIcon"><img src="assets/img/globe.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </nav>
         <!-- * Navbar End -->
         <!-- * Aside Bar Start -->
@@ -94,7 +123,7 @@
             <!-- ****** [ Hero Section End ] ****** -->
 
             <!-- ****** [ Casino Card Section Start ] ****** -->
-            <div class="container-fluid mt-5">
+            <div class="container-fluid">
                 <div class="cardSection">
                     <div class="cardInner">
                         <div class="row gy-4 gy-sm-0">
@@ -151,7 +180,1214 @@
                 </div>
             </div>
             <!-- ****** [ Casino Card Section End ] ****** -->
-            
+
+            <!-- Navtab start -->
+            <div class="container-fluid topratedgames-tab-main position-relative">
+                <div class="topratedgames-tab-content">
+                    <div class="row">
+                        <div class="col">
+                            <div class="nav nav-tabs border-0 gap-3" id="nav-tab" role="tablist">
+                                <button class="nav-link toprated-link fw-semibold active" id="nav-allgames-tab" data-bs-toggle="tab" data-bs-target="#nav-allgames" type="button" role="tab" aria-controls="nav-allgames" aria-selected="true">All Games</button>
+                                <button class="nav-link toprated-link fw-semibold" id="nav-inhouse-tab" data-bs-toggle="tab" data-bs-target="#nav-inhouse" type="button" role="tab" aria-controls="nav-inhouse" aria-selected="false">In-House</button>
+                                <button class="nav-link toprated-link fw-semibold" id="nav-Slots-tab" data-bs-toggle="tab" data-bs-target="#nav-Slots" type="button" role="tab" aria-controls="nav-Slots" aria-selected="false">Slots</button>
+                                <button class="nav-link toprated-link fw-semibold" id="nav-Live-tab" data-bs-toggle="tab" data-bs-target="#nav-Live" type="button" role="tab" aria-controls="nav-Live" aria-selected="false">Live</button>
+                                <button class="nav-link toprated-link fw-semibold" id="nav-Special-tab" data-bs-toggle="tab" data-bs-target="#nav-Special" type="button" role="tab" aria-controls="nav-Special" aria-selected="false">Special</button>
+                              </div>
+                        </div>
+                        <div class="col-auto">
+                            <form action="javascript:;">
+                                <div class="input-group rounded-5 search-bar-group border-1 border">
+                                    <input type="text" class="form-control search-input fw-semibold shadow-none bg-transparent border-0 rounded-0" placeholder="Search for games" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <button class="input-group-text bg-transparent border-0" id="basic-addon2">
+                                        <img src="assets/Img/index/search-icon.svg" alt="search-icon">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- <div class="col-12 heading">Top Rated Games</div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Navtab end -->
+
+            <!-- top-rated-games section start -->
+            <div class="tab-content" id="nav-tabContent"> 
+    
+                <!-- all games tab start -->
+                <div class="tab-pane fade show active" id="nav-allgames" role="tabpanel" aria-labelledby="nav-allgames-tab" tabindex="0">                                  
+                
+                 <!-- top-rated-games section 1 start -->
+                 <div class="container-fluid toprated-games-main position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading">Top Rated Games</div>
+                             <div class="col-12 px-0 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- top-rated-games section 1 end -->
+ 
+                 <!-- recent-big-wins section  start -->
+                 <div class="container-fluid toprated-games-main recent-big-wins position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading"><span class="sh"><img src="assets/Img/index/shadow.png" alt="shadown-btn"></span>Recent Big Wins</div>
+                             <div class="col-12 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- recent-big-wins section  end -->
+                </div>
+                <!-- all games tab end -->
+ 
+                <!-- In-House tab start -->
+               <div class="tab-pane fade" id="nav-inhouse" role="tabpanel" aria-labelledby="nav-inhouse-tab" tabindex="0">
+                 <!-- top-rated-games section 1 start -->
+                 <div class="container-fluid toprated-games-main position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading">Top Rated Games</div>
+                             <div class="col-12 px-0 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- top-rated-games section 1 end -->
+               </div>
+                <!-- In-House tab end -->
+ 
+                <!-- Slots tab start -->
+               <div class="tab-pane fade" id="nav-Slots" role="tabpanel" aria-labelledby="nav-Slots-tab" tabindex="0">
+                 <!-- top-rated-games section 1 start -->
+                 <div class="container-fluid toprated-games-main position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading">Top Rated Games</div>
+                             <div class="col-12 px-0 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>                                 
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- top-rated-games section 1 end -->
+               </div>
+               <!-- Slots tab end -->
+ 
+               <!-- live tab start -->
+               <div class="tab-pane fade" id="nav-Live" role="tabpanel" aria-labelledby="nav-Live-tab" tabindex="0">
+                 <!-- top-rated-games section 1 start -->
+                 <div class="container-fluid toprated-games-main position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading">Top Rated Games</div>
+                             <div class="col-12 px-0 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>                                  
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>                                 
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- top-rated-games section 1 end -->
+               </div>
+               <!-- live tab end -->
+ 
+               <!-- special tab start -->
+               <div class="tab-pane fade" id="nav-Special" role="tabpanel" aria-labelledby="nav-Special-tab" tabindex="0">
+                 <!-- top-rated-games section 1 start -->
+                 <div class="container-fluid toprated-games-main position-relative">
+                     <div class="toprated-games">
+                         <div class="row">
+                             <div class="col-12 heading">Top Rated Games</div>
+                             <div class="col-12 px-0 games-card-main">
+                                 <div class="row mx-0">
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>                                  
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4">
+                                                 <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="col-2">
+                                         <div class="games-card">
+                                             <div class="games-img rounded-4 position-relative">
+                                                 <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                             </div>
+                                             <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                             <div class="text-center">
+                                                 <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                             </div>
+                                         </div>
+                                     </div>                                 
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- top-rated-games section 1 end -->
+               </div>
+               <!-- special tab end -->
+ 
+             </div>
+             <!-- top-rated-games section start --> 
+
+            <!-- table start -->
+            <div class="container-fluid">
+                <div class="row gap-5">
+                    <div class="col-12 py-5 px-0">
+                        <div class="sectionInner">
+                            <div class="tableCard row mx-0">
+                                <div class="col-12 px-0">
+                                    <div class="row mx-0">
+                                        <div class="col-12 px-0">
+                                            <nav>
+                                                <ul class="nav nav-tabs border-0 d-inline-flex " id="myTab" role="tablist ">
+                                                    <li class="nav-item" role="presentation">
+                                                      <button class="nav-link border-0 shadow-none rounded-pill active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All bets</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                      <button class="nav-link border-0 shadow-none rounded-pill" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">High rollers</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                      <button class="nav-link border-0 shadow-none rounded-pill" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Rare wins</button>
+                                                    </li>
+                                                  </ul>
+                                              </nav>
+                                        </div>
+                                        <div class="col-12  px-0">
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                                    <div class="table-responsive">
+                                                        <table class="table align-middle text-white">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Time</th>
+                                                                <th scope="col">Player</th>
+                                                                <th scope="col">Bet Amount</th>
+                                                                <th scope="col">Multiplier</th>
+                                                                <th scope="col">Payout</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                                    <div class="table-responsive">
+                                                        <table class="table align-middle text-white">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Time</th>
+                                                                <th scope="col">Player</th>
+                                                                <th scope="col">Bet Amount</th>
+                                                                <th scope="col">Multiplier</th>
+                                                                <th scope="col">Payout</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                                    <div class="table-responsive">
+                                                        <table class="table align-middle text-white">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">Name</th>
+                                                                <th scope="col">Time</th>
+                                                                <th scope="col">Player</th>
+                                                                <th scope="col">Bet Amount</th>
+                                                                <th scope="col">Multiplier</th>
+                                                                <th scope="col">Payout</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>game name</td>
+                                                                <td>00:00:00PM</td>
+                                                                <td> 
+                                                                <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                    <span class="d-flex align-items-center player me-2"><img src="assets/img/user.svg" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                </a>
+                                                                </td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                    </a>
+                                                                </td>
+                                                                <td > <span class="badge Multiplier">x0.0</span></td>
+                                                                <td> 
+                                                                    <a href="#" class="d-flex align-items-center text-decoration-none" >
+                                                                        <span class="d-flex align-items-center amount me-1"><img src="assets/img/Group.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                    </a>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- table end -->
+
+            <!-- recommand start -->
+            <div class="container-fluid toprated-games-main position-relative mb-5">
+                <div class="toprated-games">
+                    <div class="row">
+                        <div class="col-12 heading">Recommended Games</div>
+                        <div class="col-12 px-0 games-card-main">
+                            <div class="row mx-0">
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4 position-relative">
+                                            <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                            <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4">
+                                            <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4 position-relative">
+                                            <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                            <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4 position-relative">
+                                            <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                            <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4">
+                                            <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="games-card">
+                                        <div class="games-img rounded-4">
+                                            <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                        </div>
+                                        <div class="text-center games-card-title fw-semibold">Push Gaming</div>
+                                        <div class="text-center">
+                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- recommand end -->
+
+            <!-- card start -->
+            <div class=" aboutFluid my-5">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-6">
+                        <div class="aboutCard h-100">
+                            <div class="row borderKey h-100">
+                                <div class="col-12">
+                                    <div class="aboutImg">
+                                        <img src="assets/img/cardimg1.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 aboutHead">VIP CLUB</div>
+                                <div class="col-12 aboutSubHead">BECOME ROYALTY! </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="aboutCard Card2 h-100">
+                            <div class="row borderKey h-100">
+                                <div class="col-12">
+                                    <div class="aboutImg">
+                                        <img src="assets/img/cardimg2.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 aboutHead">GIVEAWAY</div>
+                                <div class="col-12 aboutSubHead">The higer rank you are, the more surprising it will be </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="aboutCard Card3 h-100">
+                            <div class="row borderKey h-100">
+                                <div class="col-12">
+                                    <div class="aboutImg abtImg3">
+                                        <img src="assets/img/cardimg3.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 aboutHead">WEEKELY BONUS</div>
+                                <div class="col-12 aboutSubHead">Come to Damble more often and get bonuses! </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="aboutCard Card4 h-100">
+                            <div class="row borderKey h-100">
+                                <div class="col-12">
+                                    <div class="aboutImg abtImg4">
+                                        <img src="assets/img/cardimg4.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-12 aboutHead">DAMBLE AFFILIATE</div>
+                                <div class="col-12 aboutSubHead">The most rewarding affiliate program!  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+
             <!-- ******* [ Register Section Start ] ********** -->
             <div class="container-fluid registerSection">
                 <div class="innerfluid p-4">
