@@ -1,0 +1,31 @@
+.navbar {
+    z-index: 999999;
+    background: #161F2C;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    & .navbar-brand {
+        height: 40px;
+    }
+}
+
+.sidebar{
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+    background: #161F2C;
+}
+
+#main{
+    margin-left: 300px;
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
