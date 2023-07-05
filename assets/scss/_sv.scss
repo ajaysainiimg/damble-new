@@ -1,0 +1,18 @@
+.bonusCard{
+    border-radius: 24px;
+background: linear-gradient(90deg, rgba(0, 153, 10, 0.30) 0%, rgba(85, 120, 254, 0.30) 100%);
+filter: blur(0.5px);
+
+& .heading{
+    color: #FFF;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 39px 64px;
+    & span{
+        color: #FFD700;
+    }
+}
+}
