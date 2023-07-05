@@ -1,20 +1,701 @@
 .headerFluid{
-    & .logoWrapper{
-        & .logo{
-            & .image{
-                
+    height: 75px;
+    position: relative;
+    padding-left: 338px;
+    & .headerRow{
+        background: #161F2C;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+        & .logoWrapper{
+            & .logo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                & .image{
+                    width: 338px;
+                    // height: 103px;
+                }
+            }
+        }
+        & .headerRyt{
+            padding: 15px 35px;
+            & .pills{
+                list-style: none;
+                border-radius: 16px;
+                background: #252E39;
+                width: 224px;
+                color: #FFF;
+                font-size: 12px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                height: 32px;
+                & .pillAnchor{
+                    width: 118px;
+                    height: 32px;
+                    border-radius: 16px;
+                    background: #252E39;
+                    text-decoration: none;
+                    color: #fff;
+                    & img{
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 5px;
+                    }
+                    &.active{
+                        width: 118px;
+                        height: 32px;
+                        border-radius: 16px;
+                        background: #00990A;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+            & .group{
+                margin-left: 84px;
+                & .searchInp{
+                    border-radius: 15.964px;
+                    border: 1px solid rgba(147, 172, 211, 0.50);
+                    background: #161F2C;
+                    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 12px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 234.243px;
+                    height: 31.928px;
+                    padding-left: 21px;
+                    &:focus{
+                        outline: unset;
+                    }
+                }
+                & .searchIcon{
+                    position: absolute;
+                    right: 9px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    & img{
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+            & .msgIcon{
+                margin-right: 12px;
+                & img{
+                    width: 18px;
+                    height: 18px
+                }
+            }
+            & .globeIcon{
+                margin-left: 25px;
+                & img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            & .usdTxt{
+                color: #93ACD3;
+                font-size: 12px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-left: 1px solid #00A300;
+                padding-left: 4px;
             }
         }
     }
-    & .pills{
-        & .casinoPill{
-            border-radius: 16px;
-            background: #00990A;
-            width: 118px;
-            height: 32px;
-        }
-        & .sportsPill{
+}
 
+.aboutFluid{
+    border-radius: 20px;
+    background: linear-gradient(180deg, #161F2C 0%, rgba(22, 31, 44, 0.00) 100%);
+    // border-top:2px solid rgb(98, 167, 224);
+    padding-top: 25px;
+    position: relative;
+    padding: 0 20px;
+    margin: 0 60px;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(180deg, #161F2C 0%, rgba(22, 31, 44, 0.00) 100%);
+        z-index: -1;
+        border-radius: 15px;
+    }
+    &::after{   
+        content: "";
+        width: calc(100% + 10px);
+        height: calc(100% + 4px);
+        position: absolute;
+        // border: 4px solid;
+        background-image: linear-gradient(to bottom, rgb(98, 167, 224), rgba(98, 167, 224, 0));
+        border-radius: 18px 18px 0 0;
+        top: -6px;
+        left: -5px;
+        z-index: -2;
+    }
+    & .aboutCard{
+        background: #161F2C;
+        // filter: blur(0.5px);
+        border-radius: 18px;
+        // overflow: hidden;
+        padding: 0.8px;
+        position: relative;
+        z-index: 5;
+        &.Card2{
+            & .borderKey {
+                &::after{
+
+                }
+                &::before{
+                    content: 'VO2';
+                }
+            }
+        & .aboutImg{
+            width: 221px;
+            height: 92px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .aboutHead{
+            margin-top: 10px;
+        }
+        & .aboutSubHead{
+            padding: 0 56px;
+        }
+        }
+        &.Card3{
+            & .borderKey {
+                &::after{
+
+                }
+                &::before{
+                    content: 'VO3';
+                }
+            }
+            
+        & .aboutImg{
+            width: 227px;
+            height: 124px;
+            &.abtImg3{
+                margin-top: -32px;
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .aboutHead{
+            margin-top: 10px;
+        }
+        & .aboutSubHead{
+            padding: 0 58px;
+        }
+        }
+        &.Card4{
+            & .borderKey {
+                &::after{
+
+                }
+                &::before{
+                    content: 'VO4';
+                }
+            }
+        & .aboutImg{
+            width: 189px;
+            height: 155px;
+            &.abtImg4{
+                margin-top: -60px;
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .aboutHead{
+            margin-top: 5px;
+        }
+        & .aboutSubHead{
+            padding: 0 96px;
+        }
+        }
+        & .borderKey{   
+            margin: 0; 
+            background-color: #161F2C;
+            position: relative;
+            border-radius: 19.8px;
+            z-index: 5;
+            &::before{
+                content: 'VO1';
+                background: #5578FE;
+                box-shadow: 0px 0px 10px #000000;
+                border-radius: 0px 18px;
+                width: 50PX;
+                height: 23px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 10px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &::after{
+                content: '';
+                
+                background: #161F2C;
+                background-image: url(../../assets/img/cardBg.svg);
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-size: contain;
+                background-position: top 0 right;
+                border-radius: 18px;
+                // margin-bottom: 15px;
+                z-index: -1;
+            }
+        }
+        & .aboutImg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 147px;
+            height: 90px;
+            margin: auto;
+            margin-bottom: 10px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .aboutHead{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        & .aboutSubHead{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: #93ACD3;
+            margin-bottom: 33px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            background: linear-gradient(90deg, #93ACD3 30%, #0D131C 50%);
+            z-index: -5;
+            filter: blur(0.5px);
+            border-radius: 18px;
+        }
+    }
+}
+
+.footerSection {
+    & .borderd {
+        border-top: 1px solid #00990A;
+        &.smBorderd {
+        border-top: 0.5px solid #00990A !important;
+        }
+    }
+    & .paymentHeading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 49px;
+    }
+    & .card {
+        background: #131B27;
+        & .card-body {
+            border-color: #898E93!important;
+            & .logos{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    height: 100%;
+                }
+            }
+        }
+        &.cardLogo{
+            border-radius: 23px;
+            & .card-body {
+                & .logos {
+                    max-height: 45px;
+                }
+            }
+        }
+        &.cryptoLogo {
+            border-radius: 9px;
+            & .card-body {
+                & .logos {
+                    max-height: 45px;
+                    max-width: 45px;
+                }
+                & .ragisterbonus {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    & span {
+                        color: #FFD700;
+                    }
+                }
+                & .ragisterBtn {
+                    background-color: #00990A;
+                    border-radius: 7px;
+                    height: 39px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    transition: all ease-in-out 0.3s;
+                    &:hover{
+                        background-color: darken(#00990A, 5);
+                    }
+                    &.ragisterBtn1 {
+                        background: #713FE3;
+                        &:hover {
+                            background: darken(#713FE3, 5);
+                        }
+                    }
+                }
+            }
+        }
+        &.bardcard {
+            border-radius: 15px;
+            & .card-body {
+                & .logos {
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+    & .navContent {
+        & .navLink {
+            font-size: 20px;
+            line-height: 24px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: darken(#fff, 15) !important;
+                cursor: pointer;
+            }
+        }
+    }
+    & .democontent {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    & .logoImg  {
+        height: 35px;
+        & img {
+            height: 100%;
+        }
+    }
+    & .copyright {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+// ** [ Modal ] **
+.ragisterModal {
+    backdrop-filter: blur(25px);
+    & .modal-dialog {
+        max-width: 700px !important;
+        & .modal-content {
+            border: none;
+            filter: drop-shadow(5px 5px 30px rgba(86, 36, 62, 0.4));
+            border-radius: 20px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            background-color: #504f70;
+            background-image: url(./../../assets/img/modalbg.png);
+            background-position: top left;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            & .modal-header {
+                padding: 20px 30px;
+                background-color: #17212F;
+                border-radius: 20px 20px 0 0 ;
+                border-bottom: none;
+                & button {
+                    filter: invert(1);
+                    opacity: 1;
+                    box-shadow: none;
+                    border: none;
+                }
+                & .btnClose{
+                    background-color: transparent;
+                }
+            }
+            & .modal-body {
+                padding: 0 30px 30px 30px;
+                background-color: #17212F;
+                border-radius: 0 0 20px 20px ;
+                & .userName {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                    & span {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+                & .dambleUser{
+                    & img{
+                        width:100%;
+                        height: 228px;
+                    }
+                }
+                & .eye{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+                    & img{
+                        width: 26px;
+                        height: 14px;
+                    }
+                }
+                & .logoLine{
+                    margin-top: 45px;
+                    & img{
+                        width: 70px;
+                        height: 50px;
+                    }
+                }
+                & .pills{
+                    list-style: none;
+                    border-radius: 7px;
+                    background: #252E39;
+                    width: 100%;
+                    height: 38px;
+                    color: #FFF;
+                    font-size: 12px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    & .pillAnchor{
+                        width: 136px;
+                        height: 38px;
+                        border-radius: 7px;
+                        background: #252E39;
+                        text-decoration: none;
+                        color: #fff;
+                        & img{
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 5px;
+                        }
+                        &.active{
+                            width: 136px;
+                            height: 38px;
+                            border-radius: 7px;
+                            background: #00990A;
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+                & .line{
+                    width: 100px;
+                    height: 1px;
+                    background-color:#676A79 ;
+                    margin-top: 70px;
+                }
+                & .form {
+                    & .registerHeading {
+                        color: #FFF;
+                        font-size: 15px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    & .form-control {
+                        // width: 233px;
+                        height: 38px;
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.50);
+
+                        &::placeholder {
+                            color: rgba(255, 255, 255, 0.80);
+                            font-size: 12px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                    & .form-controll {
+                        // width: 233px;
+                        height: 38px;
+                        border-radius: 7px;
+                        border: 1px solid !important;
+                        border-color:  rgba(147, 172, 211, 0.50) !important;
+                        background-color: transparent;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:focus{
+                            outline: unset;
+                        }
+                        &::placeholder {
+                            color: #54657F;
+                            font-size: 8px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            padding-left: 11px;
+                        }
+                    }
+                    & .forget{
+                        color: #FFF;
+                        font-size: 10px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-top: -10px;
+                    }
+                    & .form-check {
+                        & .form-check-input {
+                            width: 17px;
+                            height: 17px;
+                            border: 1px solid #03B80F;
+                            background-color: transparent;
+                            border-radius: 2px;
+                            box-shadow: none;
+                            margin-bottom: 11px;
+                            &:checked {
+                                background-color: #03B80F;
+                            }
+                        }
+
+                        & .form-check-label {
+                            color: #93ACD3;
+                            font-size: 8px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            padding-left: 8px;
+                            & span {
+                                color: #00990A;
+                            }
+                        }
+                    }
+
+                    & .ragisterBtn {
+                        width: 233px;
+                        height: 32px;
+                        border-radius: 7px;
+                        background: #00990A;
+                        color: #FFF;
+                        font-size: 13px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-top: 26px;
+                        margin-bottom: 11px;
+                        &:hover {
+                            background: darken(#00990A, 5);
+                        }
+                    }
+                    & .para{
+                        color: #93ACD3;
+                        font-size: 8px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-align: center;
+                        & .paraAnchor{
+                            color: #00990A;
+                            text-decoration: none;
+                        }
+                    }
+                    & .topMargin{
+                        margin-top: 116px;
+                    }
+                    & .para1{
+                        color: #93ACD3;
+                        font-size: 8px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-align: start;
+                        margin-top: -18px;
+                        & .paraAnchor{
+                            color: #00990A;
+                            text-decoration: none;
+                        }
+                    }
+                    & .link{
+                        border-radius: 5px;
+                        border: 0.5px solid #03B80F;
+                        width: 37px;
+                        height: 37px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+            & .modal-footer {
+                & .footerImg{
+                    height: 30px;
+                    & img {
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 }
