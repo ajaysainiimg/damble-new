@@ -1,0 +1,20 @@
+.headerFluid{
+    & .logoWrapper{
+        & .logo{
+            & .image{
+                
+            }
+        }
+    }
+    & .pills{
+        & .casinoPill{
+            border-radius: 16px;
+            background: #00990A;
+            width: 118px;
+            height: 32px;
+        }
+        & .sportsPill{
+
+        }
+    }
+}
