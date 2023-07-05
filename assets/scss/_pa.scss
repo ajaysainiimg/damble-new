@@ -1016,3 +1016,83 @@
     }
 }
 // recent-big-wins section end
+
+// help-us section start
+.help-us {
+    & .helpus-left {
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-para {
+            color: #93ACD3;
+            font-size: 11px;
+        }
+        & .help-us-paratwo {
+            padding-top: 30px;
+        }
+        & .showmore-btn-main {
+            padding-top: 28px;
+            & .showmore-btn {
+                color: #04E929;
+                font-size: 18px;
+            }
+        }
+    }
+    & .helpus-right {
+        padding-left: 28px;
+        &::before {
+            content: '';
+            top: 10%;
+            left: 0;
+            position: absolute;
+            background: rgba(147, 172, 211, 0.35);
+            transform: translateY(10%);
+            height: 80%;
+            width: 1px;
+
+        }
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-textarea {
+            padding-top: 37px;
+            padding-bottom: 12px;
+            & .text-area {
+                height: 98px;
+                background: #93abd336;
+                resize: none;
+                font-size: 11px;
+                border: none;
+                color: #C6C4C4;
+                padding: 9px 87px 0 17px;
+                &::placeholder {
+                    color: #C6C4C4 !important;
+                    font-size: 11px;
+                    // padding: 9px 87px 0 17px;
+                }
+            }
+            & .textarea-title {
+                font-size: 8px;
+                padding-top: 6px;
+                color: #93ACD3;
+            }
+        }
+        & .leavemsg-btn {
+                font-size: 11px;
+                background-color: #00990A;
+                color: #fff;
+                padding: 6px 24px;
+        }
+        & .helpus-email-main {
+            padding-top: 12px;
+            color: #93ACD3;
+            font-size: 10px;
+            & .helpus-email {
+                color: #04E929;
+            }
+        }
+    }
+}
+// help-us section end
