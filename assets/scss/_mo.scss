@@ -217,3 +217,64 @@
     }
 }
 // help-us section end
+
+// side bar start
+.sidebar-menu {
+    & .sidebar-btn {
+        // background:linear-gradient(125deg, rgba(241, 241, 241, 0.411) 26%, rgba(0, 153, 10, 0) 17%);
+        // background:linear-gradient(125deg, #93acd3 26%, #6324D7 17%);
+        background: transparent;
+        padding: 1.2px;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:linear-gradient(125deg, rgba(241, 241, 241, 0.411) 26%, rgba(0, 153, 10, 0) 17%);
+            top: 0;
+            // box-shadow: 0 0 0 2px #93acd3 ;
+            left: 0;
+            z-index: -5;
+            border-radius: 8px;
+            filter: blur(0.5px);
+        }
+        & .sidebar-btn-content {
+            padding: 5px;
+            background: #252E39;
+            & .sidebar-btn-title {
+                font-size: 12px;
+                font-weight: 900;
+                line-height: normal;
+                color: #fff;
+                & .wheel {
+                    color: #FF7518;
+                }
+            }
+        }
+    }
+    & .side-bar-content {
+        padding: 28px 25px 0 25px;
+        & .sidebar-card {
+            background: #252E39;
+            padding: 9px 12px 18px;
+            border-radius: 11px;
+            & .sidebar-card-heading {
+                font-size: 12px;
+                color: #fff;
+                & .sidebar-card-img {
+                    height: 17px;
+                    width: 17px;
+                }
+            }
+            & .sidebar-card-title {
+                font-size: 12px;
+                color: #93ACD3;
+                & .sidebar-card-icon {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+    }
+}
+// side bar start
