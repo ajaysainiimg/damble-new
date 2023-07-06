@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- swipe css -->
+    <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
 </head>
 <body>
         <!-- * Navbar Start -->
@@ -116,30 +118,100 @@
                     </div>
                 </div> -->
                 <div class="col-12 side-bar-content">
-                    <div class="sidebar-card">
-                        <div class="sidebar-card-heading fw-bold d-flex align-items-center gap-1">
-                            <span class="sidebar-card-img d-inline-flex"><img src="assets/img/index/casino-chip.svg" alt="casino-chip" class="h-100 w-100 img-fluid"></span>
-                            Casino Games    ^
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <a href="javascript:;" class="sidebar-card-heading accordion-button fw-bold d-flex bg-transparent p-0 align-items-center gap-1 text-decoration-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="sidebar-card-img d-inline-flex"><img src="assets/img/index/casino-chip.svg" alt="casino-chip" class="h-100 w-100 img-fluid"></span>
+                                Casino Games
+                            </a>
+                            
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <ul class="list-unstyled pt-2 gap-2 d-flex flex-column mb-0">
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/berries1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Picks For you
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/card-game1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        All games
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/recent.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Recent
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/lottery.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Lottery
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
                         </div>
-                        <ul class="list-unstyled pt-2 gap-2 d-flex flex-column">
-                            <li class="sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Picks For you
-                            </li>
-                            <li class="sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/berries1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                All games
-                            </li>
-                            <li class="sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/berries1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Picks For you
-                            </li>
-                            <li class="sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/berries1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Picks For you
-                            </li>
-                        </ul>
+                        <span class="line d-flex mx-auto"></span>
+                        <!-- <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              </div>
+                            </div>
+                          </div> -->
+                          <div class="accordion-item border-0 bg-transparent">
+                            <a href="javascript:;" class="sidebar-card-heading sports accordion-button fw-bold d-flex align-items-center gap-1 text-decoration-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                                <span class="sidebar-card-img d-inline-flex"><img src="assets/img/index/ball.png" alt="casino-chip" class="h-100 w-100 img-fluid"></span>
+                                Sports
+                            </a>
+                            
+                          <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <ul class="list-unstyled pt-2 gap-2 d-flex flex-column mb-0">
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/ball.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Picks For you
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/card-game1.svg" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        All games
+                                    </a>
+                                </li>
+    
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/recent.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Recent
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
+                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/lottery.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                        Lottery
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
                     </div>
+                    <!-- <ul class="mb-0">
+                        <li>
+                            <a href="javascipt:;" class="text-decoration-none">
+                                <span class=""></span>
+                            </a>
+                        </li>
+                    </ul> -->
                 </div>
             </div>
         </aside> 
@@ -237,14 +309,14 @@
                 <!-- ***** [ Navtab start ] ***** -->
                 <div class="container-fluid topratedgames-tab-main position-relative">
                     <div class="topratedgames-tab-content">
-                        <div class="row">
+                        <div class="row p align-items-center">
                             <div class="col">
-                                <div class="nav nav-tabs border-0 gap-3" id="nav-tab" role="tablist">
-                                    <button class="nav-link toprated-link fw-semibold active" id="nav-allgames-tab" data-bs-toggle="tab" data-bs-target="#nav-allgames" type="button" role="tab" aria-controls="nav-allgames" aria-selected="true">All Games</button>
-                                    <button class="nav-link toprated-link fw-semibold" id="nav-inhouse-tab" data-bs-toggle="tab" data-bs-target="#nav-inhouse" type="button" role="tab" aria-controls="nav-inhouse" aria-selected="false">In-House</button>
-                                    <button class="nav-link toprated-link fw-semibold" id="nav-Slots-tab" data-bs-toggle="tab" data-bs-target="#nav-Slots" type="button" role="tab" aria-controls="nav-Slots" aria-selected="false">Slots</button>
-                                    <button class="nav-link toprated-link fw-semibold" id="nav-Live-tab" data-bs-toggle="tab" data-bs-target="#nav-Live" type="button" role="tab" aria-controls="nav-Live" aria-selected="false">Live</button>
-                                    <button class="nav-link toprated-link fw-semibold" id="nav-Special-tab" data-bs-toggle="tab" data-bs-target="#nav-Special" type="button" role="tab" aria-controls="nav-Special" aria-selected="false">Special</button>
+                                <div class="nav nav-tabs border-0 gap-3 " id="nav-tab" role="tablist">
+                                    <button class="nav-link toprated-link text-nowrap fw-semibold active" id="nav-allgames-tab" data-bs-toggle="tab" data-bs-target="#nav-allgames" type="button" role="tab" aria-controls="nav-allgames" aria-selected="true">All Games</button>
+                                    <button class="nav-link toprated-link text-nowrap fw-semibold" id="nav-inhouse-tab" data-bs-toggle="tab" data-bs-target="#nav-inhouse" type="button" role="tab" aria-controls="nav-inhouse" aria-selected="false">In-House</button>
+                                    <button class="nav-link toprated-link text-nowrap fw-semibold" id="nav-Slots-tab" data-bs-toggle="tab" data-bs-target="#nav-Slots" type="button" role="tab" aria-controls="nav-Slots" aria-selected="false">Slots</button>
+                                    <button class="nav-link toprated-link text-nowrap fw-semibold" id="nav-Live-tab" data-bs-toggle="tab" data-bs-target="#nav-Live" type="button" role="tab" aria-controls="nav-Live" aria-selected="false">Live</button>
+                                    <button class="nav-link toprated-link text-nowrap fw-semibold" id="nav-Special-tab" data-bs-toggle="tab" data-bs-target="#nav-Special" type="button" role="tab" aria-controls="nav-Special" aria-selected="false">Special</button>
                                   </div>
                             </div>
                             <div class="col-auto">
@@ -271,81 +343,129 @@
                      <!-- ***** top-rated-games section 1 start *****-->
                     <div class="container-fluid toprated-games-main position-relative">
                         <div class="toprated-games">
-                            <div class="row">
-                                <div class="col-12 heading">Top Rated Games</div>
-                                <div class="col-12 px-0 games-card-main">
-                                    <div class="row mx-0">
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4 position-relative">
-                                                    <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                    <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4">
-                                                    <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4 position-relative">
-                                                    <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                    <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4 position-relative">
-                                                    <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                    <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4">
-                                                    <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="games-card">
-                                                <div class="games-img rounded-4">
-                                                    <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
-                                                </div>
-                                                <div class="text-center games-card-title fw-semibold">Push Gaming</div>
-                                                <div class="text-center">
-                                                    <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
-                                                </div>
-                                            </div>
+                            <div class="row position-relative">
+                                <div class="col-12 px-0">
+                                    <div class="row mx-0 align-items-center">
+                                        <div class="col heading">Top Rated Games</div>
+                                        <div class="col-5 d-md-none d-block">
+                                            <a href="javascript:;" class="btn viewall-btn fw-semibold border-0">View All</a>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12 games-card-main">
+                                    <div class="swiper mySwiper cardSwiper">
+                                        <div class="swiper-wrapper">
+                                                <div class="swiper-slide ">
+                                                  <div class="games-card h-100">
+                                                    <div class="games-information fw-semibold d-flex align-items-center gap-3 d-md-none d-block">
+                                                        Evolution
+                                                        <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                    </div>
+                                                      <div class="games-img rounded-4 position-relative">
+                                                          <img src="assets/Img/index/card-icon1.svg" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                          <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                                      </div>
+                                                      <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                      <div class="text-center">
+                                                          <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="swiper-slide ">          
+                                                    <div class="games-card h-100">
+                                                        <div class="games-information fw-semibold d-flex align-items-center gap-3 d-md-none d-block">
+                                                            NolimitCity
+                                                            <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                                <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                            </span>
+                                                        </div>
+                                                        <div class="games-img rounded-4">
+                                                            <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        </div>
+                                                        <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                        <div class="text-center">
+                                                            <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                  <div class="games-card h-100">
+                                                    <div class="games-information fw-semibold d-flex align-items-center d-md-none d-block gap-3">
+                                                        Pragmatic Play
+                                                        <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                    </div>
+                                                      <div class="games-img rounded-4 position-relative">
+                                                          <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                          <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
+                                                      </div>
+                                                      <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                      <div class="text-center">
+                                                          <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                  <div class="games-card h-100">
+                                                    <div class="games-information fw-semibold d-flex align-items-center d-md-none d-block gap-3">
+                                                        Pragmatic Play
+                                                        <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                    </div>
+                                                      <div class="games-img rounded-4 position-relative">
+                                                          <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                          <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
+                                                      </div>
+                                                      <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                      <div class="text-center">
+                                                          <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                  <div class="games-card h-100">
+                                                    <div class="games-information fw-semibold d-md-none d-block d-flex align-items-center gap-3">
+                                                        Evolution
+                                                        <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                    </div>
+                                                      <div class="games-img rounded-4">
+                                                          <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                      </div>
+                                                      <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                      <div class="text-center">
+                                                          <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                  <div class="games-card h-100">
+                                                    <div class="games-information fw-semibold d-md-none d-block d-flex align-items-center gap-3">
+                                                        Evolution
+                                                        <span class="games-information-icon d-inline-flex justify-content-center align-items-center">
+                                                            <img src="assets/img/index/information.svg" alt="information" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                    </div>
+                                                      <div class="games-img rounded-4">
+                                                          <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                      </div>
+                                                      <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
+                                                      <div class="text-center">
+                                                          <a href="javascript:;" class="btn text-decoration-none play-btn fw-bold rounded-3 d-inline-flex justify-content-center align-items-center " type="button">Play Now</a>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                        </div>
+                                        <div class="swiper-button-prev-unique d-md-none d-inline"><img src="assets/img/index/prev.svg" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                        <div class="swiper-button-next-unique d-md-none d-inline"><img src="assets/img/index/next.svg" alt="next" class="h-100 w-100 img-fluid"></div>
+                                    </div>
+                                </div>
+                             
                             </div>
                         </div>
                     </div>
@@ -1736,5 +1856,39 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
+    <!-- swiper slider js-->
+    <script src="assets/libs/swiper-js/js/swipejs.js"></script>
+
+    <!-- slider js  -->
+    <script>
+   var swiper = new Swiper(".cardSwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next-unique",
+      prevEl: ".swiper-button-prev-unique",
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        430: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 25,
+        },
+      },
+});
+    </script>
 </body>
 </html>
