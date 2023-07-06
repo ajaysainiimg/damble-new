@@ -25,7 +25,7 @@
                 width: 224px;
                 color: #FFF;
                 font-size: 12px;
-                font-family: Montserrat;
+                font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
@@ -61,7 +61,7 @@
                     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
                     color: rgba(147, 172, 211, 0.50);
                     font-size: 12px;
-                    font-family: Montserrat;
+                    font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
@@ -100,13 +100,64 @@
             & .usdTxt{
                 color: #93ACD3;
                 font-size: 12px;
-                font-family: Montserrat;
+                font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
                 border-left: 1px solid #00A300;
                 padding-left: 4px;
             }
+        }
+    }
+}
+
+.headerFluidlg{
+    background: #161F2C;
+    padding: 22px;
+    & .gd{
+        & img{
+            margin-right: 21px;
+            width: 36px;
+            height: 19px;
+        }
+    }
+    & .gdTxt{
+        & img{
+            width: 118px;
+            height: 19px;
+        }
+    }
+    & .signBtn{
+        border-radius: 4px;
+        background: #6324D7;
+        height: 30px;
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+        padding: 8px 17px;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    & .logBtn{
+        border-radius: 4px;
+        background: #00990A;
+        height: 30px;
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+        padding: 8px 22px;
+        margin-right: 10px;
+        &:hover{
+            opacity: 0.7;
         }
     }
 }
@@ -432,18 +483,19 @@
         max-width: 700px !important;
         & .modal-content {
             border: none;
-            filter: drop-shadow(5px 5px 30px rgba(86, 36, 62, 0.4));
             border-radius: 20px;
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
             background-color: #504f70;
-            background-image: url(./../../assets/img/modalbg.png);
+            background-image: url(./../img/modalbg.png);
             background-position: top left;
             background-size: cover;
             background-repeat: no-repeat;
-
+            box-shadow: 0 2px 2px rgba(0,0,0,.25);
+            -webkit-filter: drop-shadow(5px 5px 30px rgba(99,36,215,.4));
+            filter: drop-shadow(5px 5px 30px rgba(99,36,215,.4));
             & .modal-header {
                 padding: 20px 30px;
-                background-color: #17212F;
+                // background-color: #17212F;
                 border-radius: 20px 20px 0 0 ;
                 border-bottom: none;
                 & button {
@@ -458,7 +510,7 @@
             }
             & .modal-body {
                 padding: 0 30px 30px 30px;
-                background-color: #17212F;
+                // background-color: #17212F;
                 border-radius: 0 0 20px 20px ;
                 & .userName {
                     color: #FFF;
@@ -475,9 +527,30 @@
                     }
                 }
                 & .dambleUser{
+                    position: relative;
+                    &.dambleUser1{
+                        &::after{
+                            content:'';
+                            width: 1px;
+                            height: 430px;
+                            background-color: #00A300;
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                    &::after{
+                        content:'';
+                        width: 1px;
+                        height: 470px;;
+                        background-color: #00A300;
+                        position: absolute;
+                        right: 0;
+                    }
                     & img{
                         width:100%;
-                        height: 228px;
+                        max-height: 228px;
+                        height:100%;
+                        object-fit: contain;
                     }
                 }
                 & .eye{
@@ -491,9 +564,9 @@
                     }
                 }
                 & .logoLine{
-                    margin-top: 45px;
-                    & img{
-                        width: 70px;
+                    margin-top: 70px;
+                    & img{    
+                        width: 62px;
                         height: 50px;
                     }
                 }
@@ -510,7 +583,7 @@
                     font-weight: 700;
                     line-height: normal;
                     & .pillAnchor{
-                        width: 136px;
+                        width: 100%;
                         height: 38px;
                         border-radius: 7px;
                         background: #252E39;
@@ -522,7 +595,7 @@
                             margin-right: 5px;
                         }
                         &.active{
-                            width: 136px;
+                            width: 100%;
                             height: 38px;
                             border-radius: 7px;
                             background: #00990A;
@@ -531,10 +604,10 @@
                         }
                     }
                 }
-                & .line{
-                    width: 100px;
+                & .line{    
+                    width: 100%;
                     height: 1px;
-                    background-color:#676A79 ;
+                    background-color: #676a79;
                     margin-top: 70px;
                 }
                 & .form {
@@ -931,6 +1004,106 @@
     } 
 }
 
+.footerSection {
+    & .borderd {
+        border-top: 1px solid #00990A;
+        &.smBorderd {
+        border-top: 0.5px solid #00990A !important;
+        }
+    }
+    & .paymentHeading {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 49px;
+    }
+    & .card {
+        background: rgba(99, 36, 215, 0.5);
+        & .card-body {
+            & .logos{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    height: 100%;
+                }
+            }
+        }
+        &.cardLogo{
+            border-radius: 23px;
+            & .card-body {
+                & .logos {
+                    max-height: 45px;
+                }
+            }
+        }
+        &.cryptoLogo {
+            border-radius: 9px;
+            & .card-body {
+                & .logos {
+                    max-height: 45px;
+                    max-width: 45px;
+                }
+                & .ragisterbonus {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    & span {
+                        color: #FFD700;
+                    }
+                }
+                & .ragisterBtn {
+                    background-color: #00990A;
+                    border-radius: 7px;
+                    height: 39px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    transition: all ease-in-out 0.3s;
+                    &:hover{
+                        background-color: darken(#00990A, 5);
+                    }
+                }
+            }
+        }
+        &.bardcard {
+            border-radius: 15px;
+            & .card-body {
+                & .logos {
+                    max-height: 50px;
+                }
+            }
+        }
+    }
+    & .navContent {
+        & .navLink {
+            font-size: 20px;
+            line-height: 24px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: darken(#fff, 15) !important;
+                cursor: pointer;
+            }
+        }
+    }
+    & .democontent {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    & .logoImg  {
+        height: 35px;
+        & img {
+            height: 100%;
+        }
+    }
+    & .copyright {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
 
 // toprated-games-main section start
 .toprated-games-main {
@@ -1096,3 +1269,1857 @@
     }
 }
 // help-us section end
+
+
+@include media-breakpoint(basic) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .headerFluid{
+        padding-left: 0;
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                            }
+                        }
+                        &::after{
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+            }
+        }
+        & .gdTxt{
+            & img{
+            }
+        }
+        & .signBtn{
+            &:hover{
+            }
+        }
+        & .logBtn{
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{    
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .headerFluid{
+        & .headerRow{
+            & .logoWrapper{
+                & .logo{
+                    left: 0;
+                    & .image{
+                    }
+                }
+            }
+            & .headerRyt{
+                & .pills{
+                    & .pillAnchor{
+                        & img{
+                        }
+                        &.active{
+                        }
+                    }
+                }
+                & .group{
+                    & .searchInp{
+                        &:focus{
+                        }
+                    }
+                    & .searchIcon{
+                        & img{
+                        }
+                    }
+                }
+                & .msgIcon{
+                    & img{
+                    }
+                }
+                & .globeIcon{
+                    & img{
+                    }
+                }
+                & .usdTxt{
+                }
+            }
+        }
+    }
+    .headerFluidlg{
+        & .gd{
+            & img{
+                margin-right: 8px;
+                width: 32px;
+                height: 19px;
+            }
+        }
+        & .gdTxt{
+            & img{
+                width: 100px;
+                height: 19px;
+            }
+        }
+        & .signBtn{
+            padding: 8px 12px;
+            &:hover{
+            }
+        }
+        & .logBtn{
+            padding: 8px 12px;
+            &:hover{
+            }
+        }
+    }
+    .ragisterModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & button {
+                    }
+                    & .btnClose{
+                    }
+                }
+                & .modal-body {
+                    & .userName {
+    
+                        & span {
+                        }
+                    }
+                    & .dambleUser{
+                        &.dambleUser1{
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &::after{
+                            display: none;
+                        }
+                        & img{
+                        }
+                    }
+                    & .eye{
+                        & img{
+                        }
+                    }
+                    & .logoLine{
+                        & img{   
+                        }
+                    }
+                    & .pills{
+                        & .pillAnchor{
+                            & img{
+                            }
+                            &.active{
+                            }
+                        }
+                    }
+                    & .line{    
+                        &:first-child{
+                        }
+                        &:last-child{
+                        }
+                    }
+                    & .form {
+                        & .registerHeading {
+                        }
+    
+                        & .form-control {
+    
+                            &::placeholder {
+                            }
+                        }
+                        & .form-controll {
+                            &:focus{
+                            }
+                            &::placeholder {
+                            }
+                        }
+                        & .forget{
+                        }
+                        & .form-check {
+                            & .form-check-input {
+                                width: 10px;
+                                height: 10px;
+                                &:checked {
+                                }
+                            }
+    
+                            & .form-check-label {
+                                & span {
+                                }
+                            }
+                        }
+    
+                        & .ragisterBtn {
+                            &:hover {
+                            }
+                        }
+                        & .para{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .topMargin{
+                        }
+                        & .para1{
+                            & .paraAnchor{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                }
+                & .modal-footer {
+                    & .footerImg{
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
