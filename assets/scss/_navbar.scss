@@ -23,9 +23,20 @@
     background: #161F2C;
 }
 
-#main{
-    margin-left: 217.286px;
-    margin-top: 60px;
-    padding: 45.65px 62.81px 0px 99.71px;
-    transition: all 0.3s;
+.main{
+    & .mainContaint {
+        margin-left: 217.286px;
+        margin-top: 60px;
+        padding: 45.65px 62.81px 0px 99.71px;
+        transition: all 0.3s;
+    }
+    & .footerSection {
+        margin-left: 217px;
+        background: #131C27;
+        margin-top: 78px;
+        & .helpSection {
+            padding: 45.65px 62.81px 0px 99.71px;
+
+        }
+    }
 }

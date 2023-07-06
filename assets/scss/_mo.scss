@@ -1,0 +1,219 @@
+.topratedgames-tab-main {
+    border-radius: 10px;
+    // background: #161F2C;
+    padding: 0.7px;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        filter: blur(0.5px);
+        // background: linear-gradient(90deg, rgba(85,120,254,1) 42%, rgba(0,153,10,1) 63%);
+        background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
+        top: 0;
+        left: 0;
+        z-index: -5;
+        border-radius: 10px;
+    }
+    & .topratedgames-tab-content {
+        padding: 13px 15px;
+        border-radius: 10px;
+        background: #161F2C;
+        & .toprated-link {
+            font-size: 13px;
+            color: #93ACD3;
+            border-radius: 7px;
+            padding: 5px 12px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $white;
+                border-radius: 7px;
+                border: 0.4px solid #56667F;
+                background: #252E39;
+            }
+        }
+        & .toprated-link.active {
+            color: $white;
+            border-radius: 7px;
+            border: 0.4px solid #acadae91;
+            background: #252E39;
+        }
+        & .search-bar-group {
+            border: 1px solid #93ACD3;
+            opacity: 0.5;
+            & .search-input {
+                color: #93ACD3;
+                font-size: 12px;
+                &::placeholder {
+                    color: #93ACD3;
+                    font-size: 12px;
+                }
+            }
+        }
+    } 
+}
+
+// toprated-games-main section start
+.toprated-games-main {
+    // background-color: #161F2C;
+    padding: 0.7px;
+    margin-top: 41px;
+    border-radius: 18px;
+    // filter: blur(0.5px);
+    // background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+        // background: linear-gradient(134deg, rgb(85 120 254 / 59%) 42%, rgb(0 153 10 / 11%) 63%);;
+        top: 0;
+        left: 0;
+        z-index: -5;
+        border-radius: 18px;
+        filter: blur(0.5px);
+    }
+    & .toprated-games {
+        border-radius: 18px;
+        background-color: #161F2C;
+        padding: 22px 56px 28px 49px ;
+        z-index: 5;
+        & .heading {
+            font-size: 30px;
+            font-weight: 800;
+            color: $white;
+            line-height: normal;
+        }
+        & .games-card-main {
+            padding-top: 30px;
+            & .games-card {
+                & .games-img {
+                    & .games-img-tag {
+                        color: $white;
+                        border-radius: 0px 18px 0px 17px;
+                        background: #5578FE;
+                        box-shadow: 0px 0px 10px 0px #000;
+                        width: 37px;
+                        height: 17px;
+                        font-size: 8px;
+                    }
+                }
+                & .games-card-title {
+                    color: #93ACD3;
+                    font-size: 11px;
+                    padding: 14px 0;
+                    line-height: normal;
+                }
+                & .play-btn {
+                    // height: 39px;
+                    // width: 93px;
+                    padding: 10px 15px;
+                    background: #6324D7;
+                    font-size: 13px;
+                    color: #fff;
+                }
+            }
+        }
+        & .tab-pane {
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+// toprated-games-main section end
+
+// recent-big-wins section start
+.recent-big-wins {
+    margin-top: 76px;
+    & .toprated-games {
+        border-radius: 18px;
+        background-color: #161F2C;
+        padding: 22px 0 28px 0 ;
+        z-index: 5;
+        & .games-card-main {
+            padding: 30px 56px 0 49px;
+           
+        }
+    }
+}
+// recent-big-wins section end
+
+// help-us section start
+.help-us {
+    & .helpus-left {
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-para {
+            color: #93ACD3;
+            font-size: 11px;
+        }
+        & .help-us-paratwo {
+            padding-top: 30px;
+        }
+        & .showmore-btn-main {
+            padding-top: 28px;
+            & .showmore-btn {
+                color: #04E929;
+                font-size: 18px;
+            }
+        }
+    }
+    & .helpus-right {
+        padding-left: 28px;
+        &::before {
+            content: '';
+            top: 10%;
+            left: 0;
+            position: absolute;
+            background: rgba(147, 172, 211, 0.35);
+            transform: translateY(10%);
+            height: 80%;
+            width: 1px;
+
+        }
+        & .help-us-heading {
+            font-size: 23px;
+            color: #fff;
+        }
+        & .help-us-textarea {
+            padding-top: 37px;
+            padding-bottom: 12px;
+            & .text-area {
+                height: 98px;
+                background: #93abd336;
+                resize: none;
+                font-size: 11px;
+                border: none;
+                color: #C6C4C4;
+                padding: 9px 87px 0 17px;
+                &::placeholder {
+                    color: #C6C4C4 !important;
+                    font-size: 11px;
+                    // padding: 9px 87px 0 17px;
+                }
+            }
+            & .textarea-title {
+                font-size: 8px;
+                padding-top: 6px;
+                color: #93ACD3;
+            }
+        }
+        & .leavemsg-btn {
+                font-size: 11px;
+                background-color: #00990A;
+                color: #fff;
+                padding: 6px 24px;
+        }
+        & .helpus-email-main {
+            padding-top: 12px;
+            color: #93ACD3;
+            font-size: 10px;
+            & .helpus-email {
+                color: #04E929;
+            }
+        }
+    }
+}
+// help-us section end
