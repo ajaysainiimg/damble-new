@@ -1206,8 +1206,6 @@
     padding: 0.7px;
     margin-top: 41px;
     border-radius: 18px;
-    // filter: blur(0.5px);
-    // background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
     &::before {
         content: '';
         position: absolute;
@@ -1232,39 +1230,74 @@
             color: $white;
             line-height: normal;
         }
+        & .viewall-btn {
+            border-radius: 6px;
+            background: #161F2C;
+            color: #DFDFDF;
+            font-size: 8px;
+            padding: 6px 6px 7px 6px;
+        }
         & .games-card-main {
             padding-top: 30px;
-            & .games-card {
-                & .games-img {
-                    & .games-img-tag {
-                        color: $white;
-                        border-radius: 0px 18px 0px 17px;
-                        background: #5578FE;
-                        box-shadow: 0px 0px 10px 0px #000;
-                        width: 37px;
-                        height: 17px;
+            & .mySwiper {
+                position: unset;
+                & .games-card {
+                    & .games-information {
                         font-size: 8px;
+                        color: #93ACD3;
+                        padding-bottom: 7px;
+                        & .games-information-icon {
+                            height: 10px;
+                            width: 10px;
+                        }
                     }
-                }
-                & .games-card-title {
-                    color: #93ACD3;
-                    font-size: 11px;
-                    padding: 14px 0;
-                    line-height: normal;
-                }
-                & .play-btn {
-                    // height: 39px;
-                    // width: 93px;
-                    padding: 10px 15px;
-                    background: #6324D7;
-                    font-size: 13px;
-                    color: #fff;
+                    & .games-img {
+                        & .games-img-tag {
+                            color: $white;
+                            border-radius: 0px 18px 0px 17px;
+                            background: #5578FE;
+                            box-shadow: 0px 0px 10px 0px #000;
+                            width: 37px;
+                            height: 17px;
+                            font-size: 8px;
+                        }
+                    }
+                    & .games-card-title {
+                        color: #93ACD3;
+                        font-size: 11px;
+                        padding: 14px 0;
+                        line-height: normal;
+                    }
+                    & .play-btn {
+                        // height: 39px;
+                        // width: 93px;
+                        padding: 10px 15px;
+                        background: #6324D7;
+                        font-size: 13px;
+                        color: #fff;
+                    }
                 }
             }
         }
         & .tab-pane {
             transition: all 0.3s ease-in-out;
         }
+    }
+    & .swiper-button-next-unique {
+        height: 25px;
+        width: 25px;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+    & .swiper-button-prev-unique {
+        height: 25px;
+        width: 25px;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 45px;
     }
 }
 // toprated-games-main section end
@@ -3012,6 +3045,17 @@
         & .copyright {
             font-size: 13px;
             line-height: 18px;
+        }
+    }
+    .main{
+        & .mainContaint {
+            margin-left: 0;
+        }
+        & .footerSection {
+            margin-left:0;
+            & .helpSection {
+    
+            }
         }
     }
 }
