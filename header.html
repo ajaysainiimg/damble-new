@@ -54,16 +54,16 @@
 
     <!-- header start -->
     <header>
-        <div class="container-fluid headerFluid">
+        <div class="container-fluid headerFluid d-lg-block d-none">
             <div class="row headerRow">
-                <div class="col-auto px-0">
+                <div class="col-auto px-0 d-xl-block d-none">
                     <div class="logoWrapper">
                         <div class="logo">
                             <img class="image" src="assets/img/dambleLogo.svg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col px-0">
+                <div class="col-xl col-12 px-0">
                     <div class="row headerRyt mx-0">
                         <div class="col d-flex align-items-center">
                             <ul class="pills d-flex align-items-start mb-0 ps-0">
@@ -86,11 +86,23 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid headerFluidlg d-block d-lg-none">
+            <div class="row align-items-center">
+                <div class="col-6 d-flex justify-content-start align-items-center">
+                    <div class="gd"><img src="assets/img/gd.svg" alt=""></div>
+                    <div class="gdTxt"><img src="assets/img/logotxt.svg" alt=""></div>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-end">
+                    <button class="logBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
+                    <button class="signBtn"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- header end -->
 
     <!-- card start -->
-    <div class=" aboutFluid my-5">
+    <!-- <div class=" aboutFluid my-5">
         <div class="row gy-5">
             <div class="col-lg-3 col-6">
                 <div class="aboutCard h-100">
@@ -145,31 +157,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- card end -->
 
     <div class="container-fluid">
         <div class='footerSection my-5 pt-5'>
             <div class='row gap-md-5 gap-4'>
-                <div class='col-10 mx-auto'><div class='borderd'></div></div>
-                <div class='col-12 text-center text-white paymentHeading text-uppercase py-2'>payment methods</div>
-                <div class='col-lg-10 col-12 mx-auto mb5 pb3'>
-                    <div class='cardLogo card border-0 shadow-none'>
-                        <div class='card-body '>
-                            <div class='row mx-0 justify-content-center align-items-center gap-2'>
-                                <div class='col-auto d-md-block d-none'><div class='logos'><img src="assets/img/crypto.svg" alt='Ethereum'/></div></div>
-                                <div class='col-auto d-md-block d-none'><div class='logos'><img src='assets/img/Ethereum_logo.svg' alt='Metamask'/></div></div>
-                                <div class='col-auto'><div class='logos'><img src='assets/img/tether-usdt-logo.svg' alt='Crypto'/></div></div>
-                                <div class='col-auto d-md-block d-none'><div class='logos'><img src='assets/img/solana-sol-logo.svg' alt='Sumsung'/></div></div>
-                                <div class='col-auto'><div class='logos'><img src='assets/img/Mastercard-logo 1.svg' alt='MasterCard'/></div></div>
-                                <div class='col-auto'><div class='logos'><img src='assets/img/Polkadot-Symbol.svg' alt='ApplePay'/></div></div>
-                                <div class='col-auto'><div class='logos'><img src='assets/img/matic-logo.svg' alt='GooglePay'/></div></div>
-                                <div class='col-auto'><div class='logos'><img src='assets/img/dogecoin-doge-logo.svg' alt='VisaCard'/></div></div>
-                                <div class='col-auto d-md-none d-block'><div class='logos'><img src='assets/img/solana-sol-logo.svg' alt='Sumsung'/></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- <div class='col-10 mx-auto'><div class='borderd'></div></div> -->
+                
                 <div class='col-12'>
                     <div class='cryptoLogo card border-0 shadow-none'>
                         <div class='card-body'>
@@ -199,7 +194,25 @@
                         </div>
                     </div>
                 </div>
-                <div class='col-12 mt-lg-5 mt-md-4 mt-3 mb-lg-3'>
+                <div class='col-12 text-center text-white paymentHeading text-uppercase py-2'>payment methods</div>
+                <div class='col-lg-10 col-12 mx-auto mb5 pb3'>
+                    <div class='cardLogo card border-0 shadow-none'>
+                        <div class='card-body '>
+                            <div class='row mx-0 justify-content-center align-items-center gap-2'>
+                                <div class='col-auto d-md-block d-none'><div class='logos'><img src="assets/img/Ethereum_logo.svg" alt='Ethereum'/></div></div>
+                                <div class='col-auto d-md-block d-none'><div class='logos'><img src='assets/img/me' alt='Metamask'/></div></div>
+                                <div class='col-auto'><div class='logos'><img src='assets/img/tether-usdt-logo.svg' alt='Crypto'/></div></div>
+                                <div class='col-auto d-md-block d-none'><div class='logos'><img src='assets/img/solana-sol-logo.svg' alt='Sumsung'/></div></div>
+                                <div class='col-auto'><div class='logos'><img src='assets/img/Mastercard-logo 1.svg' alt='MasterCard'/></div></div>
+                                <div class='col-auto'><div class='logos'><img src='assets/img/Polkadot-Symbol.svg' alt='ApplePay'/></div></div>
+                                <div class='col-auto'><div class='logos'><img src='assets/img/matic-logo.svg' alt='GooglePay'/></div></div>
+                                <div class='col-auto'><div class='logos'><img src='assets/img/dogecoin-doge-logo.svg' alt='VisaCard'/></div></div>
+                                <div class='col-auto d-md-none d-block'><div class='logos'><img src='assets/img/solana-sol-logo.svg' alt='Sumsung'/></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-12 mt-lg5 mt-md-4 mt-3 mb-lg-3'>
                     <ul class='list-unstyled navContent d-flex align-items-center justify-content-md-center justify-content-between gap-xl-5 gap-sm-4 gap-2  m-0'>
                         <li class='navLink fw-semibold text-center text-white'>About Us</li>
                         <li class='navLink fw-semibold text-center text-white'>AML Policy</li>
@@ -232,7 +245,7 @@
 
     <!-- modal start1 -->
         <div class="modal fade ragisterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -248,25 +261,29 @@
                                 <div class='userName fw-bolder text-white text-center'>WELCOME TO DAMBLE <br/> <span class='fw-normal'>YOUR GAMING JOURNEY STARTS NOW</span> </div>
                             </div>
                             <div class="col-12">
-                                <div class="row mt-5">
-                                    <div class="col-auto line"></div>
+                                <div class="row align-items-center mx-0 mt-md-5">
                                     <div class="col">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-auto">
                                         <div class="logoLine d-flex justify-content-center">
                                             <img src="assets/img/white.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-auto line"></div>
+                                    <div class="col">
+                                        <div class="line"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-lg-6 border-start border-success'>
+                    <div class='col-lg-6'>
                         <form class='row mx-0 form gap-3'>
                         <div class='col-12 fw-bold text-white registerHeading mb-3 d-lg-block d-none'>Sign Up</div>
                         <div class="col-12">
                             <ul class="pills d-flex align-items-start mb-0 ps-0">
-                                <li class="casinoPill"><a href="#exampleModal" class="pillAnchor active d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Email </a></li>
-                                <li class="casinoPill"><a href="javascript:;" class="pillAnchor d-flex justify-content-center align-items-center">Phone number </a></li>
+                                <li class="casinoPill w-50"><a href="#exampleModal" class="pillAnchor  d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Email </a></li>
+                                <li class="casinoPill w-50"><a href="javascript:;" class="pillAnchor active d-flex justify-content-center align-items-center">Phone number </a></li>
                             </ul>
                         </div>
                         <div class='col-12'><input type="text" class="form-control border-0 shadow-none" id="exampleForm2" placeholder="Email"/></div>
@@ -276,7 +293,7 @@
                         </div></div>
                         <div class='col-12'><input type="text" class="form-controll border-0 shadow-none" id="exampleForm4" placeholder="Enter Referral/Promo Code "/></div>
                         <div class='col-12 mx-md-0 mx-auto'>
-                            <div class='form-check d-flex'>
+                            <div class='form-check d-flex align-items-center'>
                                 <input type='checkbox' class="form-check-input" id='kk'>
                                 <label for='kk' class='form-check-label'>I agree to the <span>User Agreement</span> & Confirm I am at least 18 years old</label>
                             </input>
@@ -311,7 +328,7 @@
 
     <!-- modal start2 -->
         <div class="modal fade ragisterModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="btn-close btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -321,25 +338,29 @@
                     <div class='col-lg-6 mb-lg-0 mb-4'>
                         <div class="row">
                             <div class="col-12">
-                                <div class='dambleUser d-flex px-sm-0 px-4'><img src="assets/img/modalImg1.png" alt=""></div>
+                                <div class='dambleUser d-flex px-sm-0 px-4 dambleUser1'><img src="assets/img/modalImg1.png" alt=""></div>
                             </div>
                             <div class="col-12">
                                 <div class='userName fw-bolder text-white text-center'>WELCOME TO DAMBLE <br/> <span class='fw-normal'>YOUR GAMING JOURNEY STARTS NOW</span> </div>
                             </div>
                             <div class="col-12">
-                                <div class="row mt-5">
-                                    <div class="col-auto line"></div>
+                                <div class="row mx-0 align-items-center mt-md-5">
                                     <div class="col">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="col-auto">
                                         <div class="logoLine d-flex justify-content-center">
                                             <img src="assets/img/white.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-auto line"></div>
+                                    <div class="col">
+                                        <div class="line"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class='col-lg-6 border-start border-success'>
+                    <div class='col-lg-6'>
                         <form class='row mx-0 form gap-3'>
                         <div class='col-12 fw-bold text-white registerHeading mb-3 d-lg-block d-none'>Sign In</div>
                         <div class='col-12'><input type="text" class="form-control border-0 shadow-none" id="exampleForm2" placeholder="Email\Phone number"></div>
