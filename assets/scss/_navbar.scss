@@ -12,7 +12,7 @@
     top: 60px;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 217.286px;
     z-index: 996;
     transition: all 0.3s;
     padding: 20px;
@@ -23,15 +23,20 @@
     background: #161F2C;
 }
 
-#main{
-    margin-left: 300px;
-    margin-top: 60px;
-    padding: 45.65px 62.81px 0px 99.71px;
-    transition: all 0.3s;
-}
-.footerSection {
-    padding: 29px 62.81px 31px 99.71px;
-    margin-left: 300px;
-    background: #131C27;
-    margin-top: 78px;
+.main{
+    & .mainContaint {
+        margin-left: 217.286px;
+        margin-top: 60px;
+        padding: 45.65px 62.81px 0px 99.71px;
+        transition: all 0.3s;
+    }
+    & .footerSection {
+        margin-left: 217px;
+        background: #131C27;
+        margin-top: 78px;
+        & .helpSection {
+            padding: 45.65px 62.81px 0px 99.71px;
+
+        }
+    }
 }
