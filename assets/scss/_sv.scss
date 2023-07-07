@@ -116,7 +116,7 @@
 
             }
             & .logos{
-
+                height: 42px;
                 & img{
 
                 }
@@ -137,23 +137,23 @@
 @include media-breakpoint-down(xl) {
     .bonusCard{
       
-        &::before{
-            background: #161F2C;
-            filter: blur(0.5px);
-            border: 1px solid #161F2C ;
-        }
+        // &::before{
+        //     background: #161F2C;
+        //     filter: blur(0.5px);
+        //     border: 1px solid #161F2C ;
+        // }
         & .bonusSection{
-        
+            padding: 39px 20px 39px 20px;
             & .cardContent{
                 & .heading{
-                    font-size: 23px;
-                    line-height: 33px;
+                    // font-size: 23px;
+                    // line-height: 33px;
                         & span{
        
                         }
                       }
                       & .subheading{
-                        font-size: 20px;
+                        // font-size: 20px;
                       }
             }
             & .cardBtn{
@@ -188,13 +188,16 @@
         
             & .cardContent{
                 & .heading{
-             
+                    font-size: 35px;
+                    line-height: 42px;
+
                         & span{
+                        // font-size: 30px;
        
                         }
                       }
                       & .subheading{
-
+                        font-size: 30px;
                       }
             }
             & .cardBtn{
@@ -228,14 +231,16 @@
         & .bonusSection{
         
             & .cardContent{
-                & .heading{
-             
+                & .heading{ 
+                    font-size: 30px;
+                    line-height: 39px;
+
                         & span{
        
                         }
                       }
                       & .subheading{
-
+                        font-size: 25px;
                       }
             }
             & .cardBtn{
@@ -263,28 +268,32 @@
 @include media-breakpoint-down(sm) {
     .bonusCard{
 
-        &::before{
-     
+       &::before{
+            background: #161F2C;
+            filter: blur(0.5px);
+            border: 1px solid #192d49 ;
         }
         & .bonusSection{
             padding: 26px 38px 38px 26px;
             & .cardContent{
                 & .heading{
-                    font-size: 18px;
-                  line-height: 24px;
+                    font-size: 20px;
+                    line-height: 24px;
+
                         & span{
        
                         }
                       }
                       & .subheading{
                         line-height: 24px;
-                        font-size: 16px;
+                        font-size: 18px;
 
                       }
             }
             & .cardBtn{
-                height: 56px;
+                height: 54px;
                 width: 137px;
+                font-size: 18px;
             }
             & .logos{
                 height: 30px;
@@ -295,6 +304,54 @@
            
             & .logos2{
                 height: 45px;
+                & img{
+
+                }
+            }
+        }
+    
+        
+    }
+}
+@media screen and (max-width:430px) {
+    .bonusCard{
+// display: none;
+       &::before{
+            background: #161F2C;
+            filter: blur(0.5px);
+            border: 1px solid #161F2C ;
+        }
+        & .bonusSection{
+            padding: 26px 38px 38px 26px;
+            & .cardContent{
+                & .heading{
+                    font-size: 13px;
+                    line-height: 20px;
+
+                        & span{
+       
+                        }
+                      }
+                      & .subheading{
+                        line-height: 19px;
+                        font-size: 11px;
+
+                      }
+            }
+            & .cardBtn{
+                height: 44px;
+                width: 137px;
+                font-size: 13px;
+            }
+            & .logos{
+                height: 17px;
+                & img{
+
+                }
+            }
+           
+            & .logos2{
+                height: 40px;
                 & img{
 
                 }
@@ -348,7 +405,7 @@
                     background-color: #222D3E;
                     border-radius: 19.955px;
                     height: 39.91px;
-                    overflow: hidden;
+                    overflow:auto hidden;
                     display: flex;
                     flex-wrap: nowrap;
                     white-space: nowrap;
@@ -820,12 +877,13 @@
 @include media-breakpoint-down(sm) {
     .dambleTable{
         & .sectionInner{
-          
-            &::before{
-       
             
+            &::before{
+                
+                
             }
             .tableCard{
+      
 
                 &::before{
      
@@ -834,7 +892,9 @@
                 & nav{
                     margin: 29px 18px 0px 18px;
                     & .nav-tabs{
-                
+                &::-webkit-scrollbar{
+                    display: none;
+                } 
                         & .nav-item{
                             & .nav-link{
                                 font-size: 14px;
@@ -850,6 +910,9 @@
                     margin: 15px 18px 53px 18px;
                     & .tab-pane {
                         & .table{
+                            &::-webkit-scrollbar{
+                                height: 1px;
+                            }
                             & thead{
                                 & tr{
                                     & th{
@@ -1425,6 +1488,352 @@
                                 }
 
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// hero section 
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                            
+                            }
+                            & .casinoSubheading {
+                      
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                          
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                                font-size: 30px;
+                            }
+                            & .casinoSubheading {
+                                font-size: 14px;
+
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                                    font-size: 65px;
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                            
+                            }
+                            & .casinoSubheading {
+                      
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                                    font-size: 60px;
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                            
+                            }
+                            & .casinoSubheading {
+                      
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                                font-size: 50px;
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                            
+                            }
+                            & .casinoSubheading {
+                      
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                          
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .heroSection {
+        & .sectionInner {
+     
+            &::before {
+          
+            }
+            & .mainOuter {
+
+                & .main {
+                
+                    &::before {
+
+                    }
+                    &::after{
+       
+                        
+                    }
+                    & .innermain {
+        
+                        & .contentSide {
+                            & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
+  
+                            }
+                            & .casinoHeading {
+                            
+                            }
+                            & .casinoSubheading {
+                      
+                            }
+                            & .reward {
+                                & .signUp, & .mainHeading{
+                         
+                                    & span {
+                                
+                                    }
+                                }
+                                & .signUp {
+                            
+                                }
+                                & .mainHeading {
+                          
+                                }
+                            }
+                        }
+                        & .heroImg {
+                  
                         }
                     }
                 }
