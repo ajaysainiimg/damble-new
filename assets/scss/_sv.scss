@@ -1355,3 +1355,56 @@
         }
     }
 }
+//sniper card end
+
+// footer accourdin 
+.footerSection{
+    & .accordionFooter{
+        & .accordion{
+            border-radius: 6px !important;
+            background: #161F2C;
+            & .accordion-item{
+                padding: 14px 9px 3px 9px;
+                border-radius: 5px;
+                background-color: transparent !important;
+
+                & .accordion-header{
+                    & .accordion-button{
+                     
+                        height: 23px;
+                        color: #E1E1E1 !important;
+                        font-family: Montserrat;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        // border-radius: 5px;
+                        // background-color: #455264 !important;
+                        // z-index: 1;
+                        background-color: transparent;
+                        &::before{
+                            opacity: 0.20000000298023224;
+                            border-radius: 5px;
+                            background-color: #455264;
+                            position: absolute;
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            left: 0;
+                        }
+                        &:not(.collapsed)::after{
+                            background-image: url(../img/toparreo.svg);
+                            height: 10px;
+                            // transform:rotate(180deg);
+                        }
+                        &::after{
+                            background-image: url(../img/toparreo.svg);
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
