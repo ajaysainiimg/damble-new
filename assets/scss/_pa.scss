@@ -1130,6 +1130,26 @@
     }
 }
 
+.join{
+    padding: 0 73px;
+    & .joinHead{
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 37px;
+        margin-top: 35px;
+    }
+    & .col{
+        & img{
+            margin-bottom: 35px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
 
 .footerrSection {
     padding-bottom: 120px;
