@@ -1005,6 +1005,7 @@
 }
 
 .footerrSection {
+    padding-bottom: 120px;
     & .borderd {
         border-top: 1px solid #00990A;
         &.smBorderd {
@@ -1134,11 +1135,13 @@
 .accordionFooter{
     border-radius: 6px;
     background: #161F2C;
+    padding:14px 9px!important;
     & .accordion{
         & .accordion-item{
             & .accordion-header{
                 & .accordion-button{
                     border-radius: 5px;
+                    background-color:rgba(0,0,0,0.20000000298023224);
                     // opacity: 0.20000000298023224;
                     background: #455264;
                     color: #E1E1E1;
