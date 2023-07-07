@@ -17,8 +17,6 @@
     transition: all 0.3s;
     padding: 20px;
     overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #aab7cf transparent;
     box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
     background: #161F2C;
 }
@@ -36,7 +34,61 @@
         margin-top: 78px;
         & .helpSection, & .footerLinks, & .accordionFooter {
             padding: 45.65px 62.81px 0px 99.71px;
-
         }
     }
 }
+
+@include media-breakpoint-down(xl) {
+    .sidebar{
+        display: none;
+    }
+    .main{
+        & .mainContaint {
+            margin-left: 0px;
+            padding: 45px 62px 0px 62px;
+        }
+        & .footerSection {
+            margin-left: 0px;
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 45px 62px 0px 62px;
+            }
+        }
+    }
+} 
+
+@include media-breakpoint-down(lg) {
+    // .sidebar{
+    //     display: none;
+    // }
+    .main{
+        & .mainContaint {
+            // margin-top: 50px;
+            padding: 40px 50px 0px 50px;
+        }
+        & .footerSection {
+            margin-top: 60px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 40px 50px 0px 50px;
+            }
+        }
+    }
+} 
+
+@include media-breakpoint-down(sm) {
+    // .sidebar{
+    //     display: none;
+    // }
+    .main{
+        & .mainContaint {
+            // margin-top: px;
+            padding: 30px 25px 0px 25px;
+        }
+        & .footerSection {
+            margin-top: 40px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 30px 25px 0px 25px;
+            }
+        }
+    }
+} 
