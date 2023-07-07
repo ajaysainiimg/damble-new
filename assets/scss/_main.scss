@@ -1,23 +1,23 @@
 
 ::-webkit-scrollbar-track {
   // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: rgba($black, 0);
+  background-color: rgba(#aab7cf, 0);
 }
 
 ::-webkit-scrollbar {
   width: 6px;
-  background-color: rgba($black, 0);
+  background-color: rgba(#aab7cf, 0);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0D131C;
+  background-color: #aab7cf;
 }
 
 
 body{
   font-family: 'Montserrat', sans-serif;
   overflow: hidden auto;
-  background-color: #252E39;
+  background-color: #0D131C;
 }
 
 
