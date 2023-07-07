@@ -1180,243 +1180,243 @@
 }
 
 @include media-breakpoint-down(xl) {
-    // .spinCardsection{
+    .spinCardsection{
     
-    //     & .spinCard{
+        & .spinCard{
       
-    //         &::before{
+            &::before{
                
-    //         }
-    //         & .card-body{
+            }
+            & .card-body{
        
-    //             & .spinImg{
+                & .spinImg{
          
-    //             }
-    //             & .cardContent{ 
-    //                 left: 30px;
-    //                 top: 35px;
-    //                 & .heading{
-    //                  font-size: 16px;
-    //                     & span{
+                }
+                & .cardContent{ 
+                    // left: 30px;
+                    // top: 35px;
+                    & .heading{
+                    //  font-size: 16px;
+                        & span{
                      
-    //                     }
-    //                 }
+                        }
+                    }
         
-    //             }
-    //         }
+                }
+            }
     
-    //     }
-    //     & .cardOuter{
+        }
+        & .cardOuter{
 
-    //        &::before{
+           &::before{
 
-    //        }
-    //         & .spinCard{
+           }
+            & .spinCard{
 
-    //             &::before{
+                &::before{
         
-    //             }
-    //             & .card-body{
+                }
+                & .card-body{
            
-    //                 & .spinImg{
+                    & .spinImg{
        
-    //                 }
-    //                 & .cardContent{
-    //                     left: 50px;
-    //                     top: 35px;
+                    }
+                    & .cardContent{
+                        // left: 50px;
+                        // top: 35px;
                     
-    //                     & .heading{
-    //                         font-size: 42px;
-    //                         & span{
+                        & .heading{
+                            // font-size: 42px;
+                            & span{
                           
-    //                         }
-    //                     }
+                            }
+                        }
             
-    //                 }
-    //             }
+                    }
+                }
         
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(lg) {
-    // .spinCardsection{
+    .spinCardsection{
     
-    //     & .spinCard{
+        & .spinCard{
       
-    //         &::before{
+            &::before{
                
-    //         }
-    //         & .card-body{
+            }
+            & .card-body{
        
-    //             & .spinImg{
+                & .spinImg{
          
-    //             }
-    //             & .cardContent{
-    //                 left: 25px;
-    //                 top: 25px;
+                }
+                & .cardContent{
+                    left: 25px;
+                    top: 25px;
 
-    //                 & .heading{
-    //                     font-size:14px;
-    //                     & span{
+                    & .heading{
+                        font-size:14px;
+                        & span{
                      
-    //                     }
-    //                 }
+                        }
+                    }
         
-    //             }
-    //         }
+                }
+            }
     
-    //     }
-    //     & .cardOuter{
+        }
+        & .cardOuter{
 
-    //        &::before{
+           &::before{
 
-    //        }
-    //         & .spinCard{
+           }
+            & .spinCard{
 
-    //             &::before{
+                &::before{
         
-    //             }
-    //             & .card-body{
+                }
+                & .card-body{
            
-    //                 & .spinImg{
+                    & .spinImg{
        
-    //                 }
-    //                 & .cardContent{
+                    }
+                    & .cardContent{
            
-    //                     & .heading{
-    //                         font-size: 32px;
-    //                         & span{
+                        & .heading{
+                            font-size: 32px;
+                            & span{
                           
-    //                         }
-    //                     }
+                            }
+                        }
             
-    //                 }
-    //             }
+                    }
+                }
         
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 
 }
 
 @include media-breakpoint-down(md) {
-    // .spinCardsection{
+    .spinCardsection{
     
-    //     & .spinCard{
+        & .spinCard{
       
-    //         &::before{
+            &::before{
                
-    //         }
-    //         & .card-body{
+            }
+            & .card-body{
        
-    //             & .spinImg{
+                & .spinImg{
          
-    //             }
-    //             & .cardContent{
+                }
+                & .cardContent{
       
-    //                 & .heading{
-    //                     font-size: 14px;
-    //                     & span{
+                    & .heading{
+                        font-size: 14px;
+                        & span{
                      
-    //                     }
-    //                 }
+                        }
+                    }
         
-    //             }
-    //         }
+                }
+            }
     
-    //     }
-    //     & .cardOuter{
+        }
+        & .cardOuter{
 
-    //        &::before{
+           &::before{
 
-    //        }
-    //         & .spinCard{
+           }
+            & .spinCard{
 
-    //             &::before{
+                &::before{
         
-    //             }
-    //             & .card-body{
+                }
+                & .card-body{
            
-    //                 & .spinImg{
+                    & .spinImg{
        
-    //                 }
-    //                 & .cardContent{
+                    }
+                    & .cardContent{
            
-    //                     & .heading{
+                        & .heading{
      
-    //                         & span{
+                            & span{
                           
-    //                         }
-    //                     }
+                            }
+                        }
             
-    //                 }
-    //             }
+                    }
+                }
         
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
-    // .spinCardsection{
+    .spinCardsection{
     
-    //     & .spinCard{
+        & .spinCard{
       
-    //         &::before{
+            &::before{
                
-    //         }
-    //         & .card-body{
+            }
+            & .card-body{
        
-    //             & .spinImg{
+                & .spinImg{
          
-    //             }
-    //             & .cardContent{
-    //                 left: 10px;
-    //                 top: 15px;
-    //                 & .heading{
-    //                     font-size: 11px;
-    //                     & span{
+                }
+                & .cardContent{
+                    left: 10px;
+                    top: 15px;
+                    & .heading{
+                        font-size: 11px;
+                        & span{
                      
-    //                     }
-    //                 }
+                        }
+                    }
         
-    //             }
-    //         }
+                }
+            }
     
-    //     }
-    //     & .cardOuter{
+        }
+        & .cardOuter{
 
-    //        &::before{
+           &::before{
 
-    //        }
-    //         & .spinCard{
+           }
+            & .spinCard{
 
-    //             &::before{
+                &::before{
         
-    //             }
-    //             & .card-body{
+                }
+                & .card-body{
            
-    //                 & .spinImg{
+                    & .spinImg{
        
-    //                 }
-    //                 & .cardContent{
-    //                     left: 26px;
-    //                     top: 24px;
-    //                     & .heading{
-    //                         font-size: 20px;
-    //                         & span{
+                    }
+                    & .cardContent{
+                        left: 26px;
+                        top: 24px;
+                        & .heading{
+                            font-size: 20px;
+                            & span{
                           
-    //                         }
-    //                     }
+                            }
+                        }
             
-    //                 }
-    //             }
+                    }
+                }
         
-    //         }
-    //     }
-    // }
+            }
+        }
+    }
 }
 //sniper card end
 
@@ -1669,7 +1669,7 @@
                             }
                         }
                         & .heroImg {
-                  
+                        //    padding: 150px;
                         }
                     }
                 }
@@ -1703,7 +1703,7 @@
   
                             }
                             & .casinoHeading {
-                            
+                                font-size: 24px;
                             }
                             & .casinoSubheading {
                       
@@ -1716,10 +1716,12 @@
                                     }
                                 }
                                 & .signUp {
-                            
+                                    font-size: 18px;
+
                                 }
                                 & .mainHeading {
-                                font-size: 50px;
+                                    font-size: 44px;
+
                                 }
                             }
                         }
@@ -1752,16 +1754,16 @@
                         
                     }
                     & .innermain {
-        
+                        padding: 36px 20px 28px 34px;
                         & .contentSide {
                             & .casinoHeading, & .casinoSubheading, & .signUp, & .mainHeading{
   
                             }
                             & .casinoHeading {
-                            
+                                font-size: 23px;
                             }
                             & .casinoSubheading {
-                      
+                              font-size: 10px;
                             }
                             & .reward {
                                 & .signUp, & .mainHeading{
@@ -1771,10 +1773,16 @@
                                     }
                                 }
                                 & .signUp {
-                            
+                                    font-size: 12px;
                                 }
                                 & .mainHeading {
-                          
+                                    font-size: 20px;
+                                }
+                                & .signUpBtn{
+                                    padding: 6px 23px;
+                                    height: 37.899px;
+                                    border-radius: 5px;
+                                    font-size: 14px;
                                 }
                             }
                         }
