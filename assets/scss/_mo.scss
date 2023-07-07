@@ -1,4 +1,5 @@
-.topratedgames-tab-main {
+// tab menu section start
+.topratedTabMain {
     border-radius: 10px;
     // background: #161F2C;
     padding: 0.7px;
@@ -54,6 +55,8 @@
         }
     } 
 }
+// tab menu section end
+
 // toprated-games-main section start
 .toprated-games-main {
     // background-color: #161F2C;
@@ -66,7 +69,6 @@
         height: 100%;
         width: 100%;
         background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
-        // background: linear-gradient(134deg, rgb(85 120 254 / 59%) 42%, rgb(0 153 10 / 11%) 63%);;
         top: 0;
         left: 0;
         z-index: -5;
@@ -84,14 +86,26 @@
             color: $white;
             line-height: normal;
         }
+        & .shadowball {
+            &::before {
+                content: "";
+                position: absolute;
+                left: -23px;
+                top: 54%;
+                transform: translateY(-50%);
+                height: 22px;
+                width: 22px;
+                border-radius: 50%;
+                background: #04E929;
+                box-shadow: 0 0 50px #04E929;
+            }
+        }
         & .viewallMain {
             padding-right: 85px;
             & .viewall-btn {
                 border-radius: 6px;
                 background: #161F2C;
                 color: #DFDFDF;
-                font-size: 8px;
-                padding: 6px 6px 7px 6px;
             }
         }
         & .games-card-main {
@@ -141,39 +155,29 @@
         }
     }
     & .swiper-button-next-unique {
-        height: 25px;
-        width: 25px;
         border-radius: 8px;
         position: absolute;
         top: 0;
         right: 15px;
+        background: #161f2c;
+        border-radius: 8px;
     }
     & .swiper-button-prev-unique {
-        height: 25px;
-        width: 25px;
         border-radius: 8px;
         position: absolute;
         top: 0;
         right: 45px;
+        background: #161f2c;
+        border-radius: 8px;
     }
 }
-// toprated-games-main section end
+// toprated-games-main section ends
 
-// recent-big-wins section start
-.recent-big-wins {
+// recentWin section start
+.recentWin {
     margin-top: 76px;
-    & .toprated-games {
-        border-radius: 18px;
-        background-color: #161F2C;
-        padding: 22px 0 28px 0 ;
-        z-index: 5;
-        & .games-card-main {
-            padding: 30px 56px 0 49px;
-           
-        }
-    }
 }
-// recent-big-wins section end
+// recentWin section end 
 
 // help-us section start
 .help-us {
@@ -348,60 +352,14 @@
 @include media-breakpoint-up(xxl) {}
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(md) {
-    // toprated-games-main section start
-    .toprated-games-main {
-    &::before {
-        display: none;
-    }
-    & .toprated-games {
-        background-color: transparent;
-        padding: 0 ;
-        & .heading {
-            font-size: 24px;
-        }
-        & .viewallMain {
-            & .viewall-btn {
-            }
-        }
-        & .games-card-main {
-            & .games-card {
-                & .games-information {
-                    & .games-information-icon {
-                    }
-                }
-                & .games-img {
-                    & .games-img-tag {
-                    }
-                }
-                & .games-card-title {
-                }
-                & .play-btn {
-                    margin-top: 19px;
-                    padding: 10px 15px;
-                    font-size: 11px;
-                }
-            }
-        }
-        & .tab-pane {
-        }
-    }
-    }
-    // toprated-games-main section end
-}
-
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xl) {
     // toprated-games-main section start
     .toprated-games-main {
         &::before {
         }
         & .toprated-games {
+            padding: 22px 40px 28px 40px ;
             & .heading {
-                font-size: 18px;
             }
             & .viewallMain {
                 & .viewall-btn {
@@ -420,14 +378,207 @@
                     & .games-card-title {
                     }
                     & .play-btn {
-                        font-size: 10px;
-                        padding: 8px 9px;
+
                     }
                 }
             }
             & .tab-pane {
             }
         }
+    }
+    // toprated-games-main section end 
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 70px;
+    }
+    // recentWin section end
+}
+
+@include media-breakpoint-down(lg) {
+    // toprated-games-main section start
+    .toprated-games-main {
+        &::before {
         }
-        // toprated-games-main section end
+        & .toprated-games {
+            padding: 22px 30px 28px 30px ;
+            & .heading {
+            }
+            & .shadowball {
+                &::before {
+                    left: -15px;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            & .viewallMain {
+                & .viewall-btn {
+                }
+            }
+            & .games-card-main {
+                & .games-card {
+                    & .games-information {
+                        & .games-information-icon {
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                        }
+                    }
+                    & .games-card-title {
+                    }
+                    & .play-btn {
+
+                    }
+                }
+            }
+            & .tab-pane {
+            }
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 60px;
+    }
+    // recentWin section end
+}
+
+@include media-breakpoint-down(md) {
+    // toprated-games-main section start
+    .toprated-games-main {
+        // padding: 0 15px;
+         &::before {
+        display: none;
+        }
+        & .toprated-games {
+        background-color: transparent;
+        padding: 0 ;
+        & .heading {
+            font-size: 24px;
+        }
+        & .shadowball {
+            &::before {
+                left: -17px;
+                height: 18px;
+                width: 18px;
+            }
+        }
+        & .viewallMain {
+            padding-right: 100px;
+            & .viewall-btn {
+                font-size: 11px;
+                padding: 8px 10px 8px 10px;
+            }
+        }
+        & .games-card-main {
+            & .mySwiper {
+                & .games-card {
+                    & .games-information {
+                        & .games-information-icon {
+                        }
+                    }
+                    & .games-img {
+                        & .games-img-tag {
+                        }
+                    }
+                    & .games-card-title {
+                    }
+                    & .play-btn {
+                        margin-top: 19px;
+                        padding: 10px 15px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        & .tab-pane {
+        }
+        }
+        & .swiper-button-next-unique {
+            height: 31px;
+            width: 30px;
+            padding:9px;
+        }
+        & .swiper-button-prev-unique {
+            height: 31px;
+            width: 31px;
+            right: 50px;
+            padding: 9px;           
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 55px;
+    }
+    // recentWin section end
+}
+
+@include media-breakpoint-down(sm) {
+    // toprated-games-main section start
+    .toprated-games-main {
+        &::before {
+        }
+        & .toprated-games {
+            & .heading {
+                font-size: 18px;
+            }
+            & .shadowball {
+                &::before {
+                  display: none;
+                }
+            }
+            & .viewallMain {
+                padding-right: 80px;
+                & .viewall-btn {
+                    font-size: 8px;
+                    padding: 6px 8px 6px 8px;
+                }
+            }
+            & .games-card-main {
+                & .mySwiper {
+                    & .games-card {
+                        & .games-information {
+                            & .games-information-icon {
+                            }
+                        }
+                        & .games-img {
+                            & .games-img-tag {
+                                font-size:7px;
+                            }
+                        }
+                        & .games-card-title {
+                        }
+                        & .play-btn {
+                            font-size: 10px;
+                            padding: 8px 9px;
+                        }
+                    }
+                }
+            }
+            & .tab-pane {
+            }
+            & .swiper-button-next-unique {
+                height: 25px;
+                width: 25px;
+                padding: 7px;
+            }
+            & .swiper-button-prev-unique {
+                height: 25px;
+                width: 25px;
+                right: 45px;
+                padding: 7px;
+            }
+        }
+    }
+    // toprated-games-main section end
+
+    // recentWin section start
+    .recentWin {
+        margin-top: 45px;
+    }
+    // recentWin section end
 }
