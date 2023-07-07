@@ -1378,29 +1378,53 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
-                        // border-radius: 5px;
-                        // background-color: #455264 !important;
-                        // z-index: 1;
-                        background-color: transparent;
-                        &::before{
-                            opacity: 0.20000000298023224;
-                            border-radius: 5px;
-                            background-color: #455264;
-                            position: absolute;
-                            content: '';
-                            width: 100%;
-                            height: 100%;
-                            z-index: -1;
-                            left: 0;
-                        }
+                        border-radius: 5px;
+                        // background-color:rgba(0,0,0,0.5);
+                        background-color:rgba(0,0,0,.8);
+                            // opacity: 0.20000000298023224;
+                        z-index: 1;
+                        // background-color: transparent;
+                        // &::before{
+                        //     border-radius: 5px;
+                        //     background-color: #455264;
+                        //     position: absolute;
+                        //     content: '';
+                        //     width: 100%;
+                        //     height: 100%;
+                        //     z-index: -1;
+                        //     left: 0;
+                        // }
+                       
                         &:not(.collapsed)::after{
                             background-image: url(../img/toparreo.svg);
                             height: 10px;
+                            height: 12px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
                             // transform:rotate(180deg);
                         }
                         &::after{
                             background-image: url(../img/toparreo.svg);
                             height: 10px;
+                        }
+                    }
+                }
+                & .accordionCollapse {
+
+                    & .accordion-body{
+                        & .linksUl{
+                            & li{
+                                & .linkLi{
+                                    color: #93ACD3;
+                                    font-family: Montserrat;
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+
+                            }
                         }
                     }
                 }
