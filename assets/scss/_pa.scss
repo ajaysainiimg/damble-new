@@ -1151,6 +1151,21 @@
     }
 }
 
+.acceptFluid{
+    & .acceptMain{
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+.cryptoLogo{
+    border-radius: 15px;
+    background: #161F2C;
+}
+
 .footerrSection {
     padding-bottom: 120px;
     & .borderd {
