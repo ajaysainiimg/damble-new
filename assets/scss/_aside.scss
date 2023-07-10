@@ -41,5 +41,140 @@
                 }
             }
         }
+        
+    & .join{
+        & .linksIcons{
+            & img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
     }
 }
+
+// side bar start
+.sidebar-menu {
+    & .sidebar-btn {
+        // background:linear-gradient(125deg, rgba(241, 241, 241, 0.411) 26%, rgba(0, 153, 10, 0) 17%);
+        // background:linear-gradient(125deg, #93acd3 26%, #6324D7 17%);
+        background: transparent;
+        padding: 1.2px;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:linear-gradient(125deg, rgba(241, 241, 241, 0.411) 26%, rgba(0, 153, 10, 0) 17%);
+            top: 0;
+            // box-shadow: 0 0 0 2px #93acd3 ;
+            left: 0;
+            z-index: -5;
+            border-radius: 8px;
+            filter: blur(0.5px);
+        }
+    }
+    & .side-bar-content {
+        padding: 28px 20px 0 20px;
+        & .accordion-item {
+            padding: 9px 12px 18px 15px;
+            border-radius: 11px;
+            background: #252E39;
+            & .sidebar-card-heading {
+                font-size: 12px;
+                color: #fff;
+                & .sidebar-card-img {
+                    height: 17px;
+                    width: 17px;
+                }
+                &::after {
+                    background-image: none;
+                    content:'^';
+                    height: auto;
+                    width: auto;
+                    transform: rotate(0);
+                }
+            }
+            & .collapsed {
+                &::after {
+                    background-image: none;
+                    content:'^';
+                    height: auto;
+                    width: auto;
+                    transform: rotate(180deg);
+                }
+            }
+            & .sports {
+                padding: 5px 80px 8px 14px;
+                background: #252E39;
+                &::after {
+                    content: '';
+                    background: none;
+                }
+            }
+            & .sidebar-card-title {
+                font-size: 12px;
+                color: #93ACD3;
+                & .sidebar-card-icon {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+        & .line {
+            opacity: 0.5;
+            background: rgba(147, 172, 211, 0.50);
+            height: 1px;
+            width: 90%;
+            margin: 18px auto;
+        }
+        & .sportsLink {
+            & .sidebar-card-title {
+                height: 40px;
+                color: #93ACD3;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 6px;
+                transition: all ease-in-out 0.3s;
+                padding: 0px 14px;
+                &.active {
+                    background: #252E39;
+                    color: #FFF;
+                    & .vipText {
+                        color: #FFD700;
+                    }
+                }
+                &:hover{
+                    background: #252E39;
+                    color: #FFF;
+                    & .vipText {
+                        color: #FFD700;
+                    }
+                }
+                & .vipText {
+                    color: #FFD700;
+                }
+                &.livesupport {
+                    height: 30px;
+                    background: #252E39;
+                }
+            }
+        }
+        & .ourpartner {
+            color: #93ACD3;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 0px 14px;
+        
+        }
+
+    }
+    
+}
+// side bar start

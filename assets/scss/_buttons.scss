@@ -16,3 +16,22 @@
     border: none;
     box-shadow: none;
 }
+.greenBtn {
+    background-image: url(../img/greenBtn_Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    padding: 10px 25px;
+    height: 43.689px;
+    background-color: #00990A;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-flex;
+    line-height: normal;
+    text-decoration: none;
+}
