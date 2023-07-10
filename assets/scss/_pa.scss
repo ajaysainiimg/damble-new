@@ -900,6 +900,14 @@
 }
 
 
+@media screen and (max-width: 700px) {
+    .ragisterModal{
+        & .modal-dialog {
+            margin: 10px;
+        }
+    }
+}
+
 
 
 @include media-breakpoint(basic) {
@@ -2067,78 +2075,6 @@
                     }
                 }
             }
-        }
-    }
-    .footerrSection {
-        & .borderd {
-            &.smBorderd {
-            }
-        }
-        & .paymentHeading {
-            font-size: 38px;
-            line-height: 45px;
-        }
-        & .card {
-            & .card-body {
-                & .logos{
-                    & img {
-                    }
-                }
-            }
-            &.cardLogo{
-                & .card-body {
-                    & .logos {
-                        max-height: 40px;
-                    }
-                }
-            }
-            &.cryptoLogo {
-                & .card-body {
-                    & .logos {
-                        max-height: 36px;
-                        max-width: 36px;
-                    }
-                    & .ragisterbonus {
-                        font-size: 18px;
-                        line-height: 22px;
-                        & span {
-                        }
-                    }
-                    & .ragisterBtn {
-                        height: 37px;
-                        // font-size: 12px;
-                        // line-height: 15px;
-                        &:hover{
-                        }
-                    }
-                }
-            }
-            &.bardcard {
-                & .card-body {
-                    & .logos {
-                        height: 45px;
-                    }
-                }
-            }
-        }
-        & .navContent {
-            & .navLink {
-                font-size: 16px;
-                line-height: 20px;
-                &:hover{
-                }
-            }
-        }
-        & .democontent {
-            font-size: 16px;
-            line-height: 21px;
-        }
-        & .logoImg  {
-            height: 28px;
-        }
-        & .copyright {
-            font-size: 15px;
-            line-height: 20px;
         }
     }
     .aboutFluid{

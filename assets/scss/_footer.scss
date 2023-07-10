@@ -1,103 +1,103 @@
-.mainFooter {
-    & .borderd {
-        border-top: 1px solid #00990A;
-        &.smBorderd {
-        border-top: 0.5px solid #00990A !important;
-        }
-    }
-    & .paymentHeading {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 49px;
-    }
-    & .card {
-        background: #131B27;
-        & .card-body {
-            border-color: #898E93!important;
-            & .logos{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                & img {
-                    height: 100%;
-                }
-            }
-        }
-        &.cardLogo{
-            border-radius: 23px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                }
-            }
-        }
-        &.cryptoLogo {
-            border-radius: 9px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                    max-width: 45px;
-                }
-                & .ragisterbonus {
-                    font-size: 20px;
-                    line-height: 24px;
-                    font-weight: 700;
-                    & span {
-                        color: #FFD700;
-                    }
-                }
-                & .ragisterBtn {
-                    background-color: #00990A;
-                    border-radius: 7px;
-                    height: 39px;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 15px;
-                    transition: all ease-in-out 0.3s;
-                    &:hover{
-                        background-color: darken(#00990A, 5);
-                    }
-                }
-            }
-        }
-        &.bardcard {
-            border-radius: 15px;
-            & .card-body {
-                & .logos {
-                    max-height: 50px;
-                }
-            }
-        }
-    }
-    & .navContent {
-        & .navLink {
-            font-size: 20px;
-            line-height: 24px;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: darken(#fff, 15) !important;
-                cursor: pointer;
-            }
-        }
-    }
-    & .democontent {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    & .logoImg  {
-        height: 35px;
-        & img {
-            height: 100%;
-        }
-    }
-    & .copyright {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 21px;
-    }
-}
+// .mainFooter {
+//     & .borderd {
+//         border-top: 1px solid #00990A;
+//         &.smBorderd {
+//         border-top: 0.5px solid #00990A !important;
+//         }
+//     }
+//     & .paymentHeading {
+//         font-size: 40px;
+//         font-weight: 800;
+//         line-height: 49px;
+//     }
+//     & .card {
+//         background: #131B27;
+//         & .card-body {
+//             border-color: #898E93!important;
+//             & .logos{
+//                 width: 100%;
+//                 height: 100%;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 & img {
+//                     height: 100%;
+//                 }
+//             }
+//         }
+//         &.cardLogo{
+//             border-radius: 23px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 45px;
+//                 }
+//             }
+//         }
+//         &.cryptoLogo {
+//             border-radius: 9px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 45px;
+//                     max-width: 45px;
+//                 }
+//                 & .ragisterbonus {
+//                     font-size: 20px;
+//                     line-height: 24px;
+//                     font-weight: 700;
+//                     & span {
+//                         color: #FFD700;
+//                     }
+//                 }
+//                 & .ragisterBtn {
+//                     background-color: #00990A;
+//                     border-radius: 7px;
+//                     height: 39px;
+//                     font-weight: 700;
+//                     font-size: 12px;
+//                     line-height: 15px;
+//                     transition: all ease-in-out 0.3s;
+//                     &:hover{
+//                         background-color: darken(#00990A, 5);
+//                     }
+//                 }
+//             }
+//         }
+//         &.bardcard {
+//             border-radius: 15px;
+//             & .card-body {
+//                 & .logos {
+//                     max-height: 50px;
+//                 }
+//             }
+//         }
+//     }
+//     & .navContent {
+//         & .navLink {
+//             font-size: 20px;
+//             line-height: 24px;
+//             transition: all 0.3s ease-in-out;
+//             &:hover{
+//                 color: darken(#fff, 15) !important;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+//     & .democontent {
+//         font-size: 18px;
+//         line-height: 22px;
+//     }
+//     & .logoImg  {
+//         height: 35px;
+//         & img {
+//             height: 100%;
+//         }
+//     }
+//     & .copyright {
+//         font-weight: 400;
+//         font-size: 17px;
+//         line-height: 21px;
+//     }
+// }
 
 .footerrSection {
     padding-bottom: 120px;
@@ -177,7 +177,10 @@
             border-radius: 15px;
             & .card-body {
                 & .logos {
-                    max-height: 50px;
+                    height: 50px;
+                    & img {
+                        object-fit: contain;
+                    }
                 }
             }
         }
@@ -647,15 +650,66 @@
             }
         }
     }
-    & .navContent {
-        & .navLink {
-            font-size: 20px;
-            line-height: 24px;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: darken(#fff, 15) !important;
-                cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px) {
+    .footerrSection {
+        & .borderd {
+            &.smBorderd {
             }
+        }
+        & .paymentHeading {
+        }
+        & .card {
+            & .card-body {
+                & .logos{
+                    & img {
+                    }
+                }
+            }
+            &.cardLogo{
+                & .card-body {
+                    & .logos {
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                    }
+                    & .ragisterbonus {
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .navContent {
+            & .navLink {
+                font-size: 8px;
+                line-height: 10px;
+                &:hover{
+                }
+            }
+        }
+        & .democontent {
+        }
+        & .logoImg  {
+        }
+        & .copyright {
         }
     }
 }
