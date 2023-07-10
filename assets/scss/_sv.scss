@@ -1487,6 +1487,8 @@
     }
 }
 // footer end 
+
+
 // <!-- deposited bones card  start -->
 
 .depositedBounsSection{
@@ -1499,11 +1501,254 @@
             border-radius: 24px;
             opacity: 0.30000001192092896;
             background: linear-gradient(90deg, rgba(99, 36, 215, 0.41) 0%, rgba(0, 153, 10, 0.19) 100%);
-            z-index: -1;
+            z-index: -2;
+            height: 100%;
+            width: 100%;
         }
         & .depositedCardInner{
-            
+            padding: 19px 15px 20px 15px;
+            & .subheading{
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 800;
+                color: rgba(255, 255, 255, 1);
+                line-height: normal;
+                text-align: center;
+
+                & span{
+                    color: #FFD700;
+                }
+            }
+            & .headingCard{
+                color: #FFF;
+                text-align: center;
+                font-family: 'Montserrat';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                & span{
+                    color: #FFD700;
+                }
+            }
+            & .pera{
+                color: #748290;
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-top: 12px;
+            }
         }
+    }
+    & .signUpBtn{
+        background-color: #00990a !important;
+        background-image: url(../img/signup.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        padding: 7px 121px;
+        border-radius: 6px;
+        background: conic-gradient(from 0deg at 50.00% 50.00%, rgba(2, 47, 5, 0.50) 0deg, rgba(217, 217, 217, 0.00) 360deg);
+
+
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                & .subheading{
+                
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+ 
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                & .subheading{
+                
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+ 
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                & .subheading{
+                
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+ 
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                & .subheading{
+                
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+ 
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                & .subheading{
+                
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+ 
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:490px) {
+    .depositedBounsSection{
+        & .depositedCard{
+          
+            &::before{
+          
+            }
+            & .depositedCardInner{
+                padding: 19px 10px 20px 10px;
+                & .subheading{
+                font-size: 12px;
+    
+                    & span{
+                       
+                    }
+                }
+                & .headingCard{
+                    font-size: 14px;
+                    & span{
+                        
+                    }
+                }
+                & .pera{
+          
+                }
+            }
+        }
+        & .signUpBtn{
+            padding: 7px 60px;
+            font-size: 16px;
+        }
+      
     }
 }
 
