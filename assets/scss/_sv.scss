@@ -1442,34 +1442,25 @@
                         font-weight: 700;
                         line-height: normal;
                         border-radius: 5px;
-                        // background-color:rgba(0,0,0,0.5);
-                        background-color:rgba(0,0,0,.8);
-                            // opacity: 0.20000000298023224;
+                        background-color:rgba(#455264, 0.2);
                         z-index: 1;
-                        // background-color: transparent;
-                        // &::before{
-                        //     border-radius: 5px;
-                        //     background-color: #455264;
-                        //     position: absolute;
-                        //     content: '';
-                        //     width: 100%;
-                        //     height: 100%;
-                        //     z-index: -1;
-                        //     left: 0;
-                        // }
                        
                         &:not(.collapsed)::after{
-                            background-image: url(../img/toparreo.svg);
+                            background-image: url(../img/left-arrow\ 2\ \(1\).png);
+                            width: 11px;
                             height: 10px;
-                            height: 12px;
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
                             // transform:rotate(180deg);
                         }
                         &::after{
-                            background-image: url(../img/toparreo.svg);
+                            background-image: url(../img/left-arrow\ 2\ \(1\).png);
                             height: 10px;
+                            width: 11px;
+                            background-position: center !important;
+                            background-repeat: no-repeat !important;
+                            background-size: cover !important;
                         }
                     }
                 }
@@ -1496,7 +1487,29 @@
     }
 }
 
+// footer end 
+// <!-- deposited bones card  start -->
 
+.depositedBounsSection{
+    & .depositedCard{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            border-radius: 24px;
+            opacity: 0.30000001192092896;
+            background: linear-gradient(90deg, rgba(99, 36, 215, 0.41) 0%, rgba(0, 153, 10, 0.19) 100%);
+            z-index: -1;
+        }
+        & .depositedCardInner{
+            
+        }
+    }
+}
+
+
+// <!-- deposited bones card  end -->
 // hero section 
 @include media-breakpoint(basic) {
 }
