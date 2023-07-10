@@ -1728,7 +1728,7 @@
             & .depositedCardInner{
                 padding: 19px 10px 20px 10px;
                 & .subheading{
-                font-size: 12px;
+                font-size: 10px;
     
                     & span{
                        
@@ -1741,7 +1741,8 @@
                     }
                 }
                 & .pera{
-          
+                    padding-top: 5px;
+                    font-size: 9px;
                 }
             }
         }
