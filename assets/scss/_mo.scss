@@ -235,11 +235,11 @@
                     // padding: 9px 87px 0 17px;
                 }
             }
-            & .textarea-title {
-                font-size: 8px;
-                padding-top: 6px;
-                color: #93ACD3;
-            }
+        }
+        & .textarea-title {
+            font-size: 8px;
+            padding-top: 6px;
+            color: #93ACD3;
         }
         & .leavemsg-btn {
                 font-size: 11px;
@@ -353,6 +353,29 @@
 @include media-breakpoint-down(xxl) {}
 
 @include media-breakpoint-down(xl) {
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
     // toprated-games-main section start
     .toprated-games-main {
         &::before {
@@ -396,6 +419,29 @@
 }
 
 @include media-breakpoint-down(lg) {
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
     // toprated-games-main section start
     .toprated-games-main {
         &::before {
@@ -443,9 +489,75 @@
         margin-top: 60px;
     }
     // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 22px;
+            }
+            & .help-us-para {
+                font-size: 10px;
+            }
+            & .help-us-paratwo {
+                padding-top: 26px;
+            }
+            & .showmore-btn-main {
+                padding-top: 25px;
+                & .showmore-btn {
+                    font-size: 17px;
+                }
+            }
+        }
+        & .helpus-right {
+            &::before {
+            }
+            & .help-us-heading {
+                font-size: 22px;
+            }
+            & .help-us-textarea {
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+            }
+            & .leavemsg-btn {
+            }
+            & .helpus-email-main {
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
 }
 
 @include media-breakpoint-down(md) {
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+        & .nav-tab {
+        & .toprated-link {
+            &:hover {
+            }
+        }
+        & .toprated-link.active {
+        }
+        }
+        & .search-bar-group {
+        & .search-input {
+            &::placeholder {
+            }
+        }
+        }
+        } 
+    }
+    // tab menu section end
+
     // toprated-games-main section start
     .toprated-games-main {
         // padding: 0 15px;
@@ -515,9 +627,85 @@
         margin-top: 55px;
     }
     // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 20px;
+            }
+            & .help-us-para {
+                font-size: 10px;
+            }
+            & .help-us-paratwo {
+                padding-top: 25px;
+            }
+            & .showmore-btn-main {
+                padding-top: 18px;
+                & .showmore-btn {
+                    font-size: 16px;
+                }
+            }
+        }
+        & .helpus-right {
+            padding-left: 0;
+            padding-top: 30px;
+            &::before {
+                display: none;
+            }
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-textarea {
+                padding-top: 20px;
+                padding-bottom: 33px;
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+                padding-top: 0;
+            }
+            & .leavemsg-btn {
+                font-size: 13px;
+            }
+            & .helpus-email-main {
+                padding-top: 22px;
+                padding-bottom: 13px;
+                font-size: 12px;
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
 }
 
 @include media-breakpoint-down(sm) {
+    // tab menu section start
+    .topratedTabMain {
+        &::before {
+        }
+        & .topratedgames-tab-content {
+            & .nav-tab {
+              & .toprated-link {
+            &:hover {
+             }
+          }
+          & .toprated-link.active {
+          }
+        }
+        & .search-bar-group {
+            & .search-input {
+               &::placeholder {
+               }
+            }
+        }
+        } 
+    }
+    // tab menu section end
+
     // toprated-games-main section start
     .toprated-games-main {
         &::before {
@@ -527,8 +715,12 @@
                 font-size: 18px;
             }
             & .shadowball {
+                font-size: 15px;
+                padding-left: 18px;
                 &::before {
-                  display: none;
+                    height: 12px;
+                    width: 12px;
+                    left: -2px;
                 }
             }
             & .viewallMain {
@@ -581,4 +773,52 @@
         margin-top: 45px;
     }
     // recentWin section end
+
+    // help-us section start
+    .help-us {
+        & .helpus-left {
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-para {
+                font-size: 9px;
+            }
+            & .help-us-paratwo {
+                padding-top: 23px;
+            }
+            & .showmore-btn-main {
+                padding-top: 14px;
+                & .showmore-btn {
+                    font-size: 12px;
+                }
+            }
+        }
+        & .helpus-right {
+            padding-top: 26px;
+            & .help-us-heading {
+                font-size: 17px;
+            }
+            & .help-us-textarea {
+                padding-top: 20px;
+                padding-bottom: 33px;
+                & .text-area {
+                    &::placeholder {
+                    }
+                }
+            }
+            & .textarea-title {
+            }
+            & .leavemsg-btn {
+                font-size: 13px;
+            }
+            & .helpus-email-main {
+                padding-top: 19px;
+                padding-bottom: 10px;
+                font-size: 12px;
+                & .helpus-email {
+                }
+            }
+        }
+    }
+    // help-us section end
 }
