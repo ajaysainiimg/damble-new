@@ -1,3 +1,4 @@
+// topratedgames-tab-main start
 .topratedgames-tab-main {
     border-radius: 10px;
     // background: #161F2C;
@@ -54,6 +55,8 @@
         }
     } 
 }
+// topratedgames-tab-main end
+
 // toprated-games-main section start
 .toprated-games-main {
     // background-color: #161F2C;
@@ -750,3 +753,98 @@
     }
     // help-us section end
 }
+
+
+
+// ********* Vip Club Page Start ********
+
+// ********* vipheroSection start ********
+.vipheroSection {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 54%;
+        background-image: url(../Img/vipClub/herobgleft.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 46%;
+        background-image: url(../Img/vipClub/herobgright.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+    }
+    & .vipheroMain {
+        padding: 116px 51px 0 98px;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -10rem;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(../Img/vipClub/herobg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        & .heroHeading {
+            font-size: 45px;
+                color: #E3E3E3;
+                font-weight: 900;
+            & .heroHeadingtwo {
+                color: #FFD700;
+            }
+        }
+        & .vipHorocard {
+            padding-top: 90px;
+            & .heroCardTitle {
+                font-size: 22px;
+                color: #E3E3E3;
+                line-height: normal;
+                padding-bottom: 4px;
+                & .vip {
+                    color: #FFD700;
+                }
+            }
+            & .exclusive {
+                padding-left: 35px;
+            }
+            & .levelndrew {
+                padding-left: 26px;
+            }
+            & .playearn {
+                padding-left: 14px;
+            }
+            & .heroCardpara {
+                font-size:15px ;
+                color: #93ACD3;
+                line-height: normal;
+            }
+        }
+        & .vipheroImg {
+            max-width: 740px;
+            max-height: 391px;
+        }
+    }
+}
+// ********* vipheroSection end ********
+
+// ********* howPlay section start ********
+.howWork{
+    & .howWorkHeading {
+        font-size: 40px;
+        font-weight: 900;
+        color: #E3E3E3;
+    }
+}
+// ********* howPlay section end ********
+
