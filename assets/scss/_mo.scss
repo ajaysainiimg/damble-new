@@ -350,7 +350,9 @@
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(xxl) {}
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    
+}
 
 @include media-breakpoint-down(xl) {
     // tab menu section start
