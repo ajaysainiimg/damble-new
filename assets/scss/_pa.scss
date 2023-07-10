@@ -307,7 +307,7 @@
                 content: '';
                 
                 background: #161F2C;
-                background-image: url(../../assets/img/cardBg.svg);
+                background-image: url(../../assets/img/cardBg.png);
                 background-repeat: no-repeat;
                 height: 100%;
                 width: 100%;
@@ -370,112 +370,7 @@
     }
 }
 
-.mainFooter {
-    & .borderd {
-        border-top: 1px solid #00990A;
-        &.smBorderd {
-        border-top: 0.5px solid #00990A !important;
-        }
-    }
-    & .paymentHeading {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 49px;
-    }
-    & .card {
-        background: #131B27;
-        & .card-body {
-            border-color: #898E93!important;
-            & .logos{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                & img {
-                    height: 100%;
-                }
-            }
-        }
-        &.cardLogo{
-            border-radius: 23px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                }
-            }
-        }
-        &.cryptoLogo {
-            border-radius: 9px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                    max-width: 45px;
-                }
-                & .ragisterbonus {
-                    font-size: 20px;
-                    line-height: 24px;
-                    font-weight: 700;
-                    & span {
-                        color: #FFD700;
-                    }
-                }
-                & .ragisterBtn {
-                    background-color: #00990A;
-                    border-radius: 7px;
-                    height: 39px;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 15px;
-                    transition: all ease-in-out 0.3s;
-                    &:hover{
-                        background-color: darken(#00990A, 5);
-                    }
-                    &.ragisterBtn1 {
-                        background: #713FE3;
-                        &:hover {
-                            background: darken(#713FE3, 5);
-                        }
-                    }
-                }
-            }
-        }
-        &.bardcard {
-            border-radius: 15px;
-            & .card-body {
-                & .logos {
-                    max-height: 50px;
-                }
-            }
-        }
-    }
-    & .navContent {
-        & .navLink {
-            font-size: 20px;
-            line-height: 24px;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: darken(#fff, 15) !important;
-                cursor: pointer;
-            }
-        }
-    }
-    & .democontent {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    & .logoImg  {
-        height: 35px;
-        & img {
-            height: 100%;
-        }
-    }
-    & .copyright {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 21px;
-    }
-}
+
 // ** [ Modal ] **
 .ragisterModal {
     backdrop-filter: blur(25px);
@@ -1003,340 +898,6 @@
         }
     } 
 }
-
-
-.spinCardsection{
-    margin: 30px 0px 0px 0px;
-    & .spinCard{
-        position: relative;
-        // overflow: hidden;
-        // width: 160.533px;
-        // height: 209.089px; 
-        &.spinMid{
-            &::before{content: "";
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                position: absolute;
-                // background-color: #252e39;
-                z-index: -1;
-                border-radius: 18px;
-            }
-            &::after{
-                content: "";
-                width: calc(100% + 5px);
-                height: calc(100% + 5px);
-                position: absolute;
-                background-image: linear-gradient(to bottom, rgb(98, 167, 224) 10%, rgba(98, 167, 224, 0));
-                border-radius: 18px 18px 0 0;
-                top: -3px;
-                left: -3px;
-                z-index: -2;
-            }
-        }
-        & .card-body{
-            border-radius: 0px 14px 14px 0px;
-            background: linear-gradient(180deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.00) 100%);
-            border-radius: 18px;
-            &.cardBody{
-                background: unset!important;
-                &::before{
-                    content: '';
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    position: absolute;
-                    // background-color: #252e39;
-                    z-index: -1;
-                    border-radius: 18px;
-                    border-radius: 20px;
-                    background: linear-gradient(180deg, #161F2C 0%, rgba(22, 31, 44, 0.00) 100%) !important;
-                }
-            }
-            & .spinImg{
-                // width: 100%;
-                // height: 171px;
-            }
-            & .cardContent{
-                position: absolute;
-                content:'';
-                left: 9px;
-                top: 15px;
-                & .heading{
-                    color: #FFF;
-                    font-family: Montserrat;
-                    font-size: 9px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    & span{
-                        color: rgba(252, 189, 48, 1);
-                    }
-                }
-    
-            }
-        }
-
-    }
-    & .cardOuter{
-    border-radius: 20px;
-    background: linear-gradient(180deg, #161F2C 0%, rgba(22, 31, 44, 0) 100%);
-    position: relative;
-    padding: 0.7px;
-    border-radius: 20px;
-        margin-top: -30px;
-    //    &::before{
-    //     content: "";
-    //     width: 100%;
-    //     height: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     position: absolute;
-    //     background-color: unset !important;
-    //     z-index: -1;
-    //     border-radius: 18px;
-    //    }
-        & .spinCard{
-        
-         
-            & .card-body{
-                & .spinImg{
-                    // width: 140px;
-                    // height: 171px;
-                }
-                & .cardContent{
-                    position: absolute;
-                    content:'';
-                    left: 20px;
-                    top: 15px;
-                    & .heading{
-                        color: #FFF;
-                        font-family: Montserrat;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                        & span{
-                            color: rgba(252, 189, 48, 1);
-                        }
-                    }
-        
-                }
-            }
-    
-        }
-    }
-}
-
-.join{
-    padding: 0 73px;
-    & .joinHead{
-        color: #FFF;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin-bottom: 37px;
-        margin-top: 35px;
-    }
-    & .col{
-        & img{
-            margin-bottom: 35px;
-            width: 35px;
-            height: 35px;
-        }
-    }
-}
-
-.acceptFluid{
-    & .acceptMain{
-        color: #FFF;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-}
-.cryptoLogo{
-    border-radius: 15px;
-    background: #161F2C;
-}
-
-.footerrSection {
-    padding-bottom: 120px;
-    & .borderd {
-        border-top: 1px solid #00990A;
-        &.smBorderd {
-        border-top: 0.5px solid #00990A !important;
-        }
-    }
-    & .paymentHeading {
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 49px;
-    }
-    & .card {
-        border-radius: 23px;
-        border: 1px solid #FFF;
-        background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
-        & .card-body {
-            border-radius: 15px;
-            border: 1px solid #ffffff59;
-            & .logos{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                & img {
-                    height: 100%;
-                }
-            }
-        }
-        &.cardLogo{
-            border-radius: 23px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                }
-            }
-        }
-        &.cryptoLogo {
-            border-radius: 9px;
-            & .card-body {
-                & .logos {
-                    max-height: 45px;
-                    max-width: 45px;
-                }
-                & .ragisterbonus {
-                    font-size: 20px;
-                    line-height: 24px;
-                    font-weight: 700;
-                    & span {
-                        color: #FFD700;
-                    }
-                }
-                & .ragisterBtn {
-                    background-color: #00990A;
-                    border-radius: 7px;
-                    height: 39px;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 15px;
-                    transition: all ease-in-out 0.3s;
-                    &:hover{
-                        background-color: darken(#00990A, 5);
-                    }
-                }
-            }
-        }
-        &.bardcard {
-            border-radius: 15px;
-            & .card-body {
-                & .logos {
-                    max-height: 50px;
-                }
-            }
-        }
-    }
-    & .navContent {
-        & .navLink {
-            font-size: 20px;
-            line-height: 24px;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: darken(#fff, 15) !important;
-                cursor: pointer;
-            }
-        }
-    }
-    & .democontent {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    & .logoImg  {
-        height: 35px;
-        & img {
-            height: 100%;
-        }
-    }
-    & .copyright {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 21px;
-    }
-}
-
-.footerLinks{
-    & .linksUl{
-        & .linkLiHead{
-            color: #FFF;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-bottom: 41px;
-        }
-        & .linkLi{
-            color: #93ACD3;
-            font-family: 'Montserrat';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-bottom:10px;
-        }
-    }
-}
-
-.givewayContainer{
-    background-color: #0F121F;
-    & .givway{
-        width: 100%;
-        height: auto;
-        & img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-    & .ii{
-        height: auto;
-        & img{
-            width: 100%;
-            height: 100%;
-        }
-        & .txt{
-            font-family: 'Montserrat';
-            font-size: 19px;
-            color: white;
-            font-style: normal;
-            font-weight: 900;
-            line-height: normal;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 20px;
-            & span{
-                color: #FF7518;
-                display: block;
-                // margin-bottom: 5px;
-            &.yellow{
-                color: #FFD700;
-            }
-            &.green{
-                color: #00990A;
-            }
-            }
-        }
-    }
-}
-
-
 
 
 
@@ -2534,8 +2095,8 @@
             &.cryptoLogo {
                 & .card-body {
                     & .logos {
-                        max-height: 40px;
-                        max-width: 40px;
+                        max-height: 36px;
+                        max-width: 36px;
                     }
                     & .ragisterbonus {
                         font-size: 18px;
@@ -2578,6 +2139,75 @@
         & .copyright {
             font-size: 15px;
             line-height: 20px;
+        }
+    }
+    .aboutFluid{
+        & .aboutCard{
+            &.Card2{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+            }
+            }
+            &.Card3{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                &.abtImg3{
+                }
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+            }
+            }
+            &.Card4{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                &.abtImg4{
+                }
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+                padding: 0 75px;
+            }
+            }
+            &::after{
+            }
+            &::before{
+            }
+            & .aboutImg{
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+            }
         }
     }
 }
@@ -2748,6 +2378,88 @@
             }
         }
     }
+    .aboutFluid{
+        & .aboutCard{
+            &.Card2{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                width: 192px;
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+                padding: 0 38px;
+                margin-bottom: 20px;
+            }
+            }
+            &.Card3{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                width: 196px;
+                &.abtImg3{
+                }
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+                margin-bottom: 20px;
+                padding: 0 47px;
+            }
+            }
+            &.Card4{
+                &::after{
+
+                }
+                &::before{
+                }
+                
+            & .aboutImg{
+                width: 135px;
+                &.abtImg4{
+                }
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+                padding: 0 38px;
+                margin-bottom: 20px;
+            }
+            }
+            &::after{
+            }
+            &::before{
+                // width: 45px;
+                // height: 20px;
+            }
+            & .aboutImg{
+                & img{
+                }
+            }
+            & .aboutHead{
+            }
+            & .aboutSubHead{
+                margin-bottom: 20px;
+                padding: 0 30px;
+            }
+        }
+    }
+    
 }
 
 @include media-breakpoint-down(lg) {
@@ -2917,78 +2629,7 @@
             }
         }
     }
-    .footerrSection {
-        & .borderd {
-            &.smBorderd {
-            }
-        }
-        & .paymentHeading {
-            font-size: 32px;
-            line-height: 40px;
-        }
-        & .card {
-            & .card-body {
-                & .logos{
-                    & img {
-                    }
-                }
-            }
-            &.cardLogo{
-                & .card-body {
-                    & .logos {
-                        height: 40px;
-                    }
-                }
-            }
-            &.cryptoLogo {
-                & .card-body {
-                    & .logos {
-                        height: 40px;
-                        width: 40px;
-                    }
-                    & .ragisterbonus {
-                        font-size: 16px;
-                        line-height: 20px;
-                        & span {
-                        }
-                    }
-                    & .ragisterBtn {
-                        height: 35px;
-                        // font-size: 12px;
-                        // line-height: 15px;
-                        &:hover{
-                        }
-                    }
-                }
-            }
-            &.bardcard {
-                & .card-body {
-                    & .logos {
-                        height: 35px;
-                    }
-                }
-            }
-        }
-        & .navContent {
-            & .navLink {
-                font-size: 14px;
-                line-height: 18px;
-                &:hover{
-                }
-            }
-        }
-        & .democontent {
-            font-size: 14px;
-            line-height: 20px;
-        }
-        & .logoImg  {
-            height: 25px;
-        }
-        & .copyright {
-            font-size: 13px;
-            line-height: 18px;
-        }
-    }
+    
     .main{
         & .mainContaint {
             margin-left: 0;
@@ -2999,6 +2640,74 @@
     
             }
         }
+    }   
+    .aboutFluid{
+        & .aboutCard{
+        &.Card2{
+            &::after{
+
+            }
+            &::before{
+            }
+            
+        & .aboutImg{
+            & img{
+            }
+        }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+        }
+        &.Card3{
+            &::after{
+
+            }
+            &::before{
+            }
+            
+        & .aboutImg{
+            &.abtImg3{
+            }
+            & img{
+            }
+        }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+        }
+        &.Card4{
+            &::after{
+
+            }
+            &::before{
+            }
+            
+        & .aboutImg{
+            &.abtImg4{
+            }
+            & img{
+            }
+        }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+        }
+        &::after{
+        }
+        &::before{
+        }
+        & .aboutImg{
+            & img{
+            }
+        }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+    }
     }
 }
 
@@ -3169,82 +2878,74 @@
             }
         }
     }
-    .footerrSection {
-        & .borderd {
-            &.smBorderd {
+      
+    .aboutFluid{
+        & .aboutCard{
+        &.Card2{
+            &::after{
+
+            }
+            &::before{
+            }
+            
+        & .aboutImg{
+            & img{
             }
         }
-        & .paymentHeading {
-            font-size: 28px;
-            line-height: 35px;
+        & .aboutHead{
         }
-        & .card {
-            & .card-body {
-                & .logos{
-                    & img {
-                    }
-                }
+        & .aboutSubHead{
+        }
+        }
+        &.Card3{
+            &::after{
+
             }
-            &.cardLogo{
-                border-radius: 5px;
-                & .card-body {
-                    & .logos {
-                        height: 35px;
-                    }
-                }
+            &::before{
             }
-            &.cryptoLogo {
-                & .card-body {
-                    & .logos {
-                        height: 39px;
-                        width: 39px;
-                    }
-                    & .ragisterbonus {
-                        font-size: 14px;
-                        line-height: 18px;
-                        & span {
-                        }
-                    }
-                    & .ragisterBtn {
-                        height: 30px;
-                        font-size: 10px;
-                        line-height: 14px;
-                        &:hover{
-                        }
-                    }
-                }
+            
+        & .aboutImg{
+            &.abtImg3{
             }
-            &.bardcard {
-                border-radius: 5px;
-                & .card-body {
-                    & .logos {
-                        height: 32px;
-                        & img {
-                            width: 100%;
-                        }
-                    }
-                }
+            & img{
             }
         }
-        & .navContent {
-            & .navLink {
-                font-size: 12px;
-                line-height: 14px;
-                &:hover{
-                }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+        }
+        &.Card4{
+            &::after{
+
+            }
+            &::before{
+            }
+            
+        & .aboutImg{
+            &.abtImg4{
+            }
+            & img{
             }
         }
-        & .democontent {
-            font-size: 12px;
-            line-height: 16px;
+        & .aboutHead{
         }
-        & .logoImg  {
-            height: 18px;
+        & .aboutSubHead{
         }
-        & .copyright {
-            font-size: 12px;
-            line-height: 16px;
         }
+        &::after{
+        }
+        &::before{
+        }
+        & .aboutImg{
+            & img{
+            }
+        }
+        & .aboutHead{
+        }
+        & .aboutSubHead{
+        }
+    }
     }
 }
 
@@ -3424,72 +3125,136 @@
             }
         }
     }
-    .footerrSection {
-        & .borderd {
-            &.smBorderd {
-            }
-        }
-        & .paymentHeading {
-            font-size: 23px;
-            line-height: 28px;
-        }
-        & .card {
-            & .card-body {
-                & .logos{
-                    & img {
+    
+    .aboutFluid{
+        padding: 0;
+        border: 0;
+        background-color: unset;
+        position: unset;
+            & .aboutCard{
+                &.Card2{
+                    &::after{
+    
+                    }
+                    &::before{
+                        // width: 30px;
+                        // height: 14px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 6px;
+                        line-height: 7px;
+                    }
+                    
+                & .aboutImg{
+                    width: 114px;
+                    height: 55px;
+                    margin-bottom: 0;
+                    & img{
                     }
                 }
-            }
-            &.cardLogo{
-                & .card-body {
-                    & .logos {
-                        height: 30px;
+                & .aboutHead{
+                    font-size: 12px;
+                    margin-top: 0;
+                }
+                & .aboutSubHead{
+                    font-weight: 600;
+                    font-size: 6px;
+                    line-height: 7px;
+                    padding: 0 29px;
+                    margin-bottom: 12px;
+                }
+                }
+                &.Card3{
+                    &::after{
+    
+                    }
+                    &::before{
+                    }
+                    
+                & .aboutImg{
+                    width: 126px;
+                    height: 75px;
+                    &.abtImg3{
+                        margin-top: -24px;
+                    }
+                    & img{
+                        width: 100%;
+                        height: 100%;
                     }
                 }
-            }
-            &.cryptoLogo {
-                & .card-body {
-                    & .logos {
+                & .aboutHead{
+                    font-size: 12px;
+                    margin-top: 0;
+                    line-height: 14px;
+                }
+                & .aboutSubHead{
+                    font-size: 6px;
+                    padding: 0 33px;
+                    margin-bottom: 12px;
+                    margin-top: 5px;
+                }
+                }
+                &.Card4{
+                    &::after{
+    
                     }
-                    & .ragisterbonus {
-                        & span {
-                        }
+                    &::before{
                     }
-                    & .ragisterBtn {
-                        font-size: 10px;
-                        &:hover{
-                        }
+                    
+                & .aboutImg{
+                    width: 85px;
+                    height: 100px;
+                    margin-bottom: 0;
+                    &.abtImg4{
+                        margin-top: -45px;
+                    }
+                    & img{
+                        width: 100%;
+                        height: 100%;
                     }
                 }
-            }
-            &.bardcard {
-                & .card-body {
-                    & .logos {
-                        height: 30px;
-                        & img {
-                        }
+                & .aboutHead{
+                    font-size: 11px;
+                    margin-top: 0
+                }
+                & .aboutSubHead{
+                    margin-bottom: 12px;
+                    font-size: 6px;
+                    padding: 0 40px;
+                    line-height: normal;
+                }
+                }
+                & .borderKey{
+                    &::after{
+                    }
+                    &::before{
+                        width: 30px;
+                        height: 14px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 6px;
+                        line-height: 7px;
                     }
                 }
-            }
-        }
-        & .navContent {
-            & .navLink {
-                font-size: 10px;
-                line-height: 12px;
-                &:hover{
+                & .aboutImg{
+                    width: 88px;
+                    height: 54px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .aboutHead{
+                    font-size: 12px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                & .aboutSubHead{
+                    font-size: 6px;
+                    line-height: normal;
                 }
             }
-        }
-        & .democontent {
-            font-size: 8px;
-            line-height: 10px;
-        }
-        & .logoImg  {
-            height: 13px;
-        }
-        & .copyright {
-            font-size: 8px;
-            line-height: 10px;
-        }
     }
 }
