@@ -301,7 +301,7 @@
         z-index: -1;
     }
     & .vipheroMain {
-        padding: 116px 51px 0 110px;
+        padding: 116px 0 0 70px;
         &::before{
             content: '';
             position: absolute;
@@ -316,8 +316,9 @@
         }
         & .heroHeading {
             font-size: 45px;
-                color: #E3E3E3;
-                font-weight: 900;
+            color: #E3E3E3;
+            font-weight: 900;
+            line-height: normal;
             & .heroHeadingtwo {
                 color: #FFD700;
             }
@@ -378,22 +379,33 @@
     }
     & .howWorkcard {
         padding-top: 100px;
-        & .workCard {
-            padding: 23px 27px 28px 25px;
-            border-radius: 20px;
-            border: 2px solid #00990A; 
-            & .workCardImg {
-            }
-            & .workCardtitle {
-                color: #E3E3E3;
-                font-size: 25px;
-                line-height: normal;
-                padding-top: 35px;
-            }
-            & .workCardpara {
-                font-size: 13px;
-                color: #93ACD3;
-                line-height: normal;
+        & .workCardMain {
+            & .workCard {
+                padding: 23px 27px 28px 25px;
+                border-radius: 20px;
+                border: 2px solid #00990A; 
+                & .workCardImg {
+                }
+                & .loginIcon {
+
+                }
+                & .playIcon {
+                    
+                }
+                & .inreaseIcon {
+
+                }
+                & .workCardtitle {
+                    color: #E3E3E3;
+                    font-size: 25px;
+                    line-height: normal;
+                    padding-top: 35px;
+                }
+                & .workCardpara {
+                    font-size: 13px;
+                    color: #93ACD3;
+                    line-height: normal;
+                }
             }
         }
     }
@@ -594,6 +606,10 @@
                 color: #FFD700;
             }
         }
+        & .royaltyImg {
+            max-width: 226px;
+            max-height: 138px;
+        }
         & .royaltypara {
             color: #93ACD3;
             font-size: 18px;
@@ -787,6 +803,133 @@
         margin-top: 70px;
     }
     // recentWin section end
+
+
+    // ********* Vip Club Page Start ********
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 105px 0 0 60px;
+            &::before{
+                bottom: -9rem;
+            }
+            & .heroHeading {
+                font-size: 40px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 85px;
+                & .heroCardTitle {
+                    font-size: 20px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 14px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 140px;
+    & .howworkHeading {
+        font-size: 32px;
+    }
+    & .howorkpara {
+        font-size: 18px;
+    }
+    & .howWorkcard {
+        padding-top: 80px;
+        & .workCardMain {
+            & .workCard {
+                padding: 20px 16px 24px 16px;
+                & .workCardImg {
+                }
+                & .loginIcon {
+                }
+                & .playIcon {
+                }
+                & .inreaseIcon {
+                }
+                & .workCardtitle {
+                    font-size: 18px;
+                    padding-top: 30px;
+                }
+                & .workCardpara {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 34px;
+        & .progressMain {
+        &::before {
+        }
+        & .progressBar {
+            height: 50px;
+            width: 50px;
+            font-size: 28px;
+        }
+        }
+    }
+    & .playbtnMain {
+        padding-top: 60px;
+        & .playBtn {
+        }
+    }
+    }
+    // ********* how work section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        padding-right: 60px;
+        padding-bottom: 60px;
+        & .aboutDambleFluidHeading{    
+            font-size: 30px;
+            margin-bottom: 55px;
+        }
+        & .bottomBorder{
+            width: auto;
+            &:last-child{    
+            }
+            & .subHeading{
+                font-size: 18px;
+                & span{
+                }
+            }
+            & .para{
+                font-size: 15px;
+            }
+        }
+    }
+    // ********* about damble section end ********
+    // ********* Vip Club Page end ********
 }
 
 @include media-breakpoint-down(lg) {
@@ -903,6 +1046,143 @@
         }
     }
     // help-us section end
+
+
+    // ********* Vip Club Page Start ********
+
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 100px 0 0 45px;
+            &::before{
+                bottom: -9rem;
+            }
+            & .heroHeading {
+                font-size: 35px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 70px;
+                & .heroCardTitle {
+                    font-size: 18px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 13px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 100px;
+    & .howworkHeading {
+        font-size: 28px;
+    }
+    & .howorkpara {
+        font-size: 16px;
+    }
+    & .howWorkcard {
+        padding-top: 70px;
+        & .workCardMain {
+            & .workCard {
+                padding: 16px 10px 23px 10px;
+                & .workCardImg {
+                }
+                & .loginIcon {
+                    width: 82px;
+                    height: 80px;
+                }
+                & .playIcon {
+                    width: 105px;
+                    height: 80px;
+                }
+                & .inreaseIcon {
+                    width: 120px;
+                    height: 80px;
+                }
+                & .workCardtitle {
+                    padding-top: 0;
+                    font-size: 20px;
+                }
+                & .workCardpara {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 30px;
+        & .progressMain {
+        &::before {
+        }
+        & .progressBar {
+            height: 40px;
+            width: 40px;
+            font-size: 24px;
+        }
+        }
+    }
+    & .playbtnMain {
+        padding-top: 48px;
+        & .playBtn {
+            font-size: 20px;
+            padding: 8px 48px 9px 48px
+        }
+    }
+    }
+    // ********* how work section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        padding-right: 44px;
+        padding-bottom: 40px;
+        & .aboutDambleFluidHeading{    
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        & .bottomBorder{
+            width: auto;
+            &:last-child{    
+            }
+            & .subHeading{
+                font-size: 16px;
+                & span{
+                }
+            }
+            & .para{
+                font-size: 13px;
+            }
+        }
+    }
+    // ********* about damble section end ********
+
+    // ********* Vip Club Page end ********
 }
 
 @include media-breakpoint-down(md) {
@@ -932,7 +1212,7 @@
     // toprated-games-main section start
     .toprated-games-main {
         // padding: 0 15px;
-         &::before {
+        &::before {
         display: none;
         }
         & .toprated-games {
@@ -1051,6 +1331,129 @@
         }
     }
     // help-us section end
+
+
+
+     // ********* Vip Club Page Start ********
+
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
+        }
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 90px 0 0 30px;
+            &::before{
+                bottom: -13rem;
+            }
+            & .heroHeading {
+                font-size: 28px;
+                & .heroHeadingtwo {
+                }
+            }
+            & .vipHorocard {
+                padding-top: 55px;
+                & .heroCardTitle {
+                    font-size: 17px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                }
+                & .cardicontwo {
+                }
+                & .cardiconthree {
+                }
+                & .cardiconfour {
+                }
+                & .exclusive {
+                }
+                & .levelndrew {
+                }
+                & .playearn {
+                }
+                & .heroCardpara {
+                    font-size: 12px;
+                }
+            }
+            & .vipheroImg {
+            }
+        }
+    }
+    // ********* vipheroSection end ********
+
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 50px;
+    & .howworkHeading {
+        font-size: 24px;
+    }
+    & .howorkpara {
+        font-size: 14px;
+    }
+    & .howWorkcard {
+        padding-top: 60px;
+        & .workCardMain {
+            gap: 40px;
+            & .workCard {
+                padding: 14px 0px 19px 0px;
+                border-radius: 7px;
+                border: 1px solid #00990A;
+                & .workCardImg {
+                }
+                & .loginIcon {
+                    width: 82px;
+                    height: 72px;
+                }
+                & .playIcon {
+                    width: 95px;
+                    height: 60px;
+                }
+                & .inreaseIcon {
+                    width: 100px;
+                    height: 60px;
+                }
+                & .workCardtitle {
+                    padding-top: 0;
+                    font-size: 18px;
+                }
+                & .workCardpara {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 60px;
+        & .progressMain {
+            height: 85%;
+        &::before {
+            height: 100%;
+            width: 4px;
+            left: 35%;
+            top: 0;
+            transform: translate(50%, 0);
+        }
+        & .progressBar {
+            height: 30px;
+            width: 30px;
+            font-size: 18px;
+        }
+        }
+    }
+    & .playbtnMain {
+        & .playBtn {
+            font-size: 17px;
+            padding: 13px 25px;
+        }
+    }
+    }
+    // ********* how work section end ********
+
+
+    // ********* Vip Club Page end ********
 }
 
 @include media-breakpoint-down(sm) {
@@ -1196,7 +1599,6 @@
 
 
     // ********* Vip Club Page Start ********
-
     
     // ********* vipheroSection start ********
     .vipheroSection {
@@ -1205,10 +1607,10 @@
         &::after {
         }
         & .vipheroMain {
-            padding: 80px 0 24px 0;
+            padding: 80px 0 0 0;
             &::before{
-                height: 100%;
-                bottom: -11rem;
+                height: 50%;
+                bottom: -2rem;
             }
             & .heroHeading {
                 font-size: 23px;
@@ -1267,33 +1669,194 @@
             font-size: 10px;
         }
         & .howWorkcard {
-            & .workCard {
-                padding: 11px 20px 22px 12px;
-                & .workCardImg {
-                    height: 60px;
-                }
-                & .workCardtitle {
-                    padding-top: 0;
-                    font-size: 16px;
-                }
-                & .workCardpara {
-                    font-size: 8px;
+            padding-top: 40px;
+            & .workCardMain {
+                gap: 34px;
+                & .workCard {
+                    padding: 11px 0px 16px 0px;
+                    border-radius: 5px;
+                    border: 0.5px solid #00990A;
+                    & .workCardImg {
+                    }
+                    & .loginIcon {
+                        width: 62px;
+                        height: 52px;
+                    }
+                    & .playIcon {
+                        width: 75px;
+                        height: 50px;
+                    }
+                    & .inreaseIcon {
+                        width: 75px;
+                        height: 50px;
+                    }
+                    & .workCardtitle {
+                        padding-top: 0;
+                        font-size: 16px;
+                    }
+                    & .workCardpara {
+                        font-size: 8px;
+                    }
                 }
             }
         }
         & .workprogress {
+            padding-top: 40px;
             & .progressMain {
+                height: 85%;
             &::before {
+                height: 100%;
+                width: 4px;
+                left: 35%;
+                top: 0;
+                transform: translate(50%, 0);
             }
             & .progressBar {
+                height: 21px;
+                width: 21px;
+                font-size: 12px;
             }
             }
         }
         & .playbtnMain {
-        & .playBtn {
-        }
+            & .playBtn {
+                font-size: 15px;
+                padding: 9px 15px;
+                border-radius: 5px;
+            }
         }
     }
-// ********* how work section end ********
+    // ********* how work section end ********
+
+    // ********* rank section start ********
+    .rankSection {
+        & .rankHeading {
+            & .rankHeadingtwo {
+            }
+        }
+        & .rankpara {
+        }
+        & .rankcontent {
+            & .rankCard {
+                & .rankcardImg {
+                }
+                & .damblerproone {
+                }
+                & .rankCHeading {
+                }
+                & .ranktitle {
+                }
+                & .ranktitleprice {
+                    & .us {
+                    }
+                }
+                & .cardline {
+                }
+                & .rankdetailmain {
+    
+                    &.active {
+                        & .rankDetail {
+                        }
+                        & .rankDetailicon {
+                        & .checkicon {
+                            & img {
+                            }
+                        }
+                        }
+                    }
+                    & .rankDetail {
+                    }
+                    & .rankDetailicon {
+                        & .checkicon {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .rankcontenttwo {
+        }
+        & .rankproMain {
+            & .rankproline {
+                &::before {
+                }
+                &::after {
+                }
+            }
+            & .rankprogress {
+                & .progressicon {
+                }
+            }
+        }
+    }
+    // ********* rank section end ********
+
+    // ********* about damble section start ********
+    .aboutDambleFluid{
+        & .aboutDambleFluidHeading{    
+        }
+        & .bottomBorder{
+            &:last-child{    
+            }
+            & .subHeading{
+                & span{
+                }
+            }
+            & .para{
+            }
+        }
+    }
+    // ********* about damble section end ********
+
+    // ********* becomeroylty section start ********
+.becomeroylty {
+    & .royaltyCard {
+        padding: 57px 36px 34px 36px;
+        & .royaltyHeading {
+            font-size: 20px;
+            padding-bottom: 33px;
+            & .Headingtwo {
+            }
+        }
+        & .royaltyImg {
+            width: 104px;
+            height: 64px;
+        }
+        & .royaltypara {
+            font-size: 10px;
+            padding: 19px 59px 0 59px;
+        }
+        & .royaltsubheading {
+            font-size: 15px;
+            padding-top: 64px;
+            & .royaltSubHeadingTwo {
+            }
+        }
+        & .joinBtnMain {
+            padding: 34px 0 63px 0;
+            & .joinBtn {
+                font-size: 13px;
+                padding: 5px 20px;
+                border-radius: 5px;
+                &:hover {
+                }
+            }
+        }
+        & .royaltyContent {
+            & .royaltycheckmain {
+                & .royaltyicon {
+                }
+            }
+            & .royaltychecktitle {
+            }
+        }
+        & .telegramchan {
+            & .telegram {
+            }
+        }
+    }
+}
+// ********* becomeroylty section end ********
     // ********* Vip Club Page end ********
 }
