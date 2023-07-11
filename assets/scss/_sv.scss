@@ -445,7 +445,7 @@
                                     font-weight: 500;
                                     line-height: normal;
                                     border: none;
-                                    padding:20px 0px;
+                                    padding:20px 5px;
                                     
                                 }
                             }
@@ -460,7 +460,7 @@
                                     font-weight: 700;
                                     line-height: normal;
                                     border: none;
-                                    padding: 27px 0px;
+                                    padding: 27px 5px;
                                     border-bottom: 1px solid #00990A;
                                   
                                     
@@ -705,14 +705,14 @@
                             & thead{
                                 & tr{
                                     & th{
-                                        padding: 19px 0px;
+                                        padding: 19px 5px;
                                     }
                                 }
                             }
                             & tbody{
                                 & tr{
                                     & td{
-                                        padding: 19px 0px;
+                                        padding: 19px 5px;
                                   
                                         
                                         &:nth-of-type(3){
