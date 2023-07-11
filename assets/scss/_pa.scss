@@ -370,6 +370,201 @@
     }
 }
 
+.giveWayFluidWrapper{
+    padding: 0 !important;
+    & .giveWayFluid{    
+        background-image: url(./../img/givewayImg/hero-bg.png);
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 45.65px 62.81px 0px 99.71px;
+        & .heroImg{
+            // width:600px;
+            // height:500px;
+            text-align: center;
+            & img{
+                width:90%;
+                // height:100%;
+            }
+        }
+        & .mHeroBg{
+            & img{
+                width: 100%;
+            }
+        }
+        & .heroTxt{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 27px;
+            & span{
+                color: #FFD700;
+            }
+        }
+    }
+    & .prizeFluid{
+        padding: 45px 91px 50px 85px;
+        & .prizeFluidInner{
+            & .prizeTxt{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 62px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                & span{
+                    color: #FFD700;
+                }
+            }
+            & .para{
+                margin-top: 34px;
+                color: #E2E2E3;
+                font-family: 'Inter';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            & .moreAnchor{
+                margin-top: 27px;
+                color: #0F1;
+                font-family: 'Inter';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        & .tableWrapper{
+            border-radius: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.50);
+            padding: 30px;
+            background-image: url(./../img/givewayImg/tableBg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            & .giveTable{
+                // background: url(./../../assets/img/givewayImg/tableBg.png), lightgray 50% / cover no-repeat;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 30px 30px 22px 30px;
+                & tr{
+                    & td{
+                        padding: 10px 0 5px 0;
+                    }
+                    &:last-child{
+                        & td{   
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    & td{
+                        border-bottom: 1px solid;
+                        border-color: rgba(255, 215, 0, 0.50);
+                    }
+                    & th{
+                        border-bottom: 1px solid;
+                        border-color: rgba(255, 215, 0, 0.50);
+                    }
+                }
+                & .giveTbaleHead{
+                    & .tableHead{
+                    color: #93ACD3;
+                    font-family: 'Inter';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    }
+                }
+                & .tprophy{
+                    width: 27px;
+                    height: 30.601px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .number{
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-align: center;
+                }
+                & .userImg{
+                    width: 20px;
+                    height: 19px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .tableTxt{
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                & .tableTxt1{
+                    color: #93ACD3;
+                    font-family: 'Inter';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+                & .lamborgini{
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    & img{
+                        width: 18px;
+                        height: 22px;
+                    }
+                    & .spanTxt{
+                        color: #FFF;
+                        font-family: 'Inter';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+                & .TableBtn{
+                    border-radius: 11px;
+                    background: #00990A;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 8px 25px;
+                    border: none;
+                    margin: 26px 0 0 0;
+                }
+            }
+        }
+        & .dumble{
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}
 
 // ** [ Modal ] **
 .ragisterModal {
@@ -900,6 +1095,14 @@
 }
 
 
+@media screen and (max-width: 700px) {
+    .ragisterModal{
+        & .modal-dialog {
+            margin: 10px;
+        }
+    }
+}
+
 
 
 @include media-breakpoint(basic) {
@@ -1063,6 +1266,78 @@
                         & img {
                         }
                     }
+                }
+            }
+        }
+    }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{    
+            & .heroImg{
+                & img{
+                }
+            }
+            & .heroTxt{
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    & span{
+                    }
+                }
+                & .para{
+                }
+                & .moreAnchor{
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
                 }
             }
         }
@@ -2069,78 +2344,6 @@
             }
         }
     }
-    .footerrSection {
-        & .borderd {
-            &.smBorderd {
-            }
-        }
-        & .paymentHeading {
-            font-size: 38px;
-            line-height: 45px;
-        }
-        & .card {
-            & .card-body {
-                & .logos{
-                    & img {
-                    }
-                }
-            }
-            &.cardLogo{
-                & .card-body {
-                    & .logos {
-                        max-height: 40px;
-                    }
-                }
-            }
-            &.cryptoLogo {
-                & .card-body {
-                    & .logos {
-                        max-height: 36px;
-                        max-width: 36px;
-                    }
-                    & .ragisterbonus {
-                        font-size: 18px;
-                        line-height: 22px;
-                        & span {
-                        }
-                    }
-                    & .ragisterBtn {
-                        height: 37px;
-                        // font-size: 12px;
-                        // line-height: 15px;
-                        &:hover{
-                        }
-                    }
-                }
-            }
-            &.bardcard {
-                & .card-body {
-                    & .logos {
-                        height: 45px;
-                    }
-                }
-            }
-        }
-        & .navContent {
-            & .navLink {
-                font-size: 16px;
-                line-height: 20px;
-                &:hover{
-                }
-            }
-        }
-        & .democontent {
-            font-size: 16px;
-            line-height: 21px;
-        }
-        & .logoImg  {
-            height: 28px;
-        }
-        & .copyright {
-            font-size: 15px;
-            line-height: 20px;
-        }
-    }
     .aboutFluid{
         & .aboutCard{
             &.Card2{
@@ -2207,6 +2410,79 @@
             & .aboutHead{
             }
             & .aboutSubHead{
+            }
+        }
+    }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{    
+            & .heroImg{
+                & img{
+                }
+            }
+            & .heroTxt{
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    font-size: 49px;
+                    & span{
+                    }
+                }
+                & .para{
+                }
+                & .moreAnchor{
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
+                }
             }
         }
     }
@@ -2456,6 +2732,80 @@
             & .aboutSubHead{
                 margin-bottom: 20px;
                 padding: 0 30px;
+            }
+        }
+    }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{    
+            & .heroImg{
+                & img{
+                }
+            }
+            & .heroTxt{
+                font-size: 30px;
+                text-align: center;
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    & span{
+                    }
+                }
+                & .para{
+                }
+                & .moreAnchor{
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
+                }
             }
         }
     }
@@ -2709,6 +3059,83 @@
         }
     }
     }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{    
+            padding: 0;
+            min-height: unset;
+            & .heroImg{
+                & img{
+                    width: 100%;
+                }
+            }
+            & .heroTxt{
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            padding: 45px 10px 50px 10px;
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    font-size: 45px;
+                    & span{
+                    }
+                }
+                & .para{
+                }
+                & .moreAnchor{
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -2878,7 +3305,6 @@
             }
         }
     }
-      
     .aboutFluid{
         & .aboutCard{
         &.Card2{
@@ -2946,6 +3372,90 @@
         & .aboutSubHead{
         }
     }
+    }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{ 
+            min-height: unset;   
+            & .heroImg{
+                & img{
+                }
+            }
+            & .heroTxt{
+                font-size: 18px;
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            // margin-top: -160px;
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    font-size: 30px;
+                    text-align: center;
+                    & span{
+                    }
+                }
+                & .para{
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                & .moreAnchor{
+                    display: block;
+                    text-align: center;
+                    font-size: 10px;
+                    margin-top: 15px;
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
+                }
+            }
+        }
     }
 }
 
@@ -3125,7 +3635,6 @@
             }
         }
     }
-    
     .aboutFluid{
         padding: 0;
         border: 0;
@@ -3256,5 +3765,88 @@
                     line-height: normal;
                 }
             }
+    }
+    .giveWayFluidWrapper{
+        & .giveWayFluid{   
+            min-width: unset; 
+            & .heroImg{
+                & img{
+                }
+            }
+            & .heroTxt{
+                font-size: 18px;
+                & span{
+                }
+            }
+        }
+        & .prizeFluid{
+            & .prizeFluidInner{
+                & .prizeTxt{
+                    font-size: 30px;
+                    text-align: center;
+                    & span{
+                    }
+                }
+                & .para{
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+                & .moreAnchor{
+                    display: block;
+                    text-align: center;
+                    font-size: 10px;
+                    margin-top: 15px;
+                }
+            }
+            & .tableWrapper{
+                & .giveTable{
+                    & tr{
+                        & td{
+                        }
+                        &:last-child{
+                            & td{   
+                                &:last-child{
+                                }
+                            }
+                        }
+                        & td{
+                        }
+                        & th{
+                        }
+                    }
+                    & .giveTbaleHead{
+                        & .tableHead{
+                        }
+                    }
+                    & .tprophy{
+                        & img{
+                        }
+                    }
+                    & .number{
+                    }
+                    & .userImg{
+                        & img{
+                        }
+                    }
+                    & .tableTxt{
+                    }
+                    & .tableTxt1{
+                    }
+                    & .lamborgini{
+                        & img{
+                        }
+                        & .spanTxt{
+                        }
+                    }
+                    & .TableBtn{
+                    }
+                }
+            }
+            & .dumble{
+                & img{
+                }
+            }
+        }
     }
 }
