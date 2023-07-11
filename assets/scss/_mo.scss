@@ -270,6 +270,446 @@
 
 
 
+// ********* Vip Club Page Start ********
+
+
+// ********* vipheroSection start ********
+.vipheroSection {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        height: 100%;
+        width: 60%;
+        background-image: url(../Img/vipClub/herobgleft.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        height: 100%;
+        width: 40%;
+        background-image: url(../Img/vipClub/herobgright.png);
+        // background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    & .vipheroMain {
+        padding: 116px 51px 0 110px;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: -11rem;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url(../Img/vipClub/herobg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        & .heroHeading {
+            font-size: 45px;
+                color: #E3E3E3;
+                font-weight: 900;
+            & .heroHeadingtwo {
+                color: #FFD700;
+            }
+        }
+        & .vipHorocard {
+            padding-top: 90px;
+            & .cardiconone {
+            }
+            & .cardicontwo {
+            }
+            & .cardiconthree {
+            }
+            & .cardiconfour {
+            }
+            & .heroCardTitle {
+                font-size: 22px;
+                color: #E3E3E3;
+                line-height: normal;
+                padding-bottom: 4px;
+                & .vip {
+                    color: #FFD700;
+                }
+            }
+            & .exclusive {
+                padding-left: 35px;
+            }
+            & .levelndrew {
+                padding-left: 26px;
+            }
+            & .playearn {
+                padding-left: 14px;
+            }
+            & .heroCardpara {
+                font-size:15px ;
+                color: #93ACD3;
+                line-height: normal;
+            }
+        }
+        & .vipheroImg {
+            max-width: 740px;
+            max-height: 391px;
+        }
+    }
+}
+// ********* vipheroSection end ********
+
+// ********* how work section start ********
+.howWork{
+    padding-top: 175px ;
+    & .howworkHeading {
+        font-size: 40px;
+        font-weight: 900;
+        color: #E3E3E3;
+    }
+    & .howorkpara {
+        font-size: 20px;
+        color: #93ACD3;
+    }
+    & .howWorkcard {
+        padding-top: 100px;
+        & .workCard {
+            padding: 23px 27px 28px 25px;
+            border-radius: 20px;
+            border: 2px solid #00990A; 
+            & .workCardImg {
+            }
+            & .workCardtitle {
+                color: #E3E3E3;
+                font-size: 25px;
+                line-height: normal;
+                padding-top: 35px;
+            }
+            & .workCardpara {
+                font-size: 13px;
+                color: #93ACD3;
+                line-height: normal;
+            }
+        }
+    }
+    & .workprogress {
+        padding-top: 38px;
+        & .progressMain {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height:8px;
+                width: 100%;
+                background-color: #0a941273;
+                transform: translateY(-50%);
+            }
+            & .progressBar {
+                height: 58px;
+                width: 58px;
+                background:#00990A ;
+                font-size:36px ;
+                font-weight: 800;
+                color: #000;
+            }
+        }
+    }
+    & .playbtnMain {
+        padding-top: 66px;
+        & .playBtn {
+            font-size: 22px;
+            border-radius: 11px;
+            background: #03B80F;
+            color: #FFF;
+            padding: 8px 59px 9px 56px;
+
+        }
+    }
+}
+// ********* how work section end ********
+
+// ********* rank section start ********
+.rankSection {
+    padding-top: 157px ;
+    & .rankHeading {
+        font-size: 45px;
+        font-weight: 900;
+        color: #E3E3E3;
+        line-height: normal;
+        & .rankHeadingtwo {
+            color: #FFD700;
+        }
+    }
+    & .rankpara {
+        font-size:20px ;
+        color: #93ACD3;
+        padding-top: 12px;
+        padding-bottom: 50px;
+    }
+    & .rankcontent {
+        padding: 108px 35px 60px 35px;
+        background: url(../Img/vipClub/rankcardbg.png) no-repeat;
+        background-size: cover;
+        border-radius: 35px;
+        margin-right: 75px;
+        & .rankCard {
+            padding: 0 33px 50px 23px;
+            border-radius: 20px;
+            border: 2px solid #00990A;
+            background: linear-gradient(360deg, rgba(16, 21, 35, 0.50) 53.13%, rgba(66, 120, 195, 0.50) 100%);
+            & .rankcardImg {
+                margin-top: -47px;
+            }
+            & .damblerproone {
+                margin-top: -66px;
+            }
+            & .rankCHeading {
+                font-size:13px ;
+                font-weight:900 ;
+                color:#FFF ;
+                padding-bottom: 13px;
+            }
+            & .ranktitle {
+                color: #93ACD3;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: normal;
+            }
+            & .ranktitleprice {
+                color: #FFD700;
+                font-weight: 700;
+                font-size: 10px;
+                & .us {
+                    color: #FFF;
+                }
+            }
+            & .cardline {
+                height: 1px;
+                background: #FFD700;
+                margin: 21px 0 10px 0;
+            }
+            & .rankdetailmain {
+                padding-top: 7px;
+                &.active {
+                    & .rankDetail {
+                        color: #fff;
+                    }
+                    & .rankDetailicon {
+                    background-color: #04E929;
+                    & .checkicon {
+                        & img {
+                            filter: invert(0);
+                        }
+                    }
+                    }
+                }
+                & .rankDetail {
+                    color: #748290;
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                & .rankDetailicon {
+                    height: 15px;
+                    width: 15px;
+                    background: #748290;
+                    & .checkicon {
+                        height: 9px;
+                        width: 11px;
+                        & img {
+                            filter: invert(0.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .rankcontenttwo {
+        padding-top: 97px;
+    }
+    & .rankproMain {
+        right: 0;
+        top: 0;
+        & .rankproline {
+            height: 80%;
+            top: 10%;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 100%;
+                width: 8px;
+                z-index: -1;
+                background: #04e92a45;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 27px;
+                width: 27px;
+                background:url(../Img/vipClub/progressicon2.png) no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        & .rankprogress {
+            height: 35px;
+            width: 35px;
+            background: #00990A;
+            border-radius: 13px;
+            & .progressicon {
+                height: 8px;
+                width: 14px;
+            }
+        }
+    }
+}
+// ********* rank section end ********
+
+// ********* becomeroylty section start ********
+.becomeroylty {
+    padding-top: 80px;
+    & .royaltyCard {
+        padding: 90px 20px 31px 52px;
+        border-radius: 35px;
+        background: url(../Img/vipClub/royaltybg.png) no-repeat;
+        background-size: cover;
+        & .royaltyHeading {
+            font-size: 50px;
+            font-weight: 900;
+            color: #E3E3E3;
+            padding-bottom: 110px;
+            & .Headingtwo {
+                color: #FFD700;
+            }
+        }
+        & .royaltypara {
+            color: #93ACD3;
+            font-size: 18px;
+            line-height: normal;
+            padding-top: 59px;
+        }
+        & .royaltsubheading {
+            color: #FFFFFF;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: normal;
+            padding-top: 32px;
+            & .royaltSubHeadingTwo {
+                color: #FFD700;
+            }
+        }
+        & .joinBtnMain {
+            padding-top: 54px;
+            padding-bottom: 12px;
+            & .joinBtn {
+                padding: 8px 27px 9px 27px;
+                line-height: normal;
+                font-size: 22px;
+                color: #FFF;
+                background: #03B80F;
+                font-weight: 800;
+                border-radius: 11px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background: #0ccc19;
+                }
+            }
+        }
+        & .royaltyContent {
+            padding-top: 20px;
+            & .royaltycheckmain {
+                height: 25px;
+                width: 25px;
+                background: #04E929;
+                & .royaltyicon {
+                    height: 16px;
+                    width: 18px;
+                }
+            }
+            & .royaltychecktitle {
+                font-size: 20px;
+                line-height: normal;
+                color: #fff;
+                padding-left: 11px;
+            }
+        }
+        & .telegramchan {
+            font-size: 15px;
+            color: #93ACD3;
+            & .telegram {
+                color: #E4E5E6;
+            }
+        }
+    }
+}
+// ********* becomeroylty section end ********
+
+// ********* about damble section start ********
+.aboutDambleFluid{
+    border-radius: 32px;
+    background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
+    padding-top: 47px;
+    padding-bottom: 97px;
+    padding-left: 44px;
+    margin-top: 103px;
+    & .aboutDambleFluidHeading{
+        color: #E3E3E3;
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 78px;
+    }
+    & .bottomBorder{
+        border-bottom: 1px solid;
+        border-color: #03B80F;
+        padding-bottom: 21px;
+        width: 775px;
+        margin-bottom: 23px;
+        &:last-child{
+            border-bottom: 0;
+        }
+        & .subHeading{
+            color: #E3E3E3;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 18px;
+            & span{
+                color: #FFD700;
+            }
+        }
+        & .para{
+            color: #93ACD3;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+// ********* about damble section end ********
+
+// ********* Vip Club Page end ********
+
+
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -752,401 +1192,108 @@
         }
     }
     // help-us section end
-}
 
 
 
-// ********* Vip Club Page Start ********
+    // ********* Vip Club Page Start ********
 
-// ********* vipheroSection start ********
-.vipheroSection {
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 60%;
-        background-image: url(../Img/vipClub/herobgleft.png);
-        // background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: -1;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 40%;
-        background-image: url(../Img/vipClub/herobgright.png);
-        // background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
-    & .vipheroMain {
-        padding: 116px 51px 30px 110px;
-        &::before{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 60%;
-            width: 100%;
-            background-image: url(../Img/vipClub/herobg.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: -1;
+    
+    // ********* vipheroSection start ********
+    .vipheroSection {
+        &::before {
         }
-        & .heroHeading {
-            font-size: 45px;
-                color: #E3E3E3;
-                font-weight: 900;
-            & .heroHeadingtwo {
-                color: #FFD700;
+        &::after {
+        }
+        & .vipheroMain {
+            padding: 80px 0 24px 0;
+            &::before{
+                height: 100%;
+                bottom: -11rem;
             }
-        }
-        & .vipHorocard {
-            padding-top: 90px;
-            & .heroCardTitle {
-                font-size: 22px;
-                color: #E3E3E3;
-                line-height: normal;
-                padding-bottom: 4px;
-                & .vip {
-                    color: #FFD700;
+            & .heroHeading {
+                font-size: 23px;
+                & .heroHeadingtwo {
                 }
             }
-            & .exclusive {
-                padding-left: 35px;
+            & .vipHorocard {
+                padding-top: 49px;
+                & .heroCardTitle {
+                    font-size: 15px;
+                    & .vip {
+                    }
+                }
+                & .cardiconone {
+                    width: 41px;
+                    height: 35px;
+                }
+                & .cardicontwo {
+                    width: 34px;
+                    height: 36px;
+                }
+                & .cardiconthree {
+                    width: 42px;
+                    height: 36px;
+                }
+                & .cardiconfour {
+                    width: 42px;
+                    height: 36px;
+                }
+                & .exclusive {
+                    padding-left: 22px;
+                }
+                & .levelndrew {
+                    padding-left: 16px;
+                }
+                & .playearn {
+                    padding-left: 17px;
+                }
+                & .heroCardpara {
+                    font-size: 10px;
+                }
             }
-            & .levelndrew {
-                padding-left: 26px;
+            & .vipheroImg {
             }
-            & .playearn {
-                padding-left: 14px;
-            }
-            & .heroCardpara {
-                font-size:15px ;
-                color: #93ACD3;
-                line-height: normal;
-            }
-        }
-        & .vipheroImg {
-            max-width: 740px;
-            max-height: 391px;
         }
     }
-}
-// ********* vipheroSection end ********
+    // ********* vipheroSection end ********
 
-// ********* how work section start ********
-.howWork{
-    padding-top: 145px ;
-    & .howworkHeading {
-        font-size: 40px;
-        font-weight: 900;
-        color: #E3E3E3;
-    }
-    & .howorkpara {
-        font-size: 20px;
-        color: #93ACD3;
-    }
-    & .howWorkcard {
-        padding-top: 100px;
-        & .workCard {
-            padding: 23px 27px 28px 25px;
-            border-radius: 20px;
-            border: 2px solid #00990A; 
-            & .workCardImg {
-            }
-            & .workCardtitle {
-                color: #E3E3E3;
-                font-size: 25px;
-                line-height: normal;
-                padding-top: 35px;
-            }
-            & .workCardpara {
-                font-size: 13px;
-                color: #93ACD3;
-                line-height: normal;
+    // ********* how work section start ********
+    .howWork {
+        padding-top: 24px;
+        & .howworkHeading {
+            font-size: 20px;
+        }
+        & .howorkpara {
+            font-size: 10px;
+        }
+        & .howWorkcard {
+            & .workCard {
+                padding: 11px 20px 22px 12px;
+                & .workCardImg {
+                    height: 60px;
+                }
+                & .workCardtitle {
+                    padding-top: 0;
+                    font-size: 16px;
+                }
+                & .workCardpara {
+                    font-size: 8px;
+                }
             }
         }
-    }
-    & .workprogress {
-        padding-top: 38px;
-        & .progressMain {
+        & .workprogress {
+            & .progressMain {
             &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                height:8px;
-                width: 100%;
-                background-color: #0a941273;
-                transform: translateY(-50%);
             }
             & .progressBar {
-                height: 58px;
-                width: 58px;
-                background:#00990A ;
-                font-size:36px ;
-                font-weight: 800;
-                color: #000;
+            }
             }
         }
-    }
-    & .playbtnMain {
-        padding-top: 66px;
+        & .playbtnMain {
         & .playBtn {
-            font-size: 22px;
-            border-radius: 11px;
-            background: #03B80F;
-            color: #FFF;
-            padding: 8px 59px 9px 56px;
-
+        }
         }
     }
-}
 // ********* how work section end ********
-
-// ********* rank section start ********
-.rankSection {
-    padding-top: 157px ;
-    & .rankHeading {
-        font-size: 45px;
-        font-weight: 900;
-        color: #E3E3E3;
-        line-height: normal;
-        & .rankHeadingtwo {
-            color: #FFD700;
-        }
-    }
-    & .rankpara {
-        font-size:20px ;
-        color: #93ACD3;
-        padding-top: 12px;
-        padding-bottom: 50px;
-    }
-    & .rankcontent {
-        padding: 108px 35px 60px 35px;
-        background: url(../Img/vipClub/rankcardbg.png) no-repeat;
-        background-size: cover;
-        border-radius: 35px;
-        margin-right: 75px;
-        & .rankCard {
-            padding: 0 33px 50px 23px;
-            border-radius: 20px;
-            border: 2px solid #00990A;
-            background: linear-gradient(360deg, rgba(16, 21, 35, 0.50) 53.13%, rgba(66, 120, 195, 0.50) 100%);
-            & .rankcardImg {
-                margin-top: -47px;
-            }
-            & .damblerproone {
-                margin-top: -66px;
-            }
-            & .rankCHeading {
-                font-size:13px ;
-                font-weight:900 ;
-                color:#FFF ;
-                padding-bottom: 13px;
-            }
-            & .ranktitle {
-                color: #93ACD3;
-                font-size: 11px;
-                font-weight: 500;
-                line-height: normal;
-            }
-            & .ranktitleprice {
-                color: #FFD700;
-                font-weight: 700;
-                font-size: 10px;
-                & .us {
-                    color: #FFF;
-                }
-            }
-            & .cardline {
-                height: 1px;
-                background: #FFD700;
-                margin: 21px 0 10px 0;
-            }
-            & .rankdetailmain {
-                padding-top: 7px;
-                &.active {
-                    & .rankDetail {
-                        color: #fff;
-                    }
-                    & .rankDetailicon {
-                    background-color: #04E929;
-                    & .checkicon {
-                        & img {
-                            filter: invert(0);
-                        }
-                    }
-                    }
-                }
-                & .rankDetail {
-                    color: #748290;
-                    font-size: 10px;
-                    font-weight: 500;
-                    line-height: normal;
-                }
-                & .rankDetailicon {
-                    height: 15px;
-                    width: 15px;
-                    background: #748290;
-                    & .checkicon {
-                        height: 9px;
-                        width: 11px;
-                        & img {
-                            filter: invert(0.1);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    & .rankcontenttwo {
-        padding-top: 97px;
-    }
-    & .rankproMain {
-        & .rankprogress {
-            height: 35px;
-
-            & .progressicon {
-
-            }
-        }
-    }
+    // ********* Vip Club Page end ********
 }
-// ********* rank section end ********
-
-// ********* becomeroylty section start ********
-.becomeroylty {
-    padding-top: 80px;
-    & .royaltyCard {
-        padding: 90px 20px 31px 52px;
-        border-radius: 35px;
-        background: url(../Img/vipClub/royaltybg.png) no-repeat;
-        background-size: cover;
-        & .royaltyHeading {
-            font-size: 50px;
-            font-weight: 900;
-            color: #E3E3E3;
-            padding-bottom: 110px;
-            & .Headingtwo {
-                color: #FFD700;
-            }
-        }
-        & .royaltypara {
-            color: #93ACD3;
-            font-size: 18px;
-            line-height: normal;
-            padding-top: 59px;
-        }
-        & .royaltsubheading {
-            color: #FFFFFF;
-            font-size: 25px;
-            font-weight: 800;
-            line-height: normal;
-            padding-top: 32px;
-            & .royaltSubHeadingTwo {
-                color: #FFD700;
-            }
-        }
-        & .joinBtnMain {
-            padding-top: 54px;
-            padding-bottom: 12px;
-            & .joinBtn {
-                padding: 8px 27px 9px 27px;
-                line-height: normal;
-                font-size: 22px;
-                color: #FFF;
-                background: #03B80F;
-                font-weight: 800;
-                border-radius: 11px;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    background: #0ccc19;
-                }
-            }
-        }
-        & .royaltyContent {
-            padding-top: 20px;
-            & .royaltycheckmain {
-                height: 25px;
-                width: 25px;
-                background: #04E929;
-                & .royaltyicon {
-                    height: 16px;
-                    width: 18px;
-                }
-            }
-            & .royaltychecktitle {
-                font-size: 20px;
-                line-height: normal;
-                color: #fff;
-                padding-left: 11px;
-            }
-        }
-        & .telegramchan {
-            font-size: 15px;
-            color: #93ACD3;
-            & .telegram {
-                color: #E4E5E6;
-            }
-        }
-    }
-}
-// ********* becomeroylty section end ********
-
-// ********* about damble section start ********
-.aboutDambleFluid{
-    border-radius: 32px;
-    background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
-    padding-top: 47px;
-    padding-bottom: 97px;
-    padding-left: 44px;
-    margin-top: 103px;
-    & .aboutDambleFluidHeading{
-        color: #E3E3E3;
-        font-family: 'Montserrat';
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        margin-bottom: 78px;
-    }
-    & .bottomBorder{
-        border-bottom: 1px solid;
-        border-color: #03B80F;
-        padding-bottom: 21px;
-        width: 775px;
-        margin-bottom: 23px;
-        &:last-child{
-            border-bottom: 0;
-        }
-        & .subHeading{
-            color: #E3E3E3;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-bottom: 18px;
-            & span{
-                color: #FFD700;
-            }
-        }
-        & .para{
-            color: #93ACD3;
-            font-family: 'Montserrat';
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-    }
-}
-// ********* about damble section end ********

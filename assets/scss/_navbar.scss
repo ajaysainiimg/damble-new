@@ -31,13 +31,12 @@
         &.affiliatePage{
             // padding: 76px 31px 108px 28px !important;
             padding: 22px 22px 50px 22px !important;
-
-            
+        }
+        &.vipclubMain {
+            padding: 0 71px 0 43px;
         }
     }
-    & .vipclubMain {
-        padding: 0 71px 0 43px;
-    }
+    
     & .footerSection {
         // margin-left: 217px;
         // background: #131C27;
@@ -93,6 +92,9 @@
         & .mainContaint {
             // margin-top: px;
             padding: 30px 25px 0px 25px;
+            &.vipclubMain {
+                padding: 0 10px 0 10px;
+            }
         }
         & .footerSection {
             margin-top: 40px;
