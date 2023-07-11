@@ -1277,6 +1277,7 @@
             margin-top: 10px;
             & img{
                 height: 10px;
+                margin-left: 8px;
             }
         }
     }
@@ -1288,6 +1289,44 @@
         height: 100%;
         padding: 23px;
         background: rgba(22, 31, 44, 0.50);
+        & .downloadSection{
+            padding-top: 127px;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-bottom: 126px;
+            & .box{
+                border-radius: 6px;
+                background: rgba(69, 82, 102, 0.25);
+                height: 80px;
+                width: 371px;
+                padding: 8px 12px;
+                & .folder{
+                    width: 63px;
+                    height: 64px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .txt{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .download{
+                    width: 46px;
+                    height: 46px;
+                    margin-right: -30px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
         & .innerCard{
             border-radius: 14px;
             background: rgba(69, 82, 102, 0.25);
@@ -1418,6 +1457,8 @@
                                 font-style: normal;
                                 font-weight: 600;
                                 line-height: normal;
+                                padding: 0 25px;
+                                text-align: center;
                                 &:first-child{
                                     padding-left: 43px;
                                     border-top-left-radius: 6px;
@@ -1433,18 +1474,279 @@
                         background-color: #1E2735;
                         & tr{
                             & td{
+                                padding: 10px 25px;
+                                text-align: center;
+                                border-right: 1px solid;
+                                border-color: #00990A;
+                                &.txtClass{
+                                    color: #FFF;
+                                    font-family: 'Montserrat';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                                &:last-child{
+                                    border-right: none;
+                                }
                                 & .box{
-                                    & img{
-                                        
+                                    color: #FFF;
+                                    font-family: 'Montserrat';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    // padding: 25px 25px 25px 0;
+                                    & .copyBtn{
+                                        & img{
+                                            width: 20px;
+                                            height: 20px
+                                        }
                                     }
                                 }
                                 &:first-child{
                                     padding-left: 43px;
                                 }
+                                & .copyBtn{
+                                    & img{
+                                        width: 20px;
+                                        height: 20px
+                                    }
+                                }
                             }
                         }
                     }
                 }
+            }
+            & .pagination{
+                & .circle{
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    background-color: #93ACD3;
+                    & img{
+                        height: 10px;
+                    }
+                }
+                & .square{
+                    width: 31px;
+                    height: 22px;
+                    background-color: #93ACD3;
+                    border-radius: 6px;
+                    color: #14072C;
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            & .image{
+                width: 35px;
+                height: 35px;
+                margin-right: 15px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .number{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            & .inputBox{
+                padding: 45px;
+                & .lbl{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: block;
+                    margin-bottom: 15px;
+                }
+                & .inp{
+                    border-radius: 8px;
+                    background: #161F2C;
+                    height: 41px;
+                    width: 100%;
+                    border: none;
+                    &::placeholder{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;   
+                    padding-left: 15px;
+                    }                
+                    &:focus{
+                        outline: unset;
+                    }
+                }
+                & .placetxt{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal; 
+                    position: absolute;
+                    top: 45px;
+                    right: 15px;
+                    padding-right: 15px;
+                }
+                & .formSelect{
+                    box-shadow: none;
+                    appearance: none;
+                    border-radius: 8px;
+                    background: #161F2C;
+                    height: 41px;
+                    border: none;
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                & .serachBtn{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 7px;
+                    background: #00990A !important;
+                    & img{
+                        height: 12px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+            & .oops{
+                width: 64px;
+                height: 64px;
+                margin-top: 61px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .oppsTxt{
+                color: rgba(147, 172, 211, 0.50);
+                font-family: 'Montserrat';
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: 12px;
+                text-align: center;
+                margin-bottom: 133px;
+                & img{
+
+                }
+            }
+            & .mainTxt{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                & span{
+                    color: #FFD700;
+                    font-family: 'Montserrat';
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-left: 5px;
+                }
+            }
+            & .history{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                & img{
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        & .btnPadding{
+            padding-top: 111px;
+            padding-bottom: 129px;
+            & .backBtn{
+                border-radius: 7px;
+                background: #00990a !important;
+                color: #fff;
+                font-family: "Montserrat";
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                border: none;
+                line-height: normal;
+                height: 39px;
+                & img{
+                    width: 23px;
+                    height: 22px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        & .leftBox{
+            border-radius: 14px;
+            background: rgba(69, 82, 102, 0.25);
+            & .bgColour{
+                border-radius: 14px 14px 0px 0px;
+                background: #455266;
+                height: 53px;
+                padding: 17px 15px;
+                & .txt{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+        & .oops{
+            width: 64px;
+            height: 64px;
+            margin-top: 154px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & .oppsTxt{
+            color: rgba(147, 172, 211, 0.50);
+            font-family: 'Montserrat';
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-top: 12px;
+            text-align: center;
+            margin-bottom: 233px;
+            & img{
+
             }
         }
     }
