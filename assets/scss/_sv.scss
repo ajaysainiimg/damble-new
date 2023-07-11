@@ -2324,7 +2324,7 @@
                         font-size: 16px;
                     }
                     & .subheading{
-                        font-size: 12px;
+                        font-size: 11px;
                         & span{
                       
                         }
@@ -3064,7 +3064,31 @@
 
 // rewardSection page section end
 
+
+// liveRewardSection start
+
 .liveRewardSection{
+    & .sectionHeading{
+        color: #93ACD3;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background-color: #03B80F;
+            left: 16px;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
     & .rewardOuter{
         position: relative;
         overflow: hidden;
@@ -3080,34 +3104,894 @@
         }
         & .liveRewardCard{
             & .innermain{
-                padding: 21px 23px 21px 35px !important;
-                & .liverewardImg{
-                    width: 103px;
-                    height: 90px;
-                }
-                & .heading{
-                    color: #93ACD3;
-                    font-family: 'Montserrat';
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                }
-                & .reward{
-                    border-radius: 4px;
-                    background: #0D131C;
-                    padding: 12px 100px;
-                    color: #FFD700;
-                    font-family: 'Montserrat';
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
+                padding: 23px 23px 21px 35px !important;
+                & .liveRewardContent{
+
+                    & .liverewardImg{
+                        width: 103px;
+                        height: 90px;
+                    }
+                    & .heading{
+                        color: #93ACD3;
+                        font-family: 'Montserrat';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    & .reward{
+                        border-radius: 4px;
+                        background: #0D131C;
+                        padding: 12px 100px;
+                        color: #FFD700;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
                 }
                 & .userNameReward{
                     border-radius: 4px;
                     background: #0D131C;
+                    padding: 18px 15px 20px 18px;
+                    & .userSection{
+                        & .userImg{
+                            width: 16px;
+                            height: 15px;
+                        }
+                        color: #FFF;
+                        font-family: 'Inter';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        & .subheading{
+                           color: rgba(99, 100, 101, 1) ;
+                        }
+                        & .rewardRecive{
+                            color: rgba(3, 184, 15, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+   
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+  
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                    padding: 23px 23px 21px 21px !important;
+                    & .liveRewardContent{
+
+                        & .liverewardImg{
+                            width: 89px;
+                            height: 78px;
+                        }
+                        & .heading{
                     
+                        }
+                        & .reward{
+                            padding: 12px 67px;
+                        }
+                    }
+                    & .userNameReward{
+                     
+                        & .userSection{
+                            font-size: 12px;
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+   
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+  
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                 & .liveRewardContent{
+
+                     & .liverewardImg{
+                     
+                     }
+                     & .heading{
+                 
+                     }
+                     & .reward{
+                
+                     }
+                 }
+                    & .userNameReward{
+                     
+                        & .userSection{
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+   
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+  
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                 & .liveRewardContent{
+
+                     & .liverewardImg{
+                         width: 57px;
+                         height: 50px;
+                     }
+                     & .heading{
+                         font-size: 15px;
+                     }
+                     & .reward{
+                         padding: 11px 22px;
+                         font-size: 16px;
+                     }
+                 }
+                    & .userNameReward{
+                     
+                        & .userSection{
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+   
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+  
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                 & .liveRewardContent{
+
+                     & .liverewardImg{
+                     
+                     }
+                     & .heading{
+                 
+                     }
+                     & .reward{
+                
+                     }
+                 }
+                    & .userNameReward{
+                     
+                        & .userSection{
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+                width: 15px;
+                height: 15px;
+                top: 3px;
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+                display: none;
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                    padding: 0px!important;
+                 & .liveRewardContent{
+                    
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 13px;
+                        background: #161F2C;
+                        z-index: -1;
+                     
+                    }
+                    
+                     & .liverewardImg{
+                     
+                     }
+                     & .heading{
+                         font-size: 18px;
+                     }
+                     & .reward{
+                
+                     }
+                 }
+                    & .userNameReward{
+                        font-size: 15px;
+                        & .userSection{
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .liveRewardSection{
+        & .sectionHeading{
+     
+            &::before{
+   
+            }
+        }
+        & .rewardOuter{
+        
+            &::before{
+  
+             
+            }
+            & .liveRewardCard{
+                & .innermain{
+                 & .liveRewardContent{
+                     & .liverewardImg{
+                        width: 41px;
+                        height: 40px;
+                    
+                     }
+                     & .heading{
+                        font-size: 12px;
+                     }
+                     & .reward{
+                        padding: 10px 22px;
+                        font-size: 14px;
+                     }
+                 }
+                    & .userNameReward{
+                     
+                        & .userSection{
+                            & .userImg{
+                            
+                            }
+              
+                            & .subheading{
+                               
+                            }
+                            & .rewardRecive{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// liveRewardSection end
+
+// affiliateProgramSection start 
+.affiliateProgramSection{
+    & .rewardOuter{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 13px;
+            background: #161F2C;
+            z-index: -1;
+         
+        }
+        & .innermain{
+            padding: 26px 40px 40px 44px;
+            & .progressImg{
+                max-height: 209px;
+                height: 100%;
+                width: 231px;
+            }
+            & .progressContent{
+                & .heading{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    & span{
+                        color: rgba(0, 255, 17, 1);
+                    }
+                }
+                & .pera{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    & span {
+                        & .contactUsBtn{
+                            color: #03B80F;
+                            font-family: 'Montserrat';
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                padding: 26px 40px 40px 34px;
+                & .progressImg{
+                    width: 200px;
+                }
+                & .progressContent{
+                    & .heading{
+                        font-size: 22px;
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        & span {
+                            & .contactUsBtn{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                & .progressImg{
+                }
+                & .progressContent{
+                    & .heading{
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        & span {
+                            & .contactUsBtn{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                & .progressImg{
+                }
+                & .progressContent{
+                    & .heading{
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        & span {
+                            & .contactUsBtn{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                & .progressImg{
+                }
+                & .progressContent{
+                    & .heading{
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        & span {
+                            & .contactUsBtn{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                padding: 22px 30px 10px 40px;
+                & .progressImg{
+                    padding-top: 30px;
+                }
+                & .progressContent{
+                    & .heading{
+                        font-size: 17px;
+                        padding-bottom: 44px;
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        font-size: 10px;
+                        & span {
+                            & .contactUsBtn{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .affiliateProgramSection{
+        & .rewardOuter{
+          
+            &::before{
+            }
+            & .innermain{
+                padding: 10px 10px 10px 10px;
+                & .progressImg{
+                }
+                & .progressContent{
+                    & .heading{
+                        font-size: 15px;
+                        padding-bottom: 18px;
+                    
+                        & span{
+                            
+                        }
+                    }
+                    & .pera{
+                        & span {
+                            & .contactUsBtn{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// affiliateProgramSection end 
+
+.frequentlyQuestion{
+    & .rewardOuter{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 13px;
+            background: #161F2C;
+            z-index: -1;
+         
+        }
+        & .innermain{
+            padding: 41px 42px 105px 42px;
+            & .sectionHeading{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 35px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            & .questionHeading{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            & .answar{
+                color: #93ACD3;
+                font-family: 'Montserrat';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding-top: 30px;
+                padding-right: 85px;
+                & span{
+                    & a{
+                        color: rgba(3, 184, 15, 1);
+                    }
+                }
+            }
+            & .hrLine{
+                width: 100%;
+                height: 1px;
+                color: #03B80F;
+                margin-top: 20px;
+                margin-bottom: 33px !important;
+
+
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+               
+                & .sectionHeading{
+                 
+                }
+                & .questionHeading{
+ 
+                }
+                & .answar{
+       
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+               
+                & .sectionHeading{
+                    font-size: 29px;
+                }
+                & .questionHeading{
+                    font-size: 18px;
+                }
+                & .answar{
+       font-size: 14px;
+    padding-top: 24px;
+    padding-right: 0px;
+
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+               
+                & .sectionHeading{
+                 
+                }
+                & .questionHeading{
+ 
+                }
+                & .answar{
+       
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+               
+                & .sectionHeading{
+                    font-size: 22px;
+                }
+                & .questionHeading{
+ 
+                }
+                & .answar{
+                    padding-top: 18px;
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
+                    margin-bottom: 23px !important;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+                padding: 19px 42px 30px 30px;
+                & .sectionHeading{
+                    font-size: 18px;
+                }
+                & .questionHeading{
+                    font-size: 15px;
+
+                }
+                & .answar{
+                    font-size: 11px;
+                    padding-top: 5px;
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:430px) {
+    .frequentlyQuestion{
+        & .rewardOuter{
+         
+            &::before{
+             
+            }
+            & .innermain{
+                padding: 19px 20px 20px 20px;
+                & .sectionHeading{
+                    font-size: 14px;
+                }
+                & .questionHeading{
+                    font-size:12px;
+                }
+                & .answar{
+       
+                    & span{
+                        & a{
+                     
+                        }
+                    }
+                }
+                & .hrLine{
                 }
             }
         }
