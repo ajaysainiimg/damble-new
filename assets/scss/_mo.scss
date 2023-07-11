@@ -771,6 +771,7 @@
         // background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        z-index: -1;
     }
     &::after {
         content: '';
@@ -782,9 +783,10 @@
         background-image: url(../Img/vipClub/herobgright.png);
         // background-position: center;
         background-repeat: no-repeat;
+        z-index: -1;
     }
     & .vipheroMain {
-        padding: 116px 51px 0 110px;
+        padding: 116px 51px 30px 110px;
         &::before{
             content: '';
             position: absolute;
@@ -795,6 +797,7 @@
             background-image: url(../Img/vipClub/herobg.png);
             background-position: center;
             background-repeat: no-repeat;
+            z-index: -1;
         }
         & .heroHeading {
             font-size: 45px;
@@ -840,7 +843,7 @@
 
 // ********* how work section start ********
 .howWork{
-    padding: 100px 113px 0 93px;
+    padding-top: 145px ;
     & .howworkHeading {
         font-size: 40px;
         font-weight: 900;
@@ -871,6 +874,29 @@
             }
         }
     }
+    & .workprogress {
+        padding-top: 38px;
+        & .progressMain {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height:8px;
+                width: 100%;
+                background-color: #0a941273;
+                transform: translateY(-50%);
+            }
+            & .progressBar {
+                height: 58px;
+                width: 58px;
+                background:#00990A ;
+                font-size:36px ;
+                font-weight: 800;
+                color: #000;
+            }
+        }
+    }
     & .playbtnMain {
         padding-top: 66px;
         & .playBtn {
@@ -887,7 +913,7 @@
 
 // ********* rank section start ********
 .rankSection {
-    padding: 166px 143px 0 43px;
+    padding-top: 157px ;
     & .rankHeading {
         font-size: 45px;
         font-weight: 900;
@@ -904,10 +930,11 @@
         padding-bottom: 50px;
     }
     & .rankcontent {
-        padding: 108px 30px 60px 30px;
+        padding: 108px 35px 60px 35px;
         background: url(../Img/vipClub/rankcardbg.png) no-repeat;
         background-size: cover;
         border-radius: 35px;
+        margin-right: 75px;
         & .rankCard {
             padding: 0 33px 50px 23px;
             border-radius: 20px;
@@ -983,16 +1010,25 @@
     & .rankcontenttwo {
         padding-top: 97px;
     }
+    & .rankproMain {
+        & .rankprogress {
+            height: 35px;
+
+            & .progressicon {
+
+            }
+        }
+    }
 }
 // ********* rank section end ********
 
 // ********* becomeroylty section start ********
 .becomeroylty {
-    padding: 80px 75px 0 43px;
+    padding-top: 80px;
     & .royaltyCard {
         padding: 90px 20px 31px 52px;
         border-radius: 35px;
-        background: url(../Img/vipClub/rankcardbg.png) no-repeat;
+        background: url(../Img/vipClub/royaltybg.png) no-repeat;
         background-size: cover;
         & .royaltyHeading {
             font-size: 50px;
@@ -1072,7 +1108,7 @@
     padding-top: 47px;
     padding-bottom: 97px;
     padding-left: 44px;
-    margin: 103px 143px 0 43px;
+    margin-top: 103px;
     & .aboutDambleFluidHeading{
         color: #E3E3E3;
         font-family: 'Montserrat';
