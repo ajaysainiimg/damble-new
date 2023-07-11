@@ -134,7 +134,7 @@
             }
            
             & .logos2{
-                height: 80px;
+                height: 50px;
                 & img{
 
                 }
@@ -258,14 +258,14 @@
 
             }
             & .logos{
-                height: 45px;
+                height: 35px;
                 & img{
 
                 }
             }
            
             & .logos2{
-                height: 60px;
+                height: 40px;
                 & img{
 
                 }
@@ -1049,11 +1049,11 @@
                     // background-color: #252e39;
                     z-index: -1;
                     border-radius: 18px;
-                    border-radius: 20px;
                     background: linear-gradient(180deg, #161F2C 0%, rgba(22, 31, 44, 0.00) 100%) !important;
                 }
             }
             & .spinImg{
+                border-radius: 14px !important;
                 // width: 100%;
                 // height: 171px;
             }
@@ -1305,7 +1305,8 @@
        
                     }
                     & .cardContent{
-           
+                        top: 35px;
+                        left: 35px;
                         & .heading{
                             font-size: 32px;
                             & span{
@@ -1336,9 +1337,10 @@
          
                 }
                 & .cardContent{
-      
+                    left: 18px;
+                    top: 18px;
                     & .heading{
-                        font-size: 14px;
+                        font-size: 13px;
                         & span{
                      
                         }
@@ -1364,9 +1366,10 @@
        
                     }
                     & .cardContent{
-           
+                        left: 25px;
+                        top: 25px;
                         & .heading{
-     
+                            font-size: 25px;
                             & span{
                           
                             }
@@ -1394,10 +1397,10 @@
          
                 }
                 & .cardContent{
-                    left: 10px;
-                    top: 15px;
+                    left: 12px;
+                    top: 12px;
                     & .heading{
-                        font-size: 11px;
+                        font-size: 9px;
                         & span{
                      
                         }
@@ -1423,10 +1426,10 @@
        
                     }
                     & .cardContent{
-                        left: 26px;
-                        top: 24px;
+                        left: 18px;
+                        top: 18px;
                         & .heading{
-                            font-size: 20px;
+                            font-size: 16px;
                             & span{
                           
                             }
