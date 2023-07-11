@@ -3063,3 +3063,42 @@
 }
 
 // rewardSection page section end
+
+.liveRewardSection{
+    & .rewardOuter{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 13px;
+            background: #161F2C;
+            z-index: -1;
+         
+        }
+        & .liveRewardCard{
+            & .innermain{
+                padding: 21px 23px 21px 35px !important;
+                & .liverewardImg{
+                    width: 103px;
+                    height: 90px;
+                }
+                & .heading{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .reward{
+                    border-radius: 4px;
+                    background: #0D131C;
+                    padding: 12px 100px;
+                }
+            }
+        }
+    }
+}
