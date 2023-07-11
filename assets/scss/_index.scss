@@ -198,7 +198,7 @@
                         left: 0;
                         background-position: bottom right;
                         background-repeat: no-repeat;
-                        background-size: initial;
+                        background-size: contain;
                         // background-color: black;
                         z-index: -1;
                         border-radius: 30px;
@@ -230,6 +230,9 @@
             font-variant: all-small-caps;
             line-height: normal;
             border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &.cardButtonBg1 {
                 background-image: url(../img/blueBtn_Bg.png);
                 background-repeat: no-repeat;
