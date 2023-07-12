@@ -127,6 +127,8 @@
                 justify-content: center;
                 & img {
                     height: 100%;
+                    width: 100%;
+                    object-fit: contain;
                 }
             }
         }
@@ -134,7 +136,7 @@
             border-radius: 23px;
             & .card-body {
                 & .logos {
-                    max-height: 45px;
+                    height: 45px;
                 }
             }
         }
@@ -142,8 +144,8 @@
             border-radius: 9px;
             & .card-body {
                 & .logos {
-                    max-height: 45px;
-                    max-width: 45px;
+                    height: 45px;
+                    // max-width: 45px;
                 }
                 & .ragisterbonus {
                     font-size: 20px;
@@ -316,8 +318,8 @@
             &.cardLogo{
                 & .card-body {
                     & .logos {
-                        max-height: 36px;
-                        max-width: 36px;
+                        // max-height: 36px;
+                        // max-width: 36px;
                     }
                 }
             }

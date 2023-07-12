@@ -38,14 +38,26 @@
     }
     & .footerSection {
         margin-left: 217px;
-        background: #131C27;
+        background: #0D131C;
         margin-top: 78px;
         & .footer {
             padding: 45.65px 62.81px 0px 99.71px;
         }
     }
 }
-
+@include media-breakpoint-down(xxl) {
+    .main{
+        & .mainContaint {
+            padding: 45px 62px 0px 62px;
+        }
+        & .footerSection {
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 45px 62px 0px 62px;
+            }
+        }
+    }
+} 
 @include media-breakpoint-down(xl) {
     .sidebar{
         display: none;
@@ -53,13 +65,13 @@
     .main{
         & .mainContaint {
             margin-left: 0px;
-            padding: 45px 62px 0px 62px;
+            padding: 42px 55px 0px 55px;
         }
         & .footerSection {
             margin-left: 0px;
             margin-top: 75px;
             & .helpSection, & .footerLinks, & .accordionFooter {
-                padding: 45px 62px 0px 62px;
+                padding: 42px 55px 0px 55px;
             }
         }
     }
