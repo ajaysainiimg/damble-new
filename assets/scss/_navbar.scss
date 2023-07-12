@@ -30,7 +30,9 @@
         &.affiliatePage{
             // padding: 76px 31px 108px 28px !important;
             padding: 22px 22px 50px 22px !important;
-            
+            & .afflitiateDashboard{
+                padding: 28px 32px 87px 30px;
+            }
         }
     }
     & .vipclubMain {
