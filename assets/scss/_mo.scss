@@ -804,7 +804,7 @@
                 font-size: 20px;
                 line-height: normal;
                 padding: 1.5px;
-                width: 70%;
+                width: 90%;
                 height: 55.73px;
                 &::before {
                     content: "";
@@ -827,7 +827,7 @@
             }
     }
     & .promotionRight {
-        padding-left: 100px;
+        padding-left:55px;
         &::before {
             content: '';
             position: absolute;
@@ -859,8 +859,9 @@
                 height: 100%;
                 top: 0;
                 left: 0;
-                background: linear-gradient(135deg, rgba(85, 120, 254, 0.4) 60%, rgba(22, 31, 44, 0.4) 50%);
+                // background: linear-gradient(135deg, rgba(85, 120, 254, 0.4) 60%, rgba(22, 31, 44, 0.4) 50%);
                 // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
                 filter: blur(1px);
                 border-radius: 11px;
             }
@@ -1305,6 +1306,82 @@
     }
     // ********* about damble section end ********
     // ********* Vip Club Page end ********
+
+     // ********* Promotion Page start ********
+     .promotionSection {
+        & .PromotionHeading {
+        }
+        & .promoationPills{
+            & .PromotionBtn{
+                & .activeCount {
+                }
+                &.active{
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width:93%;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 40px;
+            &::before {
+            }
+            & .promoHeading {
+            }
+            & .Promopara {
+            }
+            & .promoInputMain {
+                &::before {
+                    background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                }
+                & .input-group {
+                    height: 50px;
+                    & .promoInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .getnowBtn {
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        & .promoCardHeading {
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    & .seemoreBtn {
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
 }
 
 @include media-breakpoint-down(lg) {
@@ -1712,6 +1789,84 @@
     // ********* becomeroylty section end ********
 
     // ********* Vip Club Page end ********
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        & .PromotionHeading {
+        }
+        & .promoationPills{
+            & .PromotionBtn{
+                & .activeCount {
+                }
+                &.active{
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width:90%;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 30px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+            }
+            & .Promopara {
+            }
+            & .promoInputMain {
+                &::before {
+                    background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                }
+                & .input-group {
+                    height: 45px;
+                    & .promoInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .getnowBtn {
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        & .promoCardHeading {
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    & .seemoreBtn {
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
 }
 
 @include media-breakpoint-down(md) {
@@ -2143,21 +2298,21 @@
         & .promoationPills{
             height: 35px;
             & .PromotionBtn{
-                width: 78.887px;
-                height: 22.81px;
+                width: 105px;
+                height: 33px;
                 font-size: 12px;
                 & .activeCount {
                 }
                 &.active{
-                    width: 78.887px;
-                    height: 22.81px;
+                    width: 105px;
+                    height: 33px;
                     font-size: 12px;
                 }
             }
         }
         & .sportBtnMain {
                 & .sportBtn {   
-                    width: 100%;                
+                    width: 70%;                
                     font-size: 15px;
                     &::before {
                     }
@@ -2778,6 +2933,7 @@
             & .promotionCard {
                 & .promoimg {
                     & .promodetail {
+                        padding: 30px 0 0 20px;
                         & .promoCardHeading {
                             font-size: 16px;
                             & .promoCardHeadingtwo {
