@@ -408,9 +408,9 @@
     }
     & .prizeFluid{
         padding: 45px 91px 50px 85px;
-        background-image: url(./../img/givewayImg/mSubBg.png);
+        background-image: url(./../img/givewayImg/background.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         width: 100%;
         & .prizeFluidInner{
@@ -443,6 +443,41 @@
                 font-weight: 500;
                 line-height: normal;
                 display: block;
+            }
+            & .imgageBox{
+                & .car{    
+                    width: 350px;
+                    height: 110px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 80px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .kit{
+                    width: 140px;
+                    height: 160px;
+                    position: absolute;
+                    left: 18px;
+                    bottom: 0;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .goldBox{
+                    width: 180px;
+                    height: 160px;
+                    position: absolute;
+                    left: 35%;
+                    bottom: 0;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
         & .tableWrapper{
@@ -1284,11 +1319,95 @@
 }
 
 .afflitiateDashboard{
+    & .refferal{
+        width: 100%;
+        height: 25px;
+        border-radius: 3px;
+        border: 0.5px solid #00990A;
+        background: #1B232E;
+        &:not(.open){
+            & .down{
+                & img{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        & .refferalImg{
+            & img{
+                width: 17px;
+                height: 17px;
+            }
+        }
+        & .txt{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        & .down{
+            & img{
+                width: 9px;
+                height: 8px;
+                transition: 0.3s linear;
+            }
+        }
+    }
+    & .iconBox{
+        & .history{
+            & img{
+                width: 19px;
+                height: 19px;
+            }
+            & span{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
     & .outerCard{
         border-radius: 15px;
         height: 100%;
         padding: 23px;
         background: rgba(22, 31, 44, 0.50);
+        & .availTxtBox{
+            border-bottom: 1px solid;
+            border-color: #00A300;
+            & .availTxt{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            & .availTxt1{
+                color: #FFD700;
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+            }
+        }
+        & .history{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            & img{
+                width: 26px;
+                height: 26px;
+                margin-right: 5px;
+            }
+        }
         & .downloadSection{
             padding-top: 127px;
             padding-left: 80px;
@@ -1327,6 +1446,32 @@
                 }
             }
         }
+        & .detailBox{
+            & .detailBg{
+                border-radius: 3px;
+                background: #0D131C;
+                padding: 7px 10px;
+                & .col-auto{
+                    width: 150px;
+                }
+                & .main{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .sub{
+                    color: rgba(147, 172, 211, 0.50);
+                    font-family: 'Montserrat';
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
         & .innerCard{
             border-radius: 14px;
             background: rgba(69, 82, 102, 0.25);
@@ -1344,6 +1489,20 @@
                 margin-top: 70px;
                 margin-left: 49px;
                 margin-bottom: 71px;
+                &.generateBtn1{
+                    margin-left: 0;
+                    margin: auto;
+                }
+            }
+            & .mtxt{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-align: center;
+                margin-top: 37px;
             }
             & .innerPadding{
                 padding: 54px 30px 24px 49px;
@@ -1473,6 +1632,8 @@
                     & tbody{
                         background-color: #1E2735;
                         & tr{
+                            // border-bottom: 1px solid;
+                            // border-color: #00990a;
                             & td{
                                 padding: 10px 25px;
                                 text-align: center;
@@ -1603,6 +1764,23 @@
                     top: 45px;
                     right: 15px;
                     padding-right: 15px;
+                    &.placetxt1{
+                        & img{
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+                & .mid{
+                    position: absolute;
+                    top: 45px;
+                    right: 215px;
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
                 }
                 & .formSelect{
                     box-shadow: none;
@@ -1686,6 +1864,41 @@
                     margin-right: 5px;
                 }
             }
+            & .availableBox{
+                & .txt{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    & span{
+                        color: #FFD700;
+                        font-family: 'Montserrat';
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        margin-left: 5px;
+                    }
+                }
+                & .iconBox{
+                    & .history{
+                        & img{
+                            width: 19px;
+                            height: 19px;
+                        }
+                        & span{
+                            color: #FFF;
+                            font-family: 'Montserrat';
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
         }
         & .btnPadding{
             padding-top: 111px;
@@ -1726,6 +1939,81 @@
                 }
             }
         }
+        & .rytBox{
+            border-radius: 14px;
+            background: rgba(69, 82, 102, 0.25);
+            padding: 48px 87px 110px 48px;
+            & .innerBox{
+                & .txt{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-bottom: 12px;
+                }
+                & .selectBox{
+                    appearance: none;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    background-color: #161F2C;
+                    height: 33px;
+                    padding-left: 45px;
+                    background-image: url(./../img/affiliateDashboard/down-chevron.png);
+                    background-size: 10px;
+                    margin-bottom: 20px;
+                }
+                & .usidtlogo{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 40px;
+                    left: 10px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                & .note{
+                    color: #93ACD3;
+                    text-align: center;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 28px;
+                }
+                & .swapBtn{
+                    border-radius: 4px;
+                    background: #00990A;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    border: 0;
+                    box-shadow: none;
+                    margin-bottom: 44px;
+                }
+                & .copyRyt{
+                    color: #FFF;
+                    text-align: center;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-bottom: 28px;
+                }
+            }
+        }
         & .oops{
             width: 64px;
             height: 64px;
@@ -1752,6 +2040,145 @@
     }
 }
 
+.historyModal{
+    & .historyModalDialog{
+        & .historyModalContent{
+            border-radius: 7px;
+            background: rgba(69, 82, 102, 0.25);
+            backdrop-filter: blur(10px);
+            & .historyModalHeader{
+                border-bottom: 0;
+                padding: 12px 0;
+                & .historyModalTitle{
+                    text-align: center;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .btnParent{
+                    position: absolute;
+                    top: -40px;
+                    right: -18px;
+                    & .closeBtn{
+                        filter: brightness(10);
+                        padding: 5px 10px;
+                        border: 0;    
+                        & img{
+                        width: 15px;
+                        height: 15px;
+                        }
+                        &:focus{
+                            outline: unset;
+                            border: 0;
+                            box-shadow: unset;
+                        }
+                    }
+                }
+            }
+        }
+        & .historyModalBody{
+            padding: 0 10px;
+            & .affiliateDashboardTable{
+                width: 100%;
+                & thead{
+                    & tr{
+                        border-radius: 6px 6px 0px 0px;
+                        background: #455266;
+                        & th{
+                            height: 43px;
+                            color: #FFF;
+                            font-family: 'Montserrat';
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            padding: 0 25px;
+                            text-align: center;
+                            &:first-child{
+                                padding-left: 43px;
+                                border-top-left-radius: 6px;
+                            }
+                            &:last-child{
+                                padding-right: 43px;
+                                border-top-right-radius: 6px;
+                            }
+                        }
+                    }
+                }
+                & tbody{
+                    background-color: #1E2735;
+                    & tr{
+                        & td{
+                            padding: 10px 25px;
+                            text-align: center;
+                            &.txtClass{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                            }
+                            & .oops{
+                                width: 64px;
+                                height: 64px;
+                                margin-top: 61px;
+                                & img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            & .oppsTxt{
+                                color: rgba(147, 172, 211, 0.50);
+                                font-family: 'Montserrat';
+                                font-size: 11px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                margin-top: 12px;
+                                text-align: center;
+                                margin-bottom: 50px;
+                                & img{
+
+                                }
+                            }
+                            &:last-child{
+                                border-right: none;
+                            }
+                            & .box{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                // padding: 25px 25px 25px 0;
+                                & .copyBtn{
+                                    & img{
+                                        width: 20px;
+                                        height: 20px
+                                    }
+                                }
+                            }
+                            &:first-child{
+                                padding-left: 43px;
+                            }
+                            & .copyBtn{
+                                & img{
+                                    width: 20px;
+                                    height: 20px
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // afflitiate dashboard end
 
 @media screen and (max-width: 700px) {
@@ -1997,6 +2424,209 @@
             }
             & .dumble{
                 & img{
+                }
+            }
+        }
+    }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .downloadSection{
+                & .box{
+                    & .folder{
+                        & img{
+                        }
+                    }
+                    & .txt{
+                    }
+                    & .download{
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                }
+                & .inputBox{
+                    & .lbl{
+                    }
+                    & .inp{
+                        &::placeholder{
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    & span{
+                    }
+                }
+                & .history{
+                    & img{
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            & img{
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{
+                    & .txt{
+                    }
+                }
+            }
+            & .rytBox{
+                & .innerBox{
+                    & .txt{
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                    }
+                }
+            }
+            & .oops{
+                & img{
+                }
+            }
+            & .oppsTxt{
+                & img{
+    
                 }
             }
         }
@@ -3145,6 +3775,217 @@
             }
         }
     }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .downloadSection{
+                & .box{
+                    width: 280px;
+                    & .folder{    
+                        width: 55px;
+                        height: 55px;
+                        & img{
+                        }
+                    }
+                    & .txt{
+                        font-size: 15px;
+                    }
+                    & .download{
+                        width: 40px;
+                        height: 40px;
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                }
+                & .inputBox{
+                    & .lbl{
+                    }
+                    & .inp{
+                        &::placeholder{
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    & span{
+                    }
+                }
+                & .history{
+                    & img{
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            & img{
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{
+                    & .txt{
+                    }
+                }
+            }
+            & .rytBox{
+                padding: 48px 32px 92px 32px;
+                & .innerBox{
+                    & .txt{
+                        font-size: 18px;
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                    }
+                }
+            }
+            & .oops{
+                & img{
+                }
+            }
+            & .oppsTxt{
+                & img{
+    
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -3464,6 +4305,220 @@
             }
             & .dumble{
                 & img{
+                }
+            }
+        }
+    }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .downloadSection{
+                padding-top: 0;
+                padding-bottom: 0;
+                & .box{
+                    width: 280px;
+                    & .folder{    
+                        width: 55px;
+                        height: 55px;
+                        & img{
+                        }
+                    }
+                    & .txt{
+                        font-size: 15px;
+                    }
+                    & .download{
+                        width: 40px;
+                        height: 40px;
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                }
+                & .inputBox{
+                    & .lbl{
+                    }
+                    & .inp{
+                        &::placeholder{
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    & span{
+                    }
+                }
+                & .history{
+                    & img{
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            & img{
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                padding-bottom: 0;
+                padding-top: 65px;
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{
+                    & .txt{
+                    }
+                }
+            }
+            & .rytBox{
+                padding: 48px 32px 116px 32px;
+                & .innerBox{
+                    & .txt{
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                    }
+                }
+            }
+            & .oops{
+                & img{
+                }
+            }
+            & .oppsTxt{
+                & img{
+    
                 }
             }
         }
@@ -3795,6 +4850,211 @@
             }
         }
     }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .downloadSection{
+                padding-left: 0;
+                padding-right: 0;
+                & .box{
+                    & .folder{
+                        & img{
+                        }
+                    }
+                    & .txt{
+                    }
+                    & .download{
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                }
+                & .inputBox{
+                    & .lbl{
+                    }
+                    & .inp{
+                        &::placeholder{
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    & span{
+                    }
+                }
+                & .history{
+                    & img{
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            & img{
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{
+                    & .txt{
+                    }
+                }
+            }
+            & .rytBox{
+                & .innerBox{
+                    & .txt{
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                    }
+                }
+            }
+            & .oops{
+                & img{
+                }
+            }
+            & .oppsTxt{
+                & img{
+    
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -4112,6 +5372,209 @@
             }
             & .dumble{
                 & img{
+                }
+            }
+        }
+    }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .downloadSection{
+                & .box{
+                    & .folder{
+                        & img{
+                        }
+                    }
+                    & .txt{
+                    }
+                    & .download{
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                }
+                & .inputBox{
+                    & .lbl{
+                    }
+                    & .inp{
+                        &::placeholder{
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    & span{
+                    }
+                }
+                & .history{
+                    & img{
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            & img{
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{
+                    & .txt{
+                    }
+                }
+            }
+            & .rytBox{
+                & .innerBox{
+                    & .txt{
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                    }
+                }
+            }
+            & .oops{
+                & img{
+                }
+            }
+            & .oppsTxt{
+                & img{
+    
                 }
             }
         }
@@ -4503,6 +5966,243 @@
                 }
             }
             & .dumble{
+                & img{
+                }
+            }
+        }
+    }
+    .afflitiateDashboard{
+        & .outerCard{
+            & .history{
+                font-size: 12px;
+                & img{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            &.outerPadding{
+                padding: 0;
+            }
+            & .downloadSection{
+                & .box{
+                    width: 100%;
+                    & .folder{
+                        & img{
+                        }
+                    }
+                    & .txt{
+                        font-size: 12px;
+                    }
+                    & .download{
+                        margin-right: 0;
+                        & img{
+                        }
+                    }
+                }
+            }
+            & .innerCard{
+                & .generateBtn{
+                }
+                & .innerPadding{
+                    .switch {
+                    }
+                    
+                    .switch input { 
+                    }
+                    
+                    .slider {
+                    }
+                    
+                    .slider:before {
+                    }
+                    
+                    input:checked + .slider {
+                    }
+                    
+                    input:focus + .slider {
+                    }
+                    
+                    input:checked + .slider:before {
+                    }
+                    
+                    /* Rounded sliders */
+                    .slider.round {
+                    }
+                    
+                    .slider.round:before {
+                    }
+                    & .txt{
+                    }
+                    & .box{
+                        & .txt{
+                        }
+                    }
+                    & .saveBtn{
+                    }
+                }
+                & .tableRow{
+                    & .affiliateDashboardTable{
+                        & thead{
+                            & tr{
+                                & th{
+                                    &:first-child{
+                                    }
+                                    &:last-child{
+                                    }
+                                }
+                            }
+                        }
+                        & tbody{
+                            & tr{
+                                & td{
+                                    &.txtClass{
+                                    }
+                                    &:last-child{
+                                    }
+                                    & .box{
+                                        & .copyBtn{
+                                            & img{
+                                            }
+                                        }
+                                    }
+                                    &:first-child{
+                                    }
+                                    & .copyBtn{
+                                        & img{
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .pagination{
+                    & .circle{
+                        & img{
+                        }
+                    }
+                    & .square{
+                    }
+                }
+                & .image{
+                    & img{
+                    }
+                }
+                & .number{
+                    font-size: 12px;
+                }
+                & .inputBox{
+                    & .lbl{
+                        font-size: 12px;
+                    }
+                    & .inp{
+                        &::placeholder{
+                            font-size: 10px;
+                        }                
+                        &:focus{
+                        }
+                    }
+                    & .placetxt{
+                        font-size: 10px;
+                        &.placetxt1{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mid{
+                    }
+                    & .formSelect{
+                    }
+                    & .serachBtn{
+                        font-size: 10px;
+                        & img{
+                        }
+                    }
+                }
+                & .oops{
+                    & img{
+                    }
+                }
+                & .oppsTxt{
+                    & img{
+    
+                    }
+                }
+                & .mainTxt{
+                    font-size: 10px;
+                    & span{
+                        font-size: 15px;
+                    }
+                }
+                & .history{
+                    font-size: 10px;
+                    & img{
+                        height: 12px;
+                    }
+                }
+                & .availableBox{
+                    & .txt{
+                        & span{
+                        }
+                    }
+                    & .iconBox{
+                        & .history{
+                            font-size: 10px;
+                            & img{
+                                height: 12px;
+                            }
+                            & span{
+                            }
+                        }
+                    }
+                }
+            }
+            & .btnPadding{
+                & .backBtn{
+                    & img{
+                    }
+                }
+            }
+            & .leftBox{
+                & .bgColour{    
+                    height: 26px;
+                    margin: 17px 15px;
+                    border-radius: 3px;
+                    & .txt{
+                        font-size: 10px;
+                    }
+                }
+            }
+            & .rytBox{
+                padding: 48px 32px 66px 32px;
+                & .innerBox{
+                    & .txt{
+                        text-align: center;
+                        font-size: 15px;
+                    }
+                    & .selectBox{
+                    }
+                    & .usidtlogo{
+                        & img{
+                        }
+                    }
+                    & .note{
+                    }
+                    & .swapBtn{
+                    }
+                    & .copyRyt{
+                        font-size: 15px;
+                        padding: 25px 60px;
+                    }
+                }
+            }
+            & .oops{
+                margin-top: 33px;
+                & img{
+                }
+            }
+            & .oppsTxt{
+                margin-bottom: 27px;
                 & img{
                 }
             }
