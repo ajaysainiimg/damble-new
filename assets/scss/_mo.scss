@@ -661,6 +661,12 @@
                 padding-left: 11px;
             }
         }
+        & .royaltyLine {
+            width: 90%;
+            height: 1px;
+            background: #03B80F;
+            margin: 23px 0 19px 0;
+        }
         & .telegramchan {
             font-size: 15px;
             color: #93ACD3;
@@ -905,6 +911,62 @@
     }
     }
     // ********* how work section end ********
+
+     // ********* becomeroylty section start ********
+     .becomeroylty {
+        & .royaltyCard {
+            padding: 85px 18px 29px 49px;
+            & .royaltyHeading {
+                font-size: 45px;
+                padding-bottom: 100px;
+                & .Headingtwo {
+                }
+           }
+            & .royaltyImg {
+                width: 200px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 17px;
+                padding: 50px 0px 0 0px;
+            }
+            & .royaltsubheading {
+                font-size: 23px;
+                padding-top: 32px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 50px 0 12px 0;
+                & .joinBtn {
+                    font-size: 20px;
+                    padding: 8px 27px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 20px;
+                & .royaltycheckmain {
+                    height: 23px;
+                    width: 23px;
+                    & .royaltyicon {
+                        height: 15px;
+                        width: 16px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 19px;
+                    padding-left: 12px;
+                }
+            }
+            & .telegramchan {
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
 
     // ********* about damble section start ********
     .aboutDambleFluid{
@@ -1182,6 +1244,63 @@
     }
     // ********* about damble section end ********
 
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 70px 16px 27px 32px;
+            & .royaltyHeading {
+                font-size: 35px;
+                padding-bottom: 75px;
+                & .Headingtwo {
+                }
+           }
+            & .royaltyImg {
+                width: 180px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 15px;
+                padding: 42px 0px 0 0px;
+            }
+            & .royaltsubheading {
+                font-size: 21px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 45px 0 12px 0;
+                & .joinBtn {
+                    font-size: 18px;
+                    padding: 6px 27px;
+                    border-radius: 8px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 20px;
+                & .royaltycheckmain {
+                    height: 20px;
+                    width: 20px;
+                    & .royaltyicon {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 17px;
+                    padding-left: 16px;
+                }
+            }
+            & .telegramchan {
+                font-size: 13px;
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
+
     // ********* Vip Club Page end ********
 }
 
@@ -1333,10 +1452,8 @@
     // help-us section end
 
 
+    // ********* Vip Club Page Start ********
 
-     // ********* Vip Club Page Start ********
-
-    
     // ********* vipheroSection start ********
     .vipheroSection {
         &::before {
@@ -1452,7 +1569,63 @@
     }
     // ********* how work section end ********
 
-
+    // ********* becomeroylty section start ********
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 60px 16px 25px 32px;
+            & .royaltyHeading {
+                font-size: 30px;
+                padding-bottom: 55px;
+                & .Headingtwo {
+                }
+           }
+            & .royaltyImg {
+                width: 160px;
+                height: auto;
+            }
+            & .royaltypara {
+                font-size: 13px;
+                padding: 30px 19px 0 19px;
+            }
+            & .royaltsubheading {
+                font-size: 18px;
+                padding-top: 40px;
+                & .royaltSubHeadingTwo {
+                }
+            }
+            & .joinBtnMain {
+                padding: 40px 0 35px 0;
+                & .joinBtn {
+                    font-size: 16px;
+                    padding: 6px 26px;
+                    border-radius: 8px;
+                    &:hover {
+                    }
+                }
+            }
+            & .royaltyContent {
+                padding-top: 15px;
+                & .royaltycheckmain {
+                    height: 18px;
+                    width: 18px;
+                    & .royaltyicon {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 14px;
+                    padding-left: 14px;
+                }
+            }
+            & .telegramchan {
+                font-size: 12px;
+                & .telegram {
+                }
+            }
+        }
+    }
+    // ********* becomeroylty section end ********
     // ********* Vip Club Page end ********
 }
 
@@ -1730,11 +1903,15 @@
 
     // ********* rank section start ********
     .rankSection {
+        padding-top: 97px;
         & .rankHeading {
+            font-size: 23px;
             & .rankHeadingtwo {
             }
         }
         & .rankpara {
+            font-size: 10px;
+            padding-top: 18px;
         }
         & .rankcontent {
             & .rankCard {
@@ -1810,53 +1987,61 @@
     // ********* about damble section end ********
 
     // ********* becomeroylty section start ********
-.becomeroylty {
-    & .royaltyCard {
-        padding: 57px 36px 34px 36px;
-        & .royaltyHeading {
-            font-size: 20px;
-            padding-bottom: 33px;
-            & .Headingtwo {
+    .becomeroylty {
+        & .royaltyCard {
+            padding: 57px 36px 34px 36px;
+            & .royaltyHeading {
+                font-size: 20px;
+                padding-bottom: 33px;
+                & .Headingtwo {
+                }
+           }
+            & .royaltyImg {
+                width: 104px;
+                height: 64px;
             }
-        }
-        & .royaltyImg {
-            width: 104px;
-            height: 64px;
-        }
-        & .royaltypara {
-            font-size: 10px;
-            padding: 19px 59px 0 59px;
-        }
-        & .royaltsubheading {
-            font-size: 15px;
-            padding-top: 64px;
-            & .royaltSubHeadingTwo {
+            & .royaltypara {
+                font-size: 10px;
+                padding: 19px 15px 0 15px;
             }
-        }
-        & .joinBtnMain {
-            padding: 34px 0 63px 0;
-            & .joinBtn {
-                font-size: 13px;
-                padding: 5px 20px;
-                border-radius: 5px;
-                &:hover {
+            & .royaltsubheading {
+                font-size: 15px;
+                padding-top: 64px;
+                & .royaltSubHeadingTwo {
                 }
             }
-        }
-        & .royaltyContent {
-            & .royaltycheckmain {
-                & .royaltyicon {
+            & .joinBtnMain {
+                padding: 34px 0 53px 0;
+                & .joinBtn {
+                    font-size: 13px;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    &:hover {
+                    }
                 }
             }
-            & .royaltychecktitle {
+            & .royaltyContent {
+                padding-top: 10px;
+                & .royaltycheckmain {
+                    height: 12px;
+                    width: 12px;
+                    & .royaltyicon {
+                        height: 9px;
+                        width: 9px;
+                    }
+                }
+                & .royaltychecktitle {
+                    font-size: 11px;
+                    padding-left: 14px;
+                }
             }
-        }
-        & .telegramchan {
-            & .telegram {
+            & .telegramchan {
+                font-size: 10px;
+                & .telegram {
+                }
             }
         }
     }
-}
-// ********* becomeroylty section end ********
+    // ********* becomeroylty section end ********
     // ********* Vip Club Page end ********
 }
