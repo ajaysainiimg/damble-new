@@ -804,6 +804,8 @@
                 font-size: 20px;
                 line-height: normal;
                 padding: 1.5px;
+                width: 70%;
+                height: 55.73px;
                 &::before {
                     content: "";
                     position: absolute;
@@ -819,8 +821,6 @@
                 & .sportbtncontent {
                     background: #161F2C;
                     filter: blur(0.5px);
-                    width: 424.538px;
-                    height: 55.73px;
                     padding: 0px 22px 0px 40px;
                     border-radius: 11px;
                 }
@@ -2141,7 +2141,6 @@
             font-size: 22px;
         }
         & .promoationPills{
-            width: 220.794px;
             height: 35px;
             & .PromotionBtn{
                 width: 78.887px;
