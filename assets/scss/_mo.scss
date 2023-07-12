@@ -760,6 +760,208 @@
 
 
 
+// ********* Promotion Page start ********
+.promotionSection {
+    padding: 69px 0 100px 0;
+    & .PromotionHeading {
+        color: #D6D6D6;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    & .promoationPills{
+        border-radius: 16px;
+        background: #252E39;
+        width: 212px;
+        height: 32px;
+        & .PromotionBtn{
+            width: 102px;
+            height: 31px;
+            border-radius: 15px;
+            background: #252E39;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: normal;
+            & .activeCount {
+                color: #FCBD30;
+                font-weight: 800;
+                // font-family: Inter;
+            }
+            &.active{
+                width: 118px;
+                height: 32px;
+                border-radius: 16px;
+                background: #6324D7;
+                color: #fff;
+            }
+        }
+    }
+    & .sportBtnMain {
+        padding-top: 39px;
+            & .sportBtn {
+                color: #D6D6D6;
+                font-size: 20px;
+                line-height: normal;
+                padding: 1.5px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(163deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+                    // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                    filter: blur(0.5px);
+                    border-radius: 11px;
+                }
+                & .sportbtncontent {
+                    background: #161F2C;
+                    filter: blur(0.5px);
+                    width: 424.538px;
+                    height: 55.73px;
+                    padding: 0px 22px 0px 40px;
+                    border-radius: 11px;
+                }
+            }
+    }
+    & .promotionRight {
+        padding-left: 100px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0.5px;
+            background: rgba(147, 172, 211, 0.60);
+
+        }
+        & .promoHeading {
+            color: #D6D6D6;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .Promopara {
+            color: #93ACD3;
+            font-size: 15px;
+            line-height: normal;
+            font-weight: 500;
+        }
+        & .promoInputMain {
+            padding: 1.3px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(135deg, rgba(85, 120, 254, 0.4) 60%, rgba(22, 31, 44, 0.4) 50%);
+                // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                filter: blur(1px);
+                border-radius: 11px;
+            }
+            & .input-group {
+                height: 55px;
+                & .promoInput {
+                    background-color: #161F2C;;
+                    border-radius: 11px;
+                    padding: 17px 23px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: rgba(147, 172, 211, 0.50);
+                    &::placeholder {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+                }
+                & .getnowBtn {
+                    border-radius: 0px 11px 11px 0px;
+                    background: #6324D7;
+                    color: #FFF;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 0px 35px;
+                }
+            }
+        }
+        
+    }
+    & .promotionCardMain {
+        padding-top: 35px;
+        gap: 33px 0;
+        & .promotionCard {
+            & .promoimg {
+                & .promodetail {
+                    padding: 30px 0 0 20px;
+                    & .promoCardHeading {
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 800;
+                        line-height: normal;
+                        line-height: 24px;
+                        & .promoCardHeadingtwo {
+                            color: #FCBD30;
+                        }
+                    }
+                    & .promoCardpara {
+                        color: #93ACD3;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                        & .promoCardparatwo {
+                            color: #B7C7DF;
+                        }
+                    }  
+                }
+                & .promotionTag {
+                    border-radius: 0px 18px;
+                    background: #5578FE;
+                    box-shadow: 0px 0px 10px 0px #000;
+                    color: #FFF;
+                    font-size: 6px;
+                    font-weight: 600;
+                    line-height: normal;
+                    width: 46.578px;
+                    height: 21.766px;
+                    top: 2px;
+                    right: 2px;
+                }
+            }
+            & .promotioncardTitle {
+                color: #93ACD3;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: normal;
+                padding-top: 24px;
+                & .titletwo {
+                    color: #D9D9D9;
+                }
+                & .titlethree {
+                    color: #FFD700;
+                }
+            }
+            & .seemore {
+                padding-top: 11px;
+                & .seemoreBtn {
+                    color: #788E28;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+// ********* Promotion Page end ********
+
+
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -1930,6 +2132,117 @@
     }
     // ********* becomeroylty section end ********
     // ********* Vip Club Page end ********
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 52px 0 0 0;
+        & .PromotionHeading {
+            font-size: 22px;
+        }
+        & .promoationPills{
+            width: 220.794px;
+            height: 35px;
+            & .PromotionBtn{
+                width: 78.887px;
+                height: 22.81px;
+                font-size: 12px;
+                & .activeCount {
+                }
+                &.active{
+                    width: 78.887px;
+                    height: 22.81px;
+                    font-size: 12px;
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width: 100%;                
+                    font-size: 15px;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                        width: 100%;
+                        height: 44px;
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 12px;
+            padding-top: 64px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+                font-size: 15px;
+            }
+            & .Promopara {
+                font-size: 10px;
+            }
+            & .promoInputMain {
+                padding: 1px;
+                &::before {
+                    background: linear-gradient(170deg, rgba(85, 120, 254, 0.4) 37%, rgba(22, 31, 44, 0.4) 50%);
+                    filter: blur(0.8px);
+                }
+                & .input-group {
+                    height: 41px;
+                    & .promoInput {
+                        font-size: 10px;
+                        padding: 14px 18px;
+                        &::placeholder {
+                            font-size: 10px;
+                        }
+                    }
+                    & .getnowBtn {
+                        font-size: 13px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            padding-top: 25px;
+            gap: 40px 0;
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        padding: 20px 0 0 10px;
+                        & .promoCardHeading {
+                            font-size: 15px;
+                            line-height: normal;
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            font-size: 10px;
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    font-size: 10px;
+                    padding-top: 15px;
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    padding-top: 7px;
+                    & .seemoreBtn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
 }
 
 @include media-breakpoint-down(sm) {
@@ -2388,4 +2701,114 @@
     // ********* about damble section end ********
 
     // ********* Vip Club Page end ********
+
+
+
+    // ********* Promotion Page start ********
+    .promotionSection {
+        padding: 52px 0 0 0;
+        & .PromotionHeading {
+            font-size: 20px;
+        }
+        & .promoationPills{
+            width: 147.794px;
+            height: 22.81px;
+            & .PromotionBtn{
+                width: 78.887px;
+                height: 22.81px;
+                font-size: 12px;
+                & .activeCount {
+                }
+                &.active{
+                    width: 78.887px;
+                    height: 22.81px;
+                    font-size: 12px;
+                }
+            }
+        }
+        & .sportBtnMain {
+                & .sportBtn {   
+                    width: 100%;                
+                    font-size: 15px;
+                    &::before {
+                    }
+                    & .sportbtncontent {
+                        width: 100%;
+                        height: 44px;
+                    }
+                }
+        }
+        & .promotionRight {
+            padding-left: 12px;
+            padding-top: 64px;
+            &::before {
+                display: none;
+            }
+            & .promoHeading {
+                font-size: 15px;
+            }
+            & .Promopara {
+                font-size: 10px;
+            }
+            & .promoInputMain {
+                padding: 1px;
+                &::before {
+                    background: linear-gradient(170deg, rgba(85, 120, 254, 0.4) 37%, rgba(22, 31, 44, 0.4) 50%);
+                    filter: blur(0.8px);
+                }
+                & .input-group {
+                    height: 41px;
+                    & .promoInput {
+                        font-size: 10px;
+                        padding: 14px 18px;
+                        &::placeholder {
+                            font-size: 10px;
+                        }
+                    }
+                    & .getnowBtn {
+                        font-size: 13px;
+                        padding: 0 25px;
+                    }
+                }
+            }
+            
+        }
+        & .promotionCardMain {
+            padding-top: 25px;
+            gap: 40px;
+            & .promotionCard {
+                & .promoimg {
+                    & .promodetail {
+                        & .promoCardHeading {
+                            font-size: 16px;
+                            & .promoCardHeadingtwo {
+                            }
+                        }
+                        & .promoCardpara {
+                            font-size: 10px;
+                            & .promoCardparatwo {
+                            }
+                        }  
+                    }
+                    & .promotionTag {
+                    }
+                }
+                & .promotioncardTitle {
+                    font-size: 10px;
+                    padding-top: 15px;
+                    & .titletwo {
+                    }
+                    & .titlethree {
+                    }
+                }
+                & .seemore {
+                    padding-top: 7px;
+                    & .seemoreBtn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // ********* Promotion Page end ********
 }
