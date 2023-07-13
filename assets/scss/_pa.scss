@@ -5761,12 +5761,14 @@
     .aboutFluid{
         padding: 0;
         border: 0;
-        background-color: unset;
-        position: unset;
+        &::before, &:after{
+            background: none;
+        }
+        // background-color: unset;
+        // position: unset;
             & .aboutCard{
                 &.Card2{
                     &::after{
-    
                     }
                     &::before{
                         // width: 30px;
