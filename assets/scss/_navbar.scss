@@ -27,7 +27,6 @@
         margin-top: 60px;
         padding: 45.65px 62.81px 0px 99.71px;
         transition: all 0.3s;
-
         &.affiliatePage{
             // padding: 76px 31px 108px 28px !important;
             padding: 22px 22px 50px 22px !important;
@@ -38,18 +37,33 @@
         &.PromotionPage {
             padding: 0 85px 0 107px;
         }
+        &.afflitiateDashboard{
+            padding: 35px 39px 87px 35px !important;
+        }
     }
     
     & .footerSection {
-        // margin-left: 217px;
-        // background: #131C27;
+        margin-left: 217px;
+        background: #0D131C;
         margin-top: 78px;
         & .footer {
             padding: 45.65px 62.81px 0px 99.71px;
         }
     }
 }
-
+@include media-breakpoint-down(xxl) {
+    .main{
+        & .mainContaint {
+            padding: 45px 62px 0px 62px;
+        }
+        & .footerSection {
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 45px 62px 0px 62px;
+            }
+        }
+    }
+} 
 @include media-breakpoint-down(xl) {
     .sidebar{
         display: none;
@@ -57,7 +71,7 @@
     .main{
         & .mainContaint {
             margin-left: 0px;
-            padding: 45px 62px 0px 62px;
+            padding: 42px 55px 0px 55px;
             &.vipclubMain {
                 padding: 0 60px 0 35px;
             }
@@ -69,7 +83,7 @@
             margin-left: 0px;
             margin-top: 75px;
             & .helpSection, & .footerLinks, & .accordionFooter {
-                padding: 45px 62px 0px 62px;
+                padding: 42px 55px 0px 55px;
             }
         }
     }
