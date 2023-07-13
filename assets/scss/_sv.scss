@@ -5619,7 +5619,7 @@
              
                     }
                     & .peragraph{
-       
+                        font-size: 12px;
                         &.form-label {
                        
                             &.label2{
@@ -5836,24 +5836,40 @@
     
                     & .Verify{
                         & .globalContent{
-                         
-                            & .selectSection{
+                            position: relative;
+                            overflow: hidden;
+                            margin: 20px 0px;
+                            &::before{
+                                border-radius: 10px;
+                                background: #161F2C;
+                                position: absolute;
+                                content: '';
+                                height: 100%;
+                                // height: 307px;
+                                width: 100%;
+                                z-index: -1;
+
+                            }
+                         & .globalInner{
                             
-                                &::before{
-                                
-                                }
-                                & .selectboxSection{
-                          
-                                    & option{
-                                   
-                                    }
-                                }
-                            }
-                            & .dateSection{
-                                & .dateImg{
+                             & .selectSection{
                              
-                                }
-                            }
+                                 &::before{
+                                 
+                                 }
+                                 & .selectboxSection{
+                           
+                                     & option{
+                                    
+                                     }
+                                 }
+                             }
+                             & .dateSection{
+                                 & .dateImg{
+                              
+                                 }
+                             }
+                         }
                         }
                     }
                 }
