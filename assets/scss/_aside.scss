@@ -154,6 +154,12 @@
                         color: #FFD700;
                     }
                 }
+                & .sidebar-card-icon {
+                    height: 14px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
                 & .vipText {
                     color: #FFD700;
                 }
@@ -173,7 +179,20 @@
             padding: 0px 14px;
         
         }
-
+        & .join {
+            & .linksIcons {
+                height: 18px;
+                width: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
     }
     
 }
