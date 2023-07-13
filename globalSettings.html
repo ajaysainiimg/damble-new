@@ -138,8 +138,8 @@
             <div class="mainContaint afxflitiateDashboard">
            <div class="container-fluid globalSection pb-5">
             <div class="row gap-2">
-                <div class="col-12 d-sm-block d-none">
-                    <nav class="tabNav">
+                <div class="col-12 ">
+                    <nav class="tabNav d-md-block d-none">
                         <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
                           <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
                           <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
@@ -150,8 +150,24 @@
 
                         </div>
                     </nav>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">General</div>
+                                        
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 d-sm-block d-none">
+                <div class="col-12 ">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane  fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                             <div class="outterCard">
@@ -503,8 +519,8 @@
                                 <div class="row mx-0">
                                     <div class="col-12 px-0 Verify">
                                         <div class="globalContent">
-                                            <div class="row mx-0">
-                                                <div class="col-lg-7 px-0">
+                                            <div class="row mx-0 globalInner">
+                                                <div class="col-lg-7 px-lg-0 px-1">
                                                     <div class="signInHeading">Sessions Used in Past</div>
                                                     <div class="peragraph pera2 text-start pt-4">
                                                         To serve you better we ask that you provide original identifying documents. This will secure your account in cases of account recovery. It also helps to ensure that the gifts or actual rewards you receive are sent to the correct location.
@@ -516,13 +532,13 @@
                                                     <div class="row mx-0">
                                                         <div class="col-12 px-0 ">
                                                             <div class="row mx-0">
-                                                                <div class="col-6 px-lg-1 px-0">
+                                                                <div class="col-6 px-1">
                                                                     <div class="row mx-0 gap-2">
                                                                         <div class="col-12 px-0 text-start">
                                                                             <label for="exampleFormControlInput2" class="form-label label2 peragraph">First Name</label>
                                                                             <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput2">
                                                                         </div>
-                                                                        <div class="col-12 px-0">
+                                                                        <div class="col-12  px-0">
                                                                             <label for="exampleFormControlInput2" class="form-label label2 peragraph">Gender</label>
         
                                                                             <span class="selectSection">
@@ -536,7 +552,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-6 px-lg-1 px-0">
+                                                                <div class="col-6 px-1">
                                                                     <div class="row mx-0 gap-2">
                                                                         <div class="col-12 px-0 text-start">
                                                                             <label for="exampleFormControlInput3" class="form-label label2 peragraph">Last Name</label>
@@ -551,7 +567,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 px-0 ">
+                                                        <div class="col-12 px-lg-0 px-1">
                                                             <div class="col-12 px-lg-1 px-0 text-start">
                                                                 <label for="exampleFormControlInput2" class="form-label label2 peragraph">Address</label>
                                                                 <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput2">
@@ -559,7 +575,7 @@
                                                         </div>
                                                         <div class="col-12 px-0 ">
                                                             <div class="row mx-0">
-                                                                <div class="col-6 px-lg-1 px-0">
+                                                                <div class="col-6 px-1">
                                                                     <div class="row mx-0 gap-2">
                                                                         <div class="col-12 px-0 text-start">
                                                                             <label for="exampleFormControlInput2" class="form-label label2 peragraph">ZIP/Postal Code</label>
@@ -567,7 +583,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-6 px-lg-1 px-0">
+                                                                <div class="col-6 px-1">
                                                                     <div class="row mx-0 gap-2">
                                                                         <div class="col-12 px-0 text-start">
                                                                             <label for="exampleFormControlInput3" class="form-label label2 peragraph">City</label>
@@ -577,7 +593,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-12 px-0">
+                                                        <div class="col-12 px-lg-0 px-1">
                                                             <div class="row mx-0">
                                                                 <div class="col-12 px-lg-1 px-0">
 
@@ -607,114 +623,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
-                    <nav class="tabNav show">
-                        <div class="nav nav-tabs border-0 gap-1 position-relative" id="nav-tab" role="tablist">
-                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
-                          <div class="downBtn"><img src="assets/./img/global/right-chevron.png" alt="downBTn" class="img-fluid w-100 h-100"></div>
+                <div class="col-12 mt-3">
+                    <nav class="tabNav d-md-block d-none">
+                        <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id=" nav-Verify-tab" data-bs-toggle="tab" data-bs-target="#nav-Verify" type="button" role="tab" aria-controls="nav-Verify" aria-selected="false">Verify</button>
+
                         </div>
                     </nav>
-                </div>
-                <div class="col-12 d-sm-none d-block">
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane  fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                            <div class="outterCard">
-                                <div class="row mx-0">
-                                    <div class="col-12 px-0 general">
-                                        <div class="globalContent dflex align-items-center">
-                                            <div class="row mx-0 gap-2">
-                                                <div class="col-12 px-0">
-                                                    <div class="globalContentInner">
-                                                        <div class="row mx-0 align-items-center h-100">
-                                                            <div class="col">
-                                                                <div class="heading">Hide my online presence in private chat</div>
-                                                            </div>
-                                                            <div class="col-auto d-flex align-items-center ">
-                                                                <label class="switch">
-                                                                    <input type="checkbox" checked>
-                                                                    <span class="slider round"></span>
-                                                                  </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 px-0">
-                                                    <div class="globalContentInner">
-                                                        <div class="row mx-0 align-items-center h-100">
-                                                            <div class="col d-flex align-items-center">
-                                                                <div class="heading d-flex align-items-center">
-                                                                    Currency Setting 
-                                                                </div>
-                                                                <span class="selectBox"> <select class="form-select w-auto border-0 shadow-none bg-transparent d-flex align-items-center justify-content-end me-0" aria-label="Default select example">
-                                                                    <option selected class="bg-transparent">USD</option>
-                                                                    <option value="1">One</option>
-                                                                    <option value="2">Two</option>
-                                                                    <option value="3">Three</option>
-                                                                  </select>
-                                                                </span>
-                                                            </div>
-                                                            <div class="col-auto d-flex align-items-center ">
-                                                                <label class="switch">
-                                                                    <input type="checkbox" checked>
-                                                                    <span class="slider round"></span>
-                                                                  </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 px-0">
-                                                    <div class="globalContentInner">
-                                                        <div class="row mx-0 align-items-center h-100">
-                                                            <div class="col">
-                                                                <div class="heading">Display mode</div>
-                                                            </div>
-                                                            <div class="col-auto d-flex align-items-center ">
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center lightBtn"> <span class="btnImg d-inline-flex me-2"><img src="assets/img/global/night-mode.png" alt="nightmode" class="img-fluid h-100 w-100"></span> Dark</a>
-                                                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center lightBtn"> <span class="btnImg d-inline-flex me-2"><img src="assets/img/global/brightness.png" alt="lightMode" class="img-fluid h-100 w-100"></span> Light</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 px-0">
-                                                    <div class="globalContentInner">
-                                                        <div class="row mx-0 align-items-center h-100">
-                                                            <div class="col">
-                                                            <div class="heading d-flex align-items-center">
-                                                                Language
-                                                            </div>
-                                                            </div>
-                                                            <div class="col-auto d-flex align-items-center ">
-                                                                <span class="selectBox selectbox2"> <select class="form-select w-auto border-0 shadow-none bg-transparent d-flex align-items-center justify-content-end me-0" aria-label="Default select example">
-                                                                    <option selected class="bg-transparent px-3">English</option>
-                                                                    <option value="1">One</option>
-                                                                    <option value="2">Two</option>
-                                                                    <option value="3">Three</option>
-                                                                  </select>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">Privacy</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
-                    <nav class="tabNav show">
-                        <div class="nav nav-tabs border-0 gap-1 position-relative" id="nav-tab" role="tablist">
-                            <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
-                          <div class="downBtn"><img src="assets/./img/global/right-chevron.png" alt="downBTn" class="img-fluid w-100 h-100"></div>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-12 d-sm-none d-block">
+                <div class="col-12 ">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                             <div class="outterCard">
@@ -827,23 +763,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
-                    <nav class="tabNav show">
-                        <div class="nav nav-tabs border-0 gap-1 position-relative" id="nav-tab" role="tablist">
-                            <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                <div class="col-12 mt-3">
+                    <nav class="tabNav d-md-block d-none">
+                        <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id=" nav-Verify-tab" data-bs-toggle="tab" data-bs-target="#nav-Verify" type="button" role="tab" aria-controls="nav-Verify" aria-selected="false">Verify</button>
 
-                          <div class="downBtn"><img src="assets/./img/global/right-chevron.png" alt="downBTn" class="img-fluid w-100 h-100"></div>
                         </div>
                     </nav>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">Mail/Phone Number</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
+                <div class="col-12 ">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
                             <div class="outterCard">
                                 <div class="row mx-0">
                                     <div class="col-12 px-0 signIn">
                                         <div class="globalContent">
-                                            <div class="row mx-0 gap-lg-0 gap-4">
+                                            <div class="row mx-0 gap-lg-0 gap-5">
                                                 <div class="col-lg-5 px-0">
                                                     <div class="signInHeading pb-2">   Mail/Phone Number</div>
                                                     <div class="globalContentInner">
@@ -886,16 +840,35 @@
                             </div>
                         </div>
                     </div>
-                </div>   
-                <div class="col-12 d-sm-none d-block">
-                    <nav class="tabNav show">
-                        <div class="nav nav-tabs border-0 gap-1 position-relative" id="nav-tab" role="tablist">
-                            <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
-                          <div class="downBtn"><img src="assets/./img/global/right-chevron.png" alt="downBTn" class="img-fluid w-100 h-100"></div>
+                </div>
+                <div class="col-12 mt-3">
+                    <nav class="tabNav d-md-block d-none">
+                        <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id=" nav-Verify-tab" data-bs-toggle="tab" data-bs-target="#nav-Verify" type="button" role="tab" aria-controls="nav-Verify" aria-selected="false">Verify</button>
+
                         </div>
                     </nav>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">Security</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
+                <div class="col-12 ">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
                             <div class="outterCard">
@@ -963,13 +936,75 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-sm-none d-block">
-                    <nav class="tabNav show">
-                        <div class="nav nav-tabs border-0 gap-1 position-relative" id="nav-tab" role="tablist">
-                            <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
-                          <div class="downBtn"><img src="assets/./img/global/right-chevron.png" alt="downBTn" class="img-fluid w-100 h-100"></div>
+                 
+                <div class="col-12 mt-3">
+                    <nav class="tabNav d-md-block d-none">
+                        <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id=" nav-Verify-tab" data-bs-toggle="tab" data-bs-target="#nav-Verify" type="button" role="tab" aria-controls="nav-Verify" aria-selected="false">Verify</button>
+
                         </div>
                     </nav>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">Active Sessions</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-md-block d-none">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade active show" id="nav-Sessions" role="tabpanel" aria-labelledby="nav-Sessions-tab" tabindex="0">
+                            <div class="outterCard">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0 activeSessions">
+                                        <div class="globalContent">
+                                            <div class="row mx-0 gap-5">
+                                                <div class="col-12 px-0">
+                                                    <div class="signInHeading">Sessions Used in Past</div>
+                                                </div>
+                                                <div class="col-12 px-0 table-responsive sessionTable">
+                                                    <table class="table text-nowrap align-middle ">
+                                                        <thead>
+                                                            <tr>
+                                                            <th>Browser</th>
+                                                            <th>Location</th>
+                                                            <th>IP Address</th>
+                                                            <th>Handle</th>
+                                                            <th>Action</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody >
+                                                            <tr>
+                                                            <td>Windows 10 (Chrome 11)</td>
+                                                            <td>USA</td>
+                                                            <td>5.30.202.207</td>
+                                                            <td>Online</td>
+                                                            <td>In Use</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 d-md-none d-block">
                     <div class="tab-content" id="nav-tabContent">
@@ -1020,7 +1055,146 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 mt-3 ">
+                    <nav class="tabNav d-md-block d-none">
+                        <div class="nav nav-tabs border-0 gap-1" id="nav-tab" role="tablist">
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Privacy</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Mail/Phone Number</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Security</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0" id="nav-Sessions-tab" data-bs-toggle="tab" data-bs-target="#nav-Sessions" type="button" role="tab" aria-controls="nav-Sessions" aria-selected="false">Active Sessions</button>
+                          <button class="nav-link navBtn border-0 shadow-none rounded-0 active" id=" nav-Verify-tab" data-bs-toggle="tab" data-bs-target="#nav-Verify" type="button" role="tab" aria-controls="nav-Verify" aria-selected="false">Verify</button>
 
+                        </div>
+                    </nav>
+                    <div class="row mx-0 d-md-none d-block">
+                        <div class="col-12 px-0">
+                            <div class="navBtn rounded-2 active">
+                                <div class="row mx-0 align-items-center h-100">
+                                    <div class="col ">
+                                        <div class="navmenu">Verify</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="downArreo d-inline-flex"><img src="assets/img/global/right-chevron.png" alt="downArreo" class="img-fluid w-100 h-100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Verify" role="tabpanel" aria-labelledby="nav-Verify-tab" tabindex="0">
+                            <div class="outterCard">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0 Verify">
+                                        <div class="globalContent">
+                                            <div class="row mx-0 globalInner">
+                                                <div class="col-lg-7 px-lg-0 px-1">
+                                                    <div class="signInHeading">Sessions Used in Past</div>
+                                                    <div class="peragraph pera2 text-start pt-4">
+                                                        To serve you better we ask that you provide original identifying documents. This will secure your account in cases of account recovery. It also helps to ensure that the gifts or actual rewards you receive are sent to the correct location.
+                                                    </div>
+                                                    <div class="peragraph pera2 text-start pt-3"> An acceptable proof of identification includes a photo of your government issued ID card, driver's license and passport.</div>
+                                                    <div class="peragraph pera2 text-start pt-3"> We will reach out to you via email once this process has been completed..</div>
+                                                </div>
+                                                <div class="col-lg-5 px-0">
+                                                    <div class="row mx-0">
+                                                        <div class="col-12 px-0 ">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6 px-1">
+                                                                    <div class="row mx-0 gap-2">
+                                                                        <div class="col-12 px-0 text-start">
+                                                                            <label for="exampleFormControlInput2" class="form-label label2 peragraph">First Name</label>
+                                                                            <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput2">
+                                                                        </div>
+                                                                        <div class="col-12  px-0">
+                                                                            <label for="exampleFormControlInput2" class="form-label label2 peragraph">Gender</label>
+        
+                                                                            <span class="selectSection">
+                                                                                <select class="form-select border-0 shadow-none selectboxSection bg-transparent" aria-label="Default select example">
+                                                                                    <option selected></option>
+                                                                                    <option value="1">Male</option>
+                                                                                    <option value="2">Female</option>
+                                                                                    <option value="3">Other</option>
+                                                                                </select>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 px-1">
+                                                                    <div class="row mx-0 gap-2">
+                                                                        <div class="col-12 px-0 text-start">
+                                                                            <label for="exampleFormControlInput3" class="form-label label2 peragraph">Last Name</label>
+                                                                            <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput3">
+                                                                        </div>
+                                                                        <div class="col-12 px-0 text-start position-relative dateSection">
+                                                                            <label for="exampleFormControlInput3" class="form-label label2 peragraph">Date of Birth</label>
+                                                                            <input type="text" class="form-control border-0 shadow-none " id="exampleFormControlInput3" placeholder="00/00/0000">
+                                                                            <div class="dateImg"><img src="assets/img/global/date.png" alt="date" class="img-fluid w-100 h-100"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-lg-0 px-1">
+                                                            <div class="col-12 px-lg-1 px-0 text-start">
+                                                                <label for="exampleFormControlInput2" class="form-label label2 peragraph">Address</label>
+                                                                <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput2">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-0 ">
+                                                            <div class="row mx-0">
+                                                                <div class="col-6 px-1">
+                                                                    <div class="row mx-0 gap-2">
+                                                                        <div class="col-12 px-0 text-start">
+                                                                            <label for="exampleFormControlInput2" class="form-label label2 peragraph">ZIP/Postal Code</label>
+                                                                            <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput2">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 px-1">
+                                                                    <div class="row mx-0 gap-2">
+                                                                        <div class="col-12 px-0 text-start">
+                                                                            <label for="exampleFormControlInput3" class="form-label label2 peragraph">City</label>
+                                                                            <input type="text" class="form-control border-0 shadow-none" id="exampleFormControlInput3">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 px-lg-0 px-1">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-lg-1 px-0">
+
+                                                                    <label for="exampleFormControlInput2" class="form-label label2 peragraph">Country</label>
+        
+                                                                    <span class="selectSection">
+                                                                        <select class="form-select border-0 shadow-none selectboxSection bg-transparent" aria-label="Default select example">
+                                                                            <option selected>USA</option>
+                                                                            <option value="1">Male</option>
+                                                                            <option value="2">Female</option>
+                                                                            <option value="3">Other</option>
+                                                                        </select>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto px-0 mx-auto mt-5">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center confirmBtn">Enable</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+           
 
             </div>
            </div>
