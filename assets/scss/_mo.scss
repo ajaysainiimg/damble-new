@@ -816,6 +816,7 @@
                     left: 0;
                     background: linear-gradient(163deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
                     // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+                    
                     filter: blur(0.5px);
                     border-radius: 11px;
                 }
@@ -862,7 +863,7 @@
                 left: 0;
                 // background: linear-gradient(135deg, rgba(85, 120, 254, 0.4) 60%, rgba(22, 31, 44, 0.4) 50%);
                 // box-shadow: 0px 4px 4px rgba(0,0,0,.25);
-                background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                background:linear-gradient(167deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
                 filter: blur(1px);
                 border-radius: 11px;
             }
@@ -974,7 +975,11 @@
 
 @include media-breakpoint-up(xl) {}
 
-@include media-breakpoint-up(xxl) {}
+@include media-breakpoint-up(xxl) {
+    .PromotionPage {
+        padding: 0 85px 0 107px;
+    }
+}
 @include media-breakpoint-down(xxl) {}
 
 @include media-breakpoint-down(xl) {
@@ -1310,6 +1315,7 @@
 
      // ********* Promotion Page start ********
      .promotionSection {
+        padding: 50px 0 0 0 ;
         & .PromotionHeading {
         }
         & .promoationPills{
@@ -1794,6 +1800,10 @@
 
     // ********* Promotion Page start ********
     .promotionSection {
+        padding: 40px 0 0 0 ;
+        .PromotionPage {
+           
+        }
         & .PromotionHeading {
         }
         & .promoationPills{
@@ -1807,6 +1817,7 @@
         & .sportBtnMain {
                 & .sportBtn {   
                     width:90%;
+                    font-size: 18px;
                     &::before {
                     }
                     & .sportbtncontent {
@@ -1824,7 +1835,7 @@
             }
             & .promoInputMain {
                 &::before {
-                    background:linear-gradient(126deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
+                    background:linear-gradient(164deg, rgba(85, 120, 254, 0.4) 33%, rgba(22, 31, 44, 0.4) 50%);
                 }
                 & .input-group {
                     height: 45px;
@@ -1833,6 +1844,8 @@
                         }
                     }
                     & .getnowBtn {
+                        padding: 0 25px;
+                        font-size: 16px;
                     }
                 }
             }
