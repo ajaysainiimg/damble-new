@@ -359,6 +359,9 @@
         & .copyright {
         }
     }
+    .footerLinks {
+        margin-top: 100px;
+    }
 }
 
 @include media-breakpoint-down(lg) {
@@ -434,6 +437,9 @@
             font-size: 13px;
             line-height: 18px;
         }
+    }
+    .footerLinks {
+        margin-top: 80px;
     }
 }
 
@@ -515,6 +521,9 @@
             line-height: 16px;
         }
     } 
+    .footerLinks {
+        margin-top: 60px;
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -585,6 +594,9 @@
             font-size: 8px;
             line-height: 10px;
         }
+    }
+    .footerLinks {
+        margin-top: 50px;
     }
 }
 
