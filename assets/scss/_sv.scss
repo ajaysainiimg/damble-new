@@ -4093,6 +4093,31 @@
             }
         }
     }
+
+    & .navBtn{
+        &.active{
+
+            background-color: rgba(0, 153, 10, 1) !important;
+            color: rgba(255, 255, 255, 1);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        // height: 27px;
+        & .navmenu{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            display: flex ;
+            align-items: center;
+        }
+        & .downArreo{
+            width: 9px;
+            height: 8px;
+        }
+    }
     & .tab-content{
         & .tab-pane{
             & .outterCard{
@@ -4445,14 +4470,7 @@
                 & .signIn{
                     & .globalContent{
                         margin: 67px 87px 108px 108px;
-                        // & .signInHeading{
-                        //     color: #FFF;
-                        //     font-family: 'Montserrat';
-                        //     font-size: 16px;
-                        //     font-style: normal;
-                        //     font-weight: 700;
-                        //     line-height: normal;
-                        // }
+                    
                         & .globalContentInner{
                             border-radius: 7px;
                             background: rgba(147, 172, 211, 0.08);
@@ -4694,7 +4712,8 @@
                                 -moz-appearance: none;
                                 appearance: none;
                                 & option{
-                                    // background-color: rgba(147, 172, 211, 0.08, 0.2);
+                                    background-color: rgba(0,0,0,0) !important;
+                                    z-index: 1;
                                 }
                             }
                         }
@@ -5622,6 +5641,20 @@
                 }
             }
         }
+        & .navBtn{
+            height: 27px;
+            &.active{
+    
+             
+            }
+        
+            & .navmenu{
+      
+            }
+            & .downArreo{
+              
+            }
+        }
         & .tab-content{
             & .tab-pane{
                 & .outterCard{
@@ -5707,7 +5740,6 @@
                     
                     & .privacy{
                         & .globalContent{
-                          margin: 0;
                             & .globalContentInner{
                                 & .heading{
                                   
@@ -5907,17 +5939,7 @@
 
                     }
                 }
-                & .downBtn{
-                    position: absolute;
-                    right: 10px;
-                    top: 2px;
-                    
-                    width: 9px;
-                    height: 8px;
-                    & img{
-                        transition: 0.3s linear;
-                    }
-                }
+          
             }
         }
         & .tab-content{
@@ -5956,7 +5978,7 @@
                     // general 
                     & .general{
                         & .globalContent{
-                          margin: 0 !important;
+                          margin: 19px 0px px 0px !important;
                             & .globalContentInner{
                                 height: 29px;
 
@@ -6015,7 +6037,7 @@
                     
                     & .privacy{
                         & .globalContent{
-                          margin: 0;
+                            margin: 19px 0px 30px 0px !important;
                             & .globalContentInner{
                                 & .heading{
                                   
@@ -6072,7 +6094,8 @@
                     // signIn
                     & .signIn{
                         & .globalContent{
-                            margin: 0;
+                            margin: 30px 0px 40px 0px !important;
+
                     
                             & .globalContentInner{
                               
@@ -6112,6 +6135,7 @@
     
                     & .security{
                         & .globalContent{
+                            margin: 45px 0px 40px 0px !important;
                         
                             & .input-group{
                                 padding-left: 0px;
@@ -6143,6 +6167,7 @@
                     // activeSessions 
                     & .activeSessions{
                         & .globalContent{
+                            margin: 20px 0px 40px 0px !important;
                            
                             & .sessionTable{
                                 & .table{
@@ -6186,24 +6211,26 @@
     
                     & .Verify{
                         & .globalContent{
-                         
-                            & .selectSection{
-                            
-                                &::before{
-                                
-                                }
-                                & .selectboxSection{
-                          
-                                    & option{
-                                   
-                                    }
-                                }
-                            }
-                            & .dateSection{
-                                & .dateImg{
+                         & .globalInner{
+                            padding: 17px 14px 28px 18px;
+                             & .selectSection{
                              
-                                }
-                            }
+                                 &::before{
+                                 
+                                 }
+                                 & .selectboxSection{
+                           
+                                     & option{
+                                    
+                                     }
+                                 }
+                             }
+                             & .dateSection{
+                                 & .dateImg{
+                              
+                                 }
+                             }
+                         }
                         }
                     }
                 }
@@ -6212,288 +6239,292 @@
     }
 }
 @media screen and (max-width:430px) {
-    .globalSection{
-        & .tabNav{
-            & .nav-tabs{
-                & .navBtn{
-
-                    &.active{
-
+    .mainContaint{
+        padding: 28px 12px 0px 12px !important;
+        .globalSection{
+            & .tabNav{
+                & .nav-tabs{
+                    & .navBtn{
+    
+                        &.active{
+    
+                        }
                     }
                 }
             }
-        }
-        & .tab-content{
-            & .tab-pane{
-                & .outterCard{
-               
-                    &::before{
-             
-                    }
-                    & .signInHeading{
-                 
-                    }
-                    & .peragraph{
-       
-                        &.form-label {
-                       
-                            &.label2{
-                               
-                            }
-                        }
-                        &.pera2{
-                        }
-    
-                    }
-                    & input{
-                        &::placeholder{
-                        }
-                    }
-                    & .confirmBtn{
-                    }
-                    // general 
-                    & .general{
-                        & .globalContent{
-                          
-                            & .globalContentInner{
-                                & .heading{
-                                }
-                                & .selectBox{
-                                      & option{
-                                        &:hover{
-                                        }
-        
-                                      }
-                                      &::before{ 
-                                      }
-                                      &.selectbox2{
-                                      
-                                        &::before{
-                                        }
-                                      }
-                                    & .form-select {
-                                    }
-                                  
-                                }
-                                & .switch {
-                                    & input{
-                                       
-                                    }
-                                    input:focus + .slider {
-                                
-                                      }
-                                      
-                                      input:checked + .slider:before {
-                          
-                                      }
-                                    & .slider {
-                                        &::before{
-                                        }
-                                        &.round {
-                                            &::before {
-                                               
-                                              }
-                                          }
-                                      }
-                                }
-                                & .lightBtn{
-                                    & .btnImg{
-                                    
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //  privacy
-                    
-                    & .privacy{
-                        & .globalContent{
-                          
-                            & .globalContentInner{
-                                & .heading{
-                                  
-                                }
-                                & .selectBox{
-                               
-                                      & option{
-                                  
-                                        &:hover{
-                                         
-                                        }
-        
-                                      }
-                                      &::before{
-                                      }
-                                      &.selectbox2{
-                                        &::before{
-                                          
-                                        }
-                                      }
-                                    & .form-select {
-                                    }
-                                  
-                                }
-                                & .switch {
-                                    & input{
-                                       
-                                    }
-                                    input:focus + .slider {
-                                       
-                                      }
-                                      
-                                      input:checked + .slider:before {
-                                    
-                                      }
-                                    & .slider {
-                                        &::before{
-                                        }
-                                        &.round {
-                               
-                                            &::before {
-                                             
-                                              }
-                                          }
-                                      }
-                                }
-                             
-                            }
-                            & .pera{
+            & .tab-content{
+                & .tab-pane{
+                    & .outterCard{
                    
-                            }
+                        &::before{
+                 
                         }
-                    }
-                    // signIn
-                    & .signIn{
-                        & .globalContent{
-                            
-                    
-                            & .globalContentInner{
-                              
-                                & .signInContent{
+                        & .signInHeading{
+                     
+                        }
+                        & .peragraph{
+                            font-size: 10px;
+                            &.form-label {
                            
-                                    &.signInContent2{
-                                        
-                                        & .input-group{
-                                  
-                                            &::before{
-                                        
-                                            }
-                                            & .input-group-text{
-                                    
-                                            }
-                                            & .form-control{
-                                              
-                                              
-                                                &::placeholder{
-                                               
-                                                }
-                                            }
-                                        }
-                                    }
-                                    & label{
-                                 
-                                    }
-                                    & input{
-                                    
-                                    }
-                                 
-                                }
-                            }
-                        }
-                    }
-                    // security
-    
-                    & .security{
-                        & .globalContent{
-                        
-                            & .input-group{
-                               
-                                & .form-control{
-               
-                                }
-                                & .input-group-text {
-                               
-                                }
-                            }
-                            & .globalContentInner{
-                          
-                                & .qrImg{
-                            
-                                }
-                                & .otp-input-fields{
-                             
-                                    & input{
-                                
+                                &.label2{
                                    
+                                }
+                            }
+                            &.pera2{
+                            }
+        
+                        }
+                        & input{
+                            &::placeholder{
+                            }
+                        }
+                        & .confirmBtn{
+                        }
+                        // general 
+                        & .general{
+                            & .globalContent{
+                              
+                                & .globalContentInner{
+                                    & .heading{
                                     }
-    
+                                    & .selectBox{
+                                        margin-left: 18px;
+                                          & option{
+                                            &:hover{
+                                            }
+            
+                                          }
+                                          &::before{ 
+                                          }
+                                          &.selectbox2{
+                                          
+                                            &::before{
+                                            }
+                                          }
+                                        & .form-select {
+                                        }
+                                      
+                                    }
+                                    & .switch {
+                                        & input{
+                                           
+                                        }
+                                        input:focus + .slider {
+                                    
+                                          }
+                                          
+                                          input:checked + .slider:before {
+                              
+                                          }
+                                        & .slider {
+                                            &::before{
+                                            }
+                                            &.round {
+                                                &::before {
+                                                   
+                                                  }
+                                              }
+                                          }
+                                    }
+                                    & .lightBtn{
+                                        & .btnImg{
+                                        
+                                        }
+                                    }
                                 }
                             }
                         }
-                    }
-    
-                    // activeSessions 
-                    & .activeSessions{
-                        & .globalContent{
-                           
-                            & .sessionTable{
-                                & .table{
-                                    & thead{
-                                        
-                                        & tr{
-                                          
-                                            & th{
-                                              
-    
-                                                &:first-child{
-                                               
-                                                }
-                                                &:last-child{
-                                             
-                                                }
-                                     
-                                            }
-                                        }
-                                    }
-                                    & tbody{
-                                        & tr{
-                                     
-                                         
-                                            & td{
+                        //  privacy
+                        
+                        & .privacy{
+                            & .globalContent{
+                              
+                                & .globalContentInner{
+                                    & .heading{
                                       
-                                                &:first-child{
-                                               
-                                                }
-                                                &:last-child{
+                                    }
+                                    & .selectBox{
+                                   
+                                          & option{
+                                      
+                                            &:hover{
+                                             
+                                            }
+            
+                                          }
+                                          &::before{
+                                          }
+                                          &.selectbox2{
+                                            &::before{
+                                              
+                                            }
+                                          }
+                                        & .form-select {
+                                        }
+                                      
+                                    }
+                                    & .switch {
+                                        & input{
+                                           
+                                        }
+                                        input:focus + .slider {
+                                           
+                                          }
+                                          
+                                          input:checked + .slider:before {
+                                        
+                                          }
+                                        & .slider {
+                                            &::before{
+                                            }
+                                            &.round {
+                                   
+                                                &::before {
+                                                 
+                                                  }
+                                              }
+                                          }
+                                    }
+                                 
+                                }
+                                & .pera{
+                       
+                                }
+                            }
+                        }
+                        // signIn
+                        & .signIn{
+                            & .globalContent{
+                                
+                        
+                                & .globalContentInner{
+                                  
+                                    & .signInContent{
+                               
+                                        &.signInContent2{
+                                            
+                                            & .input-group{
+                                      
+                                                &::before{
                                             
                                                 }
+                                                & .input-group-text{
+                                        
+                                                }
+                                                & .form-control{
+                                                  
+                                                  
+                                                    &::placeholder{
+                                                   
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        & label{
+                                     
+                                        }
+                                        & input{
+                                        
+                                        }
+                                     
+                                    }
+                                }
+                            }
+                        }
+                        // security
+        
+                        & .security{
+                            & .globalContent{
+                            
+                                & .input-group{
+                                   
+                                    & .form-control{
+                   
+                                    }
+                                    & .input-group-text {
+                                   
+                                    }
+                                }
+                                & .globalContentInner{
+                              
+                                    & .qrImg{
+                                
+                                    }
+                                    & .otp-input-fields{
+                                        gap: 6px;
+                                        & input{
+                                    
+                                       
+                                        }
+        
+                                    }
+                                }
+                            }
+                        }
+        
+                        // activeSessions 
+                        & .activeSessions{
+                            & .globalContent{
+                               
+                                & .sessionTable{
+                                    & .table{
+                                        & thead{
+                                            
+                                            & tr{
+                                              
+                                                & th{
+                                                  
+        
+                                                    &:first-child{
+                                                   
+                                                    }
+                                                    &:last-child{
+                                                 
+                                                    }
+                                         
+                                                }
+                                            }
+                                        }
+                                        & tbody{
+                                            & tr{
+                                         
+                                             
+                                                & td{
+                                          
+                                                    &:first-child{
+                                                   
+                                                    }
+                                                    &:last-child{
+                                                
+                                                    }
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                    // Verify
-    
-                    & .Verify{
-                        & .globalContent{
-                         
-                            & .selectSection{
-                            
-                                &::before{
+                        // Verify
+        
+                        & .Verify{
+                            & .globalContent{
+                             
+                                & .selectSection{
                                 
-                                }
-                                & .selectboxSection{
-                          
-                                    & option{
-                                   
+                                    &::before{
+                                    
+                                    }
+                                    & .selectboxSection{
+                              
+                                        & option{
+                                       
+                                        }
                                     }
                                 }
-                            }
-                            & .dateSection{
-                                & .dateImg{
-                             
+                                & .dateSection{
+                                    & .dateImg{
+                                 
+                                    }
                                 }
                             }
                         }
