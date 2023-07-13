@@ -6816,3 +6816,325 @@
     }
 }
 // header end 
+
+// <!-- ****** [ Bounscard Section Start ] ****** -->
+
+.rewardCardSection{
+    padding: 45px 62px 50px 99.71px;
+    & .rewardSection{
+        & .outterCard{
+            position: relative;
+            overflow: hidden;
+            &::before{
+                position: absolute;
+                content: '';
+                border-radius: 24px;
+                opacity: 0.30000001192092896;
+                background: linear-gradient(-90deg, rgba(99, 36, 215, 0.41) 0%, rgba(0, 153, 10, 0.19) 100%);
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            & .innerCard{
+                padding: 39px 25px 30px 40px;
+                & .cardContent{
+                    & .subHeading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 23px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        & span{
+                            color: #04E929;
+                        }
+                        &.heading{
+                            font-size: 26px;
+                            & span{
+                                color: #04E929;
+                            }
+                        }
+                    }
+                    & .pera{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                }
+                & .cardImg{
+                    height: 170px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .rewardCardSection{
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    & .cardContent{
+                        & .subHeading{
+                            font-size: 20px;
+                            & span{
+                            
+                            }
+                            &.heading{
+                                font-size: 22px;
+                                & span{
+                        
+                                }
+                            }
+                        }
+                        & .pera{
+          
+                        }
+                        & .cardBtn{
+        }
+                    }
+                    & .cardImg{
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .rewardCardSection{
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    & .cardContent{
+                        & .subHeading{
+  
+                            & span{
+                            
+                            }
+                            &.heading{
+                             
+                                & span{
+                        
+                                }
+                            }
+                        }
+                        & .pera{
+          
+                        }
+                        & .cardBtn{
+        }
+                    }
+                    & .cardImg{
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .rewardCardSection{
+        padding: 35px 30px 0px 30px !important;
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    & .cardContent{
+                        & .subHeading{
+                            font-size: 17px;
+                            & span{
+                            
+                            }
+                            &.heading{
+                             font-size: 18px;
+                                & span{
+                        
+                                }
+                            }
+                        }
+                        & .pera{
+          
+                        }
+                        & .cardBtn{
+        }
+                    }
+                    & .cardImg{
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .rewardCardSection{
+        padding: 20px 21px !important;
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    padding: 21px 20px 22px 20px;
+                    & .cardContent{
+                        & .subHeading{
+                            font-size: 18px;
+                            & span{
+                                color: #FFD700;
+                            }
+                            &.heading{
+                             font-size: 20px;
+                                & span{
+                                    color: #FFD700;
+                                }
+                            }
+                        }
+                        & .pera{
+                            font-size: 10px;
+                        }
+                        & .cardBtn{
+                            }
+                    }
+                    & .cardImg{
+                        height: 118px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .rewardCardSection{
+        padding: 20px 0px !important;
+
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    padding: 21px 14px 22px 14px;
+                    & .cardContent{
+                        & .subHeading{
+  
+                            & span{
+                            
+                            }
+                            &.heading{
+                             
+                                & span{
+                        
+                                }
+                            }
+                        }
+                        & .pera{
+          
+                        }
+                        & .cardBtn{
+        }
+                    }
+                    & .cardImg{
+                    
+                    }
+                }
+            }
+            & .greenBtn{
+                &.cardBtn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6px;
+                    font-size: 15px;
+                   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .rewardCardSection{
+        padding: 20px 0px !important;
+
+        & .rewardSection{
+            & .outterCard{
+              
+                &::before{
+              
+                }
+                & .innerCard{
+                    padding: 21px 0px 9px 0px;
+                    & .cardContent{
+                        & .subHeading{
+                            font-size: 12px;
+                            & span{
+                            
+                            }
+                            &.heading{
+                                font-size: 15px;
+                                & span{
+                        
+                                }
+                            }
+                        }
+                        & .pera{
+                            font-size: 9px;
+                        }
+                        & .cardBtn{
+        }
+                    }
+                    & .cardImg{
+                        height: 92px;
+                    }
+                }
+            }
+            & .greenBtn{
+                &.cardBtn{
+                
+                }
+            }
+        }
+    }
+}
+
+// <!-- ****** [ Bounscard Section end ] ****** -->
+
