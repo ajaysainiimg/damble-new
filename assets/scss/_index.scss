@@ -466,9 +466,10 @@
 
 // * ** register Section
 .registerSection {
-    & .signUpBtn {
+    position: relative;
+    & .signUp {
         bottom: 50px;
-        left: 50px;
+        left: 4%;
         position: absolute;
     }
 }
