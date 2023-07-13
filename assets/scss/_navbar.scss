@@ -27,29 +27,43 @@
         margin-top: 60px;
         padding: 45.65px 62.81px 0px 99.71px;
         transition: all 0.3s;
-
         &.affiliatePage{
             // padding: 76px 31px 108px 28px !important;
             padding: 22px 22px 50px 22px !important;
         }
-        
-                    &.afflitiateDashboard{
-                        padding: 35px 39px 87px 35px !important;
-                    }
+        &.vipclubMain {
+            padding: 0 71px 0 43px;
+        }
+        &.PromotionPage {
+            padding: 0 85px 0 107px;
+        }
+        &.afflitiateDashboard{
+            padding: 35px 39px 87px 35px !important;
+        }
     }
-    & .vipclubMain {
-        padding: 0;
-    }
+    
     & .footerSection {
-        // margin-left: 217px;
-        // background: #131C27;
+        margin-left: 217px;
+        background: #0D131C;
         margin-top: 78px;
         & .footer {
             padding: 45.65px 62.81px 0px 99.71px;
         }
     }
 }
-
+@include media-breakpoint-down(xxl) {
+    .main{
+        & .mainContaint {
+            padding: 45px 62px 0px 62px;
+        }
+        & .footerSection {
+            margin-top: 75px;
+            & .helpSection, & .footerLinks, & .accordionFooter {
+                padding: 45px 62px 0px 62px;
+            }
+        }
+    }
+} 
 @include media-breakpoint-down(xl) {
     .sidebar{
         display: none;
@@ -57,13 +71,19 @@
     .main{
         & .mainContaint {
             margin-left: 0px;
-            padding: 45px 62px 0px 62px;
+            padding: 42px 55px 0px 55px;
+            &.vipclubMain {
+                padding: 0 60px 0 35px;
+            }
+            // &.PromotionPage {
+            //     padding: 0 50px 0 50px;
+            // }
         }
         & .footerSection {
             margin-left: 0px;
             margin-top: 75px;
             & .helpSection, & .footerLinks, & .accordionFooter {
-                padding: 45px 62px 0px 62px;
+                padding: 42px 55px 0px 55px;
             }
         }
     }
@@ -77,6 +97,12 @@
         & .mainContaint {
             // margin-top: 50px;
             padding: 40px 50px 0px 50px;
+            &.vipclubMain {
+                padding: 0 30px 0 25px;
+            }
+            &.PromotionPage {
+                padding: 0 50px 0 50px;
+            }
         }
         & .footerSection {
             margin-top: 60px;
@@ -95,6 +121,12 @@
         & .mainContaint {
             // margin-top: px;
             padding: 30px 25px 0px 25px;
+            &.vipclubMain {
+                padding: 0 10px 0 10px;
+            }
+            &.PromotionPage {
+                padding: 0 22px 0 21px;
+            }
         }
         & .footerSection {
             margin-top: 40px;
