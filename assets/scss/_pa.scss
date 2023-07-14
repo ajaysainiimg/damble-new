@@ -1,6 +1,7 @@
 .headerFluid{
-    height: 75px;
+    // height: 75px;
     position: relative;
+    height: 100%;
     padding-left: 320px;
     & .headerRow{
         // background:   6px 10px 0px rgba(0, 0, 0, 0.25);
@@ -113,7 +114,7 @@
 
 .headerFluidlg{
     background: #161F2C;
-    padding: 22px;
+    padding: 15px 21px;
     & .gd{
         & img{
             margin-right: 21px;
@@ -618,6 +619,11 @@
                 padding: 0 30px 30px 30px;
                 // background-color: #17212F;
                 border-radius: 0 0 20px 20px ;
+                & .dambleUser{
+                    & img {
+                        width: 100%;
+                    }
+                        }
                 & .userName {
                     color: #FFF;
                     text-align: center;
@@ -626,7 +632,6 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-
                     & span {
                         font-size: 14px;
                         line-height: 22px;
@@ -641,8 +646,6 @@
                             background-color: #00A300;
                             position: absolute;
                             right: 0;
-                & .dambleUser{
-                        }
                     }
                     &::after{
                         content:'';
@@ -674,6 +677,7 @@
                     & img{    
                         width: 62px;
                         height: 50px;
+                        object-fit: contain;
                     }
                 }
                 & .pills{
@@ -731,7 +735,12 @@
                         height: 38px;
                         border-radius: 7px;
                         background: rgba(147, 172, 211, 0.50);
-
+                        color: rgba(255, 255, 255, 0.80);
+                        font-size: 12px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
                         &::placeholder {
                             color: rgba(255, 255, 255, 0.80);
                             font-size: 12px;
@@ -796,6 +805,7 @@
                             font-weight: 600;
                             line-height: normal;
                             padding-left: 8px;
+                            margin-top: -6px;
                             & span {
                                 color: #00990A;
                             }
@@ -4843,7 +4853,9 @@
                     }
                 }
                 & .group{
+                    margin-left: 30px;
                     & .searchInp{
+                        width: 190px;
                         &:focus{
                         }
                     }

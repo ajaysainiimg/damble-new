@@ -211,8 +211,25 @@
     }
 } 
 @include media-breakpoint-down(xl) {
+    body{
+        &.asideBar{
+            & .sidebar{
+                transform: translateX(0px);
+            }
+            & .menuBtn {
+                & .closeicon {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .menuicon {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
     .sidebar{
-        display: none;
+        transform: translateX(-100%);
     }
     .main{
         & .mainContaint {
