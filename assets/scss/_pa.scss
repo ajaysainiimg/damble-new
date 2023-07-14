@@ -1,18 +1,18 @@
 .headerFluid{
     height: 75px;
     position: relative;
-    padding-left: 338px;
+    padding-left: 320px;
     & .headerRow{
-        background: #161F2C;
-        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+        // background:   6px 10px 0px rgba(0, 0, 0, 0.25);
         & .logoWrapper{
+            width: 338px;
+            position: absolute;
+            top: 0;
+            left: 0;
             & .logo{
-                position: absolute;
-                top: 0;
-                left: 0;
+                height: 80px;
                 & .image{
-                    width: 338px;
-                    // height: 103px;
+                    height: 100%;
                 }
             }
         }
@@ -5003,6 +5003,7 @@
         }
     }   
     .aboutFluid{
+        background: none;
         & .aboutCard{
         &.Card2{
             &::after{
@@ -6091,12 +6092,14 @@
     .aboutFluid{
         padding: 0;
         border: 0;
-        background-color: unset;
-        position: unset;
+        &::before, &:after{
+            background: none;
+        }
+        // background-color: unset;
+        // position: unset;
             & .aboutCard{
                 &.Card2{
                     &::after{
-    
                     }
                     &::before{
                         // width: 30px;
