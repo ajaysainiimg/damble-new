@@ -1158,6 +1158,155 @@
 
 
 
+// user information model start
+.userInfoModel {
+    & .userInfocontent {
+        max-width: 461px;
+        & .userinforcard {
+            border-radius: 13px;
+            background: #161F2C;
+            & .userinfoHeader {
+                & .userinfoHeading {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .modalCloseBtn {
+                    filter: invert(1);
+                }
+                & .uservipTagmain {
+                    top: -21px;
+                    right: 35px;
+                    border-radius: 0px 0px 9px 9px;
+                    & .uservipTagContent {
+                    border-radius: 0px 0px 9px 9px;
+                    padding: 0.8px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            z-index: -1;
+                            border-radius: 0px 0px 9px 9px;
+                            // background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, #FFD700 63%);
+                            // background: linear-gradient(to right, red, orange);
+                            background: linear-gradient(0deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
+                        }
+                        & .uservipTag {
+                            padding: 29px 10px 12px 10px;
+                            background: #252E39;
+                            border-radius: 0px 0px 9px 9px;
+                            & .vipImg {
+                                max-width: 37px;
+                                max-height: 37px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .userinfobody {
+                margin-top: 13px;
+                & .userdata {
+                    border-radius: 15px;
+                    border: 1.5px solid rgba(0, 153, 10, 0.30);
+                    & .userIcon {
+                        max-width: 75px;
+                        max-height: 75px;
+                    }
+                    & .username {
+                        color: #FFF;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    & .userid {
+                        color: #93ACD3;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & .userAward {
+                        & .userawardImg {
+                            height: 19px;
+                            width: 19px;
+                        }
+                    }
+                }
+                & .userrankDetail {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 12px;
+                    padding: 10px 20px;
+                    & .userrankHeading {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 600;
+                        line-height: normal;
+                        & .rankIcon {
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                    & .userranmedalmain {
+                        padding: 0.8px;
+                        &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                width: 100%;
+                                z-index: -1;
+                                border-radius: 0px 0px 9px 9px;                              
+                                background: linear-gradient(0deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
+                        }
+                        & .userranklevel{
+                            padding: 13px 8px;
+                            & .ranklevel {
+                                & .ranklevelcount {
+                                    color:#FFF;
+                                    font-size: 10px;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                    margin-bottom: 13px;
+                                    & .ranklevelcount {
+                                        font-size: 16px;
+                                        font-weight: 900;
+                                    }
+                                }
+                                & .ranklevelImg {
+                                    width: 70px;
+                                    height: 42px;
+                                }
+                                &.active {
+                                    & .ranklevelcount {
+                                        color: #FFD700;  
+                                    }
+                                }
+                            }
+                            & .nextIcon {
+                                height: 16px;
+                                width: 16px;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// user information model end
+
+
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
