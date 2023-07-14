@@ -1165,6 +1165,7 @@
         & .userinforcard {
             border-radius: 13px;
             background: #161F2C;
+            padding: 13px;
             & .userinfoHeader {
                 & .userinfoHeading {
                     color: #FFF;
@@ -1252,6 +1253,7 @@
                     }
                     & .userranmedalmain {
                         padding: 0.8px;
+                        margin-top: 11px;
                         &::before {
                                 content: '';
                                 position: absolute;
@@ -1259,12 +1261,13 @@
                                 left: 0;
                                 height: 100%;
                                 width: 100%;
-                                z-index: -1;
-                                border-radius: 0px 0px 9px 9px;                              
-                                background: linear-gradient(0deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
+                                border-radius: 7px;                           
+                                background: linear-gradient(180deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
                         }
                         & .userranklevel{
-                            padding: 13px 8px;
+                            padding: 13px 0;
+                            border-radius: 7px;
+                            background: #212c3b;
                             & .ranklevel {
                                 & .ranklevelcount {
                                     color:#FFF;
@@ -1279,8 +1282,8 @@
                                     }
                                 }
                                 & .ranklevelImg {
-                                    width: 70px;
-                                    height: 42px;
+                                    width: 56px;
+                                    height: 34px;
                                 }
                                 &.active {
                                     & .ranklevelcount {
@@ -1291,7 +1294,7 @@
                             & .nextIcon {
                                 height: 16px;
                                 width: 16px;
-                                right: 0;
+                                right: 5px;
                                 top: 50%;
                                 transform: translateY(-50%);
                             }
