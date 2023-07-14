@@ -6328,6 +6328,8 @@
             }
             &.outerPadding{
                 padding: 0;
+                background-color: unset;
+                border-radius: 14px;
             }
             & .downloadSection{
                 & .box{
