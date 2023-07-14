@@ -5741,7 +5741,7 @@
 // <!-- ****** [ Bounscard Section Start ] ****** -->
 
 .rewardCardSection {
-    padding: 45px 62px 50px 99.71px;
+    // padding: 45px 62px 50px 99.71px;
     & .rewardSection {
         & .outterCard {
             position: relative;
@@ -5877,7 +5877,7 @@
 
 @include media-breakpoint-down(lg) {
     .rewardCardSection {
-        padding: 35px 30px 0px 30px !important;
+        // padding: 35px 30px 0px 30px !important;
         & .rewardSection {
             & .outterCard {
                 &::before {
@@ -5910,7 +5910,7 @@
 
 @include media-breakpoint-down(md) {
     .rewardCardSection {
-        padding: 20px 21px !important;
+        // padding: 20px 21px !important;
         & .rewardSection {
             & .outterCard {
                 &::before {
@@ -5947,7 +5947,7 @@
 
 @include media-breakpoint-down(sm) {
     .rewardCardSection {
-        padding: 20px 0px !important;
+        // padding: 20px 0px !important;
 
         & .rewardSection {
             & .outterCard {
