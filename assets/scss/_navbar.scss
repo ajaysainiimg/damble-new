@@ -172,12 +172,6 @@
         & .affiliatePage{
             padding: 76px 21px 0px 21px;
         }
-        &.vipclubMain {
-            padding: 0 71px 0 43px;
-        }
-        // &.PromotionPage {
-        //     padding: 0 85px 0 107px;
-        // }
         &.afflitiateDashboard{
             padding: 35px 39px 87px 35px !important;
         }
@@ -211,8 +205,27 @@
     }
 } 
 @include media-breakpoint-down(xl) {
+    body{
+        &.asideBar{
+            & .sidebar{
+                transform: translateX(0px);
+            }
+            & .menuBtn {
+                & .closeicon {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .menuicon {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
     .sidebar{
-        display: none;
+        transform: translateX(-100%);
+        z-index: 101;
+        top: 0;
     }
     .main{
         & .mainContaint {
@@ -223,12 +236,6 @@
             & .affiliatePage{
                 padding: 50px 21px 50px 21px;
             }
-            &.vipclubMain {
-                padding: 0 60px 0 35px;
-            }
-            // &.PromotionPage {
-            //     padding: 0 70px 0 70px;
-            // }
         }
         & .footerSection {
             margin-left: 0px;
@@ -246,12 +253,7 @@
             & .homepage{
                 padding: 35px 47px 0px 47px;
             }
-            &.vipclubMain {
-                padding: 0 30px 0 25px;
-            }
-            // &.PromotionPage {
-            //     padding: 0 30px 0 30px;
-            // }
+            
         }
         & .footerSection {
             margin-top: 60px;
@@ -272,12 +274,6 @@
             & .homepage{
                 padding: 25px 15px 0px 15px;
             }
-            &.vipclubMain {
-                padding: 0 10px 0 10px;
-            }
-            // &.PromotionPage {
-            //     padding: 0 22px 0 21px;
-            // }
         }
         & .footerSection {
             margin-top: 40px;

@@ -54,8 +54,8 @@
 <body>
         <!-- * Navbar Start -->
         <header class="navbar p-0 position-fixed top-0 w-100">
-            <div class="container-fluid headerFluid d-lg-block d-none">
-                <div class="row headerRow">
+            <div class="container-fluid headerFluid d-lg-flex d-none pe-0">
+                <div class="row headerRow w-100">
                     <div class="col-auto px-0 d-xl-block d-none">
                         <div class="logoWrapper">
                             <div class="logo">
@@ -64,7 +64,8 @@
                         </div>
                     </div>
                     <div class="col-xl col-12 px-0">
-                        <div class="row headerRyt mx-0">
+                        <div class="row headerRyt mx-0 align-items-center">
+                            <div class="col-auto d-xl-none d-block ps-0"><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
                             <div class="col d-flex align-items-center">
                                 <ul class="pills d-flex align-items-start mb-0 ps-0">
                                     <li class="casinoPill"><a href="javascript:;" class="pillAnchor active d-flex align-items-center justify-content-center" ><img src="assets/img/casinoIcon.png" alt="">CASINO </a></li>
@@ -86,7 +87,7 @@
                                 <!-- <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
                                 <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button> -->
 
-                                <div class=" d-flex justify-content-end align-items-end pe-sm-3 pe-1 headerMenu">
+                                <div class=" d-flex justify-content-end align-items-end pe-0 headerMenu">
                                     <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
                                         <li>
                                            <a href="javascript:;" class="text-decoration-none">
@@ -135,9 +136,12 @@
                                             </a>
                                         </li>
                                         <li class="ms-3">
-                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                                 <div class="icon d-lg-inline-flex "><img src="assets/img/header/chat.png" alt="chat" class="img-fluid w-100 h-100"></div>
                                             </a>
+                                            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                                Button with data-bs-target
+                                              </button> -->
                                         </li>
                                     </ul>
                                 </div>
@@ -148,11 +152,13 @@
             </div>
             <div class="container-fluid headerFluidlg d-block d-lg-none">
                 <div class="row align-items-center">
-                    <div class="col-6 d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
-                        <div class="gd"><img src="assets/img/gd.png" alt=""></div>
+                    <div class="col-auto d-lg-none d-md-block d-none ps-0"><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
+
+                    <div class="col d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
+                        <div class="gd"><img src="assets/img/whitelogo.png" alt=""></div>
                         <div class="gdTxt"><img src="assets/img/logotxt.png" alt=""></div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end align-items-end pe-sm-3 pe-1">
+                    <div class="col-auto d-flex justify-content-end align-items-end pe-sm-3 pe-1">
                         <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
                         <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
                     </div>
@@ -163,7 +169,8 @@
         <!-- * Navbar End -->
         <!-- * Aside Bar Start -->
         <aside class="sidebar position-fixed">
-            <div class="row pt-3 sidebar-menu">
+            <div class="row pt-xl-3 sidebar-menu">
+                <div class="col-12 d-xl-none d-flex justify-content-end align-items-center ps-0 mb-3"><button class="btn menuBtn toggleButton p-0 shadow-none border-0 bg-transparent"><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
                 <div class="col-12 topBodyPart">
                     <div class="row">
                         <div class="col-12 mb-4">
@@ -175,7 +182,7 @@
                             <div class="row g-2">
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/spiner.png" alt="">
+                                        <img src="assets/img/whilespiner.png" alt="">
                                         <div class="txt"><span claas="orange">WHEEL</span> SPIN</div>
                                     </div>
                                 </div>
@@ -351,21 +358,414 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- message offcanavas  -->
+                        <div class="offcanvas offcanvas-end chatOffcanvas " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header chatHeader">
+                                <div class="dropdown chatDropdown">
+                                    <button class="btn btn-secondary dropdown-toggle border-0 shadow-none allChatBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        All Chats
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class=" btn botrder-0 shadow-none infoBtn d-flex" data-bs-dismiss="offcanvas" aria-label="Close"><span class="d-inline-flex icon"><img src="assets/img/aboutJonathan/info.png" alt="info" class="img-fluid w-100 h-100"></span> </button>
+                                    <button type="button" class=" btn botrder-0 shadow-none closeBtn d-flex" data-bs-dismiss="offcanvas" aria-label="Close"><span class="d-inline-flex icon"><img src="assets/img/aboutJonathan/close.png" alt="close" class="img-fluid w-100 h-100"></span> </button>
+                                </div>
+                            </div>
+                                <div class="offcanvas-body chatBody h-100">
+                                    <div class="outerCard h-100">
+                                        <div class="row mx-0 h-100 flex-nowrap flex-column">
+                                            <div class="col-12 px-0 h-100 px-0 flex-fill overflow-hidden pb-2">
+                                            <div class="row mx-0 h-100 overflow-y-auto">
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 px-0 chatContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-auto d-flex align-items-center justify-content-center flex-column ps-0">
+                                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center userImg justify-content-center"><img src="assets/img/aboutJonathan/chatuser.png" alt="chatUser" class="img-fluid w-100 h-100"></a>
+                                                            <div class="meadel mt-1">
+                                                                <ul class="list-unstyled d-flex mb-0">
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                    <li><a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center icon"><img src="assets/img/aboutJonathan/medal1.png" alt="medal" class="img-fluid w-100 h-100"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col px-0">
+                                                            <div class="row mx-0">
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatHeading">Username <span class="subHeading">12.00 PM</span></div>
+                                                                </div>
+                                                                <div class="col-12 px-0">
+                                                                    <div class="chatBox">
+                                                                        <div class="chatMessage">Your Message Your MessageYour MessageYour Message</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+                                            </div>
+                                            </div>
+                                             <!-- message input  -->
+                                             <div class="col-12 px-0 pt-2">
+                                                <div class="messageBox ">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control messageInput border-0 shadow-none bg-transparent" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                        <span class="input-group-text border-0 shadow-none ms-0" id="basic-addon2"><img src="assets/img/aboutJonathan/happiness.png" alt="happnes" class="img-fluid w-100 h-100"></span>
+                                                        <span class="input-group-text border-0 shadow-none ms-0 send ms-1" id="basic-addon2">  <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center"><img src="assets/img/aboutJonathan/send.png" alt="send" class="img-fluid w-100 h-100"></a></span>
+
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chatFooter">
+                                    <div class="col-12">
+                                    <div class="outerCard">
+                                        <div class="row mx-0 align-items-center"> 
+                                            <div class="col px-0">
+                                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
+                                                    <li>
+                                                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center justifycontent-center icon"><img src="assets/img//aboutJonathan/drop-in-value.png" alt="drop" class="img-fluid w-100 h-100"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center justifycontent-center icon"><img src="assets/img//aboutJonathan/@.png" alt="drop" class="img-fluid w-100 h-100"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center justifycontent-center icon"><img src="assets/img//aboutJonathan/blood-drop.png" alt="drop" class="img-fluid w-100 h-100"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-auto px-0">
+                                                <ul class="list-unstyled d-flex align-items-center gap-2 mb-0">
+                                                    <li>
+                                                        <a href="javascript:;" class="text-decoration-none d-flex align-items-center justifycontent-center icon gif"><img src="assets/img//aboutJonathan/gif.png" alt="gif" class="img-fluid w-100 h-100"></a>
+                                                    </li>
+                                            
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                     </div>
                     <!-- ****** [ About Jonathan Section End ] ****** -->
 
                 </div>
             </div>
+            </div>
             <!--  **** Footer section *** -->
             <div class="footerSection ">
-
                 <!-- footer links -->
                 <div class="container-fluid footer footerLinks pt-5">
                     <div class="row cols-5 d-md-flex d-none">
                         <div class="col">
                             <ul class="linksUl list-unstyled">
                                 <li class="linkLiHead">Casino</li>
-                                <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Casino Home</a></li>
+                                <li class=""> <a href="index.html" class="linkLi text-decoration-none">Casino Home</a></li>
                                 <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Slots</a></li>
                                 <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Live Casino</a></li>
                                 <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">New Releases</a></li>
@@ -387,26 +787,26 @@
                         <div class="col">
                             <ul class="linksUl list-unstyled">
                                 <li class="linkLiHead">Promo</li>
-                                <li class=""><a href="javascript:;" class="linkLi text-decoration-none">VIP Club</a></li>
-                                <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Affiliate</a> </li>
-                                <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Promotions</a> </li>
-                                <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Lottery</a> </li>
+                                <li class=""><a href="vipclub.html" class="linkLi text-decoration-none">VIP Club</a></li>
+                                <li class=""><a href="affiliate.html" class="linkLi text-decoration-none">Affiliate</a> </li>
+                                <li class=""><a href="promotion.html" class="linkLi text-decoration-none">Promotions</a> </li>
+                                <li class=""><a href="giveAwayPage.html" class="linkLi text-decoration-none">Lottery</a> </li>
                                 <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Refer a friend</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul class="linksUl list-unstyled">
                                 <li class="linkLiHead">Support/Legal</li>
-                                <li class=""><a href="javascript:;" class="linkLi text-decoration-none"> Help center</a></li>
+                                <li class=""><a href="helpcenter.html" class="linkLi text-decoration-none"> Help center</a></li>
                                 <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Gamble Aware</a> </li>
                                 <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Fairness</a> </li>
                                 <li class=""><a href="javascript:;" class="linkLi text-decoration-none">FAQ</a> </li>
                                 <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Privacy</a> </li>
-                                <li><a href="javascripty:;" class="linkLi text-decoration-none">Terms Of Service</a> </li>
-                                <li><a href="javascripty:;" class="linkLi text-decoration-none">Self-exclusion</a> </li>
-                                <li><a href="javascripty:;" class="linkLi text-decoration-none">AML</a> </li>
-                                <li><a href="javascripty:;" class="linkLi text-decoration-none">Design Resources</a> </li>
-                                <li><a href="javascripty:;" class="linkLi text-decoration-none">APP</a> </li>
+                                <li><a href="javascript:;" class="linkLi text-decoration-none">Terms Of Service</a> </li>
+                                <li><a href="javascript:;" class="linkLi text-decoration-none">Self-exclusion</a> </li>
+                                <li><a href="javascript:;" class="linkLi text-decoration-none">AML</a> </li>
+                                <li><a href="javascript:;" class="linkLi text-decoration-none">Design Resources</a> </li>
+                                <li><a href="javascript:;" class="linkLi text-decoration-none">APP</a> </li>
                             </ul>
                         </div>
                         <div class="col">
@@ -432,7 +832,7 @@
                                     <div class="accordion-body">
                                         <ul class="linksUl list-unstyled mb-0">
                                             <!-- <li class="linkLiHead">Casino</li> -->
-                                            <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Casino Home</a></li>
+                                            <li class=""> <a href="index.html" class="linkLi text-decoration-none">Casino Home</a></li>
                                             <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Slots</a></li>
                                             <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Live Casino</a></li>
                                             <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">New Releases</a></li>
@@ -472,10 +872,10 @@
                                 <div class="accordion-body">
                                     <ul class="linksUl list-unstyled mb-0">
                                         <!-- <li class="linkLiHead">Casino</li> -->
-                                        <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Vip Club</a></li>
-                                        <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Affiliate></li>
-                                        <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Promotions></li>
-                                        <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Lottery</a></li>
+                                        <li class=""> <a href="vipclub.html" class="linkLi text-decoration-none">Vip Club</a></li>
+                                        <li class=""> <a href="affiliate.html" class="linkLi text-decoration-none">Affiliate</a></li>
+                                        <li class=""> <a href="promotion.html" class="linkLi text-decoration-none">Promotions</a></li>
+                                        <li class=""> <a href="giveAwayPage.html" class="linkLi text-decoration-none">Lottery</a></li>
                                         <li class=""> <a href="javascript:;" class="linkLi text-decoration-none">Refer a friend</a></li>
                                     </ul>
                                 </div>
@@ -491,16 +891,16 @@
                                 <div class="accordion-body">
                                     <ul class="linksUl list-unstyled mb-0">
                                         <!-- <li class="linkLiHead">Casino</li> -->
-                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none"> Help center</a></li>
+                                        <li class=""><a href="helpcenter.html" class="linkLi text-decoration-none"> Help center</a></li>
                                         <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Gamble Aware</a> </li>
                                         <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Fairness</a> </li>
                                         <li class=""><a href="javascript:;" class="linkLi text-decoration-none">FAQ</a> </li>
                                         <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Privacy</a> </li>
-                                        <li class=""><a href="javascripty:;" class="linkLi text-decoration-none">Terms Of Service</a> </li>
-                                        <li class=""><a href="javascripty:;" class="linkLi text-decoration-none">Self-exclusion</a> </li>
-                                        <li class=""><a href="javascripty:;" class="linkLi text-decoration-none">AML</a> </li>
-                                        <li class=""><a href="javascripty:;" class="linkLi text-decoration-none">Design Resources</a> </li>
-                                        <li class=""><a href="javascripty:;" class="linkLi text-decoration-none">APP</a> </li>
+                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Terms Of Service</a> </li>
+                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Self-exclusion</a> </li>
+                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none">AML</a> </li>
+                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none">Design Resources</a> </li>
+                                        <li class=""><a href="javascript:;" class="linkLi text-decoration-none">APP</a> </li>
                                     </ul>
                                 </div>
                                 </div>
@@ -603,12 +1003,57 @@
                             </div>
                             <div class="col-12 mx-auto"><div class="borderd smBorderd"></div></div>
                             <div class="col-12 text-center">
-                                <div class="logoImg d-inline-block"><img src="assets/img/logo.png" alt="Logo"></div>
+                                <div class="logoImg d-inline-flex"><img src="assets/img/logo.png" alt="Logo"></div>
                                 <div class="text-center copyright text-white mt-md-4 mt-3">Copyright © 2023  Damble. All rights reserved.</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- mobile bottom bar start -->
+                <div class="container-fluid bottomBarFluid d-md-none d-block">
+                    <div class="row">
+                        <div class="col-12 px-0">
+                            <div class="bottomBar">
+                                <div class=" row justify-content-around align-items-center mx-0 gx-0">
+                                    <div class="col-auto">
+                                        <a href="javascript:;" class="bottomAnchor toggleButton">
+                                            <div class="iconParent"><img src="assets/img/givewayImg/allGamesMenu.png" alt=""></div>
+                                            <div class="linkTxt">Menu</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:;" class="bottomAnchor">
+                                            <div class="iconParent"><img src="assets/img/givewayImg/casinoVector.png" alt=""></div>
+                                            <div class="linkTxt">Casino</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto d-flex justify-content-center align-items-center flex-column blurBg">
+                                        <a href="javascript:;" class="bottomAnchor active bottomAnchorMain d-flex align-items-center justify-content-center col-12">
+                                            <div class="">
+                                                <div class="iconParent"><img src="assets/img/givewayImg/walletVector.png" alt=""></div>
+                                            <div class="linkTxt col-12">Wallet</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:;" class="bottomAnchor">
+                                            <div class="iconParent"><img src="assets/img/givewayImg/sportsVector.png" alt=""></div>
+                                            <div class="linkTxt">Sports</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:;" class="bottomAnchor">
+                                            <div class="iconParent"><img src="assets/img/givewayImg/msgVector.png" alt=""></div>
+                                            <div class="linkTxt">Chat room</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile bottom bar end -->
             </div>
         </main>
         
@@ -636,7 +1081,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -692,7 +1137,7 @@
                 <div class='footerImg'><img src={ModalFooter} alt='ModalFooter' /></div>
                 </div> -->
             </div>
-        </div>
+    </div>
 <!-- modal end -->
 
 <!-- modal start2 -->
@@ -719,7 +1164,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
