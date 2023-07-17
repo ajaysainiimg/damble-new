@@ -54,16 +54,25 @@
 <body>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+        User Information Model
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mastermodel">
+        Master Medals Model
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userInfoModal">
+        User Information Model 2
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editImage">
+        Edit Image
     </button>
 
-    <!-- Modal -->
+    <!-- User Information model start-->
     <div class="modal fade userInfoModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog userInfocontent ">
-            <div class="modal-content userinforcard ">
-                <div class="modal-header userinfoHeader py-0 px-2 border-0 position-relative">
-                    <div class="userinfoHeading">User Information</div>
-                    <button type="button" class="btn-close p-0 shadow-none modalCloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog userInfocontent modalMain">
+            <div class="modal-content modalContentall userinforcard ">
+                <div class="modal-header modalHeaderAll userinfoHeader py-0 px-2 border-0 position-relative">
+                    <div class="modalHeading">User Information</div>
+                    <button type="button" class="btn-close p-0 shadow-none modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="uservipTagmain position-absolute z-1">
                         <div class="position-relative uservipTagContent">
                             <div class="uservipTag">
@@ -102,10 +111,10 @@
                         </div>
                     </div>
                     <div class="col-12 px-0">
-                        <div class="row userrankDetail p-2 mx-0">
-                            <div class="col-12">
+                        <div class="row userrankDetail mx-0">
+                            <div class="col-12 px-0">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div class="userrankHeading d-inline-flex align-items-center gap-1">
+                                    <div class="usersubHeading d-inline-flex align-items-center gap-1">
                                         <span class="rankIcon d-flex align-items-center justify-content-center">
                                             <img src="assets/Img/mohitModel/rank.png" alt="rank" class="h-100 w-100 img-fluid">
                                         </span>
@@ -116,7 +125,7 @@
                             </div>
                             <div class="col-12 userranmedalmain position-relative">
                                 <div class="userranklevel position-relative">
-                                    <div class="d-flex gap-1 overflow-x-auto mx-4">
+                                    <div class="d-flex gap-1 overflow-x-auto px-4 pb-2">
                                         <div class="ranklevel active">
                                             <div class="ranklevelcount text-center">
                                                 LV
@@ -216,14 +225,542 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer border-0">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="col-12 px-0">
+                        <div class="row usergraph mx-0">
+                            <div class="col-12 px-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="usersubHeading d-inline-flex align-items-end gap-1">
+                                        <span class="rankgraphicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/Img/mohitModel/graph.png" alt="rank" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Statistics 
+                                    </div>
+                                    <a href="javascript:;" class="text-decoration-none modelBtn">Details >></a>
+                                </div>
+                            </div>
+                            <div class="col-12 userrankcount px-0">
+                                <div class="row mx-0 gx-2">
+                                    <div class="col-4">
+                                        <div class="userrankcountCard">
+                                            <div class="usercountHeading d-inline-flex align-items-center ">
+                                                <span class="totalwinIcon d-inline-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/mohitModel/money.png" alt="money" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Total Wins
+                                            </div>
+                                            <div class="totalcountline mx-auto"></div>
+                                            <div class="total text-center">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="userrankcountCard">
+                                            <div class="usercountHeading d-inline-flex align-items-center ">
+                                                <span class="totalwinIcon d-inline-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/mohitModel/casinototal.png" alt="cashino" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Total Bets
+                                            </div>
+                                            <div class="totalcountline mx-auto"></div>
+                                            <div class="total text-center">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="userrankcountCard">
+                                            <div class="usercountHeading d-inline-flex align-items-center ">
+                                                <span class="totalwinIcon d-inline-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/mohitModel/totalwagered.png" alt="totalwagered" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Total Wagered
+                                            </div>
+                                            <div class="totalcountline mx-auto"></div>
+                                            <div class="total text-center">0.00$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="row threefavgames mx-0 p-2">
+                            <div class="col-12 usersubHeading px-0">
+                                <div class="usersubHeading d-inline-flex align-items-center">
+                                    <span class="d-flex align-items-center justify-content-center threemedalIcon me-2">
+                                        <img src="assets/Img/mohitModel/threemedal.png" alt="three medal" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Top 3 Favorite Games
+                                </div>
+                            </div>
+                            <div class="col-12 text-center px-0">
+                                <div class="oopsImg d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/oopsicon.png" alt="oops" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="oopsTitle">Oops! There is no data yet!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="row threefavgames mx-0 p-2">
+                            <div class="col-12 usersubHeading px-0">
+                                <div class="usersubHeading d-inline-flex align-items-center">
+                                    <span class="d-flex align-items-center justify-content-center prize me-2">
+                                        <img src="assets/Img/mohitModel/prize.png" alt="prize" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Wager contest
+                                </div>
+                            </div>
+                            <div class="col-12 text-center px-0">
+                                <div class="oopsImg d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/oopsicon.png" alt="oops" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="oopsTitle">Oops! There is no data yet!</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- User Information model end-->  
+
+
+    <!-- Master Medals start -->
+    <div class="modal fade mastermedal" id="mastermodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalMain masterModelmain">
+        <div class="modal-content modalContentall mastermedalContent">
+            <div class="modal-header modalHeaderAll mastermedalHeader p-0 border-0">
+                <div class="modalHeading">
+                    <span class="leftarrow d-inline-flex align-items-center justify-content-center">
+                        <img src="assets/Img/mohitModel/rightarrow2.png" alt="right arrow" class="h-100 w-100 img-fluid">
+                    </span>
+                    Master Medals
+                </div>
+            <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body border0 mastermedalBody pt-0">
+            <div class="row mx-0 masterboxMain">
+                <div class="col-12 px-0">
+                    <div class="overflow-x-auto pt-4">
+                        <div class="d-inline-flex boxscroll flex-nowrap">
+                            <div class="boxCard d-inline-flex align-items-center justify-content-center">
+                                <div class="lockIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/lock.png" alt="lock" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="boxCard boxarrow position-relative rounded-0 d-inline-flex align-items-center justify-content-center">
+                                <a href="javascript:;" class="boxnextIcon stretched-link d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/nextarrow.png" alt="lock" class="h-100 w-100 img-fluid">
+                                </a>
+                            </div>
+                            <div class="boxCard d-inline-flex align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">5</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="boxCard d-inline-flex align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">10</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="boxCard d-inline-flex blue align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">15</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box2.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="boxCard max d-inline-flex align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">MAX</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box3.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>                  
+                            <div class="boxCard d-inline-flex align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">5</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="boxCard d-inline-flex align-items-center justify-content-center flex-column">
+                                <div class="boxCardTitle rounded-pill d-inline-flex align-items-center justify-content-center">10</div>
+                                <div class="boxIcon d-inline-flex align-items-center justify-content-center my-1">
+                                    <img src="assets/Img/mohitModel/box.png" alt="box" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+                <div class="col-12 px-0 archievemedal">
+                    <div class="row mx-0 align-items-center">
+                        <div class="col ps-0">
+                            <div class="row mx-0 gap-2">
+                                <a href="javascript:;" class="col-12 achieveBtn">Achieve <span class="totaAchieve">5</span> medals: Get 20  <span class="usdt">USDT</span></a>
+                                <a href="javascript:;" class="col-12 achieveBtn">Achieve <span class="totaAchieve">10</span> medals: Get 800  <span class="usdt">USDT</span></a>
+                                <a href="javascript:;" class="col-12 achieveBtn">Achieve <span class="totaAchieve">15</span> medals: Get 2400  <span class="usdt">USDT</span></a>
+                                <a href="javascript:;" class="col-12 achieveBtn">Achieve <span class="totaAchieve">20</span> medals: Get 10000  <span class="usdt">USDT</span></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="d-flex coinimg justify-content-center align-items-center">
+                                <img src="assets/Img/mohitModel/coinbox.png" alt="coin" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mastermodelline"></div>
+                <div class="col-12 px-0">
+                    <div class="row mastermodelContent gx-3 px-1">
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank1.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank2.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank3.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank4.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardfive d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank5.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardsix d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/rank6.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard7.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardsix d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard8.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard9.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        9
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard10.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        10
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIconelev masterCardsix d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard11.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        11
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard12.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        12
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard13.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        13
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard14.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        14
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard15.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        15
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard16.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        16
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard17.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        17
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardeigh d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard18.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        18
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardeigh d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard19.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        19
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="masterCard pt-2 h-100 d-flex align-items-center justify-content-between flex-column">
+                                <div class="masterCardIcon masterCardtwenty d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="assets/Img/mohitModel/mastercard20.png" alt="card" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="medalCountMain position-relative d-inline-flex">
+                                    <div class="medalCount d-inline-flex align-items-center justify-content-center">
+                                        20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal-footer border-0 statusUpdate justify-content-center p-0"> 
+                Stats Updated every 24 hours
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Master Medals end -->
+
+
+
+    <!-- user Information modal 2 start -->
+    <div class="modal fade userInfoEdit" id="userInfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="usereditMain modal-dialog modalMain">
+            <div class="modal-content usereditcontent modalContentall">
+                <div class="modal-header modalHeaderAll p-0 border-0">
+                    <div class="modalHeading d-inline-flex align-items-center">
+                        <span class="leftarrow d-inline-flex align-items-center justify-content-center">
+                            <img src="assets/Img/mohitModel/rightarrow2.png" alt="right arrow" class="h-100 w-100 img-fluid">
+                        </span>
+                        User Information
+                    </div>
+                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modalLine"></div>
+                <div class="modal-body userEditBody">
+                    <div class="row mx-0">
+                        <div class="col-12 px-0 text-center">
+                            <label for="user" class="useLabel">
+                                <div class="userEditIconMain position-relative z-0 mx-auto">
+                                    <div class="userEditIcon rounded-pill">
+                                        <div class="userEditImg d-flex align-items-center justify-content-center rounded-pill">
+                                            <img src="assets/Img/mohitModel/usericon.png" alt="user edit" class="h-100 w-100 img-fluid rounded-pill">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="editTitle text-center z-2 position-relative z-1">Edit Your Image</div>
+                            </label>
+                            <input type="text" id="user" hidden>
+                        </div>
+                        <div class="col-12 usernameIpputMain px-0">
+                            <label for="username" class="username">Username</label>
+                            <input type="text" id="username" class="form-control usernameInput mt-2 shadow-none border-0">
+                        </div>
+                        <div class="col-12 warning text-center px-0">
+                            Do not use special symbols
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user Information modal 2 end -->
+
+    <!-- edit image modal start -->
+    <div class="modal fadee editImgModal" id="editImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalMain editimgmain">
+            <div class="modal-content modalContentall editimgcontent">
+                <div class="modal-header modalHeaderAll p-0 border-0 editimgHeader">
+                    <div class="modalHeading">
+                        <span class="leftarrow d-inline-flex align-items-center justify-content-center">
+                            <img src="assets/Img/mohitModel/rightarrow2.png" alt="right arrow" class="h-100 w-100 img-fluid">
+                        </span>
+                        Edit Your Image
+                    </div>
+                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modalLine"></div>
+                <div class="modal-body editimgbody">
+                    <div class="row mx-0">
+                        <div class="col-12 px-0">
+                            <div class="editimgCard">
+                                <div class="editimgCardinner">
+                                    <div class="editimgCardimg rounded-pill position-relative">
+                                        <img src="assets/Img/mohitModel/usericon.png" alt="user" class="h-100 w-100 img-fluid">
+                                        <div class="position-absolute galleryIconMain d-flex align-items-center justify-content-center rounded-pill h-100 w-100 top-0">
+                                            <span class="d-inline-flex align-items-center justify-content-center galleryIcon">
+                                                <img src="assets/Img/mohitModel/gallery.png" alt="gallery" class="h-100 w-100 img-fluid">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="AdjustImg mt-1">Adjust Image</div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0">
+                            <div class="imgZoomMain">
+                                <div class="zoomIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/zoomin.png" alt="zoom in" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="zoomIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/zoomout.png" alt="zoom out" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="zoomIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/shareleft.png" alt="share" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="zoomIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/shareright.png" alt="share" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit image modal end -->
+
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
