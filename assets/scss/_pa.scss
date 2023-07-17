@@ -1281,6 +1281,8 @@
                 /* Rounded sliders */
                 .slider.round {
                 border-radius: 34px;
+                width: 50px;
+                height: 22px;
                 }
                 
                 .slider.round:before {
@@ -2706,6 +2708,166 @@
                                 & img{
                                     width: 21px;
                                     height: 21px;
+                                }
+                            }
+                        }
+                        & .tabContentVault{
+                            padding: 0 30px;
+                            & .WithdrawNavPills{
+                                border-radius: 7px;
+                                background: #252E39;
+                                height: 29px;
+                                width: 200px;
+                                & .WithdrawNavItems{
+                                    & .WithdrawNavLimks{
+                                        border-radius: 7px;
+                                        background: #252E39;
+                                        color: #FFF;
+                                        font-family: 'Inter';
+                                        font-size: 13px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        width: 100px;
+                                        height: 29px;
+                                        &.active{
+                                            border-radius: 7px;
+                                            background: #6324D7;
+                                            width: 100px;
+                                            height: 29px;
+                                        }
+                                    }
+                                }
+                            }
+                            & .transferTabContent{
+                                & .txt{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    & span{
+                                        color: #03B80F;
+                                    }
+                                }
+                                & .txt2{
+                                    & span{
+                                        color: #93ACD3;
+                                        font-family: 'Inter';
+                                        font-size: 8px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                    }
+                                    & img{
+                                        width: 12px;
+                                        height: 12px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                & .txt3{
+                                    color: #93ACD3;
+                                    font-family: 'Inter';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    & span{
+                                        color: #FFF;
+                                    }
+                                }
+                                & .box{
+                                    border-radius: 7px;
+                                    background: #252E39;
+                                    height: 55px;
+                                    padding: 0px 14px;
+                                    & .boxLft{
+                                        & .selectBox{
+                                            & .selectTool{
+                                                border-radius: 7px;
+                                                border: 1px solid #03B80F;
+                                                background-color: #32216A;
+                                                padding-left: 75px;
+                                                width: 148px;
+                                                height: 38px;
+                                                color: #FFF;
+                                                font-family: 'Inter';
+                                                font-size: 13px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                appearance: none;
+                                            }
+                                            & .usdt1{
+                                                width: 22px;
+                                                height: 22px;
+                                                position: absolute;
+                                                top: 6px;
+                                                left: 14px;
+                                                & img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                            & .down{
+                                                width: 13px;
+                                                height: 13px;
+                                                position: absolute;
+                                                right: 14px;
+                                                top: 8px;
+                                                & img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                            }
+                                        }
+                                        & .arrow{
+                                            width: 13px;
+                                            height: 13px;
+                                        }
+                                    }
+                                    & .boxMid{
+                                        border-radius: 2px;
+                                        background: #485460;
+                                        width: 36px;
+                                        height: 20px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        & .txt{
+                                            color: #FFF;
+                                            font-family: 'Inter';
+                                            font-size: 10px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                        }
+                                    }
+                                    & .boxEnd{
+                                        & .txt{
+                                            color: #FFF;
+                                            font-family: 'Inter';
+                                            font-size: 15px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: normal;
+                                        }
+                                    }
+                                }
+                                & .btnnn{
+                                    border-radius: 11px;
+                                    background: #03B80F;
+                                    height: 60px;
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    line-height: normal;
+                                    margin-top: 72px;
+                                    margin-bottom: 122px;
+                                    border: none;
                                 }
                             }
                         }
