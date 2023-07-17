@@ -1157,25 +1157,51 @@
 // ********* help center Page end ********
 
 
+// ********* model Page start ********
 
-// user information model start
-.userInfoModel {
-    & .userInfocontent {
-        max-width: 461px;
-        & .userinforcard {
-            border-radius: 13px;
-            background: #161F2C;
-            padding: 13px;
-            & .userinfoHeader {
-                & .userinfoHeading {
+
+// all model start
+.modalMain {
+    max-width: 461px;
+    & .modalContentall {
+        border-radius: 13px;
+        background: #161F2C;
+        & .modalHeaderAll {
+            & .modalHeading {
                     color: #FFF;
                     font-size: 16px;
                     font-weight: 700;
                     line-height: normal;
-                }
-                & .modalCloseBtn {
-                    filter: invert(1);
-                }
+                    gap: 9px;
+                    & .leftarrow {
+                        height: 13px;
+                        width: 13px;
+                    }
+            }
+            & .modalClose {
+                filter: invert(1);
+                font-size: 13px;
+            }
+        }
+        & .modalLine {
+            background: #00990A;
+            height: 0.6px;
+            margin: 13px 0 6px 0;
+        }
+    }
+}
+// all model start
+
+
+// ********* user information model start ********
+.userInfoModel {
+    & .userInfocontent {
+        & .userinforcard {
+            border-radius: 13px;
+            background: #161F2C;
+            padding: 13px;
+            padding-bottom: 70px;
+            & .userinfoHeader {
                 & .uservipTagmain {
                     top: -21px;
                     right: 35px;
@@ -1236,21 +1262,33 @@
                         }
                     }
                 }
+                & .usersubHeading {
+                    color: #FFF;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: normal;
+                    & .rankIcon {
+                        height: 18px;
+                        width: 18px;
+                    }
+                    & .rankgraphicon {
+                        height: 19px;
+                        width: 19px;
+                    }
+                    & .threemedalIcon {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    & .prize {
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
                 & .userrankDetail {
                     border-radius: 7px;
                     background: rgba(69, 82, 102, 0.25);
                     margin-top: 12px;
                     padding: 10px 11px;
-                    & .userrankHeading {
-                        color: #FFF;
-                        font-size: 13px;
-                        font-weight: 600;
-                        line-height: normal;
-                        & .rankIcon {
-                            height: 18px;
-                            width: 18px;
-                        }
-                    }
                     & .userranmedalmain {
                         padding: 0.8px;
                         margin-top: 11px;
@@ -1265,7 +1303,7 @@
                                 background: linear-gradient(180deg, #FFD700 35%, rgba(199, 211, 200, 0) 63%);
                         }
                         & .userranklevel{
-                            padding: 13px 0;
+                            padding: 13px 0 7px 0 ;
                             border-radius: 7px;
                             background: #212c3b;
                             & .ranklevel {
@@ -1300,13 +1338,391 @@
                             }
                         }
                     }
+                    & .rankprogressbar {
+                        border-radius: 7px;                   
+                        height: 6px;
+                        & .progress-bar {
+                            background: #93ACD3;
+                        }
+                    }
+                }
+                & .usergraph {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 12px;
+                    padding: 9px 11px;
+                    & .userrankcount {
+                        padding-top: 23px;
+                        & .userrankcountCard {
+                            border-radius: 7px;
+                            background: #161F2C;
+                            padding: 8px 10px 20px 7px;
+                            & .usercountHeading {
+                                color: #FFF;
+                                font-size: 11px;
+                                font-weight: 500;
+                                line-height: normal;
+                                gap: 10px;
+                                & .totalwinIcon {
+                                    height: 16px;
+                                    width: 16px;
+                                }
+                            }
+                            & .totalcountline {
+                                height: 0.5px;
+                                width: 85%;
+                                background: #00990A;
+                                margin-top: 7px ;
+                                margin-bottom: 20px;
+                            }
+                            & .total {
+                                color: #FFF;
+                                font-size: 13px;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+                & .threefavgames {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.25);
+                    margin-top: 10px;
+                    min-height: 244px;
+                }
+                & .oopsImg {
+                    height: 64px;
+                    width: 64px;
+                }
+                & .oopsTitle {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 11px;
+                    font-weight: 500;
+                    margin-top: 12px;
+                }
+                ::-webkit-scrollbar-track {
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }
+                ::-webkit-scrollbar {
+                    width: 1px;
+                    height: 6px;
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }
+                ::-webkit-scrollbar-thumb {
+                    border-radius: 7px;
+                    background: #93ACD3;
+                }  
+            }
+        }
+    }
+}
+// ********* user information model end ********
+
+// ********* master medal modal start ********
+.mastermedal {
+    & .masterModelmain {
+        & .mastermedalContent {         
+            padding: 16px 12px 61px 12px;
+            & .mastermedalBody {
+                margin: 9px;
+                border-top: 0.5px solid #00990A;;
+                padding: 23px 0 43px 0 ;
+                & .masterboxMain {
+                    & .boxscroll {
+                        background: rgba(69, 82, 102, 0.30);
+                        border-radius: 7px;
+                        margin-bottom: 7px;
+                        & .boxCard {
+                            border-radius: 7px; 
+                            padding: 3px 16px;
+                            & .lockIcon {
+                                width: 21px;
+                                height: 42px;
+                            }
+                            & .boxnextIcon {
+                                height: 22px;
+                                width: 22px;
+                            }
+                            & .boxIcon {
+                                width: 48px;
+                                height: 34px;
+                            }
+                            & .boxCardTitle {
+                                height: 16px;
+                                width: 16px;
+                                background-color: #FFF283;
+                                color: #000;
+                                font-size: 9px;
+                                margin-top: -12px;
+                                font-weight: 700;
+                            }
+                            &.blue {
+                                & .boxCardTitle {
+                                    background-color: #CCDEFC;
+                                }
+                            }
+                            &.max {
+                                & .boxCardTitle {
+                                    background: linear-gradient(180deg, #FFE55B 0%, #9A0F0B 100%);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    height: auto;
+                                    width: auto;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        & .boxarrow {
+                            background: #161F2C;
+                        }
+                    }
+                    ::-webkit-scrollbar-track {
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }
+                    ::-webkit-scrollbar {
+                        width: 1px;
+                        height: 6px;
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }
+                    ::-webkit-scrollbar-thumb {
+                        border-radius: 7px;
+                        background: rgba(242, 189, 21, 0.50);
+                    }                 
+                }
+                & .archievemedal {
+                    padding-top: 29px;
+                    & .coinimg {
+                        width: 123px;
+                        height: 120px;
+                    }
+                    & .achieveBtn {
+                        border-radius: 0px 11.5px 11.5px 0px;
+                        background: rgba(69, 82, 102, 0.30);
+                        padding: 3px 0 4px 13px;
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 8px;
+                        font-weight: 600;
+                        line-height: normal;
+                        & .totaAchieve {
+                            color: #FFD700;
+                            font-size: 8px;
+                            font-weight: 900;
+                            line-height: normal;
+                        }
+                        & .usdt {
+                            color: #0F1;
+                            font-size: 8px;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+                & .mastermodelline {
+                    background: #00990A;
+                    height: 0.6px;
+                    margin: 10px 0 19px 0;
+                }
+                & .mastermodelContent {
+                    border-radius: 7px;
+                    background: rgba(69, 82, 102, 0.30);
+                    padding: 15px 0;
+                    gap: 10px 0;
+                    & .masterCard {
+                        border-radius: 7px;
+                        background: #161F2C;
+                        min-height: 141px;
+                        padding-top: 20px;
+                        & .masterCardIcon {
+                            max-height: 53px;
+                            max-width: 85px;
+                        }
+                        & .masterCardfive {
+                            max-height: 63px;
+                            max-width: 60px;
+                        }
+                        & .masterCardsix {
+                            max-width: 70px;
+                            max-height: 65px;
+                        }
+                        & .masterCardIconelev {
+                            max-width:61px ;
+                            max-height: 43px;
+                        }
+                        & .masterCardeigh {
+                            max-width:70px ;
+                            max-height:85px ;
+                        }
+                        & .masterCardtwenty {
+                            max-width: 105px;
+                            max-height: 103px;
+                        }
+                        & .medalCountMain {
+                            padding: 0.8px;
+                            margin-bottom: -3px;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background-color: #fff;
+                                height: 100%;
+                                width: 100%;
+                                z-index: -1;
+                                border-radius: 5px 5px 0px 0px;
+                            }
+                            & .medalCount {
+                                height: 22px;
+                                width: 30px;
+                                border-radius: 5px 5px 0px 0px;
+                                background: #6E5774;
+                                color: #FFF;
+                                font-size: 12px;
+                                font-weight: 900;
+                                line-height: normal;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            & .statusUpdate {
+                color: #03B80F;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+// ********* master medal  modal end ********
+
+// ********* user information medal start ********
+.userInfoEdit {
+    & .usereditMain {
+        & .usereditcontent {
+            padding: 18px 10px;
+            & .userEditBody {
+                padding: 24px 46px 148px 34px;
+                & .useLabel {
+                    & .userEditIconMain {
+                        padding: 3px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            width: 100%;
+                            background: linear-gradient(90deg, rgba(99,36,215,1) 42%, rgba(75,174,79,1) 63%);
+                            border-radius: 50%;
+                            z-index: -1;
+                        }
+                        & .userEditIcon {
+                            background-color: #161F2C;
+                            padding: 14px;
+                            & .userEditImg {
+                                height: 140px;
+                                width: 140px;
+                            }
+                        }
+                    }
+                    & .editTitle {
+                        border-radius: 7px;
+                        border: 1px solid #54657F;
+                        background: rgba(37, 46, 57, 0.80);
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-top: -13px;
+                        padding: 6px 0;
+                        
+                    }
+                }
+                & .usernameIpputMain {
+                    padding: 59px 0 30px 0;
+                    & .username {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    & .usernameInput {
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.50);
+                        font-size: 14px;
+                        color: #FFF;
+                        padding: 12px 18px;
+                    }
+                }
+                & .warning {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: normal;
                 }
             }
         }
     }
 }
+// ********* user information medal end ********
 
-// user information model end
+// ********* Edit Image medal start ********
+.editImgModal {
+    & .editimgmain {
+        & .editimgcontent {
+            padding: 16px 13px 20px 13px;
+            & .editimgHeader {
+
+            }
+            & .editimgbody {
+                & .editimgCard {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.50);
+                    padding: 25px 10px 10px 10px;
+                    & .editimgCardinner {
+                        margin: 0 63px;
+                        background-color: #000;
+                        & .editimgCardimg {
+                            & .galleryIconMain {
+                                background-color: #00000068;
+                                & .galleryIcon {
+                                    height: 33px;
+                                    width: 33px;
+                                }
+                            }
+                        }
+                    }
+                    & .AdjustImg {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+                & .imgZoomMain {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.20);
+                    padding: 9px 15px;
+                    margin-top: 22px;
+                    & .zoomIcon {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ********* Edit Image medal end ********
+
+// ********* model Page end ********
 
 
 
