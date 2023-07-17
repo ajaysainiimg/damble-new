@@ -54,8 +54,8 @@
 <body>
         <!-- * Navbar Start -->
         <header class="navbar p-0 position-fixed top-0 w-100">
-            <div class="container-fluid headerFluid d-lg-block d-none">
-                <div class="row headerRow">
+            <div class="container-fluid headerFluid d-md-flex d-none pe-0">
+                <div class="row headerRow w-100 mx-auto">
                     <div class="col-auto px-0 d-xl-block d-none">
                         <div class="logoWrapper">
                             <div class="logo">
@@ -64,11 +64,12 @@
                         </div>
                     </div>
                     <div class="col-xl col-12 px-0">
-                        <div class="row headerRyt mx-0">
+                        <div class="row headerRyt align-items-center mx-0">
+                            <div class="col-auto d-xl-none d-block ps-0"><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent" id="toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
                             <div class="col d-flex align-items-center">
                                 <ul class="pills d-flex align-items-start mb-0 ps-0">
-                                    <li class="casinoPill"><a href="#exampleModal" class="pillAnchor active d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/img/casinoIcon.png" alt="">CASINO </a></li>
-                                    <li class="casinoPill"><a href="exampleModal1" class="pillAnchor d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal1"><img src="assets/img/sportsIcon.png" alt="">SPORTS </a></li>
+                                    <li class="casinoPill"><a href="javascript:;" class="pillAnchor active d-flex align-items-center justify-content-center" ><img src="assets/img/casinoIcon.png" alt="">CASINO </a></li>
+                                    <li class="casinoPill"><a href="javascript:;" class="pillAnchor d-flex justify-content-center align-items-center"><img src="assets/img/sportsIcon.png" alt="">SPORTS </a></li>
                                 </ul>
                                 <div class="group position-relative">
                                     <input type="text" class="searchInp" name="" id="" placeholder="Search for games">
@@ -77,24 +78,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto d-flex align-items-center">
+                            <!-- <div class="col-auto d-flex align-items-center">
                                 <a href="javascript:;" class="msgIcon"><img src="assets/img/message.png" alt=""></a>
                                 <span class="usdTxt text-white">$usd</span>
                                 <a href="javascript:;" class="globeIcon"><img src="assets/img/globe.png" alt=""></a>
+                            </div> -->
+                            <div class="col-auto d-flex align-items-center headerFluidlg p-0">
+                                <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
+                                <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid headerFluidlg d-block d-lg-none">
+            <div class="container-fluid headerFluidlg d-block d-md-none">
                 <div class="row align-items-center">
-                    <div class="col-6 d-flex justify-content-start align-items-center">
-                        <div class="gd"><img src="assets/img/gd.png" alt=""></div>
+                    <div class="col-6 d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
+                        <div class="gd"><img src="assets/img/whitelogo.png" alt=""></div>
                         <div class="gdTxt"><img src="assets/img/logotxt.png" alt=""></div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end align-items-end">
-                        <button class="logBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
-                        <button class="signBtn"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
+                    <div class="col-6 d-flex justify-content-end align-items-end pe-sm-3 pe-1">
+                        <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
+                        <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
                     </div>
                 </div>
             </div>
@@ -114,26 +119,26 @@
                             <div class="row g-2">
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g1.png" alt="">
+                                        <img src="assets/img/whilespiner.png" alt="">
                                         <div class="txt"><span claas="orange">WHEEL</span> SPIN</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g2.png" alt="">
-                                        <div class="txt"><span class="yellow">WHEEL</span> SPIN</div>
+                                        <img src="assets/img/caseback.png" alt="">
+                                        <div class="txt"><span class="yellow">CASE</span> BACK</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g3.png" alt="">
-                                        <div class="txt"><span class="green">WHEEL</span> SPIN</div>
+                                        <img src="assets/img/referearn.png" alt="">
+                                        <div class="txt"><span class="green">REFER</span> &EARN</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g3.png" alt="">
-                                        <div class="txt"><span class=""></span> SPIN</div>
+                                        <img src="assets/img/task.png" alt="">
+                                        <div class="txt"><span class=""></span> TASK</div>
                                     </div>
                                 </div>
                             </div>
@@ -212,13 +217,13 @@
                         </li>
                         <li>
                             <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blog.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/Forum.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
                                 Forum
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blogs.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blog.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
                                 Blog
                             </a>
                         </li>
@@ -250,7 +255,7 @@
                             <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/reddit.png" alt=""></a></div>
                             <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/vactor.png" alt=""></a></div>
                             <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/youTube.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/crypto.png" alt=""></a></div>
+                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/bitcoin.png" alt=""></a></div>
                             <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/printrest.png" alt=""></a></div>
                         </div>
                     </div>
@@ -697,7 +702,7 @@
                                     <div class="col-12 showmore-btn-main text-md-start text-center">
                                         <a href="javascript:;" class="btn showmore-btn fw-semibold p-0 border-0">Show More 
                                             <span class="showMore">>></span>
-                                            <!-- <span class="d-md-none d-block"><img src="assets/Img/index/showmore.png" alt="show more"></span>
+                                            <!-- <span class="d-md-none d-block"><img src="assets/img/index/showmore.png" alt="show more"></span>
                                             </a> -->
                                         </a>
                                     </div>
@@ -1001,7 +1006,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -1084,7 +1089,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
