@@ -1,46 +1,7 @@
 
 .sidebar {
+    transition: all 0.3s;
     & .sidebar-menu {
-        & .topBodyPart {
-            & .givway{
-                width: 100%;
-                height: auto;
-                & img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            & .ii{
-                height: auto;
-                & img{
-                    width: 100%;
-                    height: 100%;
-                }
-                & .txt{
-                    font-family: 'Montserrat';
-                    font-size: 11px;
-                    color: white;
-                    font-style: normal;
-                    font-weight: 900;
-                    line-height: normal;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: 5px;
-                    & span{
-                        color: #FF7518;
-                        display: block;
-                        // margin-bottom: 5px;
-                    &.yellow{
-                        color: #FFD700;
-                    }
-                    &.green{
-                        color: #00990A;
-                    }
-                    }
-                }
-            }
-        }
         
     & .join{
         & .linksIcons{
@@ -50,6 +11,56 @@
             }
         }
     }
+    }
+}
+.topBodyPart {
+    & .givway{
+        width: 100%;
+        height: auto;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .ii{
+        height: auto;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+        & .txt{
+            font-family: 'Montserrat';
+            font-size: 11px;
+            color: white;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5px;
+            & span{
+                color: #FF7518;
+                display: block;
+                // margin-bottom: 5px;
+            &.yellow{
+                color: #FFD700;
+            }
+            &.green{
+                color: #00990A;
+            }
+            }
+        }
+    }
+    &.givepart {
+        & .ii{
+            & .txt{
+                font-size: 20px;
+                color: white;
+                font-weight: 900;
+                left: 15px;
+            }
+        }
     }
 }
 
@@ -154,6 +165,12 @@
                         color: #FFD700;
                     }
                 }
+                & .sidebar-card-icon {
+                    height: 14px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
                 & .vipText {
                     color: #FFD700;
                 }
@@ -173,7 +190,20 @@
             padding: 0px 14px;
         
         }
-
+        & .join {
+            & .linksIcons {
+                height: 18px;
+                width: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
     }
     
 }

@@ -1,18 +1,19 @@
 .headerFluid{
-    height: 75px;
+    // height: 75px;
     position: relative;
-    padding-left: 338px;
+    height: 100%;
+    padding-left: 320px;
     & .headerRow{
-        background: #161F2C;
-        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+        // background:   6px 10px 0px rgba(0, 0, 0, 0.25);
         & .logoWrapper{
+            width: 338px;
+            position: absolute;
+            top: 0;
+            left: 0;
             & .logo{
-                position: absolute;
-                top: 0;
-                left: 0;
+                height: 80px;
                 & .image{
-                    width: 338px;
-                    // height: 103px;
+                    height: 100%;
                 }
             }
         }
@@ -113,7 +114,7 @@
 
 .headerFluidlg{
     background: #161F2C;
-    padding: 22px;
+    padding: 15px 21px;
     & .gd{
         & img{
             margin-right: 21px;
@@ -413,6 +414,16 @@
         background-size: cover;
         background-position: center;
         width: 100%;
+        z-index: -2;
+        position: relative;
+        & .dumble{
+            & img{
+                position: relative;
+                width: 80%;
+                margin-top: -130px;
+                z-index: -1;
+            }
+        }
         & .prizeFluidInner{
             & .prizeTxt{
                 color: #FFF;
@@ -444,39 +455,9 @@
                 line-height: normal;
                 display: block;
             }
-            & .imgageBox{
-                & .car{    
-                    width: 350px;
-                    height: 110px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 80px;
-                    & img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                & .kit{
-                    width: 140px;
-                    height: 160px;
-                    position: absolute;
-                    left: 18px;
-                    bottom: 0;
-                    & img{
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-                & .goldBox{
-                    width: 180px;
-                    height: 160px;
-                    position: absolute;
-                    left: 35%;
-                    bottom: 0;
-                    & img{
-                        width: 100%;
-                        height: 100%;
-                    }
+            & .dumbleInner{
+                & img{
+                    width: 100%;
                 }
             }
         }
@@ -599,11 +580,6 @@
                 }
             }
         }
-        & .dumble{
-            & img{
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -643,6 +619,11 @@
                 padding: 0 30px 30px 30px;
                 // background-color: #17212F;
                 border-radius: 0 0 20px 20px ;
+                & .dambleUser{
+                    & img {
+                        width: 100%;
+                    }
+                        }
                 & .userName {
                     color: #FFF;
                     text-align: center;
@@ -651,7 +632,6 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
-
                     & span {
                         font-size: 14px;
                         line-height: 22px;
@@ -666,8 +646,6 @@
                             background-color: #00A300;
                             position: absolute;
                             right: 0;
-                & .dambleUser{
-                        }
                     }
                     &::after{
                         content:'';
@@ -699,6 +677,7 @@
                     & img{    
                         width: 62px;
                         height: 50px;
+                        object-fit: contain;
                     }
                 }
                 & .pills{
@@ -756,7 +735,12 @@
                         height: 38px;
                         border-radius: 7px;
                         background: rgba(147, 172, 211, 0.50);
-
+                        color: rgba(255, 255, 255, 0.80);
+                        font-size: 12px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
                         &::placeholder {
                             color: rgba(255, 255, 255, 0.80);
                             font-size: 12px;
@@ -821,6 +805,7 @@
                             font-weight: 600;
                             line-height: normal;
                             padding-left: 8px;
+                            margin-top: -6px;
                             & span {
                                 color: #00990A;
                             }
@@ -1321,7 +1306,7 @@
 .afflitiateDashboard{
     & .refferal{
         width: 100%;
-        height: 25px;
+        // height: 25px;
         border-radius: 3px;
         border: 0.5px solid #00990A;
         background: #1B232E;
@@ -1334,8 +1319,9 @@
         }
         & .refferalImg{
             & img{
-                width: 17px;
-                height: 17px;
+                width: 15px;
+                height: 15px;
+                filter: brightness(500);
             }
         }
         & .txt{
@@ -1450,7 +1436,7 @@
             & .detailBg{
                 border-radius: 3px;
                 background: #0D131C;
-                padding: 7px 10px;
+                padding: 7px 0px;
                 & .col-auto{
                     width: 150px;
                 }
@@ -1579,6 +1565,7 @@
                     height: 90px;
                     padding-top: 13px;
                     padding-left: 16px;
+                    padding-right: 10px;
                     & .txt{
                         color: #93ACD3;
                         font-family: 'Montserrat';
@@ -1774,7 +1761,7 @@
                 & .mid{
                     position: absolute;
                     top: 45px;
-                    right: 215px;
+                    left: 40%;
                     color: #93ACD3;
                     font-family: 'Montserrat';
                     font-size: 13px;
@@ -1896,6 +1883,22 @@
                             font-weight: 600;
                             line-height: normal;
                         }
+                    }
+                }
+                & .usdSubTxt{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    & span{
+                        color: #FFD700;
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
                     }
                 }
             }
@@ -2037,6 +2040,23 @@
 
             }
         }
+    }  
+    & .history{
+        & img{
+            width: 19px;
+            height: 19px;
+            margin-right: 5px;
+        }
+        color: #FFF;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    & .accordion{
+        background-color: transparent !important;
+        border: 0 !important;
     }
 }
 
@@ -2180,6 +2200,594 @@
     }
 }
 // afflitiate dashboard end
+
+// options modal start
+
+.optionsModalFade{
+    & .optionsModalDialog{
+        & .optionsModalContent{
+            background-image: url(./../img/modalIcons/optionsBg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            max-width: 488px;
+            // height: 595px;
+            & .optionsModalHeader{
+                padding: 0;
+                padding-top: 15px;
+                padding-left: 19px;
+                border-bottom: none;
+                & .optionsModalTitle{
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+                & .transaction{
+                    color: #93ACD3;
+                    font-family: 'Inter';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-right: 40px;
+                    & img{
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 6px;
+                    }
+                }
+                & .optionsModalCloseBtn{
+                    width: 20px;
+                    height: 10px;
+                    margin-right: -12px;
+                    margin-top: -2px;
+                }
+            }
+            & .optionsModalBody{
+                & .navPillsUl{
+                    & .navItems{
+                        & .navLink{
+                            &.navEnd{
+                                & .iconBox{
+                                    width: 85px;
+                                    height: 43px;
+                                    border-radius: 6px;
+                                    border: 1px solid #03B80F;
+                                }
+                            }
+                            & .iconBox{
+                                border-radius: 6px;
+                                border: 1px solid #03B80F;
+                                width: 43px;
+                                height: 43px;
+                                color: #FFF;
+                                font-family: 'Inter';
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                & img{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                & span{
+                                    display: none;
+                                }
+                            }
+                            &.active{
+                                border-radius: 6px;
+                                background: #03B80F;
+                                width: 93px;
+                                height: 43px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                & .iconBox{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    & img{
+                                        width: 21px;
+                                        height: 21px;
+                                        filter: brightness(200);
+                                        margin-right: 6px;
+                                    }
+                                    & span{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .divider{
+                    width: 323px;
+                    height: 1px;
+                    stroke-width: 0.5px;
+                    background: #03B80F;
+                    margin-top: 18px;
+                    margin-bottom: 16px;
+                }
+                & .tabContent{
+                    & .tabContentPane{
+                        & .depositTab{
+                            padding: 0 30px;
+                            & .qrBox2{
+                                width: 408px;
+                                height: 179px;
+                                border-radius: 7px;
+                                background: #252E39;
+                                padding: 32px;
+                                & .code{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                                & .copyBtn{
+                                    border-radius: 7px;
+                                    background: #03B80F;
+                                    height: 26px;
+                                    padding: 5px 11px;
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    border: 0;
+                                    margin-top: 30px;
+                                }
+                                & .qrImg{
+                                    width: 111px;
+                                    height: 111px;
+                                    & img{
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 6px;
+                                    }
+                                }
+                                & .qrInp{
+                                }
+                                & .copyBtn{
+                                }
+                            }
+                            & .depositTabPills{
+                                border-radius: 7px;
+                                background: #252E39;
+                                width: 300px;
+                                height: 29px;
+                                & .depositTabItems{
+                                    & .depositTabLink{
+                                        color: #FFF;
+                                        width: 100px;
+                                        font-family: 'Inter';
+                                        font-size: 13px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        &.active{
+                                            border-radius: 7px;
+                                            background: #6324D7;
+                                            width: 100px;
+                                            height: 29px;
+                                            color: #FFF;
+                                            font-family: 'Inter';
+                                            font-size: 13px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: normal;
+                                        }
+                                    }
+                                }
+                            }
+                            & .tabContentInnerTabsPane{
+                                & .tabContentCrypto{
+                                    & .heading{
+                                        color: #93ACD3;
+                                        font-family: 'Inter';
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                    }
+                                    & .box{
+                                        border-radius: 7px;
+                                        background: #252E39;
+                                        height: 38px;
+                                        padding: 7px 14px;
+                                        & .btc{
+                                            & img{
+                                                width: 23px;
+                                                height: 23px;
+                                                margin-right: 5px;
+                                            }
+                                            & span{
+                                                color: #FFF;
+                                                font-family: 'Inter';
+                                                font-size: 13px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                            }
+                                        }
+                                        & .balance{
+                                            color: #93ACD3;
+                                            font-family: 'Inter';
+                                            font-size: 14px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                            margin-right: 5px;
+                                            & img{
+                                                width: 13px;
+                                                height: 13px;
+                                            }
+                                            & span{
+                                                color: white;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                    & .ustd{
+                                        border-radius: 13.5px;
+                                        background: #252E39;
+                                        width: 68px;
+                                        height: 22px;
+                                        & img{
+                                            width: 13px;
+                                            height: 11px;
+                                            margin-right: 5px;
+                                        }
+                                        & span{
+                                            color: #FFF;
+                                            font-family: 'Inter';
+                                            font-size: 10px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                        }
+                                    }
+                                    & .qrBox{border-radius: 7px;
+                                        background: #252E39;
+                                        height: 103px;
+                                        padding: 15px 29px 15px 42px;
+                                        & .qrImg{
+                                            & img{
+                                                width: 72px;
+                                                height: 72px;
+                                            }
+                                        }
+                                        & .qrInp{
+                                            border-radius: 7px;
+                                            background: #404A55;
+                                            height: 38px;
+                                        }
+                                        & .copyBtn{
+                                            border-radius: 7px;
+                                            background: #03B80F;
+                                            color: #FFF;
+                                            font-family: 'Inter';
+                                            font-size: 13px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                            position: absolute;
+                                            top:50%;
+                                            transform: translateY(-50%);
+                                            border:0;
+                                            right: 20px;
+                                        }
+                                    }
+                                    & .notice{
+                                        border-radius: 7px;
+                                        background: rgba(3, 184, 15, 0.15);
+                                        padding: 11px 18px;
+                                        & .txt{
+                                            color: #93ACD3;
+                                            font-family: 'Inter';
+                                            font-size: 12px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                            & span{
+                                                color: #00FF11;
+                                            }
+                                        }
+                                    }
+                                    & .dont{
+                                        color: rgba(147, 172, 211, 0.80);
+                                        font-family: 'Inter';
+                                        font-size: 10px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        & img{
+                                            width: 9px;
+                                            height: 9px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .tabContentInnerTabs{
+                    & .tabContentInnerTabsPane{
+                        & .tabContentCrypto{
+                            & .heading{
+                                color: #93ACD3;
+                                font-family: 'Inter';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                            & .box{
+                                border-radius: 7px;
+                                background: #252E39;
+                                height: 38px;
+                                padding: 7px 14px;
+                                & .btc{
+                                    & img{
+                                        width: 23px;
+                                        height: 23px;
+                                        margin-right: 5px;
+                                    }
+                                    & span{
+                                        color: #FFF;
+                                        font-family: 'Inter';
+                                        font-size: 13px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                    }
+                                }
+                                & .balance{
+                                    color: #93ACD3;
+                                    font-family: 'Inter';
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    margin-right: 5px;
+                                    & img{
+                                        width: 13px;
+                                        height: 13px;
+                                    }
+                                    & span{
+                                        color: white;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                            & .ustd{
+                                border-radius: 13.5px;
+                                background: #252E39;
+                                width: 68px;
+                                height: 22px;
+                                & img{
+                                    width: 13px;
+                                    height: 11px;
+                                    margin-right: 5px;
+                                }
+                                & span{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 10px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+                            }
+                            & .qrBox{
+                                border-radius: 7px;
+                                background: #252E39;
+                                height: 103px;
+                                padding: 15px 29px 15px 42px;
+                                & .qrImg{
+                                    & img{
+                                        width: 72px;
+                                        height: 72px;
+                                    }
+                                }
+                                & .qrInp{
+                                    border-radius: 7px;
+                                    background: #404A55;
+                                    height: 38px;
+                                }
+                                & .copyBtn{
+                                    border-radius: 7px;
+                                    background: #03B80F;
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 13px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    position: absolute;
+                                    top:50%;
+                                    transform: translateY(-50%);
+                                    border:0;
+                                    right: 20px;
+                                }
+                            }
+                            & .notice{
+                                border-radius: 7px;
+                                background: rgba(3, 184, 15, 0.15);
+                                padding: 11px 18px;
+                                & .txt{
+                                    color: #93ACD3;
+                                    font-family: 'Inter';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    & span{
+                                        color: #00FF11;
+                                    }
+                                }
+                            }
+                            & .dont{
+                                color: rgba(147, 172, 211, 0.80);
+                                font-family: 'Inter';
+                                font-size: 10px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                & img{
+                                    width: 9px;
+                                    height: 9px;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                        & .tabContentFiat{
+                            & .heading{
+                                color: #93ACD3;
+                                font-family: 'Inter';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                            & .box{
+                                border-radius: 7px;
+                                background: #252E39;
+                                height: 38px;
+                                padding: 7px 14px;
+                                & .btc{
+                                    & img{
+                                        width: 23px;
+                                        height: 23px;
+                                        margin-right: 5px;
+                                    }
+                                    & span{
+                                        color: #FFF;
+                                        font-family: 'Inter';
+                                        font-size: 13px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                    }
+                                }
+                                & .balance{
+                                    color: #93ACD3;
+                                    font-family: 'Inter';
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    margin-right: 5px;
+                                    & img{
+                                        width: 13px;
+                                        height: 13px;
+                                    }
+                                    & span{
+                                        color: white;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                            & .pond{
+                                padding: 10px 14px;
+                                border-radius: 7px;
+                                background: rgba(99, 36, 215, 0.15);
+                                position: relative;
+                                &.check{
+                                    &::before{
+                                        content:'';
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        background-image: url('./../img/modalIcons/right.png');
+                                        width: 25px;
+                                        height: 18px;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    }
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                                &.active{
+                                    background-image: url(./../img/modalIcons/pondBg.png);
+                                    width: 100%0;
+                                    height: 100%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                                &::after{
+                                    content: '+120%';
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 37.092px;
+                                    height: 14px;
+                                    background-color: #03B80F;
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 8px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 0 7px 0 7px;
+                                }
+                                & img{
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 12px;
+                                }
+                                & span{
+                                    color: #FFF;
+                                    font-family: 'Inter';
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                }
+                            }
+                            & .confirmBtn{
+                                border-radius: 11px;
+                                background: #03B80F;
+                                height: 44px;
+                                color: #FFF;
+                                font-family: 'Inter';
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: normal;
+                                padding: 11px 27px;
+                                border: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            & .optionsModalFooter{
+
+            }
+        }
+    }
+}
+
+// options modal end
+
+
+
+
 
 @media screen and (max-width: 700px) {
     .ragisterModal{
@@ -3952,11 +4560,12 @@
             & .leftBox{
                 & .bgColour{
                     & .txt{
+                        font-size: 14px;
                     }
                 }
             }
             & .rytBox{
-                padding: 48px 32px 92px 32px;
+                padding: 48px 32px 113px 32px;
                 & .innerBox{
                     & .txt{
                         font-size: 18px;
@@ -4546,7 +5155,9 @@
                     }
                 }
                 & .group{
+                    margin-left: 30px;
                     & .searchInp{
+                        width: 190px;
                         &:focus{
                         }
                     }
@@ -5386,6 +5997,7 @@
                         }
                     }
                     & .txt{
+                        font-size: 14px;
                     }
                     & .download{
                         & img{
@@ -5395,6 +6007,9 @@
             }
             & .innerCard{
                 & .generateBtn{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    font-size: 12px;
                 }
                 & .innerPadding{
                     .switch {
@@ -5427,10 +6042,12 @@
                     & .txt{
                     }
                     & .box{
+                        margin-top: 10px;
                         & .txt{
                         }
                     }
                     & .saveBtn{
+                        font-size: 12px;
                     }
                 }
                 & .tableRow{
@@ -5482,17 +6099,21 @@
                     }
                 }
                 & .number{
+                    font-size: 12px;
                 }
                 & .inputBox{
                     & .lbl{
+                        font-size: 12px;
                     }
                     & .inp{
                         &::placeholder{
+                            font-size: 10px;
                         }                
                         &:focus{
                         }
                     }
                     & .placetxt{
+                        font-size: 10px;
                         &.placetxt1{
                             & img{
                             }
@@ -5503,6 +6124,7 @@
                     & .formSelect{
                     }
                     & .serachBtn{
+                        font-size: 12px;
                         & img{
                         }
                     }
@@ -5517,23 +6139,37 @@
                     }
                 }
                 & .mainTxt{
+                    font-size: 12px;
                     & span{
+                        font-size: 12px;
                     }
                 }
                 & .history{
+                    font-size: 12px;
                     & img{
+                        height: 12px;
+                        width: 14px;
                     }
+                }
+                & .usdSubTxt{
+                    margin-top: 10px;
                 }
                 & .availableBox{
                     & .txt{
+                        font-size: 12px;
                         & span{
+                            font-size: 16px;
                         }
                     }
                     & .iconBox{
                         & .history{
+                            font-size: 12px;
                             & img{
+                                height: 16px;
+                                width: 16px;
                             }
                             & span{
+                                font-size: 12px;
                             }
                         }
                     }
@@ -5541,31 +6177,40 @@
             }
             & .btnPadding{
                 & .backBtn{
+                    font-size: 12px;
                     & img{
+                        height: 15px;
+                        width: 14px;
                     }
                 }
             }
             & .leftBox{
                 & .bgColour{
                     & .txt{
+                        font-size: 12px;
                     }
                 }
             }
             & .rytBox{
                 & .innerBox{
                     & .txt{
+                        font-size: 12px;
                     }
                     & .selectBox{
                     }
                     & .usidtlogo{
+                        top: 31px;
+                        font-size: 12px;
                         & img{
                         }
                     }
                     & .note{
                     }
                     & .swapBtn{
+                        font-size: 12px;
                     }
                     & .copyRyt{
+                        font-size: 13px;
                     }
                 }
             }
@@ -5761,12 +6406,14 @@
     .aboutFluid{
         padding: 0;
         border: 0;
-        background-color: unset;
-        position: unset;
+        &::before, &:after{
+            background: none;
+        }
+        // background-color: unset;
+        // position: unset;
             & .aboutCard{
                 &.Card2{
                     &::after{
-    
                     }
                     &::before{
                         // width: 30px;
@@ -5983,6 +6630,8 @@
             }
             &.outerPadding{
                 padding: 0;
+                background-color: unset;
+                border-radius: 14px;
             }
             & .downloadSection{
                 & .box{
@@ -6002,6 +6651,7 @@
                 }
             }
             & .innerCard{
+                border-radius: 3px;
                 & .generateBtn{
                 }
                 & .innerPadding{
@@ -6165,6 +6815,7 @@
                 }
             }
             & .leftBox{
+                border-radius:  0;
                 & .bgColour{    
                     height: 26px;
                     margin: 17px 15px;
@@ -6193,7 +6844,7 @@
                     }
                     & .copyRyt{
                         font-size: 15px;
-                        padding: 25px 60px;
+                        padding: 25px 0;
                     }
                 }
             }
@@ -6205,6 +6856,46 @@
             & .oppsTxt{
                 margin-bottom: 27px;
                 & img{
+                }
+            }
+        } 
+        & .history{
+            font-size: 12px;
+            & img{
+                height: 12px;
+                width: 13px;
+            }
+        }
+        & .maintxtWrapper{
+            background: rgba(69,82,102,.25);
+            padding: 1rem;
+            border-radius: 14px;
+            & .mainTxt{
+                font-size: 12px;
+                color: #fff;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                & span{
+                    color: #FFD700;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-left: 5px;
+                }
+            }
+        }
+        & .iconBox{
+            & .history{
+                & img{
+                    height: 15px;
+                    width: 15px;
+                }
+                & span{
+                    font-size: 12px
                 }
             }
         }

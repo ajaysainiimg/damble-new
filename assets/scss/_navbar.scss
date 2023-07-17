@@ -169,8 +169,8 @@
             padding: 40.65px 52.81px 0px 89.71px;
         }
         transition: all 0.3s;                                                                                                                                                      
-        &.affiliatePage{
-            padding: 22px 22px 50px 22px !important;
+        & .affiliatePage{
+            padding: 76px 21px 0px 21px;
         }
         &.afflitiateDashboard{
             padding: 35px 39px 87px 35px !important;
@@ -192,6 +192,9 @@
             & .homepage{
                 padding: 40px 52px 0px 52px;
             }
+            & .affiliatePage{
+                padding: 65px 21px 0px 21px;
+            }
         }
         & .footerSection {
             margin-top: 75px;
@@ -202,15 +205,35 @@
     }
 } 
 @include media-breakpoint-down(xl) {
+    body{
+        &.asideBar{
+            & .sidebar{
+                transform: translateX(0px);
+            }
+            & .menuBtn {
+                & .closeicon {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .menuicon {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
     .sidebar{
-        display: none;
+        transform: translateX(-100%);
     }
     .main{
         & .mainContaint {
             margin-left: 0px;
             & .homepage{
                 padding: 37px 52px 0px 52px;
-            }           
+            }
+            & .affiliatePage{
+                padding: 50px 21px 50px 21px;
+            }
         }
         & .footerSection {
             margin-left: 0px;
@@ -249,12 +272,6 @@
             & .homepage{
                 padding: 25px 15px 0px 15px;
             }
-            &.vipclubMain {
-                padding: 0 10px 0 10px;
-            }
-            // &.PromotionPage {
-            //     padding: 0 21px 0 21px;
-            // }
         }
         & .footerSection {
             margin-top: 40px;

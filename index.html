@@ -54,8 +54,8 @@
 <body>
         <!-- * Navbar Start -->
         <header class="navbar p-0 position-fixed top-0 w-100">
-            <div class="container-fluid headerFluid d-lg-block d-none">
-                <div class="row headerRow">
+            <div class="container-fluid headerFluid d-md-flex d-none pe-0">
+                <div class="row headerRow w-100 mx-auto">
                     <div class="col-auto px-0 d-xl-block d-none">
                         <div class="logoWrapper">
                             <div class="logo">
@@ -64,7 +64,8 @@
                         </div>
                     </div>
                     <div class="col-xl col-12 px-0">
-                        <div class="row headerRyt mx-0">
+                        <div class="row headerRyt align-items-center mx-0">
+                            <div class="col-auto d-xl-none d-block ps-0"><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent" id="toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
                             <div class="col d-flex align-items-center">
                                 <ul class="pills d-flex align-items-start mb-0 ps-0">
                                     <li class="casinoPill"><a href="javascript:;" class="pillAnchor active d-flex align-items-center justify-content-center" ><img src="assets/img/casinoIcon.png" alt="">CASINO </a></li>
@@ -82,7 +83,7 @@
                                 <span class="usdTxt text-white">$usd</span>
                                 <a href="javascript:;" class="globeIcon"><img src="assets/img/globe.png" alt=""></a>
                             </div> -->
-                            <div class="col-auto d-flex align-items-center headerFluidlg py-0">
+                            <div class="col-auto d-flex align-items-center headerFluidlg p-0">
                                 <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
                                 <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
                             </div>
@@ -90,10 +91,10 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid headerFluidlg d-block d-lg-none">
+            <div class="container-fluid headerFluidlg d-block d-md-none">
                 <div class="row align-items-center">
                     <div class="col-6 d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
-                        <div class="gd"><img src="assets/img/gd.png" alt=""></div>
+                        <div class="gd"><img src="assets/img/whitelogo.png" alt=""></div>
                         <div class="gdTxt"><img src="assets/img/logotxt.png" alt=""></div>
                     </div>
                     <div class="col-6 d-flex justify-content-end align-items-end pe-sm-3 pe-1">
@@ -118,26 +119,26 @@
                             <div class="row g-2">
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g1.png" alt="">
+                                        <img src="assets/img/whilespiner.png" alt="">
                                         <div class="txt"><span claas="orange">WHEEL</span> SPIN</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g2.png" alt="">
-                                        <div class="txt"><span class="yellow">WHEEL</span> SPIN</div>
+                                        <img src="assets/img/caseback.png" alt="">
+                                        <div class="txt"><span class="yellow">CASE</span> BACK</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g3.png" alt="">
-                                        <div class="txt"><span class="green">WHEEL</span> SPIN</div>
+                                        <img src="assets/img/referearn.png" alt="">
+                                        <div class="txt"><span class="green">REFER</span> &EARN</div>
                                     </div>
                                 </div>
                                 <div class="col-6 ">
                                     <div class="ii position-relative">
-                                        <img src="assets/img/g3.png" alt="">
-                                        <div class="txt"><span class=""></span> SPIN</div>
+                                        <img src="assets/img/task.png" alt="">
+                                        <div class="txt"><span class=""></span> TASK</div>
                                     </div>
                                 </div>
                             </div>
@@ -216,13 +217,13 @@
                         </li>
                         <li>
                             <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blog.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/Forum.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
                                 Forum
                             </a>
                         </li>
                         <li>
                             <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blogs.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
+                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blog.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
                                 Blog
                             </a>
                         </li>
@@ -297,7 +298,8 @@
                         </div>
                     </div>
                     <!-- ****** [ Hero Section End ] ****** -->
-                    <!-- spin card section  start-->
+
+                    <!--* spin card section  start-->
                     <div class="container-fluid pt-5 spinCardsection px-0">
                         <div class="row gx-xl-2 g-xl-0 g-md-4 g-sm-3 g-2">
                             <div class="col-xl-2 col-6 order-xl-1  order-2">
@@ -368,9 +370,8 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
-                    <!-- spin card section  end-->
+                    <!--*  spin card section  end-->
                     <!-- ****** [ Casino Card Section Start ] ****** -->
                     <div class="container-fluid px-0">
                         <div class="cardSection">
@@ -429,7 +430,48 @@
                         </div>
                     </div>
                     <!-- ****** [ Casino Card Section End ] ****** -->
-                    <!-- cardsection  -->
+                    <div class="container-fluid px-0 mb-5 d-sm-none d-block">
+                        <div class="row">
+                            <div class="col-12 topBodyPart givepart">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <div class="givway text-center">
+                                            <img src="assets/img/giveway.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-2">
+                                            <div class="col-6 ">
+                                                <div class="ii position-relative">
+                                                    <img src="assets/img/whilespiner.png" alt="">
+                                                    <div class="txt"><span claas="orange">WHEEL</span> SPIN</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="ii position-relative">
+                                                    <img src="assets/img/caseback.png" alt="">
+                                                    <div class="txt"><span class="yellow">CASE</span> BACK</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="ii position-relative">
+                                                    <img src="assets/img/referearn.png" alt="">
+                                                    <div class="txt"><span class="green">REFER</span> &EARN</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="ii position-relative">
+                                                    <img src="assets/img/task.png" alt="">
+                                                    <div class="txt"><span class=""></span> TASK</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * cardsection  -->
                     <div class="container-fluid bonusCard mb-5">
                         <div class="innerpage">
                             <div class="row gap-xl-0 gap-5 bonusSection">
@@ -474,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- card section end  -->
+                    <!-- * card section end  -->
         
                     <!-- ***** [ Navtab start ] ***** -->
                     <div class="container-fluid topratedgames-tab-main position-relative">
@@ -494,7 +536,7 @@
                                         <div class="input-group rounded-5 search-bar-group border-1 border">
                                             <input type="text" class="form-control search-input fw-semibold shadow-none bg-transparent border-0 rounded-0" placeholder="Search for games" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                             <button class="input-group-text bg-transparent border-0" id="basic-addon2">
-                                                <img src="assets/Img/index/search-icon.png" alt="search-icon">
+                                                <img src="assets/img/index/search-icon.png" alt="search-icon">
                                             </button>
                                         </div>
                                     </form>
@@ -534,7 +576,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -552,7 +594,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -569,7 +611,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -587,7 +629,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -605,7 +647,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4">
-                                                              <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                           <div class="text-center">
@@ -622,7 +664,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4">
-                                                              <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                           <div class="text-center">
@@ -639,7 +681,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -657,7 +699,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -674,7 +716,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -692,7 +734,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -710,7 +752,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -727,7 +769,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -736,7 +778,7 @@
                                                         </div>
                                                         </div>
                                             </div>
-                                            <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                            <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                             <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                         </div>
                                     </div>
@@ -770,7 +812,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -788,7 +830,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -805,7 +847,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -823,7 +865,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4 position-relative">
-                                                              <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -841,7 +883,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4">
-                                                              <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                           <div class="text-center">
@@ -858,7 +900,7 @@
                                                             </span>
                                                         </div>
                                                           <div class="games-img rounded-4">
-                                                              <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                              <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                           </div>
                                                           <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                           <div class="text-center">
@@ -875,7 +917,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -893,7 +935,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -910,7 +952,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -928,7 +970,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -946,7 +988,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -963,7 +1005,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -972,7 +1014,7 @@
                                                         </div>
                                                         </div>
                                             </div>
-                                            <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                            <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                             <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                         </div>
                                     </div>
@@ -1008,7 +1050,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1026,7 +1068,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4">
-                                                                    <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                                 <div class="text-center">
@@ -1043,7 +1085,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1061,7 +1103,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1079,7 +1121,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4">
-                                                                  <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                               <div class="text-center">
@@ -1096,7 +1138,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4">
-                                                                  <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                               <div class="text-center">
@@ -1113,7 +1155,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4 position-relative">
-                                                                    <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                     <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1131,7 +1173,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4">
-                                                                    <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                                 <div class="text-center">
@@ -1148,7 +1190,7 @@
                                                                 </span>
                                                             </div>
                                                                 <div class="games-img rounded-4 position-relative">
-                                                                    <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                     <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1166,7 +1208,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1184,7 +1226,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1201,7 +1243,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1210,7 +1252,7 @@
                                                         </div>
                                                         </div>
                                                 </div>
-                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                                 <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                             </div>
                                         </div>
@@ -1245,7 +1287,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1263,7 +1305,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4">
-                                                                    <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                                 <div class="text-center">
@@ -1280,7 +1322,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1298,7 +1340,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4 position-relative">
-                                                                  <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                   <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1316,7 +1358,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4">
-                                                                  <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                               <div class="text-center">
@@ -1333,7 +1375,7 @@
                                                                 </span>
                                                             </div>
                                                               <div class="games-img rounded-4">
-                                                                  <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                  <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                               </div>
                                                               <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                               <div class="text-center">
@@ -1350,7 +1392,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4 position-relative">
-                                                                    <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                     <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1368,7 +1410,7 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="games-img rounded-4">
-                                                                    <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                                 <div class="text-center">
@@ -1385,7 +1427,7 @@
                                                                 </span>
                                                             </div>
                                                                 <div class="games-img rounded-4 position-relative">
-                                                                    <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                    <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                     <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                                 </div>
                                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1403,7 +1445,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1421,7 +1463,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1438,7 +1480,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1447,7 +1489,7 @@
                                                         </div>
                                                         </div>
                                                 </div>
-                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                                 <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                             </div>
                                         </div>
@@ -1482,7 +1524,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1500,7 +1542,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1517,7 +1559,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1535,7 +1577,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1553,7 +1595,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1570,7 +1612,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1587,7 +1629,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1605,7 +1647,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1622,7 +1664,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1640,7 +1682,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4 position-relative">
-                                                            <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1658,7 +1700,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4">
-                                                            <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                         <div class="text-center">
@@ -1675,7 +1717,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4">
-                                                            <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                         <div class="text-center">
@@ -1684,7 +1726,7 @@
                                                     </div>
                                                     </div>
                                                 </div>
-                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                                 <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                             </div>
                                         </div>
@@ -1719,7 +1761,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1737,7 +1779,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1754,7 +1796,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1772,7 +1814,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1790,7 +1832,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1807,7 +1849,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1824,7 +1866,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1842,7 +1884,7 @@
                                                                 </span>
                                                             </div>
                                                             <div class="games-img rounded-4">
-                                                                <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                             <div class="text-center">
@@ -1859,7 +1901,7 @@
                                                             </span>
                                                         </div>
                                                             <div class="games-img rounded-4 position-relative">
-                                                                <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                                <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                                 <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                             </div>
                                                             <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1877,7 +1919,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4 position-relative">
-                                                            <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                             <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -1895,7 +1937,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4">
-                                                            <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                         <div class="text-center">
@@ -1912,7 +1954,7 @@
                                                             </span>
                                                         </div>
                                                         <div class="games-img rounded-4">
-                                                            <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                            <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         </div>
                                                         <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                         <div class="text-center">
@@ -1921,7 +1963,7 @@
                                                     </div>
                                                     </div>
                                                 </div>
-                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                                <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                                 <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                             </div>
                                         </div>
@@ -1931,9 +1973,9 @@
                         </div>
                         <!-- special tab end -->
                     </div>
-                    <!-- top-rated-games section start --> 
+                    <!-- **** top-rated-games section start --> 
                     
-                <!-- table start -->
+                <!-- ***** table start -->
                 <div class="container-fluid dambleTable">
                     <div class="row gap-5">
                         <div class="col-12 pt-5 px-0">
@@ -1982,13 +2024,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2002,13 +2044,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2022,13 +2064,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2042,13 +2084,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2062,13 +2104,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2082,13 +2124,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2102,13 +2144,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2140,13 +2182,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2160,13 +2202,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2180,13 +2222,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2200,13 +2242,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2220,13 +2262,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2240,13 +2282,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2260,13 +2302,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2298,13 +2340,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2318,13 +2360,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2338,13 +2380,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2358,13 +2400,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2378,13 +2420,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2398,13 +2440,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2418,13 +2460,13 @@
                                                                     </td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>Username
                                                                         </a>
                                                                     </td>
                                                                     <td > <span class="badge Multiplier">x0.0</span></td>
                                                                     <td> 
                                                                         <a href="#" class="d-flex align-items-center text-decoration-none" >
-                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/bitcoin.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
+                                                                            <span class="d-flex align-items-center amount me-1"><img src="assets/img/crypto.png" alt="playeruser" class="img-fluid h-100 w-100"> </span>00000000
                                                                         </a>
                                                                     </td>
                                                                   </tr>
@@ -2442,21 +2484,56 @@
                         </div>
                     </div>
                 </div>
-                <!-- ******* [ Register Section Start ] ********** -->
-                <div class="container-fluid registerSection mt-5 d-lg-block d-none">
-                    <div class="innerfluid">
-                        <div class="row">
-                            <div class="col-12 px-0"><img src="assets/Img/registerBanner.png" class="w-100" alt=""></div>
-                            <!-- <div class="col-6">
-                                <div class="registerHeading"><span>Register</span> now to instantly</div>
-                                <div class="mainHeading">Redeem your Deposit Bonus!</div>
-                                <div class="subHeading">Deposit bonus up to $20,000</div>
-                            </div> -->
-                            <div class="signUp px-0"><button class="greenBtn border-0">Sign Up</button></div>
+                <!-- ****** [ Bounscard Section Start ] ****** -->
+                <div class="container-fluid rewardCardSection px-0 mt-5">
+                    <div class="row rewardSection">
+                        <div class="col-12">
+                            <div class="outterCard">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0">
+                                        <div class="innerCard">
+                                            <div class="row mx-0 align-items-center">
+                                                <div class="col-lg-6 col-7">
+                                                    <div class="cardContent">
+                                                        <div class="row mx-0 d-md-block d-none">
+                                                            <div class="col-12 px-0 subHeading "><span>Register</span> now to instantly</div>
+                                                            <div class="col-12 px-0 subHeading heading pt-2">Redeem your Desposit Bouna!</div>
+                                                            <div class="pera col-12 px-0">Deposit bonus up to $20,000</div>
+                                                            <div class="col-auto px-0 mt-4">
+                                                                <a href="#" class="text-decoration-none greenBtn csrdBtn">Sign Up</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0 d-md-none d-block text-center">
+                                                            <div class="col-12 px-0 subHeading "><span>Sign Up</span> now and get</div>
+                                                            <div class="col-12 px-0 subHeading heading pt-2"><span>300%</span> BONUS!</div>
+                                                            <div class="pera col-12 px-0">Deposit bonus up to $20,000</div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="col-lg-6 col-5 cardContent">
+                                                    <div class="row mx-0 align-items-center">
+                                                        <div class="col-lg-auto px-0 ">
+                                                            <div class="cardImg"><img src="assets/img/bouns.png" alt="bouns" class="img-fluid w-100 h-100"></div>
+                                                        </div>
+                                                        <div class="col px-0 d-lg-block d-none">
+                                                            <div class="subHeading heading text-center">Up to <span>300%</span></div>
+                                                            <div class="subHeading heading text-center">Bouns</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 mx-auto d-md-none d-block mt-4" >
+                            <a href="javascript:;" class="text-decoration-none greenBtn w-100 cardBtn">Sign Up</a>
                         </div>
                     </div>
                 </div>
-                <!-- ******* [ Register Section End ] ********** -->
+                <!-- ****** [ Bounscard Section End ] ****** -->
                 
                 <!-- recommand start -->
                 <div class="container-fluid toprated-games-main position-relative mb-5">
@@ -2482,7 +2559,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4 position-relative">
-                                                        <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2500,7 +2577,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="games-img rounded-4">
-                                                        <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                     <div class="text-center">
@@ -2517,7 +2594,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4 position-relative">
-                                                        <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2535,7 +2612,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4 position-relative">
-                                                        <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2553,7 +2630,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4">
-                                                        <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                     <div class="text-center">
@@ -2570,7 +2647,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4">
-                                                        <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                     <div class="text-center">
@@ -2587,7 +2664,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="games-img rounded-4 position-relative">
-                                                        <img src="assets/Img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon1.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2605,7 +2682,7 @@
                                                         </span>
                                                     </div>
                                                     <div class="games-img rounded-4">
-                                                        <img src="assets/Img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon2.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                     <div class="text-center">
@@ -2622,7 +2699,7 @@
                                                     </span>
                                                 </div>
                                                     <div class="games-img rounded-4 position-relative">
-                                                        <img src="assets/Img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                        <img src="assets/img/index/card-icon3.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                         <div class="games-img-tag fw-semibold position-absolute end-0 top-0 d-flex justify-content-center align-items-center">New</div>
                                                     </div>
                                                     <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2640,7 +2717,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="games-img rounded-4 position-relative">
-                                                    <img src="assets/Img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                    <img src="assets/img/index/card-icon4.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                     <div class="games-img-tag fw-semibold position-absolute end-0 top-0 bg-success d-flex justify-content-center align-items-center">Top</div>
                                                 </div>
                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
@@ -2658,7 +2735,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="games-img rounded-4">
-                                                    <img src="assets/Img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                    <img src="assets/img/index/card-icon5.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                 </div>
                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                 <div class="text-center">
@@ -2675,7 +2752,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="games-img rounded-4">
-                                                    <img src="assets/Img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
+                                                    <img src="assets/img/index/card-icon6.png" alt="card" class="h-100 w-100 img-fluid rounded-4">
                                                 </div>
                                                 <div class="text-center games-card-title fw-semibold d-md-block d-none">Push Gaming</div>
                                                 <div class="text-center">
@@ -2684,7 +2761,7 @@
                                             </div>
                                             </div>
                                     </div>
-                                    <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/Img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
+                                    <div class="swiper-button-prev-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/prev.png" alt="prev" class="h-100 w-100 img-fluid"></div>
                                     <div class="swiper-button-next-unique p-0 d-md-none d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/next.png" alt="next" class="h-100 w-100 img-fluid"></div>
                                 </div>
                             </div>
@@ -2779,7 +2856,7 @@
                                     <div class="col-12 showmore-btn-main text-md-start text-center">
                                         <a href="javascript:;" class="btn showmore-btn fw-semibold p-0 border-0">Show More 
                                             <span class="showMore">>></span>
-                                            <!-- <span class="d-md-none d-block"><img src="assets/Img/index/showmore.png" alt="show more"></span>
+                                            <!-- <span class="d-md-none d-block"><img src="assets/img/index/showmore.png" alt="show more"></span>
                                             </a> -->
                                         </a>
                                     </div>
@@ -2805,7 +2882,6 @@
                     </div>
                 </div>  
                 <!-- help us section end -->
-
                 <!-- footer links -->
                 <div class="container-fluid footer footerLinks pt-5">
                     <div class="row cols-5 d-md-flex d-none">
@@ -3050,17 +3126,16 @@
                             </div>
                             <div class="col-12 mx-auto"><div class="borderd smBorderd"></div></div>
                             <div class="col-12 text-center">
-                                <div class="logoImg d-inline-block"><img src="assets/img/logo.png" alt="Logo"></div>
+                                <div class="logoImg d-inline-flex"><img src="assets/img/logo.png" alt="Logo"></div>
                                 <div class="text-center copyright text-white mt-md-4 mt-3">Copyright © 2023  Damble. All rights reserved.</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
         </main>
         
-    <!-- modal start1 -->
+    <!-- * Sign Up modal start1 -->
         <div class="modal fade ragisterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -3084,7 +3159,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -3099,7 +3174,7 @@
                     <div class='col-12 fw-bold text-white registerHeading mb-3 d-lg-block d-none'>Sign Up</div>
                     <div class="col-12">
                         <ul class="pills d-flex align-items-start mb-0 ps-0">
-                            <li class="casinoPill w-50"><a href="#exampleModal" class="pillAnchor  d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Email </a></li>
+                            <li class="casinoPill w-50"><a href="javascript:;" class="pillAnchor  d-flex align-items-center justify-content-center">Email </a></li>
                             <li class="casinoPill w-50"><a href="javascript:;" class="pillAnchor active d-flex justify-content-center align-items-center">Phone number </a></li>
                         </ul>
                     </div>
@@ -3116,7 +3191,7 @@
                         </input>
                     </div>
                     <div class='col-12 mx-auto'><button type='button' class='btn ragisterBtn w-100 border-0'>Register</button></div>
-                    <div class="col-12"><div class="para">Already have an account?  <a href="javascript:;" class="paraAnchor">Sign Up</a> Log in directly with</div></div>
+                    <div class="col-12"><div class="para">Already have an account?  <a href="javascript:;" class="paraAnchor" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</a> Log in directly with</div></div>
                     <div class="col-12">
                         <div class="row align-items-center justify-content-center mt-5">
                             <a href="javascript:;" class="col-auto d-flex pe-0">
@@ -3141,9 +3216,9 @@
                 </div> -->
             </div>
         </div>
-<!-- modal end -->
+    <!-- * modal end -->
 
-<!-- modal start2 -->
+    <!-- * Sign In modal start2 -->
     <div class="modal fade ragisterModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -3167,7 +3242,7 @@
                                 </div>
                                 <div class="col-auto">
                                     <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/white.png" alt="">
+                                        <img src="assets/img/whitelogo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -3187,7 +3262,7 @@
                     </div></div>
                     <div class="col-12 forget d-flex justify-content-end text-white"> Forgot your Password?</div>
                     <div class='col-12 mx-auto'><button type='button' class='btn ragisterBtn w-100 border-0'>Register</button></div>
-                    <div class="col-12"><div class="para1">New to DAMBLE ? <a href="javascript:;" class="paraAnchor">Create account</a></div></div>
+                    <div class="col-12"><div class="para1">New to DAMBLE ? <a href="javascript:;" class="paraAnchor" data-bs-toggle="modal" data-bs-target="#exampleModal">Create account</a></div></div>
                     <div class="col-12">
                         <div class="row align-items-center justify-content-center topMargin">
                             <a href="javascript:;" class="col-auto d-flex pe-0">
@@ -3212,7 +3287,7 @@
                 </div> -->
         </div>
     </div>
-<!-- modal end -->
+    <!--* modal end -->
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
@@ -3232,26 +3307,26 @@
             spaceBetween: 10,
         },
         430: {
-          slidesPerView: 3,
-          spaceBetween: 15,
+            slidesPerView: 3,
+            spaceBetween: 15,
         },
         576: {
-          slidesPerView: 4,
-          spaceBetween: 15,
+            slidesPerView: 4,
+            spaceBetween: 15,
         },
         768: {
-          slidesPerView: 5,
-          spaceBetween: 17,
+            slidesPerView: 5,
+            spaceBetween: 17,
         },
         992:{
             slidesPerView: 6,
-          spaceBetween: 17,
+            spaceBetween: 17,
         },
         1024: {
-          slidesPerView: 6,
-          spaceBetween: 20,
+            slidesPerView: 6,
+            spaceBetween: 20,
         },
-      },
+        },
     });
     </script>
 </body>
