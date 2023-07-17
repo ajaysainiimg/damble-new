@@ -300,7 +300,8 @@
                 content: '';
                 background-image: url(./../img/givewayImg/blurBg.png);
                 position: absolute;
-                top: -60px;
+                // top: -60px;
+                top: -54px;
                 width: 100px;
                 height: 100px;
                 z-index: -20;
@@ -312,7 +313,7 @@
                 // top: -17px;
                 // width: 100px;
                 // height: 100px;
-                top: -12px;
+                top: -10px;
                 height: 95px;
                 width: 95px;
                 z-index: -2;
@@ -334,7 +335,7 @@
             }
             &.bottomAnchorMain{
                 // margin-top: -47px;
-                margin-top: -50px;
+                margin-top: -46px;
                 padding-bottom: 12px;
                 & .iconParent{
                     width: 50px;
