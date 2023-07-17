@@ -283,6 +283,102 @@
     }
 }
 
+.bottomBarFluid{
+    & .bottomBar{
+        background: #161F2C;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.50);
+        // height: 101px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        & .blurBg{
+            position: relative;
+            background-color: #161F2C;
+            &::after{
+                content: '';
+                background-image: url(./../img/givewayImg/blurBg.png);
+                position: absolute;
+                top: -60px;
+                width: 100px;
+                height: 100px;
+                z-index: -20;
+            }
+            &::before{
+                content: '';
+                background-color:#161F2C ;
+                position: absolute;
+                top: -17px;
+                width: 100px;
+                height: 100px;
+                z-index: -2;
+            }
+        }
+        // padding-bottom: 101px;
+        & .bottomAnchor{
+            padding: 10px 10px 28px 10px;
+            display: block;
+            text-decoration: none;
+            transition: all ease-in-out 0.3s;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
+            &.active{
+                opacity: 1;
+            }
+            &.bottomAnchorMain{
+                margin-top: -45px;
+                padding-bottom: 12px;
+                & .iconParent{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: radial-gradient(75.00% 75.00% at 50.00% 25.00%, #00990A 0%, rgba(21, 50, 97, 0.00) 100%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & img{
+                        width: 30px;
+                        height: 28.798px;
+                    }
+                }
+                
+        & .linkTxt{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+            }
+            & .iconParent{
+                width: 23px;
+                height: 23px;
+                margin: auto;
+                & img{
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .linkTxt{
+                margin-top: 9px;
+                color: #B4B4B4;
+                font-family: 'Montserrat';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration: none !important;
+                text-align: center;
+            }
+        }
+    }
+}
 
 @include media-breakpoint(basic) {
 }
