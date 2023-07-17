@@ -97,11 +97,11 @@
       }
       
       input:focus + .slider {
-        background: #fff;
+        // background: #fff;
       }
       
       input:checked + .slider:before {
-        background: rgba(4, 95, 241, 0.89);
+        background: #00990A;
         transform: translateX(20px);
       }
       
