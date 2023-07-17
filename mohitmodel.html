@@ -72,7 +72,7 @@
             <div class="modal-content modalContentall userinforcard ">
                 <div class="modal-header modalHeaderAll userinfoHeader py-0 px-2 border-0 position-relative">
                     <div class="modalHeading">User Information</div>
-                    <button type="button" class="btn-close p-0 shadow-none modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close p-0 shadow-none modalClose " data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="uservipTagmain position-absolute z-1">
                         <div class="position-relative uservipTagContent">
                             <div class="uservipTag">
@@ -334,7 +334,7 @@
                     </span>
                     Master Medals
                 </div>
-            <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close modalClose shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body border0 mastermedalBody pt-0">
             <div class="row mx-0 masterboxMain">
@@ -675,7 +675,7 @@
                         </span>
                         User Information
                     </div>
-                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close modalClose shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modalLine"></div>
                 <div class="modal-body userEditBody">
@@ -708,7 +708,7 @@
     <!-- user Information modal 2 end -->
 
     <!-- edit image modal start -->
-    <div class="modal fadee editImgModal" id="editImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade editImgModal" id="editImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modalMain editimgmain">
             <div class="modal-content modalContentall editimgcontent">
                 <div class="modal-header modalHeaderAll p-0 border-0 editimgHeader">
@@ -718,7 +718,7 @@
                         </span>
                         Edit Your Image
                     </div>
-                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close modalClose shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modalLine"></div>
                 <div class="modal-body editimgbody">
@@ -746,6 +746,7 @@
                                     </div>
                                     <div class="d-inline-flex align-items-center">
                                         <input type="range">
+                                        <!-- <input type="range" name="fanSpeed" min="0" max="100" class="active"> -->
                                     </div>
                                     <div class="zoomIcon d-inline-flex align-items-center justify-content-center">
                                         <img src="assets/Img/mohitModel/zoomout.png" alt="zoom out" class="h-100 w-100 img-fluid">
@@ -761,8 +762,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 px-0 pt-5 defaoultImgMain">
-                            <div class="defaoultImg">Default Image</div>
+                        <div class="col-12 px-0 defaoultImgMain">
+                            <div class="defaoultImgtitle">Default Image</div>
+                            <div class="defaoultImgcontent d-flex align-items-center justify-content-between">
+                                <div class="defaoultImg d-flex align-items-center">
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaultimg1.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaoulticon2.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaoultico3.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaoultico4.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaoultico5.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="defaoulticon d-inline-flex align-items-center justify-content-center">
+                                        <img src="assets/Img/mohitModel/defaoultico6.png" alt="defaoult Image" class="h-100 w-100 img-fluid">
+                                    </div>
+                                   
+                                </div>
+                                <a href="javascript:;" class="plusIcon d-inline-flex align-items-center justify-content-center">
+                                    <img src="assets/Img/mohitModel/plus.png" alt="plus" class="h-100 w-100 img-fluid">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
