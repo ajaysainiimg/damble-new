@@ -110,3 +110,26 @@
     font-weight: 600;
     line-height: normal;
 }
+
+.form-switch {
+  & .form-check-input {
+      width: 35px;
+      height: 13px;
+      background-repeat: no-repeat;
+      // background: rgba(147, 172, 211, 0.08);
+      // --bs-form-check-bg:rgba(147, 172, 211, 0.08);
+      background-color:rgba(147, 172, 211, 0.08) ;
+      background-image: url(../img/mohitModel/switch.png);
+
+      &:checked {
+          border-color: $theme1;
+          background-color: rgba(147, 172, 211, 0.08);
+          background-image: url(../img/mohitModel/switch.png);
+      }
+      &:focus {
+          border-color: lighten($black, 90);
+          // background-image: none;
+          // background:url(../img/Index/radioicon.svg);
+      }
+  }
+}

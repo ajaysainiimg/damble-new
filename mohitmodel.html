@@ -65,6 +65,15 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editImage">
         Edit Image
     </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#globalsetting">
+        Global Setting
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vipclubModal">
+        vip club
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privacytwo">
+        privacy modal
+    </button>
 
     <!-- User Information model start-->
     <div class="modal fade userInfoModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -791,12 +800,649 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="col-12 dontBtnMain text-center">
+                            <a href="javascript:;" class="text-decoration-none doneBtn">Done</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- edit image modal end -->
+
+    <!-- global setting modal start -->
+    <div class="modal fade globalsettingModal" id="globalsetting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog globalsettingMain modalMain">
+            <div class="modal-content globalsettingcontent modalContentall">
+                <div class="modal-header globalsettingHeader border-0 justify-content-end">
+                    <div class="settingHeading d-flex align-items-center">
+                        <span class="d-inline-flex justify-content-center align-items-center settingIcon">
+                            <img src="assets/img/mohitModel/settings.png" alt="setting" class="h-100 w-100 img-fluid">
+                        </span>
+                        Global Settings
+                    </div>
+                    <!-- <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body globalsettingBody p-0">
+                    <div class="row mx-0">
+                        <div class="col-12 px-0">
+                            <div class="globalusernameContent d-flex align-items-center position-relative">
+                                <div class="usernameIcon d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/mohitModel/usericon.png" alt="username" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="d-flex flex-column gap-1">
+                                    <div class="gloablSettingTitle ps-1">Username</div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="globalMedalIcon d-flex align-items-center justify-content-center"><img src="assets/img/mohitModel/medal.png" alt="medal" class="h-100 w-100 img-fluid"></span>
+                                        <span class="globalMedalIcon d-flex align-items-center justify-content-center"><img src="assets/img/mohitModel/medal.png" alt="medal" class="h-100 w-100 img-fluid"></span>
+                                        <span class="globalMedalIcon d-flex align-items-center justify-content-center"><img src="assets/img/mohitModel/medal.png" alt="medal" class="h-100 w-100 img-fluid"></span>
+                                        <span class="globalMedalIcon d-flex align-items-center justify-content-center"><img src="assets/img/mohitModel/medal.png" alt="medal" class="h-100 w-100 img-fluid"></span>
+                                        <span class="globalMedalIcon d-flex align-items-center justify-content-center"><img src="assets/img/mohitModel/medal.png" alt="medal" class="h-100 w-100 img-fluid"></span>
+                                    </div>
+                                </div>      
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="globalViptitle">VIP 0</div>
+                                        <div class="globalViptitle">VIP 1</div>
+                                    </div>
+                                    <div class="mt-2 d-flex flex-column">
+                                        <Input class="range w-100" type="range" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+                                        
+                                        <div class="rangepermain d-flex align-items-center justify-content-end">
+                                            <span id="rangeValue" class="rangeper">0</span>
+                                            %
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="globalviptag position-absolute">
+                                    <img src="assets/img/mohitModel/viptag.png" alt="vip" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0">
+                            <div class="row globalBtnMain mx-0 gx-3 gy-2">
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center active">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/wallet.png" alt="wallet" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Wallet
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn2.png" alt="vip club" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </span>
+                                        <span>
+                                            <span class="globalBtnTitle">VIP</span> 
+                                            CLUB
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-centers">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn3.png" alt="Transactions" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Transactions
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn4.png" alt="Swap" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Swap
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-centers">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn5.png" alt="Refer a friend" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Refer a friend
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn6.png" alt="Vault Pro" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Vault Pro
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-centers">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn7.png" alt="User Information" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        User Information
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn8.png" alt="Live Support" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Live Support
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn9.png" alt="Statistics" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Statistics
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:;" class="globalsettingBtn text-decoration-none d-flex align-items-center">
+                                        <span class="globalBtnicon d-flex align-items-center justify-content-center">
+                                            <img src="assets/img/mohitModel/globalbtn10.png" alt="Affiliate" class="h-100 w-100 img-fluid">
+                                        </span>
+                                        Affiliate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logoutBtnMain col-12">
+                            <a href="javascript:;" class="text-decoration-none logOutBtn d-inline-flex align-items-center">
+                                <span class="logOutIcon d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/mohitModel/logout.png" alt="log Out" class="h-100 w-100 img-fluid">
+                                </span>
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- global setting modal end -->
+
+    <!-- vip club modal start -->
+    <div class="modal fade vipclubModal" id="vipclubModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog vipclubModalMain modalMain">
+            <div class="modal-content vipclubModalContent modalContentall">
+                <div class="modal-header vipclubheader modalHeaderAll p-0 px-2 border-0 align-items-start">
+                    <div>
+                        <div class="vipclubheading d-inline-flex align-items-center">
+                            <span class="d-flex align-items-center justify-content-center vipIcon">
+                                <img src="assets/img/mohitModel/vipclub.png" alt="vip" class="h-100 w-100 img-fluid">
+                            </span>
+                            VIP CLUB
+                        </div>
+                        <div class="vipclubtitle pt-2">Level up to get exclusive access to generous rewards and personalized gifts!</div>
+                    </div>
+                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body vipclubbody">
+                    <div class="row mx-0">
+                        <div class="col-12 px-0">
+                            <div class="row mx-0 vipusernamemain">
+                                <div class="col-auto">
+                                    <div class="vipusericon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/mohitModel/vip.png" alt="vip" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="viprangeMain">
+                                        <div class="viprangetitle">Username</div>
+                                        <div class="viprangeslider d-flex align-items-center">
+                                            <input type="range" class="viprange w-100">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="viprangecount">0 <span class="fw-medium">XP</span></div>
+                                            <div class="viprangecount">
+                                                0 
+                                                <span class="fw-normal">XP</span>
+                                                <span class="viprangecountinner">Till VIP1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 vipcardMain">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="vipmodalCard text-center h-100">
+                                        <div class="vipCardHeading fw-semibold">
+                                            Total wager
+                                        </div>
+                                        <div class="vipcardtotal">
+                                            0.00 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="vipmodalCardtwo text-center position-relative h-100">
+                                        <div class="vipmodalcardtag d-inline-flex ">
+                                            VIP HOST
+                                        </div>
+                                        <div class="vipmodalcardpara text-center">
+                                            Unlock your exclusive 
+                                            <br>
+                                            <span class="fw-bold">VIP HOST</span> at <span class="text-white">VIP 11</span>
+                                        </div>
+                                        <div class="vipcardlock position-absolute">
+                                            <img src="assets/img/mohitModel/viplockicon.png" alt="vip" class="h-100 w-100 img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-0 pb-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="vipbenefitHeading fw-semibold">VIP Benefits</div>
+                                <a href="javascript:;" class="text-decoration-none modelBtn">View Benefits Table >></a>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 px-0 vipbenefitmain" id="accordionExample">
+                            <div class="accordion-item bg-transparent border-0 mb-4">
+                                <button class="accordion-button fw-semibold shadow-none benefitBtn d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#benefitone" aria-expanded="true" aria-controls="benefitone">
+                                    <span class="benefitBtnIcon">
+                                        <img src="assets/img/mohitModel/bronze.png" alt="bronze" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Bronze 
+                                    <span class="benefitBtnTitle fw-normal ms-1">VIP 1-5</span>
+                                </button>
+                                <div id="benefitone" class="accordion-collapse collapse show benefitBtncontent" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="benefitBtnsubheading fw-medium ps-1"> All above benefits included</div>
+                                        <div class="row mx-3 mt-3 gx-2">
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit1.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Level Up Bonus</div>
+                                                    <div class="benefitCardtitle">Every Level</div>
+                                                    <div class="benefitCardcount">0/14</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit2.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0 mb-4">
+                                <button class="accordion-button fw-semibold shadow-none benefitBtn d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#benefittwo" aria-expanded="true" aria-controls="benefittwo">
+                                    <span class="benefitBtnIcon">
+                                        <img src="assets/img/mohitModel/silver.png" alt="silver" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Silver 
+                                    <span class="benefitBtnTitle fw-normal ms-1">VIP 8-21</span>
+                                </button>
+                                <div id="benefittwo" class="accordion-collapse collapse show benefitBtncontent" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="benefitBtnsubheading fw-medium ps-1"> All above benefits included</div>
+                                        <div class="row mx-3 mt-3 gx-2">
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit1.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Level Up Bonus</div>
+                                                    <div class="benefitCardtitle">Every Level</div>
+                                                    <div class="benefitCardcount">0/14</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit2.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0 mb-4">
+                                <button class="accordion-button fw-semibold shadow-none benefitBtn d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#benefitthree" aria-expanded="true" aria-controls="benefitthree">
+                                    <span class="benefitBtnIcon">
+                                        <img src="assets/img/mohitModel/gold.png" alt="gold" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Gold 
+                                    <span class="benefitBtnTitle fw-normal ms-1">VIP 22-37</span>
+                                </button>
+                                <div id="benefitthree" class="accordion-collapse collapse show benefitBtncontent" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="benefitBtnsubheading fw-medium ps-1"> All above benefits included</div>
+                                        <div class="row mx-3 mt-3 gx-2 gy-2">
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit1.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Level Up Bonus</div>
+                                                    <div class="benefitCardtitle">Every Level</div>
+                                                    <div class="benefitCardcount">0/14</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit2.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0 mb-4">
+                                <button class="accordion-button fw-semibold shadow-none benefitBtn d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#benefitfour" aria-expanded="true" aria-controls="benefitfour">
+                                    <span class="benefitBtnIcon">
+                                        <img src="assets/img/mohitModel/platinum.png" alt="silver" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Platinum 
+                                    <span class="benefitBtnTitle fw-normal ms-1">VIP 38-69</span>
+                                </button>
+                                <div id="benefitfour" class="accordion-collapse collapse show benefitBtncontent" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="benefitBtnsubheading fw-medium ps-1"> All above benefits included</div>
+                                        <div class="row mx-3 mt-3 gx-2">
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit1.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Level Up Bonus</div>
+                                                    <div class="benefitCardtitle">Every Level</div>
+                                                    <div class="benefitCardcount">0/14</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit2.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-transparent border-0 mb-4">
+                                <button class="accordion-button fw-semibold shadow-none benefitBtn d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#benefitfive" aria-expanded="true" aria-controls="benefitfive">
+                                    <span class="benefitBtnIcon">
+                                        <img src="assets/img/mohitModel/diamond.png" alt="bronze" class="h-100 w-100 img-fluid">
+                                    </span>
+                                    Diamond 
+                                    <span class="benefitBtnTitle fw-normal ms-1">SVIP 1-55</span>
+                                </button>
+                                <div id="benefitfive" class="accordion-collapse collapse show benefitBtncontent" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="benefitBtnsubheading fw-medium ps-1"> All above benefits included</div>
+                                        <div class="row mx-3 mt-3 gx-2">
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit1.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Level Up Bonus</div>
+                                                    <div class="benefitCardtitle">Every Level</div>
+                                                    <div class="benefitCardcount">0/14</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit2.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="benefitBtnCard text-center">
+                                                    <div class="benefitBtnCardImg mx-auto d-flex align-items-center justify-content-center">
+                                                        <img src="assets/img/mohitModel/benefit3.png" alt="benefit" class="h-100 w-100 img-fluid">
+                                                    </div>
+                                                    <div class="benefitCardheading">Secret Treasure</div>
+                                                    <div class="benefitCardtitle">VIP 8/14</div>
+                                                    <div class="benefitCardcount">0/1</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="d-inline-flex vipclubcurrancy currancyone fw-medium">
+                                Wager 3.67 $ =  XP
+                            </div>
+                            <br>
+                            <div class="d-inline-flex vipclubcurrancy currancytwo fw-medium mt-1">
+                                Sport Wager 3.67 $ =  XP
+                            </div>
+                        </div>
+                        <div class="col-12 vipclubModaltitle text-center">All wagers are converted to USDT at the current rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- vip club modal end -->
+
+    <!-- privacy two modal start -->
+    <div class="modal fade privacytwoModal" id="privacytwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalMain privacytwomain">
+            <div class="modal-content modalContentall privacytwocontent">
+                <div class="modal-header modalHeaderAll p-0 border-0">
+                    <div class="modalHeading d-inline-flex align-items-center">
+                        <span class="d-flex align-items-center justify-content-center leftarrow">
+                            <img src="assets/img/mohitModel/rightarrow2.png" alt="arrow" class="h-100 w-100 img-fluid">
+                        </span>
+                        Privacy
+                    </div>
+                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modalLine my-4"></div>
+                <div class="modal-body p-0 pt-2 privacytwoBody">
+                <div class="row mx-0 gap-2">
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="gamingdata" class="privacyLabel w-100 col"> Hide my gaming data on profile</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="gamingdata" checked>
+                        </div>
+                        <div class="privacyswitchTitle ps-1">Even if hidden, your avatar and username are always visible in chatrooms.</div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="myusername" class="privacyLabel w-100 col">Hide my username from public lists</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="myusername" checked>
+                        </div>
+                        <div class="privacyswitchTitle ps-1">If hidden, no one can view your profile by clicking on your avatar or username on public rankings or bets list.</div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="privatechat" class="privacyLabel w-100 col">Hide my online presence in private chat</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="privatechat" checked>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="privatemsg" class="privacyLabel w-100 col">Allow private messages from strangers</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="privatemsg" checked>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="friendRequest" class="privacyLabel w-100 col">Refuse any new friend request</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="friendRequest" checked>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="form-check form-switch privacyswitch d-flex m-0 align-items-center">
+                            <label for="strangers" class="privacyLabel w-100 col">Refuse tip from strangers</label>
+                            <input class="form-check-input m-0 shadow-none border-0 col-auto" type="checkbox" role="switch" id="strangers" checked>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- privacy two modal end -->
+
+    <!-- coin drop modal start -->
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- coin drop modal end -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -817,16 +1463,16 @@
             spaceBetween: 10,
         },
         430: {
-          slidesPerView: 3,
-          spaceBetween: 15,
+            slidesPerView: 3,
+            spaceBetween: 15,
         },
         576: {
-          slidesPerView: 4,
-          spaceBetween: 15,
+            slidesPerView: 4,
+            spaceBetween: 15,
         },
         768: {
-          slidesPerView: 5,
-          spaceBetween: 17,
+            slidesPerView: 5,
+            spaceBetween: 17,
         },
         992:{
             slidesPerView: 6,
@@ -838,6 +1484,11 @@
         },
       },
     });
+    </script>
+    <script type="text/javascript">
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
     </script>
 </body>
 </html>
