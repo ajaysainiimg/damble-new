@@ -53,7 +53,7 @@
 </head>
 <body>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userinfoone">
         User Information Model
     </button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mastermodel">
@@ -74,9 +74,12 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privacytwo">
         privacy modal
     </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coindrop">
+        coin drop
+    </button>
 
     <!-- User Information model start-->
-    <div class="modal fade userInfoModel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade userInfoModel" id="userinfoone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog userInfocontent modalMain">
             <div class="modal-content modalContentall userinforcard ">
                 <div class="modal-header modalHeaderAll userinfoHeader py-0 px-2 border-0 position-relative">
@@ -1420,24 +1423,22 @@
     <!-- privacy two modal end -->
 
     <!-- coin drop modal start -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    
-</button>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <div class="modal fade coindropmodal" id="coindrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalMain">
+        <div class="modal-content modalContentall">
+            <div class="modal-header modalHeaderAll border-0 p-0">
+                <div class="modalHeading"></div>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
             ...
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
         </div>
