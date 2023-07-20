@@ -1953,6 +1953,17 @@
                             font-weight: 600;
                             line-height: normal;
                         }
+                        & input[type="range"]::-webkit-slider-thumb {
+                            background: red;
+                        }
+
+                        & input[type="range"]::-moz-range-thumb {
+                            background-color: red;
+                        }
+
+                        & input[type="range"]::-ms-thumb {
+                            background-color: red;
+                        }
                         & .viprangeslider {
                             padding: 10px 0 10px 0;
                         }
@@ -2157,6 +2168,23 @@
     }
 }
 // ********* privacy two modal end ********
+
+// recharge modal start
+.rechargeModal {
+    & .rechargeModalMain {
+        max-width: 398px;
+        & .rechargeModalContent {
+            padding: 13px 13px 30px 13px;
+            & .rechargeBody {
+                & .information {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+// recharge modal end
 
 // ********* model Page end ********
 

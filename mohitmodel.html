@@ -74,8 +74,8 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privacytwo">
         privacy modal
     </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coindrop">
-        coin drop
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recharge">
+        recharge
     </button>
 
     <!-- User Information model start-->
@@ -1422,28 +1422,36 @@
     </div>
     <!-- privacy two modal end -->
 
-    <!-- coin drop modal start -->
-
-
-    <div class="modal fade coindropmodal" id="coindrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modalMain">
-        <div class="modal-content modalContentall">
+    <!-- racharge modal start -->
+    <div class="modal fade rechargeModal" id="recharge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalMain rechargeModalMain">
+        <div class="modal-content modalContentall rechargeModalContent">
             <div class="modal-header modalHeaderAll border-0 p-0">
-                <div class="modalHeading"></div>
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modalHeading d-inline-flex align-items-center">
+                    <span class="d-flex align-items-center justify-content-center leftarrow">
+                        <img src="assets/img/mohitModel/rightarrow2.png" alt="arrow" class="h-100 w-100 img-fluid">
+                    </span>
+                    Recharge
+                </div>
+                <button type="button" class="btn-close modalClose" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-            ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modalLine my-3"></div>
+            <div class="modal-body rechargeBody p-0">
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <div class="information d-flex align-items-center justify-content-between ms-auto">
+                            <img src="assets/Img/mohitModel/information.png" alt="information" class="h-100 w-100 img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
     </div>
-    <!-- coin drop modal end -->
+    <!-- recharge modal end -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1454,38 +1462,39 @@
     <!-- slider js  -->
     <script>
         var swiper = new Swiper(".cardSwiper", {
-    navigation: {
-        nextEl: ".swiper-button-next-unique",
-        prevEl: ".swiper-button-prev-unique",
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 3,
-            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next-unique",
+                prevEl: ".swiper-button-prev-unique",
+            },
+            breakpoints: {
+            0: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            430: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+            576: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 17,
+            },
+            992:{
+                slidesPerView: 6,
+                spaceBetween: 17,
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+            },
         },
-        430: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-        },
-        576: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 5,
-            spaceBetween: 17,
-        },
-        992:{
-            slidesPerView: 6,
-          spaceBetween: 17,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 20,
-        },
-      },
-    });
+        });
     </script>
+
     <script type="text/javascript">
         function rangeSlide(value) {
             document.getElementById('rangeValue').innerHTML = value;
