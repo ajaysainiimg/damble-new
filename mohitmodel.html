@@ -80,7 +80,7 @@
 
     <!-- User Information model start-->
     <div class="modal fade userInfoModel" id="userinfoone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog userInfocontent modalMain">
+        <div class="modal-dialog userInfocontent modalMain modal-dialog-centered ">
             <div class="modal-content modalContentall userinforcard ">
                 <div class="modal-header modalHeaderAll userinfoHeader py-0 px-2 border-0 position-relative">
                     <div class="modalHeading">User Information</div>
@@ -337,7 +337,7 @@
 
     <!-- Master Medals start -->
     <div class="modal fade mastermedal" id="mastermodel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modalMain masterModelmain">
+        <div class="modal-dialog modalMain masterModelmain modal-dialog-centered">
         <div class="modal-content modalContentall mastermedalContent">
             <div class="modal-header modalHeaderAll mastermedalHeader p-0 border-0">
                 <div class="modalHeading">
@@ -675,10 +675,9 @@
     <!-- Master Medals end -->
 
 
-
     <!-- user Information modal 2 start -->
     <div class="modal fade userInfoEdit" id="userInfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="usereditMain modal-dialog modalMain">
+        <div class="usereditMain modal-dialog modalMain  modal-dialog-centered">
             <div class="modal-content usereditcontent modalContentall">
                 <div class="modal-header modalHeaderAll p-0 border-0">
                     <div class="modalHeading d-inline-flex align-items-center">
@@ -703,7 +702,7 @@
                                 </div>
                                 <div class="editTitle text-center z-2 position-relative z-1">Edit Your Image</div>
                             </label>
-                            <input type="text" id="user" hidden>
+                            <input type="file" id="user" hidden>
                         </div>
                         <div class="col-12 usernameIpputMain px-0">
                             <label for="username" class="username">Username</label>
@@ -721,7 +720,7 @@
 
     <!-- edit image modal start -->
     <div class="modal fade editImgModal" id="editImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modalMain editimgmain">
+        <div class="modal-dialog modalMain editimgmain modal-dialog-centered">
             <div class="modal-content modalContentall editimgcontent">
                 <div class="modal-header modalHeaderAll p-0 border-0 editimgHeader">
                     <div class="modalHeading">
@@ -815,7 +814,7 @@
 
     <!-- global setting modal start -->
     <div class="modal fade globalsettingModal" id="globalsetting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog globalsettingMain modalMain">
+        <div class="modal-dialog globalsettingMain modalMain  modal-dialog-centered">
             <div class="modal-content globalsettingcontent modalContentall">
                 <div class="modal-header globalsettingHeader border-0 justify-content-end">
                     <div class="settingHeading d-flex align-items-center">
@@ -850,7 +849,6 @@
                                     </div>
                                     <div class="mt-2 d-flex flex-column">
                                         <Input class="range w-100" type="range" value="0" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
-                                        
                                         <div class="rangepermain d-flex align-items-center justify-content-end">
                                             <span id="rangeValue" class="rangeper">0</span>
                                             %
@@ -966,7 +964,7 @@
 
     <!-- vip club modal start -->
     <div class="modal fade vipclubModal" id="vipclubModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog vipclubModalMain modalMain">
+        <div class="modal-dialog vipclubModalMain modalMain  modal-dialog-centered">
             <div class="modal-content vipclubModalContent modalContentall">
                 <div class="modal-header vipclubheader modalHeaderAll p-0 px-2 border-0 align-items-start">
                     <div>
@@ -993,7 +991,7 @@
                                     <div class="viprangeMain">
                                         <div class="viprangetitle">Username</div>
                                         <div class="viprangeslider d-flex align-items-center">
-                                            <input type="range" class="viprange w-100">
+                                            <input class="viprange w-100" id="rangeInput" min="0" max="60" type="range" value="30">
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <div class="viprangecount">0 <span class="fw-medium">XP</span></div>
@@ -1363,7 +1361,7 @@
 
     <!-- privacy two modal start -->
     <div class="modal fade privacytwoModal" id="privacytwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modalMain privacytwomain">
+        <div class="modal-dialog modalMain privacytwomain  modal-dialog-centered">
             <div class="modal-content modalContentall privacytwocontent">
                 <div class="modal-header modalHeaderAll p-0 border-0">
                     <div class="modalHeading d-inline-flex align-items-center">
@@ -1422,9 +1420,9 @@
     </div>
     <!-- privacy two modal end -->
 
-    <!-- racharge modal start -->
+    <!-- recharge modal start -->
     <div class="modal fade rechargeModal" id="recharge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modalMain rechargeModalMain">
+        <div class="modal-dialog modalMain rechargeModalMain  modal-dialog-centered">
         <div class="modal-content modalContentall rechargeModalContent">
             <div class="modal-header modalHeaderAll border-0 p-0">
                 <div class="modalHeading d-inline-flex align-items-center">
@@ -1437,14 +1435,44 @@
             </div>
             <div class="modalLine my-3"></div>
             <div class="modal-body rechargeBody p-0">
-                <div class="row">
+                <div class="row mx-0">
                     <div class="col-12 px-0">
-                        <div class="information d-flex align-items-center justify-content-between ms-auto">
+                        <a href="javascript:;" class="information d-flex align-items-center justify-content-between ms-auto">
                             <img src="assets/Img/mohitModel/information.png" alt="information" class="h-100 w-100 img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-12 px-0 mt-4">
+                        <div class="recharImg mx-auto">
+                            <img src="assets/Img/mohitModel/rechargeImg.png" alt="recharge" class="h-100 w-100 img-fluid">
                         </div>
                     </div>
-                    <div class="col-12 px-0">
-                        <div class=""></div>
+                    <div class="col-12 rechargeHeading text-center px-0">Meet the conditions</div>
+                    <div class="col-12 rechargeTitle text-center px-0">To be eligible for requesting recharge</div>
+                    <div class="col-12 px-0 ">
+                        <div class="rechargeBtnMain d-flex align-items-center">
+                            <input id="rechargeone" class="radio-custom input-group-field form-check-input shadow-none m-0 rechargeCheck" name="radio-group" type="radio">
+                            <label for="rechargeone" class="radio-custom-label rechargeLabel d-flex align-items-center justify-content-between w-100">
+                                Wager $1000 in the last 7 days
+                                <span class="rechargeBtnTitle">
+                                    0
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0 pt-2">
+                        <div class="rechargeBtnMain d-flex align-items-center">
+                            <input id="rechargetwo" class="radio-custom input-group-field form-check-input shadow-none m-0 rechargeCheck" name="radio-group" type="radio">
+                            <label for="rechargetwo" class="radio-custom-label rechargeLabel d-flex align-items-center justify-content-between w-100">
+                                Level up to VIP20
+                                <span class="rechargeBtnTitle">
+                                    VIP0
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 rechargeRefresh px-0 text-center">Refresh every 10 minutes</div>
+                    <div class="col-12 px-0 text-center">
+                        <a href="javascript:;" class="text-decoration-none requestBtn">Request</a>
                     </div>
                 </div>
             </div>
@@ -1499,6 +1527,20 @@
         function rangeSlide(value) {
             document.getElementById('rangeValue').innerHTML = value;
         }
+    </script>
+
+    <!-- range slider -->
+    <script>
+        const slider = document.getElementById("rangeInput")
+        const min = slider.min
+        const max = slider.max
+        const value = slider.value
+
+        slider.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${(value-min)/(max-min)*100}%, #DEE2E6 ${(value-min)/(max-min)*100}%, #DEE2E6 100%)`
+
+        slider.oninput = function() {
+            this.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 100%)`
+        };
     </script>
 </body>
 </html>
