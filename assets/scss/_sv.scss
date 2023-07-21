@@ -3759,31 +3759,7 @@
                                     background-image: url(../img/global/right-chevron.png);
                                 }
                             }
-                            & .form-switch {
-                                min-height: 0px !important;
-
-                                & .form-check-input {
-                                    width: 40px;
-                                    height: 15px;
-                                    background-repeat: no-repeat;
-                                    --bs-form-switch-bg:url(../img/global/checkbtn.png);
-                                    --bs-form-check-bg: rgba(147, 172, 211, 0.078);i
-    
-                                    
-                                    &:focus {
-                                        border-color: lighten($black, 90);
-                                        // background-image: none;
-                                        // background:url(../img/global/checkbtn2.png);
-                                    }
-                                }
-                                & .form-check-input:checked {
-    
-                                    width: 40px;
-                                    height: 15px;
-                                    background-color: #93acd3 !important;
-                                    background-image: url(../img/global/checkbtn2.png) !important;
-                                }
-                            }
+                        
                         }
                         & .pera {
                             color: rgba(147, 172, 211, 0.5);
@@ -4214,32 +4190,10 @@
                                                                
                                                              }
                                                            }
-                                                         & .form-select {
-                                                         }
+                                                     
                                                        
                                                      }
-                                                     & .switch {
-                                                         & input{
-                                                            
-                                                         }
-                                                         input:focus + .slider {
-                                                            
-                                                           }
-                                                           
-                                                           input:checked + .slider:before {
-                                                         
-                                                           }
-                                                         & .slider {
-                                                             &::before{
-                                                             }
-                                                             &.round {
-                                                    
-                                                                 &::before {
-                                                                  
-                                                                   }
-                                                               }
-                                                           }
-                                                     }
+                                              
                                                   
                                                  }
                                                  & .pera{
@@ -4477,31 +4431,10 @@
                                                             &::before{
                                                             }
                                                           }
-                                                        & .form-select {
-                                                        }
+                                                    
                                                       
                                                     }
-                                                    & .switch {
-                                                        & input{
-                                                           
-                                                        }
-                                                        input:focus + .slider {
-                                                    
-                                                          }
-                                                          
-                                                          input:checked + .slider:before {
-                                              
-                                                          }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                                &::before {
-                                                                   
-                                                                  }
-                                                              }
-                                                          }
-                                                    }
+                                                 
                                                     & .lightBtn{
                                                         & .btnImg{
                                                         
@@ -4539,28 +4472,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .switch {
-                                                        & input{
-                                                           
-                                                        }
-                                                        input:focus + .slider {
-                                                           
-                                                          }
-                                                          
-                                                          input:checked + .slider:before {
-                                                        
-                                                          }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                   
-                                                                &::before {
-                                                                 
-                                                                  }
-                                                              }
-                                                          }
-                                                    }
+                                               
                                                  
                                                 }
                                                 & .pera{
@@ -5120,18 +5032,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .form-switch {
-                                                        & .form-check-input {
-                                                            
-                                                            &:focus {
-                                                           
-                                                            }
-                                                        }
-                                                        & .form-check-input:checked {
-                            
                                               
-                                                        }
-                                                    }
                                                     & .lightBtn{
                                                         & .btnImg{
                                                         
@@ -5169,18 +5070,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .form-switch {
-                                                        & .form-check-input {
-                                                            
-                                                            &:focus {
-                                                           
-                                                            }
-                                                        }
-                                                        & .form-check-input:checked {
-                            
-                                              
-                                                        }
-                                                    }
+                                               
                                                  
                                                 }
                                                 & .pera{
@@ -6999,6 +6889,90 @@
                 }
             }
         }
+
+    }
+    // <!-- vip card modal -->
+    & .vipCardSection{
+    
+        & .outterCard{
+            position: relative;
+            overflow: hidden;
+            height: 239px;
+            &::before{
+                position: absolute;
+                content: '';
+                border-radius: 22px;
+                // background: linear-gradient(360deg, #FFD700 0%, rgba(22, 31, 44, 0.00) 100%);
+                background: linear-gradient(360deg, #FFD700 -257%, rgba(22, 31, 44, 0) 100%);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                 z-index: -1;
+            }
+            & .vipContent{
+                padding: 29px 49px 22px 22px;
+                & .vipSubHeading{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    & .vipSubHeadingsp{
+                        font-size: 17px;
+                        color: #fff;
+                    }
+                }
+                & .vipHeading{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+                & .vipImg{
+                    width: 62px;
+                    height: 62px;
+                }
+
+               & .range {
+                    width: 100%;
+                    height: 6px;    
+                    -webkit-appearance: none;
+                    outline: none;
+                    // overflow: hidden;
+                    border-radius: 7px;
+                    background: linear-gradient(270deg, rgba(255, 215, 0, 0.50) 60.94%, rgba(255, 215, 0, 0.00) 100%);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                   & .range::-webkit-slider-thumb {
+                    //   -webkit-appearance: none;
+                      width: 24px;
+                      height: 11px;
+                      border-radius: 7px;
+                      background: rgba(147, 172, 211, 0.50) !important;
+                      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                      cursor: pointer;
+                      border: 4px solid #333;
+                      // box-shadow: -407px 0 0 400px #00fd0a;
+                    }
+                  }
+                  & .customRange1{
+                    color: #fff;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    &.customRange2{
+                        color: #FFD700;
+                    }
+                  }
+            }
+        }
     }
 }
 
@@ -7598,6 +7572,44 @@
             
             }
         }
+        // vip card section 
+        & .vipCardSection{
+       
+            & .outterCard{
+            height: 145px;
+                &::before{
+                }
+                & .vipContent{
+                    padding: 15px;
+                    & .vipSubHeading{
+                        font-size: 12px;
+                        & .vipSubHeadingsp{
+                            font-size: 12px;
+                        }
+                    }
+                    & .vipHeading{
+                        font-size: 22px;
+                    }
+                    & .vipImg{
+                        width: 40px;
+                        height: 40px;
+                    }
+    
+                   & .range {
+                 
+                       & .range::-webkit-slider-thumb {
+           
+                        }
+                      }
+                      & .customRange1{
+                        font-size: 12px;
+                        &.customRange2{
+                            font-size: 12px;
+                        }
+                      }
+                }
+            }
+        }
     }
 }
 
@@ -8106,6 +8118,45 @@
             
             }
         }
+            // vip card section 
+            & .vipCardSection{
+       
+                & .outterCard{
+                    height: 129px;
+                    &::before{
+                    }
+                    & .vipContent{
+                    padding: 15px;
+
+                        & .vipSubHeading{
+                            font-size: 10px;
+                            & .vipSubHeadingsp{
+                                font-size: 10px;
+                            }
+                        }
+                        & .vipHeading{
+                            font-size: 20px;
+                        }
+                        & .vipImg{
+                            width: 33px;
+                            height: 33px;
+                        }
+        
+                       & .range {
+                     
+                           & .range::-webkit-slider-thumb {
+               
+                            }
+                          }
+                          & .customRange1{
+                            font-size: 10px;
+                            &.customRange2{
+                                font-size: 10px;
+                            }
+                          }
+                    }
+                }
+            }
     }
 }
 @media screen and (max-width: 430px) {
@@ -8183,6 +8234,45 @@
                      
                         }
                     }
+                }
+            }
+        }
+        // vip card section 
+        & .vipCardSection{
+       
+            & .outterCard{
+                height: 129px;
+                &::before{
+                }
+                & .vipContent{
+                padding: 15px;
+
+                    & .vipSubHeading{
+                        font-size: 10px;
+                        & .vipSubHeadingsp{
+                            font-size: 10px;
+                        }
+                    }
+                    & .vipHeading{
+                        font-size: 16px;
+                    }
+                    & .vipImg{
+                        width: 33px;
+                        height: 33px;
+                    }
+    
+                   & .range {
+                 
+                       & .range::-webkit-slider-thumb {
+           
+                        }
+                      }
+                      & .customRange1{
+                        font-size: 10px;
+                        &.customRange2{
+                            font-size: 10px;
+                        }
+                      }
                 }
             }
         }

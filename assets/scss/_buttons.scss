@@ -207,3 +207,22 @@
     line-height: normal;
 }
 
+ .form-switch {
+  & .form-check-input {
+    width: 35px;
+    height: 13px;
+      background-repeat: no-repeat;
+      --bs-form-switch-bg:url(../img/global/checkbtn.png);
+      background-color: rgba(147, 172, 211, 0.08);
+  
+      &:checked {
+          background-image: url(../img/global/checkbtn.png);
+        // background-color: rgba(243,236,255,.59);
+      }
+      &:focus {
+          border-color: lighten($black, 90);
+          // background-image: none;
+          background-image: url(../img/global/checkbtn.png);
+      }
+  }
+}
