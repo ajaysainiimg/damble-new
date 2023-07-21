@@ -221,11 +221,22 @@
           border-color: $theme1;
           background-color: rgba(147, 172, 211, 0.08);
           background-image: url(../img/mohitModel/switch.png);
+          background-image: url(../img/global/checkbtn.png);
+        }
       }
-      &:focus {
-          border-color: lighten($black, 90);
-          // background-image: none;
-          // background:url(../img/Index/radioicon.svg);
-      }
+    }
+  .form-switch {
+    & .form-check-input {
+      width: 35px;
+      height: 13px;
+        background-repeat: no-repeat;
+        --bs-form-switch-bg:url(../img/global/checkbtn.png);
+        background-color: rgba(147, 172, 211, 0.08);
+        &:checked {
+            background-image: url(../img/global/checkbtn.png);
+        }
+        &:focus {
+            border-color: lighten($black, 90);
+        }
+    }
   }
-}
