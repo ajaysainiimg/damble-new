@@ -1188,12 +1188,13 @@
             height: 0.6px;
             margin: 13px 0 6px 0;
         }
+        
     }
 }
 // all model start
 
 
-// ********* user information model start ********
+// ********* user information modall start ********
 .userInfoModel {
     & .userInfocontent {
         & .userinforcard {
@@ -1418,7 +1419,7 @@
         }
     }
 }
-// ********* user information model end ********
+// ********* user information modal end ********
 
 // ********* master medal modal start ********
 .mastermedal {
@@ -1602,7 +1603,7 @@
 }
 // ********* master medal  modal end ********
 
-// ********* user information medal start ********
+// ********* user information modal start ********
 .userInfoEdit {
     & .usereditMain {
         & .usereditcontent {
@@ -1671,17 +1672,18 @@
         }
     }
 }
-// ********* user information medal end ********
+// ********* user information modal end ********
 
-// ********* Edit Image medal start ********
+// ********* Edit Image modal start ********
 .editImgModal {
     & .editimgmain {
         & .editimgcontent {
-            padding: 16px 13px 20px 13px;
+            padding: 16px 13px 29px 13px;
             & .editimgHeader {
 
             }
             & .editimgbody {
+                padding: 17px 7px 0px 7px;
                 & .editimgCard {
                     border-radius: 7px;
                     background: rgba(147, 172, 211, 0.50);
@@ -1715,12 +1717,474 @@
                         height: 14px;
                         width: 14px;
                     }
+                    & .rangeInput {
+                        -webkit-appearance: none;
+                        background: #93ACD3;
+                        height: 3px;
+                    }
+                    & ::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        cursor: pointer;
+                        height: 22px;
+                        width: 22px;
+                        background: url(../Img/mohitModel/rangeplay.png);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }    
+                }
+                & .defaoultImgMain {
+                    padding-top: 58px;
+                    & .defaoultImgtitle {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                        padding-bottom: 13px;
+                    }
+                    & .defaoultImgcontent {
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.20);
+                        padding: 21px 30px 21px 13px; 
+                        & .defaoultImg {
+                            gap: 10px;
+                            & .defaoulticon {
+                                height: 43px;
+                                width: 43px;
+                            }
+                        }
+                        & .plusIcon {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+                }
+                & .dontBtnMain {
+                    padding-top: 33px;
+                    & .doneBtn {
+                        padding: 6px 31px;
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: normal;
+                        border-radius: 7px;
+                        background: #00990A;
+                        transition: all 0.3s ease-in-out;
+                    }
                 }
             }
         }
     }
 }
-// ********* Edit Image medal end ********
+// ********* Edit Image modal end ********
+
+// ********* Global setting modal start ********
+.globalsettingModal {
+    & .globalsettingMain {
+        max-width: 562px;
+        & .globalsettingcontent {
+            border-radius: 0px 13px 13px 13px;
+            padding: 15px 13px 24px 15px;
+            & .globalsettingHeader {
+                padding: 0 5px 21px 5px;
+                & .settingHeading {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: normal;
+                    gap: 10px;
+                    & .settingIcon {
+                        height: 19px;
+                        width: 19px;
+
+                    }
+                }
+            }
+            & .globalsettingBody {
+                & .globalusernameContent {
+                    padding: 12px 9px;
+                    border-radius: 0px 7px 7px 7px;
+                    background: rgba(147, 172, 211, 0.08);
+                    gap: 15px;
+                    & .usernameIcon {
+                        max-width: 76px;
+                        max-height: 76px;
+                    }
+                    & .gloablSettingTitle {
+                        color: #FFF;
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    & .globalMedalIcon {
+                        width: 19px;
+                        height: 19px;
+                    }
+                    & .globalViptitle {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & .rangepermain {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 600;
+                        line-height: normal;
+                        padding-top: 12px;
+                    }
+                    & .range {
+                        // width: 400px;
+                        height: 6px;
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.30);
+                        -webkit-appearance: none;
+                        outline: none;
+                        border-radius: 15px;
+                        overflow: hidden;
+                    }
+                    & .range::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        width: 13px;
+                        height: 6px;
+                        border-radius: 7px;
+                        background: #FFF;
+                        cursor: pointer;
+                        border: 4px solid #FFF;
+                        box-shadow: -407px 0 0 400px #FFF;
+                    }
+                    & .globalviptag {
+                        max-width: 30px;
+                        max-height: 30px;
+                        top: -15px;
+                        left: 16%;
+                    }
+                }
+                & .globalBtnMain {
+                    border-radius: 0px 7px 7px 7px;
+                    background: rgba(147, 172, 211, 0.08); 
+                    margin-top: 12px;
+                    padding: 22px 42px 37px 42px;
+                    & .globalsettingBtn {
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                        padding: 9px 0 9px 20px;
+                        gap: 13px;
+                        border-radius: 7px;
+                        transition: all 0.3s ease-in-out;
+                        & .globalBtnicon {
+                            height: 21px;
+                            width: 21px;
+                        }
+                        & .globalBtnTitle {
+                            color: #967F02;
+                        }
+                        &:hover {
+                            background: rgba(147, 172, 211, 0.25);
+                            color: #FFF;
+                        }
+                        &.active {
+                            background: rgba(147, 172, 211, 0.25);
+                            color: #FFF;
+                        }
+                    }
+                }
+                & .logoutBtnMain {
+                    padding-top: 34px;
+                    & .logOutBtn {
+                        color: rgba(246, 250, 255, 0.50);
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                        gap: 11px;
+                        & .logOutIcon {
+                            max-width: 31px;
+                            max-height: 31px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ********* Global setting modal end ********
+
+// ********* vip club modal start ********
+.vipclubModal {
+    & .vipclubModalMain {
+        max-width: 532px;
+        & .vipclubModalContent {
+            padding: 18px 16px 20px 16px;
+            & .vipclubheader {
+                & .vipclubheading {
+                    color: #FFD700;
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: normal;
+                    gap: 13px;
+                    & .vipIcon {
+                        max-width: 42px;
+                        max-height: 29px;
+                    }
+                }
+                & .vipclubtitle {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+            & .vipclubbody {
+                padding: 61px 0 0;
+                & .vipusernamemain {
+                    border-radius: 0px 7px 7px 7px;
+                    background: linear-gradient(270deg, rgba(255, 215, 0, 0.20) 0%, rgba(147, 172, 211, 0.00) 100%);
+                    padding: 16px 19px 18px 4px;
+                    & .vipusericon {
+                        max-width: 61px;
+                        max-height: 61px;
+                    }
+                    & .viprangeMain {
+                        & .viprangetitle {
+                            color: #FFF;
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        & input[type="range"]::-webkit-slider-thumb {
+                            background: red;
+                        }
+
+                        & input[type="range"]::-moz-range-thumb {
+                            background-color: red;
+                        }
+
+                        & input[type="range"]::-ms-thumb {
+                            background-color: red;
+                        }
+                        & .viprangeslider {
+                            padding: 10px 0 10px 0;
+                        }
+                        & .viprangecount {
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            & .viprangecountinner {
+                                color: #93ACD3;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+                & .vipcardMain {
+                    margin: 13px 0 99px 0;
+                    & .vipmodalCard {
+                        border-radius: 7px;
+                        padding: 10px 0 35px 0;
+                        background: rgba(147, 172, 211, 0.08);
+                        & .vipCardHeading {
+                            color: #FFF;
+                            font-size: 15px;
+                            line-height: normal;
+                        }
+                        & .vipcardtotal {
+                            color: #FFF;
+                            font-size: 20px;
+                            font-weight: 900;
+                            line-height: normal;
+                            padding-top: 13px;
+                        }
+                    }
+                    & .vipmodalCardtwo {
+                        padding-top: 6px ;
+                        background: rgba(147, 172, 211, 0.08);
+                        border-radius: 7px;
+                        & .vipmodalcardtag {
+                            padding: 3px 22px;
+                            border-radius: 4px;
+                            background: rgba(147, 172, 211, 0.08);
+                            color: #FFF;
+                            font-size: 10px;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        & .vipmodalcardpara {
+                            color: rgba(147, 172, 211, 0.50);
+                            font-size: 10px;
+                            font-weight: 500;
+                            line-height: normal;
+                            padding-top: 14px;
+                        }
+                        & .vipcardlock {
+                            max-width: 48px ;
+                            max-height: 48px;
+                            bottom: -40%;
+                            left: 50%;
+                            transform: translate(-50% , -40%);
+                        }
+                    }
+                }
+                & .vipbenefitHeading {
+                    color: #FFF;
+                    font-size: 15px;
+                    line-height: normal;
+                }
+                & .vipbenefitmain {
+                    & .benefitBtn {
+                        color: #FFF;
+                        font-size: 12px;
+                        line-height: normal;
+                        padding: 6px 9px 6px 6px ;
+                        border-radius: 7px;
+                        background: rgba(147, 172, 211, 0.08);
+                        & .benefitBtnIcon {
+                            height: 21px ;
+                            width: 21px;
+                            margin-right: 12px;
+                        }
+                        & .benefitBtnTitle {
+                            color: rgba(147, 172, 211, 0.50);
+                            font-size: 12px;
+                            line-height: normal;
+                        }
+                        &::after {
+                            background: url(../img/mohitModel/btnarrow.png) no-repeat;
+                            background-size: cover;
+                            height: 13px;
+                            width: 13px;
+                            display: flex; 
+                            align-items: center;
+                            justify-self: center;
+                            transform: rotate(180deg);
+                        }
+                        &:not(.collapsed)::after {
+                            transform: rotate(0deg);
+                        }
+                    }
+                    & .benefitBtncontent {
+                        & .accordion-body {
+                            padding: 7px 0 0 0;
+                            & .benefitBtnsubheading {
+                                color: rgba(147, 172, 211, 0.50);
+                                font-size: 10px;
+                                line-height: normal;
+                            }
+                            & .benefitBtnCard {
+                                border-radius: 3px;
+                                background: rgba(147, 172, 211, 0.08);
+                                padding: 10px 0 12px 0;
+                                & .benefitBtnCardImg {
+                                    max-width: 37px;
+                                    max-height: 37px;
+                                }
+                                & .benefitCardheading {
+                                    color: #FFF;
+                                    font-size: 8px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    padding-top: 5px;
+                                }
+                                & .benefitCardtitle {
+                                    color: rgba(147, 172, 211, 0.50);
+                                    font-size: 8px;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                                & .benefitCardcount {
+                                    color: #FFF;
+                                    font-size: 9px;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    padding-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .vipclubcurrancy {
+                    padding: 6px 0 7px 8px;
+                    color: #FFF;
+                    font-size: 9px;
+                    line-height: normal;
+                    border-radius: 3px;
+                    background: rgba(147, 172, 211, 0.08);
+                }
+                & .currancyone {
+                    padding-right: 47px;
+                }
+                & .currancytwo {
+                    padding-right: 19px;
+                }
+                & .vipclubModaltitle {
+                    color: #93ACD3;
+                    font-size: 8px;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-top: 29px;
+                }
+            }
+        }
+    }
+}
+// ********* vip club modal end ********
+
+// ********* privacy two modal start ********
+.privacytwoModal {
+    & .privacytwomain {
+        max-width: 531px;
+        & .privacytwocontent {
+            padding: 15px 19px 277px 19px;
+            & .privacytwoBody {
+                & .privacyswitch {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.08);
+                    padding: 0 11px 0 0 ;
+                    & .privacyLabel {
+                        padding: 11px 0 11px 20px;
+                        color: rgba(243, 236, 255, 0.59);
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: normal;
+                        cursor: pointer;
+                    }
+                }
+                & .privacyswitchTitle {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+// ********* privacy two modal end ********
+
+// recharge modal start
+.rechargeModal {
+    & .rechargeModalMain {
+        max-width: 398px;
+        & .rechargeModalContent {
+            padding: 13px 13px 30px 13px;
+            & .rechargeBody {
+                & .information {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+// recharge modal end
 
 // ********* model Page end ********
 
