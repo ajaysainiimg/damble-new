@@ -6560,7 +6560,7 @@
                                                 padding:7px 11px;
                                                 border: 1px solid #0D131C;
                                                 transition: all 0.3s ease-in-out;
-                                                padding: 10px;
+                                              
                                                 &:hover{
                                                     border: 1px solid #03B80F;
                                                 }
@@ -6575,7 +6575,7 @@
                                                     font-style: normal;
                                                     font-weight: 700;
                                                     line-height: normal;
-                                                    padding-left: 40px;
+                                                    padding:0px 200px 0px 40px;
                                                 }
                                             
                                             }
@@ -7230,7 +7230,49 @@
                 }
                 }
             }
+                // winnerCard 
+                & .winnerCard{
+                
+                    &::before{
+                
+                    
+                    }
+                    & .outerCard {
+                    
+                        &::before{
+                    
+                        
+                        }
+                        & .winnerCardSecton{
+                    
+                            & .WinnerHeading{
+                        
+                                &::before{
 
+                                }
+                            }
+                            & .more{
+                            
+                            }
+                            & .userImg{
+                            
+                            }
+                            & .pera{
+                
+                            }
+                            & .innerCard{
+                                & .subHeading{
+                            
+                                    & span{
+                                
+
+                                    }
+                                }
+                            }
+                        }
+                    
+                    }
+                }
               // <!--chat Rules Modal -->
             .chatModal{
                 & .modalDailog{
@@ -7753,7 +7795,7 @@
             }
                   // language 
             .languageOffcanvas{
-        
+                padding: 8px;
                     & .chatHeader{
     
                     }
@@ -7889,7 +7931,8 @@
             .userModal{
                 & .modalDailog{
                     & .modalContentUser{
-                
+                        padding: 8px;
+
                         & .modalHeader{
                             
                             & .modal-title{
@@ -7961,7 +8004,7 @@
                                         }
                                     }
                                     & .chatBtn{
-                                    
+                                    padding: 7px 8px;
                                     
                                         & .icon{
                                             &.messageIcon{
@@ -7994,7 +8037,7 @@
             & .walletModal{
                 & .modalDailog{
                     & .modalContentUser{
-                
+                        padding: 25px 13px;
                         & .modalHeader{
                         
                             & .modal-title {
@@ -8080,14 +8123,13 @@
                                     }
                                     // fait 
                                     & .outterCard2{
-                            
+                                        padding: 8px 8px 8px 8px;
                                     
                                         &::before{
                             
                                         
                                         }
                                         & .criptoContent{
-                                        
                                             & .innerCard{
                                     
                                                 &:hover{
@@ -8098,7 +8140,8 @@
                                                 }
                                             
                                                 & .heading{
-                                            
+                                                    padding:0px 50px 0px 20px;
+
                                                 }
                                             
                                             }
@@ -8161,7 +8204,7 @@
 }
 @media screen and (max-width: 430px) {
     .aboutJonathan {
-        padding: 41px 11px 75px 11px;
+        padding: 41px 11px 0px 11px;
 
         & .aboutJonathanSection {
             & .sectionHeading {
@@ -8236,7 +8279,52 @@
                     }
                 }
             }
+
+                // winnerCard 
+                & .winnerCard{
+                
+                    &::before{
+                right: 35px;
+                    
+                    }
+                    & .outerCard {
+                    
+                        &::before{
+                    
+                        
+                        }
+                        & .winnerCardSecton{
+                    
+                            & .WinnerHeading{
+                        
+                                &::before{
+    
+                                }
+                            }
+                            & .more{
+                            
+                            }
+                            & .userImg{
+                            
+                            }
+                            & .pera{
+                
+                            }
+                            & .innerCard{
+                                & .subHeading{
+                            
+                                    & span{
+                                
+    
+                                    }
+                                }
+                            }
+                        }
+                    
+                    }
+                }
         }
+         
         // vip card section 
         & .vipCardSection{
        
@@ -8622,3 +8710,252 @@
 }
 
 // <!-- ****** [ Bounscard Section end ] ****** -->
+
+
+
+// amlPolicy section start 
+
+.amlPolicy{
+    padding: 127px 100px 0px 100px;
+    & .amlPolicySection{
+        & .amlHeading{
+            color: #FFF;
+            font-family:' Montserrat';
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            font-variant: all-small-caps;
+        }
+        & .amlSubheading{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        & .outerCard{
+            position: relative;
+            overflow: hidden;
+            margin-top:100px ;
+            &::before{
+                position: absolute;
+                content: '';
+                border-radius: 15px;
+                background: #161F2C;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                
+            }
+            & .amlPolicyContent{
+                padding: 38px 40px;
+                & .innerHeading{
+                    color: #FFD700;
+                    font-family: 'Montserrat';
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .pera{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 16px;
+                    & .linkWeb{
+                        color: #FFD700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .amlPolicy{
+        padding: 100px 100px 0px 100px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 47px;
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+            margin-top: 80px;
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+           
+                    }
+                    & .pera{
+                        font-size: 20px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .amlPolicy{
+       
+        & .amlPolicySection{
+            & .amlHeading{
+         
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+                        font-size: 27px;
+                    }
+                    & .pera{
+                        font-size: 19px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .amlPolicy{
+        padding: 80px 50px 0px 50px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 37px;
+            }
+            & .amlSubheading{
+                font-size: 17px;
+            }
+            & .outerCard{
+                margin-top: 50px;
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+                        font-size: 24px;
+                    }
+                    & .pera{
+                        font-size: 17px;
+                        padding-bottom: 13px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .amlPolicy{
+        padding: 54px 21px 0px 21px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 28px;
+            }
+            & .amlSubheading{
+                font-size: 16px;
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                    padding: 32px 23px;
+                    & .innerHeading{
+           
+                    }
+                    & .pera{
+                        font-size: 16px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .amlPolicy{
+        padding: 50px 11px 0px 11px;
+        & .amlPolicySection{
+            & .amlHeading{
+         
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                    padding: 32px 13px;
+                    & .innerHeading{
+                        font-size: 20px;
+                    }
+                    & .pera{
+                        font-size: 13px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
