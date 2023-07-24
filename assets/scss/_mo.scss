@@ -1851,7 +1851,7 @@
                         background: #FFF;
                         cursor: pointer;
                         border: 4px solid #FFF;
-                        box-shadow: -407px 0 0 400px #FFF;
+                        box-shadow: -407px 0 0 400px #868686;
                     }
                     & .globalviptag {
                         max-width: 30px;
@@ -1953,19 +1953,21 @@
                             font-weight: 600;
                             line-height: normal;
                         }
-                        & input[type="range"]::-webkit-slider-thumb {
-                            background: red;
-                        }
-
-                        & input[type="range"]::-moz-range-thumb {
-                            background-color: red;
-                        }
-
-                        & input[type="range"]::-ms-thumb {
-                            background-color: red;
-                        }
                         & .viprangeslider {
                             padding: 10px 0 10px 0;
+                        }
+                        & .viprange {
+                            border-radius: 8px;
+                            height: 6px;
+                            outline: none;
+                            -webkit-appearance: none;
+                        }
+                        & .viprange::-webkit-slider-thumb {
+                            width: 24px;
+                            -webkit-appearance: none;
+                            height: 11px;
+                            background: #FFD700;
+                            border-radius: 7px;
                         }
                         & .viprangecount {
                             color: #FFF;
@@ -2174,11 +2176,84 @@
     & .rechargeModalMain {
         max-width: 398px;
         & .rechargeModalContent {
-            padding: 13px 13px 30px 13px;
+            padding: 13px 13px 57px 13px;
             & .rechargeBody {
                 & .information {
                     height: 15px;
                     width: 15px;
+                }
+                & .recharImg {
+                    width: 196px;
+                    height: 170px;
+                }
+                & .rechargeHeading {
+                    color: #FFF;
+                    font-size: 17px;
+                    font-weight: 800;
+                    line-height: normal;
+                    padding-top: 22px;
+                }
+                & .rechargeTitle {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding-top: 2px;
+                    padding-bottom: 91px;
+                }
+                & .rechargeBtnMain {
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.08);
+                    padding-left: 11px;
+                    & .rechargeLabel {
+                        padding: 13px 16px 13px 11px;
+                        color: rgba(147, 172, 211, 0.50);
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: normal;
+                        transition: all 0.3s ease-in-out;
+                        & .rechargeBtnTitle {
+                            color: rgba(147, 172, 211, 0.50);
+                            font-size: 12px;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                    }
+                    & .rechargeCheck {
+                        height: 22px;
+                        min-width: 22px;
+                        border: 2px solid #596B86;
+                        // background: url(../Img/mohitModel/rechargeCheck.png) no-repeat;
+                        // background-size: 11px 11px;
+                        // background-position: center;
+                        background: none;
+                        transition: all 0.3s ease-in-out;
+                        &:checked[type=radio] {
+                            // filter: brightness(5);
+                            background: url(../Img/mohitModel/rechargeCheck.png) no-repeat;
+                            background-size: 11px 11px;
+                            background-position: center;
+                        }
+                    }   
+                    // & .radio-custom:checked ~ label  {
+                    //     color: $white;
+                    // }      
+                }
+                & .rechargeRefresh {
+                    color: rgba(147, 172, 211, 0.50);
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: normal;
+                    padding: 36px 0 77px 0;
+                }
+                & .requestBtn {
+                    border-radius: 7px;
+                    background: #00990A;
+                    color: #FFF;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 12px 38px;
                 }
             }
         }
@@ -4772,4 +4847,936 @@
 
 
 
+// ********* mobile cash back Page Start ********
+.mobilecashBack {
+    padding: 87px 73px 0 92px;
 
+    // ********* mobile cash back hero section start ********
+    & .cashbackHero {
+        & .mobilecaHero {
+            border-radius: 30px;
+            background: linear-gradient(135deg, #062858 0%, rgba(22, 31, 44, 0.00) 100%);
+            padding-top: 80px;
+            padding-bottom: 95px;
+            &::before {
+                content:'';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../Img/mobilecashback/mobilecashhero1.png) no-repeat;
+                z-index: -1;
+                background-position: left;
+                background-size: contain;
+            }
+            & .herocashbackImg {
+                max-width: 254.176px;
+                max-height: 222.495px;
+            }
+            & .heroHeadingImg {
+                max-width: 400px;
+            }
+            & .heropara {
+                color: #FFF;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: normal;
+                & span {
+                    color: #FFD700;
+                }
+            }
+        }
+        & .heroCardTwo {
+            margin-top: 29px;
+            & .MobileHeroCard {
+                border-radius: 20px;
+                background: #062858;
+                padding: 14px;
+                & .cardImg {
+                    max-width: 80px;
+                    max-height: 80px;
+                }
+                & .cardTitle {
+                    color: #FFF;
+                    font-size: 25px;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+                & .cardpara {
+                    color: #93ACD3;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    // ********* mobile cash back hero section end ********
+    
+    // ********* how does it work section Start ********
+    & .howdoesWork {
+        padding-top: 110px;
+        & .howworkHeading {
+            color: #FFF;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: normal;
+        }
+        & .workBtn {
+            color: #FFF;
+            font-size: 17px;
+            font-weight: 800;
+            line-height: normal;
+            padding: 13px 23px;
+            border-radius: 7px;
+            background: linear-gradient(0deg, #00A300 0%, #0F1 100%);
+        }
+        & .howworkDetail {
+            color: #93ACD3;
+            font-size: 19px;
+            font-weight: 600;
+            padding-top: 30px;
+            padding-bottom: 28px;
+            line-height: normal;
+        }
+        & .workCardMain {
+            & .howWorkCard {
+                padding: 0 10px;
+                gap: 0;
+                & .workCardImg {
+                    width: 110px;
+                    height: 90px;
+                }
+                & .workcardBody {
+                    z-index: 1;
+                    background-color: #0D131C;
+                    padding-top: 15px;
+                    margin-top: -35px;
+                    & .WorkCardcontent {
+                        border-radius: 15px;
+                        background: #062858;
+                        padding: 24px 30px;
+                        & .WorkCardTitle {
+                            color: #FFF;
+                            font-size: 20px;
+                            font-weight: 800;
+                            line-height: normal;
+                            text-align: center;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        & .WorkCardpara {
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: normal;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+            & .cardCenter {
+                &::before {
+                    content:'';
+                    position: absolute;
+                    left: -20px;
+                    bottom: 27%;
+                    height: 25px;
+                    width: 25px;
+                    // transform: translate(18px, 27%);
+                    background: url(../Img/mobilecashback/next.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            & .cardlast {
+                &::before {
+                    content:'';
+                    position: absolute;
+                    left: -20px;
+                    bottom: 27%;
+                    height: 25px;
+                    width: 25px;
+                    // transform: translate(18px, 27%);
+                    background: url(../Img/mobilecashback/next.png) no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+    // ********* how does it work section end ********
+
+    // ********* cashback rank section Start ********
+    & .cashbackrankSection {
+        padding-top: 105px;
+        & .cashrankHeading {
+            color: #FFF;
+            font-size: 45px;
+            font-weight: 800;
+            line-height: normal;
+        }
+        & .cashrankDetail {
+            color: #93ACD3;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 30px;
+        }
+        & .exploreBtn {
+            color: #0F1;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .cashCardMain {
+            margin-top: 70px;
+            gap: 70px 0;
+            border-radius: 30px;
+            background: linear-gradient(0deg, #062858 0%, rgba(22, 31, 44, 0.00) 20%);
+            padding-bottom: 38px;
+            & .cashCard {
+                border-radius: 20px;
+                background: linear-gradient(360deg, rgba(16, 21, 35, 0.50) 53.13%, rgba(66, 120, 195, 0.50) 100%);
+                border: 2px solid #00990A;
+                & .cashCardImg {
+                    height: 75px;
+                    width: 110px;
+                    margin-top: -30px;
+                    & img {
+                        object-fit: cover;
+                    }
+                }
+                & .cashCardImgtwo {
+                    height: 90px;
+                    margin-top: -42px;
+                    width: 130px;
+                }
+                & .cashCardTitle {
+                    color: #FFF;
+                    font-size: 10.5px;
+                    font-weight: 900;
+                    line-height: normal;
+                    padding: 8px 0;
+                }
+                & .cashCardper {
+                    color: #FFD700;
+                    font-size: 35px;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+                & .cashCardcount {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+    // ********* cashback rank section end ********
+
+    // ********* faq section end ********
+    & .faqSection {
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
+        padding: 33px 25px 75px 26px;
+        margin-top: 88px;
+        & .faqHeading {
+            color: #FFF;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: normal;
+            padding-bottom: 80px;
+        }
+        & .faqMain {
+            & .accordion-item {
+                border-bottom: 1px solid #FFD700;
+                & .faqBtn {
+                    padding:0 0  24px 0;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: normal;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -2px;
+                        right: -3px;
+                        height: 23px;
+                        width: 23px;
+                        background-position: center;
+                        background: url(../Img/mobilecashback/faq.png) no-repeat;
+                        background-size: cover;
+                        transition: all 0.3s ease-in-out;
+                        transform: rotate(180deg);
+                    }
+                    &:not(.collapsed){
+                        &::after {
+                            transform: rotate(0);
+                        }
+                    }
+                }
+                & .faqcontent {
+                    & .faqBody {
+                        padding-bottom: 24px;
+                        color: #93ACD3;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+    // ********* faq section end ********
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .mobilecashBack {
+        padding: 87px 55px 0 75px;
+        // ********* mobile cash back hero section Start ********
+        & .cashbackHero {
+            & .mobilecaHero {
+                &::before {
+                }
+                & .heroImgone {
+                }
+                & .herocashbackImg {
+                }
+                & .heroHeadingImg {
+                }
+                & .heropara {
+                    & span {
+                    }
+                }
+            }
+            & .heroCardTwo {
+                & .MobileHeroCard {
+                    & .cardImg {
+                    }
+                    & .cardTitle {
+                    }
+                    & .cardpara {
+                    }
+                }
+            }
+        }
+        // ********* mobile cash back hero section end ********
+
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .mobilecashBack {
+        padding: 70px 50px 0 60px;
+        // ********* mobile cash back hero section Start ********
+        & .cashbackHero {
+            & .mobilecaHero {
+                padding-top:65px;
+                padding-bottom: 75px;
+                &::before {
+                }
+                & .heroImgone {
+                }
+                & .herocashbackImg {
+                    max-width: 200px;
+                    max-height: 165px;
+                }
+                & .heroHeadingImg {
+                    max-width: 340px;
+                }
+                & .heropara {
+                    font-size: 24px;
+                    & span {
+                    }
+                }
+            }
+            & .heroCardTwo {
+                & .MobileHeroCard {
+                    & .cardImg {
+                    }
+                    & .cardTitle {
+                    }
+                    & .cardpara {
+                    }
+                }
+            }
+        }
+        // ********* mobile cash back hero section end ********
+
+         // ********* how does it work section Start ********
+        & .howdoesWork {
+            padding-top: 100px;
+            & .howworkHeading {
+                font-size: 40px;
+            }
+            & .workBtn {
+            }
+            & .howworkDetail {
+                font-size: 18px;
+            }
+            & .workCardMain {
+                & .howWorkCard {
+                    & .workCardImg {
+                        & img {
+                        }
+                    }
+                    & .workcardBody {
+                        & .WorkCardcontent {
+                            & .WorkCardTitle {
+                            }
+                            & .WorkCardpara {
+                            }
+                        }
+                    }
+                }
+                & .cardCenter {
+                    &::before {
+                    }
+                }
+                & .cardlast {
+                    &::before {
+                    }
+                }
+            }
+        }
+        // ********* how does it work section end ********
+
+        // ********* cashback rank section Start ********
+        & .cashbackrankSection {
+            padding-top: 100px;
+            & .cashrankHeading {
+                font-size: 40px;
+            }
+            & .cashrankDetail {
+                font-size: 18px;
+                padding-bottom: 25px;
+            }
+            & .exploreBtn {
+                font-size: 18px;
+            }
+            & .cashCardMain {
+                gap: 66px 0;
+                & .cashCard {
+                    & .cashCardImg {
+                        & img {
+                        }
+                    }
+                    & .cashCardImgtwo {
+                    }
+                    & .cashCardTitle {
+                    }
+                    & .cashCardper {
+                    }
+                    & .cashCardcount {
+                    }
+                }
+            }
+        }
+        // ********* cashback rank section end ********
+
+        // ********* faq section end ********
+        & .faqSection {
+            margin-top: 83px;
+            & .faqHeading {
+                font-size: 40px;
+            }
+            & .faqMain {
+                & .accordion-item {
+                    & .faqBtn {
+                        &::after {
+                        }
+                        &:not(.collapsed){
+                            &::after {
+                            }
+                        }
+                    }
+                    & .faqcontent {
+                        & .faqBody {
+                        }
+                    }
+                }
+            }
+        }
+        // ********* faq section end ********
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .mobilecashBack {
+        padding: 70px 40px 0 40px;
+        // ********* mobile cash back hero section Start ********
+        & .cashbackHero {
+            & .mobilecaHero {
+                padding-top:55px;
+                padding-bottom: 65px;
+                &::before {
+                }
+                & .heroImgone {
+                    max-width: 260px;
+                }
+                & .herocashbackImg {
+                    max-width: 175px;
+                    max-height: 145px;
+                }
+                & .heroHeadingImg {
+                    max-width: 340px;
+                }
+                & .heropara {
+                    font-size: 23px;
+                    & span {
+                    }
+                }
+            }
+            & .heroCardTwo {
+                & .MobileHeroCard {
+                    & .cardImg {
+                    }
+                    & .cardTitle {
+                    }
+                    & .cardpara {
+                    }
+                }
+            }
+        }
+        // ********* mobile cash back hero section end ********
+
+        // ********* how does it work section Start ********
+        & .howdoesWork {
+            padding-top: 90px;
+            & .howworkHeading {
+                font-size: 35px;
+            }
+            & .workBtn {
+            }
+            & .howworkDetail {
+                font-size: 17px;
+            }
+            & .workCardMain {
+                & .howWorkCard {
+                    padding: 24px 20px;
+                    & .workCardImg {
+                        & img {
+                        }
+                    }
+                    & .workcardBody {
+                        & .WorkCardcontent {
+                            & .WorkCardTitle {
+                                font-size: 19px;
+                            }
+                            & .WorkCardpara {
+                            }
+                        }
+                    }
+                }
+                & .cardCenter {
+                    &::before {
+                    }
+                }
+                & .cardlast {
+                    &::before {
+                    }
+                }
+            }
+        }
+       // ********* how does it work section end ********
+
+       // ********* cashback rank section Start ********
+        & .cashbackrankSection {
+            padding-top: 80px;
+            & .cashrankHeading {
+                font-size: 35px;
+            }
+            & .cashrankDetail {
+                font-size: 17px;
+                padding-bottom: 21px;
+            }
+            & .exploreBtn {
+                font-size: 17px;
+            }
+            & .cashCardMain {
+                gap: 62px 0;
+                & .cashCard {
+                    & .cashCardImg {
+                        & img {
+                        }
+                    }
+                    & .cashCardImgtwo {
+                    }
+                    & .cashCardTitle {
+                    }
+                    & .cashCardper {
+                    }
+                    & .cashCardcount {
+                    }
+                }
+            }
+        }
+       // ********* cashback rank section end ********
+
+        // ********* faq section end ********
+        & .faqSection {
+            margin-top: 70px;
+            & .faqHeading {
+                font-size: 35px;
+            }
+            & .faqMain {
+                & .accordion-item {
+                    & .faqBtn {
+                        &::after {
+                        }
+                        &:not(.collapsed){
+                            &::after {
+                            }
+                        }
+                    }
+                    & .faqcontent {
+                        & .faqBody {
+                        }
+                    }
+                }
+            }
+        }
+        // ********* faq section end ********
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .mobilecashBack {
+        padding: 65px 30px 0 30px;
+        // ********* mobile cash back hero section Start ********
+        & .cashbackHero {
+            & .mobilecaHero {
+                padding-top:45px;
+                padding-bottom: 55px;
+                padding: 20px;
+                &::before {
+                    background-position: center;
+                }
+                & .heroImgone {
+                    max-width: 260px;
+                }
+                & .herocashbackImg {
+                    max-width: 155px;
+                    max-height: 125px;
+                    margin: 30px 0;
+                }
+                & .heroHeadingImg {
+                }
+                & .heropara {
+                    font-size: 22px;
+                    & span {
+                    }
+                }
+            }
+            & .heroCardTwo {
+                & .MobileHeroCard {
+                    & .cardImg {
+                    }
+                    & .cardTitle {
+                    }
+                    & .cardpara {
+                    }
+                }
+            }
+        }
+        // ********* mobile cash back hero section end ********
+
+        // ********* how does it work section Start ********
+        & .howdoesWork {
+            padding-top: 85px;
+            & .howworkHeading {
+                font-size: 30px
+            }
+            & .workBtn {
+                margin-bottom: 48px;
+            }
+            & .howworkDetail {
+                font-size: 16px;
+                padding-top: 14px;
+                padding-bottom: 60px;
+            }
+            & .workCardMain {
+                gap: 50px;
+                & .howWorkCard {
+                    border-radius: 15px;
+                    background: #062858;
+                    padding: 40px 30px;
+                    gap: 50px;
+                    align-items: center;
+                    & .workCardImg {
+                        min-width: 100px;
+                        height: 54px;
+                        & img {
+                        }
+                    }
+                    & .workcardBody {
+                        background-color: transparent;
+                        padding: 0;
+                        margin: 0;
+                        & .WorkCardcontent {
+                            padding: 0;
+                            margin: 0;
+                            & .WorkCardTitle {
+                                text-align: start;
+                            }
+                            & .WorkCardpara {
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+                & .cardCenter {
+                    &::before {
+                        top: -33px;
+                        left: 50%;
+                        transform: rotate(90deg);
+                    }
+                }
+                & .cardlast {
+                    &::before {
+                        top: -33px;
+                        left: 50%;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+        // ********* how does it work section end ********
+
+        // ********* cashback rank section Start ********
+        & .cashbackrankSection {
+            padding-top: 80px;
+            & .cashrankHeading {
+                font-size: 30px;
+            }
+            & .cashrankDetail {
+                font-size: 16px;
+                padding-bottom: 18px;
+            }
+            & .exploreBtn {
+                font-size: 16px;
+            }
+            & .cashCardMain {
+                gap: 58px 0;
+                & .cashCard {
+                    & .cashCardImg {
+                        & img {
+                        }
+                    }
+                    & .cashCardImgtwo {
+                    }
+                    & .cashCardTitle {
+                    }
+                    & .cashCardper {
+                    }
+                    & .cashCardcount {
+                    }
+                }
+            }
+        }
+        // ********* cashback rank section end ********
+
+        // ********* faq section end ********
+        & .faqSection {
+            margin-top: 65px;
+            & .faqHeading {
+                font-size: 30px;
+                text-align: start;
+            }
+            & .faqMain {
+                & .accordion-item {
+                    & .faqBtn {
+                        &::after {
+                        }
+                        &:not(.collapsed){
+                            &::after {
+                            }
+                        }
+                    }
+                    & .faqcontent {
+                        & .faqBody {
+                        }
+                    }
+                }
+            }
+        }
+        // ********* faq section end ********
+
+    }
+
+}
+
+@include media-breakpoint-down(sm) {
+    .mobilecashBack {
+        padding: 54px 11px 0 11px;
+        // ********* mobile cash back hero section Start ********
+        & .cashbackHero {
+            & .mobilecaHero {
+                padding-top: 34px;
+                padding-bottom: 45px;
+                border-radius: 10px;
+                &::before {
+                }
+                & .heroImgone {
+                    max-width: 230px;
+                }
+                & .herocashbackImg {
+                    max-width: 119px;
+                    max-height: 104px;
+                    margin: 23px 0;
+                }
+                & .heroHeadingImg {
+                }
+                & .heropara {
+                    font-size: 20px;
+                    & span {
+                    }
+                }
+            }
+            & .heroCardTwo {
+                & .MobileHeroCard {
+                    & .cardImg {
+                    }
+                    & .cardTitle {
+                    }
+                    & .cardpara {
+                    }
+                }
+            }
+        }
+        // ********* mobile cash back hero section end ********
+
+        // ********* how does it work section Start ********
+        & .howdoesWork {
+            padding-top: 72px;
+            & .howworkHeading {
+                font-size: 25px
+            }
+            & .workBtn {
+                margin-bottom: 42px;
+            }
+            & .howworkDetail {
+                font-size: 15px;
+                padding-top: 11px;
+                padding-bottom: 51px;
+            }
+            & .workCardMain {
+                gap: 43px;
+                & .howWorkCard {
+                    padding: 15px;
+                    gap: 35px;
+                    & .workCardImg {
+                        min-width: 70px;
+                        height: 50px;
+                    }
+                    & .workcardBody {
+                        & .WorkCardcontent {
+                            & .WorkCardTitle {
+                            }
+                            & .WorkCardpara {
+                            }
+                        }
+                    }
+                }
+                & .cardCenter {
+                    &::before {
+                    }
+                }
+                & .cardlast {
+                    &::before {
+                    }
+                }
+            }
+        }
+       // ********* how does it work section end ********
+
+        // ********* cashback rank section Start ********
+        & .cashbackrankSection {
+            padding-top: 70px;
+            & .cashrankHeading {
+                font-size: 25px;
+            }
+            & .cashrankDetail {
+                font-size: 15px;
+                padding-bottom: 13px;
+            }
+            & .exploreBtn {
+                font-size: 14px;
+            }
+            & .cashCardMain {
+                padding-bottom: 0;
+                background: none;
+                gap: 54px 0;
+                & .cashCard {
+                    & .cashCardImg {
+                        height: 60px;
+                        width: 90px;
+                        & img {
+                        }
+                    }
+                    & .cashCardImgtwo {
+                    }
+                    & .cashCardTitle {
+                    }
+                    & .cashCardper {
+                    }
+                    & .cashCardcount {
+                    }
+                }
+            }
+        }
+        // ********* cashback rank section end ********
+
+        // ********* faq section end ********
+        & .faqSection {
+            margin-top: 58px;
+            & .faqHeading {
+                font-size: 23px;
+            }
+            & .faqMain {
+                & .accordion-item {
+                    & .faqBtn {
+                        &::after {
+                            height: 12px;
+                        }
+                        &:not(.collapsed){
+                            &::after {
+                            }
+                        }
+                    }
+                    & .faqcontent {
+                        & .faqBody {
+                        }
+                    }
+                }
+            }
+        }
+        // ********* faq section end ********
+
+    }
+}
+// ********* mobile cash back Page end ********
