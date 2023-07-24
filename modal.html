@@ -44,7 +44,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
-    <link rel="canonical" href="" />
+    <link rel="canonical" href=""/>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
@@ -69,6 +69,7 @@
                             </div>
                         </div>
                         <div class="modal-body optionsModalBody">
+                            <!-- main tabs start -->
                             <ul class="nav nav-pills navPillsUl g-3 row" id="pills-tab1" role="tablist">
                             <li class="nav-item navItems col" role="presentation">
                                 <button class="nav-link navLink p-0 active" id="wallet1-tab" data-bs-toggle="pill" data-bs-target="#wallet1" type="button" role="tab" aria-controls="wallet1" aria-selected="true"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon1.png" alt=""><span>Deposit</span></div></button>
@@ -89,10 +90,13 @@
                                 <button class="nav-link navLink navEnd p-0" id="wallet6-tab" data-bs-toggle="pill" data-bs-target="#wallet6" type="button" role="tab" aria-controls="wallet6" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center">My NFTs</div></button>
                             </li>
                             </ul>
+                            <!-- main tabs start -->
+
                             <div class="divider mx-auto"></div>
                             <div class="tab-content tabContent" id="pills-tab1Content">
                                 <div class="tab-pane tabContentPane fade show active" id="wallet1" role="tabpanel" aria-labelledby="wallet1-tab" tabindex="0">
-                                    <div class="row depositTab d-none">
+                                    <!-- deposite tab start -->
+                                    <div class="row depositTab ">
                                         <div class="col-12">
                                             <ul class="nav nav-pills d-flex justify-content-center depositTabPills justify-content-center mb-3 mx-auto" id="pills-tab2" role="tablist">
                                                 <li class="nav-item depositTabItems col" role="presentation">
@@ -293,8 +297,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- deposite tab end -->
+
                                     <!-- assets portfolio start -->
-                                    <div class="row depositTab">
+                                    <div class="row depositTab d-none">
                                         <div class="col-12 mb-2">
                                             <div class="row depositeHeader align-items-center mx-0">
                                                 <div class="col">
