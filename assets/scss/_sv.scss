@@ -8384,7 +8384,7 @@
                             }
                             & a {
                                 & .usdt {
-                                    padding: 6px 11px;
+                                    padding: 2px 9px;
                                     border-radius: 7px;
                                     background: rgba(147, 172, 211, 0.08);
                                 }
@@ -8415,12 +8415,299 @@
                                 }
                             }
                         }
+                      
+                        & .vipDropdown{
+                          transition: all 0.3s ease-in-out;
+                          &:hover{
+                            & .dropMenu{
+                                display: block;
+                            }
+                          }
+                            & .dropToggle{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            & .dropMenu{
+                                padding-top: 10px;
+                                width: 220PX;
+                                z-index: -1;
+                                background-color: #0D131C !important;
+                                & .dropmenuItem{
+                                    color: $white;
+                                    font-size: 13px;
+                                    background-color: transparent;
+                                    transition: all 0.3s ease-in-out;
+                                    opacity: 0.4;
+                                    & .dropIcon{
+                                        width: 14px;
+                                        height: 14px;
+                                         transition: all 0.3s ease-in-out;
+
+                                    }
+                                  
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                    
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+              
+                                    & .dropmenuItem{
+                                        & .dropIcon{
+                             
+    
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                    
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+              
+                                    & .dropmenuItem{
+                                        & .dropIcon{
+                             
+    
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                padding: 0px 10px;
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                        height: 34px;
+                                         width: 34px;
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+                                    width: 250PX;
+              
+                                    & .dropmenuItem{
+                                        font-size: 16px;
+                                        & .dropIcon{
+                                            width: 18px;
+                                            height: 18px;
+    
+                                        }
+                                        &.bellicon{
+                                            width: 60px;
+                                            height: 40px;
+                                            position: relative;
+                                            &::before{
+                                                position: absolute;
+                                                content: '25';
+                                                background-color: #00990A;
+                                                border-radius: 50%;
+                                                width: 25px;
+                                                height: 25px;
+                                                top: 0;
+                                                right: 0;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                font-size: 13px;
+                                                color: $white;
+
+                                            }
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
 // header end
 
 // <!-- ****** [ Bounscard Section Start ] ****** -->
@@ -8953,6 +9240,73 @@
                         & .linkWeb{
                       
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// .spinCardSection 
+
+.spinCardSection{
+    & .spinCard{
+        background-image: url(../img/spinCard/spinBg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 394px;
+        width: 578px; 
+        position: relative;
+        & .cardBody{
+            & .headingBtn{
+              position: absolute;
+              height: 55px;
+              width: 184px;
+              right: 64px;
+              top: 177px;
+              background-image: url(../img/spinCard/headingBg.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+                & .heading{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    padding-top: 10px;
+                    
+                }
+                & .subheading{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            & .spimBtn{
+                position: absolute;
+                bottom: 64px;
+                right: 64px;
+                & .greenBtn{
+
+                    &.spinBtnbg{
+                        background-image: url(../img/spinCard/btnBg.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                     }
                 }
             }
