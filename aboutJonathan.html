@@ -89,15 +89,29 @@
 
                                 <div class=" d-flex justify-content-end align-items-end pe-0 headerMenu">
                                     <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
-                                        <li>
-                                           <a href="javascript:;" class="text-decoration-none">
-                                            <div class="row mx-0">
-                                                <div class="col-12 px-0">
+                                        <li class="dropdown vipDropdown">
+                                           <a href="javascript:;" class="text-decoration-none dropdown-toggle dropToggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="row mx-0 ">
+                                                <div class="col-auto">
+                                                    <div class="icon"> <img src="assets/img/aboutJonathan/user.png" alt="user" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col px-0">
                                                     <div class="navMenu">Username</div>
                                                     <div class="navMenu text-center"><span>VIP</span> 0</div>
                                                 </div>
                                             </div>
                                            </a>
+                                           <ul class="dropdown-menu dropMenu">
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/wallet-1.svg" alt="wallet" class="img-fluid h-100 w-100"></span> Wallet</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/withdrow.svg" alt="withdrow" class="img-fluid h-100 w-100"></span> Withdraw</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/bitcoin.svg" alt="transtion" class="img-fluid h-100 w-100"></span> Transactions</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/vio.svg" alt="vip" class="img-fluid h-100 w-100"></span> VIP Club</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/affiliate.svg" alt="affiliate" class="img-fluid h-100 w-100"></span> Affiliate</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/profile-1.svg" alt="refer to earn" class="img-fluid h-100 w-100"></span> Refer and Earn</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/profile.svg" alt="close" class="img-fluid h-100 w-100"></span> My Profile</a></li>
+                                            <li><a class="dropdown-item dropmenuItem d-flex align-items-center pb-2" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/global_setting.svg" alt="global" class="img-fluid h-100 w-100"></span> Global Settings</a></li>
+                                            <li class="py-2 border-top"><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/logout.svg" alt="logout" class="img-fluid h-100 w-100"></span> Log Out</a></li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="javascript:;" class="text-decoration-none ">
@@ -157,17 +171,99 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid headerFluidlg d-block d-lg-none">
-                <div class="row align-items-center">
-                    <div class="col-auto d-lg-none d-md-block d-none ps-0"><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
+            <div class="container-fluid headerFluid headerFluidlg d-block d-lg-none">
+                <div class="row align-items-center headerRow">
+                    <div class="col-auto d-lg-none d-md-block d-none "><button class="btn menuBtn p-0 shadow-none border-0 bg-transparent toggleButton"><img src="assets/img/Menu.png" class="w-100 menuicon" alt=""><img src="assets/img/Closeicon.png" class="w-100 closeicon" alt=""></button></div>
 
                     <div class="col d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
                         <div class="gd"><img src="assets/img/whitelogo.png" alt=""></div>
                         <div class="gdTxt"><img src="assets/img/logotxt.png" alt=""></div>
                     </div>
-                    <div class="col-auto d-flex justify-content-end align-items-end pe-sm-3 pe-1">
+                    <div class="col-auto d-flex justify-content-end align-items-end pe-sm-3 pe-1 d-none">
                         <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
                         <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
+                    </div>
+                    <div class="col-auto d-flex headerRyt justify-content-end align-items-end  ">
+                        <div class=" d-flex justify-content-end align-items-end pe-0 headerMenu">
+                            <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
+                                <li class="dropdown vipDropdown">
+                                   <a href="javascript:;" class="text-decoration-none dropdown-toggle dropToggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="row mx-0 ">
+                                        <div class="col-auto">
+                                            <div class="icon"> <img src="assets/img/aboutJonathan/user.png" alt="user" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="navMenu">Username</div>
+                                            <div class="navMenu text-center"><span>VIP</span> 0</div>
+                                        </div>
+                                    </div>
+                                   </a>
+                                    <ul class="dropdown-menu dropMenu">
+                                        <li class="py-4 d-flex align-items-center justify-content-center flex-column">
+                                            <a class="dropdown-item dropmenuItem d-flex align-items-center justify-content-center dropIcon bellicon" href="#"><img src="assets/img/header/bell.png" alt="notification" class="img-fluid h-100 w-100"></a>
+                                            <div class="dropmenuItem"> Notificationiv</div>
+                                        </li>
+                                        
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/wallet-1.svg" alt="wallet" class="img-fluid h-100 w-100"></span> Wallet</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/withdrow.svg" alt="withdrow" class="img-fluid h-100 w-100"></span> Withdraw</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/bitcoin.svg" alt="transtion" class="img-fluid h-100 w-100"></span> Transactions</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/vio.svg" alt="vip" class="img-fluid h-100 w-100"></span> VIP Club</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/affiliate.svg" alt="affiliate" class="img-fluid h-100 w-100"></span> Affiliate</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/profile-1.svg" alt="refer to earn" class="img-fluid h-100 w-100"></span> Refer and Earn</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/profile.svg" alt="close" class="img-fluid h-100 w-100"></span> My Profile</a></li>
+                                        <li><a class="dropdown-item dropmenuItem d-flex align-items-center pb-2" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/global_setting.svg" alt="global" class="img-fluid h-100 w-100"></span> Global Settings</a></li>
+                                        <li class="py-2 border-top"><a class="dropdown-item dropmenuItem d-flex align-items-center" href="#"><span class="dropIcon d-inline-flex me-2"><img src="assets/img/header/logout.svg" alt="logout" class="img-fluid h-100 w-100"></span> Log Out</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none ">
+                                        <div class="usdt">
+                                            <div class="row mx-0 align-items-center">
+                                                <div class="col-auto px-0 me-2 d-flex align-items-center">
+                                                    <div class="icon d-inline-flex"><img src="assets/img/header/tether-usdt-logo.png" alt="icon" class="img-fluid w-100 h-100"></div>
+                                                </div>
+                                                <div class="col px-0">
+                                                    <div class="text-center navMenu navMenu2">USDT</div>
+                                                    <div class="navMenu"><span class="subHeading">0.00000000</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                        <div class="icon d-lg-inline-flex " data-bs-toggle="modal" data-bs-target="#walletModal"><img src="assets/img/header/wallet-filled-money-tool.png" alt="wallet" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                </li>
+                                <!-- <li class="hrline">
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                        <div class="icon d-lg-inline-flex "><img src="assets/img/header/bell.png" alt="bell" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                </li> -->
+                                <!-- <li class="hrline">
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                        <div class="icon d-lg-inline-flex "><img src="assets/img/header/email.png" alt="email" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                        <div class="icon d-lg-inline-flex "><img src="assets/img/header/gear.png" alt="setting" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                </li> -->
+                                <!-- <li class="ms-3">
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample2">
+                                        <div class="icon d-lg-inline-flex "><img src="assets/img/aboutJonathan/Global.png" alt="global" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                
+                                </li> -->
+                                <!-- <li>
+                                    <a href="javascript:;" class="text-decoration-none d-flex align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                        <div class="icon d-lg-inline-flex "><img src="assets/img/header/chat.png" alt="chat" class="img-fluid w-100 h-100"></div>
+                                    </a>
+                                 
+                                </li> -->
+                            </ul>
+                        </div>
                     </div>
                  
                 </div>
