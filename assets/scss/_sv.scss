@@ -8707,7 +8707,85 @@
 
 @include media-breakpoint-down(md) {}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+              
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            padding: 0;
+                            background-color: transparent;
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                        height: 25px;
+                                         width: 25px;
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+                                   left: -150px;
+              
+                                    & .dropmenuItem{
+                                      
+                                        & .dropIcon{
+                                  
+    
+                                        }
+                                        &.bellicon{
+                                     
+                                            &::before{
+                                            
+
+                                            }
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // header end
 
 // <!-- ****** [ Bounscard Section Start ] ****** -->
