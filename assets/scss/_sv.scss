@@ -8384,6 +8384,10 @@
                             }
                             & a {
                                 & .usdt {
+                                    & .icon{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
                                     padding: 2px 9px;
                                     border-radius: 7px;
                                     background: rgba(147, 172, 211, 0.08);
@@ -8418,6 +8422,10 @@
                       
                         & .vipDropdown{
                           transition: all 0.3s ease-in-out;
+                          & .icon{
+                            width: 36px;
+                            height: 36px;
+                          }
                           &:hover{
                             & .dropMenu{
                                 display: block;
@@ -8429,10 +8437,12 @@
                                 }
                             }
                             & .dropMenu{
-                                padding-top: 10px;
+                                padding-top: 0px;
                                 width: 220PX;
-                                z-index: -1;
                                 background-color: #0D131C !important;
+                                &.show{
+                                    padding-top: 0px;
+                                }
                                 & .dropmenuItem{
                                     color: $white;
                                     font-size: 13px;
@@ -8440,8 +8450,8 @@
                                     transition: all 0.3s ease-in-out;
                                     opacity: 0.4;
                                     & .dropIcon{
-                                        width: 14px;
-                                        height: 14px;
+                                        width: 20px;
+                                        height: 20px;
                                          transition: all 0.3s ease-in-out;
 
                                     }
@@ -8642,14 +8652,16 @@
                                     }
     
                                     & .icon {
-                                        height: 34px;
-                                         width: 34px;
+                                     
                                     }
                                 }
                             }
                        
                             & .vipDropdown{
-                         
+                                & .icon{
+                                    width: 30px;
+                                    height: 30px;
+                                  }
                               &:hover{
                                 & .dropMenu{
                             
@@ -8721,8 +8733,13 @@
                                 }
                                 & a {
                                     & .usdt {
-                            padding: 0;
-                            background-color: transparent;
+                                        & .icon{
+                                            width: 30px;
+                                            height: 30px;
+
+                                        }
+                                        padding: 0;
+                                        background-color: transparent;
                                     }
                                     & .navMenu {
                              
@@ -8739,14 +8756,16 @@
                                     }
     
                                     & .icon {
-                                        height: 25px;
-                                         width: 25px;
+                                     
                                     }
                                 }
                             }
                        
                             & .vipDropdown{
-                         
+                                & .icon {
+                                    height: 30px;
+                                     width: 30px;
+                                }
                               &:hover{
                                 & .dropMenu{
                             
