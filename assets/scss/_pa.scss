@@ -18,7 +18,7 @@
             }
         }
         & .headerRyt{
-            padding: 15px 35px;
+            // padding: 15px 35px;
             & .pills{
                 list-style: none;
                 border-radius: 16px;
@@ -54,7 +54,7 @@
                 }
             }
             & .group{
-                margin-left: 84px;
+                margin-left: 50px;
                 & .searchInp{
                     border-radius: 15.964px;
                     border: 1px solid rgba(147, 172, 211, 0.50);
@@ -4301,6 +4301,7 @@
                     }
                 }
                 & .group{
+                    margin-left: 50px;
                     & .searchInp{
                         &:focus{
                         }
@@ -4459,6 +4460,7 @@
                 }
             }
             & .headerRyt{
+                padding: 15px 35px;
                 & .pills{
                     & .pillAnchor{
                         & img{
@@ -4468,6 +4470,7 @@
                     }
                 }
                 & .group{
+                    margin-left: 84px;
                     & .searchInp{
                         &:focus{
                         }
@@ -4627,6 +4630,7 @@
                 }
             }
             & .headerRyt{
+                padding: 15px 35px 15px 0px;
                 & .pills{
                     & .pillAnchor{
                         & img{
@@ -5149,6 +5153,7 @@
                 }
             }
             & .headerRyt{
+                    padding: 15px 35px;
                 & .pills{
                     & .pillAnchor{
                         & img{
