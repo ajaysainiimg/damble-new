@@ -3644,11 +3644,17 @@
                                     // background-size: cover;
                                     // background-position: center;
                                     // background-image: url(../img/global/dollar-symbol.png);
-                                    width: 13px;
-                                    height: 13px;
+                                    width: 15px;
+                                    height: 15px;
                                     top: 50%;
                                     left: 9px;
                                     transform: translateY(-50%);
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 11px;
+                                    background-color: #FFD700;
+                                    border-radius: 100%;
+                                    font-weight: 700;
                                 }
                                 &.selectbox2 {
                                     padding-left: 0;
