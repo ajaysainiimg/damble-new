@@ -3637,13 +3637,13 @@
                                         display: none;
                                     }
                                 }
-                                &::before {
+                                & .dollerImg {
                                     position: absolute;
-                                    content: "";
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center;
-                                    background-image: url(../img/global/dollar-symbol.png);
+                                    // content: "";
+                                    // background-repeat: no-repeat;
+                                    // background-size: cover;
+                                    // background-position: center;
+                                    // background-image: url(../img/global/dollar-symbol.png);
                                     width: 13px;
                                     height: 13px;
                                     top: 50%;
@@ -3671,6 +3671,7 @@
                                     line-height: normal;
                                     appearance: none;
                                     background-image: url(../img/global/right-chevron.png);
+                                    background-size: 15px;
                                 }
                             }
                          
