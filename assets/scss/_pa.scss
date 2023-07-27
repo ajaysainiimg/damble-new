@@ -2259,6 +2259,7 @@
                                             font-weight: 500;
                                             line-height: normal;
                                             margin-right: 5px;
+                                            gap: 3px;
                                             & img{
                                                 width: 13px;
                                                 height: 13px;
@@ -2266,6 +2267,64 @@
                                             & span{
                                                 color: white;
                                                 margin-left: 5px;
+                                            }
+                                        }
+                                        & .innerBox {
+                                            z-index: 5;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            & .card {
+                                                background: #0D131C;
+                                                border-radius: 7px;
+                                                & .card-body {
+                                                    & .form {
+                                                        & .input-group {
+                                                            & .input-group-text {
+                                                                background: #252E39;
+                                                                & img {
+                                                                    width: 18px;
+                                                                }
+                                                            }
+                                                            & .form-control {
+                                                                background: #252E39;
+                                                                &::placeholder{
+                                                                    color: $white;
+                                                                    font-size: 14px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    & .criptoCard {
+                                                        overflow-y: auto;
+                                                        max-height: 220px;
+                                                        & .innercard {
+                                                            cursor: pointer;
+                                                            border: 1px solid transparent;
+                                                            transition: all 0.3s ease-in-out;
+                                                            & .criptoLogo {
+                                                                width: 23px;
+                                                                height: 23px;
+                                                            }
+                                                            & .coin, & .coinvalue {
+                                                                font-size: 14px;
+                                                            }
+                                                            &:hover, &.active{
+                                                                border-color: #00990A;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.dropdownBox{
+                                            & .innerBox{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                            & .balance {
+                                                & img{
+                                                    transform: rotate(90deg);
+                                                }
                                             }
                                         }
                                     }
@@ -7441,6 +7500,22 @@
                 }
                 & span{
                     font-size: 12px
+                }
+            }
+        }
+    }
+    .optionsModalFade{
+        & .optionsModalDialog{
+            & .optionsModalContent{
+                max-width: 100%;
+                & .optionsModalBody  {
+                    & .tabContent  {
+                        & .tabContentPane  {
+                            & .depositTab {
+                                padding: 0px 5px;
+                            }
+                        }
+                    }
                 }
             }
         }
