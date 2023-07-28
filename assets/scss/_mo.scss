@@ -5140,6 +5140,33 @@
     // ********* faq section end ********
 }
 
+// ********* global setting card start ********
+.globalSection {
+    & .contactCard {
+        border:2px solid #00990a;
+        border-radius: 4px;
+        padding: 15px 8px;
+        background-color: rgba(147,172,211,.08) ;
+        & .contactTitle {
+            color: #FFF;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        & .contactNumber {
+            font-size: 14px;
+            color: #00990A;
+            font-weight: 700;
+            padding-top: 1px;
+        }
+        & .verifiedIcon {
+            // width: 30px;
+            height: 24px;
+        }
+    }
+}
+// ********* global setting card end ********
+
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -5323,6 +5350,21 @@
         }
         // ********* faq section end ********
     }
+
+    // ********* global setting card start ********
+    .globalSection {
+        & .contactCard {
+            padding: 22px 14px;
+            & .contactTitle {
+            }
+            & .contactNumber {
+            }
+            & .verifiedIcon {
+            }
+        }
+    }
+    // ********* global setting card end ********
+
 }
 
 @include media-breakpoint-down(lg) {
@@ -5778,5 +5820,22 @@
         // ********* faq section end ********
 
     }
+
+    // ********* global setting card start ********
+    .globalSection {
+        & .contactCard {
+            // padding: 22px 14px;
+            & .contactTitle {
+                font-size: 12px;
+            }
+            & .contactNumber {
+                font-size: 12px;
+            }
+            & .verifiedIcon {
+            }
+        }
+    }
+    // ********* global setting card end ********
 }
 // ********* mobile cash back Page end ********
+
