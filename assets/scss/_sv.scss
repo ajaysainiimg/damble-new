@@ -7485,134 +7485,134 @@
 
                // walletModal
 
-            & .walletModal{
-                & .modalDailog{
-                    & .modalContentUser{
-                        background: #161F2C;
-                        z-index: -2 !important;
-                        & .modalHeader{
+            // & .walletModal{
+            //     & .modalDailog{
+            //         & .modalContentUser{
+            //             background: #161F2C;
+            //             z-index: -2 !important;
+            //             & .modalHeader{
                         
-                            & .modal-title {
+            //                 & .modal-title {
                         
-                                & .icon{
+            //                     & .icon{
                                 
-                                }
-                            }
-                            & .icon{
+            //                     }
+            //                 }
+            //                 & .icon{
                             
-                            }
-                            & .searchInput{
-                                & .icon{
-                                    height: 31px;
-                                }
-                                & .additionBtn{
-                                    height: 31px;
-                                }
-                                & .searchForm{
+            //                 }
+            //                 & .searchInput{
+            //                     & .icon{
+            //                         height: 31px;
+            //                     }
+            //                     & .additionBtn{
+            //                         height: 31px;
+            //                     }
+            //                     & .searchForm{
                             
-                                    &::placeholder{
+            //                         &::placeholder{
                             
 
-                                    }
-                                }
-                            }
-                            & .pera{
+            //                         }
+            //                     }
+            //                 }
+            //                 & .pera{
                     
-                            }
-                            & nav{
-                                & .userNavTab{
+            //                 }
+            //                 & nav{
+            //                     & .userNavTab{
                             
-                                    & .navBtn{
-                                        font-size: 13px;
-                                        &.active{
+            //                         & .navBtn{
+            //                             font-size: 13px;
+            //                             &.active{
                                     
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        & .hrLine{
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //             & .hrLine{
                     
-                        }
-                        & .modalBody{
-                            & .userTabContent{
-                                padding: 9px 0px;
-                                & .userTabPane {
-                                    & .outerCard {
+            //             }
+            //             & .modalBody{
+            //                 & .userTabContent{
+            //                     padding: 9px 0px;
+            //                     & .userTabPane {
+            //                         & .outerCard {
                                       
                                     
-                                        &::before{
+            //                             &::before{
                                
                                         
-                                        }
+            //                             }
                                     
                                     
-                                    & .criptoContent{
-                                        padding: 0px;
-                                        & .innerCard{
+            //                         & .criptoContent{
+            //                             padding: 0px;
+            //                             & .innerCard{
                                 
-                                            &:hover{
+            //                                 &:hover{
                                     
-                                            }
-                                            &.active{
+            //                                 }
+            //                                 &.active{
                                         
-                                            }
-                                            & .icon{
+            //                                 }
+            //                                 & .icon{
                                             
-                                            }
-                                            & .heading{
+            //                                 }
+            //                                 & .heading{
                                     
-                                            }
-                                            & .subHeading{
+            //                                 }
+            //                                 & .subHeading{
                                     
 
-                                            }
-                                            & .walletTitle{
+            //                                 }
+            //                                 & .walletTitle{
                                     
-                                            }
-                                        }
-                                    }
-                                    }
-                                    // fait 
-                                    & .outterCard2{
-                                        padding: 10px 15px 10px 15px;
-                                        border-radius: 0px 7px 7px 7px;
-                                        background: #0d131c;
-                                        &::before{
-                                        display: none;
+            //                                 }
+            //                             }
+            //                         }
+            //                         }
+            //                         // fait 
+            //                         & .outterCard2{
+            //                             padding: 10px 15px 10px 15px;
+            //                             border-radius: 0px 7px 7px 7px;
+            //                             background: #0d131c;
+            //                             &::before{
+            //                             display: none;
                                         
-                                        }
-                                        & .criptoContent{
-                                            padding: 0px;
-                                            & .innerCard{
+            //                             }
+            //                             & .criptoContent{
+            //                                 padding: 0px;
+            //                                 & .innerCard{
                                     
-                                                &:hover{
+            //                                     &:hover{
                                             
-                                                }
-                                                &.active{
+            //                                     }
+            //                                     &.active{
                                             
-                                                }
+            //                                     }
                                             
-                                                & .heading{
+            //                                     & .heading{
                                             
-                                                }
+            //                                     }
                                             
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        & .modal-footer{
+            //                                 }
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //             & .modal-footer{
                         
-                            & .pera{
+            //                 & .pera{
                         
-                            }
-                        }
-                    }
-                }
+            //                 }
+            //             }
+            //         }
+            //     }
             
-            }
+            // }
         }
         // vip card section 
         & .vipCardSection{
@@ -8382,16 +8382,8 @@
                                 border-right: 1px solid #00990a;
                                 padding-right: 15px;
                             }
+                        
                             & a {
-                                & .usdt {
-                                    & .icon{
-                                        width: 25px;
-                                        height: 25px;
-                                    }
-                                    padding: 2px 9px;
-                                    border-radius: 7px;
-                                    background: rgba(147, 172, 211, 0.08);
-                                }
                                 & .navMenu {
                                     color: #fff;
                                     font-family: "Montserrat";
@@ -8419,7 +8411,259 @@
                                 }
                             }
                         }
+                      & .walletDropdown{
+                        & .usdt {
                       
+                            & .icon{
+                                width: 25px;
+                                height: 25px;
+                            }
+                            padding: 2px 9px;
+                            border-radius: 7px;
+                            background: rgba(147, 172, 211, 0.08);
+                        }
+                        & .dropTogglewallet{
+                           &::after{
+                            display: none;
+                           }
+                        }
+                        & .dropMenu{
+                            min-width: 350px;
+                            top: 45px;
+                            & .walletModal{
+                                & .modalDailog{
+                                    & .modalContentUser{
+                                        border-radius: 7px;
+                                        background: #161F2C;
+                                        z-index: -2;
+                                        padding: 10px 17px;
+                                        & .modalHeader{
+                                            border-bottom: none;
+                                            & .modalTitle{
+                                                color: #FFF;
+                                                font-family: 'Montserrat';
+                                                font-size: 15px;
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                line-height: normal;
+                                                & .icon{
+                                                    width: 13px;
+                                                    height: 13px;
+                                                }
+                                            }
+                                            & .icon{
+                                                height: 25px;
+                                            }
+                                            & .searchInput{
+                                                & .icon{
+                                                    height: 35px;
+                                                    padding: 10px;
+                                                    background: rgba(147, 172, 211, 0.08);
+                                                }
+                                                & .additionBtn{
+                                                    background-color: none;
+                                                    padding: 0;
+                                                }
+                                                & .searchForm{
+                                                    background: rgba(147, 172, 211, 0.08);
+                                                    color: rgba(147, 172, 211, 0.50);
+                                                    font-family:' Montserrat';
+                                                    font-size: 12px;
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    line-height: normal;
+                                                    &::placeholder{
+                                                    font-size: 12px;
+                                                    color: rgba(147, 172, 211, 0.50);
+                    
+                                                    }
+                                                }
+                                            }
+                                               & .pera{
+                                                color: rgba(147, 172, 211, 0.50);
+                                                font-family: 'Montserrat';
+                                                font-size: 13px;
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                line-height: normal;
+                                               }
+                                            & nav{
+                                                & .userNavTab{
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    white-space: nowrap;
+                                                    overflow: auto hidden;
+                                                    & .navBtn{
+                                                        border-radius: 7px !important;
+                                                        background: rgba(147, 172, 211, 0.08);
+                                                        color: rgba(147, 172, 211, 0.50);
+                                                        font-family: 'Montserrat';
+                                                        font-size: 15px;
+                                                        font-style: normal;
+                                                        font-weight: 600;
+                                                        line-height: normal;
+                                                        padding: 9px 22px;
+                                                        &.active{
+                                                            background-color: #00990A;
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        & .hrLine{
+                                            width: 100%;
+                                            height: 2px;
+                                            color: #00990A;
+                                            margin-top: 0;
+                                            opacity: 1;
+                                        }
+                                        & .modalBody{
+                                            & .userTabContent{
+                                                padding: 19px 0px;
+                                                & .userTabPane {
+                                                    & .outerCard {
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        // height: 401px;
+                                                        border-radius: 7px;
+                                                            background: rgba(147, 172, 211, 0.08) !important;
+                                                        // &::before{
+                                                        //     position: absolute;
+                                                        //     content: '';
+                                                        //     left: 0;
+                                                        //     top: 0;
+                                                        //     bottom: 0;
+                                                        //     z-index: 0;
+                                                        //     right: 0;
+                                                        //     height: 100%;
+                                                        //     width: 100%;
+                                                        //     border-radius: 7px;
+                                                        //     background: rgba(147, 172, 211, 0.08) !important;
+                                                          
+                                                        // }
+                                                     
+                                                     
+                                                      & .criptoContent{
+                                                        padding: 33px 13px;
+                                                        & .innerCard{
+                                                            border-radius: 7px;
+                                                            background: #0D131C;
+                                                            padding:7px 11px;
+                                                            border: 1px solid #0D131C;
+                                                            transition: all 0.3s ease-in-out;
+                                                            &:hover{
+                                                                border: 1px solid #03B80F;
+                                                            }
+                                                            &.active{
+                                                            border: 1px solid #03B80F;
+                                                            }
+                                                            & .icon{
+                                                                width: 21px;
+                                                                height: 21px;
+                                                            }
+                                                            & .heading{
+                                                                color: #FFF;
+                                                                font-family:' Inter';
+                                                                font-size: 10px;
+                                                                font-style: normal;
+                                                                font-weight: 700;
+                                                                line-height: normal;
+                                                                text-align: right;
+                                                            }
+                                                            & .subHeading{
+                                                                color: rgba(147, 172, 211, 0.50);
+                                                                font-family: 'Inter';
+                                                                font-size: 8px;
+                                                                font-style: normal;
+                                                                font-weight: 500;
+                                                                line-height: normal;
+                                                                text-align: right;
+                
+                                                            }
+                                                            & .walletTitle{
+                                                                color: #FFF;
+                                                                font-family: 'Inter';
+                                                                font-size: 11px;
+                                                                font-style: normal;
+                                                                font-weight: 700;
+                                                                line-height: normal;
+                                                            }
+                                                        }
+                                                      }
+                                                    }
+                                                    // fait 
+                                                    & .outterCard2{
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        // height: 401px;
+                                                        border-radius: 0px 7px 7px 7px;
+                                                        background: #0D131C;
+                                                     
+                                                        // &::before{
+                                                        //     position: absolute;
+                                                        //     content: '';
+                                                        //     left: 0;
+                                                        //     top: 0;
+                                                        //     bottom: 0;
+                                                        //     z-index: -1;
+                                                        //     right: 0;
+                                                        //     height: 100%;
+                                                        //     width: 100%;
+                                                        //     border-radius: 0px 7px 7px 7px;
+                                                        //     background: #0D131C;
+                                                          
+                                                        // }
+                                                        & .criptoContent{
+                                                            padding: 10px 13px;
+                                                            & .innerCard{
+                                                                border-radius: 7px;
+                                                                background: #161F2C;
+                                                                padding:7px 11px;
+                                                                border: 1px solid #0D131C;
+                                                                transition: all 0.3s ease-in-out;
+                                                              
+                                                                &:hover{
+                                                                    border: 1px solid #03B80F;
+                                                                }
+                                                                &.active{
+                                                                border: 1px solid #03B80F;
+                                                                }
+                                                              
+                                                                & .heading{
+                                                                    color: #FFF;
+                                                                    font-family: 'Inter';
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 700;
+                                                                    line-height: normal;
+                                                                    // padding:0px 200px 0px 40px;
+                                                                }
+                                                            
+                                                            }
+                                                          }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        & .modalFooter{
+                                            padding: 0px 19px ;
+                                            & .pera{
+                                                color: rgba(147, 172, 211, 0.50);
+                                                font-family:' Inter';
+                                                font-size: 10px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: normal;
+                                                text-align: right;
+                                            }
+                                        }
+                                    }
+                                }
+                            
+                            }
+                        }
+                      }
                         & .vipDropdown{
                           transition: all 0.3s ease-in-out;
                           & .icon{
@@ -8438,7 +8682,7 @@
                             }
                             & .dropMenu{
                                 padding-top: 0px;
-                                width: 220PX;
+                                width: 220px;
                                 background-color: #0D131C !important;
                                 &.show{
                                     padding-top: 0px;
@@ -8613,6 +8857,142 @@
                                     }
                                 }
                             }
+                            & .walletDropdown{
+                                & .usdt {
+                              
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                 
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
                         }
                     }
                 }
@@ -8709,6 +9089,142 @@
                                     }
                                 }
                             }
+                            & .walletDropdown{
+                                & .usdt {
+                              
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                 left: -260px;
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
                         }
                     }
                 }
@@ -8798,6 +9314,144 @@
                                     }
                                 }
                             }
+                            & .walletDropdown{
+                                & .usdt {
+                              background: none;
+                              padding: 0;
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                 left: -260px;
+                                 min-width: 250px;
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
                         }
                     }
                 }
@@ -9410,3 +10064,5 @@
         }
     }
 }
+
+
