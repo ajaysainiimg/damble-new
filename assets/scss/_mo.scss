@@ -4893,9 +4893,10 @@
                 border-radius: 20px;
                 background: #062858;
                 padding: 14px;
+                gap: 8px;
                 & .cardImg {
-                    max-width: 80px;
-                    max-height: 80px;
+                    width: 80px;
+                    height: 80px;
                 }
                 & .cardTitle {
                     color: #FFF;
@@ -5083,62 +5084,62 @@
     }
     // ********* cashback rank section end ********
 
-    // ********* faq section end ********
-    & .faqSection {
-        border-radius: 20px;
-        background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
-        padding: 33px 25px 75px 26px;
-        margin-top: 88px;
-        & .faqHeading {
-            color: #FFF;
-            text-align: center;
-            font-size: 40px;
-            font-weight: 800;
-            line-height: normal;
-            padding-bottom: 80px;
-        }
-        & .faqMain {
-            & .accordion-item {
-                border-bottom: 1px solid #FFD700;
-                & .faqBtn {
-                    padding:0 0  24px 0;
-                    color: #FFF;
-                    font-size: 16px;
-                    font-weight: 800;
-                    line-height: normal;
+}
+// ********* faq section end ********
+.faqSection {
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
+    padding: 33px 25px 75px 26px;
+    margin-top: 88px;
+    & .faqHeading {
+        color: #FFF;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: normal;
+        padding-bottom: 80px;
+    }
+    & .faqMain {
+        & .accordion-item {
+            border-bottom: 1px solid #FFD700;
+            & .faqBtn {
+                padding:0 15px 24px 0;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 800;
+                line-height: normal;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -2px;
+                    right: -3px;
+                    height: 23px;
+                    width: 23px;
+                    background-position: center;
+                    background: url(../Img/mobilecashback/faq.png) no-repeat;
+                    background-size: cover;
+                    transition: all 0.3s ease-in-out;
+                    transform: rotate(180deg);
+                }
+                &:not(.collapsed){
                     &::after {
-                        content: '';
-                        position: absolute;
-                        top: -2px;
-                        right: -3px;
-                        height: 23px;
-                        width: 23px;
-                        background-position: center;
-                        background: url(../Img/mobilecashback/faq.png) no-repeat;
-                        background-size: cover;
-                        transition: all 0.3s ease-in-out;
-                        transform: rotate(180deg);
-                    }
-                    &:not(.collapsed){
-                        &::after {
-                            transform: rotate(0);
-                        }
+                        transform: rotate(0);
                     }
                 }
-                & .faqcontent {
-                    & .faqBody {
-                        padding-bottom: 24px;
-                        color: #93ACD3;
-                        font-size: 15px;
-                        font-weight: 600;
-                        line-height: normal;
-                    }
+            }
+            & .faqcontent {
+                & .faqBody {
+                    padding-bottom: 24px;
+                    color: #93ACD3;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: normal;
                 }
             }
         }
     }
-    // ********* faq section end ********
 }
+// ********* faq section end ********
 
 // ********* global setting card start ********
 .globalSection {
@@ -5183,7 +5184,7 @@
 
 @include media-breakpoint-down(xxl) {
     .mobilecashBack {
-        padding: 87px 55px 0 75px;
+        padding: 87px 55px 0 55px;
         // ********* mobile cash back hero section Start ********
         & .cashbackHero {
             & .mobilecaHero {
@@ -5202,7 +5203,9 @@
             }
             & .heroCardTwo {
                 & .MobileHeroCard {
+                    padding: 10px;
                     & .cardImg {
+                        min-width: 53px;
                     }
                     & .cardTitle {
                     }
@@ -5243,9 +5246,12 @@
             }
             & .heroCardTwo {
                 & .MobileHeroCard {
+                    padding: 11px;
                     & .cardImg {
+                        width: 60px;
                     }
                     & .cardTitle {
+                        font-size: 24px;
                     }
                     & .cardpara {
                     }
@@ -5395,9 +5401,12 @@
             }
             & .heroCardTwo {
                 & .MobileHeroCard {
+                    padding: 20px 5px 20px 15px;
                     & .cardImg {
+                        width: 80px;
                     }
                     & .cardTitle {
+                        font-size: 23px;
                     }
                     & .cardpara {
                     }
@@ -5478,32 +5487,32 @@
             }
         }
        // ********* cashback rank section end ********
+    }
 
-        // ********* faq section end ********
-        & .faqSection {
-            margin-top: 70px;
-            & .faqHeading {
-                font-size: 35px;
-            }
-            & .faqMain {
-                & .accordion-item {
-                    & .faqBtn {
+    // ********* faq section end ********
+    .faqSection {
+        margin-top: 70px;
+        & .faqHeading {
+            font-size: 35px;
+        }
+        & .faqMain {
+            & .accordion-item {
+                & .faqBtn {
+                    &::after {
+                    }
+                    &:not(.collapsed){
                         &::after {
                         }
-                        &:not(.collapsed){
-                            &::after {
-                            }
-                        }
                     }
-                    & .faqcontent {
-                        & .faqBody {
-                        }
+                }
+                & .faqcontent {
+                    & .faqBody {
                     }
                 }
             }
         }
-        // ********* faq section end ********
     }
+    // ********* faq section end ********
 }
 
 @include media-breakpoint-down(md) {
@@ -5536,9 +5545,14 @@
             }
             & .heroCardTwo {
                 & .MobileHeroCard {
+                    border-radius: 10px;
+                    gap: 18px;
                     & .cardImg {
+                        height: 60px;
+                        width: 60px;
                     }
                     & .cardTitle {
+                        font-size: 22px;
                     }
                     & .cardpara {
                     }
@@ -5641,34 +5655,33 @@
             }
         }
         // ********* cashback rank section end ********
-
-        // ********* faq section end ********
-        & .faqSection {
-            margin-top: 65px;
-            & .faqHeading {
-                font-size: 30px;
-                text-align: start;
-            }
-            & .faqMain {
-                & .accordion-item {
-                    & .faqBtn {
+        
+    }
+    // ********* faq section end ********
+    .faqSection {
+        margin-top: 65px;
+        & .faqHeading {
+            font-size: 30px;
+            text-align: start;
+        }
+        & .faqMain {
+            & .accordion-item {
+                & .faqBtn {
+                    &::after {
+                    }
+                    &:not(.collapsed){
                         &::after {
                         }
-                        &:not(.collapsed){
-                            &::after {
-                            }
-                        }
                     }
-                    & .faqcontent {
-                        & .faqBody {
-                        }
+                }
+                & .faqcontent {
+                    & .faqBody {
                     }
                 }
             }
         }
-        // ********* faq section end ********
-
     }
+    // ********* faq section end ********
 
 }
 
@@ -5701,11 +5714,16 @@
             }
             & .heroCardTwo {
                 & .MobileHeroCard {
+                    padding: 15px 5px 15px 7px;
+                    gap: 14px;
                     & .cardImg {
+                        width: 60px;
                     }
                     & .cardTitle {
+                        font-size: 21px;
                     }
                     & .cardpara {
+                        font-size: 14px;
                     }
                 }
             }
@@ -5781,6 +5799,8 @@
                         }
                     }
                     & .cashCardImgtwo {
+                        height: 60px;
+                        margin-top: -30px;
                     }
                     & .cashCardTitle {
                     }
@@ -5792,34 +5812,41 @@
             }
         }
         // ********* cashback rank section end ********
-
-        // ********* faq section end ********
-        & .faqSection {
-            margin-top: 58px;
-            & .faqHeading {
-                font-size: 23px;
-            }
-            & .faqMain {
-                & .accordion-item {
-                    & .faqBtn {
+        
+    }
+    // ********* faq section end ********
+    .faqSection {
+        margin-top: 58px;
+        padding: 33px 15px 15px 17px;
+        border-radius: 8px;
+        & .faqHeading {
+            font-size: 23px;
+            padding-bottom: 63px;
+        }
+        & .faqMain {
+            & .accordion-item {
+                & .faqBtn {
+                    font-size: 14px;
+                    &::after {
+                        height: 14px;
+                        width: 15px;
+                        top: 0;
+                        right:0;
+                    }
+                    &:not(.collapsed){
                         &::after {
-                            height: 12px;
-                        }
-                        &:not(.collapsed){
-                            &::after {
-                            }
                         }
                     }
-                    & .faqcontent {
-                        & .faqBody {
-                        }
+                }
+                & .faqcontent {
+                    & .faqBody {
+                        font-size: 13px;
                     }
                 }
             }
         }
-        // ********* faq section end ********
-
     }
+    // ********* faq section end ********
 
     // ********* global setting card start ********
     .globalSection {
