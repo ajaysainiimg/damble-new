@@ -6119,7 +6119,7 @@
                 & .modalContent{
                     width: 282px;
                     padding: 10px;
-                    border-radius: 7px 0px 7px 7px;
+                    border-radius: 7px;
                     background-color: #252E39 ;
                     & .modalHeader{
                      border-bottom: none;
@@ -6610,7 +6610,7 @@
 
         // language 
         .languageOffcanvas{
-            border-radius: 7px 0px 7px 7px;
+            border-radius:  7px;
             background: #252E39;
             width: 230px;
             & .chatHeader{
@@ -8699,14 +8699,14 @@
                                     font-size: 13px;
                                     background-color: transparent;
                                     transition: all 0.3s ease-in-out;
-                                    opacity: 0.4;
+                                    font-weight: 500;
+                                    opacity: 0.8;
                                     & .dropIcon{
                                         width: 20px;
                                         height: 20px;
-                                         transition: all 0.3s ease-in-out;
+                                        transition: all 0.3s ease-in-out;
 
                                     }
-                                  
                                     &:hover{
                                         opacity: 1;
                                     }
@@ -9063,7 +9063,7 @@
                                     width: 250PX;
               
                                     & .dropmenuItem{
-                                        font-size: 16px;
+                                        // font-size: 16px;
                                         & .dropIcon{
                                             width: 18px;
                                             height: 18px;
@@ -9336,7 +9336,8 @@
                                    }
                                 }
                                 & .dropMenu{
-                                 left: -260px;
+                                //  left: -260px;
+                                right: 0;
                                  min-width: 250px;
                                     & .walletModal{
                                         & .modalDailog{
@@ -10072,4 +10073,70 @@
     }
 }
 
+
+.currencyModal {
+    & .modalDailog {
+        & .modalContentUser {
+            border-radius: 7px;
+            background: #161f2c;
+            & .modal-header {
+                & .modal-title {
+                    font-family: "Montserrat";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .content {
+                    font-size: 13px;
+                }
+                & .closeicon {
+                    height: 25px;
+                }
+            }
+            & .modal-body {
+                & .form {
+                    & .form-check {
+                        & .form-check-input {
+                            background-color: lighten($dark, 5);
+                            border: 2px solid lighten($dark, 15);
+                            &:focus{
+                                border-color: lighten($dark, 15);
+                            }
+                            // position: relative;
+                            // &::before{
+                            //     content: '';
+                            //     width: 100%;
+                            //     height: 100%;
+                            //     border-radius: 100%;
+                            //     background-color: $dark;
+                            //     position: absolute;
+                            //     inset: 0;
+                            //     margin: auto;
+                            // }
+                            &:checked{
+                                background: #04e929;
+                            }
+                            &:checked + label{
+                                color: $white !important;
+                            }
+                        }
+                        & .form-check-label {
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 500;
+                            & .coinImg {
+                                width: 16px;
+                                height: 16px;
+                                & img{
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 

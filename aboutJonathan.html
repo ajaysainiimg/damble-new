@@ -90,7 +90,7 @@
                                 <div class=" d-flex justify-content-end align-items-end pe-0 headerMenu">
                                     <ul class="list-unstyled d-flex align-items-center gap-3 mb-0">
                                         <li class="dropdown vipDropdown">
-                                           <a href="javascript:;" class="text-decoration-none dropdown-toggle dropToggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                           <a href="javascript:;" class="text-decoration-none dropdown-toggle dropToggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                             <div class="row mx-0 align-items-center">
                                                 <div class="col-auto">
                                                     <div class="icon"> <img src="assets/img/aboutJonathan/user.png" alt="user" class="img-fluid w-100 h-100"></div>
@@ -115,7 +115,7 @@
                                         </li>
                                     
                                         <li class=" dropdown walletDropdown ">
-                                            <a href="javascript:;" class="text-decoration-none dropdown-toggle usdt align-items-center justify-content-center dropTogglewallet dflex "  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a href="javascript:;" class="text-decoration-none dropdown-toggle usdt align-items-center justify-content-center dropTogglewallet dflex "  type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                             
                                                     <div class="row mx-0 align-items-center">
                                                         <div class="col-auto px-0 me-2 d-flex align-items-center">
@@ -161,7 +161,7 @@
                                                                         </div>
                                                                     </nav>
                                                                 </div>
-                                                                <div class="col-12 px-0 pt-5">
+                                                                <div class="col-12 px-0 pt-lg-5 pt-3">
                                                                     <div class="pera">My Favorite Coins</div>
                                                                 </div>
                                                             </div>
@@ -355,7 +355,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center " data-bs-toggle="modal" data-bs-target="#currency">
                                                 <div class="icon d-lg-inline-flex "><img src="assets/img/header/gear.png" alt="setting" class="img-fluid w-100 h-100"></div>
                                             </a>
                                         </li>
@@ -427,7 +427,7 @@
                                     </ul>
                                 </li>
                                 <li class=" dropdown walletDropdown">
-                                    <a href="javascript:;" class="text-decoration-none dropdown-toggle usdt align-items-center justify-content-center dropTogglewallet d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a href="javascript:;" class="text-decoration-none dropdown-toggle usdt align-items-center justify-content-center dropTogglewallet d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                         <div class="">
                                             <div class="row mx-0 align-items-center">
                                                 <div class="col-auto px-0 me-sm-2 d-flex align-items-center">
@@ -473,7 +473,7 @@
                                                                 </div>
                                                             </nav>
                                                         </div>
-                                                        <div class="col-12 px-0 pt-5">
+                                                        <div class="col-12 px-0 pt-3">
                                                             <div class="pera">My Favorite Coins</div>
                                                         </div>
                                                     </div>
@@ -3629,9 +3629,100 @@
                 <!-- <div class="modal-footer">
                 <div class='footerImg'><img src={ModalFooter} alt='ModalFooter' /></div>
                 </div> -->
+        <!-- </div> -->
+    </div>
+    
+<!-- modal end -->
+
+
+<!-- ***** [Currency Modal] ***** -->
+<div class="modal fade currencyModal " id="currency" tabindex="-1" aria-labelledby="currencyLabel" aria-hidden="true">
+    <div class="modal-dialog modalDailog modal-dialog-centered  modal-dialog-scrollable">
+        <div class="modal-content modalContentUser ">
+        <div class="modal-header border-0 pb-0">
+            <div class="row align-items-center w-100 gx-0">
+                <div class="col modal-title d-flex align-items-center text-white" id="currencyLabel">Information</div>
+                <div class="col-auto">
+                    <button type="button" class="btn border-0 shadow-none d-flex align-items-center justify-content-center closeicon pe-0" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/aboutJonathan/close.png" alt="close" class="img-fluid h-100 w-100"></button>
+                </div>
+                <div class="col-12 text-white fw-normal content mt-3 text-center">Please note that these are currency approximations. All bets & transactions will be calculated in equivalent currencies. For more details feel free to contact our live support.</div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <form action="" class="row row-cols-sm-3 row-cols-2 gy-2 form">
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur1">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur1">USDT <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/header/tether-usdt-logo.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur2">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur2">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur3">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur3">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur4">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur4">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur5" checked>
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur5">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur6">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur6">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur7">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur7">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur8">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur8">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur9">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur9">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check d-flex gap-2">
+                        <input class="form-check-input shadow-none shadow-none" type="radio" name="currency" id="cur10">
+                        <label class="form-check-label text-uppercase d-flex align-items-center gap-2 text-white-50" for="cur10">BTC <span class="coinImg d-inline-flex justify-content-center align-items-center rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></span></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="button" class="shadow-none px-5 border-0 greenBtn">Confirm</button>
+        </div>
         </div>
     </div>
-<!-- modal end -->
+</div>
+
+
+
+
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->

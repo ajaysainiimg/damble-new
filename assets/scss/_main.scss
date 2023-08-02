@@ -29,3 +29,12 @@ body{
   height: 1px;
 }
 
+
+.modal{
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+}
+.modal-backdrop.show {
+  display: none;
+}
