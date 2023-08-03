@@ -3833,19 +3833,19 @@
                                     padding: 18px 14px 20px 30px !important;
                                     & .input-group {
                                         position: relative;
-                                        &::before {
-                                            position: absolute;
-                                            content: "";
-                                            background-image: url(../img/global/right-chevron.png);
-                                            background-repeat: no-repeat;
-                                            background-position: center;
-                                            background-size: cover;
-                                            right: 35px;
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            width: 11px;
-                                            height: 12px;
-                                        }
+                                        // &::before {
+                                        //     position: absolute;
+                                        //     content: "";
+                                        //     background-image: url(../img/global/right-chevron.png);
+                                        //     background-repeat: no-repeat;
+                                        //     background-position: center;
+                                        //     background-size: cover;
+                                        //     right: 35px;
+                                        //     top: 50%;
+                                        //     transform: translateY(-50%);
+                                        //     width: 11px;
+                                        //     height: 12px;
+                                        // }
                                         & .input-group-text {
                                             // border-radius: 7px;
                                             background-color: rgba(147, 172, 211, 0.08) !important;
@@ -3855,6 +3855,15 @@
                                             font-style: normal;
                                             font-weight: 700;
                                             line-height: normal;
+                                            &:focus-visible {
+                                                outline: none;
+                                            }
+                                            & option {
+                                                color: #0d131c;
+                                                font-size: 13px;
+                                                font-weight: 700;
+
+                                            }
                                         }
                                         & .form-control {
                                             color: rgba(147, 172, 211, 0.5);
@@ -4104,320 +4113,320 @@
     .afflitiateDashboard{
 
         & .globalSection{
-             & .tabNav{
-                 & .nav-tabs{
-                     & .navBtn{
-     
-                         &.active{
-     
-                         }
-                     }
-                 }
-             }
-             & .globalAccordin{
-                 & .globalItem{
-                     & .globalaccordinHeader{
-                         & .globalBtn{
-                     
-                             &:after{
-                         
-                             }
-                         }
-                         & .globalBtn:not(.collapsed){
-                          
-             
-                         }
-                       
-                     }
-                     & .accordionCollapse{
-                         & .accordionBody{
-     
-                             & .tab-content{
-                                 & .tab-pane{
-                                     & .outterCard{
+            & .tabNav{
+                & .nav-tabs{
+                    & .navBtn{
+    
+                        &.active{
+    
+                        }
+                    }
+                }
+            }
+            & .globalAccordin{
+                & .globalItem{
+                    & .globalaccordinHeader{
+                        & .globalBtn{
+                    
+                            &:after{
+                        
+                            }
+                        }
+                        & .globalBtn:not(.collapsed){
+                        
+            
+                        }
+                    
+                    }
+                    & .accordionCollapse{
+                        & .accordionBody{
+    
+                            & .tab-content{
+                                & .tab-pane{
+                                    & .outterCard{
+                                
+                                        &::before{
+                                
+                                        }
+                                        & .signInHeading{
                                     
-                                         &::before{
-                                  
-                                         }
-                                         & .signInHeading{
-                                      
-                                         }
-                                         & .peragraph{
-                            
-                                             &.form-label {
-                                            
-                                                 &.label2{
-                                                    
-                                                 }
-                                             }
-                                             &.pera2{
-                                             }
-                         
-                                         }
-                                         & input{
-                                             &::placeholder{
-                                             }
-                                         }
-                                         & .confirmBtn{
-                                         }
-                                         // general 
-                                         & .general{
-                                             & .globalContent{
-                                               
-                                                 & .globalContentInner{
-                                                     & .heading{
-                                                     }
-                                                     & .selectBox{
-                                                           & option{
-                                                             &:hover{
-                                                             }
-                             
-                                                           }
-                                                           &::before{ 
-                                                           }
-                                                           &.selectbox2{
-                                                           
-                                                             &::before{
-                                                             }
-                                                           }
-                                                         & .form-select {
-                                                         }
-                                                       
-                                                     }
-                                                     & .switch {
-                                                         & input{
-                                                            
-                                                         }
-                                                         input:focus + .slider {
-                                                     
-                                                           }
-                                                           
-                                                           input:checked + .slider:before {
-                                               
-                                                           }
-                                                         & .slider {
-                                                             &::before{
-                                                             }
-                                                             &.round {
-                                                                 &::before {
-                                                                    
-                                                                   }
-                                                               }
-                                                           }
-                                                     }
-                                                     & .lightBtn{
-                                                         & .btnImg{
-                                                         
-                                                         }
-                                                     }
-                                                 }
-                                             }
-                                         }
-                                         //  privacy
-                                         
-                                         & .privacy{
-                                             & .globalContent{
-                                                 & .globalContentInner{
-                                                     & .heading{
-                                                       
-                                                     }
-                                                     & .selectBox{
-                                                    
-                                                           & option{
-                                                       
-                                                             &:hover{
-                                                              
-                                                             }
-                             
-                                                           }
-                                                           &::before{
-                                                           }
-                                                           &.selectbox2{
-                                                             &::before{
-                                                               
-                                                             }
-                                                           }
-                                                         & .form-select {
-                                                         }
-                                                       
-                                                     }
-                                                     & .switch {
-                                                         & input{
-                                                            
-                                                         }
-                                                         input:focus + .slider {
-                                                            
-                                                           }
-                                                           
-                                                           input:checked + .slider:before {
-                                                         
-                                                           }
-                                                         & .slider {
-                                                             &::before{
-                                                             }
-                                                             &.round {
-                                                    
-                                                                 &::before {
-                                                                  
-                                                                   }
-                                                               }
-                                                           }
-                                                     }
-                                                  
-                                                 }
-                                                 & .pera{
-                                                     & br{
-                                                         display: none;
-                                                     }
-                                                 }
-                                             }
-                                         }
-                                         // signIn
-                                         & .signIn{
-                                             & .globalContent{
-                                                 margin: 67px 80px 98px 80px;
-                                             
-                                         
-                                                 & .globalContentInner{
-                                                   
-                                                     & .signInContent{
-                                                         padding: 31px 38px 20px 39px;
-                                                         &.signInContent2{
-                                                             
-                                                             & .input-group{
-                                                       
-                                                                 &::before{
-                                                             
-                                                                 }
-                                                                 & .input-group-text{
-                                                         
-                                                                 }
-                                                                 & .form-control{
-                                                                   
-                                                                   
-                                                                     &::placeholder{
-                                                                    
-                                                                     }
-                                                                 }
-                                                             }
-                                                         }
-                                                         & label{
-                                                             font-size: 10px;
-                                                         }
-                                                         & input{
-                                                         
-                                                         }
-                                                      
-                                                     }
-                                                 }
-                                             }
-                                         }
-                                         // security
-                         
-                                         & .security{
-                                             & .globalContent{
-                                             
-                                                 & .input-group{
-                                                     padding-left: 30px;
-                                                     padding-right: 30px;
-                                                     & .form-control{
-                                    
-                                                     }
-                                                     & .input-group-text {
-                                                    
-                                                     }
-                                                 }
-                                                 & .globalContentInner{
-                                                     padding: 28px 100px 53px 100px;
-                                                     & .qrImg{
-                                                 
-                                                     }
-                                                     & .otp-input-fields{
-                                                  
-                                                         & input{
-                                                     
-                                                        
-                                                         }
-                         
-                                                     }
-                                                 }
-                                             }
-                                         }
-                         
-                                         // activeSessions 
-                                         & .activeSessions{
-                                             & .globalContent{
+                                        }
+                                        & .peragraph{
+                        
+                                            &.form-label {
+                                        
+                                                &.label2{
                                                 
-                                                 & .sessionTable{
-                                                     & .table{
-                                                         & thead{
-                                                             
-                                                             & tr{
-                                                               
-                                                                 & th{
-                                                                   
-                         
-                                                                     &:first-child{
-                                                                    
-                                                                     }
-                                                                     &:last-child{
-                                                                  
-                                                                     }
-                                                          
-                                                                 }
-                                                             }
-                                                         }
-                                                         & tbody{
-                                                             & tr{
-                                                          
-                                                              
-                                                                 & td{
-                                                           
-                                                                     &:first-child{
-                                                                    
-                                                                     }
-                                                                     &:last-child{
-                                                                 
-                                                                     }
-                                                                 }
-                                                             }
-                                                         }
-                                                     }
-                                                 }
-                                             }
-                                         }
-                                         // Verify
-                         
-                                         & .Verify{
-                                             & .globalContent{
-                                                 margin: 49px 50px 100px 47px;
-                                                 & .selectSection{
-                                                 
-                                                     &::before{
-                                                     
-                                                     }
-                                                     & .selectboxSection{
-                                               
-                                                         & option{
+                                                }
+                                            }
+                                            &.pera2{
+                                            }
+                        
+                                        }
+                                        & input{
+                                            &::placeholder{
+                                            }
+                                        }
+                                        & .confirmBtn{
+                                        }
+                                        // general 
+                                        & .general{
+                                            & .globalContent{
+                                            
+                                                & .globalContentInner{
+                                                    & .heading{
+                                                    }
+                                                    & .selectBox{
+                                                        & option{
+                                                            &:hover{
+                                                            }
+                            
+                                                        }
+                                                        &::before{ 
+                                                        }
+                                                        &.selectbox2{
                                                         
-                                                         }
-                                                     }
-                                                 }
-                                                 & .dateSection{
-                                                     & .dateImg{
-                                                  
-                                                     }
-                                                 }
-                                             }
-                                         }
-                                     }
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
-         }
+                                                            &::before{
+                                                            }
+                                                        }
+                                                        & .form-select {
+                                                        }
+                                                    
+                                                    }
+                                                    & .switch {
+                                                        & input{
+                                                        
+                                                        }
+                                                        input:focus + .slider {
+                                                    
+                                                        }
+                                                        
+                                                        input:checked + .slider:before {
+                                            
+                                                        }
+                                                        & .slider {
+                                                            &::before{
+                                                            }
+                                                            &.round {
+                                                                &::before {
+                                                                
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    & .lightBtn{
+                                                        & .btnImg{
+                                                        
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        //  privacy
+                                        
+                                        & .privacy{
+                                            & .globalContent{
+                                                & .globalContentInner{
+                                                    & .heading{
+                                                    
+                                                    }
+                                                    & .selectBox{
+                                                
+                                                        & option{
+                                                    
+                                                            &:hover{
+                                                            
+                                                            }
+                            
+                                                        }
+                                                        &::before{
+                                                        }
+                                                        &.selectbox2{
+                                                            &::before{
+                                                            
+                                                            }
+                                                        }
+                                                        & .form-select {
+                                                        }
+                                                    
+                                                    }
+                                                    & .switch {
+                                                        & input{
+                                                        
+                                                        }
+                                                        input:focus + .slider {
+                                                        
+                                                        }
+                                                        
+                                                        input:checked + .slider:before {
+                                                        
+                                                        }
+                                                        & .slider {
+                                                            &::before{
+                                                            }
+                                                            &.round {
+                                                
+                                                                &::before {
+                                                                
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                
+                                                }
+                                                & .pera{
+                                                    & br{
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        // signIn
+                                        & .signIn{
+                                            & .globalContent{
+                                                margin: 67px 80px 98px 80px;
+                                            
+                                        
+                                                & .globalContentInner{
+                                                
+                                                    & .signInContent{
+                                                        padding: 31px 38px 20px 39px;
+                                                        &.signInContent2{
+                                                            
+                                                            & .input-group{
+                                                    
+                                                                &::before{
+                                                            
+                                                                }
+                                                                & .input-group-text{
+                                                        
+                                                                }
+                                                                & .form-control{
+                                                                
+                                                                
+                                                                    &::placeholder{
+                                                                
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        & label{
+                                                            font-size: 10px;
+                                                        }
+                                                        & input{
+                                                        
+                                                        }
+                                                    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        // security
+                        
+                                        & .security{
+                                            & .globalContent{
+                                            
+                                                & .input-group{
+                                                    padding-left: 30px;
+                                                    padding-right: 30px;
+                                                    & .form-control{
+                                
+                                                    }
+                                                    & .input-group-text {
+                                                
+                                                    }
+                                                }
+                                                & .globalContentInner{
+                                                    padding: 28px 100px 53px 100px;
+                                                    & .qrImg{
+                                                
+                                                    }
+                                                    & .otp-input-fields{
+                                                
+                                                        & input{
+                                                    
+                                                    
+                                                        }
+                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                        
+                                        // activeSessions 
+                                        & .activeSessions{
+                                            & .globalContent{
+                                            
+                                                & .sessionTable{
+                                                    & .table{
+                                                        & thead{
+                                                            
+                                                            & tr{
+                                                            
+                                                                & th{
+                                                                
+                        
+                                                                    &:first-child{
+                                                                
+                                                                    }
+                                                                    &:last-child{
+                                                                
+                                                                    }
+                                                        
+                                                                }
+                                                            }
+                                                        }
+                                                        & tbody{
+                                                            & tr{
+                                                        
+                                                            
+                                                                & td{
+                                                        
+                                                                    &:first-child{
+                                                                
+                                                                    }
+                                                                    &:last-child{
+                                                                
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        // Verify
+                        
+                                        & .Verify{
+                                            & .globalContent{
+                                                margin: 49px 50px 100px 47px;
+                                                & .selectSection{
+                                                
+                                                    &::before{
+                                                    
+                                                    }
+                                                    & .selectboxSection{
+                                            
+                                                        & option{
+                                                    
+                                                        }
+                                                    }
+                                                }
+                                                & .dateSection{
+                                                    & .dateImg{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
