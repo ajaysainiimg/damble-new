@@ -1303,6 +1303,23 @@
                     padding-top: 13px;
                     padding-left: 16px;
                     padding-right: 10px;
+                    resize: none;
+                    &::placeholder{
+                        color: #93ACD3;
+                        font-family: 'Montserrat';
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    & .txt{
+                        color: #93ACD3;
+                        font-family: 'Montserrat';
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
                     // text-overflow: ellipsis;
                     // white-space: nowrap;
                     & .peralink{
