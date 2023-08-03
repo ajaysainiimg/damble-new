@@ -1303,6 +1303,19 @@
                     padding-top: 13px;
                     padding-left: 16px;
                     padding-right: 10px;
+                    // text-overflow: ellipsis;
+                    // white-space: nowrap;
+                    & .peralink{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: flex;
+                    }
                     & .txt{
                         color: #93ACD3;
                         font-family: 'Montserrat';
@@ -1343,6 +1356,7 @@
                                 padding: 0 25px;
                                 text-align: center;
                                 &:first-child{
+                                  
                                     padding-left: 43px;
                                     border-top-left-radius: 6px;
                                 }
@@ -1358,6 +1372,10 @@
                         & tr{
                             // border-bottom: 1px solid;
                             // border-color: #00990a;
+                            & .linksection{
+                                max-width: 200px;
+
+                            }
                             & td{
                                 padding: 10px 25px;
                                 text-align: center;
@@ -1371,6 +1389,26 @@
                                     font-weight: 700;
                                     line-height: normal;
                                 }
+                                &:last-child{
+                                    border: none;
+                                }
+                            
+                                & .peralink{
+                                    color: #FFF;
+                                    font-family: 'Montserrat';
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    display: flex;
+                                }
+                                
+                                &:first-child{
+                                    max-width: 200px;
+                                }
+                                &:nth
                                 &:last-child{
                                     border-right: none;
                                 }
