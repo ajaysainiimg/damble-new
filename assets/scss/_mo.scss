@@ -5167,6 +5167,73 @@
 }
 // ********* global setting card end ********
 
+// ********* delete modal start ********
+.deleteModal {
+    & .deleteModalDialog {
+        
+        & .deleteModalContent {
+            background: #131C27;
+            & .deleteModalHeader {
+                border-bottom: 1px solid #062858;
+                & .modal-title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: white;
+                }
+                & .btn-close {
+                    height: 16px;
+                    width: 16px;
+                    background: url(../Img/aboutJonathan/close.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            & .deleteModalBody {
+                & .headingmodal {
+                    font-size: 16px;
+                    color: #FFF;
+                    font-weight: 600;
+                }
+                & .datamodal {
+                    font-size: 14px;
+                    color: #FFF;
+                    font-weight: 500;
+                }
+                & .deletebtn {
+                    font-size: 15px;
+                    color: #FFF;
+                    background-color: #03B80F;
+                    transition: all 0.3s ease-in-out;
+                    font-weight: 600;
+                    padding: 8px 48px;
+                    &:hover {
+                        background-color: #0ccc19;
+                    }
+                }
+                & .codeInput {
+                    background-color: rgba(147,172,211,.08);
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #FFF;
+                    // color: #677891;
+                    // color: #596B86;
+                    &::placeholder {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #FFF;
+                    }
+                }
+                & .codeTitle {
+                    font-size: 14px;
+                    color: #FFF;
+                    background-color: #04e9291a;
+                    border: 1px solid #00A300;
+                }
+            }
+        }
+    }
+}
+// ********* delete modal end ********
 
 @include media-breakpoint(basic) {
 }
