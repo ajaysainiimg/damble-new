@@ -3637,18 +3637,24 @@
                                         display: none;
                                     }
                                 }
-                                &::before {
+                                & .dollerImg {
                                     position: absolute;
-                                    content: "";
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center;
-                                    background-image: url(../img/global/dollar-symbol.png);
-                                    width: 13px;
-                                    height: 13px;
+                                    // content: "";
+                                    // background-repeat: no-repeat;
+                                    // background-size: cover;
+                                    // background-position: center;
+                                    // background-image: url(../img/global/dollar-symbol.png);
+                                    width: 15px;
+                                    height: 15px;
                                     top: 50%;
                                     left: 9px;
                                     transform: translateY(-50%);
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 11px;
+                                    background-color: #FFD700;
+                                    border-radius: 100%;
+                                    font-weight: 700;
                                 }
                                 &.selectbox2 {
                                     padding-left: 0;
@@ -3671,6 +3677,7 @@
                                     line-height: normal;
                                     appearance: none;
                                     background-image: url(../img/global/right-chevron.png);
+                                    background-size: 15px;
                                 }
                             }
                          
@@ -3759,31 +3766,7 @@
                                     background-image: url(../img/global/right-chevron.png);
                                 }
                             }
-                            & .form-switch {
-                                min-height: 0px !important;
-
-                                & .form-check-input {
-                                    width: 40px;
-                                    height: 15px;
-                                    background-repeat: no-repeat;
-                                    --bs-form-switch-bg:url(../img/global/checkbtn.png);
-                                    --bs-form-check-bg: rgba(147, 172, 211, 0.078);i
-    
-                                    
-                                    &:focus {
-                                        border-color: lighten($black, 90);
-                                        // background-image: none;
-                                        // background:url(../img/global/checkbtn2.png);
-                                    }
-                                }
-                                & .form-check-input:checked {
-    
-                                    width: 40px;
-                                    height: 15px;
-                                    background-color: #93acd3 !important;
-                                    background-image: url(../img/global/checkbtn2.png) !important;
-                                }
-                            }
+                        
                         }
                         & .pera {
                             color: rgba(147, 172, 211, 0.5);
@@ -3810,19 +3793,19 @@
                                     padding: 18px 14px 20px 30px !important;
                                     & .input-group {
                                         position: relative;
-                                        // &::before {
-                                        //     position: absolute;
-                                        //     content: "";
-                                        //     background-image: url(../img/global/right-chevron.png);
-                                        //     background-repeat: no-repeat;
-                                        //     background-position: center;
-                                        //     background-size: cover;
-                                        //     right: 35px;
-                                        //     top: 50%;
-                                        //     transform: translateY(-50%);
-                                        //     width: 11px;
-                                        //     height: 12px;
-                                        // }
+                                        &::before {
+                                            position: absolute;
+                                            content: "";
+                                            background-image: url(../img/global/right-chevron.png);
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            background-size: cover;
+                                            right: 35px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            width: 11px;
+                                            height: 12px;
+                                        }
                                         & .input-group-text {
                                             // border-radius: 7px;
                                             background-color: rgba(147, 172, 211, 0.08) !important;
@@ -3832,15 +3815,6 @@
                                             font-style: normal;
                                             font-weight: 700;
                                             line-height: normal;
-                                            &:focus-visible {
-                                                outline: none;
-                                            }
-                                            & option {
-                                                color: #0d131c;
-                                                font-size: 13px;
-                                                font-weight: 700;
-
-                                            }
                                         }
                                         & .form-control {
                                             color: rgba(147, 172, 211, 0.5);
@@ -4090,320 +4064,298 @@
     .afflitiateDashboard{
 
         & .globalSection{
-            & .tabNav{
-                & .nav-tabs{
-                    & .navBtn{
-    
-                        &.active{
-    
-                        }
-                    }
-                }
-            }
-            & .globalAccordin{
-                & .globalItem{
-                    & .globalaccordinHeader{
-                        & .globalBtn{
-                    
-                            &:after{
-                        
-                            }
-                        }
-                        & .globalBtn:not(.collapsed){
-                        
-            
-                        }
-                    
-                    }
-                    & .accordionCollapse{
-                        & .accordionBody{
-    
-                            & .tab-content{
-                                & .tab-pane{
-                                    & .outterCard{
-                                
-                                        &::before{
-                                
-                                        }
-                                        & .signInHeading{
+             & .tabNav{
+                 & .nav-tabs{
+                     & .navBtn{
+     
+                         &.active{
+     
+                         }
+                     }
+                 }
+             }
+             & .globalAccordin{
+                 & .globalItem{
+                     & .globalaccordinHeader{
+                         & .globalBtn{
+                     
+                             &:after{
+                         
+                             }
+                         }
+                         & .globalBtn:not(.collapsed){
+                          
+             
+                         }
+                       
+                     }
+                     & .accordionCollapse{
+                         & .accordionBody{
+     
+                             & .tab-content{
+                                 & .tab-pane{
+                                     & .outterCard{
                                     
-                                        }
-                                        & .peragraph{
-                        
-                                            &.form-label {
-                                        
-                                                &.label2{
-                                                
-                                                }
-                                            }
-                                            &.pera2{
-                                            }
-                        
-                                        }
-                                        & input{
-                                            &::placeholder{
-                                            }
-                                        }
-                                        & .confirmBtn{
-                                        }
-                                        // general 
-                                        & .general{
-                                            & .globalContent{
-                                            
-                                                & .globalContentInner{
-                                                    & .heading{
-                                                    }
-                                                    & .selectBox{
-                                                        & option{
-                                                            &:hover{
-                                                            }
+                                         &::before{
+                                  
+                                         }
+                                         & .signInHeading{
+                                      
+                                         }
+                                         & .peragraph{
                             
-                                                        }
-                                                        &::before{ 
-                                                        }
-                                                        &.selectbox2{
-                                                        
-                                                            &::before{
-                                                            }
-                                                        }
-                                                        & .form-select {
-                                                        }
-                                                    
-                                                    }
-                                                    & .switch {
-                                                        & input{
-                                                        
-                                                        }
-                                                        input:focus + .slider {
-                                                    
-                                                        }
-                                                        
-                                                        input:checked + .slider:before {
+                                             &.form-label {
                                             
-                                                        }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                                &::before {
-                                                                
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                    & .lightBtn{
-                                                        & .btnImg{
-                                                        
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        //  privacy
-                                        
-                                        & .privacy{
-                                            & .globalContent{
-                                                & .globalContentInner{
-                                                    & .heading{
+                                                 &.label2{
                                                     
-                                                    }
-                                                    & .selectBox{
-                                                
-                                                        & option{
-                                                    
-                                                            &:hover{
+                                                 }
+                                             }
+                                             &.pera2{
+                                             }
+                         
+                                         }
+                                         & input{
+                                             &::placeholder{
+                                             }
+                                         }
+                                         & .confirmBtn{
+                                         }
+                                         // general 
+                                         & .general{
+                                             & .globalContent{
+                                               
+                                                 & .globalContentInner{
+                                                     & .heading{
+                                                     }
+                                                     & .selectBox{
+                                                           & option{
+                                                             &:hover{
+                                                             }
+                             
+                                                           }
+                                                           &::before{ 
+                                                           }
+                                                           &.selectbox2{
+                                                           
+                                                             &::before{
+                                                             }
+                                                           }
+                                                         & .form-select {
+                                                         }
+                                                       
+                                                     }
+                                                     & .switch {
+                                                         & input{
                                                             
-                                                            }
-                            
-                                                        }
-                                                        &::before{
-                                                        }
-                                                        &.selectbox2{
-                                                            &::before{
-                                                            
-                                                            }
-                                                        }
-                                                        & .form-select {
-                                                        }
+                                                         }
+                                                         input:focus + .slider {
+                                                     
+                                                           }
+                                                           
+                                                           input:checked + .slider:before {
+                                               
+                                                           }
+                                                         & .slider {
+                                                             &::before{
+                                                             }
+                                                             &.round {
+                                                                 &::before {
+                                                                    
+                                                                   }
+                                                               }
+                                                           }
+                                                     }
+                                                     & .lightBtn{
+                                                         & .btnImg{
+                                                         
+                                                         }
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                         //  privacy
+                                         
+                                         & .privacy{
+                                             & .globalContent{
+                                                 & .globalContentInner{
+                                                     & .heading{
+                                                       
+                                                     }
+                                                     & .selectBox{
                                                     
-                                                    }
-                                                    & .switch {
-                                                        & input{
-                                                        
-                                                        }
-                                                        input:focus + .slider {
-                                                        
-                                                        }
-                                                        
-                                                        input:checked + .slider:before {
-                                                        
-                                                        }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                
-                                                                &::before {
-                                                                
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                
-                                                }
-                                                & .pera{
-                                                    & br{
-                                                        display: none;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        // signIn
-                                        & .signIn{
-                                            & .globalContent{
-                                                margin: 67px 80px 98px 80px;
-                                            
-                                        
-                                                & .globalContentInner{
-                                                
-                                                    & .signInContent{
-                                                        padding: 31px 38px 20px 39px;
-                                                        &.signInContent2{
-                                                            
-                                                            & .input-group{
+                                                           & option{
+                                                       
+                                                             &:hover{
+                                                              
+                                                             }
+                             
+                                                           }
+                                                           &::before{
+                                                           }
+                                                           &.selectbox2{
+                                                             &::before{
+                                                               
+                                                             }
+                                                           }
+                                                     
+                                                       
+                                                     }
+                                              
+                                                  
+                                                 }
+                                                 & .pera{
+                                                     & br{
+                                                         display: none;
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                         // signIn
+                                         & .signIn{
+                                             & .globalContent{
+                                                 margin: 67px 80px 98px 80px;
+                                             
+                                         
+                                                 & .globalContentInner{
+                                                   
+                                                     & .signInContent{
+                                                         padding: 31px 38px 20px 39px;
+                                                         &.signInContent2{
+                                                             
+                                                             & .input-group{
+                                                       
+                                                                 &::before{
+                                                             
+                                                                 }
+                                                                 & .input-group-text{
+                                                         
+                                                                 }
+                                                                 & .form-control{
+                                                                   
+                                                                   
+                                                                     &::placeholder{
+                                                                    
+                                                                     }
+                                                                 }
+                                                             }
+                                                         }
+                                                         & label{
+                                                             font-size: 10px;
+                                                         }
+                                                         & input{
+                                                         
+                                                         }
+                                                      
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                         // security
+                         
+                                         & .security{
+                                             & .globalContent{
+                                             
+                                                 & .input-group{
+                                                     padding-left: 30px;
+                                                     padding-right: 30px;
+                                                     & .form-control{
+                                    
+                                                     }
+                                                     & .input-group-text {
                                                     
-                                                                &::before{
-                                                            
-                                                                }
-                                                                & .input-group-text{
+                                                     }
+                                                 }
+                                                 & .globalContentInner{
+                                                     padding: 28px 100px 53px 100px;
+                                                     & .qrImg{
+                                                 
+                                                     }
+                                                     & .otp-input-fields{
+                                                  
+                                                         & input{
+                                                     
                                                         
-                                                                }
-                                                                & .form-control{
-                                                                
-                                                                
-                                                                    &::placeholder{
-                                                                
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                        & label{
-                                                            font-size: 10px;
-                                                        }
-                                                        & input{
+                                                         }
+                         
+                                                     }
+                                                 }
+                                             }
+                                         }
+                         
+                                         // activeSessions 
+                                         & .activeSessions{
+                                             & .globalContent{
+                                                
+                                                 & .sessionTable{
+                                                     & .table{
+                                                         & thead{
+                                                             
+                                                             & tr{
+                                                               
+                                                                 & th{
+                                                                   
+                         
+                                                                     &:first-child{
+                                                                    
+                                                                     }
+                                                                     &:last-child{
+                                                                  
+                                                                     }
+                                                          
+                                                                 }
+                                                             }
+                                                         }
+                                                         & tbody{
+                                                             & tr{
+                                                          
+                                                              
+                                                                 & td{
+                                                           
+                                                                     &:first-child{
+                                                                    
+                                                                     }
+                                                                     &:last-child{
+                                                                 
+                                                                     }
+                                                                 }
+                                                             }
+                                                         }
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                         // Verify
+                         
+                                         & .Verify{
+                                             & .globalContent{
+                                                 margin: 49px 50px 100px 47px;
+                                                 & .selectSection{
+                                                 
+                                                     &::before{
+                                                     
+                                                     }
+                                                     & .selectboxSection{
+                                               
+                                                         & option{
                                                         
-                                                        }
-                                                    
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        // security
-                        
-                                        & .security{
-                                            & .globalContent{
-                                            
-                                                & .input-group{
-                                                    padding-left: 30px;
-                                                    padding-right: 30px;
-                                                    & .form-control{
-                                
-                                                    }
-                                                    & .input-group-text {
-                                                
-                                                    }
-                                                }
-                                                & .globalContentInner{
-                                                    padding: 28px 100px 53px 100px;
-                                                    & .qrImg{
-                                                
-                                                    }
-                                                    & .otp-input-fields{
-                                                
-                                                        & input{
-                                                    
-                                                    
-                                                        }
-                        
-                                                    }
-                                                }
-                                            }
-                                        }
-                        
-                                        // activeSessions 
-                                        & .activeSessions{
-                                            & .globalContent{
-                                            
-                                                & .sessionTable{
-                                                    & .table{
-                                                        & thead{
-                                                            
-                                                            & tr{
-                                                            
-                                                                & th{
-                                                                
-                        
-                                                                    &:first-child{
-                                                                
-                                                                    }
-                                                                    &:last-child{
-                                                                
-                                                                    }
-                                                        
-                                                                }
-                                                            }
-                                                        }
-                                                        & tbody{
-                                                            & tr{
-                                                        
-                                                            
-                                                                & td{
-                                                        
-                                                                    &:first-child{
-                                                                
-                                                                    }
-                                                                    &:last-child{
-                                                                
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        // Verify
-                        
-                                        & .Verify{
-                                            & .globalContent{
-                                                margin: 49px 50px 100px 47px;
-                                                & .selectSection{
-                                                
-                                                    &::before{
-                                                    
-                                                    }
-                                                    & .selectboxSection{
-                                            
-                                                        & option{
-                                                    
-                                                        }
-                                                    }
-                                                }
-                                                & .dateSection{
-                                                    & .dateImg{
-                                                
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+                                                         }
+                                                     }
+                                                 }
+                                                 & .dateSection{
+                                                     & .dateImg{
+                                                  
+                                                     }
+                                                 }
+                                             }
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
     }
 }
 
@@ -4486,31 +4438,10 @@
                                                             &::before{
                                                             }
                                                           }
-                                                        & .form-select {
-                                                        }
+                                                    
                                                       
                                                     }
-                                                    & .switch {
-                                                        & input{
-                                                           
-                                                        }
-                                                        input:focus + .slider {
-                                                    
-                                                          }
-                                                          
-                                                          input:checked + .slider:before {
-                                              
-                                                          }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                                &::before {
-                                                                   
-                                                                  }
-                                                              }
-                                                          }
-                                                    }
+                                                 
                                                     & .lightBtn{
                                                         & .btnImg{
                                                         
@@ -4548,28 +4479,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .switch {
-                                                        & input{
-                                                           
-                                                        }
-                                                        input:focus + .slider {
-                                                           
-                                                          }
-                                                          
-                                                          input:checked + .slider:before {
-                                                        
-                                                          }
-                                                        & .slider {
-                                                            &::before{
-                                                            }
-                                                            &.round {
-                                                   
-                                                                &::before {
-                                                                 
-                                                                  }
-                                                              }
-                                                          }
-                                                    }
+                                               
                                                  
                                                 }
                                                 & .pera{
@@ -5129,18 +5039,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .form-switch {
-                                                        & .form-check-input {
-                                                            
-                                                            &:focus {
-                                                           
-                                                            }
-                                                        }
-                                                        & .form-check-input:checked {
-                            
                                               
-                                                        }
-                                                    }
                                                     & .lightBtn{
                                                         & .btnImg{
                                                         
@@ -5178,18 +5077,7 @@
                                                         }
                                                       
                                                     }
-                                                    & .form-switch {
-                                                        & .form-check-input {
-                                                            
-                                                            &:focus {
-                                                           
-                                                            }
-                                                        }
-                                                        & .form-check-input:checked {
-                            
-                                              
-                                                        }
-                                                    }
+                                               
                                                  
                                                 }
                                                 & .pera{
@@ -6231,7 +6119,7 @@
                 & .modalContent{
                     width: 282px;
                     padding: 10px;
-                    border-radius: 7px 0px 7px 7px;
+                    border-radius: 7px;
                     background-color: #252E39 ;
                     & .modalHeader{
                      border-bottom: none;
@@ -6305,7 +6193,7 @@
             }
         }
 
-        // userModal 
+        //chat userModal 
         .userModal{
             & .modalDailog{
                 & .modalContentUser{
@@ -6550,6 +6438,10 @@
                                }
                             & nav{
                                 & .userNavTab{
+                                    display: flex;
+                                    flex-wrap: nowrap;
+                                    white-space: nowrap;
+                                    overflow: auto hidden;
                                     & .navBtn{
                                         border-radius: 7px !important;
                                         background: rgba(147, 172, 211, 0.08);
@@ -6636,6 +6528,14 @@
                                                 text-align: right;
 
                                             }
+                                            & .walletTitle{
+                                                color: #FFF;
+                                                font-family: 'Inter';
+                                                font-size: 11px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                            }
                                         }
                                       }
                                     }
@@ -6667,7 +6567,7 @@
                                                 padding:7px 11px;
                                                 border: 1px solid #0D131C;
                                                 transition: all 0.3s ease-in-out;
-                                                padding: 10px;
+                                              
                                                 &:hover{
                                                     border: 1px solid #03B80F;
                                                 }
@@ -6682,7 +6582,7 @@
                                                     font-style: normal;
                                                     font-weight: 700;
                                                     line-height: normal;
-                                                    padding-left: 40px;
+                                                    padding:0px 200px 0px 40px;
                                                 }
                                             
                                             }
@@ -6710,7 +6610,7 @@
 
         // language 
         .languageOffcanvas{
-            border-radius: 7px 0px 7px 7px;
+            border-radius:  7px;
             background: #252E39;
             width: 230px;
             & .chatHeader{
@@ -6723,18 +6623,28 @@
                     background: #0D131C;
                     padding: 9px 22px;
                     position: relative;
+                    border: 1px solid #0D131C;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        border: 1px solid #00990A;
+                    }
+                    cursor: pointer;
                     &.active{
                         position: relative;
+                        border: 1px solid #00990A;
+
                         &::before{
                             position: absolute;
                             content: '';
                             right: 20px;
                             top: 50%;
                             transform: translateY(-50%);
-                            background-color: #00990A;
-                            box-shadow: 0px -1px 2px 2px rgba(0,153,10,0.75);
-                            width: 7px;
-                            height: 7px;
+                            background-image: url(../img/aboutJonathan/language.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 15px;
+                            height: 15px;
                             border-radius: 50%;
                         }
                     }
@@ -6750,6 +6660,324 @@
                     }
                 }
               }
+            }
+        }
+
+        // winnerCard 
+        & .winnerCard{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../img/aboutJonathan/winner.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 25px;
+                width: 15px;
+                right: 53px;
+                top: -11px;
+            
+            }
+            & .outerCard {
+                position: relative;
+                overflow: hidden;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 7px;
+                    background: rgba(147, 172, 211, 0.08);
+                  
+                }
+                & .winnerCardSecton{
+                    padding: 11px;
+                    & .WinnerHeading{
+                        color: #FFD700;
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        padding-left: 20px;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            background-image: url(../img/aboutJonathan/language.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            height: 15px;
+                            width: 15px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    & .more{
+                        width: 12px;
+                        height: 12px;
+                    }
+                    & .userImg{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .pera{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & .innerCard{
+
+                        border-radius: 6px;
+                        background: #0D131C;
+                        height: 25px;
+                        & .subHeading{
+                            color: #93ACD3;
+                            font-family:' Montserrat';
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            & span{
+                                color: #FFD700;
+
+                            }
+                        }
+                    }
+                }
+             
+            }
+        }
+
+        // .coinDrop section
+        & .coinDrop{
+            & .outterCard{
+                position: relative;
+                overflow: hidden;
+                padding: 17px 15px 40px 15px;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 4px;
+                    background: rgba(37, 46, 57, 0.50);
+                  
+                }
+                & .icon{
+                    width: 15px;
+                    height: 15px;
+                }
+                & .coinHeader{
+                    & .headerTitle{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+                & .hrLine{
+                    width: 100%;
+                    height: 2px;
+                    color: #00990A;
+                    margin-top: 20px;
+                    opacity: 1;
+                }
+                & .coinBody{
+                    & .inputLabel{
+                        color: rgba(243, 236, 255, 0.59);
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    & .inputForm{
+                        height: 35px;
+                        border-radius: 3px;
+                        background: rgba(147, 172, 211, 0.08);
+                        color: rgba(243, 236, 255, 0.59);
+                        font-family:' Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        &.messageBox{
+                            height: 125px;
+                        }
+                        &::placeholder{
+                            color: rgba(243, 236, 255, 0.59);
+                            font-family:' Montserrat';
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                    & .selectBox{
+                        background: rgba(147, 172, 211, 0.08) !important;
+                     
+                        position: relative;
+                        border-radius: 7px;
+                        height: 35px;
+                        & .fromSelect{
+                            color: #FFF;
+                            font-family: 'Inter';
+                            font-size: 13px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            margin-left: 50px;
+                            text-align: center;
+                            --bs-form-select-bg-img:url(../img/aboutJonathan/right-chevron2.png);
+                            background-repeat: no-repeat;
+                            
+                            & option {
+                                background: #161f2c;
+                                &:hover {
+                                    display: none;
+                                }
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            background-image: url(../img/aboutJonathan/tether-usdt-logo.png);
+                            width: 13px;
+                            height: 13px;
+                            top: 50%;
+                            left: 9px;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    & .coinHeading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        & span{
+                            color: #03B80F;
+                        }
+                    }
+                    & .coinBtn{
+                        border-radius: 3px;
+                        background: #00990A;
+                        padding: 7px 16px;
+                        color: #FFF;
+                        font-family:' Montserrat';
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+
+    }
+    // <!-- vip card modal -->
+    & .vipCardSection{
+    
+        & .outterCard{
+            position: relative;
+            overflow: hidden;
+            height: 239px;
+            &::before{
+                position: absolute;
+                content: '';
+                border-radius: 22px;
+                // background: linear-gradient(360deg, #FFD700 0%, rgba(22, 31, 44, 0.00) 100%);
+                background: linear-gradient(360deg, #FFD700 -257%, rgba(22, 31, 44, 0) 100%);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                 z-index: -1;
+            }
+            & .vipContent{
+                padding: 29px 49px 22px 22px;
+                & .vipSubHeading{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    & .vipSubHeadingsp{
+                        font-size: 17px;
+                        color: #fff;
+                    }
+                }
+                & .vipHeading{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+                & .vipImg{
+                    width: 62px;
+                    height: 62px;
+                }
+
+               & .range {
+                    width: 100%;
+                    height: 6px;    
+                    -webkit-appearance: none;
+                    outline: none;
+                    // overflow: hidden;
+                    border-radius: 7px;
+                    background: linear-gradient(270deg, rgba(255, 215, 0, 0.50) 60.94%, rgba(255, 215, 0, 0.00) 100%);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                   & .range::-webkit-slider-thumb {
+                    //   -webkit-appearance: none;
+                      width: 24px;
+                      height: 11px;
+                      border-radius: 7px;
+                      background: rgba(147, 172, 211, 0.50) !important;
+                      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                      cursor: pointer;
+                      border: 4px solid #333;
+                      // box-shadow: -407px 0 0 400px #00fd0a;
+                    }
+                  }
+                  & .customRange1{
+                    color: #fff;
+                    font-family: 'Montserrat';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    &.customRange2{
+                        color: #FFD700;
+                    }
+                  }
             }
         }
     }
@@ -6837,7 +7065,7 @@
 
 @include media-breakpoint-down(md) {
     .aboutJonathan {
-        padding: 75px 21px 100px 21px;
+        padding: 75px 21px 50px 21px;
 
         & .aboutJonathanSection {
             & .sectionHeading {
@@ -6858,12 +7086,585 @@
                     font-size: 12px;
                 }
             }
+
+            // chatOffcanvas
+            & .chatOffcanvas{
+            width: 100% !important;
+            background: transparent !important;
+            padding: 0px;
+                & .chatHeader{
+                
+                    & .chatDropdown{
+                        & .allChatBtn{
+
+                            &::after{
+
+
+                            }
+                                
+                        }
+                    }
+                    & .closeBtn{
+                    
+                        &:hover{
+                            & .icon{
+                            
+                            }
+                        }
+                    
+                    & .icon{
+            
+
+                    }
+                    }
+                    & .infoBtn{
+                        & .icon{
+
+                        }
+                    }
+                }
+            
+                
+                    & .chatBody{
+                        padding: 14px 0px 0px 0px  !important;
+                        & .outerCard{
+                            padding: 17px 19px 12px 17px !important;
+                        &::before{
+                    
+                        }
+                            & .chatContent{
+                                
+                                & .userImg{
+                            
+                                }
+                                & .meadel{
+                                    & ul{
+                                        & li{
+                                            & .icon{
+                                            
+                                            }
+                                        }
+                                    }
+                                }
+                                & .chatHeading{
+                            
+                                    & .subHeading{
+                                
+                                    }
+                                }
+                                & .chatBox{
+                            
+                                    &::before{
+                                z-index: 1;
+                                    }
+                                    & .chatMessage{
+                                    
+                                        
+                                    }
+            
+                                    
+                                }
+                            }
+                            & .messageBox{
+        
+                                & .input-group {
+                                    & .messageInput{
+                            background: #0D131C !important;
+                                        &::placeholder{
+                                
+                                        }
+                                    }
+                                    & .input-group-text{
+                                        background: #0D131C !important;
+                        
+
+                                        
+                                        &.send{
+                        
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .chatFooter{
+                    & .outerCard{
+            
+                        & ul{
+                            & li{
+                                & .icon{
+                        background-color: #0D131C;
+                                    &.gif{
+                                
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
+                
+            }
+
+               // language 
+            .languageOffcanvas{
+        width: 100%;
+        padding: 12px;
+                & .chatHeader{
+
+                }
+                & .languageBody{
+                & .languageContent{
+                    & .innerCard{
+                
+                        &:hover{
+                            
+                        }
+                        cursor: pointer;
+                        &.active{
+                    
+
+                            &::before{
+                        
+                            }
+                        }
+                        & .headng{
+            
+                    
+                        
+                        }
+                    }
+                }
+                }
+            }
+                // winnerCard 
+                & .winnerCard{
+                
+                    &::before{
+                
+                    
+                    }
+                    & .outerCard {
+                    
+                        &::before{
+                    
+                        
+                        }
+                        & .winnerCardSecton{
+                    
+                            & .WinnerHeading{
+                        
+                                &::before{
+
+                                }
+                            }
+                            & .more{
+                            
+                            }
+                            & .userImg{
+                            
+                            }
+                            & .pera{
+                
+                            }
+                            & .innerCard{
+                                & .subHeading{
+                            
+                                    & span{
+                                
+
+                                    }
+                                }
+                            }
+                        }
+                    
+                    }
+                }
+              // <!--chat Rules Modal -->
+            .chatModal{
+                & .modalDailog{
+                    & .modalContent{
+                width: 100% !important;
+                        & .modalHeader{
+                    
+                            & .modal-title{
+                
+                                & .icon{
+                                
+                                }
+                            }
+                            & .icon{
+                            
+                                &:hover{
+                                
+                                }
+                            }
+                        }
+                        & .hrLine{
+                
+                        }
+                        & .modalBody{
+                            & .content{
+                                & ol{
+                                padding-left: 1rem;
+                                    & li{
+                        
+                                        &::before{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .modalFooter{
+                        
+                            & .pera{
+                        
+                            }
+                        }
+                    }
+                }
+            }
+            // coin section mobile 
+            & .coinDrop{
+                & .outterCard{
+                  
+                    &::before{
+                    }
+                    & .icon{
+                   
+                    }
+                    & .coinHeader{
+                        & .headerTitle{
+                  
+                        }
+                    }
+                    & .hrLine{
+                   
+                    }
+                    & .coinBody{
+                        & .inputLabel{
+                        
+                        }
+                        & .inputForm{
+                  
+                            &.messageBox{
+                                
+                            }
+                            &::placeholder{
+                          
+                            }
+                        }
+                        & .selectBox{
+                         
+                            & .fromSelect{
+                    
+                                
+                                & option {
+                                 
+                                    &:hover {
+                                    
+                                    }
+                                }
+                            }
+                            &::before {
+                            
+                            }
+                        }
+                        & .coinHeading{
+                
+                            & span{
+                                
+                            }
+                        }
+                        & .coinBtn{
+                     
+                        }
+                    }
+                }
+            }
+
+              //chat userModal 
+            .userModal{
+                & .modalDailog{
+                    & .modalContentUser{
+                
+                        & .modalHeader{
+                            
+                            & .modal-title{
+                        
+                                & .icon{
+                                
+                                }
+                            }
+                            & .icon{
+                                
+                                &:hover{
+                                
+                                }
+                            }
+                            & .modal-option {
+                            
+                                & .icon{
+                                
+                                }
+                            }
+                        }
+                        & .hrLine{
+                    
+                        }
+                        & .modalBody{
+                            & .icon{
+                            
+                        
+                            }
+                            & .searchInput{
+                                & .icon{
+                                
+                                }
+                                & .searchForm{
+                                
+                                    &::placeholder{
+                                
+
+                                    }
+                                }
+                            }
+                            & nav{
+
+                                & .userNavTab{
+                                    & .navBtn{
+                                    font-size: 9px;
+                                        &.active{
+                                    
+                                        }
+                                    }
+                                }
+                            }
+                            & .userTabContent{
+                                & .userTabPane{
+                                    & .outerCard{
+                                        height: 479px;
+                                        &::before{
+                                    
+                                        
+                                        }
+                                        & .oppes{
+                                            & .oppesImg{
+                                                width: 38px;
+                                                height: 38px;
+                                            }
+                                            & .pera{
+                                                font-size: 6px;
+                                            
+                                            }
+                                        }
+                                    }
+                                    & .chatBtn{
+                                        font-size: 8px;
+                                    
+                                        & .icon{
+                                            &.messageIcon{
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+                                        }
+                                    }
+                                    & .chatBtn2{
+                            
+                                    }
+                                    & .outerCard2{
+                                    
+                                        &::before{
+                                        
+                                        }
+                                        & .pera{
+                                            font-size: 6px;
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+               // walletModal
+
+            // & .walletModal{
+            //     & .modalDailog{
+            //         & .modalContentUser{
+            //             background: #161F2C;
+            //             z-index: -2 !important;
+            //             & .modalHeader{
+                        
+            //                 & .modal-title {
+                        
+            //                     & .icon{
+                                
+            //                     }
+            //                 }
+            //                 & .icon{
+                            
+            //                 }
+            //                 & .searchInput{
+            //                     & .icon{
+            //                         height: 31px;
+            //                     }
+            //                     & .additionBtn{
+            //                         height: 31px;
+            //                     }
+            //                     & .searchForm{
+                            
+            //                         &::placeholder{
+                            
+
+            //                         }
+            //                     }
+            //                 }
+            //                 & .pera{
+                    
+            //                 }
+            //                 & nav{
+            //                     & .userNavTab{
+                            
+            //                         & .navBtn{
+            //                             font-size: 13px;
+            //                             &.active{
+                                    
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //             & .hrLine{
+                    
+            //             }
+            //             & .modalBody{
+            //                 & .userTabContent{
+            //                     padding: 9px 0px;
+            //                     & .userTabPane {
+            //                         & .outerCard {
+                                      
+                                    
+            //                             &::before{
+                               
+                                        
+            //                             }
+                                    
+                                    
+            //                         & .criptoContent{
+            //                             padding: 0px;
+            //                             & .innerCard{
+                                
+            //                                 &:hover{
+                                    
+            //                                 }
+            //                                 &.active{
+                                        
+            //                                 }
+            //                                 & .icon{
+                                            
+            //                                 }
+            //                                 & .heading{
+                                    
+            //                                 }
+            //                                 & .subHeading{
+                                    
+
+            //                                 }
+            //                                 & .walletTitle{
+                                    
+            //                                 }
+            //                             }
+            //                         }
+            //                         }
+            //                         // fait 
+            //                         & .outterCard2{
+            //                             padding: 10px 15px 10px 15px;
+            //                             border-radius: 0px 7px 7px 7px;
+            //                             background: #0d131c;
+            //                             &::before{
+            //                             display: none;
+                                        
+            //                             }
+            //                             & .criptoContent{
+            //                                 padding: 0px;
+            //                                 & .innerCard{
+                                    
+            //                                     &:hover{
+                                            
+            //                                     }
+            //                                     &.active{
+                                            
+            //                                     }
+                                            
+            //                                     & .heading{
+                                            
+            //                                     }
+                                            
+            //                                 }
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //             & .modal-footer{
+                        
+            //                 & .pera{
+                        
+            //                 }
+            //             }
+            //         }
+            //     }
+            
+            // }
+        }
+        // vip card section 
+        & .vipCardSection{
+       
+            & .outterCard{
+            height: 145px;
+                &::before{
+                }
+                & .vipContent{
+                    padding: 15px;
+                    & .vipSubHeading{
+                        font-size: 12px;
+                        & .vipSubHeadingsp{
+                            font-size: 12px;
+                        }
+                    }
+                    & .vipHeading{
+                        font-size: 22px;
+                    }
+                    & .vipImg{
+                        width: 40px;
+                        height: 40px;
+                    }
+    
+                   & .range {
+                 
+                       & .range::-webkit-slider-thumb {
+           
+                        }
+                      }
+                      & .customRange1{
+                        font-size: 12px;
+                        &.customRange2{
+                            font-size: 12px;
+                        }
+                      }
+                }
+            }
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
     .aboutJonathan {
+        padding: 75px 11px 0px 11px;
         & .aboutJonathanSection {
             & .sectionHeading {
                 font-size: 17px;
@@ -6882,12 +7683,535 @@
                     font-size: 9px;
                 }
             }
+
+            // / chatOffcanvas
+            & .chatOffcanvas{
+                
+                    & .chatHeader{
+                    
+                        & .chatDropdown{
+                            & .allChatBtn{
+    
+                                &::after{
+    
+    
+                                }
+                                    
+                            }
+                        }
+                        & .closeBtn{
+                        
+                            &:hover{
+                                & .icon{
+                                
+                                }
+                            }
+                        
+                        & .icon{
+                
+    
+                        }
+                        }
+                        & .infoBtn{
+                            & .icon{
+    
+                            }
+                        }
+                    }
+                
+                    
+                        & .chatBody{
+                        
+                            & .outerCard{
+                                padding: 10px 10px 10px 10px !important;
+                            &::before{
+                        
+                            }
+                                & .chatContent{
+                                    
+                                    & .userImg{
+                                
+                                    }
+                                    & .meadel{
+                                        & ul{
+                                            & li{
+                                                & .icon{
+                                                
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .chatHeading{
+                                
+                                        & .subHeading{
+                                    
+                                        }
+                                    }
+                                    & .chatBox{
+                                
+                                        &::before{
+                                    
+                                        }
+                                        & .chatMessage{
+                                            padding: 9px 9px 9px 9px;
+                                            
+                                        }
+                
+                                        
+                                    }
+                                }
+                                & .messageBox{
+            
+                                    & .input-group {
+                                        & .messageInput{
+                                
+                                            &::placeholder{
+                                    
+                                            }
+                                        }
+                                        & .input-group-text{
+                                            
+                            
+    
+                                            
+                                            &.send{
+                            
+                                            
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .chatFooter{
+                        & .outerCard{
+                
+                            & ul{
+                                & li{
+                                    & .icon{
+                            
+                                        &.gif{
+                                    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        }
+                    
+            }
+                  // language 
+            .languageOffcanvas{
+                padding: 8px;
+                    & .chatHeader{
+    
+                    }
+                    & .languageBody{
+                    & .languageContent{
+                        & .innerCard{
+                    
+                            &:hover{
+                                
+                            }
+                            cursor: pointer;
+                            &.active{
+                        
+    
+                                &::before{
+                            
+                                }
+                            }
+                            & .headng{
+                
+                        
+                            
+                            }
+                        }
+                    }
+                    }
+            }
+
+            // <!--chat Rules Modal -->
+            .chatModal{
+                & .modalDailog{
+                    & .modalContent{
+                
+                        & .modalHeader{
+                    
+                            & .modal-title{
+                
+                                & .icon{
+                                
+                                }
+                            }
+                            & .icon{
+                            
+                                &:hover{
+                                
+                                }
+                            }
+                        }
+                        & .hrLine{
+                
+                        }
+                        & .modalBody{
+                            & .content{
+                                & ol{
+                                    & li{
+                        
+                                        &::before{
+                                
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .modalFooter{
+                        
+                            & .pera{
+                        
+                            }
+                        }
+                    }
+                }
+            }
+              // coin section mobile 
+              & .coinDrop{
+                & .outterCard{
+                  
+                    &::before{
+                    }
+                    & .icon{
+                   
+                    }
+                    & .coinHeader{
+                        & .headerTitle{
+                  
+                        }
+                    }
+                    & .hrLine{
+                   
+                    }
+                    & .coinBody{
+                        & .inputLabel{
+                        
+                        }
+                        & .inputForm{
+                  
+                            &.messageBox{
+                                
+                            }
+                            &::placeholder{
+                          
+                            }
+                        }
+                        & .selectBox{
+                         
+                            & .fromSelect{
+                    
+                                
+                                & option {
+                                 
+                                    &:hover {
+                                    
+                                    }
+                                }
+                            }
+                            &::before {
+                            
+                            }
+                        }
+                        & .coinHeading{
+                
+                            & span{
+                                
+                            }
+                        }
+                        & .coinBtn{
+                     
+                        }
+                    }
+                }
+            }
+
+             //chat userModal 
+            .userModal{
+                & .modalDailog{
+                    & .modalContentUser{
+                        padding: 8px;
+
+                        & .modalHeader{
+                            
+                            & .modal-title{
+                        
+                                & .icon{
+                                
+                                }
+                            }
+                            & .icon{
+                                
+                                &:hover{
+                                
+                                }
+                            }
+                            & .modal-option {
+                            
+                                & .icon{
+                                
+                                }
+                            }
+                        }
+                        & .hrLine{
+                    
+                        }
+                        & .modalBody{
+                            & .icon{
+                            
+                        
+                            }
+                            & .searchInput{
+                                & .icon{
+                                
+                                }
+                                & .searchForm{
+                                
+                                    &::placeholder{
+                                
+
+                                    }
+                                }
+                            }
+                            & nav{
+
+                                & .userNavTab{
+                                    & .navBtn{
+                                    
+                                        &.active{
+                                    
+                                        }
+                                    }
+                                }
+                            }
+                            & .userTabContent{
+                                & .userTabPane{
+                                    & .outerCard{
+                                        &::before{
+                                    
+                                        
+                                        }
+                                        & .oppes{
+                                            & .oppesImg{
+                                                width: 38px;
+                                                height: 38px;
+                                            }
+                                            & .pera{
+                                                font-size: 6px;
+                                            
+                                            }
+                                        }
+                                    }
+                                    & .chatBtn{
+                                    padding: 7px 8px;
+                                    
+                                        & .icon{
+                                            &.messageIcon{
+                                        
+                                            }
+                                        }
+                                    }
+                                    & .chatBtn2{
+                            
+                                    }
+                                    & .outerCard2{
+                                    
+                                        &::before{
+                                        
+                                        }
+                                        & .pera{
+                                            font-size: 6px;
+                                        
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+             // walletModal
+
+            & .walletModal{
+                & .modalDailog{
+                    & .modalContentUser{
+                        padding: 25px 13px;
+                        & .modalHeader{
+                        
+                            & .modal-title {
+                        
+                                & .icon{
+                                
+                                }
+                            }
+                            & .icon{
+                            
+                            }
+                            & .searchInput{
+                                & .icon{
+                        
+                                }
+                                & .additionBtn{
+                            
+                                }
+                                & .searchForm{
+                            
+                                    &::placeholder{
+                            
+
+                                    }
+                                }
+                            }
+                            & .pera{
+                    
+                            }
+                            & nav{
+                                & .userNavTab{
+                            
+                                    & .navBtn{
+                    
+                                        &.active{
+                                    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .hrLine{
+                    
+                        }
+                        & .modalBody{
+                            & .userTabContent{
+                            
+                                & .userTabPane {
+                                    & .outerCard {
+                                    
+                                    
+                                        &::before{
+                                
+                                        
+                                        }
+                                    
+                                    
+                                    & .criptoContent{
+                                    
+                                        & .innerCard{
+                                
+                                            &:hover{
+                                    
+                                            }
+                                            &.active{
+                                        
+                                            }
+                                            & .icon{
+                                            
+                                            }
+                                            & .heading{
+                                    
+                                            }
+                                            & .subHeading{
+                                    
+
+                                            }
+                                            & .walletTitle{
+                                    
+                                            }
+                                        }
+                                    }
+                                    }
+                                    // fait 
+                                    & .outterCard2{
+                                        padding: 8px 8px 8px 8px;
+                                    
+                                        &::before{
+                            
+                                        
+                                        }
+                                        & .criptoContent{
+                                            & .innerCard{
+                                    
+                                                &:hover{
+                                            
+                                                }
+                                                &.active{
+                                            
+                                                }
+                                            
+                                                & .heading{
+                                                    padding:0px 50px 0px 20px;
+
+                                                }
+                                            
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .modal-footer{
+                        
+                            & .pera{
+                        
+                            }
+                        }
+                    }
+                }
+            
+            }
         }
+            // vip card section 
+            & .vipCardSection{
+       
+                & .outterCard{
+                    height: 129px;
+                    &::before{
+                    }
+                    & .vipContent{
+                    padding: 15px;
+
+                        & .vipSubHeading{
+                            font-size: 10px;
+                            & .vipSubHeadingsp{
+                                font-size: 10px;
+                            }
+                        }
+                        & .vipHeading{
+                            font-size: 20px;
+                        }
+                        & .vipImg{
+                            width: 33px;
+                            height: 33px;
+                        }
+        
+                       & .range {
+                     
+                           & .range::-webkit-slider-thumb {
+               
+                            }
+                          }
+                          & .customRange1{
+                            font-size: 10px;
+                            &.customRange2{
+                                font-size: 10px;
+                            }
+                          }
+                    }
+                }
+            }
     }
 }
 @media screen and (max-width: 430px) {
     .aboutJonathan {
-        padding: 41px 11px 75px 11px;
+        padding: 41px 11px 0px 11px;
 
         & .aboutJonathanSection {
             & .sectionHeading {
@@ -6902,6 +8226,148 @@
                     }
                 }
                 & .pera {
+                }
+            }
+              // coin section mobile 
+              & .coinDrop{
+                & .outterCard{
+                  
+                    &::before{
+                    }
+                    & .icon{
+                   
+                    }
+                    & .coinHeader{
+                        & .headerTitle{
+                  
+                        }
+                    }
+                    & .hrLine{
+                   
+                    }
+                    & .coinBody{
+                        & .inputLabel{
+                        font-size: 10px;
+                        }
+                        & .inputForm{
+                  
+                            &.messageBox{
+                                
+                            }
+                            &::placeholder{
+                          
+                            }
+                        }
+                        & .selectBox{
+                         
+                            & .fromSelect{
+                                margin-left: 24px;
+                                
+                                & option {
+                                 
+                                    &:hover {
+                                    
+                                    }
+                                }
+                            }
+                            &::before {
+                            
+                            }
+                        }
+                        & .coinHeading{
+                
+                            & span{
+                                
+                            }
+                        }
+                        & .coinBtn{
+                     
+                        }
+                    }
+                }
+            }
+
+                // winnerCard 
+                & .winnerCard{
+                
+                    &::before{
+                right: 35px;
+                    
+                    }
+                    & .outerCard {
+                    
+                        &::before{
+                    
+                        
+                        }
+                        & .winnerCardSecton{
+                    
+                            & .WinnerHeading{
+                        
+                                &::before{
+    
+                                }
+                            }
+                            & .more{
+                            
+                            }
+                            & .userImg{
+                            
+                            }
+                            & .pera{
+                
+                            }
+                            & .innerCard{
+                                & .subHeading{
+                            
+                                    & span{
+                                
+    
+                                    }
+                                }
+                            }
+                        }
+                    
+                    }
+                }
+        }
+         
+        // vip card section 
+        & .vipCardSection{
+       
+            & .outterCard{
+                height: 129px;
+                &::before{
+                }
+                & .vipContent{
+                padding: 15px;
+
+                    & .vipSubHeading{
+                        font-size: 10px;
+                        & .vipSubHeadingsp{
+                            font-size: 10px;
+                        }
+                    }
+                    & .vipHeading{
+                        font-size: 16px;
+                    }
+                    & .vipImg{
+                        width: 33px;
+                        height: 33px;
+                    }
+    
+                   & .range {
+                 
+                       & .range::-webkit-slider-thumb {
+           
+                        }
+                      }
+                      & .customRange1{
+                        font-size: 10px;
+                        &.customRange2{
+                            font-size: 10px;
+                        }
+                      }
                 }
             }
         }
@@ -6923,12 +8389,8 @@
                                 border-right: 1px solid #00990a;
                                 padding-right: 15px;
                             }
+                        
                             & a {
-                                & .usdt {
-                                    padding: 6px 11px;
-                                    border-radius: 7px;
-                                    background: rgba(147, 172, 211, 0.08);
-                                }
                                 & .navMenu {
                                     color: #fff;
                                     font-family: "Montserrat";
@@ -6955,6 +8417,1049 @@
                                     width: 21px;
                                 }
                             }
+                        }
+                      & .walletDropdown{
+                        & .usdt {
+                      
+                            & .icon{
+                                width: 25px;
+                                height: 25px;
+                            }
+                            padding: 2px 9px;
+                            border-radius: 7px;
+                            background: rgba(147, 172, 211, 0.08);
+                        }
+                        & .dropTogglewallet{
+                           &::after{
+                            display: none;
+                           }
+                        }
+                        & .dropMenu{
+                            min-width: 350px;
+                            top: 45px;
+                            & .walletModal{
+                                & .modalDailog{
+                                    & .modalContentUser{
+                                        border-radius: 7px;
+                                        background: #161F2C;
+                                        z-index: -2;
+                                        padding: 10px 17px;
+                                        & .modalHeader{
+                                            border-bottom: none;
+                                            & .modalTitle{
+                                                color: #FFF;
+                                                font-family: 'Montserrat';
+                                                font-size: 15px;
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                line-height: normal;
+                                                & .icon{
+                                                    width: 13px;
+                                                    height: 13px;
+                                                }
+                                            }
+                                            & .icon{
+                                                height: 25px;
+                                            }
+                                            & .searchInput{
+                                                & .icon{
+                                                    height: 35px;
+                                                    padding: 10px;
+                                                    background: rgba(147, 172, 211, 0.08);
+                                                }
+                                                & .additionBtn{
+                                                    background-color: none;
+                                                    padding: 0;
+                                                }
+                                                & .searchForm{
+                                                    background: rgba(147, 172, 211, 0.08);
+                                                    color: rgba(147, 172, 211, 0.50);
+                                                    font-family:' Montserrat';
+                                                    font-size: 12px;
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    line-height: normal;
+                                                    &::placeholder{
+                                                    font-size: 12px;
+                                                    color: rgba(147, 172, 211, 0.50);
+                    
+                                                    }
+                                                }
+                                            }
+                                               & .pera{
+                                                color: rgba(147, 172, 211, 0.50);
+                                                font-family: 'Montserrat';
+                                                font-size: 13px;
+                                                font-style: normal;
+                                                font-weight: 600;
+                                                line-height: normal;
+                                               }
+                                            & nav{
+                                                & .userNavTab{
+                                                    display: flex;
+                                                    flex-wrap: nowrap;
+                                                    white-space: nowrap;
+                                                    overflow: auto hidden;
+                                                    & .navBtn{
+                                                        border-radius: 7px !important;
+                                                        background: rgba(147, 172, 211, 0.08);
+                                                        color: rgba(147, 172, 211, 0.50);
+                                                        font-family: 'Montserrat';
+                                                        font-size: 15px;
+                                                        font-style: normal;
+                                                        font-weight: 600;
+                                                        line-height: normal;
+                                                        padding: 9px 22px;
+                                                        &.active{
+                                                            background-color: #00990A;
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        & .hrLine{
+                                            width: 100%;
+                                            height: 2px;
+                                            color: #00990A;
+                                            margin-top: 0;
+                                            opacity: 1;
+                                        }
+                                        & .modalBody{
+                                            & .userTabContent{
+                                                padding: 19px 0px;
+                                                & .userTabPane {
+                                                    & .outerCard {
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        // height: 401px;
+                                                        border-radius: 7px;
+                                                            background: rgba(147, 172, 211, 0.08) !important;
+                                                        // &::before{
+                                                        //     position: absolute;
+                                                        //     content: '';
+                                                        //     left: 0;
+                                                        //     top: 0;
+                                                        //     bottom: 0;
+                                                        //     z-index: 0;
+                                                        //     right: 0;
+                                                        //     height: 100%;
+                                                        //     width: 100%;
+                                                        //     border-radius: 7px;
+                                                        //     background: rgba(147, 172, 211, 0.08) !important;
+                                                          
+                                                        // }
+                                                     
+                                                     
+                                                      & .criptoContent{
+                                                        padding: 33px 13px;
+                                                        & .innerCard{
+                                                            border-radius: 7px;
+                                                            background: #0D131C;
+                                                            padding:7px 11px;
+                                                            border: 1px solid #0D131C;
+                                                            transition: all 0.3s ease-in-out;
+                                                            &:hover{
+                                                                border: 1px solid #03B80F;
+                                                            }
+                                                            &.active{
+                                                            border: 1px solid #03B80F;
+                                                            }
+                                                            & .icon{
+                                                                width: 21px;
+                                                                height: 21px;
+                                                            }
+                                                            & .heading{
+                                                                color: #FFF;
+                                                                font-family:' Inter';
+                                                                font-size: 10px;
+                                                                font-style: normal;
+                                                                font-weight: 700;
+                                                                line-height: normal;
+                                                                text-align: right;
+                                                            }
+                                                            & .subHeading{
+                                                                color: rgba(147, 172, 211, 0.50);
+                                                                font-family: 'Inter';
+                                                                font-size: 8px;
+                                                                font-style: normal;
+                                                                font-weight: 500;
+                                                                line-height: normal;
+                                                                text-align: right;
+                
+                                                            }
+                                                            & .walletTitle{
+                                                                color: #FFF;
+                                                                font-family: 'Inter';
+                                                                font-size: 11px;
+                                                                font-style: normal;
+                                                                font-weight: 700;
+                                                                line-height: normal;
+                                                            }
+                                                        }
+                                                      }
+                                                    }
+                                                    // fait 
+                                                    & .outterCard2{
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        // height: 401px;
+                                                        border-radius: 0px 7px 7px 7px;
+                                                        background: #0D131C;
+                                                     
+                                                        // &::before{
+                                                        //     position: absolute;
+                                                        //     content: '';
+                                                        //     left: 0;
+                                                        //     top: 0;
+                                                        //     bottom: 0;
+                                                        //     z-index: -1;
+                                                        //     right: 0;
+                                                        //     height: 100%;
+                                                        //     width: 100%;
+                                                        //     border-radius: 0px 7px 7px 7px;
+                                                        //     background: #0D131C;
+                                                          
+                                                        // }
+                                                        & .criptoContent{
+                                                            padding: 10px 13px;
+                                                            & .innerCard{
+                                                                border-radius: 7px;
+                                                                background: #161F2C;
+                                                                padding:7px 11px;
+                                                                border: 1px solid #0D131C;
+                                                                transition: all 0.3s ease-in-out;
+                                                              
+                                                                &:hover{
+                                                                    border: 1px solid #03B80F;
+                                                                }
+                                                                &.active{
+                                                                border: 1px solid #03B80F;
+                                                                }
+                                                              
+                                                                & .heading{
+                                                                    color: #FFF;
+                                                                    font-family: 'Inter';
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 700;
+                                                                    line-height: normal;
+                                                                    // padding:0px 200px 0px 40px;
+                                                                }
+                                                            
+                                                            }
+                                                          }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        & .modalFooter{
+                                            padding: 0px 19px ;
+                                            & .pera{
+                                                color: rgba(147, 172, 211, 0.50);
+                                                font-family:' Inter';
+                                                font-size: 10px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: normal;
+                                                text-align: right;
+                                            }
+                                        }
+                                    }
+                                }
+                            
+                            }
+                        }
+                      }
+                        & .vipDropdown{
+                          transition: all 0.3s ease-in-out;
+                          & .icon{
+                            width: 36px;
+                            height: 36px;
+                          }
+                          &:hover{
+                            & .dropMenu{
+                                display: block;
+                            }
+                          }
+                            & .dropToggle{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            & .dropMenu{
+                                padding-top: 0px;
+                                width: 220px;
+                                background-color: #0D131C !important;
+                                &.show{
+                                    padding-top: 0px;
+                                }
+                                & .dropmenuItem{
+                                    color: $white;
+                                    font-size: 13px;
+                                    background-color: transparent;
+                                    transition: all 0.3s ease-in-out;
+                                    font-weight: 500;
+                                    opacity: 0.8;
+                                    & .dropIcon{
+                                        width: 20px;
+                                        height: 20px;
+                                        transition: all 0.3s ease-in-out;
+
+                                    }
+                                    &:hover{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                    
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+              
+                                    & .dropmenuItem{
+                                        & .dropIcon{
+                             
+    
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                    
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                         
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+              
+                                    & .dropmenuItem{
+                                        & .dropIcon{
+                             
+    
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                            & .walletDropdown{
+                                & .usdt {
+                              
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                 
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+                padding: 0px 10px;
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                            
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                     
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                                & .icon{
+                                    width: 30px;
+                                    height: 30px;
+                                  }
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+                                    width: 250PX;
+              
+                                    & .dropmenuItem{
+                                        // font-size: 16px;
+                                        & .dropIcon{
+                                            width: 18px;
+                                            height: 18px;
+    
+                                        }
+                                        &.bellicon{
+                                            width: 60px;
+                                            height: 40px;
+                                            position: relative;
+                                            &::before{
+                                                position: absolute;
+                                                content: '25';
+                                                background-color: #00990A;
+                                                border-radius: 50%;
+                                                width: 25px;
+                                                height: 25px;
+                                                top: 0;
+                                                right: 0;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                font-size: 13px;
+                                                color: $white;
+
+                                            }
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                            & .walletDropdown{
+                                & .usdt {
+                              
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                 left: -260px;
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        & .headerFluid {
+            & .headerRow {
+                & .headerRyt {
+              
+                    & .headerMenu {
+                        & ul {
+                            & li {
+                                &.hrline {
+                              
+                                }
+                                & a {
+                                    & .usdt {
+                                        & .icon{
+                                            width: 30px;
+                                            height: 30px;
+
+                                        }
+                                        padding: 0;
+                                        background-color: transparent;
+                                    }
+                                    & .navMenu {
+                             
+    
+                                        & span {
+                                       
+                                        }
+                                        & .navMenu2 {
+                                            
+                                        }
+                                        & .subHeading {
+                                  
+                                        }
+                                    }
+    
+                                    & .icon {
+                                     
+                                    }
+                                }
+                            }
+                       
+                            & .vipDropdown{
+                                & .icon {
+                                    height: 30px;
+                                     width: 30px;
+                                }
+                              &:hover{
+                                & .dropMenu{
+                            
+                                }
+                              }
+                                & .dropToggle{
+                                    &::after{
+                                   
+                                    }
+                                }
+                                & .dropMenu{
+                                   left: -150px;
+              
+                                    & .dropmenuItem{
+                                      
+                                        & .dropIcon{
+                                  
+    
+                                        }
+                                        &.bellicon{
+                                     
+                                            &::before{
+                                            
+
+                                            }
+                                        }
+                                        &:hover{
+                                       
+                                        }
+                                    }
+                                }
+                            }
+                            & .walletDropdown{
+                                & .usdt {
+                              background: none;
+                              padding: 0;
+                                    & .icon{
+                                      
+                                    }
+                              
+                                }
+                                & .dropTogglewallet{
+                                   &::after{
+                                  
+                                   }
+                                }
+                                & .dropMenu{
+                                //  left: -260px;
+                                right: 0;
+                                 min-width: 250px;
+                                    & .walletModal{
+                                        & .modalDailog{
+                                            & .modalContentUser{
+                                             
+                                                & .modalHeader{
+                                                    
+                                                    & .modal-title {
+                                                  
+                                                        & .icon{
+                                                        
+                                                        }
+                                                    }
+                                                    & .icon{
+                                                       
+                                                    }
+                                                    & .searchInput{
+                                                        & .icon{
+                                                   
+                                                        }
+                                                        & .additionBtn{
+                                                      
+                                                        }
+                                                        & .searchForm{
+                                                  
+                                                            &::placeholder{
+                                                     
+                            
+                                                            }
+                                                        }
+                                                    }
+                                                       & .pera{
+                                              
+                                                       }
+                                                    & nav{
+                                                        & .userNavTab{
+                                                      
+                                                            & .navBtn{
+                                                       
+                                                                &.active{
+                                                               
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .hrLine{
+                                            
+                                                }
+                                                & .modalBody{
+                                                    & .userTabContent{
+                                                     
+                                                        & .userTabPane {
+                                                            & .outerCard {
+                                                            
+                                                             
+                                                             
+                                                              & .criptoContent{
+                                                           
+                                                                & .innerCard{
+                                                        
+                                                                    &:hover{
+                                                                 
+                                                                    }
+                                                                    &.active{
+                                                              
+                                                                    }
+                                                                    & .icon{
+                                                                  
+                                                                    }
+                                                                    & .heading{
+                                                           
+                                                                    }
+                                                                    & .subHeading{
+                                                               
+                        
+                                                                    }
+                                                                    & .walletTitle{
+                                                             
+                                                                    }
+                                                                }
+                                                              }
+                                                            }
+                                                            // fait 
+                                                            & .outterCard2{
+                                                          
+                                                             
+                                                                
+                                                                & .criptoContent{
+                                                                  
+                                                                    & .innerCard{
+                                                                        
+                                                                      
+                                                                        &:hover{
+                                                                          
+                                                                        }
+                                                                        &.active{
+                                                                       
+                                                                        }
+                                                                      
+                                                                        & .heading{
+                                                                           
+                                                                        }
+                                                                    
+                                                                    }
+                                                                  }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                & .modal-footer{
+                                                
+                                                    & .pera{
+                                                
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    
+                                }
+                                }
+                              }
                         }
                     }
                 }
@@ -7251,3 +9756,417 @@
 }
 
 // <!-- ****** [ Bounscard Section end ] ****** -->
+
+
+
+// amlPolicy section start 
+
+.amlPolicy{
+    padding: 127px 100px 0px 100px;
+    & .amlPolicySection{
+        & .amlHeading{
+            color: #FFF;
+            font-family:' Montserrat';
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            font-variant: all-small-caps;
+        }
+        & .amlSubheading{
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        & .outerCard{
+            position: relative;
+            overflow: hidden;
+            margin-top:100px ;
+            &::before{
+                position: absolute;
+                content: '';
+                border-radius: 15px;
+                background: #161F2C;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                
+            }
+            & .amlPolicyContent{
+                padding: 38px 40px;
+                & .innerHeading{
+                    color: #FFD700;
+                    font-family: 'Montserrat';
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .pera{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 16px;
+                    & .linkWeb{
+                        color: #FFD700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .amlPolicy{
+        padding: 100px 100px 0px 100px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 47px;
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+            margin-top: 80px;
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+           
+                    }
+                    & .pera{
+                        font-size: 20px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .amlPolicy{
+       
+        & .amlPolicySection{
+            & .amlHeading{
+         
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+                        font-size: 27px;
+                    }
+                    & .pera{
+                        font-size: 19px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .amlPolicy{
+        padding: 80px 50px 0px 50px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 37px;
+            }
+            & .amlSubheading{
+                font-size: 17px;
+            }
+            & .outerCard{
+                margin-top: 50px;
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                   
+                    & .innerHeading{
+                        font-size: 24px;
+                    }
+                    & .pera{
+                        font-size: 17px;
+                        padding-bottom: 13px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .amlPolicy{
+        padding: 54px 21px 0px 21px;
+        & .amlPolicySection{
+            & .amlHeading{
+                font-size: 28px;
+            }
+            & .amlSubheading{
+                font-size: 16px;
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                    padding: 32px 23px;
+                    & .innerHeading{
+           
+                    }
+                    & .pera{
+                        font-size: 16px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .amlPolicy{
+        padding: 50px 11px 0px 11px;
+        & .amlPolicySection{
+            & .amlHeading{
+         
+            }
+            & .amlSubheading{
+     
+            }
+            & .outerCard{
+         
+                &::before{
+     
+                    
+                }
+                & .amlPolicyContent{
+                    padding: 32px 13px;
+                    & .innerHeading{
+                        font-size: 20px;
+                    }
+                    & .pera{
+                        font-size: 13px;
+                        & .linkWeb{
+                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// .spinCardSection 
+
+.spinCardSection{
+    & .spinCard{
+        background-image: url(../img/spinCard/spinBg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 394px;
+        width: 578px; 
+        position: relative;
+        & .cardBody{
+            & .headingBtn{
+              position: absolute;
+              height: 55px;
+              width: 184px;
+              right: 64px;
+              top: 177px;
+              background-image: url(../img/spinCard/headingBg.png);
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+                & .heading{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    padding-top: 10px;
+                    
+                }
+                & .subheading{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            & .spimBtn{
+                position: absolute;
+                bottom: 64px;
+                right: 64px;
+                & .greenBtn{
+
+                    &.spinBtnbg{
+                        background-image: url(../img/spinCard/btnBg.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.currencyModal {
+    & .modalDailog {
+        & .modalContentUser {
+            border-radius: 7px;
+            background: #161f2c;
+            & .modal-header {
+                & .modal-title {
+                    font-family: "Montserrat";
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .content {
+                    font-size: 13px;
+                }
+                & .closeicon {
+                    height: 25px;
+                }
+            }
+            & .modal-body {
+                & .form {
+                    & .form-check {
+                        & .form-check-input {
+                            background-color: lighten($dark, 5);
+                            border: 2px solid lighten($dark, 15);
+                            &:focus{
+                                border-color: lighten($dark, 15);
+                            }
+                            // position: relative;
+                            // &::before{
+                            //     content: '';
+                            //     width: 100%;
+                            //     height: 100%;
+                            //     border-radius: 100%;
+                            //     background-color: $dark;
+                            //     position: absolute;
+                            //     inset: 0;
+                            //     margin: auto;
+                            // }
+                            &:checked{
+                                background: #04e929;
+                            }
+                            &:checked + label{
+                                color: $white !important;
+                            }
+                        }
+                        & .form-check-label {
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 500;
+                            & .coinImg {
+                                width: 16px;
+                                height: 16px;
+                                & img{
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .fiatgroup {
+                    & .faits {
+                        transition: all ease-in-out 0.3s;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        & .coinImg {
+                            height: 30px;
+                            width: 30px;
+                            & img {
+                                object-fit: contain;
+                            }
+                        }
+                        & .coincuntry {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: darken($white, 22);
+                            transition: all ease-in-out 0.3s;
+                            & span {
+                                font-weight: 400;
+                                font-size: 12px;
+                            }
+                        }
+                        &:hover, &.active{
+                            background-color: lighten($dark, 5);
+                            & .coincuntry {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

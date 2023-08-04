@@ -29,3 +29,40 @@ body{
   height: 1px;
 }
 
+
+.modal{
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+}
+.modal-backdrop.show {
+  display: none;
+}
+
+
+.spinnerGroup {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  & .circleImg {
+    transition: all 1s ease-in-out;
+    transform: rotate(var(--rotate));
+  }
+  & .spinBtn {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: 1;
+  }
+  & .sideicon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4px;
+  }
+
+}

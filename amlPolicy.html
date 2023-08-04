@@ -52,284 +52,72 @@
     <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
 </head>
 <body>
-        <!-- * Navbar Start -->
-        <header class="navbar p-0 position-fixed top-0 w-100">
-            <div class="container-fluid headerFluid d-lg-block d-none">
-                <div class="row headerRow">
-                    <div class="col-auto px-0 d-xl-block d-none">
-                        <div class="logoWrapper">
-                            <div class="logo">
-                                <img class="image" src="assets/img/dambleLogo.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl col-12 px-0">
-                        <div class="row headerRyt mx-0">
-                            <div class="col d-flex align-items-center">
-                                <ul class="pills d-flex align-items-start mb-0 ps-0">
-                                    <li class="casinoPill"><a href="javascript:;" class="pillAnchor active d-flex align-items-center justify-content-center" ><img src="assets/img/casinoIcon.png" alt="">CASINO </a></li>
-                                    <li class="casinoPill"><a href="javascript:;" class="pillAnchor d-flex justify-content-center align-items-center"><img src="assets/img/sportsIcon.png" alt="">SPORTS </a></li>
-                                </ul>
-                                <div class="group position-relative">
-                                    <input type="text" class="searchInp" name="" id="" placeholder="Search for games">
-                                    <div class="searchIcon">
-                                        <img src="assets/img/search.png" alt="" class="w-100">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="col-auto d-flex align-items-center">
-                                <a href="javascript:;" class="msgIcon"><img src="assets/img/message.png" alt=""></a>
-                                <span class="usdTxt text-white">$usd</span>
-                                <a href="javascript:;" class="globeIcon"><img src="assets/img/globe.png" alt=""></a>
-                            </div> -->
-                            <div class="col-auto d-flex align-items-center headerFluidlg py-0">
-                                <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
-                                <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid headerFluidlg d-block d-lg-none">
-                <div class="row align-items-center">
-                    <div class="col-6 d-flex justify-content-start align-items-center px-sm-3 px-0 ps-1">
-                        <div class="gd"><img src="assets/img/whitelogo.png" alt=""></div>
-                        <div class="gdTxt"><img src="assets/img/logotxt.png" alt=""></div>
-                    </div>
-                    <div class="col-6 d-flex justify-content-end align-items-end pe-sm-3 pe-1">
-                        <button class="logBtn text-nowrap" data-bs-toggle="modal" data-bs-target="#exampleModal">Log in</button>
-                        <button class="signBtn text-nowrap"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign up</button>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- * Navbar End -->
-        <!-- * Aside Bar Start -->
-        <aside class="sidebar position-fixed">
-            <div class="row pt-3 sidebar-menu">
-                <div class="col-12 topBodyPart">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <div class="givway text-center">
-                                <img src="assets/img/giveway.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row g-2">
-                                <div class="col-6 ">
-                                    <div class="ii position-relative">
-                                        <img src="assets/img/whilespiner.png" alt="">
-                                        <div class="txt"><span claas="orange">WHEEL</span> SPIN</div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ">
-                                    <div class="ii position-relative">
-                                        <img src="assets/img/caseback.png" alt="">
-                                        <div class="txt"><span class="yellow">CASE</span> BACK</div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ">
-                                    <div class="ii position-relative">
-                                        <img src="assets/img/referearn.png" alt="">
-                                        <div class="txt"><span class="green">REFER</span> &EARN</div>
-                                    </div>
-                                </div>
-                                <div class="col-6 ">
-                                    <div class="ii position-relative">
-                                        <img src="assets/img/task.png" alt="">
-                                        <div class="txt"><span class=""></span> TASK</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 side-bar-content">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item border-0">
-                            <a href="javascript:;" class="sidebar-card-heading accordion-button fw-bold d-flex bg-transparent p-0 align-items-center gap-1 text-decoration-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <span class="sidebar-card-img d-inline-flex"><img src="assets/img/index/casino-chip.png" alt="casino-chip" class="h-100 w-100 img-fluid"></span>
-                                Casino Games
-                            </a>
-                            
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <ul class="list-unstyled pt-2 gap-2 d-flex flex-column mb-0">
-                                <li>
-                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/berries1.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                        Picks For you
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/card-game1.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                        All games
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/recent.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                        Recent
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                        <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/lottery.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                        Lottery
-                                    </a>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        <span class="line d-flex mx-auto"></span>
-                    </div>
-                    <ul class="list-unstyled pt-2 sportsLink gap-1 d-flex flex-column mb-0">
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title active fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/ball.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Sports
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/crown.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                <span class="vipText">VIP</span> Club
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/promoation.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Promotions
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/affiliate.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Affiliate
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/fairness.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Fairness
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/Forum.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Forum
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/blog.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/news.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                News
-                            </a>
-                        </li>
-                    </ul>
-                    <span class="line d-flex mx-auto"></span>
-                    <ul class="list-unstyled pt-2 sportsLink gap-1 d-flex flex-column mb-4">
-                        <li><div class="ourpartner ps-4 ms-3 mb-5">Our Partners</div> </li>
-                        <li>
-                            <a href="javascript:;" class="text-decoration-none sidebar-card-title livesupport fw-semibold d-flex align-items-center gap-2">
-                                <span class="sidebar-card-icon d-inline-flex align-items-center justify-content-center"><img src="assets/img/index/support.png" alt="picks for you" class="h-100 w-100 img-fluid "></span>
-                                Live support
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="pt-5 pb-4"><span class="line d-flex mx-auto"></span></div>
-                    <div class="join">
-                        <div class="row row-cols-5 pb-5 gy-3">
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/instagram.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/telegram.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/twitter.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/snapchat.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/tik-tok.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/reddit.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/vactor.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/youTube.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/bitcoin.png" alt=""></a></div>
-                            <div class="col"><a href="javascript:;" class="linksIcons"><img src="assets/img/printrest.png" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
+    
+
         <!-- * Aside Bar End -->
         <main class="main vh-100" id="main">
-            <div class="mainContaint">
-                <div class="homepage rewardCardSection">
-                    <!-- ****** [ Bounscard Section Start ] ****** -->
-                    <div class="container-fluid rewardSection">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="outterCard">
-                                    <div class="row mx-0">
-                                        <div class="col-12 px-0">
-                                            <div class="innerCard">
-                                                <div class="row mx-0 align-items-center">
-                                                    <div class="col-lg-6 col-7">
-                                                       <div class="cardContent">
-                                                        <div class="row mx-0 d-md-block d-none">
-                                                            <div class="col-12 px-0 subHeading "><span>Register</span> now to instantly</div>
-                                                            <div class="col-12 px-0 subHeading heading pt-2">Redeem your Desposit Bouna!</div>
-                                                            <div class="pera col-12 px-0">Deposit bonus up to $20,000</div>
-                                                            <div class="col-auto px-0 mt-4">
-                                                                <a href="#" class="text-decoration-none greenBtn csrdBtn">Sign Up</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mx-0 d-md-none d-block text-center">
-                                                            <div class="col-12 px-0 subHeading "><span>Sign Up</span> now and get</div>
-                                                            <div class="col-12 px-0 subHeading heading pt-2"><span>300%</span> BONUS!</div>
-                                                            <div class="pera col-12 px-0">Deposit bonus up to $20,000</div>
-                                                        </div>
-                                                       </div> 
-                                                    </div>
-                                                    <div class="col-lg-6 col-5 cardContent">
-                                                        <div class="row mx-0 align-items-center">
-                                                            <div class="col-lg-auto px-0 ">
-                                                                <div class="cardImg"><img src="assets/img/bouns.png" alt="bouns" class="img-fluid w-100 h-100"></div>
-                                                            </div>
-                                                            <div class="col px-0 d-lg-block d-none">
-                                                                <div class="subHeading heading text-center">Up to <span>300%</span></div>
-                                                                <div class="subHeading heading text-center">Bouns</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-10 mx-auto d-md-none d-block mt-4" >
-                                <a href="javascript:;" class="text-decoration-none greenBtn w-100 cardBtn">Sign Up</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ****** [ Bounscard Section End ] ****** -->
-
-                </div>
-
-
-                <div class="container-fluid spinCardSection py-5">
+            <div class="amlPolicy">
+                <div class="container-fluid amlPolicySection">
                     <div class="row">
-                        <div class="col-9 mx-auto">
-                            <div class="card bg-transparent border-0 shadow-none spinCard">
-                                <div class="card-body cardBody">
-                                    <div class="headingBtn">
-                                        <div class="subheading">spin the wheel</div>
-                                        <div class="heading ">WIN 1 BTC</div>
+                        <div class="col-12">
+                            <div class="amlHeading">AML Policy of Dream igaming Tech N.V.</div>
+                            <div class="amlSubheading">Last updated: 30.05.2023</div>
+                        </div>
+                        <div class="col-12">
+                            <div class="outerCard">
+                                <div class="row mx-0 amlPolicyContent">
+                                    <div class="col-12 pb-lg-4 pb-3 px-0">
+                                        <div class="innerHeading">For Deposits and Withdrawals.</div>
                                     </div>
-                                    <div class="spimBtn">
-                                        <a href="javascript:;" class="greenBtn spinBtnbg"> Log in and Spin</a>
+                                    <div class="col-12 px-0">
+                                        <div class="pera"> (AML Anti-Money-Laundering policy of www.damble.io/.</div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera"> Introduction: <a href="www.damble.io" class="text-decoration-none linkWeb">www.damble.io/</a> is operated by Dream igaming Tech N.V. having its office at  Zuikertuintjeweg ZIN (Zuikertuin Tower) Curacao. Company Registration number 163605.</div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera"> Objective of the AML Policy: We seek to offer the highest security to all of our users and customers on www.damble.io/ for that a three step account verification is done in order to insure the identity of our customers. The reason behind this is to prove that the details of the person registered are correct and the deposit methods used are not stolen or being used by someone else, which is to create the general framework for the fight against money laundering. We also take into accord that depending on the nationality and origin, the way of payment and for withdrawing different safety measurements must be taken. </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera"><a href="www.damble.io" class="text-decoration-none linkWeb">www.damble.io/</a> also puts reasonable measures in place to control and limit ML risk, including dedicating the appropriate means.  </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera"> www.damble.io/ is committed to high standards of anti-money laundering (AML) according to the EU guidelines, compliance and requires management & employees to enforce these standards in preventing the use of its services for money laundering purposes. The AML program of <a href="www.damble.io" class="text-decoration-none linkWeb">www.damble.io/</a> is designed to be compliant with :</div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera">EU : “Directive 2015/849 of the European Parliament and of The Council of 20 May 2015 on the prevention of the use of the financial system for the purposes of money laundering” </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera">EU : “Regulation 2015/847 on information accompanying transfers of funds”  </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera">EU : Various regulations imposing sanctions or restrictive measures against persons and embargo on certain goods and technology, including all dual-use goods  </div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera">BE : “Law of 18 September 2017 on the prevention of money laundering limitation of the use of cash  </div>
+                                    </div>
+                                    <div class="col-12 pt-lg-5 pt-md-4 pt-3 pb-2 px-0">
+                                        <div class="innerHeading">Definition of money laundering:</div>
+                                    </div>
+                                    <div class="col-12 px-0">
+                                        <div class="pera">Money Laundering is understood as:  </div>
+                                        <ul class="mb-lg-5 mb-md-4 mb-3">
+                                            <li class="pera">The conversion or transfer of property, especially money, knowing that such property is derived from criminal activity or from taking part in such activity, for the purpose of concealing or disguising the illegal origin of the property or of helping any person who is involved in the commission of such an activity to evade the legal consequences of that person&#39;s or companies action; </li>
+                                            <li class="pera"> The concealment or disguise of the true nature, source, location, disposition, movement, rights with respect to, or ownership of, property, knowing that such </li>
+                                            <li class="pera"> property is derived from criminal activity or from an act of participation in such an  activity; </li>
+                                            <li class="pera">The acquisition, possession or use of property, knowing, at the time of receipt, that  </li>
+                                            <li class="pera">such property was derived from criminal activity or from assisting in such an activity; Participation in, association to commit, attempts to commit and aiding, abetting,facilitating and counselling the commission of any of the actions referred to in points before. </li>
+                                        </ul>
+                                        <div class="pera">Money laundering shall be regarded as such even when the activities which generated the property to be laundered were carried out in the territory of another Member State or in that of a third country.  </div>
+                                    </div>
+                                    <div class="col-12 px-0 pt-lg-5 pt-md-4 pt-3">
+                                        <div class="pera">In accordance with the AML legislation, <a href="www.damble.io" class="text-decoration-none linkWeb">www.damble.io/</a> has appointed the “highest level” for the prevention of ML: The full management of Dream igaming Tech N.V. are in charge.  </div>
+                                    </div>
+                                    <div class="col-12 px-0 ">
+                                        <div class="pera">Furthermore, an AMLCO (Anti Money Laundering Compliance Officer) is in charge of the enforcement of the AML policy and procedures within the System.   </div>
+                                    </div>
+                                    <div class="col-12 px-0 ">
+                                        <div class="pera">The AMLCO is placed under the direct responsibility of the general Management:  </div>
                                     </div>
                                 </div>
                             </div>
@@ -337,58 +125,10 @@
                     </div>
                 </div>
             </div>
+         
             <!--  **** Footer section *** -->
-            <div class="footerSection ">
-                <!-- help us section start -->
-                <div class="container-fluid help-us footer helpSection pb-5">
-                    <div class="row">
-                        <div class="col-md-6 helpus-left">
-                                <div class="row">
-                                    <div class="help-us-heading fw-bold col-12 text-md-start text-center">Online Casinos, what you need to know.</div>
-                                    <div class="col-12 help-us-para fw-medium help-us-paratwo">
-                                        With the growth Online Gambling has seen in the past few years, it's safe to say that
-                                        there is no shortage of possibilities or demand in the market. As of 2023, there are
-                                        thousands upon thousands to choose from. Standing out in this crowded space 
-                                        depends on user's preferences and the payment methods the casino offers. 
-                                    </div>
-                                    <div class="col-12 help-us-para pt-2 fw-medium">
-                                        Since players are constantly seeking new experiences, enhancing and expand the igaming
-                                        industry, Allowing the player to concentrate on the games themselves, providing state of
-                                        art graphics, a variety of entertaining games and various payment methods will guarantee 
-                                        enjoyment, trust and a real Casino experience. 
-                                    </div>
-                                    <div class="col-12 help-us-para pt-2 fw-medium">
-                                        Hence, in this section, we'll tell you everything you need to know about a crypto casino. 
-                                    </div>
-                                    <div class="col-12 showmore-btn-main text-md-start text-center">
-                                        <a href="javascript:;" class="btn showmore-btn fw-semibold p-0 border-0">Show More 
-                                            <span class="showMore">>></span>
-                                            <!-- <span class="d-md-none d-block"><img src="assets/img/index/showmore.png" alt="show more"></span>
-                                            </a> -->
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-6 helpus-right position-relative ">
-                            <div class="row mx-0">
-                                <div class="help-us-heading fw-bold col-12 text-md-start text-center">Help us improve your experience</div>    
-                                <div class="col-12 help-us-textarea">
-                                    <textarea name="textarea" id="textarea" class="form-control shadow-none fw-normal text-area" placeholder="If you have any recommendations please leave your message and our team will work on it."></textarea>
-                                    <div class="textarea-title fw-semibold text-end d-md-block d-none">Thank you for your feedback</div>
-                                </div>
-                                <div class="col-12 text-md-start text-center">
-                                    <button class="btn fw-semibold leavemsg-btn border-0">Leave message</button>
-                                </div>   
-                                <div class="col-12 helpus-email-main fw-bold text-md-start text-center">
-                                    Or Email us: 
-                                    <a href="mailto:support@damble.iom" class="text-decoration-none helpus-email">support@damble.io</a>
-                                </div> 
-                                <div class="col-12 d-md-none d-block text-center textarea-title fw-semibold">Thank you for your feedback</div>                                           
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <!-- help us section end -->
+            <div class="footerSection m-0">
+           
                 <!-- footer links -->
                 <div class="container-fluid footer footerLinks pt-5">
                     <div class="row cols-5 d-md-flex d-none">

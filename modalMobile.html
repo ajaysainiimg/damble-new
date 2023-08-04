@@ -52,12 +52,11 @@
     <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
 </head>
 <body>
-        <button class="" data-bs-toggle="modal" data-bs-target="#exampleModal55">modal</button>
         <!-- Modal -->
-            <div class="modal fade optionsModalFade" id="exampleModal55" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog optionsModalDialog modal-dialog-centered">
-                    <div class="modal-content optionsModalContent">
-                        <div class="modal-header optionsModalHeader">
+            <div class="optionsModalFade" id="exampleModal55">
+                <div class=" optionsModalDialog">
+                    <div class=" optionsModalContent optionsModalContentMobile">
+                        <div class=" optionsModalHeader">
                             <div class="row w-100">
                                 <div class="col-12 d-flex justify-content-end mb-2">
                                     <button type="button" class="optionsModalCloseBtn d-flex align-items-center justify-content-center bg-transparent border-0" data-bs-dismiss="modal" aria-label="Close"><img class="w-100 h-100" src="assets/img/modalIcons/modalCloseIcon.png" alt=""></button>
@@ -68,35 +67,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-body optionsModalBody">
-                            <!-- main tabs start -->
-                            <ul class="nav nav-pills navPillsUl g-3 row" id="pills-tab1" role="tablist">
-                            <li class="nav-item navItems col" role="presentation">
-                                <button class="nav-link navLink p-0 active" id="wallet1-tab" data-bs-toggle="pill" data-bs-target="#wallet1" type="button" role="tab" aria-controls="wallet1" aria-selected="true"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon1.png" alt=""><span>Deposit</span></div></button>
-                            </li>
-                            <li class="nav-item navItems col" role="presentation">
-                                <button class="nav-link navLink p-0" id="wallet2-tab" data-bs-toggle="pill" data-bs-target="#wallet2" type="button" role="tab" aria-controls="wallet2" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon2.png" alt=""><span>Buy Crypto</span></div></button>
-                            </li>
-                            <li class="nav-item navItems col" role="presentation">
-                                <button class="nav-link navLink p-0" id="wallet3-tab" data-bs-toggle="pill" data-bs-target="#wallet3" type="button" role="tab" aria-controls="wallet3" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon3.png" alt=""><span>Swap</span></div></button>
-                            </li>
-                            <li class="nav-item navItems col" role="presentation">
-                                <button class="nav-link navLink p-0" id="wallet4-tab" data-bs-toggle="pill" data-bs-target="#wallet4" type="button" role="tab" aria-controls="wallet4" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon4.png" alt=""><span>Vault</span></div></button>
-                            </li>
-                            <li class="nav-item navItems col" role="presentation">
-                                <button class="nav-link navLink p-0" id="wallet5-tab" data-bs-toggle="pill" data-bs-target="#wallet5" type="button" role="tab" aria-controls="wallet5" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center"><img src="assets/img/modalIcons/modalIcon5.png" alt=""><span>Withdraw</span></div></button>
-                            </li>
-                            <li class="nav-item navItems ms-3 col" role="presentation">
-                                <button class="nav-link navLink navEnd p-0" id="wallet6-tab" data-bs-toggle="pill" data-bs-target="#wallet6" type="button" role="tab" aria-controls="wallet6" aria-selected="false"><div class="iconBox d-flex align-items-center justify-content-center">My NFTs</div></button>
-                            </li>
-                            </ul>
-                            <!-- main tabs start -->
-
-                            <div class="divider mx-auto"></div>
+                        <div class="optionsModalBody">
                             <div class="tab-content tabContent" id="pills-tab1Content">
                                 <div class="tab-pane tabContentPane fade show active" id="wallet1" role="tabpanel" aria-labelledby="wallet1-tab" tabindex="0">
-                                    <!-- deposite tab start -->
-                                    <div class="row depositTab ">
+                                    <div class="row depositTab py-5 mb-5  ">
                                         <div class="col-12">
                                             <ul class="nav nav-pills d-flex justify-content-center depositTabPills justify-content-center mb-3 mx-auto" id="pills-tab2" role="tablist">
                                                 <li class="nav-item depositTabItems col" role="presentation">
@@ -116,92 +90,10 @@
                                                             <div class="heading">Deposit currency</div>
                                                         </div>
                                                         <div class="col-12 mb-2">
-                                                            <div class="box w-100 position-relative dropdownBox">
-                                                                <!-- **dropdownBox Class Add And Remove -->
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="btc d-flex align-items-center"><img src="assets/img/modalIcons/modalBitcoin.png" alt=""><span>BTC</span></div>
-                                                                    <div class="balance d-flex align-items-center">Balance <span>0</span><img src="assets/img/modalIcons/rytChewanModal.png" alt=""></div>
+                                                            <div class=" box d-flex justify-content-between w-100">
+                                                                <div class="btc d-flex align-items-center"><img src="assets/img/modalIcons/modalBitcoin.png" alt=""><span>BTC</span>
                                                                 </div>
-                                                                <div class="innerBox position-absolute top-100 start-0 w-100">
-                                                                    <div class="card mt-1 border-0">
-                                                                        <div class="card-body">
-                                                                            <form action="" class="form">
-                                                                                <div class="input-group">
-                                                                                    <span class="input-group-text bgtransparent border-0" id="basic-addon1"><img src="assets/img/aboutJonathan/search.png" alt=""></span>
-                                                                                    <input type="text" class="form-control shadow-none bgtransparent border-0 text-white fw-semibold ps-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                                                                </div>
-                                                                            </form>
-                                                                            <div class="row criptoCard mt-3 gap-1 gx-0">
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2 active">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                <div class="balance d-flex align-items-center">Balance <span>0</span><img src="assets/img/modalIcons/rytChewanModal.png" alt=""></div>
                                                             </div>
                                                         </div> 
                                                         <div class="col-12 mb-2">
@@ -227,78 +119,29 @@
                                                             <div class="heading">Choose Network</div>
                                                         </div>
                                                         <div class="col-12 mb-2">
-                                                            <div class=" box  w-100 position-relative ">
-                                                                <!-- **dropdownBox Class Add And Remove -->
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="btc d-flex align-items-center"><span>Segwit</span></div>
-                                                                    <div class="balance d-flex align-items-center"><img src="assets/img/modalIcons/rytChewanModal.png" alt=""></div>
+                                                            <div class=" box d-flex justify-content-between w-100">
+                                                                <div class="btc d-flex align-items-center"><span>Segwit</span>
                                                                 </div>
-                                                                <div class="innerBox position-absolute top-100 start-0 w-100">
-                                                                    <div class="card mt-1 border-0">
-                                                                        <div class="card-body">
-                                                                            <form action="" class="form">
-                                                                                <div class="input-group">
-                                                                                    <span class="input-group-text bgtransparent border-0" id="basic-addon1"><img src="assets/img/aboutJonathan/search.png" alt=""></span>
-                                                                                    <input type="text" class="form-control shadow-none bgtransparent border-0 text-white fw-semibold ps-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                                                                                </div>
-                                                                            </form>
-                                                                            <div class="row criptoCard mt-3 gap-1 gx-0">
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2 active">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="innercard py-2">
-                                                                                        <div class="row align-items-center mx-0">
-                                                                                            <div class="col d-flex align-items-center gap-2">
-                                                                                                <div class="criptoLogo d-inline-flex"><img src="assets/img/modalIcons/modalBitcoin.png" class="w-100" alt=""></div>
-                                                                                                <span class="coin fw-semibold text-white">BTC</span>
-                                                                                            </div>
-                                                                                            <div class="col-auto"><div class="coinvalue fw-medium text-white">0.<span class="text-white-50">00000000</span></div></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                <div class="balance d-flex align-items-center"><img src="assets/img/modalIcons/rytChewanModal.png" alt=""></div>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 mb-2">
-                                                            <div class="qrBox">
-                                                                <div class="row">
-                                                                    <div class="col-auto">
-                                                                        <div class="qrImg">
-                                                                            <img src="assets/img/modalIcons/modalQr.png" alt="">
-                                                                        </div>
-                                                                    </div>
+                                                            <div class="qrBox qrBoxInner">
+                                                                <div class="row align-items-end">
                                                                     <div class="col">
-                                                                        <div class="row mx-0">
-                                                                            <div class="col-12 mb-3">
+                                                                        <div class="row mx-0 ">
+                                                                            <div class="col-12 mb-1">
                                                                                 <div class="heading">Deposit Address</div>
                                                                             </div>
                                                                             <div class="col-12 position-relative">
                                                                                 <input type="text" class="qrInp form-control shadow-none border-0" name="" id="">
                                                                                 <button class="copyBtn px-2 py-1">Copy</button>
                                                                             </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <div class="qrImg">
+                                                                            <img src="assets/img/modalIcons/modalQr.png" alt="">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -428,11 +271,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- deposite tab end -->
-
                                     <!-- assets portfolio start -->
-                                    <div class="row depositTab d-none">
-                                        <div class="col-12 mb-2">
+                                    <div class="row depositTab py-5 mb-5 d-none">
+                                        <div class="col-12 mb-4">
                                             <div class="row depositeHeader align-items-center mx-0">
                                                 <div class="col">
                                                     <div class="head  d-flex align-items-center">
@@ -449,7 +290,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <ul class="nav nav-pills d-flex justify-content-center depositTabPills justify-content-center mb-3 mx-auto" id="pills-tab2" role="tablist">
+                                            <ul class="nav nav-pills d-flex justify-content-center depositTabPills justify-content-center mb-3 mx-auto mb-5" id="pills-tab2" role="tablist">
                                                 <li class="nav-item depositTabItems col" role="presentation">
                                                     <button class="nav-link depositTabLink  active" id="wallets1d-tab" data-bs-toggle="pill" data-bs-target="#wallets1d" type="button" role="tab" aria-controls="wallets1d" aria-selected="true">Crypto</button>
                                                 </li>
@@ -505,6 +346,13 @@
                                                                 </div>
                                                             </div>
                                                         </div> 
+                                                        <div class="col-12 d-flex switchh justify-content-end align-items-center mt-4 mb-4">
+                                                            <label class="switch">
+                                                                <input type="checkbox">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                            <span class="ps-3">Hide Small</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade tabContentInnerTabsPane " id="wallets2d" role="tabpanel" aria-labelledby="wallets2d-tab" tabindex="0">
@@ -563,7 +411,7 @@
                                     <!-- assets portfolio end -->
                                 </div>
                                 <div class="tab-pane fade tabContentPane" id="wallet2" role="tabpanel" aria-labelledby="wallet2-tab" tabindex="0">
-                                    <div class="row tabContentBuyCrypto">
+                                    <div class="row tabContentBuyCrypto py-5 mb-5">
                                         <div class="col-12 mb-2">
                                             <div class="heading">You Pay with</div>
                                         </div>
@@ -665,7 +513,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade tabContentPane" id="wallet3" role="tabpanel" aria-labelledby="wallet3-tab" tabindex="0">
-                                    <div class="row tabContentSwap">
+                                    <div class="row tabContentSwap py-5 mb-5">
                                         <div class="col-12 heading mt-4">You get Approximately</div>
                                         <div class="col-12 mb-1">
                                             <div class="box d-flex justify-content-between align-items-center">
@@ -717,7 +565,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade tabContentPane" id="wallet4" role="tabpanel" aria-labelledby="wallet4-tab" tabindex="0">
-                                    <div class="tabContentVault">
+                                    <div class="tabContentVault py-5 mb-5">
                                         <ul class="nav nav-pills WithdrawNavPills mb-3 d-flex align-items-center mt-4 mx-auto" id="pills-tab525" role="tablist">
                                             <li class="nav-item WithdrawNavItems col" role="presentation">
                                                 <button class="nav-link active WithdrawNavLimks text-nowrap d-flex justify-content-center align-items-center" id="pills-home-tab55aa44" data-bs-toggle="pill" data-bs-target="#pills-withdrawaaaaa" type="button" role="tab" aria-controls="pills-withdrawaaaaa" aria-selected="true"> Transfer In</button>
@@ -764,7 +612,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade tabContentPane" id="wallet5" role="tabpanel" aria-labelledby="wallet5-tab" tabindex="0">
-                                    <div class="tabContentWithdraw">
+                                    <div class="tabContentWithdraw py-5 mb-5">
                                         <ul class="nav nav-pills WithdrawNavPills d-flex mb-3 justify-content-center mt-5 mx-auto" id="pills-tab525" role="tablist">
                                             <li class="nav-item WithdrawNavItems col" role="presentation">
                                                 <button class="nav-link active WithdrawNavLimks d-flex justify-content-center align-items-center" id="pills-home-tab55" data-bs-toggle="pill" data-bs-target="#pills-withdraw" type="button" role="tab" aria-controls="pills-withdraw" aria-selected="true"> Crypto</button>
@@ -836,7 +684,30 @@
                                 </div>
                                 <div class="tab-pane fade" id="wallet6" role="tabpanel" aria-labelledby="wallet6-tab" tabindex="0">text3</div>
                             </div>
+                            <div class="bottomFixed fixed-bottom">
+                                <ul class="nav nav-pills navPillsUl g-3 row" id="pills-tab1" role="tablist">
+                                <li class="nav-item navItems navItemsInner col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner p-0 active" id="wallet1-tab" data-bs-toggle="pill" data-bs-target="#wallet1" type="button" role="tab" aria-controls="wallet1" aria-selected="true"><div class="iconBox iconBoxMobile  d-flex align-items-center justify-content-center flex-column"><img src="assets/img/modalIcons/modalIcon1.png" alt=""><span class="">Deposit</span></div></button>
+                                </li>
+                                <li class="nav-item navItems navItemsInner col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner p-0" id="wallet2-tab" data-bs-toggle="pill" data-bs-target="#wallet2" type="button" role="tab" aria-controls="wallet2" aria-selected="false"><div class="iconBox iconBoxMobile d-flex align-items-center justify-content-between flex-column"><img src="assets/img/modalIcons/modalIcon2.png" alt=""><span class="text-nowrap">Buy Crypto</span></div></button>
+                                </li>
+                                <li class="nav-item navItems navItemsInner col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner p-0" id="wallet3-tab" data-bs-toggle="pill" data-bs-target="#wallet3" type="button" role="tab" aria-controls="wallet3" aria-selected="false"><div class="iconBox iconBoxMobile d-flex align-items-center justify-content-center flex-column"><img src="assets/img/modalIcons/modalIcon3.png" alt=""><span>Swap</span></div></button>
+                                </li>
+                                <li class="nav-item navItems navItemsInner col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner p-0" id="wallet4-tab" data-bs-toggle="pill" data-bs-target="#wallet4" type="button" role="tab" aria-controls="wallet4" aria-selected="false"><div class="iconBox iconBoxMobile d-flex align-items-center justify-content-center flex-column"><img src="assets/img/modalIcons/modalIcon4.png" alt=""><span>Vault</span></div></button>
+                                </li>
+                                <li class="nav-item navItems navItemsInner col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner p-0" id="wallet5-tab" data-bs-toggle="pill" data-bs-target="#wallet5" type="button" role="tab" aria-controls="wallet5" aria-selected="false"><div class="iconBox iconBoxMobile d-flex align-items-center justify-content-center flex-column"><img src="assets/img/modalIcons/modalIcon5.png" alt=""><span>Withdraw</span></div></button>
+                                </li>
+                                <!-- <li class="nav-item navItems ms-3 col" role="presentation">
+                                    <button class="nav-link navLink navLinkInner navEnd p-0" id="wallet6-tab" data-bs-toggle="pill" data-bs-target="#wallet6" type="button" role="tab" aria-controls="wallet6" aria-selected="false"><div class="iconBox iconBoxMobile d-flex align-items-center justify-content-center">My NFTs</div></button>
+                                </li> -->
+                                </ul>
+                            </div>
                         </div>
+                        
                         <!-- <div class="modal-footer optionsModalFooter">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
