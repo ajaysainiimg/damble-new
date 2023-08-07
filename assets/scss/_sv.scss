@@ -10189,3 +10189,142 @@
     }
 }
 
+
+// newsHeroSection start 
+.newsdambleSection{
+
+    & .newsdamble{
+        padding: 62px 39px 87px 63px !important;
+    
+        background-image: url(../img/newsDamble/newshero.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+      
+        & .newsHeroSection{
+            & .heroBtn{
+                border-radius: 6px;
+                background-color: #272F3A;
+                color: #93ACD3;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding: 6px 14px;
+                white-space: nowrap;
+                &.active{
+                    box-shadow: 0px 1px 8px 0px #6324D733;
+                    color: #FFF;
+                }
+    
+            }
+            & .heroContent{
+                & .subHeading{
+                    color: #E1E1E1;
+                    font-family: 'Montserrat';
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding-bottom: 66px;
+                }
+                & .headingNews{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+                & .pera{
+                    color: #93ACD3;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 128px;
+                }
+                & .expolerBtn{
+                    color: #FFF;
+                    font-family: I'nter';
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 10px;
+                    background: #6324D7;
+                    padding: 10px 72px 10px 19px;
+                }
+            }
+            & .date{
+                color: #93ACD3;
+                font-family: 'Inter';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            & .DropDwonSection{
+                & .dropDownBtn{
+                    border-radius: 6px;
+                    background: #272F3A;
+                    color: #FFF;
+                    font-family:' Inter';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                & .dropMenuNews{
+                    border-radius: 6px;
+                    background: #272F3A;
+                    & li{
+                        & .dropdown-item{
+                            color: #93ACD3;
+                            font-family:' Inter';
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            transition: all 0.3s ease-in-out;
+                            &:hover{
+                                background:none;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            & .imghero{
+                height: 375px;
+                margin-left: -100px;
+            }
+        }
+    }
+    
+    & .trandingNews{
+        & .newsSectionHeading{
+            color: #E1E1E1;
+            font-family: 'Inter';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        & .seeAllBtn{
+            border-radius: 6px;
+            background: #272F3A;
+            color: #93ACD3;
+            font-family: 'Inter';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 7px 16px;
+        }
+    }
+}
