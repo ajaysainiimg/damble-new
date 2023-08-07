@@ -5933,3 +5933,192 @@
 }
 // ********* mobile cash back Page end ********
 
+
+
+
+// slots page start
+.slots {
+    padding: 50px 25px 50px 25px;
+    & .slotsSearch {
+        background-color: #161f2c;
+        border: 1px solid #161f2c;
+        padding: 3px 0;
+        & .searchIcon {
+            height: 16px;
+            width: 16px;
+        }
+        & .inputSearch {
+            color: #93acd3;
+            font-size: 14px;
+            font-weight: 500;
+            &::placeholder {
+                color: #93acd3;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            &:focus {
+                // border-color: #04E929;
+                & .slotsSearch {
+                    border: 1px solid red !important;
+                }
+            }
+        }
+    }
+    & .activePage {
+        background-color: #161f2c;
+        padding: 11px 14px;
+        & .breadcrumb-item {
+            font-size: 14px;
+            font-weight: 500;
+            color: #54657F;
+            &.active {
+                color: #fff;
+                &::before {
+                    color: #fff;
+                }
+            }
+            & a {
+                font-size: 14px;
+                font-weight: 500;
+                color: #54657F;
+            }
+        }
+    }
+    & .showBlocked {
+        font-size: 13px;
+        color: #fff;
+        font-weight: 500;
+    }
+    & .shortby {
+        & .dropdownTitle {
+            font-size: 14px;
+            color:#fff;
+            font-weight: 500;
+        }
+        & .dropdwonBtn {
+            font-size: 14px;
+            font-weight: 500;
+            color: #b1bed1;
+            background-color: #212c3b;
+            min-width:10rem;
+            &::after {
+                position: absolute;
+                right: 8px;
+                transform: translateY(-50%) rotate(0);
+                top:50% ;
+                height: 7px;
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                width: 10px;
+                background-position: center;
+                background: url(../Img/slots/dropdown.png) transparent no-repeat;
+                // background-size: 11px 6px;
+                background-size: contain;
+                border: none;
+                margin: 0;
+                transition: all 0.3s ease-in-out;
+            }
+            &.show {
+                &::after {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+        & .dropdown-menu {
+            width: auto;
+            background-color: #212c3b;
+            min-width:10rem;
+            & .dropdown-item {
+                font-size: 13px;
+                // font-weight: 500;
+                color: #FFF;
+                border: 1px solid transparent;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 7px;
+                    width:7px;
+                    border-radius: 50%;
+                    background-color: #04E929;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    box-shadow: 0 0 0 0.3125rem #3bc11726;
+                    right:8px;
+                    display: none;
+                }
+                &:hover {
+                    background-color: #354151;
+                }
+                &.active {
+                    border-color: #04E929;
+                    background-color: #212c3b;
+                    &::before {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        & .dropdown-menutwo {
+            max-height: 20rem;
+            & .slotlabel {
+                cursor: pointer;
+                padding: 6px 4px 6px 8px;
+                &:hover {
+                    background-color: #293445;
+                }
+                & .checkBtn {
+                    height: 15px;
+                    width: 15px;
+                    background-color: #2f343a;
+                    border: 1px solid #3d4349 ;
+                    margin: 0;
+                    box-shadow: none;
+                    &:focus {
+                        // border-color: $dark-border;
+                    }
+                    &:checked {
+                        // background-color: $theme-blue;
+                        background-image: url(../img/slots/check.png);
+                        background-size: 9px 7px;
+                        // border-color: $theme-blue;
+                    }
+                    &:checked ~ label {
+                        // color: $theme-blue;
+                    }
+                }
+                & .slotcheckTitle {
+                    font-size: 14px;
+                    color: #FFF;
+                    -webkit-flex: auto;
+                    -ms-flex: auto;
+                    flex: auto;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & .slotcheckTotal {
+                    font-size: 14px;
+                    color: #04E929;
+                }
+            }
+        }
+    }
+    & .slotsCardMain {
+        & .cardTitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+        }
+        & .infoDrop {
+            & .infoDropBtn {
+                height: 20px ;
+                width: 20px;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// slots page end
