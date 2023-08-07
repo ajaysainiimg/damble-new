@@ -9129,7 +9129,8 @@
                                    }
                                 }
                                 & .dropMenu{
-                                 left: -260px;
+                                 left: 100%;
+                                 transform: translateX(-100%);
                                     & .walletModal{
                                         & .modalDailog{
                                             & .modalContentUser{

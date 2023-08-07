@@ -3441,7 +3441,38 @@
 
 
 //  * News page call duty *
-
+.newsdambleSection {
+    &.callofduty {
+        & .newsdamble {
+            background: linear-gradient(rgba($black, 0.8), rgba($black, 0.8)), url(../img/newsDamble/newshero.svg);
+            & .newsHeroSection {
+                & .heroContent {
+                    & .subHeading {
+                        &.logoImg {
+                            height: 81px;
+                            margin-bottom: 29px;
+                            & img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .headingNews {
+                        border-radius: 18px;
+                    }
+                }
+            }
+            & .callheading{
+                font-size: 35px;
+                font-weight: 700;
+            }
+            & .content{
+                font-size: 20px;
+                color: #D7D7D7;
+                font-weight: 500;
+            }
+        }
+    }
+}
 
 
 
