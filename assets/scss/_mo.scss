@@ -5938,7 +5938,7 @@
 
 // slots page start
 .slots {
-    padding: 50px 25px 50px 25px;
+    padding: 50px 25px 0 25px;
     & .slotsSearch {
         background-color: #161f2c;
         border: 1px solid #161f2c;
@@ -6105,20 +6105,81 @@
         }
     }
     & .slotsCardMain {
-        & .cardTitle {
-            font-size: 14px;
-            font-weight: 500;
-            color: #fff;
-        }
-        & .infoDrop {
-            & .infoDropBtn {
-                height: 20px ;
-                width: 20px;
-                &::after {
-                    display: none;
+        gap: 30px 0;
+        & .slotCad {
+            & .slotcardImg {
+                aspect-ratio: 5/5;
+            }
+            & .cardTitle {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+            }
+            & .infoDrop {
+                & .infoDropBtn {
+                    height: 20px ;
+                    width: 20px;
+                    z-index: 2;
+                    &::after {
+                        display: none;
+                    }
+                    &:hover {
+                        & .cardMenu {
+                        }
+                    }
+                }
+                & .cardMenu {
+                    background-color: #212c3b;
+                    width: 360px;
+                    & .dropdownContent {
+                        background-color: #161F2C;
+                        & .droptitle {
+                            color: #93ACD3;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                        & .dropDownTotal {
+                            color: #04E929;
+                            font-size: 14px;
+                            
+                        }
+                    }
+                    & .droptag {
+                        color:#93ACD3;
+                        font-size: 12px;
+                        padding: 2px 6px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 100px;
+                    }
+                    & .droptagtwo {
+                        color:#fff;
+                        font-size: 12px;
+                        padding: 2px 6px;
+                    }
                 }
             }
         }
+    }
+    & .pagecount {
+        font-size: 14px;
+        color: rgb(147 172 211 / 84%);
+        font-weight: 500;
+    }
+    & .progresspage {
+        width: 6rem;
+        height: 5px;
+        background-color: #25292e;
+        & .progress-bar {
+            background-color: #04E929;
+        }
+    }
+    & .loadmoreBtn {
+        font-size: 14px;
+        color: #fff;
+        background-color: #232629;
+        padding: 10px 22px;
     }
 }
 // slots page end

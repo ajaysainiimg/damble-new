@@ -211,16 +211,15 @@
   min-height: 0.5rem;
   & .form-check-input {
       width: 35px;
-      height: 13px;
+      height: 18px;
       background-repeat: no-repeat;
-      background-color:rgba(147, 172, 211, 0.08) ;
-      background-image: url(../img/mohitModel/switch.png);
-
+      background-color:#abc1d82e ;
+      background-image: url(../Img/checktwo.png);
       &:checked {
           border-color: $theme1;
-          background-color: rgba(147, 172, 211, 0.08);
-          background-image: url(../img/mohitModel/switch.png);
-          background-image: url(../img/global/checkbtn.png);
+          background-color: #abc1d82e;
+          background-image: url(../img/check.png);
+          // background-image: url(../img/global/checkbtn.png);
         }
       }
     }
