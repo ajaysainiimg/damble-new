@@ -502,6 +502,22 @@
                             }
                         }
                     }
+                    & .empatySection{
+                        & .emptyImg{
+                            width:200px;
+                            height: 200px;
+                        }
+                        & .emptyHeading{
+                            color: #93acd3;
+                            font-size: 13px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-align: center;
+                        }
+
+                    }
                 }
             }
         }
@@ -699,6 +715,9 @@
                 & .tab-content {
                     & .tab-pane {
                         & .table {
+                            &::-webkit-scrollbar {
+                                height: 1px;
+                            }
                             & thead {
                                 & tr {
                                     & th {
