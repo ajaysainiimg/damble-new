@@ -149,7 +149,7 @@
                                     <div class="row gap-3">
                                         <div class="col-12 d-sm-block d-none">
                                             <div class="innerCard">
-                                                <button class="generateBtn px-4">Generate My Code</button>
+                                                <button class="generateBtn px-4" data-bs-toggle="modal" data-bs-target="#generateCode">Generate My Code</button>
                                             </div>
                                         </div>  
                                         <div class="col-12 d-sm-block d-none">
@@ -199,6 +199,7 @@
                                                                         <th>Date Created</th>
                                                                         <th>Registered Friends Number</th>
                                                                         <th>Total Commission Rewards</th>
+                                                                        <th></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -225,9 +226,19 @@
                                                                             <div class=" text-white txtClass pt-1"> <span class="peralink">Lorem, ipsum.</span></div>
                                                                         </td>
                                                                         <td class="text-white txtClass">30%</td>
-                                                                        <td class="text-white txtClass">2023-05-06 12:14:59</td>
+                                                                        <td class="text-white txtClass px-2">2023-05-06 12:14:59</td>
                                                                         <td class="text-white txtClass">0</td>
                                                                         <td class="text-white txtClass">0</td>
+                                                                        <td class="text-white txtClass">
+                                                                            <div class="d-flex align-items-center justify-content-center gap-3">
+                                                                                <div class="image">
+                                                                                    <img src="assets/img/affiliateDashboard/userGroup.png" alt="">
+                                                                                </div>
+                                                                                <button class="image p-0 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#deletModal">
+                                                                                    <img src="assets/img/affiliateDashboard/Delete.png" alt="">
+                                                                                </button>
+                                                                            </div>
+                                                                        </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -243,9 +254,9 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-auto d-flex justify-content-end">
-                                                                <div class="image">
+                                                                <!-- <div class="image">
                                                                     <img src="assets/img/affiliateDashboard/userGroup.png" alt="">
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1564,7 +1575,61 @@
                 <!-- <div class="modal-footer">
                 <div class='footerImg'><img src={ModalFooter} alt='ModalFooter' /></div>
                 </div> -->
+    </div>
+
+    <!-- generate code modal -->
+    <div class="modal fade deleteModal" id="generateCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered deleteModalDialog">
+            <div class="modal-content deleteModalContent">
+                <div class="modal-header deleteModalHeader">
+                <div class="modal-title " id="exampleModalLabel">Create New Code</div>
+                <button type="button" class="btn-close p-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body generate deleteModalBody">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control codeInput border-0 shadow-none py-2" placeholder="Enter a code you like a ">
+                        </div>
+                        <div class="col-12 py-3">
+                            <div class="codeTitle text-center py-2">6-15 characters. Only letters and numbers are allowed.</div>
+                        </div>
+                        <div class="col-12 text-center pt-4">
+                            <button class="deletebtn border-0 rounded-2 ">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
         </div>
+    </div>
+
+    <!-- delete modal start -->
+    <div class="modal fade deleteModal" id="deletModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog deleteModalDialog modal-dialog-centered">
+            <div class="modal-content deleteModalContent">
+                <div class="modal-header deleteModalHeader">
+                    <div class="modal-title" id="exampleModalLabel">Delete Code</div>
+                    <button type="button" class="btn-close p-0 shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body deleteModalBody">
+                    <div class="row py-3">
+                        <div class="col-12 headingmodal text-center">kkhImg</div>
+                        <div class="datamodal text-center pt-3 pb-4">Are You sure want to delete?</div>
+                        <div class="col-12 text-center pt-2">
+                            <button class="deletebtn border-0 rounded-2 ">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
     </div>
 <!-- modal end -->
 

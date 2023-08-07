@@ -3636,12 +3636,13 @@
 
 
 <!-- ***** [Currency Modal] ***** -->
-<div class="modal fade currencyModal " id="currency" tabindex="-1" aria-labelledby="currencyLabel" aria-hidden="true">
-    <div class="modal-dialog modalDailog modal-dialog-centered  modal-dialog-scrollable">
+<div class="modal fade currencyModal border-0" id="currency" tabindex="-1" aria-labelledby="currencyLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modalDailog modal-dialog-centered  modal-dialog-scrollable">
         <div class="modal-content modalContentUser ">
         <div class="modal-header border-0 pb-0">
             <div class="row align-items-center w-100 gx-0">
-                <div class="col modal-title d-flex align-items-center text-white" id="currencyLabel">Information</div>
+                <!-- <div class="col modal-title d-flex align-items-center text-white" id="currencyLabel">Information</div> -->
+                <div class="col modal-title d-flex align-items-center text-white" id="currencyLabel">View in fiat</div>
                 <div class="col-auto">
                     <button type="button" class="btn border-0 shadow-none d-flex align-items-center justify-content-center closeicon pe-0" data-bs-dismiss="modal" aria-label="Close"><img src="assets/img/aboutJonathan/close.png" alt="close" class="img-fluid h-100 w-100"></button>
                 </div>
@@ -3711,7 +3712,7 @@
                     </div>
                 </div>
             </form>
-            <div class="row">
+            <div class="row d-none">
                 <div class="col-auto mx-auto">
                     <div class="spinnerGroup rounded-circle position-relative">
                         <button class="btn btn-sm shadow-none border-0 spinBtn rounded-circle overflow-hidden p-0"><img src="assets/img/spinBtn.png" class="w-100" alt=""></button>
@@ -3720,11 +3721,97 @@
                     </div>
                 </div>
             </div>
+            <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-2 fiatgroup">
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3 active">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div><div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="faits d-flex align-items-center gap-2 py-2 px-3">
+                        <div class="coinImg rounded-circle overflow-hidden"><img src="assets/img/aboutJonathan/crypto.png" alt="usdt" class="w-100 h-100"></div>
+                        <div class="coincuntry  d-flex align-content-center gap-2">USD <span class="d-inline-flex text-white-50">US Dollar</span></div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="modal-footer border-0 justify-content-center">
-            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <!-- <div class="modal-footer border-0 justify-content-center">
             <button type="button" class="shadow-none px-5 border-0 greenBtn">Confirm</button>
-        </div>
+        </div> -->
         </div>
     </div>
 </div>

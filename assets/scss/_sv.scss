@@ -10154,6 +10154,36 @@
                         }
                     }
                 }
+                & .fiatgroup {
+                    & .faits {
+                        transition: all ease-in-out 0.3s;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        & .coinImg {
+                            height: 30px;
+                            width: 30px;
+                            & img {
+                                object-fit: contain;
+                            }
+                        }
+                        & .coincuntry {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: darken($white, 22);
+                            transition: all ease-in-out 0.3s;
+                            & span {
+                                font-weight: 400;
+                                font-size: 12px;
+                            }
+                        }
+                        &:hover, &.active{
+                            background-color: lighten($dark, 5);
+                            & .coincuntry {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
