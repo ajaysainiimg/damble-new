@@ -6182,4 +6182,142 @@
         padding: 10px 22px;
     }
 }
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .slots {
+        padding: 50px 11px 0 11px;
+        & .slotsSearch {
+            & .searchIcon {
+            }
+            & .inputSearch {
+                &::placeholder {
+                }
+                &:focus {
+                    & .slotsSearch {
+                    }
+                }
+            }
+        }
+        & .activePage {
+            & .breadcrumb-item {
+                &.active {
+                    &::before {
+                    }
+                }
+                & a {
+                }
+            }
+        }
+        & .showBlocked {
+        }
+        & .shortby {
+            & .dropdownTitle {
+            }
+            & .dropdwonBtn {
+                &::after {
+
+                }
+                &.show {
+                    &::after {
+                    }
+                }
+            }
+            & .dropdown-menu {
+                & .dropdown-item {
+                    &::before {
+                    }
+                    &:hover {
+                    }
+                    &.active {
+                        &::before {
+                        }
+                    }
+                }
+            }
+            & .dropdown-menutwo {
+                & .slotlabel {
+                    &:hover {
+                    }
+                    & .checkBtn {
+                        &:focus {
+                        }
+                        &:checked {
+                        }
+                        &:checked ~ label {
+                        }
+                    }
+                    & .slotcheckTitle {
+                    }
+                    & .slotcheckTotal {
+                    }
+                }
+            }
+        }
+        & .slotsCardMain {
+            & .slotCad {
+                & .slotcardImg {
+                }
+                & .cardTitle {
+                    font-size: 12px;
+                }
+                & .infoDrop {
+                    & .infoDropBtn {
+                        height: 16px;
+                        width: 16px;
+                        &::after {
+                        }
+                        &:hover {
+                            & .cardMenu {
+                            }
+                        }
+                    }
+                    & .cardMenu {
+                        max-width: 280px;
+                        & .dropdownContent {
+                            & .droptitle {
+                            }
+                            & .dropDownTotal {
+                                
+                            }
+                        }
+                        & .droptag {
+                        }
+                        & .droptagtwo {
+                        }
+                    }
+                }
+            }
+        }
+        & .pagecount {
+        }
+        & .progresspage {
+            & .progress-bar {
+            }
+        }
+        & .loadmoreBtn {
+        }
+    }
+}
 // slots page end
