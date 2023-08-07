@@ -169,6 +169,9 @@
         right: 15px;
         background: #161f2c;
         border-radius: 8px;
+        height: 31px;
+        width: 30px;
+        padding:9px;
     }
     & .swiper-button-prev-unique {
         border-radius: 8px;
@@ -177,6 +180,10 @@
         right: 45px;
         background: #161f2c;
         border-radius: 8px;
+        height: 31px;
+            width: 31px;
+            right: 50px;
+            padding: 9px;
     }
 }
 // toprated-games-main section end
@@ -5965,27 +5972,6 @@
         }
     }
     & .pagename {
-
-        & .activePage {
-            background-color: #161f2c;
-            padding: 11px 14px;
-            & .breadcrumb-item {
-                font-size: 14px;
-                font-weight: 500;
-                color: #54657F;
-                &.active {
-                    color: #fff;
-                    &::before {
-                        color: #fff;
-                    }
-                }
-                & a {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #54657F;
-                }
-            }
-        }
         & .showBlocked {
             font-size: 13px;
             color: #fff;
@@ -6110,65 +6096,6 @@
             }
         }
     }
-    & .slotsCardMain {
-        gap: 30px 0;
-        & .slotCad {
-            & .slotcardImg {
-                aspect-ratio: 5/5;
-            }
-            & .cardTitle {
-                font-size: 14px;
-                font-weight: 500;
-                color: #fff;
-            }
-            & .infoDrop {
-                & .infoDropBtn {
-                    height: 20px ;
-                    width: 20px;
-                    z-index: 2;
-                    &::after {
-                        display: none;
-                    }
-                    &:hover {
-                        & .cardMenu {
-                        }
-                    }
-                }
-                & .cardMenu {
-                    background-color: #212c3b;
-                    width: 360px;
-                    & .dropdownContent {
-                        background-color: #161F2C;
-                        & .droptitle {
-                            color: #93ACD3;
-                            font-weight: 500;
-                            font-size: 14px;
-                        }
-                        & .dropDownTotal {
-                            color: #04E929;
-                            font-size: 14px;
-                            
-                        }
-                    }
-                    & .droptag {
-                        color:#93ACD3;
-                        font-size: 12px;
-                        padding: 2px 6px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        max-width: 100px;
-                    }
-                    & .droptagtwo {
-                        color:#fff;
-                        font-size: 12px;
-                        padding: 2px 6px;
-                        white-space: nowrap;
-                    }
-                }
-            }
-        }
-    }
     & .pagecount {
         font-size: 14px;
         color: rgb(147 172 211 / 84%);
@@ -6189,6 +6116,147 @@
         padding: 10px 22px;
     }
 }
+
+// active page 
+.activePage {
+    background-color: #161f2c;
+    padding: 11px 14px;
+    & .breadcrumb-item {
+        font-size: 14px;
+        font-weight: 500;
+        color: #54657F;
+        &.active {
+            color: #fff;
+            &::before {
+                color: #fff;
+            }
+        }
+        & a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #54657F;
+        }
+    }
+}
+
+// slots card start
+.slotsCardMain {
+    gap: 30px 0;
+    & .slotCad {
+        & .slotcardImg {
+            aspect-ratio: 5/5;
+        }
+        & .cardTitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+        }
+        & .infoDrop {
+            & .infoDropBtn {
+                height: 20px ;
+                width: 20px;
+                z-index: 2;
+                &::after {
+                    display: none;
+                }
+                &:hover {
+                    & .cardMenu {
+                    }
+                }
+            }
+            & .cardMenu {
+                background-color: #212c3b;
+                width: 360px;
+                & .dropdownContent {
+                    background-color: #161F2C;
+                    & .droptitle {
+                        color: #93ACD3;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                    & .dropDownTotal {
+                        color: #04E929;
+                        font-size: 14px;
+                        
+                    }
+                }
+                & .droptag {
+                    color:#93ACD3;
+                    font-size: 12px;
+                    padding: 2px 6px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100px;
+                }
+                & .droptagtwo {
+                    color:#fff;
+                    font-size: 12px;
+                    padding: 2px 6px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+// slots card end
+
+// about the provider page start
+.aboutheProvider {
+    font-size: 30px ;
+    color: #fff;
+    line-height: normal;
+    font-weight: 800;
+    & .card {
+        background-color: #161f2c;
+        padding: 20px 50px;
+        & .providerImg {
+            // padding: 20px 30px;
+            width: 120px;
+            & img {
+                background-color: #293445;
+            }
+        }
+        & .providerBtn {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            border: 1px solid #42309c;
+            padding: 10px 12px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                border-color: #04E929;
+            }
+        }
+    }
+}
+// about the provider page end
+
+// table start
+.dambleTable {
+    & .viewMoreBtn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #252E39;
+        padding: 8px 12px;
+        & .downArrow {
+            height: 7px;
+            width: 12px;
+        }
+    }
+}
+// table end
+
+// hold and win page start
+.holdwinSection {
+    & .holdwinHero {
+        & .likeShareMain {
+            
+        }   
+    }
+}
+
 
 @include media-breakpoint(basic) {
 }
@@ -6295,44 +6363,6 @@
                 }
             }
         }
-        & .slotsCardMain {
-            & .slotCad {
-                & .slotcardImg {
-                }
-                & .cardTitle {
-                    font-size: 13px;
-                }
-                & .infoDrop {
-                    & .infoDropBtn {
-                        height: 18px;
-                        width: 18px;
-                        &::after {
-                        }
-                        &:hover {
-                            & .cardMenu {
-                            }
-                        }
-                    }
-                    & .cardMenu {
-                        max-width: 340;
-                        & .dropdownContent {
-                            & .droptitle {
-                                font-size: 13px;
-                            }
-                            & .dropDownTotal {
-                                font-size: 13px;
-                            }
-                        }
-                        & .droptag {
-                            font-size: 11px;
-                        }
-                        & .droptagtwo {
-                            font-size: 11px;
-                        }
-                    }
-                }
-            }
-        }
         & .pagecount {
             font-size: 13px;
         }
@@ -6342,6 +6372,44 @@
         }
         & .loadmoreBtn {
             font-size: 13px;
+        }
+    }
+    .slotsCardMain {
+        & .slotCad {
+            & .slotcardImg {
+            }
+            & .cardTitle {
+                font-size: 13px;
+            }
+            & .infoDrop {
+                & .infoDropBtn {
+                    height: 18px;
+                    width: 18px;
+                    &::after {
+                    }
+                    &:hover {
+                        & .cardMenu {
+                        }
+                    }
+                }
+                & .cardMenu {
+                    max-width: 340;
+                    & .dropdownContent {
+                        & .droptitle {
+                            font-size: 13px;
+                        }
+                        & .dropDownTotal {
+                            font-size: 13px;
+                        }
+                    }
+                    & .droptag {
+                        font-size: 11px;
+                    }
+                    & .droptagtwo {
+                        font-size: 11px;
+                    }
+                }
+            }
         }
     }
 }
@@ -6437,44 +6505,7 @@
                 }
             }
         }
-        & .slotsCardMain {
-            & .slotCad {
-                & .slotcardImg {
-                }
-                & .cardTitle {
-                    font-size: 12px;
-                }
-                & .infoDrop {
-                    & .infoDropBtn {
-                        height: 16px;
-                        width: 16px;
-                        &::after {
-                        }
-                        &:hover {
-                            & .cardMenu {
-                            }
-                        }
-                    }
-                    & .cardMenu {
-                        max-width: 280px;
-                        & .dropdownContent {
-                            & .droptitle {
-                                font-size: 12px;
-                            }
-                            & .dropDownTotal {
-                                font-size: 12px;
-                            }
-                        }
-                        & .droptag {
-                            font-size: 10px;
-                        }
-                        & .droptagtwo {
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-        }
+        
         & .pagecount {
             font-size: 12px;
         }
@@ -6484,6 +6515,44 @@
         }
         & .loadmoreBtn {
             font-size: 12px;
+        }
+    }
+    .slotsCardMain {
+        & .slotCad {
+            & .slotcardImg {
+            }
+            & .cardTitle {
+                font-size: 12px;
+            }
+            & .infoDrop {
+                & .infoDropBtn {
+                    height: 16px;
+                    width: 16px;
+                    &::after {
+                    }
+                    &:hover {
+                        & .cardMenu {
+                        }
+                    }
+                }
+                & .cardMenu {
+                    max-width: 280px;
+                    & .dropdownContent {
+                        & .droptitle {
+                            font-size: 12px;
+                        }
+                        & .dropDownTotal {
+                            font-size: 12px;
+                        }
+                    }
+                    & .droptag {
+                        font-size: 10px;
+                    }
+                    & .droptagtwo {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }
