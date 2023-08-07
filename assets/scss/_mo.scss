@@ -5964,30 +5964,33 @@
             }
         }
     }
-    & .activePage {
-        background-color: #161f2c;
-        padding: 11px 14px;
-        & .breadcrumb-item {
-            font-size: 14px;
-            font-weight: 500;
-            color: #54657F;
-            &.active {
-                color: #fff;
-                &::before {
-                    color: #fff;
-                }
-            }
-            & a {
+    & .pagename {
+
+        & .activePage {
+            background-color: #161f2c;
+            padding: 11px 14px;
+            & .breadcrumb-item {
                 font-size: 14px;
                 font-weight: 500;
                 color: #54657F;
+                &.active {
+                    color: #fff;
+                    &::before {
+                        color: #fff;
+                    }
+                }
+                & a {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #54657F;
+                }
             }
         }
-    }
-    & .showBlocked {
-        font-size: 13px;
-        color: #fff;
-        font-weight: 500;
+        & .showBlocked {
+            font-size: 13px;
+            color: #fff;
+            font-weight: 500;
+        }
     }
     & .shortby {
         & .dropdownTitle {
@@ -6157,6 +6160,7 @@
                         color:#fff;
                         font-size: 12px;
                         padding: 2px 6px;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -6297,14 +6301,17 @@
                         max-width: 280px;
                         & .dropdownContent {
                             & .droptitle {
+                                font-size: 12px;
                             }
                             & .dropDownTotal {
-                                
+                                font-size: 12px;
                             }
                         }
                         & .droptag {
+                            font-size: 10px;
                         }
                         & .droptagtwo {
+                            font-size: 10px;
                         }
                     }
                 }
