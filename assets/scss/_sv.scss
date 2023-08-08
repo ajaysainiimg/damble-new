@@ -10460,25 +10460,17 @@
                 font-weight: 700;
             }
         }
-        & .pageNavigation{
-            & .paginationUl{
-                & .pageItem{
+        & .pageNavigationSection{
+            & .navItem{
+                & .pageNavgation{
                     width: 32px;
-                    height: 32px;
-                    background-color: rgba(39, 47, 58, 1) !important;
-                    color: #93ACD3;
+                    height: 32px; 
+                    background-color: #272F3A;
+                    border-radius: 13px;
+                    padding: 8px;
+                    color: rgba(147, 172, 211, 1);
                     font-size: 15px;
                     font-weight: 500;
-                    border-radius: 10px;
-                    & .pageLink{
-                        width: 32px;
-                        height: 32px;
-                        background-color: rgba(39, 47, 58, 1) !important;
-                        color: #93ACD3;
-                        font-size: 15px;
-                        font-weight: 500;
-                        border-radius: 10px;
-                    }
                 }
             }
         }
