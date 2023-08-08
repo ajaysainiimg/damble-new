@@ -10201,13 +10201,17 @@
         line-height: normal;
         border-radius: 10px;
         background: #6324D7;
-        padding: 10px 72px 10px 19px;
+        padding: 10px 20px;
+        & .iconarrow{
+            width: 13px;
+            height: 13px;
+        }
     }
 
     & .newsdamble{
-        padding: 62px 39px 87px 63px;
-    
-        background-image: url(../img/newsDamble/newshero.svg);
+        padding: 62px 39px 60px 63px;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../img/newsDamble/newshero.svg);
+        // background-image: url(../img/newsDamble/newshero.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -10305,48 +10309,51 @@
                 margin-left: -100px;
             }
         }
-    }
-    
-    & .trandingNews{
-        & .newsSectionHeading{
-            color: #E1E1E1;
-            font-family: 'Inter';
-            font-size: 25px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-        }
-        & .seeAllBtn{
-            border-radius: 6px;
-            background: #272F3A;
-            color: #93ACD3;
-            font-family: 'Inter';
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            padding: 7px 16px;
-        }
-        & .cardSectionNews{
-                & .outtercard{
-                    padding: 2px;
-                    background: linear-gradient(120deg, rgba(0, 153, 10, 0.5) 30%, rgba(13, 19, 28, 0.5) 50%) !important;
-                    overflow: hidden;
-                    & .cardImg{
-                       height: 230px;
-                    }
-                }
-                & .cardText{
-                    color: #93ACD3;
-                    font-family: 'Inter';
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                }
-        }
-    }
 
+        & .trandingNews{
+            & .newsSectionHeading{
+                color: #E1E1E1;
+                font-family: 'Inter';
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+            }
+            & .seeAllBtn{
+                border-radius: 6px;
+                background: #272F3A;
+                color: #93ACD3;
+                font-family: 'Inter';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding: 7px 16px;
+            }
+            & .cardSectionNews{
+                    & .outtercard{
+                        padding: 2px;
+                        background: linear-gradient(120deg, rgba(0, 153, 10, 0.5) 30%, rgba(13, 19, 28, 0.5) 50%) !important;
+                        overflow: hidden;
+                        & .cardImg{
+                        height: 230px;
+                        }
+                    }
+                    & .cardText{
+                        color: #93ACD3;
+                        font-family: 'Inter';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+            }
+        }
+        & .bottomSection{
+
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../img/newsDamble/bottomsection.png);
+
+        }
     // articalSection
     
     & .articalSection{
@@ -10393,6 +10400,10 @@
                 position: absolute;
                 right: 20px;
                 top: 20px;
+                & .readIcon{
+                    width: 15px;
+                    height: 15px;
+                }
             }
             & .contentnews{
               
@@ -10419,7 +10430,7 @@
                 font-weight: 500;
                 line-height: normal;
                 right: 20px;
-                bottom: 20px;
+                bottom: 10px;
             }
         }
 
@@ -10531,5 +10542,896 @@
                 }
             }
         }
+    }
+    & .btnsection{
+        margin-top: -60px;
+    }
+}
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .newsdambleSection{
+        .expolerBtn{
+        }
+    
+        & .newsdamble{
+            padding: 62px 39px 54px 38px;
+          
+            & .newsHeroSection{
+                & .heroBtn{
+        
+                    &.active{
+                
+                    }
+        
+                }
+                & .heroContent{
+                    & .subHeading{
+           
+                    }
+                    & .headingNews{
+                        font-size: 40px;
+                    }
+                    & .pera{
+               
+                    }
+                
+                }
+                & .date{
+        
+                }
+                & .DropDwonSection{
+                    & .dropDownBtn{
+          
+                    }
+                    & .dropMenuNews{
+                  
+                        & li{
+                            & .dropdown-item{
+              
+                                &:hover{
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+                & .imghero{
+         
+                }
+            }
+    
+            & .trandingNews{
+                & .newsSectionHeading{
+   
+                }
+                & .seeAllBtn{
+
+                }
+                & .cardSectionNews{
+                        & .outtercard{
+                    
+                            & .cardImg{
+                           
+                            }
+                        }
+                        & .cardText{
+                            font-size: 16px;
+                        }
+                }
+            }
+            & .bottomSection{
+
+            }
+        // articalSection
+        
+        & .articalSection{
+            & .newsSectionHeading{
+
+            }
+            & .cardsection{
+                &.cardsection2{
+
+                }
+                &.cardsection3{
+        
+              
+                }
+                & .readmoreBtn{
+
+                }
+                & .contentnews{
+                  
+                    & .headingArtical{
+
+                    }
+                    & .pera{
+
+                    }
+                }
+                & .dateCard{
+
+                }
+            }
+    
+        }
+        // whatsSection
+        & .whatsSection{
+            & .newsSectionHeading{
+
+            }
+            & .ExploreBtn{
+   
+            }
+            & .whatsimg{
+       
+            }
+            & .whatheading{
+ 
+    
+            }
+            & .pera{
+       
+            }
+            & .btnSection{
+           
+                & .readmoreBtn{
+      
+                }
+            }
+            & .pageNavigationSection{
+                & .navItem{
+                    & .pageNavgation{
+             
+                    }
+                }
+            }
+            & .rightSection{
+                & .outterCard{
+                
+                    &::before{
+             
+                    }
+                    & .innerCard{
+
+                        & .newsletterHeading{
+
+                        }
+                        & .newsPera{
+
+                        }
+                        & .newsInput{
+
+                            &::placeholder{
+       
+                            }
+                        }
+                        & .SubscribeBtn{
+   
+                        }
+                        
+                    }
+                }
+            }
+        }
+        & .btnsection{
+            margin-top: -46px;
+        }
+    }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .newsdambleSection{
+        .expolerBtn{
+        }
+    
+        & .newsdamble{
+   
+          
+            & .newsHeroSection{
+                & .heroBtn{
+        
+                    &.active{
+                
+                    }
+        
+                }
+                & .heroContent{
+                    & .subHeading{
+           
+                    }
+                    & .headingNews{
+          
+                    }
+                    & .pera{
+               
+                    }
+                
+                }
+                & .date{
+        
+                }
+                & .DropDwonSection{
+                    & .dropDownBtn{
+          
+                    }
+                    & .dropMenuNews{
+                  
+                        & li{
+                            & .dropdown-item{
+              
+                                &:hover{
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+                & .imghero{
+         
+                }
+            }
+    
+            & .trandingNews{
+                & .newsSectionHeading{
+   
+                }
+                & .seeAllBtn{
+
+                }
+                & .cardSectionNews{
+                        & .outtercard{
+                    
+                            & .cardImg{
+                           
+                            }
+                        }
+                        & .cardText{
+             
+                        }
+                }
+            }
+            & .bottomSection{
+
+            }
+        // articalSection
+        
+        & .articalSection{
+            & .newsSectionHeading{
+
+            }
+            & .cardsection{
+                &.cardsection2{
+
+                }
+                &.cardsection3{
+        
+              
+                }
+                & .readmoreBtn{
+
+                }
+                & .contentnews{
+                  
+                    & .headingArtical{
+
+                    }
+                    & .pera{
+
+                    }
+                }
+                & .dateCard{
+
+                }
+            }
+    
+        }
+        // whatsSection
+        & .whatsSection{
+            & .newsSectionHeading{
+
+            }
+            & .ExploreBtn{
+   
+            }
+            & .whatsimg{
+       
+            }
+            & .whatheading{
+ 
+    
+            }
+            & .pera{
+       
+            }
+            & .btnSection{
+           
+                & .readmoreBtn{
+      
+                }
+            }
+            & .pageNavigationSection{
+                & .navItem{
+                    & .pageNavgation{
+             
+                    }
+                }
+            }
+            & .rightSection{
+                & .outterCard{
+                
+                    &::before{
+             
+                    }
+                    & .innerCard{
+
+                        & .newsletterHeading{
+
+                        }
+                        & .newsPera{
+
+                        }
+                        & .newsInput{
+
+                            &::placeholder{
+       
+                            }
+                        }
+                        & .SubscribeBtn{
+   
+                        }
+                        
+                    }
+                }
+            }
+        }
+        & .btnsection{
+    
+        }
+    }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .newsdambleSection{
+        .expolerBtn{
+        }
+    
+        & .newsdamble{
+        padding: 50px 39px 0px 39px;
+            
+          
+            & .newsHeroSection{
+                & .heroBtn{
+        
+                    &.active{
+                
+                    }
+        
+                }
+                & .heroContent{
+                    & .subHeading{
+           
+                    }
+                    & .headingNews{
+          
+                    }
+                    & .pera{
+                        padding-bottom: 87px;
+                    }
+                
+                }
+                & .date{
+        
+                }
+                & .DropDwonSection{
+                    & .dropDownBtn{
+          
+                    }
+                    & .dropMenuNews{
+                  
+                        & li{
+                            & .dropdown-item{
+              
+                                &:hover{
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+                & .imghero{
+         
+                }
+            }
+    
+            & .trandingNews{
+                & .newsSectionHeading{
+   
+                }
+                & .seeAllBtn{
+
+                }
+                & .cardSectionNews{
+                        & .outtercard{
+                    
+                            & .cardImg{
+                           
+                            }
+                        }
+                        & .cardText{
+             
+                        }
+                }
+            }
+            & .bottomSection{
+
+            }
+        // articalSection
+        
+        & .articalSection{
+            & .newsSectionHeading{
+
+            }
+            & .cardsection{
+                height: 360px;
+                &.cardsection2{
+
+                }
+                &.cardsection3{
+        
+              
+                }
+                & .readmoreBtn{
+
+                }
+                & .contentnews{
+                  
+                    & .headingArtical{
+
+                    }
+                    & .pera{
+
+                    }
+                }
+                & .dateCard{
+
+                }
+            }
+    
+        }
+        // whatsSection
+        & .whatsSection{
+            & .newsSectionHeading{
+
+            }
+            & .ExploreBtn{
+   
+            }
+            & .whatsimg{
+       
+            }
+            & .whatheading{
+ 
+    
+            }
+            & .pera{
+       
+            }
+            & .btnSection{
+           
+                & .readmoreBtn{
+      
+                }
+            }
+            & .pageNavigationSection{
+                & .navItem{
+                    & .pageNavgation{
+             
+                    }
+                }
+            }
+            & .rightSection{
+                & .outterCard{
+                
+                    &::before{
+             
+                    }
+                    & .innerCard{
+
+                        & .newsletterHeading{
+
+                        }
+                        & .newsPera{
+
+                        }
+                        & .newsInput{
+
+                            &::placeholder{
+       
+                            }
+                        }
+                        & .SubscribeBtn{
+   
+                        }
+                        
+                    }
+                }
+            }
+        }
+        & .btnsection{
+    
+        }
+    }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .newsdambleSection{
+        .expolerBtn{
+        }
+    
+        & .newsdamble{
+            padding: 30px 30px 0px 30px;
+          
+            & .newsHeroSection{
+                & .heroBtn{
+        
+                    &.active{
+                
+                    }
+        
+                }
+                & .heroContent{
+                    & .subHeading{
+                        font-size: 20px;
+                            padding-bottom: 40px;
+                    }
+                    & .headingNews{
+                        font-size: 30px;
+                    }
+                    & .pera{
+                        font-size: 15px;
+                        padding-bottom: 20px;
+                    }
+                
+                }
+                & .date{
+        
+                }
+                & .DropDwonSection{
+                    & .dropDownBtn{
+          
+                    }
+                    & .dropMenuNews{
+                  
+                        & li{
+                            & .dropdown-item{
+              
+                                &:hover{
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+                & .imghero{
+                    margin-left: 0;
+                    height: auto;
+                }
+            }
+    
+            & .trandingNews{
+                & .newsSectionHeading{
+                    font-size: 20px;
+                }
+                & .seeAllBtn{
+                    font-size: 10px;
+                }
+                & .cardSectionNews{
+                        & .outtercard{
+                    
+                            & .cardImg{
+                                height: 174px;
+                            }
+                        }
+                        & .cardText{
+                            font-size: 12px;
+                        }
+                }
+            }
+            & .bottomSection{
+
+            }
+        // articalSection
+        
+        & .articalSection{
+            & .newsSectionHeading{
+                font-size: 20px; 
+            }
+            & .cardsection{
+                height: 280px;
+                &.cardsection2{
+
+                }
+                &.cardsection3{
+        
+              
+                }
+                & .readmoreBtn{
+                    font-size: 10px;
+                    & .readIcon{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                & .contentnews{
+                  
+                    & .headingArtical{
+                        font-size: 15px;
+                    }
+                    & .pera{
+                        font-size: 10px;
+                    }
+                }
+                & .dateCard{
+                    bottom: 10px;
+                }
+            }
+    
+        }
+        // whatsSection
+        & .whatsSection{
+            & .newsSectionHeading{
+                font-size: 20px; 
+            }
+            & .ExploreBtn{
+                font-size: 12px; 
+                height: 28px;
+            }
+            & .whatsimg{
+       max-width: 370px;
+            }
+            & .whatheading{
+                & br{
+                    display: none;
+                }
+    
+            }
+            & .pera{
+       
+            }
+            & .btnSection{
+                padding-top: 10px;
+                & .readmoreBtn{
+      
+                }
+            }
+            & .pageNavigationSection{
+                & .navItem{
+                    & .pageNavgation{
+             
+                    }
+                }
+            }
+            & .rightSection{
+                & .outterCard{
+                
+                    &::before{
+             
+                    }
+                    & .innerCard{
+
+                        & .newsletterHeading{
+
+                        }
+                        & .newsPera{
+
+                        }
+                        & .newsInput{
+
+                            &::placeholder{
+       
+                            }
+                        }
+                        & .SubscribeBtn{
+   
+                        }
+                        
+                    }
+                }
+            }
+        }
+        & .btnsection{
+    
+        }
+    }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .newsdambleSection{
+        .expolerBtn{
+        }
+    
+        & .newsdamble{
+            padding: 28px 5px 0px 5px;
+          
+            & .newsHeroSection{
+                & .heroBtn{
+        
+                    &.active{
+                
+                    }
+        
+                }
+                & .heroContent{
+                    & .subHeading{
+           
+                    }
+                    & .headingNews{
+          
+                    }
+                    & .pera{
+               
+                    }
+                
+                }
+                & .date{
+        
+                }
+                & .DropDwonSection{
+                    & .dropDownBtn{
+          
+                    }
+                    & .dropMenuNews{
+                  
+                        & li{
+                            & .dropdown-item{
+              
+                                &:hover{
+                            
+                                }
+                            }
+                        }
+                    }
+                }
+                & .imghero{
+         
+                }
+            }
+    
+            & .trandingNews{
+                & .newsSectionHeading{
+   
+                }
+                & .seeAllBtn{
+
+                }
+                & .cardSectionNews{
+                        & .outtercard{
+                    
+                            & .cardImg{
+                           
+                            }
+                        }
+                        & .cardText{
+             
+                        }
+                }
+            }
+            & .bottomSection{
+
+            }
+        // articalSection
+        
+        & .articalSection{
+            & .newsSectionHeading{
+
+            }
+            & .cardsection{
+                &.cardsection2{
+
+                }
+                &.cardsection3{
+        
+              
+                }
+                & .readmoreBtn{
+
+                }
+                & .contentnews{
+                  
+                    & .headingArtical{
+
+                    }
+                    & .pera{
+
+                    }
+                }
+                & .dateCard{
+
+                }
+            }
+    
+        }
+        // whatsSection
+        & .whatsSection{
+            & .newsSectionHeading{
+
+            }
+            & .ExploreBtn{
+   
+            }
+            & .whatsimg{
+       
+            }
+            & .whatheading{
+ 
+    
+            }
+            & .pera{
+       
+            }
+            & .btnSection{
+           
+                & .readmoreBtn{
+      
+                }
+            }
+            & .pageNavigationSection{
+                & .navItem{
+                    & .pageNavgation{
+             
+                    }
+                }
+            }
+            & .rightSection{
+                & .outterCard{
+                
+                    &::before{
+             
+                    }
+                    & .innerCard{
+
+                        & .newsletterHeading{
+
+                        }
+                        & .newsPera{
+
+                        }
+                        & .newsInput{
+
+                            &::placeholder{
+       
+                            }
+                        }
+                        & .SubscribeBtn{
+   
+                        }
+                        
+                    }
+                }
+            }
+        }
+        & .btnsection{
+    
+        }
+    }
     }
 }
