@@ -5933,6 +5933,110 @@
                 line-height: normal;
             }
         }
+        
+        // notification Offcanvas 
+
+        & .notificationOffcanvas{
+            & .chatHeader{
+                & .notificationTabs{
+                    background-color: #222d3e;
+                    border-radius: 19.955px;
+                    & .navLinkNoti{
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        padding: 8px 30px;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        white-space: nowrap;
+                        &.active{
+                            background: #6324d7;
+                        }
+                    }
+                }
+            }
+            & .chatBody{
+
+            }
+            & .pgSoftCard{
+                & .dateheading{
+                    color: #93acd3;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+                & .headingNoti{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 15px;
+                    & .notificationIcon{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                & .peraNotification{
+                    color: #93acd3;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+            }
+            & .weeklyUpdate{
+                & .dateheading{
+                    color: #93acd3;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+                & .headingNoti{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 15px;
+                    & .notificationIcon{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+                & .imgupdate{
+                    max-height: 350px;
+                    height: 100%;
+                }
+                & .peraNotification{
+                    color: #93acd3;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+                & .weeklyupdateBtn{
+                    & .updateBtn{
+                        color: #04e929;
+                        font-size: 12px;
+                        font-weight: 600;
+                        border-top: 1px solid rgba(147,172,211,.5);
+                        padding-top: 15px;
+                    }
+
+                }
+               
+            }
+            & .empatySection{
+                & .emptyImg{
+                    width:200px;
+                    height: 200px;
+                }
+                & .emptyHeading{
+                    color: #93acd3;
+                    font-size: 13px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-align: center;
+                }
+
+            }
+        }
 
         // chatOffcanvas
         & .chatOffcanvas{
@@ -5940,7 +6044,7 @@
             background: #161F2C;
             padding: 16px;
             & .chatHeader{
-                padding: 16px 0px 0px 0px  !important;
+                padding: 16px 0px 0px 0px ;
                 & .chatDropdown{
                     & .allChatBtn{
                         border-radius: 2px;
@@ -7223,6 +7327,69 @@
                     }
                     }
                 
+            }
+            & .notificationOffcanvas{
+                & .chatHeader{
+                    & .notificationTabs{
+                  
+                        & .navLinkNoti{
+                         
+                            &.active{
+                             
+                            }
+                        }
+                    }
+                }
+                & .chatBody{
+    
+                }
+                & .pgSoftCard{
+                    & .dateheading{
+                 
+                    }
+                    & .headingNoti{
+                  
+                        & .notificationIcon{
+                         
+                        }
+                    }
+                    & .peraNotification{
+                 
+                    }
+                }
+                & .weeklyUpdate{
+                    & .dateheading{
+                 
+                    }
+                    & .headingNoti{
+              
+                        & .notificationIcon{
+                        
+                        }
+                    }
+                    & .imgupdate{
+                        height: 400px;
+                    }
+                    & .peraNotification{
+                     
+                    }
+                    & .weeklyupdateBtn{
+                        & .updateBtn{
+                      
+                        }
+    
+                    }
+                   
+                }
+                & .empatySection{
+                    & .emptyImg{
+                     
+                    }
+                    & .emptyHeading{
+                  
+                    }
+    
+                }
             }
 
                // language 

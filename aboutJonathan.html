@@ -345,7 +345,7 @@
                                             </a>
                                         </li>
                                         <li class="hrline">
-                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center ">
+                                            <a href="javascript:;" class="text-decoration-none d-flex align-items-center " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExamplenotification" aria-controls="offcanvasExample">
                                                 <div class="icon d-lg-inline-flex "><img src="assets/img/header/bell.png" alt="bell" class="img-fluid w-100 h-100"></div>
                                             </a>
                                         </li>
@@ -1286,6 +1286,71 @@
                                             </div>
                                         </div>
                                 </div>
+
+                                <!-- notification offcanvas start  -->
+                                <div class="offcanvas offcanvas-end chatOffcanvas notificationOffcanvas " tabindex="-1" id="offcanvasExamplenotification" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header pb-2 chatHeader">
+                                     <div>
+                                        <nav>
+                                            <div class="nav nav-tabs border-0 notificationTabs" id="nav-tab" role="tablist">
+                                              <button class="nav-link navLinkNoti rounded-pill active border-0 shadow-none" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">System Notice</button>
+                                              <button class="nav-link navLinkNoti rounded-pill border-0 shadow-none" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Activities</button>
+                                            </div>
+                                        </nav>
+                                     </div>
+                                    </div>
+                                        <div class="offcanvas-body chatBody h-100">
+                                            <div class="tab-content h-100" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                    <div class="row gap-3 mx-0">
+                                                        <div class="pgSoftCard col-12 px-0">
+                                                            <div class="outerCard h-100">
+                                                                <div class="dateheading">8/8/2023, 8:01:15 AM</div>
+                                                                <div class="headingNoti pt-2 pb-1 d-flex align-items-center "><span class="notificationIcon d-inline-flex me-1 "><img src="assets/img/aboutJonathan/Tools.svg" alt="tools" class="img-fluid h-100 w-100"></span>  PG SOFT Emergency Maintenance</div>
+                                                                <div class="peraNotification pt-2"> PG SOFT will start the emergency maintenance from now.</div>
+                                                                <div class="peraNotification pt-2"> You will be unable to access the game platform during this period.</div>
+                                                                <div class="peraNotification pt-2"> We will notify you immediately once the maintenance is completed.  </div>
+                                                                <div class="peraNotification pt-2"> Sorry for any inconvenience caused.</div>
+                                                                <div class="peraNotification pt-2"> Best regards,.</div>
+                                                                <div class="peraNotification "> Damble.GAME</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 weeklyUpdate px-0">
+                                                            <div class="outerCard  pb-3">
+                                                                <div class="dateheading">8/8/2023, 8:01:15 AM</div>
+                                                                <div class="headingNoti pt-2 pb-1 d-flex align-items-center "><span class="notificationIcon d-inline-flex me-1 "><img src="assets/img/aboutJonathan/horn.svg" alt="tools" class="img-fluid h-100 w-100"></span>  Weekly Update <span class="notificationIcon d-inline-flex ms-1 "><img src="assets/img/aboutJonathan/horn.svg" alt="tools" class="img-fluid h-100 w-100"></span></div>
+                                                                <div class="imgupdate py-3"><img src="assets/img/aboutJonathan/updateimg.png" alt="update" class="img-fluid w-100 h-100"></div>
+                                                                <div class="peraNotification pt-2"> Discover what's new and exciting at BC.GAME with our weekly update: </div>
+                                                                <div class="peraNotification pt-2"> 💰 Participate in exciting CASINO EVENTS and win amazing prizes! </div>
+                                                                <div class="peraNotification pt-2"> 🎰 Endless entertainment with our new SLOT RELEASES! </div>
+                                                                <div class="peraNotification pt-2"> ⚽️ Experience thrilling SPORTS EVENTS for all sports enthusiasts!</div>
+                                                                <div class="peraNotification pt-2"> Enjoy non-stop excitement with our incredible range of games and events! Be sure to stay tuned for more updates on all the latest happenings at BC.GAME </div>
+                                                                <div class="peraNotification pt-2"> Discover what's new and exciting at BC.GAME with our weekly update: </div>
+                                                                <div class="weeklyupdateBtn pt-2"><a href="javascript:;" class="d-flex align-items-center  text-decoration-none updateBtn">Click here to view our weekly update! </a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade h-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                    <div class="row gap-3 mx-0 h-100">
+                                                        <div class="pgSoftCard col-12 px-0 h-100">
+                                                            <div class="outerCard h-100">
+                                                                <div class="empatySection d-flex align-items-center justify-content-center flex-column h-100">
+                                                                    <div class="emptyImg ">
+                                                                        <img src="assets/img/hold&amp;win/empty.webp" alt="empty" class="img-fluid w-100 h-100 ">
+                                                                    </div>
+                                                                    <div class="emptyHeading">Oops! There is no data yet!</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                <!-- notification offcanvas end  -->
+
                                 <!-- Language offcanavas  -->
                                 <div class="offcanvas offcanvas-end languageOffcanvas py-4" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel">
 
@@ -1657,7 +1722,7 @@
                             </div>
                      </div>
                 </div>
-            </div>
+                </div>
 
                 <div class="aboutJonathan d-md-none d-block">
                         <!-- mobile view modal chat  -->
@@ -2413,7 +2478,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                         <!-- mobile view modal rain Drop end -->
 
                         <!-- user chat start  -->
@@ -3176,6 +3241,75 @@
                                 </div>
                             </div>
                         </div> 
+
+                        <div class="container-fluid aboutJonathanSection">
+                            <div class="row">
+                                <div class="col-12">
+                                        <!-- notification offcanvas start  -->
+                                <div class="chatOffcanvas notificationOffcanvas " tabindex="-1" id="offcanvasExamplenotification" aria-labelledby="offcanvasExampleLabel">
+                                    <div class=" chatHeader">
+                                     <div>
+                                        <nav>
+                                            <div class="nav nav-tabs border-0 notificationTabs d-sm-inline-flex d-flex flex-nowrap overflow-x-auto" id="nav-tab" role="tablist">
+                                              <button class="nav-link navLinkNoti rounded-pill active border-0 shadow-none" id="nav-home55-tab" data-bs-toggle="tab" data-bs-target="#nav-home55" type="button" role="tab" aria-controls="nav-home55" aria-selected="true">System Notice</button>
+                                              <button class="nav-link navLinkNoti rounded-pill border-0 shadow-none" id="nav-profile57-tab" data-bs-toggle="tab" data-bs-target="#nav-profile57" type="button" role="tab" aria-controls="nav-profile57" aria-selected="false">Activities</button>
+                                            </div>
+                                        </nav>
+                                     </div>
+                                    </div>
+                                        <div class="offcanvas-body chatBody ">
+                                            <div class="tab-content h100" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-home55" role="tabpanel" aria-labelledby="nav-home55-tab" tabindex="0">
+                                                    <div class="row gap-3 mx-0">
+                                                        <div class="pgSoftCard col-12 px-0">
+                                                            <div class="outerCard ">
+                                                                <div class="dateheading">8/8/2023, 8:01:15 AM</div>
+                                                                <div class="headingNoti pt-2 pb-1 d-flex align-items-center "><span class="notificationIcon d-inline-flex me-1 "><img src="assets/img/aboutJonathan/Tools.svg" alt="tools" class="img-fluid h-100 w-100"></span>  PG SOFT Emergency Maintenance</div>
+                                                                <div class="peraNotification pt-2"> PG SOFT will start the emergency maintenance from now.</div>
+                                                                <div class="peraNotification pt-2"> You will be unable to access the game platform during this period.</div>
+                                                                <div class="peraNotification pt-2"> We will notify you immediately once the maintenance is completed.  </div>
+                                                                <div class="peraNotification pt-2"> Sorry for any inconvenience caused.</div>
+                                                                <div class="peraNotification pt-2"> Best regards,.</div>
+                                                                <div class="peraNotification "> Damble.GAME</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 weeklyUpdate px-0">
+                                                            <div class="outerCard  pb-3">
+                                                                <div class="dateheading">8/8/2023, 8:01:15 AM</div>
+                                                                <div class="headingNoti pt-2 pb-1 d-flex align-items-center "><span class="notificationIcon d-inline-flex me-1 "><img src="assets/img/aboutJonathan/horn.svg" alt="tools" class="img-fluid h-100 w-100"></span>  Weekly Update <span class="notificationIcon d-inline-flex ms-1 "><img src="assets/img/aboutJonathan/horn.svg" alt="tools" class="img-fluid h-100 w-100"></span></div>
+                                                                <div class="imgupdate py-3"><img src="assets/img/aboutJonathan/updateimg.png" alt="update" class="img-fluid w-100 h-100"></div>
+                                                                <div class="peraNotification pt-2"> Discover what's new and exciting at BC.GAME with our weekly update: </div>
+                                                                <div class="peraNotification pt-2"> 💰 Participate in exciting CASINO EVENTS and win amazing prizes! </div>
+                                                                <div class="peraNotification pt-2"> 🎰 Endless entertainment with our new SLOT RELEASES! </div>
+                                                                <div class="peraNotification pt-2"> ⚽️ Experience thrilling SPORTS EVENTS for all sports enthusiasts!</div>
+                                                                <div class="peraNotification pt-2"> Enjoy non-stop excitement with our incredible range of games and events! Be sure to stay tuned for more updates on all the latest happenings at BC.GAME </div>
+                                                                <div class="peraNotification pt-2"> Discover what's new and exciting at BC.GAME with our weekly update: </div>
+                                                                <div class="weeklyupdateBtn pt-2"><a href="javascript:;" class="d-flex align-items-center  text-decoration-none updateBtn">Click here to view our weekly update! </a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade h-100" id="nav-profile57" role="tabpanel" aria-labelledby="nav-profile57-tab" tabindex="0">
+                                                    <div class="row gap-3 mx-0 h-100">
+                                                        <div class="pgSoftCard col-12 px-0 h-100">
+                                                            <div class="outerCard h-100">
+                                                                <div class="empatySection d-flex align-items-center justify-content-center flex-column h-100">
+                                                                    <div class="emptyImg ">
+                                                                        <img src="assets/img/hold&amp;win/empty.webp" alt="empty" class="img-fluid w-100 h-100 ">
+                                                                    </div>
+                                                                    <div class="emptyHeading">Oops! There is no data yet!</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- notification offcanvas end  -->
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 
             </div>
