@@ -1731,7 +1731,18 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
+                    &:first-child {
+                        border-top-left-radius:10px ;
+                    }
+                    &:last-child {
+                        border-top-right-radius:10px ;
+                    }
                 }
+            }
+            & .tableData {
+                font-size: 14px;
+                font-weight: 500;
+                color: #FFF;
             }
         }
         & .rytBox{
