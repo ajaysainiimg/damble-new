@@ -3440,6 +3440,74 @@
 // options modal end
 
 
+//  * News page call duty *
+.newsdambleSection {
+    &.callofduty {
+        & .newsdamble {
+            &.topsection{
+                background: linear-gradient(rgba($black, 0.8), rgba($black, 0.8)), url(../img/newsDamble/newshero.svg);
+            }
+            &.content_section {
+                background: linear-gradient(rgba($black, 0.8), rgba($black, 0.8)), url(../img/newsDamble/calldutybg2.png);
+                & .callplayerImg {
+                    border-radius: 18px;
+                    & img {
+                        object-fit: cover;
+                    }
+                }
+            }
+            & .newsHeroSection {
+                & .heroContent {
+                    & .subHeading {
+                        &.logoImg {
+                            height: 81px;
+                            margin-bottom: 29px;
+                            & img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .headingNews {
+                        border-radius: 18px;
+                    }
+                }
+            }
+            & .callheading{
+                font-size: 35px;
+                font-weight: 700;
+            }
+            & .content{
+                font-size: 20px;
+                color: #D7D7D7;
+                font-weight: 500;
+                &.subContent {
+                    font-size: 15px;
+                    color: #93ACD3;
+                }
+            }
+            & .themeBtn {
+                background-color: #6324D7;
+                font-size: 18px;
+                color: $white;
+                border-radius: 8px;
+                transition: all ease-in-out 0.3s;
+                & .move_on {
+                    height: 20px;
+                    }
+                &:hover
+                    {
+                    opacity: 0.7;
+                    }
+                }
+            & .socialIcon {
+                & .iconLinks {
+                    width: 22px;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -3893,7 +3961,7 @@
             }
         }
     }
-}
+} 
 @include media-breakpoint-up(sm) {
     .headerFluid{
         & .headerRow{
@@ -5253,6 +5321,40 @@
             }
         }
     }
+    .newsdambleSection {
+        &.callofduty {
+            & .newsdamble {
+                &.topsection{
+                }
+                &.content_section {
+                    & .callplayerImg {
+                        & img {
+                        }
+                    }
+                }
+                & .newsHeroSection {
+                    & .heroContent {
+                        & .subHeading {
+                            &.logoImg {
+                                height: 75px;
+                                margin-bottom: 27px;
+                                & img {
+                                }
+                            }
+                        }
+                        & .headingNews {
+                        }
+                    }
+                }
+                & .callheading{
+                    font-size: 33px;
+                }
+                & .content{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -5791,6 +5893,54 @@
             }
         }
     }
+
+    .newsdambleSection {
+        &.callofduty {
+            & .newsdamble {
+                &.topsection{
+                }
+                &.content_section {
+                    & .callplayerImg {
+                        & img {
+                        }
+                    }
+                }
+                & .newsHeroSection {
+                    & .heroContent {
+                        & .subHeading {
+                            &.logoImg {
+                                height: 70px;
+                                margin-bottom: 25px;
+                                & img {
+                                }
+                            }
+                        }
+                        & .headingNews {
+                        }
+                    }
+                }
+                & .callheading{
+                    font-size: 32px;
+                }
+                & .content{
+                    font-size: 16px;
+                    &.subContent {
+                        font-size: 14px;
+                    }
+                }
+                & .themeBtn {
+                    font-size: 16px;
+                    & .move_on {
+                        height: 19px;
+                        }
+                    }
+                & .socialIcon {
+                    & .iconLinks {
+                    }
+                }
+            }
+        }
+    }
     
 }
 
@@ -6322,6 +6472,40 @@
             & .oppsTxt{
                 & img{
     
+                }
+            }
+        }
+    }
+    .newsdambleSection {
+        &.callofduty {
+            & .newsdamble {
+                &.topsection{
+                }
+                &.content_section {
+                    & .callplayerImg {
+                        & img {
+                        }
+                    }
+                }
+                & .newsHeroSection {
+                    & .heroContent {
+                        & .subHeading {
+                            &.logoImg {
+                                height: 65px;
+                                // margin-bottom: 25px;
+                                & img {
+                                }
+                            }
+                        }
+                        & .headingNews {
+                        }
+                    }
+                }
+                & .callheading{
+                    // font-size: 32px;
+                }
+                & .content{
+                    // font-size: 16px;
                 }
             }
         }
@@ -6880,6 +7064,53 @@
             & .oppsTxt{
                 & img{
     
+                }
+            }
+        }
+    }
+    .newsdambleSection {
+        &.callofduty {
+            & .newsdamble {
+                &.topsection{
+                }
+                &.content_section {
+                    & .callplayerImg {
+                        & img {
+                        }
+                    }
+                }
+                & .newsHeroSection {
+                    & .heroContent {
+                        & .subHeading {
+                            &.logoImg {
+                                height: 50px;
+                                & img {
+                                }
+                            }
+                        }
+                        & .headingNews {
+                        }
+                    }
+                }
+                & .callheading{
+                    font-size: 25px;
+                }
+                & .content{
+                    font-size: 14px;
+                    &.subContent {
+                        font-size: 13px;
+                    }
+                }
+                & .themeBtn {
+                    font-size: 15px;
+                    & .move_on {
+                        height: 18px;
+                        }
+                    }
+                & .socialIcon {
+                    & .iconLinks {
+
+                    }
                 }
             }
         }
@@ -7570,6 +7801,53 @@
                                 padding: 0px 5px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .newsdambleSection {
+        &.callofduty {
+            & .newsdamble {
+                &.topsection{
+                }
+                &.content_section {
+                    & .callplayerImg {
+                        & img {
+                        }
+                    }
+                }
+                & .newsHeroSection {
+                    & .heroContent {
+                        & .subHeading {
+                            &.logoImg {
+                                height: 40px;
+                                & img {
+                                }
+                            }
+                        }
+                        & .headingNews {
+                        }
+                    }
+                }
+                & .callheading{
+                    font-size: 22px;
+                }
+                & .content{
+                    font-size: 12px;
+                    &.subContent {
+                        font-size: 11px;
+                    }
+                }
+                & .themeBtn {
+                    font-size: 12px;
+                    & .move_on {
+                        height: 15px;
+                        }
+                    }
+                & .socialIcon {
+                    & .iconLinks {
+                        
                     }
                 }
             }
