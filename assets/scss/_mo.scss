@@ -6237,22 +6237,6 @@
 }
 // about the provider page end
 
-// table start
-.dambleTable {
-    & .viewMoreBtn {
-        font-size: 14px;
-        font-weight: 500;
-        color: #fff;
-        background-color: #252E39;
-        padding: 8px 12px;
-        & .downArrow {
-            height: 7px;
-            width: 12px;
-        }
-    }
-}
-// table end
-
 // hold and win page start
 .holdwinSection {
     & .holdwinHero {
@@ -6361,6 +6345,7 @@
 // share modal start
 .sharemodal {
     & .shareDialog {
+        max-width: 350px;
         & .shareContent {
             background-color: #131C27;
             & .shareHeader {
@@ -6386,6 +6371,13 @@
                     width: 40px;
                     background-color: #212c3b;
                     padding: 10px;
+                }
+                & .copyBtn {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    background: #03B80F;
+                    padding: 10px 0;
                 }
             }
         }
@@ -6515,8 +6507,108 @@
             font-size: 14px;
         }
     }
+    & .viewMoreBtn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #252E39;
+        padding: 8px 12px;
+        & .downArrow {
+            height: 7px;
+            width: 12px;
+        }
+    }
 }
 // tab section end
+
+// player detail modal start
+.playerDetailModal {
+    & .playerDetailDialog {
+        max-width: 450px;
+        & .playerDetailContent {
+            background-color: #131C27;
+            & .playerDetailHeader {
+                & .modal-title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+            & .playerDetailBody {
+                & .headingmodaltwo {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+                & .totalProfit {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 500;
+                    & .profitImg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                & .shareIcon {
+                    width: 18px;
+                }
+                & .betamountTitle {
+                    font-size: 14px;
+                    // font-weight: ;
+                    color: #54657F;
+                    font-weight: 500;
+                }
+                & .betamount {
+                    font-size: 12px;
+                    color:#fff;
+                }
+                & .betamountImg {
+                    height: 18px;
+                    width: 18px;
+                }
+                & .userimg {
+                    height: 40px;
+                    width: 40px;
+                }
+                & .userName {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#93acd3;
+                }
+                & .time {
+                    font-size: 13px;
+                    color: #5f6e86;
+                    font-weight: 500;
+                }
+                & .betId {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#93acd3;
+                    & span {
+                        color: #fff;
+                    }
+                }
+                & .copyIcon {
+                    width: 18px;
+                }
+                & .PlayBtn {
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #6324d7;
+                    color: #FFF;
+                    padding: 9px 18px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+// player detail modal end
 
 // .coin drop down start
 .coindropdown {
