@@ -10192,9 +10192,20 @@
 
 // newsHeroSection start 
 .newsdambleSection{
+    .expolerBtn{
+        color: #FFF;
+        font-family: I'nter';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 10px;
+        background: #6324D7;
+        padding: 10px 72px 10px 19px;
+    }
 
     & .newsdamble{
-        padding: 62px 39px 87px 63px !important;
+        padding: 62px 39px 87px 63px;
     
         background-image: url(../img/newsDamble/newshero.svg);
         background-repeat: no-repeat;
@@ -10248,17 +10259,7 @@
                     line-height: normal;
                     padding-bottom: 128px;
                 }
-                & .expolerBtn{
-                    color: #FFF;
-                    font-family: I'nter';
-                    font-size: 15px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    border-radius: 10px;
-                    background: #6324D7;
-                    padding: 10px 72px 10px 19px;
-                }
+            
             }
             & .date{
                 color: #93ACD3;
@@ -10325,6 +10326,218 @@
             font-weight: 500;
             line-height: normal;
             padding: 7px 16px;
+        }
+        & .cardSectionNews{
+                & .outtercard{
+                    padding: 2px;
+                    background: linear-gradient(120deg, rgba(0, 153, 10, 0.5) 30%, rgba(13, 19, 28, 0.5) 50%) !important;
+                    overflow: hidden;
+                    & .cardImg{
+                       height: 230px;
+                    }
+                }
+                & .cardText{
+                    color: #93ACD3;
+                    font-family: 'Inter';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+        }
+    }
+
+    // articalSection
+    
+    & .articalSection{
+        & .newsSectionHeading{
+            color: #E1E1E1;
+            font-family: 'Inter';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        & .cardsection{
+            background-image: url(../img/newsDamble/articalsection.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 429px;
+            border-radius: 18px;
+            &.cardsection2{
+                background-image: url(../img/newsDamble/articalsection2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 204px;
+                border-radius: 18px;
+              
+            }
+            &.cardsection3{
+                background-image: url(../img/newsDamble/articalsection3.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 204px;
+                border-radius: 18px;
+          
+            }
+            & .readmoreBtn{
+                font-size: 16px;
+                color: #fff;
+                font-weight: 700;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            & .contentnews{
+              
+                & .headingArtical{
+                    color: #FFF;
+                    font-family: 'Inter';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .pera{
+                    font-size: 13px;
+                    color: #93ACD3;
+                    font-weight: 500;
+                }
+            }
+            & .dateCard{
+                position:absolute ;
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+
+    }
+    // whatsSection
+    & .whatsSection{
+        & .newsSectionHeading{
+            color: #E1E1E1;
+            font-family: 'Inter';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        & .ExploreBtn{
+            padding: 10px 20px;
+        }
+        & .whatsimg{
+            max-height: 243px;
+            height: 100%;
+        }
+        & .whatheading{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 800;
+
+        }
+        & .pera{
+            color: #93ACD3;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        & .btnSection{
+            padding-top: 115px;
+            & .readmoreBtn{
+                color: #788E28;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        & .pageNavigation{
+            & .paginationUl{
+                & .pageItem{
+                    width: 32px;
+                    height: 32px;
+                    background-color: rgba(39, 47, 58, 1) !important;
+                    color: #93ACD3;
+                    font-size: 15px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    & .pageLink{
+                        width: 32px;
+                        height: 32px;
+                        background-color: rgba(39, 47, 58, 1) !important;
+                        color: #93ACD3;
+                        font-size: 15px;
+                        font-weight: 500;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        & .rightSection{
+            & .outterCard{
+                position: relative;
+                overflow: hidden;
+                padding: 0.7px 0.7px;
+                &::before{
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+                top: 0;
+                left: 0;
+                z-index: -5;
+                border-radius: 18px;
+                filter: blur(0.5px);
+                }
+                & .innerCard{
+                    border-radius: 18px;
+                    background:#161f2c;
+                    padding: 22px;
+                    // filter: blur(0.5px);
+                    & .newsletterHeading{
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                    & .newsPera{
+                        color: #93ACD3;
+                        font-size: 10px;
+                        font-weight: 500;
+                    }
+                    & .newsInput{
+                        border-radius: 5px;
+                        background: rgba(147, 172, 211, 0.20);
+                        height: 32px;
+                        color: rgba(147, 172, 211, 0.60);
+                        font-size: 10px;
+                        font-weight: 500;
+                        &::placeholder{
+                            color: rgba(147, 172, 211, 0.60);
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
+                    }
+                    & .SubscribeBtn{
+                        padding: 10px 22px;
+                        border-radius: 8px;
+                        background: #DB2B42;
+                        color: #fff;
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
         }
     }
 }
