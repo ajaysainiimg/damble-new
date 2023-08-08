@@ -3485,27 +3485,27 @@
                     color: #93ACD3;
                 }
             }
-            & .themeBtn {
-                background-color: #6324D7;
-                font-size: 18px;
-                color: $white;
-                border-radius: 8px;
-                transition: all ease-in-out 0.3s;
-                & .move_on {
-                    height: 20px;
-                    }
-                &:hover
-                    {
-                    opacity: 0.7;
-                    }
-                }
-            & .socialIcon {
-                & .iconLinks {
-                    width: 22px;
-                }
-            }
         }
     }
+        & .themeBtn {
+            background-color: #6324D7;
+            font-size: 18px;
+            color: $white;
+            border-radius: 8px;
+            transition: all ease-in-out 0.3s;
+            & .move_on {
+                height: 20px;
+                }
+            &:hover
+                {
+                opacity: 0.7;
+                }
+            }
+        & .socialIcon {
+            & .iconLinks {
+                width: 22px;
+            }
+        }
 }
 
 
@@ -5928,16 +5928,16 @@
                         font-size: 14px;
                     }
                 }
-                & .themeBtn {
-                    font-size: 16px;
-                    & .move_on {
-                        height: 19px;
-                        }
-                    }
-                & .socialIcon {
-                    & .iconLinks {
-                    }
+            }
+        }
+        & .themeBtn {
+            font-size: 16px;
+            & .move_on {
+                height: 19px;
                 }
+            }
+        & .socialIcon {
+            & .iconLinks {
             }
         }
     }
@@ -7101,17 +7101,16 @@
                         font-size: 13px;
                     }
                 }
-                & .themeBtn {
-                    font-size: 15px;
-                    & .move_on {
-                        height: 18px;
-                        }
-                    }
-                & .socialIcon {
-                    & .iconLinks {
-
-                    }
+            }
+        }
+        & .themeBtn {
+            font-size: 15px;
+            & .move_on {
+                height: 18px;
                 }
+            }
+        & .socialIcon {
+            & .iconLinks {
             }
         }
     }
@@ -7839,17 +7838,17 @@
                         font-size: 11px;
                     }
                 }
-                & .themeBtn {
-                    font-size: 12px;
-                    & .move_on {
-                        height: 15px;
-                        }
-                    }
-                & .socialIcon {
-                    & .iconLinks {
-                        
-                    }
+            }
+        }
+        & .themeBtn {
+            font-size: 12px;
+            & .move_on {
+                height: 15px;
                 }
+            }
+        & .socialIcon {
+            & .iconLinks {
+                
             }
         }
     }
