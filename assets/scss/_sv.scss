@@ -10618,6 +10618,8 @@
         & .whatsimg{
             max-height: 243px;
             height: 100%;
+            max-width: 406px;
+            object-fit: cover;
         }
         & .whatheading{
             color: #FFF;
