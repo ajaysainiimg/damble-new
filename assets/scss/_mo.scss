@@ -6202,48 +6202,16 @@
 // slots card end
 
 
-
-// hold and win page start
-
-
-// about the provider page start
-.aboutheProvider {
-    font-size: 30px ;
-    color: #fff;
-    line-height: normal;
-    font-weight: 800;
-    & .card {
-        background-color: #161f2c;
-        padding: 20px 50px;
-        & .providerImg {
-            // padding: 20px 30px;
-            width: 120px;
-            & img {
-                background-color: #293445;
-            }
-        }
-        & .providerBtn {
-            font-size: 14px;
-            color: #fff;
-            font-weight: 500;
-            border: 1px solid #42309c;
-            padding: 10px 12px;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-                border-color: #04E929;
-            }
-        }
-    }
-}
-// about the provider page end
-
 // hold and win page start
 .holdwinSection {
+    padding: 50px 35px 0 35px;
     & .holdwinHero {
         & .likeShareMain {
             background-color: #161f2c;
             & .starMain {
                 gap: 10px;
+                opacity: 0.8;
+                transition: all 0.3s ease-in-out;
                 & .statIcon {
                     width: 15px;
                     height: 14px;
@@ -6268,9 +6236,14 @@
                         color: #FFBF39;
                     }
                 }
+                &:hover {
+                    opacity: 1;
+                }
             }
             & .heartMain {
                 gap: 10px;
+                transition: all 0.3s ease-in-out;
+                opacity: 0.8;
                 & .heartIcon {
                     height: 19px;
                     width: 19px;
@@ -6300,11 +6273,14 @@
                     width: 17px;
                     margin-top: 3px;
                 }
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
         & .playwithBalance {
             background-color: #161f2c;
-            max-width: 450px;
+            width: 450px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -6338,8 +6314,284 @@
                 }
             }
         }   
+        & .iframeMain {
+            height: 80vh;
+        }
+    }
+    // about the provider page start
+    & .aboutheProvider {
+        & .providerHeading {
+            font-size: 30px ;
+            color: #fff;
+            line-height: normal;
+            font-weight: 800;
+        }
+        & .card {
+            background-color: #161f2c;
+            padding: 20px 50px;
+            & .providerImg {
+                // padding: 20px 30px;
+                width: 120px;
+                & img {
+                    background-color: #293445;
+                }
+            }
+            & .providerBtn {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 500;
+                border: 1px solid #42309c;
+                padding: 10px 12px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    border-color: #04E929;
+                }
+            }
+        }
+    }
+    // about the provider page end
+
+    // tab section start
+    .tabsection {
+        & .mainTab {
+            background-color: #222d3e;
+            border-radius: 19.955px;
+            padding: 2px;
+            & .mainlink {
+                font-size: 14px;
+                border-radius: 19.955px;
+                color: #fff;
+                padding: 8px 38px;
+                font-weight: 600;
+                &.active {
+                    background: #6324d7;
+                    color: #fff;
+                }
+            }
+        }
+        & .tabHeading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #CCDEFC;
+        }
+        & .descripation {
+            & .descriptionHeading {
+                font-size: 20px;
+                font-weight: 600;
+                color: #CCDEFC;
+            }
+            & .descriptionDetail {
+                font-size: 14px;
+                color: #CCDEFC;
+                // font-weight: 500;
+            }
+            & .descripationImg {
+                & img {
+                    aspect-ratio:8/4;
+                }
+            }
+        }
+        & .card {
+            background-color:#161f2c;
+            & .viewMoreBtn {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #252E39;
+                padding: 8px 12px;
+                gap: 6px;
+                transition: all 0.3s ease-in-out;
+                & .downArrow {
+                    height: 7px;
+                    width: 12px;
+                    margin-top: 2px;
+                }
+                &:hover {
+                    background-color: #293445;
+                }
+            }
+            & .DetailBtn {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #252E39;
+                padding: 8px 27px;
+                gap: 6px;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: #293445;
+                }
+            }
+            & .tableDate {
+                font-size: 13px;
+                font-weight: 500;
+                color: #54657F;
+            }
+        }
+    }
+    // tab section end
+
+    // .coin drop down start
+    .coindropdown {
+        & .coinbtn {
+            background:  #25292e;
+            font-size: 13px;
+            font-weight: 500;
+            padding-right: 35px;
+            & .coinImgs {
+                height: 20px;
+                width: 20px;
+            }
+            &:active {
+                background:  #25292e;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 6px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 10px;
+                width: 12px;
+                background: url(../Img/slots/arrowdown.png) no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+        & .coinMenu {
+            background-color:#131C27;
+            width: 330px;
+            & .coinsearch {
+                background-color: #293445;
+                & .searchBtns {
+                    height: 15px;
+                }
+                & .searchipt {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #93acd3;
+                    &::placeholder {
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #93acd3;
+                    }
+                }
+            }
+            & .cointabs {
+                background: #293445;
+                padding: 4px;
+                & .tablink {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #93acd3;
+                    &.active {
+                        background:#6324d7;
+                        color: #fff;
+                    }
+                }
+            }
+            & .coinMain {
+                padding: 12px 6px;
+                transition: all 0.3s ease-in-out;
+                & .dropcoinImg {
+                    height: 20px;
+                    width: 20px;
+                }
+                & .coinname {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #93ACD3;
+                }
+                & .coinPrice {
+                    font-size: 13px;
+                    color: #fff;
+                    font-weight: 700;
+                }
+                &:hover {
+                    background: #293445;
+                }
+                &.active {
+                    border: 1px solid #04E929;
+                }
+            }
+        }
+    }
+    // .coin drop down end
+
+}
+
+ // table start
+.datatable {
+    & .tableHeader {
+        & th {
+            font-size: 14px;
+            color: #D6D6D6;
+            font-weight: 500;
+        }
+    }
+    & .tableBody {
+        & tr {
+            cursor: pointer;
+            &:hover {
+                background-color:#2e3b4f52;
+            }
+        }
+        & .gameId {
+            font-size: 14px;
+            // color: #98A7b5;
+            color: #D6D6D6;
+            font-weight: 400;
+            letter-spacing: 0.7px;
+        }
+        & .playerName {
+            font-size: 14px;
+            font-weight: 600;
+            color: #FFf;
+        }
+        & .profiltAmunt {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        & .profiltlose {
+            font-size: 14px;
+            font-weight: 600;
+            color: #d6643a;
+            &.profit {
+                font-size: 14px;
+                font-weight: 600;
+                color:rgb(12, 190, 12);
+            }
+        }
+        & .per {
+            font-size: 14px;
+            font-weight: 600;
+            color:#54657F;
+        }
+        & .profitIcon {
+            height: 18px;
+            width: 18px;
+        }
+        & .gamename {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+        }
+        & .gameImg {
+            height: 20px;
+            width: 19px;
+        }
+        & .awardIcon {
+            width: 24px;
+            height: 24px;
+        }
+        & .playerImg {
+            height: 23px;
+            width: 23px;
+        }
     }
 }
+// table end
 // hold and win page end
 
 // share modal start
@@ -6388,7 +6640,7 @@
 // house edge modal start
 .houseEdgeModal {
     & .houseEdgeDialog {
-        max-width: 200px;
+        // max-width: 200px;
         & .houseEdgeContent {
             background-color: #131C27;
             & .houseEdgeHeader {
@@ -6414,112 +6666,25 @@
 }
 // house edge modal end
 
-// tab section start
-.tabsection {
-    & .mainTab {
-        background-color: #222d3e;
-        border-radius: 19.955px;
-        & .mainlink {
-            font-size: 14px;
-            border-radius: 19.955px;
-            color: #fff;
-            padding: 8px 38px;
-            font-weight: 600;
-            &.active {
-                background: #6324d7;
-                color: #fff;
-            }
-        }
+// error page start
+.empatySection{
+    & .emptyImg{
+        width:200px;
+        height: 200px;
     }
-    & .tabHeading {
-        font-size: 20px;
-        font-weight: 600;
-        color: #CCDEFC;
-    }
-    & .descripation {
-        & .descriptionHeading {
-            font-size: 20px;
-            font-weight: 600;
-            color: #CCDEFC;
-        }
-        & .descriptionDetail {
-            font-size: 14px;
-            color: #CCDEFC;
-            // font-weight: 500;
-        }
-        & .descripationImg {
-            & img {
-                aspect-ratio:8/4;
-            }
-        }
-    }
-    & .card {
-        background-color:#161f2c;
-    }
-    & .datatable {
-        & .tableHeader {
-            & th {
-                font-size: 14px;
-                color: #D6D6D6;
-                font-weight: 500;
-            }
-        }
-        & .tableBody {
-
-            & tr {
-                cursor: pointer;
-                &:hover {
-                    background-color:#2e3b4f52;
-                }
-            }
-            & .gameId {
-                font-size: 14px;
-                // color: #98A7b5;
-                color: #D6D6D6;
-                font-weight: 400;
-                letter-spacing: 0.7px;
-            }
-            & .playerName {
-                font-size: 14px;
-                font-weight: 600;
-                color: #FFf;
-            }
-            & .profilt {
-                font-size: 14px;
-                font-weight: 600;
-                color: #d6643a;
-            }
-            & .profitIcon {
-                height: 18px;
-                width: 18px;
-            }
-        }
-    }
-}
-
-.tabletab {
-    & .nav-link {
-        font-size: 14px !important;
-        padding: 10px 30px !important;
-    }
-    & .coinTable {
-        & th {
-            font-size: 14px;
-        }
-    }
-    & .viewMoreBtn {
-        font-size: 14px;
+    & .emptyHeading{
+        color: #93acd3;
+        font-size: 13px;
+        font-family: 'Montserrat';
+        font-style: normal;
         font-weight: 500;
-        color: #fff;
-        background-color: #252E39;
-        padding: 8px 12px;
-        & .downArrow {
-            height: 7px;
-            width: 12px;
-        }
+        line-height: normal;
+        text-align: center;
     }
+
 }
-// tab section end
+// error page end
+
 
 // player detail modal start
 .playerDetailModal {
@@ -6537,6 +6702,10 @@
                     background: none;
                     height: 13px;
                     width: 13px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
                 }
             }
             & .playerDetailBody {
@@ -6610,92 +6779,42 @@
 }
 // player detail modal end
 
-// .coin drop down start
-.coindropdown {
-    & .coinbtn {
-        background:  #25292e;
-        font-size: 13px;
-        font-weight: 500;
-        padding-right: 35px;
-        & .coinImgs {
-            height: 20px;
-            width: 20px;
-        }
-        &:active {
-            background:  #25292e;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            right: 6px;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 10px;
-            width: 12px;
-            background: url(../Img/slots/arrowdown.png) no-repeat;
-            background-position: center;
-            background-size: contain;
-        }
-    }
-    & .coinMenu {
-        background-color:#131C27;
-        width: 330px;
-        & .coinsearch {
-            background-color: #293445;
-            & .searchBtns {
-                height: 15px;
-            }
-            & .searchipt {
-                font-size: 13px;
-                font-weight: 500;
-                color: #93acd3;
-                &::placeholder {
-                    font-size: 13px;
+
+
+// detail modal start
+.detailModal {
+    & .detailDialog {
+        max-width: 80%;
+        & .detailContent {
+            & .detailHeader {
+                background-color:#212c3b;
+                & .modal-title {
+                    font-size: 16px;
                     font-weight: 500;
-                    color: #93acd3;
-                }
-            }
-        }
-        & .cointabs {
-            background: #293445;
-            padding: 4px;
-            & .tablink {
-                font-size: 13px;
-                font-weight: 500;
-                color: #93acd3;
-                &.active {
-                    background:#6324d7;
                     color: #fff;
+                    & span {
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: #54657F;
+                    }
+                }
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
                 }
             }
-        }
-        & .coinMain {
-            padding: 12px 6px;
-            transition: all 0.3s ease-in-out;
-            & .dropcoinImg {
-                height: 20px;
-                width: 20px;
-            }
-            & .coinname {
-                font-size: 13px;
-                font-weight: 500;
-                color: #93ACD3;
-            }
-            & .coinPrice {
-                font-size: 13px;
-                color: #fff;
-                font-weight: 700;
-            }
-            &:hover {
-                background: #293445;
-            }
-            &.active {
-                border: 1px solid #04E929;
+            & .detailBody {
+                background-color: #161f2c;
             }
         }
     }
 }
-// .coin drop down end
+// detail modal end
 
 @include media-breakpoint(basic) {
 }
@@ -6994,5 +7113,264 @@
             }
         }
     }
+
+    // hold and win page start
+    .holdwinSection {
+        padding: 40px 10px 0 10px;
+        & .holdwinHero {
+            & .likeShareMain {
+                & .starMain {
+                    & .statIcon {
+                        width: 14px;
+                        height: 13px;
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                        font-size: 12px;
+                    }
+                    &.active {
+                        & .statIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {
+                        }
+                    }
+                    &:hover {
+                    }
+                }
+                & .heartMain {
+                    & .heartIcon {
+                        height: 17px;
+                        width: 17px;
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                        font-size: 12px;
+                    }
+                    &.active {
+                        & .heartIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {}
+                    }
+                    & .shareIcon {}
+                    &:hover {
+
+                    }
+                }
+            }
+            & .playwithBalance {
+                width: 90%;
+                & .playwithHeading {
+                    font-size: 15px;
+                }
+                & .playwithdetail {
+                    font-size: 11px;
+                    & span {
+                        
+                    }
+                }
+                & .realPlayBtn {
+                    font-size: 12px;
+                    & .realPlayIcon {
+                        
+                    }
+                    &.freePlay {
+                        
+                    }
+                }
+            }   
+        }
+        // about the provider page start
+        & .aboutheProvider {
+            & .providerHeading {
+                font-size: 18px
+            }
+            & .card {
+                & .providerImg {
+                    
+                    & img {
+                        
+                    }
+                }
+                & .providerBtn {
+                
+                    &:hover {
+                        
+                    }
+                }
+            }
+        }
+        // about the provider page end
+
+        // tab section start
+        .tabsection {
+            & .mainTab {
+                & .mainlink {
+                    font-size: 12px;
+                    padding: 7px 20px;
+                    &.active {
+                        
+                    }
+                }
+            }
+            & .tabHeading {
+                font-size: 18px;
+            }
+            & .descripation {
+                & .descriptionHeading {
+                    
+                }
+                & .descriptionDetail {
+                    
+                }
+                & .descripationImg {
+                    & img {
+                        
+                    }
+                }
+            }
+            & .card {
+                & .viewMoreBtn {
+                    
+                    & .downArrow {
+                        
+                    }
+                    &:hover {
+                        
+                    }
+                }
+                & .DetailBtn {
+                    
+                    &:hover {
+                        
+                    }
+                }
+                & .tableDate {
+                    
+                }
+            }
+        }
+        // tab section end
+
+        // .coin drop down start
+        .coindropdown {
+            & .coinbtn {
+                
+                & .coinImgs {
+                    
+                }
+                &:active {
+                    
+                }
+                &::after {
+                
+                }
+            }
+            & .coinMenu {
+                & .coinsearch {
+                    
+                    & .searchBtns {
+                    }
+                    & .searchipt {
+                        
+                        &::placeholder {
+                            
+                        }
+                    }
+                }
+                & .cointabs {
+                    
+                    & .tablink {
+                        
+                        &.active {
+                            
+                        }
+                    }
+                }
+                & .coinMain {
+                    
+                    & .dropcoinImg {
+                        
+                    }
+                    & .coinname {
+                        
+                    }
+                    & .coinPrice {
+                        
+                    }
+                    &:hover {
+                        
+                    }
+                    &.active {
+                        
+                    }
+                }
+            }
+        }
+        // .coin drop down end
+
+    }
+
+     // table start
+    .datatable {
+        & .tableHeader {
+            & th {
+                font-size: 11px;
+            }
+        }
+        & .tableBody {
+            & tr {
+                cursor: pointer;
+                &:hover {
+                    
+                }
+            }
+            & .gameId {
+                font-size: 11px;
+            }
+            & .playerName {
+                font-size: 11px;
+            }
+            & .profiltAmunt {
+                font-size: 11px;
+            }
+            & .profiltlose {
+                font-size: 11px;
+                &.profit {
+                    font-size: 11px;
+                }
+            }
+            & .per {
+                font-size: 11px;
+            }
+            & .profitIcon {
+                height: 14px;
+                width: 14px;
+            }
+            & .gamename {
+                font-size: 11px;
+            }
+            & .gameImg {
+                
+            }
+            & .awardIcon {
+                height: 20px;
+                width: 20px;
+            }
+            & .playerImg {
+                height: 20px;
+                width: 20px;
+                
+            }
+        }
+    }
+    // table end
+    // hold and win page end
+
 }
 // slots page end
