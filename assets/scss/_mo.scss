@@ -6784,7 +6784,7 @@
 // detail modal start
 .detailModal {
     & .detailDialog {
-        max-width: 80%;
+        width: 80%;
         & .detailContent {
             & .detailHeader {
                 background-color:#212c3b;
@@ -6836,7 +6836,7 @@
 
 @include media-breakpoint-down(lg) {
     .slots {
-        padding: 50px 20px 0 20px;
+        padding: 30px 20px 0 20px;
         & .slotsSearch {
             & .searchIcon {
                 height: 15px;
@@ -6970,13 +6970,829 @@
             }
         }
     }
+
+    // active page 
+    .activePage {
+        & .breadcrumb-item {
+            font-size: 13px;
+            &.active {
+                &::before {
+                }
+            }
+            & a {
+                font-size: 13px;
+            }
+        }
+    }
+
+    // / hold and win page start
+    .holdwinSection {
+        padding: 20px 25 0 25px !important;
+        & .holdwinHero {
+            & .likeShareMain {
+                & .starMain {
+                    & .statIcon {
+                        
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                    }
+                    &.active {
+                        & .statIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {
+                        }
+                    }
+                    &:hover {
+                    }
+                }
+                & .heartMain {
+                    & .heartIcon {
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                    }
+                    &.active {
+                        & .heartIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {}
+                    }
+                    & .shareIcon {
+                    }
+                    &:hover {
+
+                    }
+                }
+            }
+            & .playwithBalance {
+                & .playwithHeading {
+                    font-size: 16px;
+                }
+                & .playwithdetail {
+                    font-size: 12px;
+                    & span {
+                        
+                    }
+                }
+                & .realPlayBtn {
+                    font-size: 13px;
+                    & .realPlayIcon {
+                        
+                    }
+                    &.freePlay {
+                        
+                    }
+                }
+            }   
+        }
+        // about the provider page start
+        & .aboutheProvider {
+            & .providerHeading {
+                font-size:19px
+            }
+            & .card {
+                & .providerImg {
+                    & img {
+                        
+                    }
+                }
+                & .providerBtn {
+                    font-size: 13px;
+                    &:hover {
+                        
+                    }
+                }
+            }
+        }
+        // about the provider page end
+
+        // tab section start
+        .tabsection {
+            & .mainTab {
+                & .mainlink {
+                    font-size: 13px;
+                    padding: 7px 23px;
+                    &.active {
+                        
+                    }
+                }
+            }
+            & .tabHeading {
+                font-size: 17px;
+            }
+            & .descripation {
+                & .descriptionHeading {
+                    font-size: 17px;
+                }
+                & .descriptionDetail {
+                    font-size: 13px;
+                }
+                & .descripationImg {
+                    & img {
+                        
+                    }
+                }
+            }
+            & .card {
+                & .viewMoreBtn {
+                    font-size: 13px;
+                    & .downArrow {
+                        height: 7px ;
+                        width: 12px;
+                        margin-top: 1px;
+                    }
+                    &:hover {
+                        
+                    }
+                }
+                & .DetailBtn {
+                    font-size: 13px;
+                    &:hover {
+                        
+                    }
+                }
+                & .tableDate {
+                    font-size: 12px;
+                }
+            }
+        }
+        // tab section end
+
+        // .coin drop down start
+        .coindropdown {
+            & .coinbtn {
+                font-size: 13px;
+                & .coinImgs {
+                    height: 17px;
+                    width: 17px;
+                }
+                &:active {
+                    
+                }
+                &::after {
+                
+                }
+            }
+            & .coinMenu {
+                & .coinsearch {
+                    
+                    & .searchBtns {
+                    }
+                    & .searchipt {
+                        font-size: 13px;
+                        &::placeholder {
+                            font-size: 13px;
+                        }
+                    }
+                }
+                & .cointabs {
+                    
+                    & .tablink {
+                        font-size: 13px;
+                        &.active {
+                            
+                        }
+                    }
+                }
+                & .coinMain {
+                    
+                    & .dropcoinImg {
+                        height: 17px;
+                        width: 17px;
+                    }
+                    & .coinname {
+                        font-size: 13px;
+                    }
+                    & .coinPrice {
+                        font-size: 13px;
+                    }
+                    &:hover {
+                        
+                    }
+                    &.active {
+                        
+                    }
+                }
+            }
+        }
+        // .coin drop down end
+
+    }
+    // hold and win page end
+
+
+     // table start
+    .datatable {
+        & .tableHeader {
+            & th {
+                font-size: 13px;
+            }
+        }
+        & .tableBody {
+            & tr {
+                cursor: pointer;
+                &:hover {
+                    
+                }
+            }
+            & .gameId {
+                font-size: 13px;
+            }
+            & .playerName {
+                font-size: 13px;
+            }
+            & .profiltAmunt {
+                font-size: 13px;
+            }
+            & .profiltlose {
+                font-size: 13px;
+                &.profit {
+                    font-size: 13px;
+                }
+            }
+            & .per {
+                font-size: 13px;
+            }
+            & .profitIcon {
+                height: 16px;
+                width: 16px;
+            }
+            & .gamename {
+                font-size: 13px;
+            }
+            & .gameImg {
+                
+            }
+            & .awardIcon {
+                height:22px;
+                width: 22px;
+            }
+            & .playerImg {
+                height: 22px;
+                width: 22px;
+                
+            }
+        }
+    }
+    // table end
+
+    // share modal start
+    .sharemodal {
+        & .shareDialog {
+            & .shareContent {
+                & .shareHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .shareBody {
+                    & .shareHeading {
+                    }
+                    & .socialIcon {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    & .copyBtn {
+                    }
+                }
+            }
+        }
+    }
+    // share modal end
+
+    // house edge modal start
+    .houseEdgeModal {
+        & .houseEdgeDialog {
+            & .houseEdgeContent {
+                & .houseEdgeHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .houseEdgeBody {
+                    & .houseEdgeHeading {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // house edge modal end
+
+    // error page start
+    .empatySection{
+        & .emptyImg{
+            width:200px;
+            height: 200px;
+        }
+        & .emptyHeading{
+            font-size: 13px;
+        }
+
+    }
+    // error page end
+
+
+    // player detail modal start
+    .playerDetailModal {
+        & .playerDetailDialog {
+            // width: 100%;
+            & .playerDetailContent {
+                
+                & .playerDetailHeader {
+                    & .modal-title {
+                        font-size: 17px;
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                            
+                        }
+                    }
+                }
+                & .playerDetailBody {
+                    & .headingmodaltwo {
+                    }
+                    & .totalProfit {
+                        & .profitImg {
+                        }
+                    }
+                    & .shareIcon {
+                        width: 17px;
+                    }
+                    & .betamountTitle {
+                        // font-size: 13px;
+                    }
+                    & .betamount {
+                        // font-size: 11px;
+                    }
+                    & .betamountImg {
+                        
+                    }
+                    & .userimg {
+                        
+                    }
+                    & .userName {
+                        font-size: 13px;
+                    }
+                    & .time {
+                        font-size: 12px;
+                    }
+                    & .betId {
+                        font-size: 13px;
+                        & span {
+                            
+                        }
+                    }
+                    & .copyIcon {
+                        width: 17px;
+                    }
+                    & .PlayBtn {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    // player detail modal end
+
+
+
+    // detail modal start
+    .detailModal {
+        & .detailDialog {
+            & .detailContent {
+                & .detailHeader {
+                    
+                    & .modal-title {
+                        // font-size: 12px;
+                        & span {
+                            font-size: 12px;
+                        }
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                        }
+                    }
+                }
+                & .detailBody {
+                }
+            }
+        }
+    }
+    // detail modal end
 }
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    // hold and win page start
+    .holdwinSection {
+        padding: 20px 20px 0 20px !important;
+        & .holdwinHero {
+            & .likeShareMain {
+                & .starMain {
+                    & .statIcon {
+                        
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                    }
+                    &.active {
+                        & .statIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {
+                        }
+                    }
+                    &:hover {
+                    }
+                }
+                & .heartMain {
+                    & .heartIcon {
+                        & img {
+                        }
+                    }
+                    & .likeCount {
+                    }
+                    &.active {
+                        & .heartIcon {
+                            & img {
+                            }
+                        }
+                        & .likeCount {}
+                    }
+                    & .shareIcon {
+                    }
+                    &:hover {
+
+                    }
+                }
+            }
+            & .playwithBalance {
+                & .playwithHeading {
+                    font-size: 16px;
+                }
+                & .playwithdetail {
+                    font-size: 12px;
+                    & span {
+                        
+                    }
+                }
+                & .realPlayBtn {
+                    font-size: 13px;
+                    & .realPlayIcon {
+                        
+                    }
+                    &.freePlay {
+                        
+                    }
+                }
+            }   
+        }
+        // about the provider page start
+        & .aboutheProvider {
+            & .providerHeading {
+
+                        }
+            & .card {
+                & .providerImg {
+                    & img {
+                        
+                    }
+                }
+                & .providerBtn {
+                    &:hover {
+                        
+                    }
+                }
+            }
+        }
+        // about the provider page end
+
+        // tab section start
+        .tabsection {
+            & .mainTab {
+                & .mainlink {
+                    &.active {
+                        
+                    }
+                }
+            }
+            & .tabHeading {
+            }
+            & .descripation {
+                & .descriptionHeading {
+                    font-size: 17px;
+                }
+                & .descriptionDetail {
+                    font-size: 13px;
+                }
+                & .descripationImg {
+                    & img {
+                        
+                    }
+                }
+            }
+            & .card {
+                & .viewMoreBtn {
+                    font-size: 13px;
+                    & .downArrow {
+                        height: 7px ;
+                        width: 12px;
+                        margin-top: 1px;
+                    }
+                    &:hover {
+                        
+                    }
+                }
+                & .DetailBtn {
+                    font-size: 13px;
+                    &:hover {
+                        
+                    }
+                }
+                & .tableDate {
+                    font-size: 12px;
+                }
+            }
+        }
+        // tab section end
+
+        // .coin drop down start
+        .coindropdown {
+            & .coinbtn {
+                & .coinImgs {
+                    
+                }
+                &:active {
+                    
+                }
+                &::after {
+                
+                }
+            }
+            & .coinMenu {
+                & .coinsearch {
+                    
+                    & .searchBtns {
+                    }
+                    & .searchipt {
+                        &::placeholder {
+                        }
+                    }
+                }
+                & .cointabs {
+                    
+                    & .tablink {
+                        &.active {
+                            
+                        }
+                    }
+                }
+                & .coinMain {
+                    
+                    & .dropcoinImg {
+                        
+                    }
+                    & .coinname {
+                    }
+                    & .coinPrice {
+                    }
+                    &:hover {
+                        
+                    }
+                    &.active {
+                        
+                    }
+                }
+            }
+        }
+        // .coin drop down end
+
+    }
+    // hold and win page end
+
+    // active page 
+    .activePage {
+        & .breadcrumb-item {
+            &.active {
+                &::before {
+                }
+            }
+            & a {
+            }
+        }
+    }
+    
+    // table start
+    .datatable {
+        & .tableHeader {
+            & th {
+                font-size: 12px;
+            }
+        }
+        & .tableBody {
+            & tr {
+                cursor: pointer;
+                &:hover {
+                    
+                }
+            }
+            & .gameId {
+                font-size:12px;
+            }
+            & .playerName {
+                font-size:12px;
+            }
+            & .profiltAmunt {
+                font-size:12px;
+            }
+            & .profiltlose {
+                font-size:12px;
+                &.profit {
+                    font-size:12px;
+                }
+            }
+            & .per {
+                font-size:12px;
+            }
+            & .profitIcon {
+                height: 16px;
+                width: 16px;
+            }
+            & .gamename {
+                font-size: 12px;
+            }
+            & .gameImg {
+                
+            }
+            & .awardIcon {
+                height:22px;
+                width: 22px;
+            }
+            & .playerImg {
+                height: 22px;
+                width: 22px;
+                
+            }
+        }
+    }
+    // table end
+    
+    // share modal start
+    .sharemodal {
+        & .shareDialog {
+            & .shareContent {
+                & .shareHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .shareBody {
+                    & .shareHeading {
+                    }
+                    & .socialIcon {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    & .copyBtn {
+                    }
+                }
+            }
+        }
+    }
+    // share modal end
+
+    // house edge modal start
+    .houseEdgeModal {
+        & .houseEdgeDialog {
+            & .houseEdgeContent {
+                & .houseEdgeHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .houseEdgeBody {
+                    & .houseEdgeHeading {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // house edge modal end
+
+    // error page start
+    .empatySection{
+        & .emptyImg{
+            width:200px;
+            height: 200px;
+        }
+        & .emptyHeading{
+            font-size: 13px;
+        }
+
+    }
+    // error page end
+
+
+    // player detail modal start
+    .playerDetailModal {
+        & .playerDetailDialog {
+            // width: 100%;
+            & .playerDetailContent {
+                
+                & .playerDetailHeader {
+                    & .modal-title {
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                            
+                        }
+                    }
+                }
+                & .playerDetailBody {
+                    & .headingmodaltwo {
+                    }
+                    & .totalProfit {
+                        & .profitImg {
+                        }
+                    }
+                    & .shareIcon {                    }
+                    & .betamountTitle {
+                        // font-size: 13px;
+                    }
+                    & .betamount {
+                        // font-size: 11px;
+                    }
+                    & .betamountImg {
+                        
+                    }
+                    & .userimg {
+                        
+                    }
+                    & .userName {
+                    }
+                    & .time {                    }
+                    & .betId {
+                        & span {
+                            
+                        }
+                    }
+                    & .copyIcon {
+                    }
+                    & .PlayBtn {
+                    }
+                }
+            }
+        }
+    }
+    // player detail modal end
+
+
+
+    // detail modal start
+    .detailModal {
+        & .detailDialog {
+            & .detailContent {
+                & .detailHeader {
+                    
+                    & .modal-title {
+                        // font-size: 12px;
+                        & span {
+                            font-size: 11px;
+                        }
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                        }
+                    }
+                }
+                & .detailBody {
+                }
+            }
+        }
+    }
+    // detail modal end
+}
 
 @include media-breakpoint-down(sm) {
     .slots {
-        padding: 50px 11px 0 11px;
+        padding: 11px 11px 0 11px;
         & .slotsSearch {
             & .searchIcon {
                 height: 14px;
@@ -7114,9 +7930,23 @@
         }
     }
 
+    // active page 
+    .activePage {
+        & .breadcrumb-item {
+            font-size: 12px;
+            &.active {
+                &::before {
+                }
+            }
+            & a {
+                font-size: 12px;
+            }
+        }
+    }
+
     // hold and win page start
     .holdwinSection {
-        padding: 40px 10px 0 10px;
+        padding: 11px 10px 0 10px !important;
         & .holdwinHero {
             & .likeShareMain {
                 & .starMain {
@@ -7157,7 +7987,10 @@
                         }
                         & .likeCount {}
                     }
-                    & .shareIcon {}
+                    & .shareIcon {
+                        height: 13px;
+                        width: 13px;
+                    }
                     &:hover {
 
                     }
@@ -7188,17 +8021,16 @@
         // about the provider page start
         & .aboutheProvider {
             & .providerHeading {
-                font-size: 18px
+                font-size: 17px
             }
             & .card {
                 & .providerImg {
-                    
                     & img {
                         
                     }
                 }
                 & .providerBtn {
-                
+                    font-size: 12px;
                     &:hover {
                         
                     }
@@ -7219,14 +8051,14 @@
                 }
             }
             & .tabHeading {
-                font-size: 18px;
+                font-size: 16px;
             }
             & .descripation {
                 & .descriptionHeading {
-                    
+                    font-size: 16px;
                 }
                 & .descriptionDetail {
-                    
+                    font-size: 12px;
                 }
                 & .descripationImg {
                     & img {
@@ -7236,22 +8068,24 @@
             }
             & .card {
                 & .viewMoreBtn {
-                    
+                    font-size: 12px;
                     & .downArrow {
-                        
+                        height: 6px ;
+                        width: 11px;
+                        margin-top: 0;
                     }
                     &:hover {
                         
                     }
                 }
                 & .DetailBtn {
-                    
+                    font-size: 12px;
                     &:hover {
                         
                     }
                 }
                 & .tableDate {
-                    
+                    font-size: 11px;
                 }
             }
         }
@@ -7260,9 +8094,10 @@
         // .coin drop down start
         .coindropdown {
             & .coinbtn {
-                
+                font-size: 12px;
                 & .coinImgs {
-                    
+                    height: 15px;
+                    width: 15px;
                 }
                 &:active {
                     
@@ -7277,16 +8112,16 @@
                     & .searchBtns {
                     }
                     & .searchipt {
-                        
+                        font-size: 12px;
                         &::placeholder {
-                            
+                            font-size: 12px;
                         }
                     }
                 }
                 & .cointabs {
                     
                     & .tablink {
-                        
+                        font-size: 12px;
                         &.active {
                             
                         }
@@ -7295,13 +8130,14 @@
                 & .coinMain {
                     
                     & .dropcoinImg {
-                        
+                        height: 15px;
+                        width: 15px;
                     }
                     & .coinname {
-                        
+                        font-size: 12px;
                     }
                     & .coinPrice {
-                        
+                        font-size: 12px;
                     }
                     &:hover {
                         
@@ -7372,5 +8208,159 @@
     // table end
     // hold and win page end
 
+    
+    // share modal start
+    .sharemodal {
+        & .shareDialog {
+            max-width: 340px;
+            & .shareContent {
+                & .shareHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .shareBody {
+                    & .shareHeading {
+                    }
+                    & .socialIcon {
+                        height: 35px;
+                        width: 35px;
+                    }
+                    & .copyBtn {
+                    }
+                }
+            }
+        }
+    }
+    // share modal end
+
+    // house edge modal start
+    .houseEdgeModal {
+        & .houseEdgeDialog {
+            & .houseEdgeContent {
+                & .houseEdgeHeader {
+                    & .btn-close {
+                        &:hover {
+                        }
+                    }
+                }
+                & .houseEdgeBody {
+                    & .houseEdgeHeading {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    // house edge modal end
+
+    // error page start
+    .empatySection{
+        & .emptyImg{
+            width:200px;
+            height: 200px;
+        }
+        & .emptyHeading{
+            font-size: 12px;
+        }
+
+    }
+    // error page end
+
+
+    // player detail modal start
+    .playerDetailModal {
+        & .playerDetailDialog {
+            max-width: 100%;
+            & .playerDetailContent {
+                
+                & .playerDetailHeader {
+                    & .modal-title {
+                        font-size: 16px;
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                            
+                        }
+                    }
+                }
+                & .playerDetailBody {
+                    & .headingmodaltwo {
+                        font-size: 15px;
+                    }
+                    & .totalProfit {
+                        font-size: 16px;
+                        & .profitImg {
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                    & .shareIcon {
+                        width: 16px;
+                    }
+                    & .betamountTitle {
+                        font-size: 12px;
+                    }
+                    & .betamount {
+                        font-size: 11px;
+                    }
+                    & .betamountImg {
+                        
+                    }
+                    & .userimg {
+                        height: 30px;
+                        width: 30px;
+                    }
+                    & .userName {
+                        font-size: 12px;
+                    }
+                    & .time {
+                        font-size: 11px;
+                    }
+                    & .betId {
+                        font-size: 12px;
+                        & span {
+                            
+                        }
+                    }
+                    & .copyIcon {
+                        width: 16px;
+                    }
+                    & .PlayBtn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    // player detail modal end
+
+    // detail modal start
+    .detailModal {
+        & .detailDialog {
+            width: 100%;
+            & .detailContent {
+                & .detailHeader {
+                    
+                    & .modal-title {
+                        // font-size: 12px;
+                        & span {
+                            font-size: 11px;
+                        }
+                    }
+                    & .btn-close {
+                        
+                        &:hover {
+                        }
+                    }
+                }
+                & .detailBody {
+                }
+            }
+        }
+    }
+    // detail modal end
 }
 // slots page end
