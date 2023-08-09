@@ -6612,12 +6612,7 @@
                 }
             }
             & .shareBody {
-                & .shareHeading {
-                    font-size: 16px;
-                    font-weight: 600;
-                    line-height: normal;
-                    color: #fff;
-                }
+               
                 & .socialIcon {
                     height: 40px;
                     width: 40px;
@@ -6631,6 +6626,19 @@
                     background: #03B80F;
                     padding: 10px 0;
                 }
+            }
+            & .shareHeading {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                color: #fff;
+            }
+            & .shareHead {
+                background-color:#161F2C;
+                background-image: url(../Img/slots/sharebg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: top left;
             }
         }
     }
@@ -8221,14 +8229,15 @@
                     }
                 }
                 & .shareBody {
-                    & .shareHeading {
-                    }
+                    
                     & .socialIcon {
                         height: 35px;
                         width: 35px;
                     }
                     & .copyBtn {
                     }
+                }
+                & .shareHeading {
                 }
             }
         }
