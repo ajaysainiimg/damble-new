@@ -1731,6 +1731,22 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
+                    &:first-child {
+                        border-top-left-radius:10px ;
+                    }
+                    &:last-child {
+                        border-top-right-radius:10px ;
+                    }
+                }
+            }
+            & .tableData {
+                font-size: 14px;
+                font-weight: 500;
+                color: #FFF;
+                border: none;
+                border-bottom: 1.4px solid #455266;
+                &:first-child {
+                    border-right: 1.4px solid #455266;
                 }
             }
         }

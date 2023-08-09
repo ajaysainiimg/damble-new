@@ -169,6 +169,9 @@
         right: 15px;
         background: #161f2c;
         border-radius: 8px;
+        height: 31px;
+        width: 30px;
+        padding:9px;
     }
     & .swiper-button-prev-unique {
         border-radius: 8px;
@@ -177,6 +180,10 @@
         right: 45px;
         background: #161f2c;
         border-radius: 8px;
+        height: 31px;
+            width: 31px;
+            right: 50px;
+            padding: 9px;
     }
 }
 // toprated-games-main section end
@@ -5964,199 +5971,126 @@
             }
         }
     }
-    & .activePage {
-        background-color: #161f2c;
-        padding: 11px 14px;
-        & .breadcrumb-item {
-            font-size: 14px;
+    & .pagename {
+        & .showBlocked {
+            font-size: 13px;
+            color: #fff;
             font-weight: 500;
-            color: #54657F;
-            &.active {
-                color: #fff;
-                &::before {
-                    color: #fff;
-                }
+        }
+    }
+    & .shotbymain {
+        & .shortby {
+            & .dropdownTitle {
+                font-size: 14px;
+                color:#fff;
+                font-weight: 500;
+                white-space: nowrap;
             }
-            & a {
+            & .dropdwonBtn {
                 font-size: 14px;
                 font-weight: 500;
-                color: #54657F;
-            }
-        }
-    }
-    & .showBlocked {
-        font-size: 13px;
-        color: #fff;
-        font-weight: 500;
-    }
-    & .shortby {
-        & .dropdownTitle {
-            font-size: 14px;
-            color:#fff;
-            font-weight: 500;
-        }
-        & .dropdwonBtn {
-            font-size: 14px;
-            font-weight: 500;
-            color: #b1bed1;
-            background-color: #212c3b;
-            min-width:10rem;
-            &::after {
-                position: absolute;
-                right: 8px;
-                transform: translateY(-50%) rotate(0);
-                top:50% ;
-                height: 7px;
-                display: flex; 
-                align-items: center;
-                justify-content: center;
-                width: 10px;
-                background-position: center;
-                background: url(../Img/slots/dropdown.png) transparent no-repeat;
-                // background-size: 11px 6px;
-                background-size: contain;
-                border: none;
-                margin: 0;
-                transition: all 0.3s ease-in-out;
-            }
-            &.show {
+                color: #b1bed1;
+                background-color: #212c3b;
+                min-width:10rem;
                 &::after {
-                    transform: translateY(-50%) rotate(180deg);
-                }
-            }
-        }
-        & .dropdown-menu {
-            width: auto;
-            background-color: #212c3b;
-            min-width:10rem;
-            & .dropdown-item {
-                font-size: 13px;
-                // font-weight: 500;
-                color: #FFF;
-                border: 1px solid transparent;
-                &::before {
                     position: absolute;
-                    content: '';
+                    right: 8px;
+                    transform: translateY(-50%) rotate(0);
+                    top:50% ;
                     height: 7px;
-                    width:7px;
-                    border-radius: 50%;
-                    background-color: #04E929;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    box-shadow: 0 0 0 0.3125rem #3bc11726;
-                    right:8px;
-                    display: none;
-                }
-                &:hover {
-                    background-color: #354151;
-                }
-                &.active {
-                    border-color: #04E929;
-                    background-color: #212c3b;
-                    &::before {
-                        display: flex;
-                    }
-                }
-            }
-        }
-        & .dropdown-menutwo {
-            max-height: 20rem;
-            & .slotlabel {
-                cursor: pointer;
-                padding: 6px 4px 6px 8px;
-                &:hover {
-                    background-color: #293445;
-                }
-                & .checkBtn {
-                    height: 15px;
-                    width: 15px;
-                    background-color: #2f343a;
-                    border: 1px solid #3d4349 ;
+                    display: flex; 
+                    align-items: center;
+                    justify-content: center;
+                    width: 10px;
+                    background-position: center;
+                    background: url(../Img/slots/dropdown.png) transparent no-repeat;
+                    // background-size: 11px 6px;
+                    background-size: contain;
+                    border: none;
                     margin: 0;
-                    box-shadow: none;
-                    &:focus {
-                        // border-color: $dark-border;
-                    }
-                    &:checked {
-                        // background-color: $theme-blue;
-                        background-image: url(../img/slots/check.png);
-                        background-size: 9px 7px;
-                        // border-color: $theme-blue;
-                    }
-                    &:checked ~ label {
-                        // color: $theme-blue;
-                    }
+                    transition: all 0.3s ease-in-out;
                 }
-                & .slotcheckTitle {
-                    font-size: 14px;
-                    color: #FFF;
-                    -webkit-flex: auto;
-                    -ms-flex: auto;
-                    flex: auto;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                & .slotcheckTotal {
-                    font-size: 14px;
-                    color: #04E929;
-                }
-            }
-        }
-    }
-    & .slotsCardMain {
-        gap: 30px 0;
-        & .slotCad {
-            & .slotcardImg {
-                aspect-ratio: 5/5;
-            }
-            & .cardTitle {
-                font-size: 14px;
-                font-weight: 500;
-                color: #fff;
-            }
-            & .infoDrop {
-                & .infoDropBtn {
-                    height: 20px ;
-                    width: 20px;
-                    z-index: 2;
+                &.show {
                     &::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+            & .dropdown-menu {
+                width: auto;
+                background-color: #212c3b;
+                min-width:10rem;
+                & .dropdown-item {
+                    font-size: 13px;
+                    // font-weight: 500;
+                    color: #FFF;
+                    border: 1px solid transparent;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        height: 7px;
+                        width:7px;
+                        border-radius: 50%;
+                        background-color: #04E929;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        box-shadow: 0 0 0 0.3125rem #3bc11726;
+                        right:8px;
                         display: none;
                     }
                     &:hover {
-                        & .cardMenu {
+                        background-color: #354151;
+                    }
+                    &.active {
+                        border-color: #04E929;
+                        background-color: #212c3b;
+                        &::before {
+                            display: flex;
                         }
                     }
                 }
-                & .cardMenu {
-                    background-color: #212c3b;
-                    width: 360px;
-                    & .dropdownContent {
-                        background-color: #161F2C;
-                        & .droptitle {
-                            color: #93ACD3;
-                            font-weight: 500;
-                            font-size: 14px;
+            }
+            & .dropdown-menutwo {
+                max-height: 20rem;
+                & .slotlabel {
+                    cursor: pointer;
+                    padding: 6px 4px 6px 8px;
+                    &:hover {
+                        background-color: #293445;
+                    }
+                    & .checkBtn {
+                        height: 15px;
+                        width: 15px;
+                        background-color: #2f343a;
+                        border: 1px solid #3d4349 ;
+                        margin: 0;
+                        box-shadow: none;
+                        &:focus {
+                            // border-color: $dark-border;
                         }
-                        & .dropDownTotal {
-                            color: #04E929;
-                            font-size: 14px;
-                            
+                        &:checked {
+                            // background-color: $theme-blue;
+                            background-image: url(../img/slots/check.png);
+                            background-size: 9px 7px;
+                            // border-color: $theme-blue;
+                        }
+                        &:checked ~ label {
+                            // color: $theme-blue;
                         }
                     }
-                    & .droptag {
-                        color:#93ACD3;
-                        font-size: 12px;
-                        padding: 2px 6px;
+                    & .slotcheckTitle {
+                        font-size: 14px;
+                        color: #FFF;
+                        -webkit-flex: auto;
+                        -ms-flex: auto;
+                        flex: auto;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        max-width: 100px;
                     }
-                    & .droptagtwo {
-                        color:#fff;
-                        font-size: 12px;
-                        padding: 2px 6px;
+                    & .slotcheckTotal {
+                        font-size: 14px;
+                        color: #04E929;
                     }
                 }
             }
@@ -6180,6 +6114,885 @@
         color: #fff;
         background-color: #232629;
         padding: 10px 22px;
+    }
+}
+
+// active page 
+.activePage {
+    background-color: #161f2c;
+    padding: 11px 14px;
+    & .breadcrumb-item {
+        font-size: 14px;
+        font-weight: 500;
+        color: #54657F;
+        &.active {
+            color: #fff;
+            &::before {
+                color: #fff;
+            }
+        }
+        & a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #54657F;
+        }
+    }
+}
+
+// slots card start
+.slotsCardMain {
+    gap: 30px 0;
+    & .slotCad {
+        & .slotcardImg {
+            aspect-ratio: 5/5;
+        }
+        & .cardTitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+        }
+        & .infoDrop {
+            & .infoDropBtn {
+                height: 20px ;
+                width: 20px;
+                z-index: 2;
+                &::after {
+                    display: none;
+                }
+                &:hover {
+                    & .cardMenu {
+                    }
+                }
+            }
+            & .cardMenu {
+                background-color: #212c3b;
+                width: 360px;
+                & .dropdownContent {
+                    background-color: #161F2C;
+                    & .droptitle {
+                        color: #93ACD3;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                    & .dropDownTotal {
+                        color: #04E929;
+                        font-size: 14px;
+                        
+                    }
+                }
+                & .droptag {
+                    color:#93ACD3;
+                    font-size: 12px;
+                    padding: 2px 6px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 100px;
+                }
+                & .droptagtwo {
+                    color:#fff;
+                    font-size: 12px;
+                    padding: 2px 6px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+// slots card end
+
+
+
+// hold and win page start
+
+
+// about the provider page start
+.aboutheProvider {
+    font-size: 30px ;
+    color: #fff;
+    line-height: normal;
+    font-weight: 800;
+    & .card {
+        background-color: #161f2c;
+        padding: 20px 50px;
+        & .providerImg {
+            // padding: 20px 30px;
+            width: 120px;
+            & img {
+                background-color: #293445;
+            }
+        }
+        & .providerBtn {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            border: 1px solid #42309c;
+            padding: 10px 12px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                border-color: #04E929;
+            }
+        }
+    }
+}
+// about the provider page end
+
+// hold and win page start
+.holdwinSection {
+    & .holdwinHero {
+        & .likeShareMain {
+            background-color: #161f2c;
+            & .starMain {
+                gap: 10px;
+                & .statIcon {
+                    width: 15px;
+                    height: 14px;
+                    & img {
+                        filter: brightness(10);
+                    }
+                }
+                & .likeCount {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #c3c3c3;
+                    line-height: normal;
+                    margin-top: 3px;
+                }
+                &.active {
+                    & .statIcon {
+                        & img {
+                            filter: none;
+                        }
+                    }
+                    & .likeCount {
+                        color: #FFBF39;
+                    }
+                }
+            }
+            & .heartMain {
+                gap: 10px;
+                & .heartIcon {
+                    height: 19px;
+                    width: 19px;
+                    & img {
+                        filter: brightness(10);
+                    }
+                }
+                & .likeCount {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #c3c3c3;
+                    line-height: normal;
+                    margin-top: 3px;
+                }
+                &.active {
+                    & .heartIcon {
+                        & img {
+                            filter: none;
+                        }
+                    }
+                    & .likeCount {
+                        color: #EC4016;
+                    }
+                }
+                & .shareIcon {
+                    height: 16px;
+                    width: 17px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        & .playwithBalance {
+            background-color: #161f2c;
+            max-width: 450px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            & .playwithHeading {
+                font-size: 18px;
+                color: #fff;
+                // font-weight: 400;
+            }
+            & .playwithdetail {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 19px;
+                color: #93ACD3;
+                & span {
+                    color: #04E929;
+                }
+            }
+            & .realPlayBtn {
+                font-size: 14px;
+                color: #fff;
+                background: #03B80F;
+                padding: 8px 14px;
+                gap: 10px;
+                font-weight: 600;
+                & .realPlayIcon {
+                    height: 18px;
+                    width: 18px;
+                }
+                &.freePlay {
+                    background: #6324d7;
+                }
+            }
+        }   
+    }
+}
+// hold and win page end
+
+// share modal start
+.sharemodal {
+    & .shareDialog {
+        max-width: 350px;
+        & .shareContent {
+            background-color: #131C27;
+            & .shareHeader {
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            & .shareBody {
+                & .shareHeading {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: #fff;
+                }
+                & .socialIcon {
+                    height: 40px;
+                    width: 40px;
+                    background-color: #212c3b;
+                    padding: 10px;
+                }
+                & .copyBtn {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    background: #03B80F;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+// share modal end
+
+// house edge modal start
+.houseEdgeModal {
+    & .houseEdgeDialog {
+        max-width: 200px;
+        & .houseEdgeContent {
+            background-color: #131C27;
+            & .houseEdgeHeader {
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            & .houseEdgeBody {
+                & .houseEdgeHeading {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// house edge modal end
+
+// tab section start
+.tabsection {
+    & .mainTab {
+        background-color: #222d3e;
+        border-radius: 19.955px;
+        & .mainlink {
+            font-size: 14px;
+            border-radius: 19.955px;
+            color: #fff;
+            padding: 8px 38px;
+            font-weight: 600;
+            &.active {
+                background: #6324d7;
+                color: #fff;
+            }
+        }
+    }
+    & .tabHeading {
+        font-size: 20px;
+        font-weight: 600;
+        color: #CCDEFC;
+    }
+    & .descripation {
+        & .descriptionHeading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #CCDEFC;
+        }
+        & .descriptionDetail {
+            font-size: 14px;
+            color: #CCDEFC;
+            // font-weight: 500;
+        }
+        & .descripationImg {
+            & img {
+                aspect-ratio:8/4;
+            }
+        }
+    }
+    & .card {
+        background-color:#161f2c;
+    }
+    & .datatable {
+        & .tableHeader {
+            & th {
+                font-size: 14px;
+                color: #D6D6D6;
+                font-weight: 500;
+            }
+        }
+        & .tableBody {
+
+            & tr {
+                cursor: pointer;
+                &:hover {
+                    background-color:#2e3b4f52;
+                }
+            }
+            & .gameId {
+                font-size: 14px;
+                // color: #98A7b5;
+                color: #D6D6D6;
+                font-weight: 400;
+                letter-spacing: 0.7px;
+            }
+            & .playerName {
+                font-size: 14px;
+                font-weight: 600;
+                color: #FFf;
+            }
+            & .profilt {
+                font-size: 14px;
+                font-weight: 600;
+                color: #d6643a;
+            }
+            & .profitIcon {
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+}
+
+.tabletab {
+    & .nav-link {
+        font-size: 14px !important;
+        padding: 10px 30px !important;
+    }
+    & .coinTable {
+        & th {
+            font-size: 14px;
+        }
+    }
+    & .viewMoreBtn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #252E39;
+        padding: 8px 12px;
+        & .downArrow {
+            height: 7px;
+            width: 12px;
+        }
+    }
+}
+// tab section end
+
+// player detail modal start
+.playerDetailModal {
+    & .playerDetailDialog {
+        max-width: 450px;
+        & .playerDetailContent {
+            background-color: #131C27;
+            & .playerDetailHeader {
+                & .modal-title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+            & .playerDetailBody {
+                & .headingmodaltwo {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+                & .totalProfit {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 500;
+                    & .profitImg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                & .shareIcon {
+                    width: 18px;
+                }
+                & .betamountTitle {
+                    font-size: 14px;
+                    // font-weight: ;
+                    color: #54657F;
+                    font-weight: 500;
+                }
+                & .betamount {
+                    font-size: 12px;
+                    color:#fff;
+                }
+                & .betamountImg {
+                    height: 18px;
+                    width: 18px;
+                }
+                & .userimg {
+                    height: 40px;
+                    width: 40px;
+                }
+                & .userName {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#93acd3;
+                }
+                & .time {
+                    font-size: 13px;
+                    color: #5f6e86;
+                    font-weight: 500;
+                }
+                & .betId {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color:#93acd3;
+                    & span {
+                        color: #fff;
+                    }
+                }
+                & .copyIcon {
+                    width: 18px;
+                }
+                & .PlayBtn {
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #6324d7;
+                    color: #FFF;
+                    padding: 9px 18px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+// player detail modal end
+
+// .coin drop down start
+.coindropdown {
+    & .coinbtn {
+        background:  #25292e;
+        font-size: 13px;
+        font-weight: 500;
+        padding-right: 35px;
+        & .coinImgs {
+            height: 20px;
+            width: 20px;
+        }
+        &:active {
+            background:  #25292e;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 10px;
+            width: 12px;
+            background: url(../Img/slots/arrowdown.png) no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+    & .coinMenu {
+        background-color:#131C27;
+        width: 330px;
+        & .coinsearch {
+            background-color: #293445;
+            & .searchBtns {
+                height: 15px;
+            }
+            & .searchipt {
+                font-size: 13px;
+                font-weight: 500;
+                color: #93acd3;
+                &::placeholder {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #93acd3;
+                }
+            }
+        }
+        & .cointabs {
+            background: #293445;
+            padding: 4px;
+            & .tablink {
+                font-size: 13px;
+                font-weight: 500;
+                color: #93acd3;
+                &.active {
+                    background:#6324d7;
+                    color: #fff;
+                }
+            }
+        }
+        & .coinMain {
+            padding: 12px 6px;
+            transition: all 0.3s ease-in-out;
+            & .dropcoinImg {
+                height: 20px;
+                width: 20px;
+            }
+            & .coinname {
+                font-size: 13px;
+                font-weight: 500;
+                color: #93ACD3;
+            }
+            & .coinPrice {
+                font-size: 13px;
+                color: #fff;
+                font-weight: 700;
+            }
+            &:hover {
+                background: #293445;
+            }
+            &.active {
+                border: 1px solid #04E929;
+            }
+        }
+    }
+}
+// .coin drop down end
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .slots {
+        padding: 50px 20px 0 20px;
+        & .slotsSearch {
+            & .searchIcon {
+                height: 15px;
+                width: 15px;
+            }
+            & .inputSearch {
+                font-size: 13px;
+                &::placeholder {
+                    font-size: 13px;
+                }
+                &:focus {
+                    & .slotsSearch {
+                    }
+                }
+            }
+        }
+        & .pagename {
+            & .activePage {
+                & .breadcrumb-item {
+                    font-size: 13px;
+                    &.active {
+                        font-size: 13px;
+                        &::before {
+                        }
+                    }
+                    & a {
+                        font-size: 13px;
+                    }
+                }
+            }
+            & .showBlocked {
+                font-size: 12px;
+            }
+        }
+        & .shotbymain {
+            & .shortby {
+                & .dropdownTitle {
+                    font-size: 13px;
+                }
+                & .dropdwonBtn {
+                    font-size: 13px;
+                    &::after {
+    
+                    }
+                    &.show {
+                        &::after {
+                        }
+                    }
+                }
+                & .dropdown-menu {
+                    & .dropdown-item {
+                        font-size: 13px;
+                        &::before {
+                        }
+                        &:hover {
+                        }
+                        &.active {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .dropdown-menutwo {
+                    & .slotlabel {
+                        &:hover {
+                        }
+                        & .checkBtn {
+                            &:focus {
+                            }
+                            &:checked {
+                            }
+                            &:checked ~ label {
+                            }
+                        }
+                        & .slotcheckTitle {
+                            font-size: 13px;
+                        }
+                        & .slotcheckTotal {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        & .pagecount {
+            font-size: 13px;
+        }
+        & .progresspage {
+            & .progress-bar {
+            }
+        }
+        & .loadmoreBtn {
+            font-size: 13px;
+        }
+    }
+    .slotsCardMain {
+        & .slotCad {
+            & .slotcardImg {
+            }
+            & .cardTitle {
+                font-size: 13px;
+            }
+            & .infoDrop {
+                & .infoDropBtn {
+                    height: 18px;
+                    width: 18px;
+                    &::after {
+                    }
+                    &:hover {
+                        & .cardMenu {
+                        }
+                    }
+                }
+                & .cardMenu {
+                    max-width: 340;
+                    & .dropdownContent {
+                        & .droptitle {
+                            font-size: 13px;
+                        }
+                        & .dropDownTotal {
+                            font-size: 13px;
+                        }
+                    }
+                    & .droptag {
+                        font-size: 11px;
+                    }
+                    & .droptagtwo {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .slots {
+        padding: 50px 11px 0 11px;
+        & .slotsSearch {
+            & .searchIcon {
+                height: 14px;
+                width: 14px;
+            }
+            & .inputSearch {
+                font-size: 12px;
+                &::placeholder {
+                    font-size: 12px;
+                }
+                &:focus {
+                    & .slotsSearch {
+                    }
+                }
+            }
+        }
+        & .pagename {
+
+            & .activePage {
+                & .breadcrumb-item {
+                    font-size: 12px;
+                    &.active {
+                        font-size: 12px;
+                        &::before {
+                        }
+                    }
+                    & a {
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .showBlocked {
+                font-size: 12px;
+            }
+        }
+        & .shotbymain {
+            flex-direction: column;
+            & .shortby {
+                & .dropdownTitle {
+                    font-size: 12px;
+                }
+                & .dropdwonBtn {
+                    font-size: 12px;
+                    &::after {
+    
+                    }
+                    &.show {
+                        &::after {
+                        }
+                    }
+                }
+                & .dropdown-menu {
+                    & .dropdown-item {
+                        font-size: 12px;
+                        &::before {
+                        }
+                        &:hover {
+                        }
+                        &.active {
+                            &::before {
+                            }
+                        }
+                    }
+                }
+                & .dropdown-menutwo {
+                    & .slotlabel {
+                        &:hover {
+                        }
+                        & .checkBtn {
+                            &:focus {
+                            }
+                            &:checked {
+                            }
+                            &:checked ~ label {
+                            }
+                        }
+                        & .slotcheckTitle {
+                            font-size: 12px;
+                        }
+                        & .slotcheckTotal {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .pagecount {
+            font-size: 12px;
+        }
+        & .progresspage {
+            & .progress-bar {
+            }
+        }
+        & .loadmoreBtn {
+            font-size: 12px;
+        }
+    }
+    .slotsCardMain {
+        & .slotCad {
+            & .slotcardImg {
+            }
+            & .cardTitle {
+                font-size: 12px;
+            }
+            & .infoDrop {
+                & .infoDropBtn {
+                    height: 16px;
+                    width: 16px;
+                    &::after {
+                    }
+                    &:hover {
+                        & .cardMenu {
+                        }
+                    }
+                }
+                & .cardMenu {
+                    max-width: 280px;
+                    & .dropdownContent {
+                        & .droptitle {
+                            font-size: 12px;
+                        }
+                        & .dropDownTotal {
+                            font-size: 12px;
+                        }
+                    }
+                    & .droptag {
+                        font-size: 10px;
+                    }
+                    & .droptagtwo {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 }
 // slots page end
