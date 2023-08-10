@@ -6190,7 +6190,7 @@
                                          font-family:' Montserrat';
                                          font-size: 12px;
                                      }
-                                 }
+                                    }
                                  & .input-group-text{
                                     height: 29px;
                                     width: 40px;
@@ -6207,6 +6207,23 @@
                                      
                                     }
                                  }
+                             }
+                             & .emojiDropdown {
+                                display: none;
+                                 background: #161F2C;
+                                 bottom: 100%;
+                                 left: 0;
+                                 max-height: 150px;
+                                 margin-bottom: 4px;
+                                 transition: all 0.3s ease-in-out;
+                                 & .innergroup{
+                                     font-size: 12px;
+                                 }
+                             }
+                             &.emojiBox{
+                                & .emojiDropdown {
+                                    display: block;
+                                }
                              }
                          }
                     }
