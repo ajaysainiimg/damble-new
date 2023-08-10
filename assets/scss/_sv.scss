@@ -876,28 +876,28 @@
         // width: 160.533px;
         // height: 209.089px;
         &.spinMid {
-            &::before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                position: absolute;
-                // background-color: #252e39;
-                z-index: -1;
-                border-radius: 18px;
-            }
-            &::after {
-                content: "";
-                width: calc(100% + 5px);
-                height: calc(100% + 5px);
-                position: absolute;
-                background-image: linear-gradient(to bottom, rgb(98, 167, 224) 10%, rgba(98, 167, 224, 0));
-                border-radius: 18px 18px 0 0;
-                top: -3px;
-                left: -3px;
-                z-index: -2;
-            }
+            // &::before {
+            //     content: "";
+            //     width: 100%;
+            //     height: 100%;
+            //     top: 0;
+            //     left: 0;
+            //     position: absolute;
+            //     // background-color: #252e39;
+            //     z-index: -1;
+            //     border-radius: 18px;
+            // }
+            // &::after {
+            //     content: "";
+            //     width: calc(100% + 5px);
+            //     height: calc(100% + 5px);
+            //     position: absolute;
+            //     background-image: linear-gradient(to bottom, rgb(98, 167, 224) 10%, rgba(98, 167, 224, 0));
+            //     border-radius: 18px 18px 0 0;
+            //     top: -3px;
+            //     left: -3px;
+            //     z-index: -2;
+            // }
         }
         & .card-body {
             border-radius: 0px 14px 14px 0px;
@@ -974,7 +974,7 @@
                     & .heading {
                         color: #fff;
                         font-family: Montserrat;
-                        font-size: 18px;
+                        font-size: 10px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
@@ -1015,7 +1015,7 @@
                 }
                 & .cardContent {
                     & .heading {
-                        font-size: 8px;
+                        // font-size: 8px;
                         & span {
                         }
                     }
@@ -1052,10 +1052,10 @@
                 & .spinImg {
                 }
                 & .cardContent {
-                    left: 30px;
-                    top: 35px;
+                    // left: 30px;
+                    // top: 35px;
                     & .heading {
-                        font-size: 16px;
+                        // font-size: 16px;
                         & span {
                         }
                     }
@@ -1072,11 +1072,11 @@
                     & .spinImg {
                     }
                     & .cardContent {
-                        left: 50px;
-                        top: 35px;
+                        // left: 50px;
+                        // top: 35px;
 
                         & .heading {
-                            font-size: 42px;
+                            // font-size: 42px;
                             & span {
                             }
                         }
@@ -1096,11 +1096,11 @@
                 & .spinImg {
                 }
                 & .cardContent {
-                    left: 25px;
-                    top: 25px;
+                    // left: 25px;
+                    // top: 25px;
 
                     & .heading {
-                        font-size: 14px;
+                        // font-size: 14px;
                         & span {
                         }
                     }
@@ -1117,10 +1117,10 @@
                     & .spinImg {
                     }
                     & .cardContent {
-                        top: 35px;
-                        left: 35px;
+                        // top: 35px;
+                        // left: 35px;
                         & .heading {
-                            font-size: 32px;
+                            // font-size: 32px;
                             & span {
                             }
                         }
@@ -1140,10 +1140,10 @@
                 & .spinImg {
                 }
                 & .cardContent {
-                    left: 18px;
-                    top: 18px;
+                    // left: 18px;
+                    // top: 18px;
                     & .heading {
-                        font-size: 13px;
+                        // font-size: 13px;
                         & span {
                         }
                     }
@@ -1160,10 +1160,10 @@
                     & .spinImg {
                     }
                     & .cardContent {
-                        left: 25px;
-                        top: 25px;
+                        // left: 25px;
+                        // top: 25px;
                         & .heading {
-                            font-size: 25px;
+                            // font-size: 25px;
                             & span {
                             }
                         }
@@ -1183,10 +1183,10 @@
                 & .spinImg {
                 }
                 & .cardContent {
-                    left: 12px;
-                    top: 12px;
+                    // left: 12px;
+                    // top: 12px;
                     & .heading {
-                        font-size: 9px;
+                        // font-size: 9px;
                         & span {
                         }
                     }
@@ -1203,10 +1203,10 @@
                     & .spinImg {
                     }
                     & .cardContent {
-                        left: 18px;
-                        top: 18px;
+                        // left: 18px;
+                        // top: 18px;
                         & .heading {
-                            font-size: 16px;
+                            // font-size: 16px;
                             & span {
                             }
                         }
