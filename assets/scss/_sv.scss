@@ -10598,11 +10598,22 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
                 }
                 & .pera{
                     font-size: 13px;
                     color: #93ACD3;
                     font-weight: 500;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
             & .dateCard{
@@ -10633,10 +10644,11 @@
             padding: 10px 20px;
         }
         & .whatsimg{
-            max-height: 243px;
             height: 100%;
-            max-width: 406px;
-            object-fit: cover;
+            border-radius: 18px;
+            & img{
+                object-fit: cover;
+            }
         }
         & .whatheading{
             color: #FFF;
@@ -10650,7 +10662,6 @@
             font-weight: 600;
         }
         & .btnSection{
-            padding-top: 115px;
             & .readmoreBtn{
                 color: #788E28;
                 font-size: 16px;
@@ -10675,13 +10686,18 @@
             & .outterCard{
                 position: relative;
                 overflow: hidden;
-                padding: 0.7px 0.7px;
+                // padding: 2px 2.7px;
+                padding: 0.9px;
+                background: #161f2c;
+    border-radius: 18px;
+    // padding: 0.8px;
+                // background-color: #0D131C   ;
                 &::before{
                 content: "";
                 position: absolute;
                 height: 100%;
                 width: 100%;
-                background: linear-gradient(145deg, rgba(85, 120, 254, 0.4) 30%, rgba(22, 31, 44, 0.4) 50%);
+                background: linear-gradient(90deg, #93ACD3 30%, #0D131C 50%);
                 top: 0;
                 left: 0;
                 z-index: -5;
@@ -10728,9 +10744,6 @@
                 }
             }
         }
-    }
-    & .btnsection{
-        margin-top: -60px;
     }
 }
 }
@@ -11391,7 +11404,7 @@
                 height: 28px;
             }
             & .whatsimg{
-       max-width: 370px;
+    //    max-width: 370px;
             }
             & .whatheading{
                 & br{
