@@ -9969,11 +9969,11 @@
     & .amlPolicySection{
         & .amlHeading{
             color: #FFF;
-            font-family:' Montserrat';
+            // font-family:' Montserrat';
             font-size: 50px;
             font-style: normal;
             font-weight: 800;
-            line-height: normal;
+            line-height: 120%;
             font-variant: all-small-caps;
         }
         & .amlSubheading{
@@ -10132,7 +10132,7 @@
                     }
                     & .pera{
                         font-size: 17px;
-                        padding-bottom: 13px;
+                        // padding-bottom: 13px;
                         & .linkWeb{
                       
                         }
