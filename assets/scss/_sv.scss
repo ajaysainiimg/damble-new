@@ -11662,7 +11662,7 @@
     height: 88px;
     z-index: 150;
     border: 1px solid $black;
-    padding: 0px 110px 0px 28px;
+    padding: 0px 110px 0px 28px !important;
     & .logoNav{
         height: 24px;
     }
@@ -11944,7 +11944,7 @@
 
 @include media-breakpoint-down(xl) {
     .navbar{
-        padding: 0px 86px 0px 28px;
+        padding: 0px 86px 0px 28px !important;
         & .logoNav{
           
         }
@@ -12033,7 +12033,7 @@
 
 @include media-breakpoint-down(lg) {
     .navbar{
-        padding: 0px 30px 0px 28px;
+        padding: 0px 30px 0px 28px !important;
         
         & .logoNav{
           
@@ -12125,7 +12125,7 @@
 @include media-breakpoint-down(md) {
     .navbar{
         height: 58px;
-        padding: 0px 30px 0px 28px;
+        padding: 0px 30px 0px 28px !important;
         & .logoNav{
           height: 15px;
         }
@@ -12217,7 +12217,7 @@
 
 @include media-breakpoint-down(sm) {
     .navbar{
-        padding: 0px 11px 0px 11px;
+        padding: 0px 11px 0px 11px !important;
         
         & .logoNav{
           
