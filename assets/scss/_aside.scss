@@ -215,19 +215,235 @@
 .sidebar {
     background: #161A25;
     & .sidebar-menu {
-        & .menuHeading {
-            font-size: 10px;
-            font-weight: 700;
-            color:  #B2B6C5;
+        & .sidebarData {
+            padding: 20px 20px 20px 25px;
+            & .menuHeading {
+                font-size: 10px;
+                font-weight: 700;
+                color:  #B2B6C5;
+            }
+            & .sidebarBtn {
+                height: 20px;
+                width: 20px;
+            }
+            & .sideMenuBtn {
+                font-size: 12px;
+                font-weight: 900;
+                color: #fff;
+                gap: 10px;
+                & .accordionIcon {
+                    width: 15.83px;
+                    height: 17.74px;
+                }
+                &::after {
+                    height: 25px;
+                    width: 25px;
+                    background-color: #2C303F;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-image: url(../Img/sidebar/down.png);
+                    background-size: 7px 9px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    transform: rotate(0deg);
+                    
+                }
+                &.collapsed {
+                    &::after {
+                        transform: rotate(180deg);
+    
+                    }
+                }
+            }
+            & .sidebarContent {
+                & .sideMenuContent {
+                    gap: 10px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #B2B6C5;
+                    transition: all 0.3s ease-in-out;
+                    & .sidebtnImg {
+                        width: 16px;
+                        & img {
+                            filter: brightness(10);
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    &:hover {
+                        color: #DEFF58;
+                        & .sidebtnImg {
+                            & img {
+                                filter: none;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        padding: 14px 0;
+                    }
+                    &:nth-child(4) {
+                        padding: 14px 0;
+                    }
+                    &:nth-child(6) {
+                        padding: 14px 0;
+                    }
+                    &:nth-child(8) {
+                        padding: 14px 0;
+                    }
+                }
+                & .accordion-body {
+                    padding-top: 14px;
+                }
+    
+            }
+            & .sponsorshipHeading {
+                font-size: 12px;
+                font-weight: 800;
+                color: #fff;
+                padding-left: 26px;
+            }
+            & .livesupport {
+                font-size: 12px;
+                font-weight: 800;
+                color: #fff;
+                gap: 10px;
+                transition: all 0.3s ease-in-out;
+                & .sponsorshipIcon {
+                    width: 15px;
+                    & img {
+                        filter: brightness(10);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                &:hover {
+                    color: #DEFF58;
+                    & .sponsorshipIcon {
+                        & img {
+                            filter: none;
+                        }
+                    }
+                    & .downloadTitle {
+                        color: #DEFF58;
+                    }
+                }
+                & .downloadTitle {
+                    font-size: 10px;
+                    font-weight: 500;
+                    color: #B2B6C5;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
         }
-        & .sidebarBtn {
-            height: 20px;
-            width: 20px;
+        & .sidebarFooter {
+            background-color: #1A1E2B;
+            padding: 25px 15px ;
+            & .sidefooterImg {
+                padding-top: 30px;
+                & .sidebarpayment {
+                    height: 20px;
+                }
+            }
         }
-        & .sideMenuBtn {
-            & .accordionIcon {
-                width: 15.83px;
-                height: 17.74px;
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .sidebar {
+        & .sidebar-menu {
+            & .sidebarData {
+                padding: 15px 15px 15px ;
+                & .menuHeading {
+                }
+                & .sidebarBtn {
+                }
+                & .sideMenuBtn {
+                    & .accordionIcon {
+                    }
+                    &::after {
+                        
+                    }
+                    &.collapsed {
+                        &::after {
+                        }
+                    }
+                }
+                & .sidebarContent {
+                    & .sideMenuContent {
+                        & .sidebtnImg {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & .sidebtnImg {
+                                & img {
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                        }
+                        &:nth-child(4) {
+                        }
+                        &:nth-child(6) {
+                        }
+                        &:nth-child(8) {
+                        }
+                    }
+                    & .accordion-body {
+                    }
+        
+                }
+                & .sponsorshipHeading {
+                }
+                & .livesupport {
+                    & .sponsorshipIcon {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & .sponsorshipIcon {
+                            & img {
+                                filter: none;
+                            }
+                        }
+                        & .downloadTitle {
+                        }
+                    }
+                    & .downloadTitle {
+                    }
+                }
+            }
+            & .sidebarFooter {
+                & .customBtn {
+                    width: 100%;
+                }
+                & .sidefooterImg {
+                    & .sidebarpayment {
+                        height: 14px;
+                    }
+                }
             }
         }
     }
