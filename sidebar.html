@@ -325,22 +325,75 @@
                         <div class="col-auto px-0 d-md-block d-none">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="dropdown dropdownAccount">
-                                    <a class="dropdown-toggle accountDrop text-decoration-none d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="dropdown-toggle accountDrop text-decoration-none d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false"  data-bs-auto-close="outside">
                                         <div class="row align-items-center">
-                                          <div class="col-auto">
-                                              <div class="dropImg d-inline-flex"><img class="image" src="assets/img/header/account.svg" alt="gift" class="img-fluid w-100 h-100"></div>
-                                          </div>
-                                          <div class="col ps-0 d-lg-block d-none">
-                                              <div class="dropbtn ">ACCOUNT </div>
-                                          </div> 
+                                            <div class="col-auto">
+                                                <div class="dropImg d-inline-flex"><img class="image" src="assets/img/header/account.svg" alt="gift" class="img-fluid w-100 h-100"></div>
+                                            </div>
+                                            <div class="col ps-0 d-lg-block d-none">
+                                                <div class="dropbtn ">ACCOUNT </div>
+                                            </div> 
                                         </div>
-                                      </a>
-                                    <ul class="dropdown-menu dropmenu mb-0">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </a>
+                                    <ul class="dropdown-menu dropmenu mb-0 accountDrop rounded-3 p-3">
+                                        <li>
+                                            <a class="dropdown-item profileBtn active d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/profile.png" alt="profile" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Profile
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/wallet.png" alt="Wallet" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Wallet
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/affiliate.png" alt="Affiliate" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Affiliate
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/deposits.png" alt="Deposits" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Deposits
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/withdraw.png" alt="Withdrawals" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Withdrawals
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/setting.png" alt="Settings" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Settings
+                                            </a>
+                                        </li>
+                                        <li class="accountContent">
+                                            <a class="dropdown-item profileBtn d-flex align-items-center" href="#">
+                                                <span class="accountbtnIcon d-flex align-items-center justify-content-center">
+                                                    <img src="assets/Img/sidebar/logout.png" alt="Log Out" class="h-100 w-100 img-fluid">
+                                                </span>
+                                                Log Out
+                                            </a>
+                                        </li>
                                     </ul>
-                                  </div>
+                                </div>
                                 <!-- search offcanvas -->
                                 <a class=" searchBtn d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                     <img class="image" src="assets/img/header/search.svg" alt="search" class="img-fluid w-100 h-100">
