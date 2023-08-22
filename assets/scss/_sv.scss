@@ -11751,15 +11751,17 @@
                     font-weight:700;
                     padding: 4px 10px;
                     transition: all 0.3s ease-in-out;
-                    &:hover{
-                    background: rgb(160, 196, 19);
+                    // &:hover{
+                    // background: rgb(160, 196, 19);
                 
                         
-                    }
+                    // }
                     &.lockBtn{
                         padding: 4px 20px;
-                        background:2FFBF;
-                        
+                        // background:2FFBF;
+                    }
+                    &.disabled {
+                        opacity: 0.5;
                     }
                 }
             }
