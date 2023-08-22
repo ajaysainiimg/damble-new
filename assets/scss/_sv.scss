@@ -11652,3 +11652,657 @@
     }
     }
 }
+
+
+
+// header new start 
+
+.navbar{
+    background-color: #161A25 !important;
+    height: 88px;
+    z-index: 150;
+    border: 1px solid $black;
+    padding: 0px 110px 0px 28px;
+    & .logoNav{
+        height: 24px;
+    }
+    & .loginBtn{
+        color: $white;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    & .registerBtn{
+        border-radius: 11px ; 
+        background: #CF0;
+        box-shadow: 0px 4px 20px 20px #CF0 inset, 0px 4px 20px 0px rgba(211, 249, 58, 0.50), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 12px 29px;
+        font-weight: 800;
+        color: #000;
+        font-size: 15px;
+        border: 4px solid rgba(166, 223, 0, 1);
+        &.registerBtn2{
+            padding: 10px 22px;
+        }
+        
+    }
+    & .giftDrowpdown{
+        border-radius: 5px;
+        border: 1px solid #CF0;
+        background-color: #13161F;
+        padding: 6px 10px;
+      
+        & .giftBtnDrop{
+            &:after{
+                display: none;
+            }
+            & .dropImg{
+                width: 17px;
+                height: 18px;
+            }
+            & .giftNotification{
+                position: absolute;
+                height: 9px;
+                width: 9px;
+                background-color:  #CF0;
+                color: black;
+                border-radius: 50%;
+                font-size: 5px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                top: -1px;
+                right: -4px;
+            }
+            & .dropbtn{
+                font-size: 11px;
+                color: $white;
+                font-weight: 700;
+            }
+        }
+        & .dropMenunav{
+            width: 248px;
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.80);
+            padding: 22px 20px;
+            top: 55px;
+            & .dropItem{
+                padding-bottom: 20px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: transparent !important;
+                }
+                & .icongift{
+                    width: 24.63px;
+                    height: 21.446px;
+                }
+                & .bonusTitle{
+                    font-size: 10px;
+                    font-weight: 700;
+                    color: $white;
+                }
+                & .clamBtn{
+                    border-radius: 5px;
+                    background: #CF0;
+                    box-shadow: 0px 0px 10px 0px rgba(204, 255, 0, 0.30);
+                    border: 1px solid rgba(204, 255, 0, 1);
+                    font-size: 10px;
+                    color: $black;
+                    font-weight:700;
+                    padding: 4px 10px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                    background: rgb(160, 196, 19);
+                
+                        
+                    }
+                    &.lockBtn{
+                        padding: 4px 20px;
+                        background:2FFBF;
+                        
+                    }
+                }
+            }
+            & .viewBtn{
+                border-radius: 5px;
+                background: #272B36;
+                padding: 6px 50px;
+                font-size: 10px;
+                font-weight: 800;
+                color: $white;
+                flex-wrap:nowrap;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    & .bitcoinBtn{
+        border-radius: 5px;
+        background: #10121A;
+        padding:8px 15px;
+        font-size: 11px;
+        color: $white;
+        font-weight: 700;
+    }
+    & .buyCripto{
+        border-radius: 5px;
+        padding: 8px 13px;
+        font-size: 11px;
+        color: $white;
+        font-weight: 800;
+        border: 4px solid rgba(76, 89, 218, 0.24);
+        background: #6F64E4;
+        box-shadow: 0px 0px 20px 0px #4F5BD5 inset, 0px 4px 20px 0px rgba(79, 91, 213, 0.20);
+    }
+    & .dropdownAccount{
+        & .accountDrop{
+            border-radius: 5px;
+            background: #13161F;
+            padding: 8px 30px 10px 10px;
+            color: #FFF;
+            font-size: 11px;
+            font-weight: 700;
+            &:after{
+                position: absolute;
+                top:50%;
+                right: 10px;
+                transform: translateY(-50%);
+                // border-color: rgba(126, 150, 186, 1) !important;
+            }
+            
+        }
+        & .dropmenu{
+            width: 248px;
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.80);
+            padding: 22px 20px;
+            top: 66px;
+            & .dropdown-item{
+                color: $white;
+                font-size: 13px;
+                opacity: 0.7;
+                &:hover{
+                    background-color: transparent !important;
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+    & .searchBtn{
+        border-radius: 5px;
+        background: #13161F;
+        width: 34.154px;
+        height: 34.502px;
+        padding: 10px;
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {
+    .navbar{
+        
+        & .logoNav{
+          
+        }
+        & .loginBtn{
+       
+        }
+        & .registerBtn{
+     
+            &.registerBtn2{
+                
+            }
+            
+        }
+        & .giftDrowpdown{
+  
+          
+            & .giftBtnDrop{
+                &:after{
+                  
+                }
+                & .dropImg{
+                
+                }
+                & .giftNotification{
+       
+                }
+                & .dropbtn{
+             
+                }
+            }
+            & .dropMenunav{
+       
+                & .dropItem{
+                
+                    &:hover{
+                       
+                    }
+                    & .icongift{
+                       
+                    }
+                    & .bonusTitle{
+                
+                    }
+                    & .clamBtn{
+     
+                        &.lockBtn{
+                        }
+                    }
+                }
+                & .viewBtn{
+              
+                }
+            }
+        }
+    
+        & .bitcoinBtn{
+
+        }
+        & .buyCripto{
+
+        }
+        & .dropdownAccount{
+            & .accountDrop{
+  
+                &:after{
+      
+                }
+                
+            }
+            & .dropmenu{
+
+                & .dropdown-item{
+            
+                    &:hover{
+               
+                    }
+    
+                }
+            }
+        }
+        & .searchBtn{
+
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .navbar{
+        padding: 0px 86px 0px 28px;
+        & .logoNav{
+          
+        }
+        & .loginBtn{
+       
+        }
+        & .registerBtn{
+            padding: 9px 23px;
+            &.registerBtn2{
+                
+            }
+            
+        }
+        & .giftDrowpdown{
+  
+          
+            & .giftBtnDrop{
+                &:after{
+                  
+                }
+                & .dropImg{
+                
+                }
+                & .giftNotification{
+       
+                }
+                & .dropbtn{
+             
+                }
+            }
+            & .dropMenunav{
+       
+                & .dropItem{
+                
+                    &:hover{
+                       
+                    }
+                    & .icongift{
+                       
+                    }
+                    & .bonusTitle{
+                
+                    }
+                    & .clamBtn{
+     
+                        &.lockBtn{
+                        }
+                    }
+                }
+                & .viewBtn{
+              
+                }
+            }
+        }
+    
+        & .bitcoinBtn{
+
+        }
+        & .buyCripto{
+
+        }
+        & .dropdownAccount{
+            & .accountDrop{
+  
+                &:after{
+      
+                }
+                
+            }
+            & .dropmenu{
+
+                & .dropdown-item{
+            
+                    &:hover{
+               
+                    }
+    
+                }
+            }
+        }
+        & .searchBtn{
+
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .navbar{
+        padding: 0px 30px 0px 28px;
+        
+        & .logoNav{
+          
+        }
+        & .loginBtn{
+       
+        }
+        & .registerBtn{
+     
+            &.registerBtn2{
+                padding: 8px 18px;
+            }
+            
+        }
+        & .giftDrowpdown{
+  
+          
+            & .giftBtnDrop{
+                &:after{
+                  
+                }
+                & .dropImg{
+                
+                }
+                & .giftNotification{
+       
+                }
+                & .dropbtn{
+             
+                }
+            }
+            & .dropMenunav{
+       
+                & .dropItem{
+                
+                    &:hover{
+                       
+                    }
+                    & .icongift{
+                       
+                    }
+                    & .bonusTitle{
+                
+                    }
+                    & .clamBtn{
+     
+                        &.lockBtn{
+                        }
+                    }
+                }
+                & .viewBtn{
+              
+                }
+            }
+        }
+    
+        & .bitcoinBtn{
+
+        }
+        & .buyCripto{
+
+        }
+        & .dropdownAccount{
+            & .accountDrop{
+                padding: 10px;
+                border-radius: 5px;
+                &:after{
+                 display: none;
+                }
+                
+            }
+            & .dropmenu{
+
+                & .dropdown-item{
+            
+                    &:hover{
+               
+                    }
+    
+                }
+            }
+        }
+        & .searchBtn{
+
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar{
+        height: 58px;
+        padding: 0px 30px 0px 28px;
+        & .logoNav{
+          height: 15px;
+        }
+        & .loginBtn{
+       font-size: 8px;
+        }
+        & .registerBtn{
+            font-size: 12px;
+            border-radius: 5px;
+            border: 2px;
+            padding: 9px 28px;
+            &.registerBtn2{
+                
+            }
+            
+        }
+        & .giftDrowpdown{
+  
+          
+            & .giftBtnDrop{
+                &:after{
+                  
+                }
+                & .dropImg{
+                
+                }
+                & .giftNotification{
+       
+                }
+                & .dropbtn{
+             
+                }
+            }
+            & .dropMenunav{
+       
+                & .dropItem{
+                
+                    &:hover{
+                       
+                    }
+                    & .icongift{
+                       
+                    }
+                    & .bonusTitle{
+                
+                    }
+                    & .clamBtn{
+     
+                        &.lockBtn{
+                        }
+                    }
+                }
+                & .viewBtn{
+              
+                }
+            }
+        }
+    
+        & .bitcoinBtn{
+
+        }
+        & .buyCripto{
+
+        }
+        & .dropdownAccount{
+            & .accountDrop{
+  
+                &:after{
+      
+                }
+                
+            }
+            & .dropmenu{
+
+                & .dropdown-item{
+            
+                    &:hover{
+               
+                    }
+    
+                }
+            }
+        }
+        & .searchBtn{
+
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar{
+        padding: 0px 11px 0px 11px;
+        
+        & .logoNav{
+          
+        }
+        & .loginBtn{
+       
+        }
+        & .registerBtn{
+     
+            &.registerBtn2{
+                
+            }
+            
+        }
+        & .giftDrowpdown{
+  
+          
+            & .giftBtnDrop{
+                padding: 3px 6px;
+                &:after{
+                  
+                }
+                & .dropImg{
+                
+                }
+                & .giftNotification{
+       
+                }
+                & .dropbtn{
+                    font-size: 8px;
+                }
+            }
+            & .dropMenunav{
+       
+                & .dropItem{
+                
+                    &:hover{
+                       
+                    }
+                    & .icongift{
+                       
+                    }
+                    & .bonusTitle{
+                
+                    }
+                    & .clamBtn{
+     
+                        &.lockBtn{
+                        }
+                    }
+                }
+                & .viewBtn{
+              
+                }
+            }
+        }
+    
+        & .bitcoinBtn{
+            font-size: 9px;
+
+        }
+        & .buyCripto{
+
+        }
+        & .dropdownAccount{
+            & .accountDrop{
+  
+                &:after{
+      
+                }
+                
+            }
+            & .dropmenu{
+
+                & .dropdown-item{
+            
+                    &:hover{
+               
+                    }
+    
+                }
+            }
+        }
+        & .searchBtn{
+
+        }
+    }
+}
