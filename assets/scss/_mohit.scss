@@ -1,0 +1,82 @@
+// login & resister modal start 
+.loginModal {
+    & .logindialog {
+        height: 90%;
+        max-width: 90%;
+        & .loginContent {
+            // background-color: #0D131C;
+            & .btnClose {
+                background: none;
+                height: 18px;
+                width: 18px;
+                right: 15px;
+                top: 15px;
+            }
+            & .loginformMain {
+                background: #161A25;
+                & .logindata {
+                    padding: 58px 17px 68px 36px;
+                    & .loginBtn {
+                        border-radius: 10px;
+                        background: #1A1E2B;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 30px rgba(204, 255, 0, 0.30);
+                        font-size: 13px;
+                        font-weight: 800;
+                        padding: 13px 28px;
+                        &.active {
+                            color: #E8FE90;
+                        }
+                    }
+                }
+                & .tabdata {
+                    padding-top: 67px;
+                }
+            }
+            & .loginImg  {
+                background:url(../Img/sidebar/loginpage.png);
+                background-position: center bottom;
+                background-size: cover;
+
+            }
+        }
+    }
+}
+.inputdata {
+    & .inputLabel {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: normal;
+        & span {
+            color: #E94242;
+            font-size: 15px;
+            font-weight: 800;
+        }
+    }
+    & .inputlogin {
+        background-color: #13161F;
+        margin-top: 8px;
+        color: #B2B6C5;
+        font-size: 12px;
+        font-weight: 500;
+        height: 41px;
+        &::placeholder {
+            color: #B2B6C5;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    &.passwordInput {
+        padding-top: 33px;
+    }
+    &.forgotmain {
+        padding: 13px 0 10px 0;
+        & .forgotPassword {
+            color: #B2B6C5;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
+// login & resister modal end 
