@@ -208,3 +208,27 @@
     
 }
 // side bar start
+
+
+
+// new css side bar 
+.sidebar {
+    background: #161A25;
+    & .sidebar-menu {
+        & .menuHeading {
+            font-size: 10px;
+            font-weight: 700;
+            color:  #B2B6C5;
+        }
+        & .sidebarBtn {
+            height: 20px;
+            width: 20px;
+        }
+        & .sideMenuBtn {
+            & .accordionIcon {
+                width: 15.83px;
+                height: 17.74px;
+            }
+        }
+    }
+}
