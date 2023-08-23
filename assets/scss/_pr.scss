@@ -498,6 +498,9 @@
       }
     }
   }
+  .casinoTabCol {
+    margin-right: 80px;
+  }
 }
 @media (max-width: 767px) {
   .newHeroSection {
@@ -569,6 +572,17 @@
         }
       }
     }
+  }
+  .casinoTabCol {
+    width: 100%;
+    flex: 0 0 auto;
+    order: 3;
+    margin-top: 5px;
+    margin-right: 0;
+  }
+  .toprated-games-main .swiper-button-next-unique ,
+  .toprated-games-main .swiper-button-prev-unique {
+    top: -95px;
   }
 }
 @media (max-width: 575px) {
@@ -663,6 +677,60 @@
       }
     }
   }
+  .topratedgames-tab-main {
+    & .topratedgames-tab-content {
+      & .diceBox {
+        font-size: 15px;
+        & img {
+          height: 22px;
+          width: 22px;
+          margin-right: 10px;
+        }
+        & span {
+          font-size: 10px;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  
+  .casinoTabCol {
+    & .toprated-link {
+      font-size: 12px !important;
+    }
+  }
+  .toprated-games-main .swiper-button-next-unique ,
+  .toprated-games-main .swiper-button-prev-unique {
+    top: -83px;
+  }
+  .toprated-games-main.sportsBookFluid {
+    & .diceBox {
+      font-size: 15px;
+      & img {
+        height: 22px;
+        width: 22px;
+        margin-right: 10px;
+      }
+      & span {
+        font-size: 10px;
+        margin-left: 8px;
+      }
+    }
+  } 
+  .dambleTable {
+    & .sectionInner  {
+      & .tableCard  {
+        & .livebets {
+          font-size: 15px;
+          & img {
+            height: 22px;
+            width: 22px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1500px) {
@@ -670,3 +738,18 @@
     display: block !important;
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .casinoTabCol {
+    width: 100%;
+    flex: 0 0 auto;
+    order: 3;
+    margin-top: 5px;
+  }
+  .toprated-games-main .swiper-button-next-unique ,
+  .toprated-games-main .swiper-button-prev-unique {
+    top: -95px;
+  }
+}
+
+
