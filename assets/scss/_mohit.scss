@@ -80,3 +80,1077 @@
     }
 }
 // login & resister modal end 
+
+// profile tab page start 
+.accountTab {
+    padding: 49px 90px 60px 90px ;
+    & .tabMain {
+        gap: 12px;
+        & .accountBtn {
+            background: #161A25;
+            border-radius: 9px;
+            border: none;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 600;
+            gap: 20px;
+            padding: 11px 0 11px 17px;
+            border: 1px solid #161A25;
+            // transition: all 0.3s ease-in-out;
+            & .accounttabIcon {
+                height: 21px;
+                width: 21px;
+                & img {
+                    filter: grayscale(1);
+                    // transition: all 0.3s ease-in-out;
+                }
+            }
+            &.active {
+                border-color: #CF0;
+                & .accounttabIcon {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+            &:not(.collapsed) {
+                border-color: #CF0;
+                & .accounttabIcon {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+            &:hover {
+                border-color: #CF0;
+                & .accounttabIcon {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+        }
+    }
+    & .accountTabcard {
+        border-radius: 9px;
+        background: #161A25;
+        padding: 35px 25px 45px;
+        & .cardImg {
+            height: 25px;
+            width: 25px;
+            & img {
+                filter: grayscale(1);
+            }
+        }
+        & .accountCardHeading {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 800;
+            gap: 17px;
+            line-height: normal;
+        }
+        & .cardsubHeading {
+            color: #FFF;
+            font-size: 15px;
+            padding-top: 40px;
+            font-weight: 800;
+            & span {
+                height: 19px;
+                width: 19px;
+            }
+            &.disabled {
+                color: #B2B6C5;
+            }
+        }
+        & .accountInput {
+            padding-top: 20px;
+            & .accountLabel {
+                color: #B2B6C5;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: normal;
+                & span {
+                    color: #FFD700;
+                }
+            }
+            & .inputmain {
+                padding-top: 8px;
+                gap: 15px;
+                & .userNameInput {
+                    border-radius: 9px;
+                    background: #13161F;
+                    color: #B2B6C5;
+                    font-size: 10px;
+                    font-weight:700;
+                    height: 38px;
+                    &::placeholder {
+                        color: #B2B6C5;
+                        font-size: 10px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+                & .customBtn {
+                    color: #000;
+                    font-size: 13px;
+                    font-weight: 700;
+                    padding: 3px 18px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        & .privateProfile {
+            gap: 18px;
+            & .checkLabel {
+                color: #B2B6C5;
+                font-size: 13px;
+                font-weight: 700;
+            }
+        }
+        & .totalWallet {
+            color: #B2B6C5;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            & span {
+                color: #CF0;
+            }
+        }
+        & .mainCard {
+            border-radius: 9px;
+            background: #13161F;
+            padding: 14px 0 19px 39px;
+            & .mainHeading {
+                color: #FFF;
+                font-size: 13px;
+                font-weight: 800;
+                line-height: normal;
+            }
+            & .CoinIcon {
+                height: 17px;
+                width: 17px;
+            }
+        }
+        & .customBtn {
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        & .reffralsTab {
+            & .refferalBtn {
+                border-radius: 9px;
+                background: #272B36;
+                padding: 5px 20px;
+                color: #B2B6C5;
+                font-size: 13px;
+                font-weight: 800;
+                border: 1px solid #272B36;
+                &.active {
+                    border-color: #CF0;
+                    color: #FFF;
+                }
+            }
+        }
+        & .setcodeCard {
+            & .setCodetitle {
+                color: #B2B6C5;
+                font-size: 15px;
+                font-weight: 800;
+                line-height: normal;
+            }
+        }
+        & .reffralsCard {
+            border-radius: 9px;
+            background: #272B36;
+            padding: 20px 0 ;
+            & .totalComission {
+                color: #FFF;
+                font-size: 17px;
+                font-weight: 800;
+                line-height: normal;
+            }
+            & .Comission {
+                color: #FFF;
+                font-size: 15px;
+                font-weight: 800;
+                line-height: normal;
+                padding-top: 10px;
+            }
+        }
+        & .affiliateTable {
+            border-collapse:separate;
+            border-spacing:0 8px;
+            & .tableHead {
+                border-radius: 9px;
+                background: #272B36;
+                & th {
+                    color: #B2B6C5;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            & .tablebody {
+                & tr {
+                    background: #272B36;
+                    & td {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 800;
+                        line-height: normal;
+                    }
+                }
+                & .claimBtn {
+                    color: #000;
+                    font-size: 12px;
+                    padding: 4px 7px;
+                    font-weight: 800;
+                    line-height: normal;
+                    border-radius: 4px;
+                    background: #CF0;
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: 0px 4px 20px 0px #CBFD00 inset, 0px 4px 30px 0px rgba(204, 255, 0, 0.30);
+                    &:hover {
+                        background: rgba(204, 255, 0, 0.635);
+                    }
+                }
+                & .copyBtn {
+                    color: #7E96BA;
+                    font-size: 10px;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 4px 10px;
+                    border-radius: 4px;
+                    background: #161A25;
+                }
+            }
+        }
+        ::-webkit-scrollbar-track {
+            // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            background: #0D131C;
+        }
+        ::-webkit-scrollbar {
+            width: 2px;
+            height: 6px;
+            border-radius: 5px;
+            background: #CF0;
+            // background-color: red;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background: #CF0;
+        }
+        & .affiliateCardTitle {
+            color: #B2B6C5;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: normal;
+            & .affliateProgram {
+                color: #CF0;
+            }
+        }
+        & .NoEntry {
+            color: #B2B6C5;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: normal;
+            border-radius: 9px;
+            background: #13161F;
+            padding: 20px 25px;
+        }
+        & .transactionCard {
+            & .card-header {
+                background: #1D2230;
+                padding: 15px 25px;
+                border-radius: 9px 9px 0 0 ;
+                & .transactionLabel {
+                    color: #FFF;
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+                & .transactionInput {
+                    color: #B2B6C5;
+                    font-size: 10px;
+                    font-weight: 700;
+                    border-radius: 9px;
+                    border: 1px solid #CF0;
+                    background: #13161F;
+                    box-shadow: 0px 4px 10px 0px rgba(204, 255, 0, 0.10);
+                    margin-top: 12px;
+                    padding: 8px 16px;
+                    &::placeholder {
+                        color: #B2B6C5;
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            & .cardBody {
+                padding: 20px 25px 30px;
+                border-radius: 0px 0px 9px 9px;
+                background: #13161F;
+                & .cancelBtn {
+                    border-radius: 5px;
+                    background: #161A25;
+                    color: #B2B6C5;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: normal;
+                    padding: 9px 18px;
+                }
+            }
+        }
+        & .inputGroup{
+            & .EmailInput {
+                border: 2px solid #13161F;
+                border-radius: 9px;
+                background: #13161F;
+                transition: border 0.25s ease-in-out;
+                padding: 10px 16px;
+                color: #B2B6C5;
+                font-size: 10px;
+                font-weight: 700;
+                &:focus {
+                    outline: none;
+                    border-color: #CF0;
+                }
+                
+            }
+            & .emailLabel {
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                transition: all 0.25s ease-in-out;
+                color: #B2B6C5;
+                font-size: 10px;
+                font-weight: 700;
+                & span {
+                    color: #FFD700;
+                }
+            }
+        }
+        & .EmailInput:focus ~ .emailLabel {
+            top: 0;
+            // background-color: #f8f8f8;
+            // font-size: 14px;
+            padding: 0 10px;
+            background: linear-gradient(180deg, rgba(22,26,37,1) 49%, rgba(19,22,31,1) 52%);
+        }
+        & .changeGmailBtn {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .accountTab {
+        & .tabMain {
+            & .accountBtn {
+                & .accounttabIcon {
+                    & img {
+                    }
+                }
+                &.active {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .accountTabcard {
+            & .cardImg {
+                height: 22px;
+                width: 22px;
+                & img {
+                }
+            }
+            & .accountCardHeading {
+                font-size: 18px;
+            }
+            & .cardsubHeading {
+                padding-top: 31px;
+                & span {
+                }
+                &.disabled {
+                }
+            }
+            & .accountInput {
+                & .accountLabel {
+                    & span {
+                    }
+                }
+                & .inputmain {
+                    & .userNameInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .customBtn {
+                    }
+                }
+            }
+            & .privateProfile {
+                gap: 18px;
+                & .checkLabel {
+                }
+            }
+            & .totalWallet {
+                & span {
+                }
+            }
+            & .mainCard {
+                & .mainHeading {
+                }
+                & .CoinIcon {
+                }
+            }
+            & .customBtn {
+            }
+            & .reffralsTab {
+                & .refferalBtn {
+                    &.active {
+                    }
+                }
+            }
+            & .setcodeCard {
+                & .setCodetitle {
+                }
+            }
+            & .reffralsCard {
+                & .totalComission {
+                }
+                & .Comission {
+                }
+            }
+            & .affiliateTable {
+                & .tableHead {
+                    & th {
+                    }
+                }
+                & .tablebody {
+                    & tr {
+                        & td {
+                        }
+                    }
+                    & .claimBtn {
+                        &:hover {
+                        }
+                    }
+                    & .copyBtn {
+                    }
+                }
+            }
+            ::-webkit-scrollbar-track {
+            }
+            ::-webkit-scrollbar {
+            }
+            ::-webkit-scrollbar-thumb {
+            }
+            & .affiliateCardTitle {
+                & .affliateProgram {
+                }
+            }
+            & .NoEntry {
+                font-size: 17px;
+            }
+            & .transactionCard {
+                & .card-header {
+                    & .transactionLabel {
+                        font-size: 19px;
+                    }
+                    & .transactionInput {
+                        &::placeholder {
+                        }
+                    }
+                }
+                & .cardBody {
+                    & .cancelBtn {
+                    }
+                }
+            }
+            & .inputGroup{
+                & .EmailInput {
+                    &:focus {
+                    }
+                    
+                }
+                & .emailLabel {
+                    & span {
+                    }
+                }
+            }
+            & .EmailInput:focus ~ .emailLabel {
+            }
+            & .changeGmailBtn {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .accountTab {
+        padding: 40px 50px 60px ;
+        & .tabMain {
+            & .accountBtn {
+                font-size: 14px;
+                & .accounttabIcon {
+                    height: 18px;
+                    width: 18px;
+                    & img {
+                    }
+                }
+                &.active {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .accountTabcard {
+            padding: 28px 18px 35px;
+            & .cardImg {
+                height: 20px;
+                width: 20px;
+                & img {
+                }
+            }
+            & .accountCardHeading {
+                font-size: 17px;
+            }
+            & .cardsubHeading {
+                padding-top: 28px;
+                font-size: 14px;
+                & span {
+                }
+                &.disabled {
+                }
+            }
+            & .accountInput {
+                & .accountLabel {
+                    & span {
+                    }
+                }
+                & .inputmain {
+                    & .userNameInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .customBtn {
+                    }
+                }
+            }
+            & .privateProfile {
+                gap: 18px;
+                & .checkLabel {
+                }
+            }
+            & .totalWallet {
+                
+                & span {
+                }
+            }
+            & .mainCard {
+                & .mainHeading {
+                }
+                & .CoinIcon {
+                }
+            }
+            & .customBtn {
+            }
+            & .reffralsTab {
+                & .refferalBtn {
+                    &.active {
+                    }
+                }
+            }
+            & .setcodeCard {
+                & .setCodetitle {
+                }
+            }
+            & .reffralsCard {
+                & .totalComission {
+                    font-size: 16px;
+                }
+                & .Comission {
+                    font-size: 14px;
+                }
+            }
+            & .affiliateTable {
+                & .tableHead {
+                    & th {
+                    }
+                }
+                & .tablebody {
+                    & tr {
+                        & td {
+                        }
+                    }
+                    & .claimBtn {
+                        &:hover {
+                        }
+                    }
+                    & .copyBtn {
+                    }
+                }
+            }
+            ::-webkit-scrollbar-track {
+            }
+            ::-webkit-scrollbar {
+            }
+            ::-webkit-scrollbar-thumb {
+            }
+            & .affiliateCardTitle {
+                & .affliateProgram {
+                }
+            }
+            & .NoEntry {
+                font-size: 16px;
+            }
+            & .transactionCard {
+                & .card-header {
+                    & .transactionLabel {
+                        font-size: 18px;
+                    }
+                    & .transactionInput {
+                        &::placeholder {
+                        }
+                    }
+                }
+                & .cardBody {
+                    & .cancelBtn {
+                    }
+                }
+            }
+            & .inputGroup{
+                & .EmailInput {
+                    &:focus {
+                    }
+                    
+                }
+                & .emailLabel {
+                    & span {
+                    }
+                }
+            }
+            & .EmailInput:focus ~ .emailLabel {
+            }
+            & .changeGmailBtn {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .accountTab {
+        padding: 42px 17px 20px  ;
+        & .tabMain {
+            gap: 10px;
+            & .accountBtn {
+                font-size: 13px;
+                & .accounttabIcon {
+                    height: 17px;
+                    width: 17px;
+                    & img {
+                    }
+                }
+                &.active {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .accountTabcard {
+            padding: 35px 18px;
+            & .cardImg {
+                & img {
+                }
+            }
+            & .accountCardHeading {
+            }
+            & .cardsubHeading {
+                padding-top: 0;
+                font-size: 13px;
+                & span {
+                    height: 14px;
+                    width:14px;
+                }
+                &.disabled {
+                }
+            }
+            & .accountInput {
+                & .accountLabel {
+                    & span {
+                    }
+                }
+                & .inputmain {
+                    & .userNameInput {
+                        font-size: 11px;
+                        height: 35px;
+                        &::placeholder {
+                        font-size: 11px;
+                        }
+                    }
+                    & .customBtn {
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .privateProfile {
+                gap: 18px;
+                & .checkLabel {
+                    font-size: 13px;
+                }
+            }
+            & .totalWallet {
+                font-size: 10px;
+                & span {
+                }
+            }
+            & .mainCard {
+                & .mainHeading {
+                    font-size: 11px;
+                }
+                & .CoinIcon {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+            & .customBtn {
+                font-size: 12px;
+            }
+            & .reffralsTab {
+                & .refferalBtn {
+                    font-size: 12px;
+                    border-radius: 4px;
+                    &.active {
+                    }
+                }
+            }
+            & .setcodeCard {
+                & .setCodetitle {
+                    font-size: 13px;
+                }
+            }
+            & .reffralsCard {
+                & .totalComission {
+                    font-size: 13px;
+                }
+                & .Comission {
+                    font-size: 11px;
+                }
+            }
+            & .affiliateTable {
+                border-radius: 5px;
+                background: #0D131C;
+                padding:0 5px;
+                & .tableHead {
+                    & th {
+                        font-size: 10px;
+                    }
+                }
+                & .tablebody {
+                    & tr {
+                        & td {
+                            font-size: 10px;
+                        }
+                    }
+                    & .claimBtn {
+                        font-size: 10px;
+                        &:hover {
+                        }
+                    }
+                    & .copyBtn {
+                        font-size: 10px;
+                    }
+                }
+            }
+            ::-webkit-scrollbar-track {
+            }
+            ::-webkit-scrollbar {
+            }
+            ::-webkit-scrollbar-thumb {
+            }
+            & .affiliateCardTitle {
+                font-size:11px;
+                & .affliateProgram {
+                }
+            }
+            & .NoEntry {
+                padding: 18px 23px;
+                font-size: 12px;
+            }
+            & .transactionCard {
+                & .card-header {
+                    & .transactionLabel {
+                        font-size: 12px;
+                    }
+                    & .transactionInput {
+                        border-radius: 3px;
+                        font-size: 10px;
+                        &::placeholder {
+                        }
+                    }
+                }
+                & .cardBody {
+                    & .cancelBtn {
+                        font-size: 11px;
+                    }
+                }
+            }
+            & .inputGroup{
+                & .EmailInput {
+                    font-size: 9px;
+                    &:focus {
+                    }
+                    
+                }
+                & .emailLabel {
+                    font-size: 9px;
+                    & span {
+                    }
+                }
+            }
+            & .EmailInput:focus ~ .emailLabel {
+            }
+            & .changeGmailBtn {
+            }
+        }
+        & .settingtab {
+            & .createpassword {
+                // padding: 4px px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .accountTab {
+        padding: 36px 11px 9px ;
+        & .tabMain {
+            gap: 8px;
+            & .accountBtn {
+                font-size: 13px;
+                & .accounttabIcon {
+                    height: 16px;
+                    width: 16px;
+                    & img {
+                    }
+                }
+                &.active {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+                &:hover {
+                    & .accounttabIcon {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .accountTabcard {
+            padding: 25px 15px;
+            & .cardImg {
+                & img {
+                }
+            }
+            & .accountCardHeading {
+            }
+            & .cardsubHeading {
+                padding-top: 0;
+                font-size: 13px;
+                & span {
+                    height: 11px;
+                    width:11px;
+                }
+                &.disabled {
+                }
+            }
+            & .accountInput {
+                & .accountLabel {
+                    & span {
+                    }
+                }
+                & .inputmain {
+                    & .userNameInput {
+                        font-size: 9px;
+                        height: 32px;
+                        &::placeholder {
+                        font-size: 9px;
+                        }
+                    }
+                    & .customBtn {
+                        font-size: 10px;
+                    }
+                }
+            }
+            & .privateProfile {
+                gap: 18px;
+                & .checkLabel {
+                    font-size: 12px;
+                }
+            }
+            & .totalWallet {
+                font-size: 8px;
+                & span {
+                }
+            }
+            & .mainCard {
+                & .mainHeading {
+                    font-size: 8px;
+                }
+                & .CoinIcon {
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+            & .customBtn {
+                font-size: 10px;
+            }
+            & .reffralsTab {
+                & .refferalBtn {
+                    font-size: 10px;
+                    border-radius: 3px;
+                    &.active {
+                    }
+                }
+            }
+            & .setcodeCard {
+                & .setCodetitle {
+                    font-size: 10px;
+                }
+            }
+            & .reffralsCard {
+                & .totalComission {
+                    font-size: 10px;
+                }
+                & .Comission {
+                    font-size: 8px;
+                }
+            }
+            & .affiliateTable {
+                border-radius: 5px;
+                background: #0D131C;
+                padding:0 5px;
+                & .tableHead {
+                    & th {
+                        font-size: 8px;
+                    }
+                }
+                & .tablebody {
+                    & tr {
+                        & td {
+                            font-size: 8px;
+                        }
+                    }
+                    & .claimBtn {
+                        font-size: 8px;
+                        &:hover {
+                        }
+                    }
+                    & .copyBtn {
+                        font-size: 8px;
+                    }
+                }
+            }
+            ::-webkit-scrollbar-track {
+            }
+            ::-webkit-scrollbar {
+            }
+            ::-webkit-scrollbar-thumb {
+            }
+            & .affiliateCardTitle {
+                font-size: 9px;
+                & .affliateProgram {
+                }
+            }
+            & .NoEntry {
+                padding: 18px 23px;
+                font-size: 10px;
+            }
+            & .transactionCard {
+                & .card-header {
+                    & .transactionLabel {
+                        font-size: 10px;
+                    }
+                    & .transactionInput {
+                        border-radius: 3px;
+                        font-size: 8px;
+                        &::placeholder {
+                        }
+                    }
+                }
+                & .cardBody {
+                    & .cancelBtn {
+                        font-size: 9px;
+                    }
+                }
+            }
+            & .inputGroup{
+                & .EmailInput {
+                    &:focus {
+                    }
+                    
+                }
+                & .emailLabel {
+                    font-size: 8px;
+                    & span {
+                    }
+                }
+            }
+            & .EmailInput:focus ~ .emailLabel {
+            }
+            & .changeGmailBtn {
+            }
+        }
+        & .settingtab {
+            & .createpassword {
+                padding: 4px 8px;
+                font-size: 9px;
+            }
+        }
+    }
+}
+// profile tab page end 
