@@ -101,7 +101,7 @@
 
 .footerrSection {
     // padding-bottom: 120px;
-    padding-bottom: 74px;
+    padding-bottom: 50px;
     & .borderd {
         border-top: 1px solid #00990A;
         &.smBorderd {
@@ -119,8 +119,8 @@
         background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
         & .card-body {
             padding: 0;
-            margin-top: 126px;
-            margin-bottom: 74px;
+            margin-top: 50px;
+            margin-bottom: 30px;
             & .txt{
                 color: #FFF;
                 font-family: 'Montserrat';
@@ -129,6 +129,7 @@
                 font-weight: 800;
                 line-height: normal;
                 text-transform: uppercase;
+                // white-space: nowrap;
             }
             & .logos{
                 width: 33px;
@@ -171,7 +172,7 @@
                     border-radius: 5px;
                     background: #D3F93A;
                     box-shadow: 0px 4px 20px 0px #D2F73A inset, 0px 4px 40px 0px rgba(211, 249, 58, 0.20);
-                    color: #000;
+                    color: #000 !important;
                     text-align: center;
                     font-family: 'Montserrat';
                     font-size: 11px;
@@ -187,6 +188,7 @@
                         border-radius: 5px;
                         border: 4px solid rgba(76, 89, 218, 0.24);
                         background: #6F64E4;
+                        color: white !important;
                         box-shadow: 0px 0px 20px 0px #4F5BD5 inset, 0px 4px 20px 0px rgba(79, 91, 213, 0.20);
                         &:hover {
                             background: darken(#713FE3, 5);
@@ -240,7 +242,7 @@
 }
 
 .footerLinks{
-    margin-top: 125px;
+    // margin-top: 125px;
     background: #161F2C;
     &.footerFluid{
         & .footerLogo{
@@ -473,7 +475,7 @@
         }
     }
     .footerLinks {
-        margin-top: 100px;
+        // margin-top: 100px;
     }
 }
 
@@ -552,7 +554,7 @@
         }
     }
     .footerLinks {
-        margin-top: 80px;
+        // margin-top: 80px;
     }
 }
 
@@ -635,7 +637,7 @@
         }
     } 
     .footerLinks {
-        margin-top: 60px;
+        // margin-top: 60px;
     }
 }
 
@@ -709,7 +711,7 @@
         }
     }
     .footerLinks {
-        margin-top: 50px;
+        // margin-top: 50px;
     }
 }
 
