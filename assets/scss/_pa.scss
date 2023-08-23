@@ -3528,10 +3528,100 @@
 }
 
 
-
 // ****************************************** UPDATED DAMBLE ***********************************************//
 
-
+.sponsorshipPage{
+    margin: 119px 130px 50px 108px;
+    & .sponsorshipPageFluid{
+        & .sponsorCard{
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+            & .box{
+                padding: 38px 42px;
+                & .sponsorName{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 35px;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                & .field{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 25px;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    // margin-bottom: 50px;
+                    margin-bottom: 66px;
+                }
+                & .discription{
+                    color: #B2B6C5;
+                    font-family: 'Montserrat';
+                    // font-size: 23px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .bottom{
+                    margin-top: 55px;
+                    & .oneSection{
+                        & img{
+                            width: 37px;
+                            height: 36px;
+                        }
+                        & span{
+                            &.punch{
+                                & img{
+                                    width: 40.838px;
+                                    margin-left: 20px;
+                                }
+                            }
+                            & img{
+                                width: 76.838px;
+                                height: 39.931px;
+                                margin-left: 20px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .readMoreBtn{
+                        border-radius: 6px;
+                        background: #1F2330;
+                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+                        color: #B2B6C5;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        width: 135px;
+                        height: 51px;
+                        border: none;
+                    }
+                }
+            }
+            & .sponsorImg{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
 
 
 
