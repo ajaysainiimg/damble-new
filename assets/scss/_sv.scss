@@ -371,7 +371,6 @@
                             &.active {
                                 color: #FFF;
                                 font-family: 'Montserrat';
-                                font-size: 13px;
                                 font-style: normal;
                                 font-weight: 800;
                                 line-height: normal;
@@ -382,7 +381,7 @@
                 }
             }
             & .tab-content {
-                margin: 36px 0px;
+                margin-top: 20px;
                 & .tab-pane {
                     & .table {
                         & thead {
@@ -713,6 +712,8 @@
                     & .nav-tabs {
                         & .nav-item {
                             & .nav-link {
+                                font-size: 14px;
+                                padding: 8px;
                                 &.active {
                                 }
                             }
@@ -785,16 +786,17 @@
                 }
 
                 & nav {
-                    margin: 29px 18px 0px 18px;
+                    // margin: 29px 18px 0px 18px;
                     & .nav-tabs {
                         &::-webkit-scrollbar {
                             display: none;
                         }
                         & .nav-item {
                             & .nav-link {
-                                font-size: 14px;
-                                padding: 8px 24px;
+                                font-size: 12px;
+                                padding: 8px;
                                 &.active {
+                                    font-size: 12px;
                                 }
                             }
                         }

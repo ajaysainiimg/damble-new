@@ -76,7 +76,7 @@
             // }
         }
         & .mRight{
-            margin-right: 100px !important;
+            margin-right: 90px !important;
         }
         & .search-bar-group {
             border: 1px solid #7E96BA;
@@ -85,7 +85,7 @@
             & .search-input {
                 color: #93ACD3;
                 font-size: 12px;
-                width: 222px;
+                width: 155px;
                 height: 30px;
                 &::placeholder {
                     color: #93ACD3;
@@ -132,7 +132,7 @@
             font-style: normal;
             font-weight: 900;
             line-height: normal;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             & img{
                 width: 37px;
                 height: 36px;
@@ -149,10 +149,10 @@
             }
         }
         & .swiper-button-prev-unique1{
-            top: -3px;
+            top: 0px;
         }
         & .swiper-button-next-unique1{
-            top: -3px;
+            top: 0px;
         }
     }
     & .toprated-games {
@@ -350,7 +350,7 @@
                             justify-content: center;
                             align-items: center;
                             opacity: 0;
-                            padding: 15px;
+                            padding: 0px;
                             & .overlayTxt{
                                 color: #FFF;
                                 text-align: center;
@@ -435,7 +435,7 @@
     & .swiper-button-next-unique {
         border-radius: 8px;
         position: absolute;
-        top: -86px;
+        top: -55px;
         right: 15px;
         background: #161f2c;
         border-radius: 8px;
@@ -447,7 +447,7 @@
     & .swiper-button-prev-unique {
         border-radius: 8px;
         position: absolute;       
-        top: -86px;
+        top: -55px;
         right: 45px;
         background: #161f2c;
         border-radius: 8px;
@@ -2678,7 +2678,7 @@
         &::before {
         }
         & .toprated-games {
-            padding: 22px 40px 28px 40px ;
+            // padding: 22px 40px 28px 40px ;
             & .heading {
             }
             & .viewallMain {
@@ -3133,7 +3133,7 @@
         &::before {
         }
         & .toprated-games {
-            padding: 22px 30px 28px 30px ;
+            // padding: 22px 30px 28px 30px ;
             & .heading {
             }
             & .shadowball {
@@ -3727,8 +3727,8 @@
                     & .games-card-title {
                     }
                     & .play-btn {
-                        margin-top: 19px;
-                        padding: 10px 15px;
+                        // margin-top: 19px;
+                        // padding: 10px 15px;
                         font-size: 11px;
                     }
                 }
