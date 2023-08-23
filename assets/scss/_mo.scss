@@ -227,17 +227,18 @@
             }
             & .sportsSwiper{
                 & .sports-card{
-                    &.active{
+                    &:hover{
                         border: 1px solid #CF0;
+                        box-shadow: 0px 4px 10px 0px rgba(204, 255, 0, 0.10) inset;
                     }
                     aspect-ratio:  1/1.25;
                     // height: 205px !important;
                     border-radius: 12px;
                     background: #161A25;
-                    box-shadow: 0px 4px 10px 0px rgba(204, 255, 0, 0.10) inset;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
                     & .sportsIcon{
                         width: 47px;
                         height: 47px;
@@ -259,7 +260,7 @@
             }
             & .mySwiper {
                 position: unset;
-                &.casinoCard {
+                &.casinoCard1 {
                     & .games-img{
                         &::after{
                             display: none !important;
@@ -281,6 +282,7 @@
                         // height: 205px;
                         aspect-ratio: 1/1.35;
                         position: relative;
+                        cursor: pointer;
                         z-index: 1;
                         &::after{
                             content: "";
