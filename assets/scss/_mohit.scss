@@ -581,6 +581,79 @@
         }
     }
 }
+// profile tab page end 
+
+// bank modal start 
+.bankModal {
+    & .bankdialog {
+        max-width: 672px;
+        & .bankContent {
+            background-color: #161A25;
+            padding:20px 42px 60px;
+            & .bankHeader {
+                & .btn-close {
+                    background: none;
+                    height: 13px;
+                    width: 13px;
+                }
+                & .bankTab {
+                    gap: 9px;
+                    & .bankBtn {
+                        border-radius: 5px;
+                        background: #0D131C;
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: normal;
+                        padding: 7px 42px;
+                        &.active {
+                            border: 0.5px solid #E7FF87;
+                            box-shadow: 0px 4px 20px 0px rgba(204, 255, 0, 0.20) inset;
+                        }
+                        &:hover {
+                            border: 0.5px solid #E7FF87;
+                            box-shadow: 0px 4px 20px 0px rgba(204, 255, 0, 0.20) inset;
+                        }
+                    }
+
+                }
+            }
+            & .banktabContent {
+                padding-top: 27px;
+                & .cryptoTab {
+                    & .cryptotabBtn {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: normal;
+                        background-color: #0D131C;
+                        border-radius: 5px;
+                        transition: all 0.3s ease-in-out;
+                        padding: 9px 25px;
+                        &.active {
+                            background: #D7FF33;
+                            box-shadow: 0px 4px 20px 0px rgba(204, 254, 0, 0.30);
+                            color: #000;
+                        }
+                        &:hover {
+                            background: #D7FF33;
+                            box-shadow: 0px 4px 20px 0px rgba(204, 254, 0, 0.30);
+                            color: #000;
+                        }
+                    }
+                }
+                & .cryptoContent {
+                    padding-top: 50px;
+
+                }
+                & .cryptoHeading {
+                    
+                }
+            }
+        }
+    }
+}
+// bank modal end 
 
 @include media-breakpoint(basic) {
 }

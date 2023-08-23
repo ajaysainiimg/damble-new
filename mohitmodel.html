@@ -81,6 +81,9 @@
         <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#loginregister">
             login register
         </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#bankModal">
+            bank
+        </button>
     </div>
     
 
@@ -1680,6 +1683,57 @@
         </div>
     </div>
     <!-- login & register modal end  -->
+
+    <!-- bank modal start  -->
+    <div class="modal fade bankModal" id="bankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog bankdialog modal-dialog-centered">
+            <div class="modal-content bankContent">
+                <div class="modal-header bankHeader p-0  border-0">
+                    <nav>
+                        <div class="nav nav-tabs border-0 bankTab" id="nav-tab" role="tablist">
+                            <button class="nav-link active bankBtn" id="nav-Deposit-tab" data-bs-toggle="tab" data-bs-target="#nav-Deposit" type="button" role="tab" aria-controls="nav-Deposit" aria-selected="true">Deposit</button>
+                            <button class="nav-link bankBtn" id="nav-Withdraw-tab" data-bs-toggle="tab" data-bs-target="#nav-Withdraw" type="button" role="tab" aria-controls="nav-Withdraw" aria-selected="false">Withdraw</button>
+                            <button class="nav-link bankBtn" id="nav-buycrypto-tab" data-bs-toggle="tab" data-bs-target="#nav-buycrypto" type="button" role="tab" aria-controls="nav-buycrypto" aria-selected="false">Buy Crypto</button>
+                        </div>
+                    </nav>
+                    <div>
+                        <button type="button" class="btn-close p-0 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="tab-content banktabContent" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-Deposit" role="tabpanel" aria-labelledby="nav-Deposit-tab" tabindex="0">
+                            <div class="row pt-2">
+                                <nav class="col-12">
+                                    <div class="nav nav-tabs cryptoTab border-0 justify-content-center" id="nav-tab" role="tablist">
+                                        <button class="nav-link active cryptotabBtn border-0" id="nav-Crypto-tab" data-bs-toggle="tab" data-bs-target="#nav-Crypto" type="button" role="tab" aria-controls="nav-Crypto" aria-selected="true">Crypto</button>
+                                        <button class="nav-link cryptotabBtn border-0" id="nav-Fiat-tab" data-bs-toggle="tab" data-bs-target="#nav-Fiat" type="button" role="tab" aria-controls="nav-Fiat" aria-selected="false">Fiat</button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content col-12 cryptoContent" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-Crypto" role="tabpanel" aria-labelledby="nav-Crypto-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-12 cryptoHeading"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-Fiat" role="tabpanel" aria-labelledby="nav-Fiat-tab" tabindex="0">...</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-Withdraw" role="tabpanel" aria-labelledby="nav-Withdraw-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-buycrypto" role="tabpanel" aria-labelledby="nav-buycrypto-tab" tabindex="0">...</div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- bank modal end  -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
