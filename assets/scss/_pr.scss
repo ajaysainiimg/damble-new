@@ -584,6 +584,16 @@
   .toprated-games-main .swiper-button-prev-unique {
     top: -95px;
   }
+  .main {
+    & .footerSection {
+      padding-bottom: 40px;
+      & .card {
+        & .card-body {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
   .newHeroSection {
@@ -730,6 +740,10 @@
         }
       }
     }
+  }
+  .footerIconWrapper {
+    width: 16.66% !important;
+    margin-bottom: 6px;
   }
 }
 
