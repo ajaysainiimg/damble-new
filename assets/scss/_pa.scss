@@ -897,34 +897,40 @@
         width: 100%;
         filter: blur(0.5px);
         // background: linear-gradient(90deg, rgba(85,120,254,1) 42%, rgba(0,153,10,1) 63%);
-        background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
+        // background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
         top: 0;
         left: 0;
         z-index: -5;
         border-radius: 10px;
     }
     & .topratedgames-tab-content {
-        padding: 13px 15px;
+        // padding: 13px 15px;
+        margin-bottom: 20px;
         border-radius: 10px;
-        background: #161F2C;
+        // background: #161F2C;
         & .toprated-link {
-            font-size: 13px;
             color: #93ACD3;
-            border-radius: 7px;
-            padding: 5px 12px;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
             transition: all 0.3s ease-in-out;
+            background-color: transparent !important;
+            border: none !important;
             &:hover {
-                color: $white;
-                border-radius: 7px;
-                border: 0.4px solid #56667F;
-                background: #252E39;
+                // color: $white;
+                // border-radius: 7px;
+                // border: 0.4px solid #56667F;
+                // background: #252E39;
             }
         }
         & .toprated-link.active {
             color: $white;
-            border-radius: 7px;
-            border: 0.4px solid #acadae91;
-            background: #252E39;
+            // border-radius: 7px;
+            // border: 0.4px solid #acadae91;
+            // background: #252E39;
         }
         & .search-bar-group {
             border: 1px solid #93ACD3;
@@ -940,10 +946,6 @@
         }
     } 
 }
-
-
-
-
 // afflitiate dashboard start
 .sidebar{
     & .sidebar-menu{
@@ -3522,6 +3524,102 @@
                 width: 22px;
             }
         }
+}
+
+
+// ****************************************** UPDATED DAMBLE ***********************************************//
+
+.sponsorshipPage{
+    margin: 119px 130px 50px 108px;
+    & .sponsorshipPageFluid{
+        & .sponsorCard{
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+            & .box{
+                padding: 38px 42px;
+                & .sponsorName{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 35px;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                & .field{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 25px;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    // margin-bottom: 50px;
+                    margin-bottom: 66px;
+                }
+                & .discription{
+                    color: #B2B6C5;
+                    font-family: 'Montserrat';
+                    // font-size: 23px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .bottom{
+                    margin-top: 55px;
+                    & .oneSection{
+                        & img{
+                            width: 37px;
+                            height: 36px;
+                        }
+                        & span{
+                            &.punch{
+                                & img{
+                                    width: 40.838px;
+                                    margin-left: 20px;
+                                }
+                            }
+                            & img{
+                                width: 76.838px;
+                                height: 39.931px;
+                                margin-left: 20px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .readMoreBtn{
+                        border-radius: 6px;
+                        background: #1F2330;
+                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+                        color: #B2B6C5;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        width: 135px;
+                        height: 51px;
+                        border: none;
+                    }
+                }
+            }
+            & .sponsorImg{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
 
 
