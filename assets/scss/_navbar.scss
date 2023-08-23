@@ -200,7 +200,7 @@
     .main{
         & .mainContaint {
             & .homepage{
-                padding: 40px 52px 0px 52px;
+                padding: 0px 52px 0px 52px;
             }
             & .affiliatePage{
                 padding: 65px 21px 0px 21px;
@@ -242,7 +242,7 @@
         & .mainContaint {
             margin-left: 0px;
             & .homepage{
-                padding: 37px 52px 0px 52px;
+                padding: 0px 52px 0px 52px;
             }
             & .affiliatePage{
                 padding: 50px 21px 50px 21px;
@@ -264,8 +264,9 @@
     }
     .main{
         & .mainContaint {
+            margin-top: 60px;
             & .homepage{
-                padding: 35px 47px 0px 47px;
+                padding: 0px 47px 0px 47px;
             }
             
         }
@@ -286,7 +287,7 @@
         & .mainContaint {
             // margin-top: px;
             & .homepage{
-                padding: 25px 15px 0px 15px;
+                padding: 0px 15px 0px 15px;
             }
         }
         & .footerSection {
