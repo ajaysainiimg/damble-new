@@ -170,7 +170,7 @@
 
         // new margin 
         margin-left: 300px;
-        margin-top: 60px;
+        margin-top: 88px;
         padding: 10px;
         & .homepage{
             padding-left:104px ;
@@ -277,6 +277,20 @@
         }
     }
 } 
+@include media-breakpoint-down(md) {
+    .main{
+        & .mainContaint {
+            margin-top: 58px;
+            & .homepage{
+            }
+            
+        }
+        & .footerSection {
+            & .helpSection, & .footerLinks, & .accordionFooter {
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {
     .sidebar{
