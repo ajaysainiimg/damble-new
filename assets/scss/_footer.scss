@@ -117,11 +117,21 @@
         border: 1px solid #FFF;
         background: linear-gradient(90deg, rgba(22, 31, 44, 0.70) 0%, rgba(22, 31, 44, 0.70) 82.29%);
         & .card-body {
-            border-radius: 15px;
-            border: 1px solid #ffffff59;
+            padding: 0;
+            margin-top: 126px;
+            margin-bottom: 74px;
+            & .txt{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                text-transform: uppercase;
+            }
             & .logos{
-                width: 100%;
-                height: 100%;
+                width: 33px;
+                height: 33px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -145,6 +155,7 @@
             & .card-body {
                 & .logos {
                     height: 45px;
+                    margin: auto;
                     // max-width: 45px;
                 }
                 & .ragisterbonus {
@@ -156,18 +167,26 @@
                     }
                 }
                 & .ragisterBtn {
-                    background-color: #00990A;
-                    border-radius: 7px;
-                    height: 39px;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 15px;
-                    transition: all ease-in-out 0.3s;
+                    border-radius: 5px;
+                    background: #D3F93A;
+                    box-shadow: 0px 4px 20px 0px #D2F73A inset, 0px 4px 40px 0px rgba(211, 249, 58, 0.20);
+                    color: #000;
+                    text-align: center;
+                    font-family: 'Montserrat';
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;width: 100px;
+                    height: 28.935px;
                     &:hover{
-                        background-color: darken(#00990A, 5);
+                        background-color: lighten(#D3F93A, 5);
                     }
                     &.ragisterBtn1 {
-                        background-color: #713FE3;
+                        border-radius: 5px;
+                        border: 4px solid rgba(76, 89, 218, 0.24);
+                        background: #6F64E4;
+                        box-shadow: 0px 0px 20px 0px #4F5BD5 inset, 0px 4px 20px 0px rgba(79, 91, 213, 0.20);
                         &:hover {
                             background: darken(#713FE3, 5);
                         }
@@ -218,25 +237,60 @@
 .footerLinks{
     margin-top: 125px;
     background: #161F2C;
-    & .linksUl{
-        & .linkLiHead{
-            color: #FFF;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-bottom: 41px;
+    &.footerFluid{
+        & .footerLogo{
+            height: 37px;
+            margin-bottom: 42px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
         }
-        & .linkLi{
-            color: #93ACD3;
-            font-family: 'Montserrat';
-            font-size: 16px;
+        & .para{
+            color: #B2B6C5;
+            font-family: 'Inter';
+            font-size: 13px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             line-height: normal;
-            margin-bottom:10px;
-            display: inline-flex;
+        }
+        & .midLogo{
+            & .gc{
+                width: 100.669px;
+                height: 48.707px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .plus{
+                width: 53.305px;
+                height: 50px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        & .linksUl{
+            & .linkLiHead{
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+            & .linkLi{
+                color: #B2B6C5;
+                font-family: 'Montserrat';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
         }
     }
 }
