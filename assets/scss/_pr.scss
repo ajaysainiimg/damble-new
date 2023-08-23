@@ -195,6 +195,72 @@
   }
 }
 
+.dambleUniverseSection {
+  & .dambleUniverseInner {
+    & .dambHeading {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      & img {
+        height: 33px;
+        width: 33px;
+      }
+    }
+    & .dambleUniverseNext {
+      background: #161f2c;
+    border-radius: 8px;
+    height: 31px;
+    width: 30px;
+    }
+    & .dambleUniversePrev {
+      background: #161f2c;
+    border-radius: 8px;
+    height: 31px;
+    width: 30px;
+    }
+  }
+}
+
+.depositSection {
+  & .depositInner {
+    border-radius: 12px;
+    background: #161A25;
+    padding: 30px;
+    & .depositHeading {
+      color: #FFF;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    & .depositImg {
+      height: 27px;
+      width: 100%;
+      object-fit: contain;
+    }
+    & .depositAnchor {
+      padding: 14px 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      border-radius: 11px;
+      background: #CF0;
+      box-shadow: 0px 4px 20px 20px #CF0 inset, 0px 4px 20px 0px rgba(211, 249, 58, 0.50), 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    }
+  }
+}
+
 @media (max-width: 1399px) {
   .newHeroSection {
     & .sectionInner {
@@ -596,5 +662,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .depositBr {
+    display: block !important;
   }
 }
