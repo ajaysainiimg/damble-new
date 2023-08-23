@@ -100,7 +100,8 @@
 // }
 
 .footerrSection {
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
+    padding-bottom: 74px;
     & .borderd {
         border-top: 1px solid #00990A;
         &.smBorderd {
@@ -228,9 +229,13 @@
         }
     }
     & .copyright {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 21px;
+        color: #B2B6C5;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 }
 
