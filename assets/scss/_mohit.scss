@@ -2,15 +2,32 @@
 .loginModal {
     & .logindialog {
         height: 90%;
-        max-width: 90%;
+        // max-width: 90%;
         & .loginContent {
-            // background-color: #0D131C;
+            background-color: #0D131C;
+            & .header {
+                & .logoimg {
+                    height: 20px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
+            }
             & .btnClose {
                 background: none;
                 height: 18px;
                 width: 18px;
                 right: 15px;
                 top: 15px;
+                opacity: 0.7;
+                z-index: 6;
+                &:hover{
+                    opacity: 1;
+                }
+                &.smbtnClose {
+                    height: 13px;
+                    width: 13px;
+                }
             }
             & .loginformMain {
                 background: #161A25;
@@ -28,16 +45,113 @@
                             color: #E8FE90;
                         }
                     }
+                    & .loginbutton {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 2;
+                        & .directLogin {
+                            color: #B2B6C5;
+                            text-align: center;
+                            font-family: Montserrat;
+                            font-size: 10px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            background: #161A25;
+                            padding: 0px 13px;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 0.7px;
+                            background: #CF0;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: -1;
+                        }
+                    }
+                    & .link{
+                        border-radius: 3px;
+                        border: 0.6px solid #B2B6C5;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & img{
+                            width: 14px;
+                            height: 14px;
+                            object-fit: contain;
+                        }
+                    }
                 }
                 & .tabdata {
                     padding-top: 67px;
                 }
             }
             & .loginImg  {
-                background:url(../Img/sidebar/loginpage.png);
-                background-position: center bottom;
-                background-size: cover;
-
+                // background:url(../Img/sidebar/loginpage.png);
+                // background-position:  bottom right;
+                background-color: #161A25;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                // background-image:url(../Img/login_bg1.svg);
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    background-image:url(../Img/loginBgShap.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: bottom right;
+                    z-index: 1;
+                }
+                &::before{
+                    content: '';
+                    // background: linear-gradient(180deg, rgba($black, 0.8) 5%, rgba($black, 0) 100%);
+                    background-color: rgba(#0D131C, 0.9);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    z-index: 2;
+                }
+                & .innerimages {
+                    position: relative;
+                    z-index: 5;
+                    & .mainHeading {
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                    & .subheading {
+                        color: #B2B6C5;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                    & .logo {
+                        height: 43.048px;
+                    }
+                }
             }
         }
     }
@@ -78,5 +192,302 @@
             font-weight: 500;
         }
     }
+    & .form-check {
+        & .form-check-label{
+            cursor: pointer;
+        }
+        & .form-check-input {
+            min-width: 15px;
+            min-height: 15px;
+            border-radius: 15px;
+            border: 0px;
+            position: relative;
+            background: rgba($white, 0.9);
+            &::before{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-position: center;
+                background: url(../img/newIcon/correct.svg) no-repeat center;
+                transition: all 0.3s ease-in-out;
+                opacity: 0;
+            }
+            &:checked{
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 // login & resister modal end 
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {
+}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .loginModal {
+        & .logindialog {
+            & .loginContent {
+                & .header {
+                    & .logoimg {
+                        & img {
+                        }
+                    }
+                }
+                & .btnClose {
+                    &:hover{
+                    }
+                    &.smbtnClose {
+                    }
+                }
+                & .loginformMain {
+                    & .logindata {
+                        padding: 35px 22px 36px;
+                        & .loginBtn {
+                            padding: 13px 28px;
+                        }
+                        & .loginbutton {
+                            & .directLogin {
+                            }
+                            &::before{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                    & .tabdata {
+                        padding-top: 35px;
+                    }
+                }
+                & .loginImg  {
+                    &::after{
+                    }
+                    &::before{
+                    }
+                    & .innerimages {
+                        & .mainHeading {
+                            font-size: 25px;
+                        }
+                        & .subheading {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .loginModal {
+        & .logindialog {
+            & .loginContent {
+                & .header {
+                    & .logoimg {
+                        & img {
+                        }
+                    }
+                }
+                & .btnClose {
+                    &:hover{
+                    }
+                    &.smbtnClose {
+                    }
+                }
+                & .loginformMain {
+                    & .logindata {
+                        padding: 35px 22px 36px;
+                        & .loginBtn {
+                            padding: 13px 28px;
+                        }
+                        & .loginbutton {
+                            & .directLogin {
+                            }
+                            &::before{
+                            }
+                        }
+                        & .link{
+                            & img{
+                            }
+                        }
+                    }
+                    & .tabdata {
+                        padding-top: 35px;
+                    }
+                }
+                & .loginImg  {
+                    &::after{
+                    }
+                    &::before{
+                    }
+                    & .innerimages {
+                        & .mainHeading {
+                            font-size: 25px;
+                        }
+                        & .subheading {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .inputdata {
+    //     & .inputLabel {
+    //         font-size: 14px;
+    //         & span {
+    //             font-size: 14px;
+    //         }
+    //     }
+    //     & .inputlogin { 
+    //         font-size: 10px;
+    //         height: 32px;
+    //         &::placeholder {
+    //             font-size: 10px;
+    //         }
+    //     }
+    //     &.passwordInput {
+    //         padding-top: 33px;
+    //     }
+    //     &.forgotmain {
+    //         // padding: 13px 0 10px 0;
+    //         & .forgotPassword {
+    //             font-size: 10px;
+    //         }
+    //     }
+    //     & .form-check {
+    //         & .form-check-label{
+    //             cursor: pointer;
+    //         }
+    //         & .form-check-input {
+    //             &::before{
+    //             }
+    //             &:checked{
+    //                 &::before{
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@include media-breakpoint-down(sm) {
+    .loginModal {
+        & .logindialog {
+            & .loginContent {
+                & .header {
+                    & .logoimg {
+                        & img {
+                        }
+                    }
+                }
+                & .btnClose {
+                    &:hover{
+                    }
+                    &.smbtnClose {
+                    }
+                }
+                & .loginformMain {
+                    & .logindata {
+                        padding: 30px 16px;
+                        & .loginBtn {
+                            padding: 10px 28px;
+                            border-radius: 6px;
+                            font-size: 12px;
+                        }
+                        & .loginbutton {
+                            & .directLogin {
+                            }
+                            &::before{
+                            }
+                        }
+                        & .link{
+                            width: 27px;
+                            height: 27px;
+                            & img{
+                                width: 8px;
+                                height: 8px;
+                            }
+                        }
+                    }
+                    & .tabdata {
+                        padding-top: 35px;
+                    }
+                }
+                & .loginImg  {
+                    &::after{
+                    }
+                    &::before{
+                    }
+                    & .innerimages {
+                        & .mainHeading {
+                            font-size: 20px;
+                        }
+                        & .subheading {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inputdata {
+        & .inputLabel {
+            font-size: 12px;
+            & span {
+                font-size: 12px;
+            }
+        }
+        & .inputlogin { 
+            font-size: 10px;
+            height: 32px;
+            &::placeholder {
+                font-size: 10px;
+            }
+        }
+        &.passwordInput {
+            padding-top: 20px;
+        }
+        &.forgotmain {
+            // padding: 13px 0 10px 0;
+            & .forgotPassword {
+                font-size: 10px;
+            }
+        }
+        & .form-check {
+            & .form-check-label{
+                cursor: pointer;
+            }
+            & .form-check-input {
+                &::before{
+                }
+                &:checked{
+                    &::before{
+                    }
+                }
+            }
+        }
+    }
+}
