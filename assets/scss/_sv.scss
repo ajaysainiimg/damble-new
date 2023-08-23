@@ -11671,7 +11671,7 @@
     height: 88px;
     z-index: 150;
     border: 1px solid $black;
-    padding: 0px 110px 0px 28px;
+    padding: 0px 110px 0px 28px !important;
     & .logoNav{
         height: 24px;
     }
@@ -11765,15 +11765,17 @@
                     font-weight:700;
                     padding: 4px 10px;
                     transition: all 0.3s ease-in-out;
-                    &:hover{
-                    background: rgb(160, 196, 19);
+                    // &:hover{
+                    // background: rgb(160, 196, 19);
                 
                         
-                    }
+                    // }
                     &.lockBtn{
                         padding: 4px 20px;
-                        background:2FFBF;
-                        
+                        // background:2FFBF;
+                    }
+                    &.disabled {
+                        opacity: 0.5;
                     }
                 }
             }
@@ -11835,11 +11837,11 @@
             & .dropdown-item{
                 color: $white;
                 font-size: 13px;
-                opacity: 0.7;
-                &:hover{
-                    background-color: transparent !important;
-                    opacity: 1;
-                }
+                // opacity: 0.7;
+                // &:hover{
+                //     background-color: transparent !important;
+                //     opacity: 1;
+                // }
 
             }
         }
@@ -11850,6 +11852,53 @@
         width: 34.154px;
         height: 34.502px;
         padding: 10px;
+    }
+    & .accountDrop {
+        // width: 220px;
+        background: #13161F !important;
+        padding: 20px 10px;
+        transform: translateX(-50%);
+        & .profileBtn {
+            opacity: 1 !important;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: 600;
+            background: #161A25;
+            gap: 15px;
+            padding: 12px 0 12px 17px;
+            border-radius: 9px;
+            border: 1px solid #161A25;
+            transition: all 0.3s ease-in-out;
+            & .accountbtnIcon {
+                height: 21px;
+                width:21px;
+                & img {
+                    filter: grayscale(1);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:hover {
+                background: #161A25 !important;
+                border-color: #CF0;
+                & .accountbtnIcon {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+            &.active {
+                background: #161A25 !important;
+                border-color: #CF0;
+                & .accountbtnIcon {
+                    & img {
+                        filter: none;
+                    }
+                }
+            }
+        }
+        & .accountContent {
+            padding-top: 12px;
+        }
     }
 }
 
@@ -11958,7 +12007,7 @@
 
 @include media-breakpoint-down(xl) {
     .navbar{
-        padding: 0px 86px 0px 28px;
+        padding: 0px 86px 0px 28px !important;
         & .logoNav{
           
         }
@@ -12047,7 +12096,7 @@
 
 @include media-breakpoint-down(lg) {
     .navbar{
-        padding: 0px 30px 0px 28px;
+        padding: 0px 30px 0px 28px !important;
         
         & .logoNav{
           
@@ -12139,7 +12188,7 @@
 @include media-breakpoint-down(md) {
     .navbar{
         height: 58px;
-        padding: 0px 30px 0px 28px;
+        padding: 0px 30px 0px 28px !important;
         & .logoNav{
           height: 15px;
         }
@@ -12231,7 +12280,7 @@
 
 @include media-breakpoint-down(sm) {
     .navbar{
-        padding: 0px 11px 0px 11px;
+        padding: 0px 11px 0px 11px !important;
         
         & .logoNav{
           
