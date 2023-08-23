@@ -257,14 +257,6 @@
                     }
                 }
             }
-            &:not(.collapsed) {
-                border-color: #CF0;
-                & .accounttabIcon {
-                    & img {
-                        filter: none;
-                    }
-                }
-            }
             &:hover {
                 border-color: #CF0;
                 & .accounttabIcon {
@@ -1025,6 +1017,14 @@
                 &.active {
                     & .accounttabIcon {
                         & img {
+                        }
+                    }
+                }
+                &:not(.collapsed) {
+                    border-color: #CF0;
+                    & .accounttabIcon {
+                        & img {
+                            filter: none;
                         }
                     }
                 }
