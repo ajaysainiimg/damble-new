@@ -3530,7 +3530,7 @@
 // ****************************************** UPDATED DAMBLE ***********************************************//
 
 .sponsorshipPage{
-    margin: 119px 130px 50px 108px;
+    margin: 50px 70px;
     & .sponsorshipPageFluid{
         & .sponsorCard{
             border-radius: 9px;
@@ -5514,20 +5514,27 @@
 
     
     .sponsorshipPage{
-        margin: 119px 80px 50px 80px;
+        margin: 30px 40px;
         & .sponsorshipPageFluid{
             & .sponsorCard{
                 & .box{
                     padding: 25px 20px;
                     & .sponsorName{
+                        font-size: 24px;
+                        margin-bottom: 10px;
                     }
                     & .field{
+                        font-size: 16px;
+                        margin-bottom: 25px;
                     }
                     & .discription{
+                        font-size: 13px;
                     }
                     & .bottom{
                         & .oneSection{
                             & img{
+                                width: 32px;
+                                height: 32px;
                             }
                             & span{
                                 &.punch{
@@ -5535,10 +5542,16 @@
                                     }
                                 }
                                 & img{
+                                    width: 73.838px;
+                                    height: 36.931px;
+                                    margin-left: 15px;
                                 }
                             }
                         }
                         & .readMoreBtn{
+                            width: 130px;
+                            height: 48px;
+                            font-size: 14px;
                         }
                     }
                 }
