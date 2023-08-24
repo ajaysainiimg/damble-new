@@ -589,7 +589,7 @@
         max-width: 672px;
         & .bankContent {
             background-color: #161A25;
-            padding:20px 42px 60px;
+            padding:20px 42px 45px;
             & .bankHeader {
                 & .btn-close {
                     background: none;
@@ -643,13 +643,349 @@
                     }
                 }
                 & .cryptoContent {
-                    padding-top: 50px;
-
+                    padding-top: 40px;
                 }
                 & .cryptoHeading {
-                    
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    color: #FFFFFF;
                 }
+                & .usdtBtn {
+                    gap: 6px;
+                    color: #FFF;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 5px;
+                    background: #252E39;
+                    padding: 5px 10px;
+                    & .usdtIcon {
+                        width: 13px;
+                        height: 11px;
+                    }
+                }
+                & .btcdropDown {
+                    & .dropDownBtn {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 800;
+                        line-height: normal;
+                        border-radius: 5px;
+                        background: #0D131C;
+                        padding: 7px 14px;
+                        border: 1px solid #0D131C;
+                        &.network {
+                            padding: 11px 14px;
+                        }
+                        & .dropDownBtnInner {
+                            font-size: 20px;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 14px;
+                            height: 15px;
+                            width: 8px;
+                            background: url(../Img/sidebar/rightarrow.png) no-repeat;
+                            background-position: center;
+                            background-size:cover;
+                            border: none;
+                        }
+                        &.buycryptoTab {
+                            &::after {
+                                width: 15px;
+                                height: 8px;
+                                background: url(../Img/sidebar/downarrow.png) no-repeat;
+                                background-position: center;
+                                background-size:cover;
+                            }
+                        }
+                        &.show {
+                            border-color: #CF0;
+                        }
+                        & .bitcoinIcon {
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
+                    & .btcdropmenu {
+                        background-color: #0D131C;
+                        // top: 5px !important;
+                        & .btcInner {
+                            color: #FFF;
+                            font-size: 13px;
+                            font-weight: 600;
+                            line-height: normal;
+                            border-radius: 5px;
+                            background: #0D131C;
+                            padding: 7px 14px;
+                            border: 1px solid #0D131C;
+                            &:hover {
+                                background-color: #161A25;
+                            }
+                            & .selectIcon {
+                                width: 23px;
+                                height: 23px;
+                            }
+                            
+                        }
+                    }
+                }
+                & .bankmodalsubheading {
+                    color: #FFF;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                & .bonusTitle {
+                    color: #FFF;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-top: 13px;
+                    & .infoImg {
+                        height: 11px;
+                        width: 11px;
+                    }
+                }
+                & .depositCard {
+                    & .qrImg {
+                        // aspect-ratio: 5/5;
+                        height: 130px;
+                        width: 130px;
+                    }
+                    & .depositAddress {
+                        color: #B2B6C5;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    & .depositcardTitle {
+                        color: #B2B6C5;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                        & span {
+                            color: #FFD700;
+                            font-weight: 700;
+                        }
+                    }
+                    & .copyAddressmain {
+                        border-radius: 5px;
+                        background: #0D131C;
+                        padding: 7px;
+                        & .addressInput {
+                            color: #B2B6C5;
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                      
+                    }
+                    & .infoIcon {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+                & .playbtntwo {
+                    & .playBtnInner {
+                        height: 28px;
+                        font-size: 10px;
+                        padding: 0 10px;
+                    }
+                }
+                & .eurIcon {
+                    height: 19px;
+                    width: 19px;
+                }
+                & .btcValue {
+                    background: #0D131C;
+                    border-radius: 5px;
+                    padding:6px 0;
+                    & .btcLabel {
+                        color: #FFF;
+                        font-size: 10px;
+                        font-weight: 800;
+                        line-height: normal;
+                    }
+                    & .btcInput {
+                        color: #B2B6C5;
+                        font-size: 10px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    // background: #0D131C;
+                    // padding: 11px 12px;
+                    & .btcvalueImg {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+                & .Equal {
+                    color: #FFF;
+                    font-size: 10px;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                & .btnvaluetitle {
+                    color: rgba(255, 255, 255, 0.80);
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-top: 13px;
+                }
+                & .eurdropDown {
+                    & .eurBtn {
+                        color: #FFF;
+                        font-size: 13px;
+                        font-weight: 800;
+                        line-height: normal;
+                        border-radius: 5px;
+                        background: #0D131C;
+                        gap: 5px;
+                        padding: 9px 32px 9px 9px;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 10px;
+                            height: 7px;
+                            width: 13px;
+                            background: url(../Img/sidebar/downarrow.png) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            border: none;
+                        }
+                        &.show {
+                            border-color: #CBFD00;
+                        }
+                        &:active {
+                            border-color: #CBFD00;
+                        }
+                    }
+                    & .eurMenu {
+                        background-color: #13161F;
+                        min-width: 94px;
+                        & .eurBtnInner {
+                            color: #FFF;
+                            font-size: 13px;
+                            font-weight: 600;
+                            line-height: normal;
+                            gap: 7px;
+                            padding: 6px 11px;
+                            &:hover {
+                                background-color: #1A1E2B;
+                            }
+                        }
+                    }
+                }
+                & .eurExtra {
+                    padding: 18px 21px;
+                    border-radius: 5px;
+                    background: #0D131C;
+                    & .eurtitle {
+                        color: #FFF;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: normal;
+                        &.eurtitletwo {
+                            font-weight:500;
+                            color: #CCFF00;
+                        }
+                    }
+                }
+                & .eurCard {
+                    color: #FFF;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: normal;
+                    border-radius: 5px;
+                    background: #0D131C;
+                    padding: 16px 0;
+                    border: 1px solid #0D131C;
+                    &.active {
+                        border-color:  #D7FF33;
+                        box-shadow: 0px 4px 20px 0px rgba(204, 255, 0, 0.10);
+                    }
+                    & .eurCardTitle {
+                        color: #070707;
+                        font-size: 8px;
+                        font-weight: 700;
+                        border-radius: 0px 5px;
+                        background: #CF0;
+                        padding: 2px 11px;
+                        line-height: normal;
+                    }
+                }
+                & .receivingLabel {
+                    color: #FFF;
+                    font-size: 10px;
+                    font-weight: 800;
+                    line-height: normal;
+                    padding-top: 33px;
+                    & .receivingStar {
+                        color: #D3F93A;
+                    }
+                    & .withdrawalStar {
+                        color: #72F236;
+                    }
+                }
+                & .receivingInput {
+                    color: #B2B6C5;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: normal;
+                    border-radius: 5px;
+                    background: #0D131C;
+                    padding: 12px 16px;
+                    &::placeholder {
+                        color: #B2B6C5;
+                        font-size: 10px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+                & .networkFee {
+                    color: #FFF;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .inputdata {
+                    & .forgotPassword {
+                        color: #B2B6C5;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                    & a {
+                        color: #B2B6C5;
+                    }
+                }
+                
             }
+        }
+    }
+}
+.disclaimerCard {
+    border-radius: 9px;
+    background: #161A25;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.30);
+    padding:20px;
+    & .disclaimerheading {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+        &.disclaimerDetail {
+            font-size: 14px;
+            color: #B2B6C5;
         }
     }
 }
@@ -667,7 +1003,6 @@
 
 @include media-breakpoint-up(xxl) {
 }
-
 
 @include media-breakpoint-down(xxl) {
 }
@@ -1371,7 +1706,6 @@
             }
         }
     }
-
     .accountTab {
         padding: 36px 11px 9px ;
         & .tabMain {
@@ -1557,6 +1891,159 @@
             & .createpassword {
                 padding: 4px 8px;
                 font-size: 9px;
+            }
+        }
+    }
+
+    // bank modal start 
+    .bankModal {
+        & .bankdialog {
+           max-width: 95%;
+            & .bankContent {
+                & .bankHeader {
+                    & .btn-close {
+                    }
+                    & .bankTab {
+                        & .bankBtn {
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                & .banktabContent {
+                    & .cryptoTab {
+                        & .cryptotabBtn {
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                    & .cryptoContent {
+                    }
+                    & .cryptoHeading {
+                    }
+                    & .usdtBtn {
+                        & .usdtIcon {
+                        }
+                    }
+                    & .btcdropDown {
+                        & .dropDownBtn {
+                            &.network {
+                            }
+                            & .dropDownBtnInner {
+                            }
+                            &::after {
+                            }
+                            &.buycryptoTab {
+                                &::after {
+                                }
+                            }
+                            &.show {
+                            }
+                            & .bitcoinIcon {
+                            }
+                        }
+                        & .btcdropmenu {
+                            & .btcInner {
+                                &:hover {
+                                }
+                                & .selectIcon {
+                                }
+                                
+                            }
+                        }
+                    }
+                    & .bankmodalsubheading {
+                    }
+                    & .bonusTitle {
+                        & .infoImg {
+                        }
+                    }
+                    & .depositCard {
+                        & .qrImg {
+                        }
+                        & .depositAddress {
+                        }
+                        & .depositcardTitle {
+                            & span {
+                            }
+                        }
+                        & .copyAddressmain {
+                            & .addressInput {
+                            }
+                        }
+                        & .infoIcon {
+                        }
+                    }
+                    & .playbtntwo {
+                        & .playBtnInner {
+                        }
+                    }
+                    & .eurIcon {
+                    }
+                    & .btcValue {
+                        & .btcLabel {
+                        }
+                        & .btcInput {
+                        }
+                        & .btcvalueImg {
+                        }
+                    }
+                    & .Equal {
+                    }
+                    & .btnvaluetitle {
+                    }
+                    & .eurdropDown {
+                        & .eurBtn {
+                            &::after {
+                            }
+                            &.show {
+                            }
+                            &:active {
+                            }
+                        }
+                        & .eurMenu {
+                            & .eurBtnInner {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .eurExtra {
+                        & .eurtitle {
+                            &.eurtitletwo {
+                            }
+                        }
+                    }
+                    & .eurCard {
+                        &.active {
+                        }
+                        & .eurCardTitle {
+                        }
+                    }
+                    & .receivingLabel {
+                        & .receivingStar {
+                        }
+                        & .withdrawalStar {
+                        }
+                    }
+                    & .receivingInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .networkFee {
+                    }
+                    & .inputdata {
+                        & .forgotPassword {
+                        }
+                        & a {
+                        }
+                    }
+                    
+                }
             }
         }
     }

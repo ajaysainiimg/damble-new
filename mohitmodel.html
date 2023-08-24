@@ -1686,7 +1686,7 @@
 
     <!-- bank modal start  -->
     <div class="modal fade bankModal" id="bankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog bankdialog modal-dialog-centered">
+        <div class="modal-dialog bankdialog modal-dialog-centered ">
             <div class="modal-content bankContent">
                 <div class="modal-header bankHeader p-0  border-0">
                     <nav>
@@ -1713,17 +1713,469 @@
                                     </div>
                                 </nav>
                                 <div class="tab-content col-12 cryptoContent" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-Crypto" role="tabpanel" aria-labelledby="nav-Crypto-tab" tabindex="0">
+                                    <div class="tab-pane fade show active pt-2" id="nav-Crypto" role="tabpanel" aria-labelledby="nav-Crypto-tab" tabindex="0">
                                         <div class="row">
-                                            <div class="col-12 cryptoHeading"></div>
+                                            <div class="col-12 cryptoHeading">Deposit currency</div>
+                                            <div class="col-12 pt-2">
+                                                <div class="d-flex align-items-center pt-1 gap-2">
+                                                    <a href="javascript:;" class="usdtBtn d-flex align-items-center justify-content-center text-decoration-none">
+                                                        <span class="usdtIcon d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/usdt.png" alt="usdt" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                        USDT
+                                                    </a>
+                                                    <a href="javascript:;" class="usdtBtn d-flex align-items-center justify-content-center text-decoration-none">
+                                                        <span class="usdtIcon d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/usdt.png" alt="usdt" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                        USDT
+                                                    </a>
+                                                    <a href="javascript:;" class="usdtBtn d-flex align-items-center justify-content-center text-decoration-none">
+                                                        <span class="usdtIcon d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/usdt.png" alt="usdt" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                        USDT
+                                                    </a>
+                                                    <a href="javascript:;" class="usdtBtn d-flex align-items-center justify-content-center text-decoration-none">
+                                                        <span class="usdtIcon d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/usdt.png" alt="usdt" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                        USDT
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-2">
+                                                <div class="dropdown btcdropDown pt-1 w-100">
+                                                    <button class="btn dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="bitcoinIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                        BTC
+                                                    </button>
+                                                    <ul class="dropdown-menu btcdropmenu w-100">
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                                BTC
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                                BTC
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                                BTC
+                                                            </a>
+                                                        </li>s
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-3 bankmodalsubheading">
+                                                Choose Network
+                                            </div>
+                                            <div class="col-12 ">
+                                                <div class="dropdown btcdropDown w-100">
+                                                    <button class="btn fw-bold network dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Segwit
+                                                    </button>
+                                                    <ul class="dropdown-menu btcdropmenu w-100">
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                Segwit
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                Segwit
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 bonusTitle">
+                                                Get extra <span class="fw-bold"> 180% Bonus</span> on minimum of 0.002 BTC deposit 
+                                            </div>
+                                            <div class="col-12 pt-5">
+                                                <div class="row depositCard mx-0">
+                                                    <div class="col-auto">
+                                                        <div class="overflow-hidden rounded-2 qrImg">
+                                                            <img src="assets/Img/sidebar/qrcode.png" alt="qrcode" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="depositAddress">
+                                                            Your Personal BTC Deposit Address
+                                                        </div>
+                                                        <div class="depositcardTitle pt-3">
+                                                            <span>NOTICE:</span> Send only BTC to this address. Coins will be deposited after 2 network confirmations.
+                                                        </div>
+                                                        <div class="pt-2">
+                                                            <div class="input-group copyAddressmain">
+                                                                <input type="text" class="form-control rounded-0 bg-transparent border-0 shadow-none addressInput" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                                <button class="playBtn playbtntwo border-0 rounded-2 position-relative d-flex align-items-center justify-content-center">
+                                                                    <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                                        Copy ADDRESS
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-2">
+                                                            <a href="javascript:;" class="infoIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                                                <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid"> 
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-5">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <!-- <div class="btcValue d-flex align-items-center w-100">
+                                                        <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/coin.png" alt="coin" class="h-100 w-100 img-fluid">
+                                                        </span>
+                                                        $
+                                                    </div> -->
+                                                    <div class="input-group btcValue ">
+                                                        <div class="input-group-text btcLabel bg-transparent border-0" id="basic-addon1">
+                                                            <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                                <img src="assets/Img/sidebar/coin.png" alt="coin" class="h-100 w-100 img-fluid">
+                                                            </span>
+                                                            $
+                                                        </div>
+                                                        <input type="text" class="form-control btcInput shadow-none border-0 bg-transparent" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                    <span class="Equal">=</span>
+                                                    <div class="input-group btcValue ">
+                                                        <div class="input-group-text pe-0 btcLabel bg-transparent border-0" id="basic-addon1">
+                                                            <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                                <img src="assets/Img/sidebar/Bitcoin.png" alt="bitcoin" class="h-100 w-100 img-fluid">
+                                                            </span>
+                                                        </div>
+                                                        <input type="text" class="form-control btcInput shadow-none border-0 bg-transparent" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-center btnvaluetitle">
+                                                The value of BTC may change between now and the time we receive your payment
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="nav-Fiat" role="tabpanel" aria-labelledby="nav-Fiat-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade pb-4" id="nav-Fiat" role="tabpanel" aria-labelledby="nav-Fiat-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="cryptoHeading">Deposit currency</div>
+                                                    <div class="dropdown eurdropDown">
+                                                        <button class="btn eurBtn position-relative d-flex align-items-center dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="d-flex align-items-center justify-content-center rounded-circle eurIcon"> 
+                                                                <img src="assets/Img/sidebar/eur.png" alt="eur" class="h-100 w-100 img-fluid">
+                                                            </span>
+                                                            EUR
+                                                        </button>
+                                                        <ul class="dropdown-menu eurMenu">
+                                                            <li>
+                                                                <a class="dropdown-item eurBtnInner d-flex align-items-center " href="javascript:;">
+                                                                    <span class="eurIcon d-flex align-items-center justify-content-center overflow-hidden rounded-circle">
+                                                                        <img src="assets/Img/sidebar/eur.png" alt="eur" class="h-100 w-100 img-fluid">
+                                                                    </span>
+                                                                    EUR
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item eurBtnInner d-flex align-items-center " href="javascript:;">
+                                                                    <span class="eurIcon d-flex align-items-center justify-content-center overflow-hidden rounded-circle">
+                                                                        <img src="assets/Img/sidebar/eur.png" alt="eur" class="h-100 w-100 img-fluid">
+                                                                    </span>
+                                                                    EUR
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 bankmodalsubheading py-4"> 
+                                                Choose a Payment Method
+                                            </div>
+                                            <div class="col-12 ">
+                                                <div class="dropdown pt-2 btcdropDown w-100">
+                                                    <button class="btn py-3 fw-bold network dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        AstroPay
+                                                    </button>
+                                                    <ul class="dropdown-menu btcdropmenu w-100">
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                AstroPay
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                AstroPay
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 bankmodalsubheading py-2 fw-normal"> 
+                                                1 - 1000 AUD
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="eurExtra d-flex align-items-center justify-content-between">
+                                                    <div class="eurtitle">EUR 100</div>
+                                                    <div class="eurtitletwo eurtitle">+EUR 180.0 Extra!</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-3">
+                                                <div class="bonusTitle d-flex align-items-center">
+                                                    Get extra <span class="fw-bold"> 180% Bonus</span> on minimum of 0.002 BTC deposit 
+                                                    <a href="javascript:;" class="d-flex align-items-center justify-content-center ms-3 rounded-circle infoImg">
+                                                        <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="w-100">
+                                                            <a href="javascript:;" class="eurCard position-relative w-100a d-flex align-items-center justify-content-center text-center text-decoration-none">
+                                                                EUR 1
+                                                                <!-- <div class="eurCardTitle position-absolute end-0 top-0">
+                                                                    +180%
+                                                                </div> -->
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="w-100">
+                                                            <a href="javascript:;" class="eurCard active position-relative w-100a d-flex align-items-center justify-content-center text-center text-decoration-none">
+                                                                EUR 100
+                                                                <div class="eurCardTitle position-absolute end-0 top-0">
+                                                                    +180%
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="w-100">
+                                                            <a href="javascript:;" class="eurCard position-relative w-100a d-flex align-items-center justify-content-center text-center text-decoration-none">
+                                                                EUR 1000
+                                                                <div class="eurCardTitle position-absolute end-0 top-0">
+                                                                    +180%
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 bankmodalsubheading pt-3 pb-2 fw-normal"> 
+                                                Bank Country
+                                            </div>
+                                            <div class="col-12 ">
+                                                <div class="dropdown pt-2 btcdropDown w-100">
+                                                    <button class="btn p3 fw-bold network dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Netherlands 
+                                                    </button>
+                                                    <ul class="dropdown-menu btcdropmenu w-100">
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                Netherlands 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                                Netherlands 
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-5 col-8 mx-auto pt-4">
+                                                <a href="javascript:;" class="playBtn playbtntwo position-relative d-flex align-items-center justify-content-center">
+                                                    <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                        Deposit Via astropay
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-Withdraw" role="tabpanel" aria-labelledby="nav-Withdraw-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="nav-buycrypto" role="tabpanel" aria-labelledby="nav-buycrypto-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-Withdraw" role="tabpanel" aria-labelledby="nav-Withdraw-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 cryptoHeading">currency</div>
+                                <div class="col-12 py-2">
+                                    <div class="dropdown btcdropDown pt-1 w-100">
+                                        <button class="btn dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="bitcoinIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                            BTC
+                                        </button>
+                                        <ul class="dropdown-menu btcdropmenu w-100">
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>s
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-4 bankmodalsubheading fw-semibold">
+                                    Please enter the Bitcoin wallet address you wish to receive the funds on. Once confirmed, the withdrawal is usually processed within a few minutes.
+                                </div>
+                                <div class="col-12">
+                                    <label for="receiving" class="receivingLabel pt-0"> RECEIVING BTC ADDRESS <span class="receivingStar">*</span></label>
+                                    <input type="text" class="form-control receivingInput shadow-none border-0 mt-2" placeholder="Paste your Bitcoin Wallet Address here">
+                                </div>
+                                <div class="col-12 pb-2">
+                                    <div class="receivingLabel "> WITHDRAWAL AMOUNT <span class="withdrawalStar">*</span></div>
+                                    <div class="row gx-1 align-items-center gap-1 pt-3">
+                                        <!-- <div class="btcValue d-flex align-items-center w-100">
+                                            <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                <img src="assets/Img/sidebar/coin.png" alt="coin" class="h-100 w-100 img-fluid">
+                                            </span>
+                                            $
+                                        </div> -->
+                                        <div class="col">
+                                            <div class="input-group btcValue ">
+                                                <div class="input-group-text btcLabel bg-transparent border-0" id="basic-addon1">
+                                                    <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                        <img src="assets/Img/sidebar/coin.png" alt="coin" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                    $
+                                                </div>
+                                                <input type="text" class="form-control btcInput shadow-none border-0 bg-transparent" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <span class="Equal col-auto">=</span>
+                                        <div class="col">
+                                            <div class="input-group btcValue ">
+                                                <div class="input-group-text pe-0 btcLabel bg-transparent border-0" id="basic-addon1">
+                                                    <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">
+                                                        <img src="assets/Img/sidebar/Bitcoin.png" alt="bitcoin" class="h-100 w-100 img-fluid">
+                                                    </span>
+                                                </div>
+                                                <input type="text" class="form-control btcInput shadow-none border-0 bg-transparent" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ms-3">
+                                            <a href="javascript:;" class="playBtn playbtntwo position-relative d-flex align-items-center justify-content-center">
+                                                <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                    REQUEST WITHDRAWAL
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="networkFee pt-2">Network Fee: $0.61</div>
+                                </div>
+                                <div class="col-12 pt-3 btnvaluetitle">
+                                    *You will receive the specified Bitcoin amount to your withdrawal address
+                                </div>
+                                <div class="col-12 pt-1 btnvaluetitle">
+                                    *The value subtracted from your balance may vary between now and the time we process your withdrawal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-buycrypto" role="tabpanel" aria-labelledby="nav-buycrypto-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 cryptoHeading">currency</div>
+                                <div class="col-12 pt-2 pb-1">
+                                    <div class="dropdown btcdropDown pt-1 w-100">
+                                        <button class="btn dropdown py-3 gap-2 buycryptoTab dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="bitcoinIcon d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                            <span class="dropDownBtnInner">BTC</span>
+                                            <span class="fw-semibold"> (Bitcoin)</span>
+                                        </button>
+                                        <ul class="dropdown-menu btcdropmenu w-100">
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    <span class="selectIcon me-3 d-flex align-items-center justify-content-center rounded-circle overflow-hidden"><img src="assets/Img/sidebar/Bitcoin.png" alt="Bitcoin" class="h-100 w-100 img-fluid"></span>
+                                                    BTC
+                                                </a>
+                                            </li>s
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 cryptoHeading pt-3">Network</div>
+                                <div class="col-12 pt-3">
+                                    <div class="dropdown btcdropDown w-100">
+                                        <button class="btn fw-bold py-3 buycryptoTab network dropdown-toggle dropDownBtn position-relative d-flex align-items-center w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Bitcoin Mainnet
+                                        </button>
+                                        <ul class="dropdown-menu btcdropmenu w-100">
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    Bitcoin Mainnet
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item btcInner d-flex align-items-center" href="javascript:;">
+                                                    Bitcoin Mainnet
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-12 cryptoHeading py-4">Deposit Address</div>
+                                <div class="col-12 depositCard pb-3">
+                                    <div class="input-group copyAddressmain">
+                                        <input type="text" class="form-control rounded-0 bg-transparent border-0 shadow-none addressInput" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <button class="playBtn playbtntwo border-0 rounded-2 position-relative d-flex align-items-center justify-content-center">
+                                            <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                Copy ADDRESS
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-12 py-3 inputdata">
+                                    <div class="form-check ">
+                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="buycrypto" checked="">
+                                        <label class="form-check-label forgotPassword" for="buycrypto">
+                                            I have read and agree to the <a href="javascript:;" class=""data-bs-toggle="modal" data-bs-target="#disclaimerModal">disclaimer.</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 pt-3 mx-auto">
+                                    <a href="javascript:;" class="playBtn position-relative d-flex align-items-center justify-content-center">
+                                        <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                            Buy BTC
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 d-none">
+                                    <div class="disclaimerCard">
+                                        <div class="disclaimerheading">Disclaimer:</div>
+                                        <div class="disclaimerheading disclaimerDetail pt-4">ou will be redirected to Onramper payment service provided by third-party. Please make sure the deposit address for the purchase matches the deposit address you copied above.</div>
+                                        <div class="disclaimerheading disclaimerDetail pt-1">Damble is not responsible for any loss or damage caused by the use of this payment service.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="modal-footer">
@@ -1734,6 +2186,26 @@
         </div>
     </div>
     <!-- bank modal end  -->
+
+    <!-- disclaimer modal start  -->
+    <div class="modal fade" id="disclaimerModal" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- disclaimer modal end  -->
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1795,6 +2267,17 @@
         slider.oninput = function() {
             this.style.background = `linear-gradient(to right, #FFD700 0%, #FFD700 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 ${(this.value-this.min)/(this.max-this.min)*100}%, #DEE2E6 100%)`
         };
+    </script>
+
+    <script>
+        $('.modal').on('shown.bs.modal', function (e) {
+            $('.modal.show').each(function (index) {
+                $(this).css('z-index', 1101 + index*2);
+            });
+            $('.modal-backdrop').each(function (index) {
+                $(this).css('z-index', 1101 + index*2-1);
+            });
+        });
     </script>
 </body>
 </html>
