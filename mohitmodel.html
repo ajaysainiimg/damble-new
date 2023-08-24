@@ -1688,15 +1688,15 @@
     <div class="modal fade bankModal" id="bankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog bankdialog modal-dialog-centered ">
             <div class="modal-content bankContent">
-                <div class="modal-header bankHeader p-0  border-0">
-                    <nav>
-                        <div class="nav nav-tabs border-0 bankTab" id="nav-tab" role="tablist">
+                <div class="modal-header bankHeader p-0   border-0">
+                    <nav class="overflow-x-auto py-1">
+                        <div class="nav nav-tabs border-0 flex-nowrap text-nowrap bankTab" id="nav-tab" role="tablist">
                             <button class="nav-link active bankBtn" id="nav-Deposit-tab" data-bs-toggle="tab" data-bs-target="#nav-Deposit" type="button" role="tab" aria-controls="nav-Deposit" aria-selected="true">Deposit</button>
                             <button class="nav-link bankBtn" id="nav-Withdraw-tab" data-bs-toggle="tab" data-bs-target="#nav-Withdraw" type="button" role="tab" aria-controls="nav-Withdraw" aria-selected="false">Withdraw</button>
                             <button class="nav-link bankBtn" id="nav-buycrypto-tab" data-bs-toggle="tab" data-bs-target="#nav-buycrypto" type="button" role="tab" aria-controls="nav-buycrypto" aria-selected="false">Buy Crypto</button>
                         </div>
                     </nav>
-                    <div>
+                    <div class="ps-3">
                         <button type="button" class="btn-close p-0 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
                             <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
                         </button>
@@ -1713,7 +1713,7 @@
                                     </div>
                                 </nav>
                                 <div class="tab-content col-12 cryptoContent" id="nav-tabContent">
-                                    <div class="tab-pane fade show active pt-2" id="nav-Crypto" role="tabpanel" aria-labelledby="nav-Crypto-tab" tabindex="0">
+                                    <div class="tab-pane fade show active pt-sm-2 pt-0" id="nav-Crypto" role="tabpanel" aria-labelledby="nav-Crypto-tab" tabindex="0">
                                         <div class="row">
                                             <div class="col-12 cryptoHeading">Deposit currency</div>
                                             <div class="col-12 pt-2">
@@ -1772,7 +1772,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-12 py-3 bankmodalsubheading">
+                                            <div class="col-12 py-3 cryptoHeading">
                                                 Choose Network
                                             </div>
                                             <div class="col-12 ">
@@ -1794,42 +1794,80 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="col-12 bonusTitle">
-                                                Get extra <span class="fw-bold"> 180% Bonus</span> on minimum of 0.002 BTC deposit 
+                                            <div class="col-12 d-sm-block d-none">
+                                                <div class="bonusTitle d-flex align-items-center">
+                                                    <div class="">
+                                                        Get extra <span class="fw-bold"> 180% Bonus</span> on minimum of 0.002 BTC deposit 
+                                                    </div>
+                                                    <a href="javascript:;" class="d-flex align-items-center justify-content-center ms-3 rounded-circle infoImg">
+                                                        <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid">
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="col-12 pt-5">
-                                                <div class="row depositCard mx-0">
-                                                    <div class="col-auto">
+                                            <div class="col-12 pt-sm-5 pt-4">
+                                                <div class="row depositCard mx-sm-0">
+                                                    <div class="col-auto order-sm-1 order-2">
                                                         <div class="overflow-hidden rounded-2 qrImg">
                                                             <img src="assets/Img/sidebar/qrcode.png" alt="qrcode" class="h-100 w-100 img-fluid">
                                                         </div>
                                                     </div>
-                                                    <div class="col">
-                                                        <div class="depositAddress">
-                                                            Your Personal BTC Deposit Address
-                                                        </div>
-                                                        <div class="depositcardTitle pt-3">
-                                                            <span>NOTICE:</span> Send only BTC to this address. Coins will be deposited after 2 network confirmations.
-                                                        </div>
-                                                        <div class="pt-2">
-                                                            <div class="input-group copyAddressmain">
-                                                                <input type="text" class="form-control rounded-0 bg-transparent border-0 shadow-none addressInput" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                                                <button class="playBtn playbtntwo border-0 rounded-2 position-relative d-flex align-items-center justify-content-center">
-                                                                    <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
-                                                                        Copy ADDRESS
+                                                    <div class="col order-sm-2 order-1">
+                                                        <div class="d-flex flex-column justify-content-sm-start justify-content-between h-100">
+                                                            <div class="bonusTitle d-sm-none d-flex alignitems-center pt-0">
+                                                                <a href="javascript:;" class="d-flex align-items-center justify-content-center me-2 rounded-circle infoImg">
+                                                                    <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid">
+                                                                </a>
+                                                                <div class="">
+                                                                    Get extra <span class="fw-bold"> 180% Bonus</span> on minimum of 0.002 BTC deposit 
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                    <div class="depositAddress">
+                                                                        Your Personal BTC Deposit Address
                                                                     </div>
-                                                                </button>
+                                                                    <div class="depositcardTitle pt-md-3 pt-sm-2 pt-1">
+                                                                        <span>NOTICE:</span> Send only BTC to this address. Coins will be deposited after 2 network confirmations.
+                                                                    </div>
+                                                                    <div class="pt-2 d-sm-block d-none">
+                                                                        <div class="input-group copyAddressmain">
+                                                                            <input type="text" class="form-control rounded-0 bg-transparent border-0 shadow-none addressInput" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                                            <button class="playBtn playbtntwo border-0 rounded-2 position-relative d-flex align-items-center justify-content-center">
+                                                                                <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                                                    Copy ADDRESS
+                                                                                </div>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pt-2 d-sm-block d-none">
+                                                                        <div class="depositcardTitle d-flex align-items-center gap-2">
+                                                                            <a href="javascript:;" class="infoIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                                                                <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid"> 
+                                                                            </a>
+                                                                            Do not deposit any currency other than BTC
+                                                                        </div>
+                                                                    </div>
                                                             </div>
                                                         </div>
-                                                        <div class="pt-2">
-                                                            <a href="javascript:;" class="infoIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
-                                                                <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid"> 
-                                                            </a>
+                                                    </div>
+                                                    <div class="col-12 order-3 py-3 d-sm-none d-block">
+                                                        <div class="input-group copyAddressmain">
+                                                            <input type="text" class="form-control rounded-0 bg-transparent border-0 shadow-none addressInput" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                            <button class="playBtn playbtntwo border-0 rounded-2 position-relative d-flex align-items-center justify-content-center">
+                                                                <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                                    Copy ADDRESS
+                                                                </div>
+                                                            </button>
                                                         </div>
+                                                    </div>
+                                                    <div class="depositcardTitle d-sm-none pt3 order-last d-flex align-items-center gap-2">
+                                                        <a href="javascript:;" class="infoIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                                            <img src="assets/Img/sidebar/info.png" alt="info" class="h-100 w-100 img-fluid"> 
+                                                        </a>
+                                                        Do not deposit any currency other than BTC
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 pt-5">
+                                            <div class="col-12 pt-sm-5 pt-4 mt-sm-0 mt-2">
                                                 <div class="d-flex align-items-center gap-1">
                                                     <!-- <div class="btcValue d-flex align-items-center w-100">
                                                         <span class="overflow-hidden me-2 rounded-circle btcvalueImg d-flex align-items-center justify-content-center">

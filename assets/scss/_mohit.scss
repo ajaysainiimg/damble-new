@@ -749,7 +749,8 @@
                     padding-top: 13px;
                     & .infoImg {
                         height: 11px;
-                        width: 11px;
+                        min-width: 11px;
+                        max-width: 11px;
                     }
                 }
                 & .depositCard {
@@ -1316,6 +1317,173 @@
             }
         }
     }
+
+    // bank modal start 
+    .bankModal {
+        & .bankdialog {
+            // max-width: 100%;
+            & .bankContent {
+                // padding:20px 16px;
+                & .bankHeader {
+                    & .btn-close {
+                    }
+                    & .bankTab {
+                        & .bankBtn {
+                            // padding: 6px 30px;
+                            font-size: 12px;
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                & .banktabContent {
+                    & .cryptoTab {
+                        & .cryptotabBtn {
+                            padding: 9px 30px;
+                            font-size: 12px;
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                    & .cryptoContent {
+                    }
+                    & .cryptoHeading {
+                        font-size: 14px;
+                    }
+                    & .usdtBtn {
+                        & .usdtIcon {
+                        }
+                    }
+                    & .btcdropDown {
+                        & .dropDownBtn {
+                            &.network {
+                            }
+                            & .dropDownBtnInner {
+                            }
+                            &::after {
+                            }
+                            &.buycryptoTab {
+                                &::after {
+                                }
+                            }
+                            &.show {
+                            }
+                            & .bitcoinIcon {
+                                height:21px;
+                                width: 21px;
+                            }
+                        }
+                        & .btcdropmenu {
+                            & .btcInner {
+                                &:hover {
+                                }
+                                & .selectIcon {
+                                    height:21px;
+                                    width: 21px;
+                                }
+                                
+                            }
+                        }
+                    }
+                    & .bankmodalsubheading {
+                    }
+                    & .bonusTitle {
+                        font-size: 11px;
+                        & .infoImg {
+                        }
+                    }
+                    & .depositCard {
+                        & .qrImg {
+                        }
+                        & .depositAddress {
+                            font-size: 12px;
+                        }
+                        & .depositcardTitle {
+                            & span {
+                            }
+                        }
+                        & .copyAddressmain {
+                            & .addressInput {
+                            }
+                        }
+                        & .infoIcon {
+                        }
+                    }
+                    & .playbtntwo {
+                        & .playBtnInner {
+                        }
+                    }
+                    & .eurIcon {
+                    }
+                    & .btcValue {
+                        & .btcLabel {
+                        }
+                        & .btcInput {
+                        }
+                        & .btcvalueImg {
+                        }
+                    }
+                    & .Equal {
+                    }
+                    & .btnvaluetitle {
+                        font-size: 12px;
+                    }
+                    & .eurdropDown {
+                        & .eurBtn {
+                            &::after {
+                            }
+                            &.show {
+                            }
+                            &:active {
+                            }
+                        }
+                        & .eurMenu {
+                            & .eurBtnInner {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .eurExtra {
+                        & .eurtitle {
+                            &.eurtitletwo {
+                            }
+                        }
+                    }
+                    & .eurCard {
+                        &.active {
+                        }
+                        & .eurCardTitle {
+                        }
+                    }
+                    & .receivingLabel {
+                        & .receivingStar {
+                        }
+                        & .withdrawalStar {
+                        }
+                    }
+                    & .receivingInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .networkFee {
+                    }
+                    & .inputdata {
+                        & .forgotPassword {
+                        }
+                        & a {
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    // bank modal end 
 }
 
 @include media-breakpoint-down(md) {
@@ -1607,6 +1775,186 @@
             }
         }
     }
+
+    // bank modal start 
+    .bankModal {
+        & .bankdialog {
+            // max-width: 100%;
+            & .bankContent {
+                // padding:20px 16px;
+                & .bankHeader {
+                    & .btn-close {
+                    }
+                    & .bankTab {
+                        & .bankBtn {
+                            padding: 6px 30px;
+                            font-size: 11px;
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                & .banktabContent {
+                    & .cryptoTab {
+                        & .cryptotabBtn {
+                            padding: 8px 26px;
+                            font-size: 11px;
+                            &.active {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                    & .cryptoContent {
+                    }
+                    & .cryptoHeading {
+                        font-size: 13px;
+                    }
+                    & .usdtBtn {
+                        font-size: 9px;
+                        & .usdtIcon {
+                        }
+                    }
+                    & .btcdropDown {
+                        & .dropDownBtn {
+                            font-size: 11px;
+                            &.network {
+                            }
+                            & .dropDownBtnInner {
+                            }
+                            &::after {
+                                width: 8.042px;
+                                height: 12.02px;
+                            }
+                            &.buycryptoTab {
+                                &::after {
+                                }
+                            }
+                            &.show {
+                            }
+                            & .bitcoinIcon {
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                        & .btcdropmenu {
+                            & .btcInner {
+                                font-size: 11px;
+                                &:hover {
+                                }
+                                & .selectIcon {
+                                    height: 20px;
+                                    width: 20px;
+                                }
+                                
+                            }
+                        }
+                    }
+                    & .bankmodalsubheading {
+                    }
+                    & .bonusTitle {
+                        font-size: 10px;
+                        & .infoImg {
+                        }
+                    }
+                    & .depositCard {
+                        & .qrImg {
+                            height: 100px;
+                            width: 100px;
+                        }
+                        & .depositAddress {
+                            font-size: 11px;
+                        }
+                        & .depositcardTitle {
+                            font-size: 10px;
+                            & span {
+                            }
+                        }
+                        & .copyAddressmain {
+                            padding: 6px;
+                            & .addressInput {
+                                font-size: 10px;
+                            }
+                        }
+                        & .infoIcon {
+                        }
+                    }
+                    & .playbtntwo {
+                        & .playBtnInner {
+                            font-size: 9px;
+                            height: 27px;
+                        }
+                    }
+                    & .eurIcon {
+                    }
+                    & .btcValue {
+                        & .btcLabel {
+                        }
+                        & .btcInput {
+                        }
+                        & .btcvalueImg {
+                        }
+                    }
+                    & .Equal {
+                    }
+                    & .btnvaluetitle {
+                        font-size: 11px;
+                        // padding-top: 16px;
+                    }
+                    & .eurdropDown {
+                        & .eurBtn {
+                            &::after {
+                            }
+                            &.show {
+                            }
+                            &:active {
+                            }
+                        }
+                        & .eurMenu {
+                            & .eurBtnInner {
+                                &:hover {
+                                }
+                            }
+                        }
+                    }
+                    & .eurExtra {
+                        & .eurtitle {
+                            &.eurtitletwo {
+                            }
+                        }
+                    }
+                    & .eurCard {
+                        &.active {
+                        }
+                        & .eurCardTitle {
+                        }
+                    }
+                    & .receivingLabel {
+                        & .receivingStar {
+                        }
+                        & .withdrawalStar {
+                        }
+                    }
+                    & .receivingInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .networkFee {
+                    }
+                    & .inputdata {
+                        & .forgotPassword {
+                        }
+                        & a {
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    // bank modal end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -1898,13 +2246,16 @@
     // bank modal start 
     .bankModal {
         & .bankdialog {
-           max-width: 95%;
+            max-width: 100%;
             & .bankContent {
+                padding:20px 16px;
                 & .bankHeader {
                     & .btn-close {
                     }
                     & .bankTab {
                         & .bankBtn {
+                            padding: 4px 20px;
+                            font-size: 10px;
                             &.active {
                             }
                             &:hover {
@@ -1915,6 +2266,8 @@
                 & .banktabContent {
                     & .cryptoTab {
                         & .cryptotabBtn {
+                            padding: 6px 20px;
+                            font-size: 10px;
                             &.active {
                             }
                             &:hover {
@@ -1924,18 +2277,24 @@
                     & .cryptoContent {
                     }
                     & .cryptoHeading {
+                        font-size: 12px;
                     }
                     & .usdtBtn {
+                        font-size: 8px;
                         & .usdtIcon {
                         }
                     }
                     & .btcdropDown {
                         & .dropDownBtn {
+                            font-size: 10px;
                             &.network {
                             }
                             & .dropDownBtnInner {
+                            
                             }
                             &::after {
+                                width: 6.042px;
+                                height: 11.02px;
                             }
                             &.buycryptoTab {
                                 &::after {
@@ -1944,35 +2303,48 @@
                             &.show {
                             }
                             & .bitcoinIcon {
+                                height: 17px;
+                                width: 17px;
                             }
                         }
                         & .btcdropmenu {
                             & .btcInner {
+                                font-size: 10px;
                                 &:hover {
                                 }
                                 & .selectIcon {
+                                    height: 17px;
+                                    width: 17px;
                                 }
                                 
                             }
                         }
                     }
                     & .bankmodalsubheading {
+                        font-size: 10px;
                     }
                     & .bonusTitle {
+                        font-size: 9px;
                         & .infoImg {
                         }
                     }
                     & .depositCard {
                         & .qrImg {
+                            height: 92px;
+                            width: 92px;
                         }
                         & .depositAddress {
+                            font-size: 10px;
                         }
                         & .depositcardTitle {
+                            font-size: 9px;
                             & span {
                             }
                         }
                         & .copyAddressmain {
+                            padding: 5px;
                             & .addressInput {
+                                font-size: 9px;
                             }
                         }
                         & .infoIcon {
@@ -1980,6 +2352,8 @@
                     }
                     & .playbtntwo {
                         & .playBtnInner {
+                            height: 25px;
+                            font-size: 8px;
                         }
                     }
                     & .eurIcon {
@@ -1995,6 +2369,8 @@
                     & .Equal {
                     }
                     & .btnvaluetitle {
+                        font-size: 9px;
+                        padding-top: 16px;
                     }
                     & .eurdropDown {
                         & .eurBtn {
@@ -2047,4 +2423,6 @@
             }
         }
     }
+    // bank modal end 
+
 }
