@@ -192,6 +192,26 @@
             font-weight: 500;
         }
     }
+    & .passwordGroup {
+        & .eye {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            width: 25px;
+            & img {
+                object-fit: contain;
+            }
+            &.active {
+                    opacity: 1;
+                    visibility: visible;
+            }
+        }
+        & .open, & .close {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
     & .form-check {
         & .form-check-label{
             cursor: pointer;
@@ -222,6 +242,7 @@
             }
         }
     }
+
 }
 // login & resister modal end 
 
