@@ -3530,7 +3530,7 @@
 // ****************************************** UPDATED DAMBLE ***********************************************//
 
 .sponsorshipPage{
-    margin: 119px 130px 50px 108px;
+    margin: 50px 70px;
     & .sponsorshipPageFluid{
         & .sponsorCard{
             border-radius: 9px;
@@ -3538,6 +3538,9 @@
             box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
             & .box{
                 padding: 38px 42px;
+                & .boxImg{
+                    float: right;
+                }
                 & .sponsorName{
                     color: #FFF;
                     font-family: 'Montserrat';
@@ -3559,7 +3562,7 @@
                     line-height: normal;
                     text-transform: uppercase;
                     // margin-bottom: 50px;
-                    margin-bottom: 66px;
+                    margin-bottom: 40px;
                 }
                 & .discription{
                     color: #B2B6C5;
@@ -3571,7 +3574,7 @@
                     line-height: normal;
                 }
                 & .bottom{
-                    margin-top: 55px;
+                    margin-top: 30px;
                     & .oneSection{
                         & img{
                             width: 37px;
@@ -3610,7 +3613,11 @@
             }
             & .sponsorImg{
                 width: 100%;
-                height: 100%;
+                height: calc(100% + 20px);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
                 overflow: hidden;
                 & img{
                     width: 100%;
@@ -4071,6 +4078,41 @@
             & .oppsTxt{
                 & img{
     
+                }
+            }
+        }
+    }
+
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
                 }
             }
         }
@@ -5469,6 +5511,57 @@
             }
         }
     }
+
+    
+    .sponsorshipPage{
+        margin: 30px 40px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 25px 20px;
+                    & .sponsorName{
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    & .field{
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                    & .discription{
+                        font-size: 13px;
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                                width: 32px;
+                                height: 32px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 73.838px;
+                                    height: 36.931px;
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 130px;
+                            height: 48px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -6055,6 +6148,43 @@
             }
         }
     }
+
+    
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 35px 30px;
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
     
 }
 
@@ -6620,6 +6750,54 @@
                 }
                 & .content{
                     // font-size: 16px;
+                }
+            }
+        }
+    }
+
+    
+    .sponsorshipPage{
+        margin: 50px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    & .sponsorName{
+                        font-size: 20px;
+                    }
+                    & .field{
+                        font-size: 12px;
+                        margin-bottom: 30px;
+                    }
+                    & .discription{
+                        font-size: 12px;
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 60.838px;
+                                        height: 35.931px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 90px;
+                            height: 40px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
                 }
             }
         }
@@ -7225,6 +7403,56 @@
             }
         & .socialIcon {
             & .iconLinks {
+            }
+        }
+    }
+
+    
+    .sponsorshipPage{
+        margin: 46px 20px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 20px;
+                    & .sponsorName{
+                        font-size: 15px;
+                    }
+                    & .field{
+                        font-size: 10px;
+                        margin-bottom: 20px;
+                    }
+                    & .discription{
+                        font-size: 10px;
+                    }
+                    & .bottom{
+                        margin-top: 20px;
+                        & .oneSection{
+                            & img{
+                                width: 22.045px;
+                                height: 21.45px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 45.782px;
+                                    height: 23.792px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 77.405px;
+                            height: 26.456px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
             }
         }
     }
@@ -7963,6 +8191,44 @@
         & .socialIcon {
             & .iconLinks {
                 
+            }
+        }
+    }
+
+    
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 20px;
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        margin-top: 20px;
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
             }
         }
     }

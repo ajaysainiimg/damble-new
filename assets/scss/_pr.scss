@@ -753,16 +753,75 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1200px) and (max-width: 1299px) {
   .casinoTabCol {
-    width: 100%;
-    flex: 0 0 auto;
-    order: 3;
-    margin-top: 5px;
+    width: 100% !important;
+    flex: 0 0 auto !important;
+    order: 3 !important;
+    margin-top: 5px !important;
   }
   .toprated-games-main .swiper-button-next-unique ,
   .toprated-games-main .swiper-button-prev-unique {
     top: -95px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .casinoTabCol {
+    max-width: 250px !important;
+    & .nav {
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .casinoTabCol {
+    max-width: 250px !important;
+    & .nav {
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .casinoTabCol {
+    max-width: 350px !important;
+    & .nav {
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .casinoTabCol {
+    max-width: 400px !important;
+    & .nav {
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .casinoTabCol {
+    max-width: 500px !important;
+    & .nav {
+    }
+  }
+}
+
+
+.casinoTabCol {
+  & .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    --bs-nav-tabs-border-width: 0 !important;
+    margin-inline: 1rem !important;
+    &::-webkit-scrollbar {
+      display: none !important;
+    }
+    & .toprated-link {
+      &:first-child {
+        padding-left: 0 !important;
+      }
+      &:last-child {
+        padding-right: 0 !important;
+      }
+    }
   }
 }
 

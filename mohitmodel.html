@@ -45,11 +45,14 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
+    <!-- * Select2 css -->
+    <link rel="stylesheet" href="assets/libs/select2/select2.min.css">
 </head>
 <body>
     <!-- Button trigger modal -->
@@ -1525,9 +1528,20 @@
                                                     <label for="email" class="inputLabel">EMAIL <span>*</span></label>
                                                     <input type="text" id="email" class="form-control inputlogin border-0 shadow-none" placeholder="Email">
                                                 </div>
+                                                <div class="col-12 inputdata">
+                                                    <label for="email" class="inputLabel">select <span>*</span></label>
+                                                    <select class="original-select jq-sel-a form-control inputlogin border-0 shadow-none">
+                                                        <option>One</option>
+                                                        <option>Two</option>
+                                                    </select>
+                                                </div>
                                                 <div class="col-12 inputdata passwordInput pt-0">
-                                                    <label for="password" class="inputLabel">PASSWORD <span>*</span></label>
-                                                    <input type="password" id="password" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                    <label for="password1" class="inputLabel">PASSWORD <span>*</span></label>
+                                                    <div class="position-relative passwordGroup">
+                                                        <input type="password" id="password1" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                        <img src="assets/img/newIcon/eyeopen.svg" class="eye  open" alt="">
+                                                        <img src="assets/img/newIcon/eyeclose.svg" class="eye active close" alt="">
+                                                    </div>
                                                     <div class="inputdata forgotmain">
                                                         <a href="javascript:;" class="forgotPassword text-decoration-none">Forgot password?</a>
                                                     </div>
@@ -1588,13 +1602,21 @@
                                                     <label for="text" class="inputLabel">USERNAME <span>*</span></label>
                                                     <input type="text" id="text" class="form-control inputlogin border-0 shadow-none" placeholder="Username">
                                                 </div>
+                                                <!-- <div class="col-12 inputdata">
+                                                    <label for="text" class="inputLabel">USERNAME <span>*</span></label>
+                                                    <input type="text" id="text" class="form-control inputlogin border-0 shadow-none" placeholder="Username">
+                                                </div> -->
                                                 <div class="col-12 inputdata">
                                                     <label for="email12" class="inputLabel">EMAIL <span>*</span></label>
                                                     <input type="text" id="email12" class="form-control inputlogin border-0 shadow-none" placeholder="Email">
                                                 </div>
                                                 <div class="col-12 inputdata passwordInput pt-0">
                                                     <label for="password" class="inputLabel">PASSWORD <span>*</span></label>
-                                                    <input type="password" id="password" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                    <div class="position-relative passwordGroup">
+                                                        <input type="password" id="password" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                        <img src="assets/img/newIcon/eyeopen.svg" class="eye  open" alt="">
+                                                        <img src="assets/img/newIcon/eyeclose.svg" class="eye active close" alt="">
+                                                    </div>
                                                 </div>
                                                 <!-- <div class="col-12 inputdata forgotmain">
                                                     <div class="forgotPassword">Required if you enabled 2FA authentication</div>
@@ -1603,13 +1625,13 @@
                                                     <div class="form-check ">
                                                         <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckC" checked>
                                                         <label class="form-check-label forgotPassword" for="flexCheckC">
-                                                            Checked checkbox
+                                                            I agree to the User Agreement & confirm I am at least 18 years old
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" checked>
                                                         <label class="form-check-label forgotPassword" for="flexCheckChecked">
-                                                            Checked checkbox
+                                                            I agree to receive marketing promotions from Damble.
                                                         </label>
                                                     </div>
                                                 </div>
@@ -2247,6 +2269,8 @@
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- * Select2 Js -->
+    <script src="assets/libs/select2/select2.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
     <script src="assets/libs/swiper-js/js/swipejs.js"></script>
@@ -2291,6 +2315,37 @@
         function rangeSlide(value) {
             document.getElementById('rangeValue').innerHTML = value;
         }
+    </script>
+
+    <!-- Select2 -->
+    <script>
+        
+$(document).ready(function(){
+	const selA = $('.jq-sel-a');
+	selA.select2({
+		minimumResultsForSearch: Infinity,
+		dropdownCssClass: 'custom-select2__options',
+	});
+	
+	const selB = $('.jq-sel-b');
+	const s2B = selB.select2({
+		minimumResultsForSearch: Infinity,
+		dropdownCssClass: 'custom-select2__options',
+	});
+	
+	selB.on('select2:open', function (e){
+		const $btn = $('<button class="custom-select2__btn"></button>');
+		const $trg = $(e.target);
+		$btn.on('click', function() {
+				$trg.select2('close');
+		});
+		
+		const $container = $('.' + $trg.data('select2').options.options.dropdownCssClass);
+		if ($container.find('.custom-select2__btn').length == 0) {
+			$container.append($btn);
+		}
+	});
+});
     </script>
 
     <!-- range slider -->
