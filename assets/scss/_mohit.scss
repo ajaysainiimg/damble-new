@@ -88,6 +88,16 @@
                             object-fit: contain;
                         }
                     }
+                    & .selectCountry {
+                        font-size: 12px;
+                        color: #B2B6C5;
+                        font-size: 12px;
+                        font-weight: 500;
+                        outline: none;
+                        & option {
+                            background-color: #161A25;
+                        }
+                    }
                 }
                 & .tabdata {
                     padding-top: 67px;
