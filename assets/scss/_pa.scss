@@ -3629,7 +3629,239 @@
     }
 }
 
+// download page
 
+.downloadModalFade{
+    & .downloadModalDialog{
+        max-width: 1369.146px;
+        & .downloadModalContent{
+            width: 100%;
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+            & .downloadModalHeader{
+                padding: 0;
+                border-bottom: unset;
+                & .modalCloseBtn{
+
+                }
+            }
+            & .downloadModalBody{
+                padding: 0;
+                & .navPillsUl{
+                    padding: 20px 0px 0px 50px;
+                    & .navItem{
+                        & .navLink{
+                            width: 241.49px;
+                            height: 45px;
+                            color: #FFF;
+                            font-family: 'Montserrat';
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            background-color: #272B36;
+                            &.active{
+                                background-color: #CF0;
+                                box-shadow: 0px 4px 20px 0px #CF0 inset;
+                                color: #000;
+                                filter: drop-shadow(0px 4px 20px rgba(211, 249, 58, 0.50)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            }
+                        }
+                    }
+                }
+                & .pillsContent{
+                    & .tabPaneIos{
+                        & .iosTab{
+                            padding: 50px 50px 105px 50px !important;
+                            &.iosModalContentMobile{
+                                padding: 30px 21px !important;
+                                & .modalImg{
+                                    aspect-ratio: 1.1;
+                                    & img{
+
+                                    }
+                                }
+                            }
+                            & .heading{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: normal;
+                                margin-bottom: 54px;
+                            }
+                            & .subheading{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-bottom: 15px;
+                            }
+                            & .para{
+                                color: #B2B6C5;
+                                font-family: 'Montserrat';
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                & .anchor{
+                                    color: #CF0;
+                                    font-family: 'Montserrat';
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+                            }
+                            & .modalImg{
+                                // width: 100%;
+                                // height: 100%;
+                                aspect-ratio: 1/0.7;
+                                & img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            & .stepBtn{
+                                border-radius: 5px;
+                                border: 1px solid #CF0;
+                                width: 81.742px;
+                                height: 37.596px;
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                background-color: #161A25;
+                            }
+                        }
+                    }
+                    & .tabPaneAndroid{
+
+                    }
+                }
+            }
+            & .downloadModalFooter{
+                padding: 0;
+                border-top: unset;
+            }
+        }
+    }
+}
+
+.downloadAppMobile{
+    padding: 20px;
+    & .mobileBox{
+        border-radius: 5px;
+        background: #161A25;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+        & .navPillsUl{
+            // padding: 20px 0px 0px 50px;
+            padding: 30px 0px 0 19px;
+            & .navItem{
+                & .navLink{
+                    width: 241.49px;
+                    height: 45px;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    background-color: #272B36;
+                    &.active{
+                        background-color: #CF0;
+                        box-shadow: 0px 4px 20px 0px #CF0 inset;
+                        color: #000;
+                        filter: drop-shadow(0px 4px 20px rgba(211, 249, 58, 0.50)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+                }
+            }
+        }
+        & .pillsContent{
+            & .tabPaneIos{
+                & .iosTab{
+                    padding: 50px 50px 105px 50px !important;
+                    &.iosModalContentMobile{
+                        padding: 50px 19px !important;
+                        & .modalImg{
+                            aspect-ratio: 1.1;
+                            & img{
+
+                            }
+                        }
+                    }
+                    & .heading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        margin-bottom: 54px;
+                    }
+                    & .subheading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 15px;
+                    }
+                    & .para{
+                        color: #B2B6C5;
+                        font-family: 'Montserrat';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        & .anchor{
+                            color: #CF0;
+                            font-family: 'Montserrat';
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                    & .modalImg{
+                        // width: 100%;
+                        // height: 100%;
+                        aspect-ratio: 1/0.7;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    & .stepBtn{
+                        border-radius: 5px;
+                        border: 1px solid #CF0;
+                        width: 81.742px;
+                        height: 37.596px;
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        background-color: #161A25;
+                    }
+                }
+            }
+            & .tabPaneAndroid{
+
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 700px) {
@@ -4113,6 +4345,49 @@
                 & .sponsorImg{
                     & img{
                     }
+                }
+            }
+        }
+    }
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
                 }
             }
         }
@@ -5562,7 +5837,49 @@
             }
         }
     }
-}
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(xl) {
     .headerFluid{
@@ -6185,8 +6502,51 @@
             }
         }
     }
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
     
-}
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
+    
 
 @include media-breakpoint-down(lg) {
     .headerFluid{
@@ -6802,7 +7162,58 @@
             }
         }
     }
-}
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{    
+                        width: 180.49px;
+                        height: 45px;
+                        color: #fff;
+                        font-family: "Montserrat";
+                        font-size: 15px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 22px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 26px;
+                            margin-bottom: 25px;
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(md) {
     .headerFluid{
@@ -7456,7 +7867,62 @@
             }
         }
     }
-}
+
+    
+    .downloadAppMobile{
+        padding: 20px;
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        width: 145.457px;
+                        height: 33.35px;
+                        font-size: 11px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 12px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 16px;
+                            margin-bottom: 30px;
+                        }
+                        & .subheading{
+                            font-size: 15px;
+                        }
+                        & .para{
+                            font-size: 12px;
+                            & .anchor{
+                                font-size: 12px;
+                                text-decoration: none;
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(sm) {
     .headerFluid{
@@ -8232,4 +8698,60 @@
             }
         }
     }
-}
+    .downloadAppMobile{
+        padding: 20px;
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        width: 145.457px;
+                        height: 33.35px;
+                        font-size: 11px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 30px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 15px;
+                        }
+                        & .subheading{
+                            font-size: 15px;
+                        }
+                        & .para{
+                            font-size: 12px;
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+        & .downArrow{
+            & img{
+                width: 22.999px;
+                height: 21.876px;
+            }
+        }
+    }
+} 
