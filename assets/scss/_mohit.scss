@@ -1111,6 +1111,12 @@
 // result page start 
 .resultpage {
     padding: 30px 20px 37px;
+    & .searchGameCardWrapper {
+        & >* {
+            flex: 0 0 12.5%;
+            width: 12.5%;
+        }
+    }
     & .resultHeading {
         color: #FFF;
         font-size: 15px;
@@ -1119,7 +1125,8 @@
     }
     & .resultsearch {
         height: 35px;
-        background: #161A25;;
+        background: #161A25;
+        width: 223px;
         & .resultInput {
             color: #B2B6C5;
             font-size: 15px;
@@ -1764,6 +1771,46 @@
         }
     }
     // games page end 
+
+     // result page start 
+    .resultpage {
+        // padding: 30px 25px 37px;/
+        & .searchGameCardWrapper {
+            & >* {
+            }
+        }
+        & .resultHeading {
+        }
+        & .resultsearch {
+            & .resultInput {
+                font-size: 13px;
+                &::placeholder {
+                    font-size: 13px;
+                }
+            }
+            & .resultsearchBtn {
+            }
+        }
+        & .resultdropdown {
+            & .providerName {
+                &.providerbutton {
+                }
+            }
+            & .providerMenu {
+                & .btninner {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .loadmoremain {
+            & .loadmorebtn {
+                &:hover {
+                }
+            }
+        }
+    }
+    // result page end
 }
 
 @include media-breakpoint-down(md) {
@@ -2307,22 +2354,36 @@
     }
     // games page end 
 
-     // result page start 
+    // result page start 
     .resultpage {
-        padding: 30px 11px 37px;
+        padding: 30px 15px 37px;
+        & .searchGameCardWrapper {
+            & >* {
+                flex: 0 0 16.66%;
+                width: 16.66%;
+            }
+        }
         & .resultHeading {
             font-size: 14px;
         }
         & .resultsearch {
+            width: 200px;
+            height: 33px;
             & .resultInput {
+                font-size: 12px;
                 &::placeholder {
+                    font-size: 12px;
                 }
             }
             & .resultsearchBtn {
+                height: 9px;
+                width: 9px;
             }
         }
         & .resultdropdown {
+            padding: 9px;
             & .providerName {
+                font-size: 9px;
                 &.providerbutton {
                 }
             }
@@ -2891,19 +2952,32 @@
     // result page start 
     .resultpage {
         padding: 20px 11px 25px;
+        & .searchGameCardWrapper {
+            & >* {
+                flex: 0 0 25%;
+                width: 25%;
+            }
+        }
         & .resultHeading {
             font-size: 13px;
         }
         & .resultsearch {
+            width: 180px;
+            height: 30px;
             & .resultInput {
+                font-size: 10px;
                 &::placeholder {
+                    font-size: 10px;
                 }
             }
             & .resultsearchBtn {
+                height: 8px;
+                width: 8px;
             }
         }
         & .resultdropdown {
             & .providerName {
+                font-size: 9px;
                 &.providerbutton {
                 }
             }
@@ -2915,6 +2989,7 @@
             }
         }
         & .loadmoremain {
+            padding-top: 20px;
             & .loadmorebtn {
                 &:hover {
                 }
