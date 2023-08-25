@@ -1026,7 +1026,7 @@
 
 // games page start
 .gamesPage {
-    padding: 45px 90px 150px;
+    padding: 45px 90px 120px;
     & .gamesHeading {
         color: #FFF;
         font-size: 15px;
@@ -1094,6 +1094,7 @@
         padding-right: 90px;
     }
     & .providerSection {
+        padding-top: 45px;
         & .providerCard {
             & .providerImg {
                 // width: 130px;
@@ -1273,6 +1274,47 @@
             }
         }
     }
+
+    // games page start 
+    .gamesPage {
+        padding: 45px 60px 80px;
+        & .gamesHeading {
+            & .gamesHeadingIcon {
+            }
+        }
+        & .gamesHeroSection {
+            & .gamesHeader {
+                & .Hacksaw {
+                }
+                & .bookmarkIcon {
+                }
+                & .demomode {
+                    & .demomodeLabel {
+                    }
+                }
+            }
+            & .provablyfairCard {
+                & .verifiedMain {
+                    & .verifiedIcon {
+                    }
+                }
+            }
+            & .verifiedTitle {
+            }
+        }
+        & .sliderButton {
+        }
+        & .viewAll {
+        }
+        & .providerSection {
+            & .providerCard {
+                & .providerImg {
+                }
+            }
+        }
+    }
+    // games page end 
+
 }
 
 @include media-breakpoint-down(lg) {
@@ -1604,6 +1646,49 @@
         }
     }
     // bank modal end 
+
+    // games page start 
+    .gamesPage {
+        padding: 40px 30px 44px;
+        & .gamesHeading {
+            & .gamesHeadingIcon {
+            }
+        }
+        & .gamesHeroSection {
+            & .gamesHeader {
+                & .Hacksaw {
+                }
+                & .bookmarkIcon {
+                }
+                & .demomode {
+                    & .demomodeLabel {
+                    }
+                }
+            }
+            & .provablyfairCard {
+                height: 50px;
+                width: 150px;
+                & .verifiedMain {
+                    & .verifiedIcon {
+                    }
+                }
+            }
+            & .verifiedTitle {
+            }
+        }
+        & .sliderButton {
+        }
+        & .viewAll {
+        }
+        & .providerSection {
+            // padding-top: 40px;
+            & .providerCard {
+                & .providerImg {
+                }
+            }
+        }
+    }
+    // games page end 
 }
 
 @include media-breakpoint-down(md) {
@@ -2087,6 +2172,65 @@
         }
     }
     // bank modal end 
+
+     // games page start 
+    .gamesPage {
+        padding: 30px 20px 44px;
+        & .gamesHeading {
+            font-size: 14px;
+            & .gamesHeadingIcon {
+                height: 18px;
+                width: 18px;
+            }
+        }
+        & .gamesHeroSection {
+            & .gamesHeader {
+                padding: 15px 4px;
+                & .Hacksaw {
+                    font-size:8px;
+                    padding: 6px 14px;
+                }
+                & .bookmarkIcon {
+                    height: 16px;
+                }
+                & .demomode {
+                    & .demomodeLabel {
+                        font-size: 11px;
+                    }
+                }
+            }
+            & .provablyfairCard {
+                height: 40px;
+                width: 130px;
+                & .verifiedMain {
+                    & .verifiedIcon {
+                        height:20px;
+                        width: 20px;
+                    }
+                }
+            }
+            & .verifiedTitle {
+                font-size: 8px;
+            }
+        }
+        & .sliderButton {
+            // top: -4px !important;
+        }
+        & .viewAll {
+            font-size: 11px;
+            padding-right: 85px;
+        }
+        & .providerSection {
+            padding-top: 40px;
+            & .providerCard {
+                padding: 8px 10px;
+                height: 60px;
+                & .providerImg {
+                }
+            }
+        }
+    }
+    // games page end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -2575,4 +2719,62 @@
     }
     // bank modal end 
 
+    // games page start 
+    .gamesPage {
+        padding: 20px 11px 44px;
+        & .gamesHeading {
+            font-size: 12px;
+            & .gamesHeadingIcon {
+                height: 15px;
+                width: 15px;
+            }
+        }
+        & .gamesHeroSection {
+            & .gamesHeader {
+                padding: 12px 0;
+                & .Hacksaw {
+                    font-size: 6px;
+                    padding: 4px 12px;
+                }
+                & .bookmarkIcon {
+                    height: 14px;
+                }
+                & .demomode {
+                    & .demomodeLabel {
+                        font-size: 10px;
+                    }
+                }
+            }
+            & .provablyfairCard {
+                height: 34px;
+                width: 107px;
+                & .verifiedMain {
+                    & .verifiedIcon {
+                        height:18px;
+                        width: 18px;
+                    }
+                }
+            }
+            & .verifiedTitle {
+                font-size: 6px;
+            }
+        }
+        & .sliderButton {
+            top: -4px !important;
+        }
+        & .viewAll {
+            font-size: 10px;
+            padding-right: 70px;
+        }
+        & .providerSection {
+            padding-top: 40px;
+            & .providerCard {
+                padding: 8px 10px;
+                height: 50px;
+                & .providerImg {
+                }
+            }
+        }
+    }
+    // games page end 
 }
