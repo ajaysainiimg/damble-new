@@ -745,6 +745,38 @@
     width: 16.66% !important;
     margin-bottom: 6px;
   }
+  .downloadAppMobile .mobileBox .pillsContent .tabPaneIos .iosTab.iosModalContentMobile .modalImg {
+    aspect-ratio: 1/1.3 !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .downloadAppMobile .mobileBox {
+    & .navPillsUl {
+      padding: 30px 15px 0;
+      justify-content: center;
+      & .navItem {
+        &:first-child {
+          margin-right: 8px !important;
+        }
+        & .navLink {
+          width: 130px;
+          font-size: 10px;
+        }
+      }
+    }
+    & .pillsContent .tabPaneIos .iosTab.iosModalContentMobile {
+      & > .row {
+        flex-direction: column-reverse;
+        & .col-6 {
+          width: 100% !important;
+          & .modalImg {
+            aspect-ratio: 1/1 !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1500px) {
@@ -774,6 +806,18 @@
   }
 }
 
+@media (min-width: 576px) {}
+@media (min-width: 768px) {
+  .downloadAppMobile {
+    & .mobileBox {
+      padding: 5px 15px;
+    }
+  }
+}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+
+
 @media (min-width: 1300px) {
   .casinoTabCol {
     max-width: 250px !important;
@@ -781,6 +825,15 @@
     }
   }
 }
+
+@media (min-width: 1400px) {
+  .downloadAppMobile {
+    padding: 60px;
+    & .mobileBox {
+    }
+  }
+}
+
 
 @media (min-width: 1500px) {
   .casinoTabCol {
