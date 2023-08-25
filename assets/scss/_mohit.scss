@@ -1148,6 +1148,9 @@
         background-color: #1F2330;
         padding: 11px;
         gap: 2px;
+        &.proviederdrop {
+            padding: 11px 20px;
+        }
         & .providerName {
             color: #B2B6C5;
             font-size: 10px;
@@ -1170,6 +1173,39 @@
                     background-color: #252E39;
                 }
             }
+            & .clearall {
+                font-size: 12px;
+                font-weight: 500;
+                color: #B2B6C5;
+            }
+            & .providerLabel {
+                font-size: 12px;
+                font-weight: 500;
+                color: #B2B6C5;
+                padding: 6px 8px;
+                transition: all 0.3s ease-in-out;
+                line-height: normal;
+                &:hover {
+                    background-color: #252E39;
+                }
+                & .Providercheck {
+                    height: 16px;
+                    min-width: 16px;
+                    max-width: 16px;
+                    background-color: #0D131C;
+                    border:1px solid #272B36;
+                    padding: 2px;
+                    &:checked {
+                        background-image:url(../Img/sidebar/check.png) ;
+                        background-position: center;
+                        background-size: 11px;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            &.resultMenu {
+                max-height: 130px;
+            }
         }
     }
     & .loadmoremain {
@@ -1189,6 +1225,43 @@
     }
 }
 // result page end
+
+// policy page start
+.policypage {
+    padding: 58px 150px 75px;
+    & .policyHeading {
+        color: #D8DEE5;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: normal;
+        font-variant: all-small-caps;
+    }
+    & .policyDate {
+        color: #D8DEE5;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+    & .policysubHeading {
+        color: #D8DEE5;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+    }
+    & .policyDetail {
+        color: #989CAD;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    & .policyLink {
+        color: #D8DEE5;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+// policy page end
 
 
 @include media-breakpoint(basic) {

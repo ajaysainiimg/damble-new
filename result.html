@@ -667,18 +667,46 @@
                             </div>
                             <div class="col-sm-auto">
                                 <div class="d-flex align-items-center justify-content-sm-start justify-content-between gap-3">
-                                    <div class="resultdropdown rounded-2 position-relative d-flex align-items-center ju">
+                                    <div class="resultdropdown proviederdrop rounded-2 position-relative d-flex align-items-center ju">
                                         <div class="providerName text-nowrap">
                                             PROVIDER :
                                         </div>
                                         <div class="dropdown d-flex position-static align-items-center">
-                                            <button class="btn providerName p-0 border-0 stretched-link shadow-none providerbutton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="btn providerName p-0 border-0 stretched-link shadow-none providerbutton" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                                                 ALL
                                             </button>
-                                            <ul class="dropdown-menu providerMenu py-1">
-                                                <li><a class="dropdown-item providerName providerbutton text-end btninner" href="javascript:;">All</a></li>
-                                                <li><a class="dropdown-item providerName providerbutton text-end btninner" href="javascript:;">All</a></li>
-                                                <li><a class="dropdown-item providerName providerbutton text-end btninner" href="javascript:;">All</a></li>
+                                            <ul class="dropdown-menu providerMenu overflow-y-auto resultMenu py-1">
+                                                <li class="text-center clearall border-bottom py-1"><span>Clear all</span></li>
+                                                <li class="">
+                                                    <label for="one" class=" providerLabel w-100 d-flex align-items-center gap-2">
+                                                        <input type="checkbox" class="Providercheck m-0 form-check-input shadow-none" id="one">
+                                                        ArrowEdge
+                                                    </label>
+                                                </li>
+                                                <li class="">
+                                                    <label for="two" class=" providerLabel w-100 d-flex align-items-center gap-2">
+                                                        <input type="checkbox" class="Providercheck m-0 form-check-input shadow-none" id="two">
+                                                        Mascot
+                                                    </label>
+                                                </li>
+                                                <li class="">
+                                                    <label for="three" class=" providerLabel w-100 d-flex align-items-center gap-2">
+                                                        <input type="checkbox" class="Providercheck m-0 form-check-input shadow-none" id="three">
+                                                        Red rake
+                                                    </label>
+                                                </li>
+                                                <li class="">
+                                                    <label for="four" class=" providerLabel w-100 d-flex align-items-center gap-2">
+                                                        <input type="checkbox" class="Providercheck m-0 form-check-input shadow-none" id="four">
+                                                        Red rake
+                                                    </label>
+                                                </li>
+                                                <li class="">
+                                                    <label for="five" class=" providerLabel w-100 d-flex align-items-center gap-2">
+                                                        <input type="checkbox" class="Providercheck m-0 form-check-input shadow-none" id="five">
+                                                        Red rake
+                                                    </label>
+                                                </li>
                                         </div>
                                     </div>
                                     <div class="resultdropdown rounded-2 position-relative d-flex align-items-center ju">
