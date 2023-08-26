@@ -214,9 +214,10 @@
 // new css side bar 
 .sidebar {
     background: #161A25;
+    
     & .sidebar-menu {
         & .sidebarHeading {
-            padding: 10px 20px 10px 25px;
+            padding: 20px 20px 18px 30px;
             & .menuHeading {
                 font-size: 10px;
                 font-weight: 700;
@@ -228,7 +229,7 @@
             }
         }
         & .sidebarData {
-            padding: 20px 20px 20px 25px;
+            padding: 5px 20px 20px 28px;
             & .sideMenuBtn {
                 font-size: 12px;
                 font-weight: 900;
@@ -287,20 +288,20 @@
                         }
                     }
                     &:nth-child(2) {
-                        padding: 14px 0;
+                        padding: 16px 0;
                     }
                     &:nth-child(4) {
-                        padding: 14px 0;
+                        padding: 16px 0;
                     }
                     &:nth-child(6) {
-                        padding: 14px 0;
+                        padding: 16px 0;
                     }
                     &:nth-child(8) {
-                        padding: 14px 0;
+                        padding: 16px 0;
                     }
                 }
                 & .accordion-body {
-                    padding-top: 14px;
+                    padding-top: 15px;
                 }
     
             }
@@ -373,9 +374,18 @@
 
 @include media-breakpoint-down(xl) {
     .sidebar {
+        padding-top: 88px;
         & .sidebar-menu {
+            & .sidebarHeading {
+                padding: 15px 20px 15px 30px;
+                & .menuHeading {
+                }
+                & .sidebarBtn {
+                }
+            }
             & .sidebarData {
                 & .menuHeading {
+                
                 }
                 & .sidebarBtn {
                 }
@@ -452,15 +462,95 @@
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .sidebar {
+        padding-top: 58px;
+        & .sidebar-menu {
+            & .sidebarHeading {
+                & .menuHeading {
+                }
+            }
+            & .sidebarData {
+                & .sidebarBtn {
+                }
+                & .sideMenuBtn {
+                    & .accordionIcon {
+                        & img {
+                        }
+                    }
+                    &::after {
+                        
+                    }
+                    &.collapsed {
+                        &::after {
+                        }
+                    }
+                }
+                & .sidebarContent {
+                    & .sideMenuContent {
+                        & .sidebtnImg {
+                            & img {
+                            }
+                        }
+                        &:hover {
+                            & .sidebtnImg {
+                                & img {
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                        }
+                        &:nth-child(4) {
+                        }
+                        &:nth-child(6) {
+                        }
+                        &:nth-child(8) {
+                        }
+                    }
+                    & .accordion-body {
+                    }
+        
+                }
+                & .sponsorshipHeading {
+                }
+                & .livesupport {
+                    & .sponsorshipIcon {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & .sponsorshipIcon {
+                            & img {
+                            }
+                        }
+                        & .downloadTitle {
+                        }
+                    }
+                    & .downloadTitle {
+                    }
+                }
+            }
+            & .sidebarFooter {
+                & .customBtn {
+                }
+                & .sidefooterImg {
+                    & .sidebarpayment {
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {
     .sidebar {
         & .sidebar-menu {
-            & .sidebarData {
-                padding: 15px 15px 15px ;
+            & .sidebarHeading {
                 & .menuHeading {
                 }
+            }
+            & .sidebarData {
+                padding: 10px 14px 15px ;
                 & .sidebarBtn {
                 }
                 & .sideMenuBtn {
