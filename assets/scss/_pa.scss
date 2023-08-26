@@ -897,34 +897,40 @@
         width: 100%;
         filter: blur(0.5px);
         // background: linear-gradient(90deg, rgba(85,120,254,1) 42%, rgba(0,153,10,1) 63%);
-        background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
+        // background: linear-gradient(90deg, rgb(85 120 254 / 36%) 42%, rgb(0 153 10 / 54%) 63%);
         top: 0;
         left: 0;
         z-index: -5;
         border-radius: 10px;
     }
     & .topratedgames-tab-content {
-        padding: 13px 15px;
+        // padding: 13px 15px;
+        margin-bottom: 20px;
         border-radius: 10px;
-        background: #161F2C;
+        // background: #161F2C;
         & .toprated-link {
-            font-size: 13px;
             color: #93ACD3;
-            border-radius: 7px;
-            padding: 5px 12px;
+            font-family: 'Montserrat';
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
             transition: all 0.3s ease-in-out;
+            background-color: transparent !important;
+            border: none !important;
             &:hover {
-                color: $white;
-                border-radius: 7px;
-                border: 0.4px solid #56667F;
-                background: #252E39;
+                // color: $white;
+                // border-radius: 7px;
+                // border: 0.4px solid #56667F;
+                // background: #252E39;
             }
         }
         & .toprated-link.active {
             color: $white;
-            border-radius: 7px;
-            border: 0.4px solid #acadae91;
-            background: #252E39;
+            // border-radius: 7px;
+            // border: 0.4px solid #acadae91;
+            // background: #252E39;
         }
         & .search-bar-group {
             border: 1px solid #93ACD3;
@@ -940,10 +946,6 @@
         }
     } 
 }
-
-
-
-
 // afflitiate dashboard start
 .sidebar{
     & .sidebar-menu{
@@ -3525,6 +3527,341 @@
 }
 
 
+// ****************************************** UPDATED DAMBLE ***********************************************//
+
+.sponsorshipPage{
+    margin: 50px 70px;
+    & .sponsorshipPageFluid{
+        & .sponsorCard{
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+            & .box{
+                padding: 38px 42px;
+                & .boxImg{
+                    float: right;
+                }
+                & .sponsorName{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 35px;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                & .field{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    // font-size: 25px;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    // margin-bottom: 50px;
+                    margin-bottom: 40px;
+                }
+                & .discription{
+                    color: #B2B6C5;
+                    font-family: 'Montserrat';
+                    // font-size: 23px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                & .bottom{
+                    margin-top: 30px;
+                    & .oneSection{
+                        & img{
+                            width: 37px;
+                            height: 36px;
+                        }
+                        & span{
+                            &.punch{
+                                & img{
+                                    width: 40.838px;
+                                    margin-left: 20px;
+                                }
+                            }
+                            & img{
+                                width: 76.838px;
+                                height: 39.931px;
+                                margin-left: 20px;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .readMoreBtn{
+                        border-radius: 6px;
+                        background: #1F2330;
+                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+                        color: #B2B6C5;
+                        font-family: 'Montserrat';
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        width: 135px;
+                        height: 51px;
+                        border: none;
+                    }
+                }
+            }
+            & .sponsorImg{
+                width: 100%;
+                height: calc(100% + 20px);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                overflow: hidden;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+// download page
+
+.downloadModalFade{
+    & .downloadModalDialog{
+        max-width: 1369.146px;
+        & .downloadModalContent{
+            width: 100%;
+            border-radius: 9px;
+            background: #161A25;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+            & .downloadModalHeader{
+                padding: 0;
+                border-bottom: unset;
+                & .modalCloseBtn{
+
+                }
+            }
+            & .downloadModalBody{
+                padding: 0;
+                & .navPillsUl{
+                    padding: 20px 0px 0px 50px;
+                    & .navItem{
+                        & .navLink{
+                            width: 241.49px;
+                            height: 45px;
+                            color: #FFF;
+                            font-family: 'Montserrat';
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            background-color: #272B36;
+                            &.active{
+                                background-color: #CF0;
+                                box-shadow: 0px 4px 20px 0px #CF0 inset;
+                                color: #000;
+                                filter: drop-shadow(0px 4px 20px rgba(211, 249, 58, 0.50)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                            }
+                        }
+                    }
+                }
+                & .pillsContent{
+                    & .tabPaneIos{
+                        & .iosTab{
+                            padding: 50px 50px 105px 50px !important;
+                            &.iosModalContentMobile{
+                                padding: 30px 21px !important;
+                                & .modalImg{
+                                    aspect-ratio: 1.1;
+                                    & img{
+
+                                    }
+                                }
+                            }
+                            & .heading{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: normal;
+                                margin-bottom: 54px;
+                            }
+                            & .subheading{
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-bottom: 15px;
+                            }
+                            & .para{
+                                color: #B2B6C5;
+                                font-family: 'Montserrat';
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                                & .anchor{
+                                    color: #CF0;
+                                    font-family: 'Montserrat';
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+                            }
+                            & .modalImg{
+                                // width: 100%;
+                                // height: 100%;
+                                aspect-ratio: 1/0.7;
+                                & img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            & .stepBtn{
+                                border-radius: 5px;
+                                border: 1px solid #CF0;
+                                width: 81.742px;
+                                height: 37.596px;
+                                color: #FFF;
+                                font-family: 'Montserrat';
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                background-color: #161A25;
+                            }
+                        }
+                    }
+                    & .tabPaneAndroid{
+
+                    }
+                }
+            }
+            & .downloadModalFooter{
+                padding: 0;
+                border-top: unset;
+            }
+        }
+    }
+}
+
+.downloadAppMobile{
+    padding: 20px;
+    & .mobileBox{
+        border-radius: 5px;
+        background: #161A25;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.30);
+        & .navPillsUl{
+            // padding: 20px 0px 0px 50px;
+            padding: 30px 0px 0 19px;
+            & .navItem{
+                & .navLink{
+                    width: 241.49px;
+                    height: 45px;
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    background-color: #272B36;
+                    &.active{
+                        background-color: #CF0;
+                        box-shadow: 0px 4px 20px 0px #CF0 inset;
+                        color: #000;
+                        filter: drop-shadow(0px 4px 20px rgba(211, 249, 58, 0.50)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    }
+                }
+            }
+        }
+        & .pillsContent{
+            & .tabPaneIos{
+                & .iosTab{
+                    padding: 50px 50px 105px 50px !important;
+                    &.iosModalContentMobile{
+                        padding: 50px 19px !important;
+                        & .modalImg{
+                            aspect-ratio: 1.1;
+                            & img{
+
+                            }
+                        }
+                    }
+                    & .heading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: normal;
+                        margin-bottom: 54px;
+                    }
+                    & .subheading{
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-bottom: 15px;
+                    }
+                    & .para{
+                        color: #B2B6C5;
+                        font-family: 'Montserrat';
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        & .anchor{
+                            color: #CF0;
+                            font-family: 'Montserrat';
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                    & .modalImg{
+                        // width: 100%;
+                        // height: 100%;
+                        aspect-ratio: 1/0.7;
+                        & img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    & .stepBtn{
+                        border-radius: 5px;
+                        border: 1px solid #CF0;
+                        width: 81.742px;
+                        height: 37.596px;
+                        color: #FFF;
+                        font-family: 'Montserrat';
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        background-color: #161A25;
+                    }
+                }
+            }
+            & .tabPaneAndroid{
+
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 700px) {
@@ -3972,6 +4309,84 @@
             }
             & .oppsTxt{
                 & img{
+    
+                }
+            }
+        }
+    }
+
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
     
                 }
             }
@@ -5371,7 +5786,100 @@
             }
         }
     }
-}
+
+    
+    .sponsorshipPage{
+        margin: 30px 40px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 25px 20px;
+                    & .sponsorName{
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    & .field{
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                    & .discription{
+                        font-size: 13px;
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                                width: 32px;
+                                height: 32px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 73.838px;
+                                    height: 36.931px;
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 130px;
+                            height: 48px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(xl) {
     .headerFluid{
@@ -5957,8 +6465,88 @@
             }
         }
     }
+
     
-}
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 35px 30px;
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
+    
 
 @include media-breakpoint-down(lg) {
     .headerFluid{
@@ -6526,7 +7114,106 @@
             }
         }
     }
-}
+
+    
+    .sponsorshipPage{
+        margin: 50px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    & .sponsorName{
+                        font-size: 20px;
+                    }
+                    & .field{
+                        font-size: 12px;
+                        margin-bottom: 30px;
+                    }
+                    & .discription{
+                        font-size: 12px;
+                    }
+                    & .bottom{
+                        & .oneSection{
+                            & img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 60.838px;
+                                        height: 35.931px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 90px;
+                            height: 40px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+
+    .downloadAppMobile{
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{    
+                        width: 180.49px;
+                        height: 45px;
+                        color: #fff;
+                        font-family: "Montserrat";
+                        font-size: 15px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 22px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 26px;
+                            margin-bottom: 25px;
+                        }
+                        & .subheading{
+                        }
+                        & .para{
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(md) {
     .headerFluid{
@@ -7130,7 +7817,112 @@
             }
         }
     }
-}
+
+    
+    .sponsorshipPage{
+        margin: 46px 20px;
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 20px;
+                    & .sponsorName{
+                        font-size: 15px;
+                    }
+                    & .field{
+                        font-size: 10px;
+                        margin-bottom: 20px;
+                    }
+                    & .discription{
+                        font-size: 10px;
+                    }
+                    & .bottom{
+                        margin-top: 20px;
+                        & .oneSection{
+                            & img{
+                                width: 22.045px;
+                                height: 21.45px;
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                    width: 45.782px;
+                                    height: 23.792px;
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                            width: 77.405px;
+                            height: 26.456px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .downloadAppMobile{
+        padding: 20px;
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        width: 145.457px;
+                        height: 33.35px;
+                        font-size: 11px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 12px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 16px;
+                            margin-bottom: 30px;
+                        }
+                        & .subheading{
+                            font-size: 15px;
+                        }
+                        & .para{
+                            font-size: 12px;
+                            & .anchor{
+                                font-size: 12px;
+                                text-decoration: none;
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+    }
+} 
 
 @include media-breakpoint-down(sm) {
     .headerFluid{
@@ -7868,4 +8660,98 @@
             }
         }
     }
-}
+
+    
+    .sponsorshipPage{
+        & .sponsorshipPageFluid{
+            & .sponsorCard{
+                & .box{
+                    padding: 20px;
+                    & .sponsorName{
+                    }
+                    & .field{
+                    }
+                    & .discription{
+                    }
+                    & .bottom{
+                        margin-top: 20px;
+                        & .oneSection{
+                            & img{
+                            }
+                            & span{
+                                &.punch{
+                                    & img{
+                                    }
+                                }
+                                & img{
+                                }
+                            }
+                        }
+                        & .readMoreBtn{
+                        }
+                    }
+                }
+                & .sponsorImg{
+                    & img{
+                    }
+                }
+            }
+        }
+    }
+    .downloadAppMobile{
+        padding: 20px;
+        & .mobileBox{
+            & .navPillsUl{
+                & .navItem{
+                    & .navLink{
+                        width: 145.457px;
+                        height: 33.35px;
+                        font-size: 11px;
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .pillsContent{
+                & .tabPaneIos{
+                    & .iosTab{
+                        &.iosModalContentMobile{
+                            padding: 30px 19px 30px 19px !important;
+                            & .modalImg{
+                                & img{
+    
+                                }
+                            }
+                        }
+                        & .heading{
+                            font-size: 15px;
+                        }
+                        & .subheading{
+                            font-size: 15px;
+                        }
+                        & .para{
+                            font-size: 12px;
+                            & .anchor{
+                            }
+                        }
+                        & .modalImg{
+                            & img{
+                            }
+                        }
+                        & .stepBtn{
+                        }
+                    }
+                }
+                & .tabPaneAndroid{
+    
+                }
+            }
+        }
+        & .downArrow{
+            & img{
+                width: 22.999px;
+                height: 21.876px;
+            }
+        }
+    }
+} 

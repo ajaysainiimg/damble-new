@@ -45,41 +45,46 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/libs/swiper-js/css/swiper.css">
+    <!-- * Select2 css -->
+    <link rel="stylesheet" href="assets/libs/select2/select2.min.css">
 </head>
 <body>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userinfoone">
-        User Information Model
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mastermodel">
-        Master Medals Model
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userInfoModal">
-        User Information Model 2
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editImage">
-        Edit Image
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#globalsetting">
-        Global Setting
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vipclubModal">
-        vip club
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#privacytwo">
-        privacy modal
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recharge">
-        recharge
-    </button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginregister">
-        login register
-    </button>
+    <div class="row gap-4 mt-4 mx-0">
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#userinfoone">
+            User Information Model
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#mastermodel">
+            Master Medals Model
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#userInfoModal">
+            User Information Model 2
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#editImage">
+            Edit Image
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#globalsetting">
+            Global Setting
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#vipclubModal">
+            vip club
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#privacytwo">
+            privacy modal
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#recharge">
+            recharge
+        </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#loginregister">
+            login register
+        </button>
+    </div>
     
 
     <!-- User Information model start-->
@@ -1487,18 +1492,20 @@
 
     <!-- login & register modal start  -->
     <div class="modal fade loginModal" id="loginregister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog logindialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content loginContent h-100 overflow-hidden">
-                <!-- <div class="modal-header border-0"> -->
-                    <!-- <div class="modal-title fs-5" id="exampleModalLabel">Modal title</div> -->
-                    
-                <!-- </div> -->
+        <div class="modal-dialog logindialog modal-xl modal-dialog-centered modal-dialog-scrollable ">
+            <div class="modal-content loginContent h100 overflow-hidden border-0">
+                <div class="modal-header header border-0 d-lg-none d-flex bg-transparent">
+                    <div class="modal-title logoimg" id="exampleModalLabel"><img src="assets/img/newIcon/logo2.svg" class="h-100" alt=""></div> 
+                    <button type="button" class="btn-close shadow-none border-0 btnClose smbtnClose  d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                    </button>
+                </div> 
                 <div class="modal-body p-0 position-relative">
-                    <button type="button" class="btn-close btnClose position-absolute d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
-                            <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
-                        </button>
+                    <button type="button" class="btn-close shadow-none border-0 btnClose position-absolute d-lg-flex d-none align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                    </button>
                     <div class="row h-100 mx-0">
-                        <div class="col-md-6 loginformMain">
+                        <div class="col-lg-6 loginformMain order-2 order-lg-1">
                             <div class="logindata row">
                                 <div class="col-12">
                                     <ul class="nav nav-tabs border-0 gap-3" id="myTab" role="tablist">
@@ -1513,41 +1520,176 @@
                                 <div class="tab-content col-12 tabdata" id="myTabContent">
                                     <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
                                         <form action="">
-                                            <div class="inputdata">
-                                                <label for="email" class="inputLabel">EMAIL <span>*</span></label>
-                                                <input type="text" id="email" class="form-control inputlogin border-0 shadow-none" placeholder="Email">
-                                            </div>
-                                            <div class="inputdata passwordInput">
-                                                <label for="password" class="inputLabel">PASSWORD <span>*</span></label>
-                                                <input type="password" id="password" class="form-control inputlogin border-0 shadow-none" placeholder="******">
-                                            </div>
-                                            <div class="inputdata forgotmain">
-                                                <a href="javascript:;" class="forgotPassword text-decoration-none">Forgot password?</a>
-                                            </div>
-                                            <div class="inputdata">
-                                                <label for="facode" class="inputLabel">2FA CODE</label>
-                                                <input type="text" id="facode" class="form-control inputlogin border-0 shadow-none" placeholder="Code">
-                                            </div>
-                                            <div class="inputdata forgotmain">
-                                                <div class="forgotPassword">Required if you enabled 2FA authentication</div>
-                                            </div>
-                                            <div>
-                                                <a href="javascript:;" class="playBtn position-relative d-flex align-items-center justify-content-center">
-                                                    <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
-                                                        Play now!
+                                            <div class="row gap-3 gx-0">
+                                                <div class="col-12 inputdata">
+                                                    <label for="email" class="inputLabel">EMAIL <span>*</span></label>
+                                                    <input type="text" id="email" class="form-control inputlogin border-0 shadow-none" placeholder="Email">
+                                                </div>
+                                                <div class="col-12 inputdata">
+                                                    <label for="email" class="inputLabel">select <span>*</span></label>
+                                                    <select class="original-select jq-sel-a form-control inputlogin border-0 shadow-none">
+                                                        <option>One</option>
+                                                        <option>Two</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 inputdata passwordInput pt-0">
+                                                    <label for="password1" class="inputLabel">PASSWORD <span>*</span></label>
+                                                    <div class="position-relative passwordGroup">
+                                                        <input type="password" id="password1" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                        <img src="assets/img/newIcon/eyeopen.svg" class="eye  open" alt="">
+                                                        <img src="assets/img/newIcon/eyeclose.svg" class="eye active close" alt="">
                                                     </div>
-                                                </a>
+                                                    <div class="inputdata forgotmain">
+                                                        <a href="javascript:;" class="forgotPassword text-decoration-none">Forgot password?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 inputdata">
+                                                    <label for="facode" class="inputLabel">2FA CODE</label>
+                                                    <input type="text" id="facode" class="form-control inputlogin border-0 shadow-none" placeholder="Code">
+                                                    <div class="inputdata forgotmain">
+                                                        <div class="forgotPassword">Required if you enabled 2FA authentication</div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="row mt-4 gap-4">
+                                                <div class="col-10 mx-auto">
+                                                    <a href="javascript:;" class="playBtn position-relative d-flex align-items-center justify-content-center">
+                                                        <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                            Play now!
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-10 mx-auto ">
+                                                    <div class="loginbutton text-center">
+                                                        <a href="javascript:;" class="directLogin text-decoration-none ">Log in directly with</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row align-items-center justify-content-center g-2">
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/google.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/telegram.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/metamask-grayscale-logo.svg" alt=""> </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/whatsapp.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </form>
                                     </div>
-                                    <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-                                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <form action="">
+                                            <div class="row gap-3 gx-0">
+                                                <div class="col-12 inputdata">
+                                                    <label for="text" class="inputLabel">USERNAME <span>*</span></label>
+                                                    <input type="text" id="text" class="form-control inputlogin border-0 shadow-none" placeholder="Username">
+                                                </div>
+                                                <!-- <div class="col-12 inputdata">
+                                                    <label for="text" class="inputLabel">USERNAME <span>*</span></label>
+                                                    <input type="text" id="text" class="form-control inputlogin border-0 shadow-none" placeholder="Username">
+                                                </div> -->
+                                                <div class="col-12 inputdata">
+                                                    <label for="email12" class="inputLabel">EMAIL <span>*</span></label>
+                                                    <input type="text" id="email12" class="form-control inputlogin border-0 shadow-none" placeholder="Email">
+                                                </div>
+                                                <div class="col-12 inputdata passwordInput pt-0">
+                                                    <label for="password" class="inputLabel">PASSWORD <span>*</span></label>
+                                                    <div class="position-relative passwordGroup">
+                                                        <input type="password" id="password" class="form-control inputlogin border-0 shadow-none" placeholder="******">
+                                                        <img src="assets/img/newIcon/eyeopen.svg" class="eye  open" alt="">
+                                                        <img src="assets/img/newIcon/eyeclose.svg" class="eye active close" alt="">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-12 inputdata forgotmain">
+                                                    <div class="forgotPassword">Required if you enabled 2FA authentication</div>
+                                                </div> -->
+                                                <div class="col-12 inputdata forgotmain">
+                                                    <div class="form-check ">
+                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckC" checked>
+                                                        <label class="form-check-label forgotPassword" for="flexCheckC">
+                                                            I agree to the User Agreement & confirm I am at least 18 years old
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label forgotPassword" for="flexCheckChecked">
+                                                            I agree to receive marketing promotions from Damble.
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-4 gap-4">
+                                                <div class="col-10 mx-auto">
+                                                    <a href="javascript:;" class="playBtn position-relative d-flex align-items-center justify-content-center">
+                                                        <div class="playBtnInner d-flex align-items-center justify-content-center w-100">
+                                                            Play now!
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-10 mx-auto ">
+                                                    <div class="loginbutton text-center">
+                                                        <a href="javascript:;" class="directLogin text-decoration-none ">Log in directly with</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-10 mx-auto">
+                                                    <div class="row align-items-center justify-content-center g-2">
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/google.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/telegram.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/metamask-grayscale-logo.svg" alt=""> </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a href="javascript:;" class="text-decoration-none">
+                                                                <div class="link"><img src="assets/img/newIcon/whatsapp.svg" alt=""></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 px-0">
+                        <div class="col-lg-6 px-0 order-lg-2 order-1">
                             <div class="loginImg h-100">
+                                <div class="row h-100 align-items-center innerimages mx-0 py-lg-0 py-5">
+                                    <div class="col-10 mx-auto">
+                                        <div class="shadowImg position-absolute top-0 mx-5"><img src="assets/img/loginDropShap.png" class="w-100" alt=""></div>
+                                        <div class="userImg"><img src="assets/img/loginuserImg.png" class="w-100" alt=""></div>
+                                        <div class="text-center">
+                                            <div class="mainHeading">WELCOME TO DAMBLE</div>
+                                            <div class="subheading mt-1">your gaming JOURNEY starts NOW!</div>
+                                            <div class="logo mt-3 d-lg-block d-none"><img src="assets/img/newIcon/logo2.svg" class="h-100" alt="logo"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1563,6 +1705,8 @@
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- * Select2 Js -->
+    <script src="assets/libs/select2/select2.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
     <script src="assets/libs/swiper-js/js/swipejs.js"></script>
@@ -1607,6 +1751,37 @@
         function rangeSlide(value) {
             document.getElementById('rangeValue').innerHTML = value;
         }
+    </script>
+
+    <!-- Select2 -->
+    <script>
+        
+$(document).ready(function(){
+	const selA = $('.jq-sel-a');
+	selA.select2({
+		minimumResultsForSearch: Infinity,
+		dropdownCssClass: 'custom-select2__options',
+	});
+	
+	const selB = $('.jq-sel-b');
+	const s2B = selB.select2({
+		minimumResultsForSearch: Infinity,
+		dropdownCssClass: 'custom-select2__options',
+	});
+	
+	selB.on('select2:open', function (e){
+		const $btn = $('<button class="custom-select2__btn"></button>');
+		const $trg = $(e.target);
+		$btn.on('click', function() {
+				$trg.select2('close');
+		});
+		
+		const $container = $('.' + $trg.data('select2').options.options.dropdownCssClass);
+		if ($container.find('.custom-select2__btn').length == 0) {
+			$container.append($btn);
+		}
+	});
+});
     </script>
 
     <!-- range slider -->

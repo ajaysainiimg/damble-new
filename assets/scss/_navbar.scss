@@ -170,10 +170,12 @@
 
         // new margin 
         margin-left: 300px;
-        margin-top: 60px;
+        margin-top: 86.4px;
         padding: 10px;
         & .homepage{
-            padding: 40.65px 52.81px 0px 89.71px;
+            padding-left:104px ;
+            padding-right: 110px;
+            // padding: 40.65px 52.81px 0px 89.71px;
         }
         transition: all 0.3s;                                                                                                                                                      
         & .affiliatePage{
@@ -188,7 +190,6 @@
     & .footerSection {
         margin-left: 300px;
         background: #0D131C;
-        margin-top: 78px;
         & .footer {
             padding: 45.65px 62.81px 0px 99.71px;
         }
@@ -198,14 +199,14 @@
     .main{
         & .mainContaint {
             & .homepage{
-                padding: 40px 52px 0px 52px;
+                padding: 0px 52px 0px 52px;
             }
             & .affiliatePage{
                 padding: 65px 21px 0px 21px;
             }
         }
         & .footerSection {
-            margin-top: 75px;
+            // margin-top: 75px;
             & .helpSection, & .footerLinks, & .accordionFooter {
                 padding: 45px 62px 0px 62px;
             }
@@ -240,7 +241,7 @@
         & .mainContaint {
             margin-left: 0px;
             & .homepage{
-                padding: 37px 52px 0px 52px;
+                padding: 0px 52px 0px 52px;
             }
             & .affiliatePage{
                 padding: 50px 21px 50px 21px;
@@ -248,7 +249,7 @@
         }
         & .footerSection {
             margin-left: 0px;
-            margin-top: 75px;
+            // margin-top: 75px;
             & .helpSection, & .footerLinks, & .accordionFooter {
                 padding: 42px 55px 0px 55px;
             }
@@ -262,19 +263,34 @@
     }
     .main{
         & .mainContaint {
+            margin-top: 60px;
             & .homepage{
-                padding: 35px 47px 0px 47px;
+                padding: 0px 47px 0px 47px;
             }
             
         }
         & .footerSection {
-            margin-top: 60px;
+            // margin-top: 60px;
             & .helpSection, & .footerLinks, & .accordionFooter {
                 padding: 40px 50px 0px 50px;
             }
         }
     }
 } 
+@include media-breakpoint-down(md) {
+    .main{
+        & .mainContaint {
+            margin-top: 58px;
+            & .homepage{
+            }
+            
+        }
+        & .footerSection {
+            & .helpSection, & .footerLinks, & .accordionFooter {
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {
     .sidebar{
@@ -284,11 +300,11 @@
         & .mainContaint {
             // margin-top: px;
             & .homepage{
-                padding: 25px 15px 0px 15px;
+                padding: 0px 15px 0px 15px;
             }
         }
         & .footerSection {
-            margin-top: 40px;
+            // margin-top: 40px;
             & .helpSection, & .footerLinks, & .accordionFooter {
                 padding: 30px 25px 0px 25px;
             }
