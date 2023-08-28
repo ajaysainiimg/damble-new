@@ -1228,10 +1228,10 @@
 
 // policy page start
 .policypage {
-    padding: 58px 150px 75px;
+    padding: 58px 75px 75px;
     & .policyHeading {
         color: #D8DEE5;
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 800;
         line-height: normal;
         font-variant: all-small-caps;
@@ -1260,6 +1260,12 @@
         font-weight: 400;
         line-height: normal;
     }
+    & .policymain {
+        gap: 40px;
+        & .policyInner {
+            gap: 20px;
+        }
+    }
 }
 // policy page end
 
@@ -1270,11 +1276,27 @@
 
 @include media-breakpoint-up(md) {}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+}
 
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(xxl) {
+    // policy page start
+.policypage {
+    padding: 58px 150px 75px;
+    & .policyHeading {
+    }
+    & .policyDate {
+    }
+    & .policysubHeading {
+    }
+    & .policyDetail {
+    }
+    & .policyLink {
+    }
+}
+// policy page end
 }
 
 @include media-breakpoint-down(xxl) {
