@@ -1052,6 +1052,15 @@
             & .bookmarkIcon {
                 // width: 13px;
                 height: 17px;
+                & img {
+                    filter: grayscale(1);
+                    transition: all 0.3s ease-in-out;
+                }
+                &.active {
+                    & img {
+                        filter: none;
+                    }
+                }
             }
             & .demomode {
                 gap: 10px;
@@ -1231,10 +1240,13 @@
     padding: 58px 75px 75px;
     & .policyHeading {
         color: #D8DEE5;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 800;
         line-height: normal;
         font-variant: all-small-caps;
+        // &.policamlHeading {
+        //     font-size: 30px;
+        // }
     }
     & .policyDate {
         color: #D8DEE5;
@@ -1491,6 +1503,33 @@
         }
     }
     // games page end 
+
+    // policy page start
+    .policypage {
+        padding: 50px 50px 65px;
+        & .policyHeading {
+            font-size: 28px;
+        }
+        & .policyDate {
+            font-size: 18px;
+        }
+        & .policysubHeading {
+            font-size: 19px;
+        }
+        & .policyDetail {
+            font-size: 18px;
+        }
+        & .policyLink {
+            font-size: 18px;
+        }
+        & .policymain {
+            gap: 40px;
+            & .policyInner {
+                gap: 20px;
+            }
+        }
+    }
+    // policy page end
 
 }
 
@@ -1906,6 +1945,33 @@
         }
     }
     // result page end
+
+    // policy page start
+    .policypage {
+        padding: 38px 40px 50px;
+        & .policyHeading {
+            font-size: 26px;
+        }
+        & .policyDate {
+            font-size: 16px;
+        }
+        & .policysubHeading {
+            font-size: 18px;
+        }
+        & .policyDetail {
+            font-size: 16px;
+        }
+        & .policyLink {
+            font-size: 16px;
+        }
+        & .policymain {
+            gap: 33px;
+            & .policyInner {
+                gap: 17px;
+            }
+        }
+    }
+    // policy page end
 }
 
 @include media-breakpoint-down(md) {
@@ -2497,6 +2563,33 @@
         }
     }
     // result page end
+
+    // policy page start
+    .policypage {
+        padding: 38px 24px 50px;
+        & .policyHeading {
+            font-size: 22px;
+        }
+        & .policyDate {
+            font-size: 15px;
+        }
+        & .policysubHeading {
+            font-size: 16px;
+        }
+        & .policyDetail {
+            font-size: 14px;
+        }
+        & .policyLink {
+            font-size: 14px;
+        }
+        & .policymain {
+            gap: 30px;
+            & .policyInner {
+                gap: 15px;
+            }
+        }
+    }
+    // policy page end
 }
 
 @include media-breakpoint-down(sm) {
@@ -3092,4 +3185,31 @@
         }
     }
     // result page end
+
+    // policy page start
+    .policypage {
+        padding: 38px 11px 50px;
+        & .policyHeading {
+            font-size: 15px;
+        }
+        & .policyDate {
+            font-size: 13px;
+        }
+        & .policysubHeading {
+            font-size: 14px;
+        }
+        & .policyDetail {
+            font-size: 10px;
+        }
+        & .policyLink {
+            font-size: 10px;
+        }
+        & .policymain {
+            gap: 30px;
+            & .policyInner {
+                gap: 15px;
+            }
+        }
+    }
+    // policy page end
 }
