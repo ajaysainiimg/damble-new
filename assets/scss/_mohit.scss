@@ -620,8 +620,9 @@
         max-width: 672px;
         & .bankContent {
             background-color: #161A25;
-            padding:20px 42px 45px;
+            // padding:20px 42px 45px;
             & .bankHeader {
+                padding: 20px 42px 0 !important;
                 & .btn-close {
                     background: none;
                     height: 13px;
@@ -649,8 +650,11 @@
 
                 }
             }
+            & .modal-body {
+                padding: 27px 42px 45px !important;
+            }
             & .banktabContent {
-                padding-top: 27px;
+                // padding-top: 27px;
                 & .cryptoTab {
                     & .cryptotabBtn {
                         color: #FFF;
