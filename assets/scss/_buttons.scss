@@ -335,4 +335,13 @@
     border-width: 2px;
     padding: 3px 29px;
   }
+  .form-switch {
+    // min-height: 0.5rem;
+    & .form-check-input {
+        width: 28px;
+        height: 15px;
+        &:checked {
+          }
+        }
+      }
 }
