@@ -266,8 +266,388 @@
         <!-- * Aside Bar End -->
         <main class="main vh-100" id="main">
             <div class="mainContaint">
-                <div class="homepage">
-                    
+                <div class="vipPage">
+                    <div class="row justify-content-between align-items-center vipHeader">
+                        <div class="col-sm-auto col-12"><div class="dashboard">DASHBOARD</div></div>
+                        <div class="col-sm col-12 d-flex align-items-center justify-content-sm-end justify-content-start gap-3 ">
+                            <div class="div d-flex align-items-center justify-content-md-end justify-content-between w-100">
+                                <div class="total d-flex align-items-center"><span></span>TOTAL BONUS RECEIVED:</div>
+                                <div class="div d-flex align-items-center justify-content-end">
+                                    <div class="dollor mx-3">$100,000</div>
+                                    <button class="detailBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-5 mb-md-0 mb-3">
+                            <div class="profile h-100">
+                                <div class="row">
+                                    <div class="col-12 d-sm-block d-none mb-4"><div class="user">“USERNAME”</div></div>
+                                    <div class="col-12 mb-3"><div class="userPic"><img src="assets/Img/userNft.png" alt=""></div></div>
+                                    <div class="col-12 d-sm-none d-block mb-2"><div class="user">“USERNAME”</div></div>
+                                    <div class="col-12 mb-4"><div class="rank">“RANK”</div></div>
+                                    <div class="col-12"><div class="txt"><span>$2,900 </span>/ $3,000 Wagered</div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7">
+                            <div class="row">
+                                <div class="col-12 pb-4 d-sm-none d-block">
+                                    <div class="row justify-content-between ">
+                                        <div class="nextRank col-auto d-flex align-items-center"><span></span>NEXT RANKS</div>
+                                        <div class="allRank col-auto"><a href="#offcanvasExample" class="anchor" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">All Ranks</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nextRankBox h-100">
+                                <div class="row">
+                                    <div class="col-12 pb-4 d-sm-block d-none">
+                                        <div class="row justify-content-between ">
+                                            <div class="nextRank col-auto d-flex align-items-center"><span></span>NEXT RANKS</div>
+                                            <div class="allRank col-auto"><a href="#offcanvasExample" class="anchor" data-bs-toggle="offcanvas" aria-controls="offcanvasExample">All Ranks</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="icon"><img src="assets/Img/vipPage/noStar.svg" alt=""></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="dambler">DAMBLER |</div>
+                                                        <div class="stock">Wager $10K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progressBar">
+                                                    <div class="progress progressFuill" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progressInner" style="width: 100%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-4 ">
+                                    <div class="col-12">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="icon"><img src="assets/Img/vipPage/singleStar.svg" alt=""></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="dambler">DAMBLER ||</div>
+                                                        <div class="stock">Wager $10K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progressBar">
+                                                    <div class="progress progressFuill" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progressInner" style="width: 0"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="icon"><img src="assets/Img/vipPage/2star.svg" alt=""></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="dambler">DAMBLER |||</div>
+                                                        <div class="stock">Wager $10K</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progressBar">
+                                                    <div class="progress progressFuill" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-4 position-relative">
+                        <div class="col-12 mt-sm-0 mt-5 d-md-none d-block">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="bonusHeading col-12 d-flex justify-content-start align-items-center">Bonus calendar: <span>$0.00</span></div>
+                                <div class="calendar col-12 d-flex justify-content-between align-items-center">
+                                    <div class="content">Total Claimed: $0.00</div>
+                                    <div class="d-flex align-items-center">
+                                        <a href="javascript:;" class="calendarView">Calendar view</a>
+                                        <div class="vipBtnPrev d-flex align-items-center justify-content-center me-2"><img src="assets/Img/vipPage/lftArrow.png" alt=""></div>
+                                        <div class="vipBtnNext d-flex align-items-center justify-content-center"><img src="assets/Img/vipPage/rytArrow.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-0 mt-5 d-md-block d-none">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="bonusHeading col-auto d-flex  align-items-center">Bonus calendar: <span>$0.00</span><span>Total Claimed: $0.00</span></div>
+                                <div class="calendar col-auto d-flex align-items-center"><a href="javascript:;" class="calendarView">Calendar view</a>
+                                    <div class="vipBtnPrev d-flex align-items-center justify-content-center me-2"><img src="assets/Img/vipPage/lftArrow.png" alt=""></div>
+                                    <div class="vipBtnNext d-flex align-items-center justify-content-center"><img src="assets/Img/vipPage/rytArrow.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-4">
+                            <div class="swiper mySwiper bonusSwiper">
+                                <div class="swiper-wrapper bonusSwiperWrapper">
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">TODAY</div></div>
+                                                <div class="col-12"><div class=" dollor"><span>$3.40/$3.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons"><img src="assets/Img/vipPage/check.png" alt=""></div>
+                                                    <div class="icons px-2"><img src="assets/Img/vipPage/check.png" alt=""></div>
+                                                    <div class="icons"><img src="assets/Img/vipPage/stopwatch.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class=" dollor">Avalilable:<span>$4.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons dollorIcon"><img src="assets/Img/vipPage/dollor.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-end align-items-end"><img src="assets/Img/vipPage/lock.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class=" dollor">Avalilable:<span>$4.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons dollorIcon"><img src="assets/Img/vipPage/dollor.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-end align-items-end"><img src="assets/Img/vipPage/lock.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">TODAY</div></div>
+                                                <div class="col-12"><div class=" dollor"><span>$3.40/$3.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons"><img src="assets/Img/vipPage/check.png" alt=""></div>
+                                                    <div class="icons px-2"><img src="assets/Img/vipPage/check.png" alt=""></div>
+                                                    <div class="icons"><img src="assets/Img/vipPage/stopwatch.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class=" dollor">Avalilable:<span>$4.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons dollorIcon"><img src="assets/Img/vipPage/dollor.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-end align-items-end"><img src="assets/Img/vipPage/lock.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class=" dollor">Avalilable:<span>$4.40</span></div></div>
+                                                <div class="col-12 py-3 d-flex align-items-center justify-content-center">
+                                                    <div class="icons dollorIcon"><img src="assets/Img/vipPage/dollor.png" alt=""></div>
+                                                </div>
+                                                <div class="renew flex-fill d-flex justify-content-end align-items-end"><img src="assets/Img/vipPage/lock.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide h-auto">
+                                        <div class="cards1 h-100">
+                                            <div class="row flex-column h-100">
+                                                <div class="col-12 pb-2"><div class="date">AUG 12</div></div>
+                                                <div class="col-12"><div class="dollor">$0.00</div></div>
+                                                <div class="renew flex-fill d-flex justify-content-center align-items-end">No Reward</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-button-next"><img src="assets/Img/vipPage/rytArrow.png" alt=""></div>
+                                <div class="swiper-button-prev"><img src="assets/Img/vipPage/lftArrow.png" alt=""></div>
+                                <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-3 col-6 mb-4 mb-xxl-0">
+                            <div class="cardwraper h-100">
+                                <div class="row flex-column h-100">
+                                    <div class="col-12 d-flex justify-content-between align-items-center">
+                                        <div class="name">CASHBACK <span>5%</span></div>
+                                        <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                    </div>
+                                    <div class="col-12 flex-fill d-flex justify-content-center align-items-center">
+                                        <!-- <div class="ring"><img src="assets/Img/vipPage/ring.png" alt=""></div> -->
+                                        <div class="position-relative">
+                                            <div class="progress-bar">
+                                                <progress value="85" min="0" max="100" style="visibility:hidden;height:0;width:0;">85%</progress>
+                                            </div>
+                                            <div class="progress-bar1">
+                                                <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="claimClass">CLAIM</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-12 order-2 order-xxl-1">
+                            <div class="row gy-4 h-100">
+                                <div class="col-6">
+                                    <div class="cardwraper flex-column h-100 d-flex">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="name">CASHBACK <span>5%</span></div>
+                                            <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 py-4 flex-fill d-flex justify-content-center align-items-center">
+                                            <div class="coinBag"><img src="assets/Img/vipPage/coinsBag.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="claimClass">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="cardwraper flex-column h-100 d-flex">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="name">CASHBACK <span>5%</span></div>
+                                            <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 py-4 flex-fill d-flex justify-content-center align-items-center">
+                                            <div class="coinBag"><img src="assets/Img/vipPage/b1.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="claimClass">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="cardwraper flex-column h-100 d-flex">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="name">CASHBACK <span>5%</span></div>
+                                            <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 py-4 flex-fill d-flex justify-content-center align-items-center">
+                                            <div class="coinBag"><img src="assets/Img/vipPage/b2.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="claimClass">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col-6">
+                                    <div class="cardwraper flex-column h-100 d-flex">
+                                        <div class="col-12 d-flex justify-content-between align-items-center">
+                                            <div class="name">CASHBACK <span>5%</span></div>
+                                            <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 py-4 flex-fill d-flex justify-content-center align-items-center">
+                                            <div class="coinBag"><img src="assets/Img/vipPage/b3.png" alt=""></div>
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="claimClass">CLAIM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-6 order-1 order-xxl-2 mb-4 mb-xxl-0">
+                            <div class="cardwraper h-100">
+                                <div class="row flex-column h-100">
+                                    <div class="col-12 d-flex justify-content-between align-items-center">
+                                        <div class="name">CASHBACK <span>5%</span></div>
+                                        <div class="exclamation"><img src="assets/Img/vipPage/exclamation.png" alt=""></div>
+                                    </div>
+                                    <div class="col-12 flex-fill d-flex justify-content-center align-items-center">
+                                        <div class="ring"><img src="assets/Img/vipPage/b1.png" alt=""></div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button class="claimClass">CLAIM</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--  **** Footer section *** -->
@@ -433,324 +813,379 @@
             </div>
         </main>
         
-    <!-- * Sign Up modal start1 -->
-        <div class="modal fade ragisterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- all ranks modal -->
+            <div class="offcanvas offcanvas-start allRanksOffcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header allRanksOffcanvasHeader d-flex align-items-center">
+                <h5 class="offcanvas-title allRanksOffcanvasTitle" id="offcanvasExampleLabel">ALL RANKS</h5>
+                <button type="button" class="btn-close offcanvasCloseBtn p-0 mb-0 me-0" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/Img/vipPage/close.png" alt=""></button>
                 </div>
-                <div class="modal-body">
-                <div class='row align-itemscenter'>
-                <div class='col-lg-6 mb-lg-0 mb-4'>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class='dambleUser d-flex px-sm-0 px-4'><img src="assets/img/herodamble.png" alt=""></div>
+                <div class="offcanvas-body allRanksOffcanvasBody">
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
                         </div>
-                        <div class="col-12">
-                            <div class='userName fw-bolder text-white text-center mt-4'>WELCOME TO DAMBLE <br/> <span class='fw-normal'>YOUR GAMING JOURNEY STARTS NOW</span> </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row align-items-center mx-0 mt-md-5">
-                                <div class="col">
-                                    <div class="line"></div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">NEW DAMBLER</div>
                                 </div>
-                                <div class="col-auto">
-                                    <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/whitelogo.png" alt="">
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER ||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center py-3">
+                        <div class="col-auto">
+                            <div class="logo"><img src="assets/Img/vipPage/damble.png" alt=""></div>
+                        </div>
+                        <div class="col">
+                            <div class="row align-items-center">
+                                <div class="col-12 ps-0">
+                                    <div class="logoTxt">DAMBLER |||</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-9 ps-0">
+                                            <div class="progressBar">
+                                                <div class="progress progressWrapper" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progressInner" style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 ps-0">
+                                            <div class="progressTxt">Wager $3K</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class='col-lg-6'>
-                    <form class='row mx-0 form gap-3'>
-                    <div class='col-12 fw-bold text-white registerHeading mb-3 d-lg-block d-none'>Sign Up</div>
-                    <div class="col-12">
-                        <ul class="pills d-flex align-items-start mb-0 ps-0">
-                            <li class="casinoPill w-50"><a href="javascript:;" class="pillAnchor  d-flex align-items-center justify-content-center">Email </a></li>
-                            <li class="casinoPill w-50"><a href="javascript:;" class="pillAnchor active d-flex justify-content-center align-items-center">Phone number </a></li>
-                        </ul>
-                    </div>
-                    <div class='col-12'><input type="text" class="form-control border-0 shadow-none" id="exampleForm2" placeholder="Email"/></div>
-                    <div class='col-12 position-relative'><input type="text" class="form-control border-0 shadow-none" id="exampleForm4" placeholder="Login Password"/>
-                    <div class="eye">
-                        <img src="assets/img/eyeIcon.png" alt="">
-                    </div></div>
-                    <div class='col-12'><input type="text" class="form-controll border-0 shadow-none" id="exampleForm4" placeholder="Enter Referral/Promo Code "/></div>
-                    <div class='col-12 mx-md-0 mx-auto'>
-                        <div class='form-check d-flex align-items-center'>
-                            <input type='checkbox' class="form-check-input" id='kk'>
-                            <label for='kk' class='form-check-label'>I agree to the <span>User Agreement</span> & Confirm I am at least 18 years old</label>
-                        </input>
-                    </div>
-                    <div class='col-12 mx-auto'><button type='button' class='btn ragisterBtn w-100 border-0'>Register</button></div>
-                    <div class="col-12"><div class="para">Already have an account?  <a href="javascript:;" class="paraAnchor" data-bs-toggle="modal" data-bs-target="#exampleModal1">Sign Up</a> Log in directly with</div></div>
-                    <div class="col-12">
-                        <div class="row align-items-center justify-content-center mt-5">
-                            <a href="javascript:;" class="col-auto d-flex pe-0">
-                                <div class="link"><img src="assets/img/link1.png" alt=""></div>
-                            </a>
-                            <a href="javascript:;" class="col-auto d-flex pe-0">
-                                <div class="link"><img src="assets/img/link2.png" alt=""></div>
-                            </a>
-                            <a href="javascript:;" class="col-auto d-flex">
-                                <div class="link"><img src="assets/img/link3.png" alt=""> </div>
-                            </a>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-                </div>
-                </div>
-                <!-- <div class="modal-footer">
-                <div class='footerImg'><img src={ModalFooter} alt='ModalFooter' /></div>
-                </div> -->
-            </div>
-        </div>
-    <!-- * modal end -->
+                <!-- <div class="allRanksOffcanvasFooter">
 
-    <!-- * Sign In modal start2 -->
-    <div class="modal fade ragisterModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close btnClose" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+            </div>
+
+
+        <!-- bonus detail Modal -->
+        <div class="modal fade bonusModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modallg bonusModalDialog">
+            <div class="modal-content bonusModalContent">
+                <div class="modal-header bonusModalHeader d-flex align-items-center position-relative">
+                <h1 class="modal-title bonusModalTitle fs-5" id="exampleModalLabel">BONUS DETAILS</h1>
+                <button type="button" class="btn-close closeBtn" data-bs-dismiss="modal" aria-label="Close"><img src="assets/Img/vipPage/close.png" alt=""></button>
                 </div>
-                <div class="modal-body">
-                <div class='row align-itemscenter'>
-                <div class='col-lg-6 mb-lg-0 mb-4'>
+                <div class="modal-body bonusModalBody">
                     <div class="row">
-                        <div class="col-12">
-                            <div class='dambleUser d-flex px-sm-0 px-4 dambleUser1'><img src="assets/img/herodamble.png" alt=""></div>
-                        </div>
-                        <div class="col-12">
-                            <div class='userName fw-bolder text-white text-center mt-4'>WELCOME TO DAMBLE <br/> <span class='fw-normal'>YOUR GAMING JOURNEY STARTS NOW</span> </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row mx-0 align-items-center mt-md-5">
-                                <div class="col">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="logoLine d-flex justify-content-center">
-                                        <img src="assets/img/whitelogo.png" alt="">
+                        <div class="col-5">
+                            <div class="modalBox">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div class="user"><img src="assets/Img/userNft.png" alt=""></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="total">total rewarded</div>
+                                        <div class="dollor">$100,000</div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/b1.png" alt=""></div>
+                                </div>
                                 <div class="col">
-                                    <div class="line"></div>
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Deposit</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/b2.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Daily</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/b3.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Weekly</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/coinsBag.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Monthly</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/coinsBag.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Cashback</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-2">
+                                <div class="col-auto">
+                                    <div class="modalIcon"><img src="assets/Img/vipPage/coinsBag.png" alt=""></div>
+                                </div>
+                                <div class="col">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="txt col-auto">Rackback</div>
+                                        <div class="dollor col-auto">$0.00</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class='col-lg-6'>
-                    <form class='row mx-0 form gap-3'>
-                    <div class='col-12 fw-bold text-white registerHeading mb-3 d-lg-block d-none'>Sign In</div>
-                    <div class='col-12'><input type="text" class="form-control border-0 shadow-none" id="exampleForm2" placeholder="Email\Phone number"></div>
-                    <div class='col-12 position-relative'><input type="text" class="form-control border-0 shadow-none" id="exampleForm4" placeholder="Login Password"/>
-                    <div class="eye">
-                        <img src="assets/img/eyeIcon.png" alt="">
-                    </div></div>
-                    <div class="col-12 forget d-flex justify-content-end text-white"> Forgot your Password?</div>
-                    <div class='col-12 mx-auto'><button type='button' class='btn ragisterBtn w-100 border-0'>Register</button></div>
-                    <div class="col-12"><div class="para1">New to DAMBLE ? <a href="javascript:;" class="paraAnchor" data-bs-toggle="modal" data-bs-target="#exampleModal">Create account</a></div></div>
-                    <div class="col-12">
-                        <div class="row align-items-center justify-content-center topMargin">
-                            <a href="javascript:;" class="col-auto d-flex pe-0">
-                                <div class="link"><img src="assets/img/link1.png" alt=""></div>
-                            </a>
-                            <a href="javascript:;" class="col-auto d-flex pe-0">
-                                <div class="link"><img src="assets/img/link2.png" alt=""></div>
-                            </a>
-                            <a href="javascript:;" class="col-auto d-flex">
-                                <div class="link"><img src="assets/img/link3.png" alt=""> </div>
-                            </a>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
+                <div class="modal-footer bonusModalFooter">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
             </div>
         </div>
-                <!-- <div class="modal-footer">
-                <div class='footerImg'><img src={ModalFooter} alt='ModalFooter' /></div>
-                </div> -->
-        </div>
-    </div>
-    <!--* modal end -->
+
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *Custom Js* -->
     <script src="assets/js/main.js"></script>
     <script src="assets/libs/swiper-js/js/swipejs.js"></script>
-
-
     <script>
-        var swiper = new Swiper(".cardSwiper", {
+        var swiper = new Swiper(".bonusSwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+                type: "fraction",
+            },
             navigation: {
-                nextEl: ".swiper-button-next-unique",
-                prevEl: ".swiper-button-prev-unique",
+            nextEl: ".vipBtnNext",
+            prevEl: ".vipBtnPrev",
             },
             breakpoints: {
                 0: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 8,
+                },
+                430: {
                     slidesPerView: 3,
-                    spaceBetween: 10,
+                    spaceBetween: 8,
                 },
-                400: {
-                    slidesPerView: 4,
-                    spaceBetween: 10,
-                },
-                500: {
-                    slidesPerView: 5,
-                    spaceBetween: 10,
+                576: {
+                    slidesPerView: 3,
+                    spaceBetween: 8,
                 },
                 768: {
-                    slidesPerView: 7,
-                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    spaceBetween: 8,
                 },
                 992:{
-                    slidesPerView: 9,
-                    spaceBetween: 10,
+                    slidesPerView: 3.5,
+                    spaceBetween: 8,
                 },
                 1200: {
-                    slidesPerView: 9,
-                    spaceBetween: 10,
+                    slidesPerView: 4.5,
+                    spaceBetween: 8,
                 },
                 1400: {
-                    slidesPerView: 10,
-                    spaceBetween: 10,
+                    slidesPerView: 6,
+                    spaceBetween: 8,
                 },
-                1600: {
-                    slidesPerView: 12,
-                    spaceBetween: 10,
-                },
-                1800: {
-                    slidesPerView: 14,
-                    spaceBetween: 10,
+                1500: {
+                    slidesPerView: 6,
+                    spaceBetween: 8,
                 },
                 },
-    });
+            });
     </script>
-
-<script>
-    var swiper = new Swiper(".casinoCard1", {
-navigation: {
-    nextEl: ".swiper-button-next-unique",
-    prevEl: ".swiper-button-prev-unique",
-},
-breakpoints: {
-    0: {
-        slidesPerView: 2.3,
-        spaceBetween: 8,
-    },
-    420: {
-        slidesPerView: 3,
-        spaceBetween: 8,
-    },
-    500: {
-        slidesPerView: 4,
-        spaceBetween: 8,
-    },
-    768: {
-        slidesPerView: 5,
-        spaceBetween: 8,
-    },
-    992:{
-        slidesPerView: 6,
-        spaceBetween: 8,
-    },
-    1100: {
-        slidesPerView: 7,
-        spaceBetween: 8,
-    },
-    1200: {
-        slidesPerView: 6,
-        spaceBetween: 8,
-    },
-    1400: {
-        slidesPerView: 7,
-        spaceBetween: 8,
-    },
-    1600: {
-        slidesPerView: 8,
-        spaceBetween: 8,
-    },
-    },
-});
-</script>
-    
-
-    <script>
-        var dambleUniverseSwiper = new Swiper(".dambleUniverseSwiper", {
-        navigation: {
-            nextEl: ".dambleUniverseNext",
-            prevEl: ".dambleUniversePrev",
-        }, breakpoints: {
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        992: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-      },
-        });
-  </script>
-
-<script>
-    var swiper = new Swiper(".sportsSwiper", {
-navigation: {
-    nextEl: ".swiper-button-next-unique",
-    prevEl: ".swiper-button-prev-unique",
-},
-breakpoints: {
-    0: {
-        slidesPerView: 2.3,
-        spaceBetween: 8,
-    },
-    430: {
-        slidesPerView: 3,
-        spaceBetween: 8,
-    },
-    576: {
-        slidesPerView: 4,
-        spaceBetween: 8,
-    },
-    768: {
-        slidesPerView: 5,
-        spaceBetween: 8,
-    },
-    992:{
-        slidesPerView: 6,
-        spaceBetween: 8,
-    },
-    1200: {
-        slidesPerView: 6,
-        spaceBetween: 8,
-    },
-    1400: {
-        slidesPerView: 7,
-        spaceBetween: 8,
-    },
-    1500: {
-        slidesPerView: 8,
-        spaceBetween: 8,
-    },
-    },
-});
-</script>
 </body>
 </html>
