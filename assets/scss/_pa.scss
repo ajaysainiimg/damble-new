@@ -4434,9 +4434,9 @@
 .allRanksOffcanvas{
     border-radius: 10px;
     background: #161A25;
-    padding: 30px 20px;
+    // padding: 30px 20px;
     & .allRanksOffcanvasHeader{
-        padding: 0;
+        padding: 30px 20px 20px;
         & .allRanksOffcanvasTitle{
             color: #FFF;
             text-align: center;
@@ -4453,7 +4453,7 @@
     }
     & .allRanksOffcanvasBody{
         padding: 0;
-        padding: 40px 0;
+        padding: 10px 20px;
         border-bottom: 0;
         & .logo{
             width: 69.301px;
