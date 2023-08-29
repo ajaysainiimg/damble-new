@@ -622,7 +622,7 @@
             background-color: #161A25;
             // padding:20px 42px 45px;
             & .bankHeader {
-                padding: 20px 42px 0 !important;
+                padding: 20px 42px 15px;
                 & .btn-close {
                     background: none;
                     height: 13px;
@@ -650,8 +650,8 @@
 
                 }
             }
-            & .modal-body {
-                padding: 27px 42px 45px !important;
+            & .bankbody {
+                padding: 20px 42px 45px;
             }
             & .banktabContent {
                 // padding-top: 27px;
@@ -1312,6 +1312,47 @@
 }
 // policy page end
 
+// transaction modal start 
+.transactionModal {
+    & .transactionDialog {
+        max-width: 600px;
+        // max-height: 100px;
+        & .transactionContent {
+            background-color: #161a25;
+            & .transactionHeader {
+                padding: 10px 30px 20px ;
+                & .transactionTitle {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight:600;
+                }
+                & .btn-close {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+            & .transactionBody {
+                padding: 10px 30px 45px ;
+                & .inputdata {
+                    gap: 25px;
+                    & .inputlogin {
+                        height: 40px;
+                    }
+                }
+                & .filechooseLabel {
+                    height: 100px;
+                    width: 100px;
+                    border: 1px solid #D3F93A;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// transaction modal end 
+
 
 @include media-breakpoint(basic) {
 }
@@ -1729,8 +1770,9 @@
             // max-width: 100%;
             & .bankContent {
                 // padding:20px 16px;
-                padding:20px 35px 45px;
+                // padding:20px 35px 45px;
                 & .bankHeader {
+                    padding:20px 35px 13px;
                     & .btn-close {
                     }
                     & .bankTab {
@@ -1743,6 +1785,9 @@
                             }
                         }
                     }
+                }
+                & .bankbody {
+                    padding:20px 35px 45px;
                 }
                 & .banktabContent {
                     & .cryptoTab {
@@ -2301,8 +2346,9 @@
             max-width: 90%;
             & .bankContent {
                 // padding:20px 16px;
-                padding:20px 25px 45px;
+                // padding:20px 25px 45px;
                 & .bankHeader {
+                    padding:20px 25px ;
                     & .btn-close {
                     }
                     & .bankTab {
@@ -2315,6 +2361,9 @@
                             }
                         }
                     }
+                }
+                & .bankbody {
+                    padding:15px 25px 45px;
                 }
                 & .banktabContent {
                     & .cryptoTab {
@@ -2621,6 +2670,30 @@
         }
     }
     // policy page end
+
+    // transaction modal start 
+    .transactionModal {
+        & .transactionDialog {
+            max-width: 550px;
+            & .transactionContent {
+                & .transactionHeader {
+                    & .transactionTitle {
+                    }
+                    & .btn-close {
+                    }
+                }
+                & .transactionBody {
+                    & .inputdata {
+                        & .inputlogin {
+                        }
+                    }
+                    & .filechooseLabel {
+                    }
+                }
+            }
+        }
+    }
+    // transaction modal end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -2914,8 +2987,9 @@
         & .bankdialog {
             max-width: 100%;
             & .bankContent {
-                padding:20px 16px 40px;
+                // padding:20px 16px 40px;
                 & .bankHeader {
+                    padding:20px 16px 13px;
                     & .btn-close {
                     }
                     & .bankTab {
@@ -2928,6 +3002,9 @@
                             }
                         }
                     }
+                }
+                & .bankbody {
+                    padding:20px 16px 40px;
                 }
                 & .banktabContent {
                     & .cryptoTab {
@@ -3247,4 +3324,36 @@
 
     }
     // policy page end
+
+    // transaction modal start 
+    .transactionModal {
+        & .transactionDialog {
+            max-width: 100%;
+            & .transactionContent {
+                & .transactionHeader {
+                    padding: 10px 15px 15px ;
+                    & .transactionTitle {
+                        font-size: 16px;
+                    }
+                    & .btn-close {
+                    }
+                }
+                & .transactionBody {
+                    padding: 10px 15px 30px ;
+                    & .inputdata {
+                        gap: 20px;
+                        & .inputlogin {
+                            // height: 40px;
+                        }
+                    }
+                    & .filechooseLabel {
+                        height: 80px;
+                        width: 80px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    // transaction modal end 
 }
