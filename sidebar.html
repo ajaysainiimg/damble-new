@@ -998,7 +998,7 @@
                             </div>
                         </div>
                         <div class="col text-center">
-                            <a href="javascript:;" class="chatrules">CHAT RULES</a>
+                            <a href="javascript:;" class="chatrules"  data-bs-toggle="modal" data-bs-target="#chatrules">CHAT RULES</a>
                         </div>
                         <div class="col-auto pe-0">
                             <div class="d-flex align-items-center gap-2 h-100">
@@ -1159,7 +1159,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="chatrulescard">
+                    <!-- <div class="chatrulescard">
                         <div class="chatHeading">CHAT RULES</div>
                         <div>
                             <ul class="ruleMenu m-0">
@@ -1175,7 +1175,7 @@
                                 <li class="rules">Enter "/" to see available chat commands</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="offcanvasFooter">
                     <div class="input-group InputMain align-items-center">
@@ -1191,6 +1191,37 @@
             </div>
             <!-- message offcanvas end -->
 
+            <!-- chat rules modal start -->
+            <div class="modal fade rulesmodal" id="chatrules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog rulesDialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content rulescontent chatrulescard p-0">
+                        <div class="modal-header border border-0 rulesheader">
+                            <div class="modal-title chatHeading " id="exampleModalLabel">Chat Rules</div>
+                            <!-- <button type="button" class="btn-close shadow-none border-0 closebtn pe-0 d-flex align-items-center justify-content-center"data-bs-dismiss="modal" aria-label="Close">
+                                <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                            </button> -->
+                        </div>
+                        <div class="modal-body rulebody">
+                            <ul class="ruleMenu m-0">
+                                <li class="rules">Do not harass or insult other users</li>
+                                <li class="rules">Do not beg, ask for loans, trivias or tips</li>
+                                <li class="rules">Do not insinuate Damble has bad intent ("scam site" etc)</li>
+                                <li class="rules">Do not spam or post non-Damble links</li>
+                                <li class="rules">Do not advertise any form of trading, buying or selling services</li>
+                                <li class="rules">Do not share or advertise your referral code</li>
+                                <li class="rules">Do not ask to become a staff member</li>
+                                <li class="rules">English only</li>
+                                <li class="rules">Respect mods, admins and other users</li>
+                                <li class="rules">Enter "/" to see available chat commands</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </main>
         
     <!-- * Sign Up modal start1 -->

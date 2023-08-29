@@ -1492,6 +1492,26 @@
 }
 // message offcanvas end 
 
+// chat rules modal start 
+.rulesmodal {
+    & .rulesDialog {
+        max-width: 390px;
+        & .rulesheader {
+            padding: 14px 14px 0;
+            & .closebtn {
+                height: 13px;
+                width: 13px;
+                margin-right: 13px;
+                background: none;
+            }
+        }
+        & .rulebody {
+            padding: 0 14px 14px;
+        }
+    }
+}
+// chat rules modal end
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -3552,4 +3572,19 @@
         }
     }
     // message offcanvas end 
+
+    // chat rules modal start 
+    .rulesmodal {
+        & .rulesDialog {
+            max-width: 100%;
+            & .rulesheader {
+                & .closebtn {
+
+                }
+            }
+            & .rulebody {
+            }
+        }
+    }
+    // chat rules modal end
 }
