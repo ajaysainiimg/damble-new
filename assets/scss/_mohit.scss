@@ -744,12 +744,34 @@
                         }
                         & .bitcoinIcon {
                             width: 23px;
+                            min-width: 23px;
                             height: 23px;
                         }
                     }
                     & .btcdropmenu {
                         background-color: #0D131C;
                         // top: 5px !important;
+                        max-height: 200px;
+                        overflow-y: auto;
+                        & .dropSearch {
+                            margin-bottom: 5px;
+                            & .searchIcon {
+                                position: absolute;
+                                left: 15px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                height: 16px;
+                            }
+                            & .searchInput {
+                                border: 1px solid #1c212c !important;
+                                background-color: #1c212c !important;
+                                color: white;
+                                border-radius: 5px;
+                                padding-left: 40px;
+                                font-size: 14px;
+                                height: 36.6px;
+                            }
+                        }
                         & .btcInner {
                             color: #FFF;
                             font-size: 13px;
@@ -759,11 +781,16 @@
                             background: #0D131C;
                             padding: 7px 14px;
                             border: 1px solid #0D131C;
+                            border: 1px solid transparent;
                             &:hover {
-                                background-color: #161A25;
+                                border-color: #cf0;
+                            }
+                            &.active {
+                                border-color: #cf0;
                             }
                             & .selectIcon {
                                 width: 23px;
+                                min-width: 23px;
                                 height: 23px;
                             }
                             
