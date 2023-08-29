@@ -136,17 +136,17 @@
                                 <li>
                                     <div class="dropdown giftDrowpdown ">
                                         <a class="dropdown-toggle giftBtnDrop text-decoration-none d-flex" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                          <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <div class="position-relative d-flex align-items-center">
-                                                    <div class="dropImg d-inline-flex"><img class="image" src="assets/img/header/Gift_1_.svg" alt="gift" class="img-fluid w-100 h-100"></div>
-                                                    <span class="giftNotification">1</span>
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="position-relative d-flex align-items-center">
+                                                        <div class="dropImg d-inline-flex"><img class="image" src="assets/img/header/Gift_1_.svg" alt="gift" class="img-fluid w-100 h-100"></div>
+                                                        <span class="giftNotification">1</span>
+                                                    </div>
                                                 </div>
+                                                <div class="col ps-0">
+                                                    <div class="dropbtn">BONUS </div>
+                                                </div> 
                                             </div>
-                                            <div class="col ps-0">
-                                                <div class="dropbtn">BONUS </div>
-                                            </div> 
-                                          </div>
                                         </a>
                                         <ul class="dropdown-menu dropMenunav ">
                                             <li class="dropdown-item dropItem d-flex px-0 position-relative">
@@ -398,54 +398,32 @@
                                 <a class=" searchBtn d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                                     <img class="image" src="assets/img/header/search.svg" alt="search" class="img-fluid w-100 h-100">
                                 </a>
-                                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
                                     </div>
-                                    <div class="offcanvas-body">
-                                      <div>
-                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                      </div>
-                                      <div class="dropdown mt-3">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                          Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                      </div>
+                                    <div class="dropdown mt-3">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
                                     </div>
-                                  </div>
+                                </div>
+                                </div>
 
-                                  <!-- message offacanvas -->
-
-                                  <a class=" searchBtn d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample">
+                                <!-- message offacanvas -->
+                                <a class=" searchBtn d-flex align-items-center" data-bs-toggle="offcanvas" href="#message" role="button" aria-controls="message">
                                     <img class="image" src="assets/img/header/chat.svg" alt="search" class="img-fluid w-100 h-100">
-                                    </a>
-                                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample3" aria-labelledby="offcanvasExampleLabel">
-                                    <div class="offcanvas-header">
-                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                      <div>
-                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                      </div>
-                                      <div class="dropdown mt-3">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                          Dropdown button
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -994,7 +972,7 @@
                                         </a>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="javascript:;" class="bottomAnchor">
+                                        <a class="bottomAnchor" data-bs-toggle="offcanvas" href="#message" role="button" aria-controls="message">
                                             <div class="iconParent"><img src="assets/img/header/chat.svg" alt="" class="img-fluid w-100 h-100"></div>
                                         </a>
                                     </div>
@@ -1005,6 +983,247 @@
                 </div>
                 <!-- mobile bottom bar end -->
             </div>
+
+
+            <!-- message offcanvas start -->
+            <div class="offcanvas offcanvas-start msgoffcanvas" tabindex="-1" id="message" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header msgHeader p-0">
+                    <div class="row w-100">
+                        <div class="col-auto">
+                            <div class="msgImg d-flex align-items-center">
+                                <span class="d-flex align-items-center justify-content-center msgicon">
+                                    <img src="assets/Img/sidebar/chat.png" alt="message" class="h-100 w-100 img-fluid">
+                                </span>
+                                chat
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <a href="javascript:;" class="chatrules">CHAT RULES</a>
+                        </div>
+                        <div class="col-auto pe-0">
+                            <div class="d-flex align-items-center gap-2 h-100">
+                                <button type="button" class="btn-close offcanvasclose p0 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <img src="assets/Img/sidebar/offcanvasclose.png" alt="close" class="h-100 w-100 img-fluid">
+                                </button>
+                                <button type="button" class="btn-close shadow-none border-0 closebtn pe-0 d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</div> -->
+                </div>
+                <div class="offcanvas-body msgBody">
+                    <div class="row msgContent">
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="javascript:;" class="msgBtn text-decoration-none d-flex align-items-center ">
+                                <span class="userimg d-flex align-items-center overflow-hidden justify-content-center rounded-circle">
+                                    <img src="assets/Img/sidebar/user1.png" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                <div class="d-flex align-items-center gap-1">
+                                    <div class="username">Username :</div>
+                                    <div class="usermsg">I'm a new member</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="chatrulescard">
+                        <div class="chatHeading">CHAT RULES</div>
+                        <div>
+                            <ul class="ruleMenu m-0">
+                                <li class="rules">Do not harass or insult other users</li>
+                                <li class="rules">Do not beg, ask for loans, trivias or tips</li>
+                                <li class="rules">Do not insinuate Damble has bad intent ("scam site" etc)</li>
+                                <li class="rules">Do not spam or post non-Damble links</li>
+                                <li class="rules">Do not advertise any form of trading, buying or selling services</li>
+                                <li class="rules">Do not share or advertise your referral code</li>
+                                <li class="rules">Do not ask to become a staff member</li>
+                                <li class="rules">English only</li>
+                                <li class="rules">Respect mods, admins and other users</li>
+                                <li class="rules">Enter "/" to see available chat commands</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvasFooter">
+                    <div class="input-group InputMain align-items-center">
+                        <input type="text" class="form-control sendInput shadow-none border-0 bg-transparent" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                        <a class="btn d-flex text-decoration-none align-items-center justify-content-center bg-transparent border-0 shadow-none smileFace rounded-circle overflow-hidden p-0" type="button">
+                            <img src="assets/Img/sidebar/smileFace.png" alt="smileface" class="h-100 w-100 img-fluid">
+                        </a>
+                        <button class="btn sendBtn shadow-none border-0 p-0 d-flex align-items-center justify-content-center" type="button">
+                            <span class="d-flex align-items-center justify-content-center sendImg"><img src="assets/Img/sidebar/send.png" alt="send" class="h-100 w-100 img-fluid"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- message offcanvas end -->
+
         </main>
         
     <!-- * Sign Up modal start1 -->
@@ -1202,7 +1421,7 @@
     });
     </script>
 
-<!-- <script> -->
+    <!-- <script> -->
     <script>
         var swiper = new Swiper(".heroSlider", {
         // slidesPerView: 1,
@@ -1233,6 +1452,6 @@
         },
         });
     </script>
-<!-- </script> -->
+    <!-- </script> -->
 </body>
 </html>

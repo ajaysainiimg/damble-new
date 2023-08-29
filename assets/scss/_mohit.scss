@@ -1326,6 +1326,144 @@
 }
 // transaction modal end 
 
+// message offcanvas start 
+.msgoffcanvas {
+    max-width: 500px;
+    background-color: #161A25;
+    & .msgHeader {
+        margin: 18px 22px 0 ;
+        padding-bottom: 15px !important;
+        border-bottom: 2px solid #B2B6C5;
+        & .msgImg {
+            color: #FFF;
+            font-size: 11px;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 5px;
+            background: #222634;
+            width: 85.45px;
+            height: 28.128px;
+            padding-left: 10px;
+            gap: 8px;
+            & .msgicon {
+                height: 18px;
+                width: 18px;
+            }
+        }
+        & .chatrules {
+            color: #CF0;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .offcanvasclose {
+            width: 26px;
+            height: 20px;
+            background: none;
+        }
+        & .closebtn {
+            height: 12px;
+            background: none;
+            width: 12px;
+        }
+    }
+    & .msgBody {
+        padding: 18px 22px 30px;
+        & .msgContent {
+            gap: 10px;
+            & .msgBtn {
+                border-radius: 8px;
+                background: #222634;
+                padding: 12px 16px;
+                gap: 15px;
+                & .userimg {
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid #FFF;
+                }
+                & .username {
+                    color: #FFF;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: normal;
+                    white-space: nowrap;
+                }
+                & .usermsg {
+                    color: #B2B6C5;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: normal;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    & .offcanvasFooter {
+        padding: 18px 22px;
+        background: #161A25;
+        box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.50);
+        & .InputMain {
+            padding: 0 17px;
+            border-radius: 8px;
+            background: #0D131C;
+            height: 50px;
+            
+            & .sendInput {
+                color: #B2B6C5;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: normal;
+                &::placeholder {
+                    color: #B2B6C5;
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+            & .smileFace {
+                height: 20px;
+                width: 20px;
+                margin-right: 14px;
+            }
+            & .sendBtn {
+                width: 38.757px;
+                height: 27.5px;
+                border-radius: 5px;
+                background: #CF0;
+                box-shadow: 0px 0px 10px 0px #FFF inset;
+                // padding: 4px;
+                & .sendImg {
+                    width: 14.148px;
+                    height: 14.07px;
+                }
+            }
+        }
+    }
+}
+.chatrulescard {
+    border-radius: 8px;
+    background: #161A25;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.50);
+    padding: 14px;
+    & .chatHeading {
+        color: #FFF;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    & .ruleMenu {
+        padding-top: 12px;
+        & .rules {
+            color: #B2B6C5;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+// message offcanvas end 
 
 @include media-breakpoint(basic) {
 }
@@ -3329,4 +3467,62 @@
         }
     }
     // transaction modal end 
+
+    // message offcanvas start 
+    .msgoffcanvas {
+        max-width: 100%;
+        & .msgHeader {
+            & .msgImg {
+                & .msgicon {
+                }
+            }
+            & .chatrules {
+            }
+            & .offcanvasclose {
+            }
+            & .closebtn {
+            }
+        }
+        & .msgBody {
+            & .msgContent {
+                & .msgBtn {
+                    & .userimg {
+                        height: 25px;
+                        min-height: 25px;
+                        max-height: 25px;
+                        width: 25px;
+                        min-width: 25px;
+                        max-width: 25px;
+                    }
+                    & .username {
+                    }
+                    & .usermsg {
+                    }
+                }
+            }
+        }
+        & .offcanvasFooter {
+            & .InputMain {
+                & .sendInput {
+                    &::placeholder {
+                    }
+                }
+                & .smileFace {
+                }
+                & .sendBtn {
+                    & .sendImg {
+                    }
+                }
+            }
+        }
+    }
+    .chatrulescard {
+        & .chatHeading {
+        }
+        & .ruleMenu {
+            & .rules {
+            }
+        }
+    }
+    // message offcanvas end 
 }
