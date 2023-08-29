@@ -2264,20 +2264,23 @@
     <!-- bank modal end  -->
 
     <!-- disclaimer modal start  -->
-    <div class="modal fade" id="disclaimerModal" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade disclaimerModal" id="disclaimerModal" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog disclaimerdialog modal-dialog-scrollable modal-dialog-centered ">
+            <div class="modal-content disclaimerCard">
+                <div class="modal-header disclaimerHeader border-0">
+                    <div class="modal-title disclaimerheading" id="exampleModalLabel">Disclaimer:</div>
+                    <!-- <button type="button" class="btn-close shadow-none border-0 closebtn pe-0 d-flex align-items-center justify-content-center"data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/Img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                    </button> -->
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="modal-body disclaimerBody">
+                    <div class="disclaimerheading disclaimerDetail pt4">ou will be redirected to Onramper payment service provided by third-party. Please make sure the deposit address for the purchase matches the deposit address you copied above.</div>
+                    <div class="disclaimerheading disclaimerDetail pt-2">Damble is not responsible for any loss or damage caused by the use of this payment service.</div>
                 </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
