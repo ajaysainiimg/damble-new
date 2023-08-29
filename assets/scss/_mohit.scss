@@ -1013,7 +1013,7 @@
     border-radius: 9px;
     background: #161A25;
     box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.30);
-    padding:20px;
+    // padding:20px;
     & .disclaimerheading {
         color: #FFF;
         font-size: 15px;
@@ -1022,6 +1022,22 @@
         &.disclaimerDetail {
             font-size: 14px;
             color: #B2B6C5;
+        }
+    }
+}
+.disclaimerModal {
+    & .disclaimerdialog {
+        max-width: 450px;
+        & .disclaimerHeader {
+            padding: 20px 20px 0;
+            & .closebtn {
+                background: none;
+                height: 13px;
+                width: 13px;
+            }
+        }
+        & .disclaimerBody {
+            padding: 20px;
         }
     }
 }
@@ -3312,6 +3328,17 @@
                     }
                     
                 }
+            }
+        }
+    }
+    .disclaimerModal {
+        & .disclaimerdialog {
+            max-width: 100%;
+            & .disclaimerHeader {
+                & .closebtn {
+                }
+            }
+            & .disclaimerBody {
             }
         }
     }
