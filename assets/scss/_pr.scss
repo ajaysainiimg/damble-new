@@ -1,6 +1,6 @@
 .newHeroSection {
   & .sectionInner {
-    background-image: url(./../Img/newHeroBg1.png);
+    background-image: url(./../img/newHeroBg1.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: bottom 0 right 40px;
@@ -94,7 +94,7 @@
     background: #161A25;
     & .sectionInner {
       padding: 40px 40px 0;
-      background-image: url(./../Img/newHeroBgLogin.png);
+      background-image: url(./../img/newHeroBgLogin.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: bottom 0 right 40px;
@@ -441,7 +441,7 @@
         }
       }
       & .heroBgInner {
-        background-image: url(./../Img/newHeroBg1.png);
+        background-image: url(./../img/newHeroBg1.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom 0 center;
