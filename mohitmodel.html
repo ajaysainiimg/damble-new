@@ -90,6 +90,9 @@
         <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#transaction">
             transaction 
         </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#coinmodal">
+            coin modal
+        </button>
     </div>
     
 
@@ -2327,8 +2330,41 @@
             </div>
         </div>
     </div>
+    <!-- transaction modal end  -->
 
+    <!-- coin modal start  -->
+    <div class="modal fade coinmodal" id="coinmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog coindialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modalcontent">
+                <div class="modal-header border-0">
+                    <!-- <div class="modal-title cointitle" id="exampleModalLabel">Modal title</div> -->
+                    <button type="button" class="btn-close p0 shadow-none border-0 d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/sidebar/close.png" alt="close" class="h-100 w-100 img-fluid">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="coinIcon d-flex align-items-center justify-content-center">
+                                        <img src="assets/img/global/dollar-symbol.png" alt="coin" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- coin modal end  -->
 
+    
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- * Select2 Js -->

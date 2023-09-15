@@ -1528,6 +1528,21 @@
 }
 // chat rules modal end
 
+// coin modal start 
+.coinmodal {
+    & .coindialog {
+        max-width: 650px;
+        & .modalcontent {
+            background-color: #161a25;
+            & .coinIcon {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+// coin modal end 
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -1541,20 +1556,20 @@
 
 @include media-breakpoint-up(xxl) {
     // policy page start
-.policypage {
-    padding: 58px 150px 75px;
-    & .policyHeading {
+    .policypage {
+        padding: 58px 150px 75px;
+        & .policyHeading {
+        }
+        & .policyDate {
+        }
+        & .policysubHeading {
+        }
+        & .policyDetail {
+        }
+        & .policyLink {
+        }
     }
-    & .policyDate {
-    }
-    & .policysubHeading {
-    }
-    & .policyDetail {
-    }
-    & .policyLink {
-    }
-}
-// policy page end
+    // policy page end
 }
 
 @include media-breakpoint-down(xxl) {
