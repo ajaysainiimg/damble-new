@@ -2930,6 +2930,7 @@
     // coin modal start 
     .coinmodal {
         & .coindialog {
+            max-width: 550px;
             & .modalcontent {
                 & .coinIcon {
                     height: 45px;
