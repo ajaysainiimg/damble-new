@@ -1544,6 +1544,43 @@
                 height: 50px;
                 width: 50px;
             }
+            & .coinname {
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+            }
+            & .progress {
+                height: 5px;
+                background-color: #272B36;
+                & .progress-bar {
+                    background-color: #CBFD00;
+                }
+            }
+            & .rank {
+                font-size: 14px;
+                font-weight: 500;
+                color: #989CAD;
+                &.rankname {
+                    color: #CBFD00;
+                }
+            }
+            & .rankcoin {
+                height: 20px;
+                width: 20px;
+            }
+            & .rankcard {
+                background-color: #1D2230;
+                padding: 15px;
+                & .ranktotal {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #989CAD;
+                }
+            }
+            & .rankdata {
+                gap: 16px;
+            }
+        
         }
     }
 }
@@ -2889,6 +2926,45 @@
         }
     }
     // transaction modal end 
+
+    // coin modal start 
+    .coinmodal {
+        & .coindialog {
+            & .modalcontent {
+                & .coinIcon {
+                    height: 45px;
+                    width: 45px;
+                }
+                & .coinname {
+                    font-size: 20px;
+                }
+                & .progress {
+                    & .progress-bar {
+                    }
+                }
+                & .rank {
+                    font-size: 13px;
+                    &.rankname {
+                    }
+                }
+                & .rankcoin {
+                    height: 17px;
+                    width: 17px;
+                }
+                & .rankcard {
+                    & .ranktotal {
+                    }
+                }
+                & .rankdata {
+                    gap: 14px;
+                }
+                & .rankinnerdata {
+                }
+            
+            }
+        }
+    }
+    // coin modal end 
 }
 
 @include media-breakpoint-down(sm) {
@@ -3635,4 +3711,46 @@
         }
     }
     // chat rules modal end
+
+    // coin modal start 
+    .coinmodal {
+        & .coindialog {
+            & .modalcontent {
+                & .coinIcon {
+                    height: 40px;
+                    width: 40px;
+                }
+                & .coinname {
+                    font-size: 16px;
+                }
+                & .progress {
+                    & .progress-bar {
+                    }
+                }
+                & .rank {
+                    font-size: 12px;
+                    &.rankname {
+                    }
+                }
+                & .rankcoin {
+                    height: 15px;
+                    width: 15px;
+                }
+                & .rankcard {
+                    padding: 10px;
+                    & .ranktotal {
+                        font-size: 13px;
+                    }
+                }
+                & .rankdata {
+                    gap: 14px;
+                }
+                & .rankinnerdata {
+                    gap: 14px;
+                }
+            
+            }
+        }
+    }
+    // coin modal end 
 }
