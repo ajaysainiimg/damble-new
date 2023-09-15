@@ -282,6 +282,8 @@
             }
             &.active {
                 border-color: #CF0;
+                background: #161A25 !important;
+                color: #FFF !important;
                 & .accounttabIcon {
                     & img {
                         filter: none;
@@ -455,6 +457,7 @@
                     font-size: 13px;
                     font-weight: 700;
                     line-height: normal;
+                    background: #272B36 !important;
                 }
             }
             & .tablebody {
@@ -465,6 +468,7 @@
                         font-size: 13px;
                         font-weight: 800;
                         line-height: normal;
+                        background: #272B36 !important;
                     }
                 }
                 & .claimBtn {
@@ -1436,6 +1440,8 @@
                     font-size: 13px;
                     font-weight: 600;
                     line-height: normal;
+                    max-width: calc(100% - 46px);
+                    overflow-wrap: anywhere;
                     // white-space: nowrap;
                     // text-overflow: ellipsis;
                     // overflow: hidden;
