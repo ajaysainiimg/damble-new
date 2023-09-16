@@ -653,6 +653,7 @@
         }
         & .card {
             & .card-body {
+                margin-bottom: 57px;
                 & .logos{
                     & img {
                     }
@@ -690,6 +691,59 @@
                 }
             }
         }
+        & .card {
+            & .card-body {
+                & .txt{
+                    font-size: 15px;
+                }
+                & .logos{
+                    width: 33px;
+                    height: 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            &.cardLogo{
+                border-radius: 23px;
+                & .card-body {
+                    & .logos {
+                        height: 45px;
+                    }
+                }
+            }
+            &.cryptoLogo {
+                & .card-body {
+                    & .logos {
+                    }
+                    & .ragisterbonus {
+                        & span {
+                        }
+                    }
+                    & .ragisterBtn {
+                        &:hover{
+                        }
+                        &.ragisterBtn1 {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+            &.bardcard {
+                & .card-body {
+                    & .logos {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
         & .navContent {
             & .navLink {
                 font-size: 10px;
@@ -706,12 +760,41 @@
             height: 13px;
         }
         & .copyright {
-            font-size: 8px;
-            line-height: 10px;
+            margin-top: 40px !important;
+            margin-bottom: 10px !important;
         }
     }
-    .footerLinks {
-        // margin-top: 50px;
+    .footerLinks{
+        &.footerFluid{
+            & .footerLogo{
+                margin-bottom: 24px;
+                & img{
+                }
+            }
+            & .para{
+                font-size: 10px;
+            }
+            & .midLogo{
+                & .gc{
+                    & img{
+                    }
+                }
+                & .plus{
+                    & img{
+                    }
+                }
+            }
+            & .linksUl{
+                & .linkLiHead{
+                    font-size: 12px;
+                    margin-bottom: 13px;
+                }
+                & .linkLi{
+                    font-size: 10px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
     }
 }
 
