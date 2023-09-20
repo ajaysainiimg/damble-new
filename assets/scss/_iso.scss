@@ -1,0 +1,121 @@
+.countycodedata {
+    & .code {
+        font-size: 13px;
+        color: #b2b6c5;
+        border-right:1px solid #b2b6c5 !important;
+        line-height: normal;
+    }
+    & .countrydata {
+        background-color: #1d2230;
+        min-width: 100%;
+        width: 100%;
+        margin-top: 12px !important;
+        padding: 5px;
+        & .searchinput {
+            // font-size: 14px;
+            background-color:#13161e;
+            // border-bottom: 1px solid #b2b6c5;
+            & .selectInput {
+                height: 36px;
+            }
+            & .searchbtn {
+                & img {
+                    height: 14px;
+                    min-width: 14px;
+                    max-width: 14px;
+                }
+            }
+        }
+        & .innerdata {
+            max-height: 200px;
+            & .innerlink  {
+                padding: 9px;
+                transition: all 0.2s ease-in-out;
+                border: 1px solid #1d2230 ;
+                &:hover {
+                    background-color: transparent;
+                    border: 1px solid #CCFF00;
+                }
+                &.active {
+                    background-color: transparent;
+                    border: 1px solid #CCFF00;
+                }
+                & .countrycode {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color:#fff ;
+                    border-right: 1px solid #fff;
+                    padding-right: 6px;
+                    min-width: 37px;
+                }
+                & .countryname {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color:#b2b6c5 ;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .countycodedata {
+        & .code {
+            font-size: 12px;
+            line-height: normal;
+        }
+        & .countrydata {
+            margin-top: 8px !important;
+            & .searchinput {
+                // font-size: 14px;
+                background-color:#13161e;
+                // border-bottom: 1px solid #b2b6c5;
+                & .selectInput {
+                    height: 36px;
+                }
+                & .searchbtn {
+                    & img {
+                        height: 12px;
+                        min-width: 12px;
+                        max-width: 12px;
+                    }
+                }
+            }
+            & .innerdata {
+                & .innerlink  {
+                    padding: 7px;
+                    &:hover {
+                    }
+                    &.active {
+                    }
+                    & .countrycode {
+                        font-size: 12px;
+                        min-width: 35px;
+                    }
+                    & .countryname {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
