@@ -93,6 +93,9 @@
         <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#coinmodal">
             coin modal
         </button>
+        <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#logoutmodal">
+            logout
+        </button>
     </div>
     
 
@@ -1785,7 +1788,7 @@
         </div>
     </div>
     <!-- login & register modal end  -->
-
+    
     <!-- bank modal start  -->
     <div class="modal fade bankModal" id="bankModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog bankdialog modal-dialog-centered modal-dialog-scrollable">
@@ -2326,10 +2329,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -2349,10 +2348,6 @@
                     <div class="disclaimerheading disclaimerDetail pt4">ou will be redirected to Onramper payment service provided by third-party. Please make sure the deposit address for the purchase matches the deposit address you copied above.</div>
                     <div class="disclaimerheading disclaimerDetail pt-2">Damble is not responsible for any loss or damage caused by the use of this payment service.</div>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -2392,10 +2387,6 @@
                     </div>
                     
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -2566,6 +2557,37 @@
     </div>
     <!-- coin modal end  -->
 
+    <!-- log out modal start  -->
+    <div class="modal fade logoutmodal" id="logoutmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog logoutDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content logoutcontent">
+                <div class="modal-header px-4 border-0">
+                    <div class="modal-title logouttitle d-flex align-items-center " id="exampleModalLabel">
+                        <span class="d-flex align-items-center justify-content-center logouticon">
+                            <img src="assets/img/mohitModel/logout2.png" alt="log out" class="h-100 w-100 ">
+                        </span>
+                        Logout
+                    </div>
+                    <button type="button" class="btn-close closebtn d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/mohitModel/close.png" alt="close" class="h-100 w-100 img-fluid">
+                    </button>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="logoutdata">
+                        Don’t forget to check out our huge selection of casino and sports promotions before you leave! 
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center logoutbtnmain">
+                        <button class="btn logoutbtn d-flex align-items-center justify-content-center w-100 border-0">Log out</button>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- log out modal end -->
     
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

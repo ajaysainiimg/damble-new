@@ -1,0 +1,102 @@
+// log out modal start 
+.logoutmodal {
+    & .logoutDialog {
+        max-width: 535px;
+        & .logoutcontent {
+            border-radius: 5px;
+            background: #161A25;
+            box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.50);
+            & .logouttitle {
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+                gap: 10px;
+                & .logouticon {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+            & .closebtn {
+                background: none;
+                height: 15px;
+                width: 15px;
+            }
+            & .logoutdata {
+                color: #B2B6C5;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+            }
+            & .logoutbtnmain {
+                margin-top: 23px;
+                & .logoutbtn {
+                    border-radius: 5px;
+                    background: #D43443;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    height: 47px;
+                    color: #FFF;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: normal;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: #e05d6a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .logoutmodal {
+        & .logoutDialog {
+            max-width: 100%;
+            & .logoutcontent {
+                & .logouttitle {
+                    font-size: 18px;
+                    & .logouticon {
+                        height: 14px;
+                        width: 14px;
+                    }
+                }
+                & .closebtn {
+                }
+                & .logoutdata {
+                    font-size: 14px;
+                }
+                & .logoutbtnmain {
+                    margin-top: 20px;
+                    & .logoutbtn {
+                        height: 42px;
+                        font-size: 14px;
+                        &:hover {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// log out modal end
