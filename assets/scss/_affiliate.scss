@@ -1,0 +1,1235 @@
+.affiliatepagenew {
+    padding: 60px 50px 120px;
+}
+.affiliateheading {
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+// partnership program  Section Start
+.partnershipSection {
+    & .partnershiptitle {
+        color: #D6F050;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        font-variant: all-small-caps;
+        margin-top: 4px;
+    }
+    & .parnershipCardMain {
+        margin-top: 20px;
+        & .parnershipCard {
+            border-radius: 15px;
+            border: 0.5px solid #D6F050;
+            background: #161A25;
+            padding: 20px;
+            & .cardHeading {
+                color: #D6F050;
+                font-size: 24px;
+                font-weight: 800;
+                line-height: normal;
+                gap: 15px;
+                & .casinoicon {
+                    height: 23px;
+                    width: 23px;
+                }
+            }
+            & .cardTitle {
+                color: #FFF;
+                font-size: 14px;
+                font-weight: 800;
+                line-height: normal;
+                margin-top: 14px;
+            }
+            & .carddetail {
+                color: #FFF;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: 20px;
+            }
+            & .gotocasino {
+                color: #D6F050;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: normal;
+                gap: 10px;
+                margin-top: 15px;
+                & .gotocasinoicon {
+                    width: 14.307px;
+                    height: 11.45px;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:hover {
+                & .gotocasino {
+                    & .gotocasinoicon {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+// partnership program  Section end
+
+
+// Сommission plan Section Start 
+.commissinplanSection {
+    padding-top: 70px;
+    & .commissioncard {
+        margin-top: 30px;
+        border-radius: 15px;
+        background: #161A25;
+        padding: 30px;
+        & .commissionData {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: normal;
+        }
+        & .commissionTitle {
+            color: #D6F050;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 40px;
+        }
+    }
+}
+// Сommission plan Section end 
+
+// Why becoming a Damble affiliate partner Section start
+.becomepartnerSection {
+    padding-top: 70px;
+    & .partnerCardMain {
+        margin-top: 30px;
+        & .partnerCard {
+            border-radius: 15px;
+            border: 0.5px solid #D6F050;
+            background: #161A25;
+            padding: 22px 25px;
+            & .partnerHeading {
+                color: #FFF;
+                font-size: 25px;
+                font-weight: 800;
+                line-height: normal;
+            }
+            & .partnerDetail {
+                color: #B2B6C5;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: 20px;
+            }
+            & .cardfooter {
+                margin-top: 25px;
+                & .ngrtitle {
+                    color: #D3F93A;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: normal;
+                    white-space: nowrap;
+                }
+                & .cardlink {
+                    color: #D3F93A;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: normal;
+                    gap: 8px;
+                    & .linkicon {
+                        height: 13px;
+                        width: 13px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+            &:hover {
+                & .cardfooter {
+                    & .cardlink {
+                        & .linkicon {
+                            transform: translateX(7px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Why becoming a Damble affiliate partner Section end
+
+
+// guidelines Section start
+.guidelinesSection {
+    padding-top: 70px;
+    & .guidelinescardmain {
+        margin-top: 30px;
+        & .guidelinescard {
+            padding:20px 15px;
+            border-radius: 15px;
+            background: #161A25;
+            & .guidelinesimg {
+                height: 60px;
+            }
+            & .guidelinedata {
+                color: #FFF;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 20px;
+            }
+            &.cardlast {
+                padding: 40px 70px;
+                gap: 40px;
+                & .guidelinesimg {
+                    height: 60px;
+                    max-width: 60px;
+                    min-width: 60px;
+                }
+            }
+        }
+    }
+}
+// guidelines Section end
+
+
+// faq section start 
+.faqpage {
+    padding-top: 70px;
+    & .faqMain {
+        gap: 35px;
+    }
+    & .faqCard {
+        background-color: #161A25;
+        border-radius: 15px;
+        padding: 40px;
+        margin-top: 40px;
+        & .faqinner {
+            border-bottom: 1px solid #B2B6C5;
+            padding-bottom: 15px;
+            & .question {
+                color: #FFF;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: normal;
+                gap: 15px;
+                & .faqcount {
+                    color: #D6F050;
+                    font-size: 60px;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+            }
+            & .answer {
+                color: #B2B6C5;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+// faq section end
+
+
+// Join Us section start 
+.JoinusSection {
+    padding-top: 70px;
+    & .joinuscard {
+        margin-top: 40px;
+        background-color: #161A25;
+        padding: 35px;
+        border-radius: 15px;
+        & .signuptitle {
+            color: #FFF;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom:20px;
+            line-height: normal;
+        }
+    }
+    & .inputmain {
+        height: 37px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        & .affiliateInput {
+            color: rgba(255, 255, 255, 0.50);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .affiliateinputLabel {
+            color: rgba(255, 255, 255, 0.50);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: normal;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease-in-out;
+            padding: 0px 7px;
+        }
+        & .affiliateInput:focus ~ .affiliateinputLabel {
+            top: 0;
+            background-color: #161A25;
+        }
+        & .passwordvisible {
+            height: 15px;
+            width: 15px;
+            margin:0 13px;
+        }
+    }
+    & .socialmedia {
+        & .instagramdropdown {
+            & .instabtn {
+                border-radius: 5px;
+                background: #0D131C;
+                height: 38px;
+                color: #FFF;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: normal;
+                padding: 0 17px;
+                gap: 22px;
+                border: none;
+                // &.active {
+                //     border-color: rgba(255, 255, 255, 0.50);
+                // }
+                // &:active {
+                //     border-color: rgba(255, 255, 255, 0.50);
+                // }
+                &::after {
+                    font-size: 17px;
+                }
+            }
+            & .instamenu  {
+                min-width: auto;
+                background-color:#1b202d;
+                margin-top: 3px;
+                padding: 8px;
+                & .socialmedialink {
+                    color: #FFF;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 7px 0 7px 13px;
+                    border: 1px solid #1b202d;
+                    border-radius: 3px;
+                    transition: all 0.3s ease-in-out;
+                    margin-top: 4px;
+                    &:hover {
+                        border-color: #D3F93A;
+                    }
+                    &.active {
+                        border-color: #D3F93A;
+                    }
+                }
+            }
+        }
+    }
+    & .checkinput {
+        max-height: 18px;
+        min-height: 18px;
+        min-width: 18px;
+        max-width: 18px;
+        border-radius: 3px;
+        border: 0.8px solid #CF0;
+        background-color: transparent;
+        background-size: 12px 9px;
+        &:checked {
+            background-color: #CF0;
+            background-image: url(../img/affiliatenew/check2.png);
+        }
+    }
+    & .termsservice {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: normal;
+        gap: 10px;
+
+        & .conditiontitle {
+            font-weight: 600;
+            color: #CF0;
+        }
+    }
+    & .resisterbtn {
+        border-radius: 6px;
+        border: 2px solid #C2EE44;
+        background: #CF0;
+        height: 37px;
+        box-shadow: 0px 0px 10px 0px #CF0 inset, 0px 0px 10px 0px rgba(211, 249, 58, 0.50), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #000;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: normal;
+        margin-top: 15px;
+        transition:all 0.3s ease-in-out;
+        &:active {
+            background: #CF0;
+            border: 2px solid #C2EE44;
+        }
+        &:hover {
+            background-color: rgb(222, 255, 92);
+        }
+    }
+}
+
+// Join Us section end 
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .affiliatepagenew {
+        padding: 55px 42px 110px;
+    }
+    .affiliateheading {
+        font-size: 32px;
+    }
+    
+    
+    // partnership program  Section Start
+    .partnershipSection {
+        & .partnershiptitle {
+            font-size: 18px;
+        }
+        & .parnershipCardMain {
+            & .parnershipCard {
+                & .cardHeading {
+                    & .casinoicon {
+                    }
+                }
+                & .cardTitle {
+                }
+                & .carddetail {
+                }
+                & .gotocasino {
+                    font-size:13px ;
+                    & .gotocasinoicon {
+                    }
+                }
+                &:hover {
+                    & .gotocasino {
+                        & .gotocasinoicon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // partnership program  Section end
+    
+    
+    // Сommission plan Section Start 
+    .commissinplanSection {
+        & .commissioncard {
+            & .commissionData {
+                font-size: 18px;
+            }
+            & .commissionTitle {
+                font-size: 18px;
+            }
+        }
+    }
+    // Сommission plan Section end 
+    
+    // Why becoming a Damble affiliate partner Section start
+    .becomepartnerSection {
+        & .partnerCardMain {
+            & .partnerCard {
+                & .partnerHeading {
+                    font-size: 23px;
+                }
+                & .partnerDetail {
+                    font-size: 17px;
+                    margin-top: 18px;
+                }
+                & .cardfooter {
+                    & .ngrtitle {
+                    }
+                    & .cardlink {
+                        & .linkicon {
+                        }
+                    }
+                }
+                &:hover {
+                    & .cardfooter {
+                        & .cardlink {
+                            & .linkicon {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Why becoming a Damble affiliate partner Section end
+    
+    
+    // guidelines Section start
+    .guidelinesSection {
+        & .guidelinescardmain {
+            & .guidelinescard {
+                & .guidelinesimg {
+                }
+                & .guidelinedata {
+                }
+                &.cardlast {
+                    & .guidelinesimg {
+                    }
+                }
+            }
+        }
+    }
+    // guidelines Section end
+    
+    
+    // faq section start 
+    .faqpage {
+        & .faqMain {
+        }
+        & .faqCard {
+            & .faqinner {
+                & .question {
+                    font-size: 23px;
+                    & .faqcount {
+                        font-size: 55px;
+                    }
+                }
+                & .answer {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    // faq section end
+
+
+    // Join Us section start 
+    .JoinusSection {
+        & .joinuscard {
+            & .signuptitle {
+                font-size: 22px;
+            }
+        }
+        & .inputmain {
+            & .affiliateInput {
+            }
+            & .affiliateinputLabel {
+            }
+            & .affiliateInput:focus ~ .affiliateinputLabel {
+            }
+            & .passwordvisible {
+            }
+        }
+        & .socialmedia {
+            & .instagramdropdown {
+                & .instabtn {
+                    &::after {
+                    }
+                }
+                & .instamenu  {
+                    & .socialmedialink {
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+        & .checkinput {
+            &:checked {
+            }
+        }
+        & .termsservice {
+            & .conditiontitle {
+            }
+        }
+        & .resisterbtn {
+            &:active {
+            }
+            &:hover {
+            }
+        }
+    }
+    // Join Us section end 
+}
+
+@include media-breakpoint-down(lg) {
+    .affiliatepagenew {
+        padding: 40px 35px 85px;
+    }
+    .affiliateheading {
+        font-size: 28px;
+    }
+
+    
+    // partnership program  Section Start
+    .partnershipSection {
+        & .partnershiptitle {
+            font-size: 17px;
+        }
+        & .parnershipCardMain {
+            margin-top: 30px;
+            & .parnershipCard {
+                & .cardHeading {
+                    font-size: 22px;
+                    & .casinoicon {
+                    }
+                }
+                & .cardTitle {
+                }
+                & .carddetail {
+                    font-size: 12px;
+                }
+                & .gotocasino {
+                    font-size: 12px;
+                    margin-top: 13px;
+                    & .gotocasinoicon {
+                    }
+                }
+                &:hover {
+                    & .gotocasino {
+                        & .gotocasinoicon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // partnership program  Section end
+    
+    
+    // Сommission plan Section Start 
+    .commissinplanSection {
+        padding-top: 60px;
+        & .commissioncard {
+            margin-top: 32px;
+            padding: 25px;
+            & .commissionData {
+                font-size: 16px;
+            }
+            & .commissionTitle {
+                font-size: 16px;
+                padding-top: 32px;
+            }
+        }
+    }
+    // Сommission plan Section end 
+    
+
+    // Why becoming a Damble affiliate partner Section start
+    .becomepartnerSection {
+        padding-top: 60px;
+        & .partnerCardMain {
+            margin-top: 30px;
+            & .partnerCard {
+                padding: 18px 22px;
+                & .partnerHeading {
+                    font-size: 20px;
+                }
+                & .partnerDetail {
+                    font-size: 15px;
+                    margin-top: 16px;
+                }
+                & .cardfooter {
+                    margin-top: 15px;
+                    & .ngrtitle {
+                        font-size: 8px;
+                    }
+                    & .cardlink {
+                        font-size: 11px;
+                        & .linkicon {
+                        }
+                    }
+                }
+                &:hover {
+                    & .cardfooter {
+                        & .cardlink {
+                            & .linkicon {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Why becoming a Damble affiliate partner Section end
+    
+    
+    // guidelines Section start
+    .guidelinesSection {
+        padding-top: 60px;
+        & .guidelinescardmain {
+            margin-top: 25px;
+            & .guidelinescard {
+                padding:24px 15px;
+                border-radius: 10px;
+                & .guidelinesimg {
+                    height: 50px;
+                }
+                & .guidelinedata {
+                    font-size: 14px;
+                }
+                &.cardlast {
+                    padding: 36px 43px;
+                    gap: 37px;
+                    & .guidelinesimg {
+                        height: 55px;
+                        max-width: 55px;
+                        min-width: 55px;
+                    }
+                }
+            }
+        }
+    }
+    // guidelines Section end
+    
+    
+    // faq section start 
+    .faqpage {
+        padding-top: 60px;
+        & .faqMain {
+            gap: 30px;
+        }
+        & .faqCard {
+            padding: 35px 25px;
+            margin-top:35px;
+            & .faqinner {
+                & .question {
+                    font-size: 19px;
+                    & .faqcount {
+                        font-size: 50px;
+                    }
+                }
+                & .answer {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // faq section end
+
+
+    // Join Us section start 
+    .JoinusSection {
+        padding-top: 60px;
+        & .joinuscard {
+            margin-top: 35px;
+            padding:28px;
+            & .signuptitle {
+                font-size: 20px;
+            }
+        }
+        & .inputmain {
+            & .affiliateInput {
+            }
+            & .affiliateinputLabel {
+            }
+            & .affiliateInput:focus ~ .affiliateinputLabel {
+            }
+            & .passwordvisible {
+            }
+        }
+        & .socialmedia {
+            & .instagramdropdown {
+                & .instabtn {
+                    &::after {
+                    }
+                }
+                & .instamenu  {
+                    & .socialmedialink {
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+        & .checkinput {
+            &:checked {
+            }
+        }
+        & .termsservice {
+            font-size: 14px;
+            gap: 15px;
+            & .conditiontitle {
+            }
+        }
+        & .resisterbtn {
+            margin-top: 27px;
+            &:active {
+            }
+            &:hover {
+            }
+        }
+    }
+    // Join Us section end 
+}
+
+@include media-breakpoint-down(md) {
+    
+    .affiliatepagenew {
+        padding: 30px 20px 70px;
+    }
+    .affiliateheading {
+        font-size: 24px;
+    }
+    
+    
+    // partnership program  Section Start
+    .partnershipSection {
+        & .partnershiptitle {
+            font-size: 14px;
+        }
+        & .parnershipCardMain {
+            margin-top: 22px;
+            gap: 10px;
+            & .parnershipCard {
+                & .cardHeading {
+                    font-size: 20px;
+                    gap: 12px;
+                    & .casinoicon {
+                    }
+                }
+                & .cardTitle {
+                }
+                & .carddetail {
+                    font-size: 11px;
+                }
+                & .gotocasino {
+                    font-size: 11px;
+                    & .gotocasinoicon {
+                    }
+                }
+                &:hover {
+                    & .gotocasino {
+                        & .gotocasinoicon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // partnership program  Section end
+    
+    
+    // Сommission plan Section Start 
+    .commissinplanSection {
+        padding-top: 50px;
+        & .commissioncard {
+            margin-top: 30px;
+            padding: 20px;
+            & .commissionData {
+                font-size: 14px;
+            }
+            & .commissionTitle {
+                font-size: 14px;
+                padding-top: 30px;
+            }
+        }
+    }
+    // Сommission plan Section end 
+    
+    // Why becoming a Damble affiliate partner Section start
+    .becomepartnerSection {
+        padding-top: 50px;
+        & .partnerCardMain {
+            margin-top: 20px;
+            & .partnerCard {
+                padding: 13px 20px;
+                & .partnerHeading {
+                    font-size: 18px;
+                }
+                & .partnerDetail {
+                    font-size: 13px;
+                    margin-top: 14px;
+                }
+                & .cardfooter {
+                    margin-top: 18px;
+                    & .ngrtitle {
+                        font-size: 10px;
+                    }
+                    & .cardlink {
+                        font-size: 10px;
+                        & .linkicon {
+                        }
+                    }
+                }
+                &:hover {
+                    & .cardfooter {
+                        & .cardlink {
+                            & .linkicon {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Why becoming a Damble affiliate partner Section end
+    
+    
+    // guidelines Section start
+    .guidelinesSection {
+        padding-top: 50px;
+        & .guidelinescardmain {
+            margin-top: 20px;
+            & .guidelinescard {
+                & .guidelinesimg {
+                    height: 45px;
+                }
+                & .guidelinedata {
+                    font-size: 13px;
+                }
+                &.cardlast {
+                    padding: 32px 39px;
+                    gap: 35px;
+                    & .guidelinesimg {
+                        height: 50px;
+                        max-width: 50px;
+                        min-width:50px;
+                    }
+                }
+            }
+        }
+    }
+    // guidelines Section end
+    
+
+    // faq section start 
+    .faqpage {
+        padding-top: 50px;
+        & .faqMain {
+            gap: 25px;
+        }
+        & .faqCard {
+            padding: 30px;
+            margin-top:30px;
+            & .faqinner {
+                & .question {
+                    font-size: 17px;
+                    & .faqcount {
+                        font-size: 40px;
+                    }
+                }
+                & .answer {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    // faq section end
+
+
+    // Join Us section start 
+    .JoinusSection {
+        padding-top: 50px;
+        & .joinuscard {
+            margin-top: 30px;
+            padding:20px;
+            & .signuptitle {
+                font-size: 18px;
+            }
+        }
+        & .inputmain {
+            & .affiliateInput {
+            }
+            & .affiliateinputLabel {
+            }
+            & .affiliateInput:focus ~ .affiliateinputLabel {
+            }
+            & .passwordvisible {
+            }
+        }
+        & .socialmedia {
+            & .instagramdropdown {
+                & .instabtn {
+                    &::after {
+                    }
+                }
+                & .instamenu  {
+                    & .socialmedialink {
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+        & .checkinput {
+            &:checked {
+            }
+        }
+        & .termsservice {
+            font-size: 13px;
+            gap: 15px;
+            & .conditiontitle {
+            }
+        }
+        & .resisterbtn {
+            margin-top: 27px;
+            &:active {
+            }
+            &:hover {
+            }
+        }
+    }
+    // Join Us section end 
+}
+
+@include media-breakpoint-down(sm) {
+    .affiliatepagenew {
+        padding: 20px 0px 50px;
+    }
+    .affiliateheading {
+        font-size: 20px;
+    }
+    
+    
+    // partnership program  Section Start
+    .partnershipSection {
+        & .partnershiptitle {
+            font-size: 10px;
+            margin-top: 7px;
+        }
+        & .parnershipCardMain {
+            margin-top: 10px;
+            gap: 10px;
+            & .parnershipCard {
+                border-radius: 10px;
+                padding: 15px;
+                & .cardHeading {
+                    font-size: 20px;
+                    gap: 12px;
+                    & .casinoicon {
+                    }
+                }
+                & .cardTitle {
+                }
+                & .carddetail {
+                    font-size: 10px;
+                    margin-top: 15px;
+                }
+                & .gotocasino {
+                    font-size: 10px;
+                    margin-top: 13px;
+                    & .gotocasinoicon {
+                    }
+                }
+                &:hover {
+                    & .gotocasino {
+                        & .gotocasinoicon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // partnership program  Section end
+    
+    
+    // Сommission plan Section Start 
+    .commissinplanSection {
+        padding-top: 42px;
+        & .commissioncard {
+            margin-top: 25px;
+            padding: 15px;
+            & .commissionData {
+                font-size: 10px;
+            }
+            & .commissionTitle {
+                font-size: 7px;
+                padding-top: 25px;
+            }
+        }
+    }
+    // Сommission plan Section end 
+    
+    // Why becoming a Damble affiliate partner Section start
+    .becomepartnerSection {
+        padding-top: 42px;
+        & .partnerCardMain {
+            margin-top: 10px;
+            & .partnerCard {
+                padding: 13px 20px;
+                border-radius: 5px;
+                border: 0.5px solid #D6F050;
+                & .partnerHeading {
+                    font-size: 15px;
+                }
+                & .partnerDetail {
+                    font-size: 10px;
+                    margin-top: 10px;
+                }
+                & .cardfooter {
+                    margin-top: 15px;
+                    & .ngrtitle {
+                        font-size: 8px;
+                    }
+                    & .cardlink {
+                        font-size: 8px;
+                        gap: 5px;
+                        & .linkicon {
+                            width: 8.317px;
+                            height: 7.98px;
+                        }
+                    }
+                }
+                &:hover {
+                    & .cardfooter {
+                        & .cardlink {
+                            & .linkicon {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Why becoming a Damble affiliate partner Section end
+    
+    
+    // guidelines Section start
+    .guidelinesSection {
+        padding-top: 42px;
+        & .guidelinescardmain {
+            margin-top: 10px;
+            & .guidelinescard {
+                padding:15px 11px;
+                border-radius: 10px;
+                & .guidelinesimg {
+                    height: 40px;
+                }
+                & .guidelinedata {
+                    font-size: 12px;
+                    margin-top: 14px;
+                }
+                &.cardlast {
+                    padding: 25px 15px ;
+                    gap: 25px;
+                    & .guidelinesimg {
+                        height: 40px;
+                        max-width: 40px;
+                        min-width: 40px;
+                    }
+                }
+            }
+        }
+    }
+    // guidelines Section end
+    
+    
+    // faq section start 
+    .faqpage {
+        padding-top: 42px;
+        & .faqMain {
+            gap: 20px;
+        }
+        & .faqCard {
+            border-radius: 10px;
+            padding: 30px 15px;
+            margin-top:25px;
+            & .faqinner {
+                padding-bottom: 12px;
+                & .question {
+                    font-size: 15px;
+                    gap: 6px;
+                    & .faqcount {
+                        font-size: 30px;
+                    }
+                }
+                & .answer {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    // faq section end
+    
+    
+    // Join Us section start 
+    .JoinusSection {
+        padding-top: 42px;
+        & .joinuscard {
+            margin-top: 25px;
+            padding:15px;
+            border-radius: 10px;
+            padding-bottom: 45px;
+            & .signuptitle {
+                font-size: 15px;
+            }
+        }
+        & .inputmain {
+            & .affiliateInput {
+            }
+            & .affiliateinputLabel {
+            }
+            & .affiliateInput:focus ~ .affiliateinputLabel {
+            }
+            & .passwordvisible {
+            }
+        }
+        & .socialmedia {
+            & .instagramdropdown {
+                & .instabtn {
+                    font-size: 12px;
+                    padding: 0 13px;
+                    gap: 15px;
+                    &::after {
+                    }
+                }
+                & .instamenu  {
+                    padding: 5px;
+                    & .socialmedialink {
+                        font-size: 12px;
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+        & .checkinput {
+            &:checked {
+            }
+        }
+        & .termsservice {
+            font-size: 12px;
+            gap: 15px;
+            & .conditiontitle {
+            }
+        }
+        & .resisterbtn {
+            margin-top: 27px;
+            &:active {
+            }
+            &:hover {
+            }
+        }
+    }
+    // Join Us section end 
+    
+}
