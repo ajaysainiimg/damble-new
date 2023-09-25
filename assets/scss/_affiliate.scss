@@ -1,11 +1,12 @@
 .affiliatepagenew {
-    padding: 60px 50px 120px;
+    padding: 62px 50px 120px;
 }
 .affiliateheading {
     color: #FFF;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 900;
     line-height: normal;
+    padding: 0 1px;
 }
 
 
@@ -17,47 +18,47 @@
         font-weight: 700;
         line-height: normal;
         font-variant: all-small-caps;
-        margin-top: 4px;
+        margin-top: 5px;
     }
     & .parnershipCardMain {
-        margin-top: 20px;
+        margin-top: 94px;
         & .parnershipCard {
             border-radius: 15px;
             border: 0.5px solid #D6F050;
             background: #161A25;
-            padding: 20px;
+            padding: 29px 35px 21px;
             & .cardHeading {
                 color: #D6F050;
-                font-size: 24px;
+                font-size: 30px;
                 font-weight: 800;
                 line-height: normal;
-                gap: 15px;
+                gap: 17px;
                 & .casinoicon {
-                    height: 23px;
-                    width: 23px;
+                    width: 29.45px;
+                    height: 30.622px;
                 }
             }
             & .cardTitle {
                 color: #FFF;
-                font-size: 14px;
+                font-size: 15px;
                 font-weight: 800;
                 line-height: normal;
-                margin-top: 14px;
+                margin-top: 19px;
             }
             & .carddetail {
                 color: #FFF;
                 font-size: 15px;
                 font-weight: 500;
                 line-height: normal;
-                margin-top: 20px;
+                margin-top: 33px;
             }
             & .gotocasino {
                 color: #D6F050;
-                font-size: 14px;
+                font-size: 15px;
                 font-weight: 700;
                 line-height: normal;
                 gap: 10px;
-                margin-top: 15px;
+                margin-top: 21px;
                 & .gotocasinoicon {
                     width: 14.307px;
                     height: 11.45px;
@@ -79,12 +80,13 @@
 
 // Сommission plan Section Start 
 .commissinplanSection {
-    padding-top: 70px;
+    padding-top: 72px;
     & .commissioncard {
-        margin-top: 30px;
+        margin-top: 43px;
         border-radius: 15px;
         background: #161A25;
-        padding: 30px;
+        // padding: 30px;
+        padding: 45px 84px 26px 42px;
         & .commissionData {
             color: #FFF;
             font-size: 20px;
@@ -96,7 +98,7 @@
             font-size: 20px;
             font-weight: 400;
             line-height: normal;
-            padding-top: 40px;
+            padding-top: 45px;
         }
     }
 }
@@ -104,14 +106,14 @@
 
 // Why becoming a Damble affiliate partner Section start
 .becomepartnerSection {
-    padding-top: 70px;
+    padding-top: 103px;
     & .partnerCardMain {
-        margin-top: 30px;
+        margin-top: 61px;
         & .partnerCard {
             border-radius: 15px;
             border: 0.5px solid #D6F050;
             background: #161A25;
-            padding: 22px 25px;
+            padding: 24px 40px 24px;
             & .partnerHeading {
                 color: #FFF;
                 font-size: 25px;
@@ -120,13 +122,13 @@
             }
             & .partnerDetail {
                 color: #B2B6C5;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 500;
                 line-height: normal;
-                margin-top: 20px;
+                margin-top: 31px;
             }
             & .cardfooter {
-                margin-top: 25px;
+                margin-top: 20px;
                 & .ngrtitle {
                     color: #D3F93A;
                     font-size: 12px;
@@ -141,8 +143,8 @@
                     line-height: normal;
                     gap: 8px;
                     & .linkicon {
-                        height: 13px;
-                        width: 13px;
+                        width: 18.705px;
+                        height: 17.946px;
                         transition: all 0.3s ease-in-out;
                     }
                 }
@@ -164,11 +166,11 @@
 
 // guidelines Section start
 .guidelinesSection {
-    padding-top: 70px;
+    padding-top: 149px;
     & .guidelinescardmain {
-        margin-top: 30px;
+        margin-top: 32px;
         & .guidelinescard {
-            padding:20px 15px;
+            padding:42px 39px 15px ;
             border-radius: 15px;
             background: #161A25;
             & .guidelinesimg {
@@ -180,15 +182,15 @@
                 font-size: 15px;
                 font-weight: 600;
                 line-height: normal;
-                margin-top: 20px;
+                margin-top: 27px;
             }
             &.cardlast {
-                padding: 40px 70px;
-                gap: 40px;
+                padding: 64px 112px 78px ;
+                gap: 107px;
                 & .guidelinesimg {
-                    height: 60px;
-                    max-width: 60px;
-                    min-width: 60px;
+                    min-width: 90.809px;
+                    max-width: 90.809px;
+                    height: 77.836px;
                 }
             }
         }
@@ -199,15 +201,15 @@
 
 // faq section start 
 .faqpage {
-    padding-top: 70px;
+    padding-top: 93px;
     & .faqMain {
-        gap: 35px;
+        gap: 48px;
     }
     & .faqCard {
         background-color: #161A25;
         border-radius: 15px;
-        padding: 40px;
-        margin-top: 40px;
+        padding: 47px 48px 58px 51px;
+        margin-top: 45px;
         & .faqinner {
             border-bottom: 1px solid #B2B6C5;
             padding-bottom: 15px;
@@ -229,7 +231,7 @@
                 font-size: 20px;
                 font-weight: 500;
                 line-height: normal;
-                margin-top: 10px;
+                margin-top:8px;
             }
         }
     }
@@ -239,11 +241,11 @@
 
 // Join Us section start 
 .JoinusSection {
-    padding-top: 70px;
+    padding-top: 61px;
     & .joinuscard {
-        margin-top: 40px;
+        margin-top: 33px;
         background-color: #161A25;
-        padding: 35px;
+        padding: 26px 29px 46px 43px;
         border-radius: 15px;
         & .signuptitle {
             color: #FFF;
@@ -254,7 +256,7 @@
         }
     }
     & .inputmain {
-        height: 37px;
+        height: 33px;
         border-radius: 5px;
         border: 1px solid rgba(255, 255, 255, 0.50);
         & .affiliateInput {
@@ -352,7 +354,6 @@
         font-weight: 400;
         line-height: normal;
         gap: 10px;
-
         & .conditiontitle {
             font-weight: 600;
             color: #CF0;
@@ -395,7 +396,213 @@
 
 @include media-breakpoint-up(xxl) {}
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    .affiliateheading {
+        font-size: 37px;
+    }
+    
+    
+    // partnership program  Section Start
+    .partnershipSection {
+        & .partnershiptitle {
+        }
+        & .parnershipCardMain {
+            margin-top: 70px;
+            & .parnershipCard {
+                padding: 22px 28px 15px;
+                & .cardHeading {
+                    font-size: 27px;
+                    gap: 14px;
+                    & .casinoicon {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                & .cardTitle {
+                    font-size: 14px;
+                    margin-top: 19px;
+                }
+                & .carddetail {
+                    font-size: 14px;
+                    margin-top: 25px;
+                }
+                & .gotocasino {
+                    margin-top: 15px;
+                    & .gotocasinoicon {
+                    }
+                }
+                &:hover {
+                    & .gotocasino {
+                        & .gotocasinoicon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // partnership program  Section end
+    
+    
+    // Сommission plan Section Start 
+    .commissinplanSection {
+        padding-top: 65px;
+        & .commissioncard {
+            margin-top: 38px;
+            padding: 40px 75px 22px 37px;
+            & .commissionData {
+                font-size: 19px;
+            }
+            & .commissionTitle {
+                font-size: 19px;
+                padding-top: 38px;
+            }
+        }
+    }
+    // Сommission plan Section end 
+    
+    // Why becoming a Damble affiliate partner Section start
+    .becomepartnerSection {
+        padding-top: 95px;
+        & .partnerCardMain {
+            margin-top: 55px;
+            & .partnerCard {
+                padding: 20px 35px ;
+                & .partnerHeading {
+                }
+                & .partnerDetail {
+                    margin-top: 25px;
+                    font-size: 19px;
+                }
+                & .cardfooter {
+                    & .ngrtitle {
+                    }
+                    & .cardlink {
+                        & .linkicon {
+                        }
+                    }
+                }
+                &:hover {
+                    & .cardfooter {
+                        & .cardlink {
+                            & .linkicon {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Why becoming a Damble affiliate partner Section end
+    
+    
+    // guidelines Section start
+    .guidelinesSection {
+        padding-top: 129px;
+        & .guidelinescardmain {
+            margin-top: 26px;
+            & .guidelinescard {
+                padding:35px 25px 10px;
+                & .guidelinesimg {
+                    height: 55px;
+                }
+                & .guidelinedata {
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                &.cardlast {
+                    padding: 55px 95px 65px ;
+                    gap: 95px;
+                    & .guidelinesimg {
+                        min-width: 80.809px;
+                        max-width: 80.809px;
+                        height: 70.836px;
+                    }
+                }
+            }
+        }
+    }
+    // guidelines Section end
+    
+    
+    // faq section start 
+    .faqpage {
+        padding-top: 85px;
+        & .faqMain {
+            gap: 40px;
+        }
+        & .faqCard {
+            padding: 40px 40px 50px 40px;
+            margin-top: 35px;
+            & .faqinner {
+                & .question {
+                    font-size: 23px;
+                    & .faqcount {
+                        font-size: 55px;
+                    }
+                }
+                & .answer {
+                }
+            }
+        }
+    }
+    // faq section end
+    
+    
+    // Join Us section start 
+    .JoinusSection {
+        padding-top: 55px;
+        & .joinuscard {
+            margin-top: 27px;
+            padding: 20px 22px 38px 37px;
+            & .signuptitle {
+            }
+        }
+        & .inputmain {
+            & .affiliateInput {
+            }
+            & .affiliateinputLabel {
+            }
+            & .affiliateInput:focus ~ .affiliateinputLabel {
+            }
+            & .passwordvisible {
+            }
+        }
+        & .socialmedia {
+            & .instagramdropdown {
+                & .instabtn {
+                    height: 33px;
+                    &::after {
+                    }
+                }
+                & .instamenu  {
+                    & .socialmedialink {
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+        & .checkinput {
+            &:checked {
+            }
+        }
+        & .termsservice {
+            & .conditiontitle {
+            }
+        }
+        & .resisterbtn {
+            height: 33px;
+            &:active {
+            }
+            &:hover {
+            }
+        }
+    }
+    
+    // Join Us section end 
+}
 
 @include media-breakpoint-down(xl) {
     .affiliatepagenew {
@@ -1012,14 +1219,14 @@
     .partnershipSection {
         & .partnershiptitle {
             font-size: 10px;
-            margin-top: 7px;
+            margin-top: 9px;
         }
         & .parnershipCardMain {
-            margin-top: 10px;
-            gap: 10px;
+            margin-top: 16px;
+            gap: 0px;
             & .parnershipCard {
                 border-radius: 10px;
-                padding: 15px;
+                padding: 22px;
                 & .cardHeading {
                     font-size: 20px;
                     gap: 12px;
@@ -1027,14 +1234,15 @@
                     }
                 }
                 & .cardTitle {
+                    margin-top: 14px;
                 }
                 & .carddetail {
                     font-size: 10px;
-                    margin-top: 15px;
+                    margin-top: 17px;
                 }
                 & .gotocasino {
                     font-size: 10px;
-                    margin-top: 13px;
+                    margin-top: 15px;
                     & .gotocasinoicon {
                     }
                 }
@@ -1054,8 +1262,9 @@
     .commissinplanSection {
         padding-top: 42px;
         & .commissioncard {
-            margin-top: 25px;
-            padding: 15px;
+            margin-top: 29px;
+            padding: 17px 22px;
+            border-radius: 10px;
             & .commissionData {
                 font-size: 10px;
             }
@@ -1069,9 +1278,9 @@
     
     // Why becoming a Damble affiliate partner Section start
     .becomepartnerSection {
-        padding-top: 42px;
+        padding-top: 50px;
         & .partnerCardMain {
-            margin-top: 10px;
+            margin-top: 13px;
             & .partnerCard {
                 padding: 13px 20px;
                 border-radius: 5px;
@@ -1084,7 +1293,7 @@
                     margin-top: 10px;
                 }
                 & .cardfooter {
-                    margin-top: 15px;
+                    margin-top: 10px;
                     & .ngrtitle {
                         font-size: 8px;
                     }
@@ -1113,11 +1322,11 @@
     
     // guidelines Section start
     .guidelinesSection {
-        padding-top: 42px;
+        padding-top: 53px;
         & .guidelinescardmain {
-            margin-top: 10px;
+            margin-top: 1px;
             & .guidelinescard {
-                padding:15px 11px;
+                padding:30px 13px 15px;
                 border-radius: 10px;
                 & .guidelinesimg {
                     height: 40px;
@@ -1131,8 +1340,8 @@
                     gap: 25px;
                     & .guidelinesimg {
                         height: 40px;
-                        max-width: 40px;
-                        min-width: 40px;
+                        // max-width: 40px;
+                        // min-width: 40px;
                     }
                 }
             }
@@ -1143,13 +1352,13 @@
     
     // faq section start 
     .faqpage {
-        padding-top: 42px;
+        padding-top: 53px;
         & .faqMain {
-            gap: 20px;
+            gap: 23px;
         }
         & .faqCard {
             border-radius: 10px;
-            padding: 30px 15px;
+            padding: 30px 20px 22px;
             margin-top:25px;
             & .faqinner {
                 padding-bottom: 12px;
@@ -1171,12 +1380,12 @@
     
     // Join Us section start 
     .JoinusSection {
-        padding-top: 42px;
+        padding-top: 59px;
         & .joinuscard {
-            margin-top: 25px;
-            padding:15px;
+            margin-top: 18px;
+            padding:20px;
             border-radius: 10px;
-            padding-bottom: 45px;
+            padding-bottom: 53px;
             & .signuptitle {
                 font-size: 15px;
             }
@@ -1223,7 +1432,7 @@
             }
         }
         & .resisterbtn {
-            margin-top: 27px;
+            margin-top: 31px;
             &:active {
             }
             &:hover {
