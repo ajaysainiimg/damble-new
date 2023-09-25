@@ -1442,3 +1442,43 @@
     // Join Us section end 
     
 }
+
+
+
+// sport policy page Start
+.sportpolicypage {
+    padding: 50px 107px 70px 52px;
+}
+.sportpolicySection {
+    & .sportheading {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    & .policydate {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        padding-top: 23px;
+    }
+    & .introducation {
+        padding-top: 67px;
+    }
+    & .sportsubheading {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 28px;
+        margin-top: 28px;
+    }
+    & .sportdetail {
+        color: #B2B6C5;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+// sport policy page end
