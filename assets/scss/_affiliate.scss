@@ -1451,10 +1451,11 @@
 }
 .sportpolicySection {
     & .sportheading {
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 700;
+        color: #D8DEE5;
+        font-size: 30px;
+        font-weight: 800;
         line-height: normal;
+        font-variant: all-small-caps;
     }
     & .policydate {
         color: #FFF;
@@ -1479,6 +1480,221 @@
         font-size: 20px;
         font-weight: 400;
         line-height: normal;
+    }
+    & .sporttable {
+        width: 260px;
+        border: 1px solid #FFF;
+        margin-bottom: 60px;
+        &.sporttabletwo {
+            margin: 70px 0 85px;
+        }
+        & .sportheader {
+        }
+        & .tabletitle {
+            color: #989CAD;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        & .sportbody {
+        }
+        & .tableData {
+            color: #989CAD;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .sportpolicypage {
+        padding: 45px 100px 65px 45px;
+    }
+    .sportpolicySection {
+        ul {
+        }
+        & .sportheading {
+            font-size:27px;
+        }
+        & .policydate {
+            font-size: 19px;
+            padding-top: 20px;
+        }
+        & .introducation {
+            padding-top: 50px;
+        }
+        & .sportsubheading {
+            font-size: 19px;
+            padding-bottom: 26px;
+            margin-top: 26px;
+        }
+        & .sportdetail {
+            font-size: 19px;
+        }
+        & .sporttable {
+            margin-bottom: 55px;
+            &.sporttabletwo {
+                margin: 65px 0 80px;
+            }
+            & .sportheader {
+            }
+            & .tabletitle {
+            }
+            & .sportbody {
+            }
+            & .tableData {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .sportpolicypage {
+        padding: 45px 95px 55px 40px;
+    }
+    .sportpolicySection {
+        ul {
+        }
+        & .sportheading {
+            font-size:24px;
+        }
+        & .policydate {
+            font-size: 18px;
+            padding-top: 18px;
+        }
+        & .introducation {
+            padding-top: 45px;
+        }
+        & .sportsubheading {
+            font-size: 18px;
+            padding-bottom: 25px;
+            margin-top: 25px;
+        }
+        & .sportdetail {
+            font-size: 17px;
+        }
+        & .sporttable {
+            margin-bottom: 50px;
+            &.sporttabletwo {
+                margin: 60px 0 70px;
+            }
+            & .sportheader {
+            }
+            & .tabletitle {
+                font-size: 14px;
+            }
+            & .sportbody {
+            }
+            & .tableData {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .sportpolicypage {
+        padding: 45px 30px 50px;
+    }
+    .sportpolicySection {
+        ul {
+            padding-left: 24px;
+        }
+        & .sportheading {
+            font-size:20px;
+        }
+        & .policydate {
+            font-size: 15px;
+            padding-top: 15px;
+        }
+        & .introducation {
+            padding-top: 35px;
+        }
+        & .sportsubheading {
+            font-size: 16px;
+            padding-bottom: 22px;
+            margin-top: 22px;
+        }
+        & .sportdetail {
+            font-size: 14px;
+        }
+        & .sporttable {
+            margin-bottom: 40px;
+            &.sporttabletwo {
+                margin: 50px 0 60px;
+            }
+            & .sportheader {
+            }
+            & .tabletitle {
+                font-size: 13px;
+            }
+            & .sportbody {
+            }
+            & .tableData {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .sportpolicypage {
+        padding: 38px 0px 50px;
+    }
+    .sportpolicySection {
+        ul {
+            padding-left: 20px;
+        }
+        & .sportheading {
+            font-size: 15px;
+        }
+        & .policydate {
+            font-size: 13px;
+            padding-top: 9px;
+        }
+        & .introducation {
+            padding-top: 30px;
+        }
+        & .sportsubheading {
+            font-size: 14px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+        & .sportdetail {
+            font-size: 10px;
+        }
+        & .sporttable {
+            width: 200px;
+            margin-bottom: 30px;
+            &.sporttabletwo {
+                margin: 30px 0 30px;
+            }
+            & .sportheader {
+            }
+            & .tabletitle {
+                font-size: 12px;
+            }
+            & .sportbody {
+            }
+            & .tableData {
+                font-size: 14px;
+            }
+        }
     }
 }
 // sport policy page end
